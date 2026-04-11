@@ -1,8 +1,8 @@
 import { type Request, type Response, type NextFunction } from 'express';
 import { fromNodeHeaders } from 'better-auth/node';
 
-import { auth } from '../auth/index.js';
-import { db } from '../db/index.js';
+import { auth } from '../auth/index';
+import { db } from '../db/index';
 
 export async function requireSession(
   req: Request,

@@ -1,5 +1,5 @@
 import { integer, jsonb, pgTable, timestamp, uuid } from 'drizzle-orm/pg-core';
-import { upload } from './uploads.js';
+import { upload } from './uploads';
 
 export const uploadRow = pgTable('upload_row', {
   id: uuid('id').primaryKey().defaultRandom(),

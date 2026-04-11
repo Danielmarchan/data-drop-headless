@@ -1,8 +1,8 @@
 import { Router } from 'express';
 import { toNodeHandler } from 'better-auth/node';
 
-import { auth } from '../auth/index.js';
-import adminRouter from './admin/index.js';
+import { auth } from '../auth/index';
+import adminRouter from './admin/index';
 
 const router = Router();
 

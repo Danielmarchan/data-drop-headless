@@ -1,6 +1,6 @@
 import { pgTable, primaryKey, text, uuid } from 'drizzle-orm/pg-core';
-import { user } from './users.js';
-import { dataset } from './datasets.js';
+import { user } from './users';
+import { dataset } from './datasets';
 
 export const datasetAssignedUser = pgTable(
   'dataset_assigned_user',

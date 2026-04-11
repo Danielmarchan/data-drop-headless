@@ -1,8 +1,9 @@
 import { Router } from 'express';
-import usersRouter from './users.js';
-import { requireRole } from '../../middleware/auth.js';
-import { type SelectUser } from '../../db/schema/index.js';
-import { type SelectRole } from '../../db/schema/index.js';
+
+import usersRouter from './users';
+import { requireRole } from '../../middleware/auth';
+import { type SelectUser } from '../../db/schema/index';
+import { type SelectRole } from '../../db/schema/index';
 
 const router = Router();
 

@@ -1,13 +1,13 @@
 import { relations } from 'drizzle-orm';
-import { user } from './users.js';
-import { account } from './accounts.js';
-import { session } from './sessions.js';
-import { dataset } from './datasets.js';
-import { upload } from './uploads.js';
-import { datasetAssignedUser } from './dataset_assigned_users.js';
-import { role } from './roles.js';
-import { datasetColumn } from './dataset_columns.js';
-import { uploadRow } from './upload_rows.js';
+import { user } from './users';
+import { account } from './accounts';
+import { session } from './sessions';
+import { dataset } from './datasets';
+import { upload } from './uploads';
+import { datasetAssignedUser } from './dataset_assigned_users';
+import { role } from './roles';
+import { datasetColumn } from './dataset_columns';
+import { uploadRow } from './upload_rows';
 
 export const userRelations = relations(user, ({ many, one }) => ({
   account: many(account),

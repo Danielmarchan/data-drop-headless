@@ -2,7 +2,7 @@ import express, { type Request, type Response, type NextFunction } from 'express
 import cors from 'cors';
 
 import env from './env';
-import router from './routes/index.js';
+import router from './routes/index';
 
 const app = express();
 

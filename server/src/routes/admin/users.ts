@@ -1,9 +1,9 @@
 import { Router } from 'express';
 import { count, desc, ilike, or } from 'drizzle-orm';
 
-import { db } from '../../db/index.js';
-import { user } from '../../db/schema/index.js';
-import { requireRole } from '../../middleware/auth.js';
+import { db } from '../../db/index';
+import { user } from '../../db/schema/index';
+import { requireRole } from '../../middleware/auth';
 
 const router = Router();
 

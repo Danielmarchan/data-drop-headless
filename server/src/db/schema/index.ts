@@ -1,22 +1,22 @@
-export { role, type SelectRole, type InsertRole } from './roles.js';
-export { user, type SelectUser, type InsertUser } from './users.js';
-export { session, type SelectSession, type InsertSession } from './sessions.js';
-export { account, type SelectAccount, type InsertAccount } from './accounts.js';
-export { verification, type SelectVerification, type InsertVerification } from './verifications.js';
-export { dataset, type SelectDataset, type InsertDataset } from './datasets.js';
-export { upload, type SelectUpload, type InsertUpload } from './uploads.js';
+export { role, type SelectRole, type InsertRole } from './roles';
+export { user, type SelectUser, type InsertUser } from './users';
+export { session, type SelectSession, type InsertSession } from './sessions';
+export { account, type SelectAccount, type InsertAccount } from './accounts';
+export { verification, type SelectVerification, type InsertVerification } from './verifications';
+export { dataset, type SelectDataset, type InsertDataset } from './datasets';
+export { upload, type SelectUpload, type InsertUpload } from './uploads';
 export {
   datasetAssignedUser,
   type SelectDatasetAssignedUser,
   type InsertDatasetAssignedUser,
-} from './dataset_assigned_users.js';
+} from './dataset_assigned_users';
 export {
   columnType,
   datasetColumn,
   type SelectDatasetColumn,
   type InsertDatasetColumn,
-} from './dataset_columns.js';
-export { uploadRow, type SelectUploadRow, type InsertUploadRow } from './upload_rows.js';
+} from './dataset_columns';
+export { uploadRow, type SelectUploadRow, type InsertUploadRow } from './upload_rows';
 export {
   userRelations,
   roleRelations,
@@ -27,4 +27,4 @@ export {
   datasetAssignedUserRelations,
   datasetColumnRelations,
   uploadRowRelations,
-} from './relations.js';
+} from './relations';

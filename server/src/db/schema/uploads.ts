@@ -1,5 +1,5 @@
 import { boolean, integer, pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
-import { dataset } from './datasets.js';
+import { dataset } from './datasets';
 
 export const upload = pgTable('upload', {
   id: uuid('id').primaryKey().defaultRandom(),
