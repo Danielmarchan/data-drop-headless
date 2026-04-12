@@ -5,10 +5,14 @@ import postgres from 'postgres';
 
 import env from '@/env';
 
-const client = postgres(env.DATABASE_URL, { max: 1 });
-const db = drizzle(client);
+async function main() {
+  const client = postgres(env.DATABASE_URL, { max: 1 });
+  const db = drizzle(client);
 
-await migrate(db, { migrationsFolder: './src/db/migrations' });
+  await migrate(db, { migrationsFolder: './src/db/migrations' });
 
-console.log('Migrations complete.');
-await client.end();
+  console.log('Migrations complete.');
+  await client.end();
+}
+
+void main();

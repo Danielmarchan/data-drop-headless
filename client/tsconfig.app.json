@@ -19,7 +19,8 @@
     "noUncheckedIndexedAccess": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@data-drop/api-schema": ["../packages/api-schema/src/index"]
     }
   },
   "include": ["src"]

@@ -1,20 +1,13 @@
 import z from 'zod';
+import { uploadDtoSchema, type UploadDto } from '@data-drop/api-schema';
 
-export const uploadDtoValidator = z.object({
-  id: z.string(),
-  title: z.string(),
-  fileName: z.string(),
-  visible: z.boolean(),
-  rowCount: z.number().nullable(),
-  dataset: z.object({
-    id: z.string(),
-    title: z.string(),
-  }),
-  createdAt: z.date(),
-  updatedAt: z.date(),
+// Server-side DTO validator: accepts Date objects from Drizzle and serialises them to ISO strings.
+export const uploadDtoValidator = uploadDtoSchema.extend({
+  createdAt: z.date().transform((d) => d.toISOString()),
+  updatedAt: z.date().transform((d) => d.toISOString()),
 });
 
-export type UploadDto = z.infer<typeof uploadDtoValidator>;
+export type { UploadDto };
 
 export const createUploadSchemaValidator = z.object({
   title: z.string().min(1),

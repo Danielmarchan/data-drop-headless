@@ -1,22 +1,13 @@
 import z from 'zod';
+import { datasetDtoSchema, type DatasetDto } from '@data-drop/api-schema';
 
-export const datasetDtoValidator = z.object({
-  id: z.string(),
-  title: z.string(),
-  columns: z.array(
-    z.object({
-      id: z.string(),
-      name: z.string(),
-      type: z.enum(['string', 'number', 'date', 'boolean']),
-      required: z.boolean(),
-      position: z.number(),
-    }),
-  ),
-  createdAt: z.date(),
-  updatedAt: z.date(),
+// Server-side DTO validator: accepts Date objects from Drizzle and serialises them to ISO strings.
+export const datasetDtoValidator = datasetDtoSchema.extend({
+  createdAt: z.date().transform((d) => d.toISOString()),
+  updatedAt: z.date().transform((d) => d.toISOString()),
 });
 
-export type DatasetDto = z.infer<typeof datasetDtoValidator>;
+export type { DatasetDto };
 
 export const updateDatasetSchemaValidator = z.object({
   title: z.string().min(1).optional(),

@@ -1,10 +1,10 @@
 import { Link, useNavigate, useSearchParams } from 'react-router';
-import { useUsers, type UserWithRole } from '@/api/users';
-import { type SelectRole } from '@/types';
+import { useUsers } from '@/api/users';
+import { type UserDto } from '@data-drop/api-schema';
 
 const PER_PAGE = 10;
 
-function RoleBadge({ role }: { role: SelectRole | null }) {
+function RoleBadge({ role }: { role: UserDto['role'] | null }) {
   return (
     <span className="inline-flex items-center bg-surface-high text-primary font-inter font-semibold text-xs rounded-full px-3 py-1 shrink-0">
       {role?.name ?? 'No role'}
@@ -12,7 +12,7 @@ function RoleBadge({ role }: { role: SelectRole | null }) {
   );
 }
 
-function UserRow({ u }: { u: UserWithRole }) {
+function UserRow({ u }: { u: UserDto }) {
   return (
     <div className="flex items-center gap-8 bg-surface-lowest rounded-lg px-6 py-6">
       <div className="flex flex-col flex-1 min-w-0">
@@ -175,10 +175,10 @@ export default function AdminUsersPage() {
     void navigate(`?${params.toString()}`);
   }
 
-  const users = data?.users ?? [];
+  const users = data?.nodes ?? [];
   const total = data?.total ?? 0;
-  const totalPages = data?.totalPages ?? 1;
-  const safePage = data?.page ?? page;
+  const totalPages = data?.pageInfo?.totalPages ?? 1;
+  const safePage = data?.pageInfo?.page ?? page;
 
   return (
     <div className="px-6 py-8">

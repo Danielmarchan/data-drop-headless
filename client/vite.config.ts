@@ -8,6 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
+      '@data-drop/api-schema': resolve(__dirname, '../packages/api-schema/src/index.ts'),
     },
   },
   server: {

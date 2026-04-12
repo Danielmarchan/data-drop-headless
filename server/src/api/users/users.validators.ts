@@ -1,21 +1,13 @@
 import z from 'zod';
+import { userDtoSchema, type UserDto } from '@data-drop/api-schema';
 
-export const userDtoValidator = z.object({
-  id: z.string(),
-  email: z.string(),
-  name: z.string(),
-  firstName: z.string().nullable(),
-  lastName: z.string().nullable(),
-  role: z.object({
-    id: z.string(),
-    name: z.string(),
-    description: z.string().nullable(),
-  }),
-  createdAt: z.date(),
-  updatedAt: z.date(),
+// Server-side DTO validator: accepts Date objects from Drizzle and serialises them to ISO strings.
+export const userDtoValidator = userDtoSchema.extend({
+  createdAt: z.date().transform((d) => d.toISOString()),
+  updatedAt: z.date().transform((d) => d.toISOString()),
 });
 
-export type UserDto = z.infer<typeof userDtoValidator>;
+export type { UserDto };
 
 export const createUserSchemaValidator = z.object({
   name: z.string().min(1),
