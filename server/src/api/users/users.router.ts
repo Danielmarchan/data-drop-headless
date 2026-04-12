@@ -4,7 +4,6 @@ import { z } from 'zod';
 import { requireRole } from '@/middleware/auth.middleware';
 import UsersController from './users.controller';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
-import { ControllerError, controllerErrorValidator } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
 import { createUserSchemaValidator, updateUserSchemaValidator } from './users.validators';
 
@@ -28,9 +27,6 @@ router.get('/', requireRole(['admin']), async (_req, res) => {
   } catch (error) {
     if (error instanceof z.ZodError) {
       return invalidQueryResponse(res, error);
-    } else if (controllerErrorValidator.safeParse(error).success) {
-      const controllerError = error as ControllerError;
-      return res.status(controllerError.statusCode).json({ error: controllerError.message });
     }
   }
 });
