@@ -18,7 +18,7 @@ export default function AdminLayout() {
 
   const { data, isPending: mePending, isError } = useQuery({
     queryKey: ['admin-me'],
-    queryFn: () => http.get<AdminMeResponse>('/api/admin/me').then((r) => r.data),
+    queryFn: () => http.get<AdminMeResponse>('/api/auth/me').then((r) => r.data),
     retry: false,
     enabled: !!session,
   });

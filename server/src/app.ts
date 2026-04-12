@@ -1,8 +1,8 @@
 import express, { type Request, type Response, type NextFunction } from 'express';
 import cors from 'cors';
 
-import env from './env';
-import router from './routes/index';
+import env from '@/env';
+import router from '@/router';
 
 const app = express();
 

@@ -5,8 +5,8 @@ import { randomUUID } from 'crypto';
 import { hashPassword } from 'better-auth/crypto';
 import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
-import env from '../env';
-import * as schema from './schema/index';
+import env from '@/env';
+import * as schema from '@/db/schema/index';
 import {
   account,
   dataset,
@@ -18,7 +18,7 @@ import {
   uploadRow,
   user,
   verification,
-} from './schema/index';
+} from '@/db/schema/index';
 
 if (env.NODE_ENV === 'production') {
   console.error('Seed script cannot run in production.');

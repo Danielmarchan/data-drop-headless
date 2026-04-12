@@ -11,7 +11,7 @@ export default function AuthRedirect() {
   const { data, isPending: rolePending, isError } = useQuery({
     queryKey: ['redirect-me'],
     queryFn: () =>
-      http.get<{ user: { role: { name: string } | null } }>('/api/admin/me').then((r) => r.data),
+      http.get<{ user: { role: { name: string } | null } }>('/api/auth/me').then((r) => r.data),
     retry: false,
     enabled: !!session,
   });

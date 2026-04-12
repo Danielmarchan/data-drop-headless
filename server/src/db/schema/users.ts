@@ -5,7 +5,7 @@ import {
   timestamp,
   uuid,
 } from 'drizzle-orm/pg-core';
-import { role } from './roles';
+import { role } from '@/db/schema/roles';
 
 export const user = pgTable('user', {
   id: text('id').primaryKey(),

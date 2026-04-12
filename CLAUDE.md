@@ -2,7 +2,7 @@
 
 ## Imports
 - In `client/`, always use the `@/` alias for imports from `client/src/`. Never use relative paths across directory boundaries.
-- In `server/`, use relative imports within `src/`.
+- In `server/`, always use the `@/` alias for imports from `server/src/`. Never use relative paths.
 - Use inline type imports: `import { type Foo }` not `import type { Foo }`.
 
 ## Styling

@@ -33,7 +33,7 @@ export function useUsers() {
     queryKey: ['admin', 'users', { search, page }],
     queryFn: () =>
       http
-        .get<UsersResponse>('/api/admin/users', { params: { search, page } })
+        .get<UsersResponse>('/api/users', { params: { search, page } })
         .then((r) => r.data),
   });
 }

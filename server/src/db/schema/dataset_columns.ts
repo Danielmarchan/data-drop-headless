@@ -1,5 +1,5 @@
 import { boolean, integer, pgEnum, pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
-import { dataset } from './datasets';
+import { dataset } from '@/db/schema/datasets';
 
 export const columnType = pgEnum('column_type', ['string', 'number', 'date', 'boolean']);
 
