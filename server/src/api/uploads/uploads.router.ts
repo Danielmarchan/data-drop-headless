@@ -5,7 +5,7 @@ import { requireRole } from '@/middleware/auth.middleware';
 import UploadsController from './uploads.controller';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
 import { statusCodes } from '@/constants/statusCodes';
-import { createUploadSchemaValidator, updateUploadSchemaValidator } from './uploads.validators';
+import { createUploadSchema, updateUploadSchema } from './uploads.schema';
 
 const router = Router();
 
@@ -41,7 +41,7 @@ router.get('/:id', requireRole(['admin']), async (req, res) => {
 
 router.post('/', requireRole(['admin']), async (req, res) => {
   try {
-    const input = createUploadSchemaValidator.parse(req.body);
+    const input = createUploadSchema.parse(req.body);
     const result = await UploadsController.createUpload(input);
 
     if (!result.success) {
@@ -58,7 +58,7 @@ router.post('/', requireRole(['admin']), async (req, res) => {
 
 router.patch('/:id', requireRole(['admin']), async (req, res) => {
   try {
-    const input = updateUploadSchemaValidator.parse(req.body);
+    const input = updateUploadSchema.parse(req.body);
     const result = await UploadsController.updateUpload(z.string().parse(req.params['id']), input);
 
     if (!result.success) {

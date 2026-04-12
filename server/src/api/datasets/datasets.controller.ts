@@ -2,8 +2,8 @@ import { count, desc, eq, ilike } from 'drizzle-orm';
 
 import { dataset } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
-import { DatasetDto, datasetDtoValidator } from './datasets.validators';
-import { ControllerResponse, PaginatedList } from '@/types';
+import { DatasetDto, datasetDtoSchemaServer } from './datasets.schema';
+import { ControllerResponse, PaginatedList } from '@data-drop/api-schema';
 import { statusCodes } from '@/constants/statusCodes';
 
 class DatasetsController {
@@ -37,7 +37,7 @@ class DatasetsController {
       return {
         success: true,
         data: {
-          nodes: datasets.map(d => datasetDtoValidator.parse(d)),
+          nodes: datasets.map(d => datasetDtoSchemaServer.parse(d)),
           total,
           pageInfo: {
             page: safePage,
@@ -71,7 +71,7 @@ class DatasetsController {
         };
       }
 
-      return { success: true, data: datasetDtoValidator.parse(found) };
+      return { success: true, data: datasetDtoSchemaServer.parse(found) };
     } catch (error) {
       console.error('Error fetching dataset:', error);
       return {
@@ -104,7 +104,7 @@ class DatasetsController {
         where: (fields, { eq }) => eq(fields.id, updated.id),
       });
 
-      return { success: true, data: datasetDtoValidator.parse(withRelations) };
+      return { success: true, data: datasetDtoSchemaServer.parse(withRelations) };
     } catch (error) {
       console.error('Error updating dataset:', error);
       return {

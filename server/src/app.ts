@@ -2,7 +2,7 @@ import express, { type Request, type Response, type NextFunction } from 'express
 import cors from 'cors';
 
 import env from '@/env';
-import router from '@/router';
+import router from '@/api/api.router';
 import docsRouter from '@/docs/docs.router';
 import { requireSession } from '@/middleware/auth.middleware';
 import { statusCodes } from './constants/statusCodes';

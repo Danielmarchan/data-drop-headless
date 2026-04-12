@@ -2,8 +2,8 @@ import { count, desc, eq, ilike } from 'drizzle-orm';
 
 import { upload } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
-import { UploadDto, uploadDtoValidator } from './uploads.validators';
-import { ControllerResponse, PaginatedList } from '@/types';
+import { UploadDto, uploadDtoSchemaServer } from './uploads.schema';
+import { ControllerResponse, PaginatedList } from '@data-drop/api-schema';
 import { statusCodes } from '@/constants/statusCodes';
 
 class UploadsController {
@@ -37,7 +37,7 @@ class UploadsController {
       return {
         success: true,
         data: {
-          nodes: uploads.map(u => uploadDtoValidator.parse(u)),
+          nodes: uploads.map(u => uploadDtoSchemaServer.parse(u)),
           total,
           pageInfo: {
             page: safePage,
@@ -71,7 +71,7 @@ class UploadsController {
         };
       }
 
-      return { success: true, data: uploadDtoValidator.parse(found) };
+      return { success: true, data: uploadDtoSchemaServer.parse(found) };
     } catch (error) {
       console.error('Error fetching upload:', error);
       return {
@@ -99,7 +99,7 @@ class UploadsController {
         where: (fields, { eq }) => eq(fields.id, created!.id),
       });
 
-      return { success: true, data: uploadDtoValidator.parse(withRelations) };
+      return { success: true, data: uploadDtoSchemaServer.parse(withRelations) };
     } catch (error) {
       console.error('Error creating upload:', error);
       return {
@@ -132,7 +132,7 @@ class UploadsController {
         where: (fields, { eq }) => eq(fields.id, updated.id),
       });
 
-      return { success: true, data: uploadDtoValidator.parse(withRelations) };
+      return { success: true, data: uploadDtoSchemaServer.parse(withRelations) };
     } catch (error) {
       console.error('Error updating upload:', error);
       return {

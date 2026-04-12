@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { requireRole } from '@/middleware/auth.middleware';
 import DatasetsController from './datasets.controller';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
-import { updateDatasetSchemaValidator } from './datasets.validators';
+import { updateDatasetSchema } from './datasets.schema';
 
 const router = Router();
 
@@ -40,7 +40,7 @@ router.get('/:id', requireRole(['admin']), async (req, res) => {
 
 router.patch('/:id', requireRole(['admin']), async (req, res) => {
   try {
-    const input = updateDatasetSchemaValidator.parse(req.body);
+    const input = updateDatasetSchema.parse(req.body);
     const result = await DatasetsController.updateDataset(z.string().parse(req.params['id']), input);
 
     if (!result.success) {

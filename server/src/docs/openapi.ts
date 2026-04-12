@@ -11,6 +11,9 @@ import {
   userDtoSchema,
   paginatedListSchema,
 } from '@data-drop/api-schema';
+import { updateDatasetSchema } from '@/api/datasets/datasets.schema';
+import { createUploadSchema, updateUploadSchema } from '@/api/uploads/uploads.schema';
+import { createUserSchema, updateUserSchema } from '@/api/users/users.schema';
 
 extendZodWithOpenApi(z);
 
@@ -117,7 +120,7 @@ registry.registerPath({
       required: true,
       content: {
         'application/json': {
-          schema: z.object({ title: z.string().min(1).optional() }).openapi('UpdateDatasetInput'),
+          schema: updateDatasetSchema.openapi('UpdateDatasetInput'),
         },
       },
     },
@@ -175,14 +178,7 @@ registry.registerPath({
       required: true,
       content: {
         'application/json': {
-          schema: z
-            .object({
-              title: z.string().min(1),
-              fileName: z.string().min(1),
-              datasetId: z.string().uuid(),
-              visible: z.boolean().optional(),
-              rowCount: z.number().int().nonnegative().optional(),
-            })
+          schema: createUploadSchema
             .openapi('CreateUploadInput'),
         },
       },
@@ -208,12 +204,7 @@ registry.registerPath({
       required: true,
       content: {
         'application/json': {
-          schema: z
-            .object({
-              title: z.string().min(1).optional(),
-              visible: z.boolean().optional(),
-              rowCount: z.number().int().nonnegative().optional(),
-            })
+          schema: updateUploadSchema
             .openapi('UpdateUploadInput'),
         },
       },
@@ -285,15 +276,7 @@ registry.registerPath({
       required: true,
       content: {
         'application/json': {
-          schema: z
-            .object({
-              name: z.string().min(1),
-              email: z.string().email(),
-              password: z.string().min(8),
-              firstName: z.string().optional(),
-              lastName: z.string().optional(),
-              roleId: z.string().uuid().optional(),
-            })
+          schema: createUserSchema
             .openapi('CreateUserInput'),
         },
       },
@@ -319,14 +302,7 @@ registry.registerPath({
       required: true,
       content: {
         'application/json': {
-          schema: z
-            .object({
-              name: z.string().min(1).optional(),
-              email: z.string().email().optional(),
-              firstName: z.string().optional(),
-              lastName: z.string().optional(),
-              roleId: z.string().uuid().optional(),
-            })
+          schema: updateUserSchema
             .openapi('UpdateUserInput'),
         },
       },

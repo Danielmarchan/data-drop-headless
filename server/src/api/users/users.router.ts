@@ -5,7 +5,7 @@ import { requireRole } from '@/middleware/auth.middleware';
 import UsersController from './users.controller';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
 import { statusCodes } from '@/constants/statusCodes';
-import { createUserSchemaValidator, updateUserSchemaValidator } from './users.validators';
+import { createUserSchema, updateUserSchema } from './users.schema';
 
 const router = Router();
 
@@ -43,7 +43,7 @@ router.get('/:id', requireRole(['admin']), async (req, res) => {
 
 router.post('/', requireRole(['admin']), async (req, res) => {
   try {
-    const input = createUserSchemaValidator.parse(req.body);
+    const input = createUserSchema.parse(req.body);
     const result = await UsersController.createUser(input);
 
     if (!result.success) {
@@ -60,7 +60,7 @@ router.post('/', requireRole(['admin']), async (req, res) => {
 
 router.patch('/:id', requireRole(['admin']), async (req, res) => {
   try {
-    const input = updateUserSchemaValidator.parse(req.body);
+    const input = updateUserSchema.parse(req.body);
     const result = await UsersController.updateUser(z.string().parse(req.params['id']), input);
 
     if (!result.success) {

@@ -4,8 +4,8 @@ import { hashPassword } from 'better-auth/crypto';
 
 import { user, account } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
-import { UserDto, userDtoValidator } from './users.validators';
-import { ControllerResponse, PaginatedList } from '@/types';
+import { UserDto, userDtoSchemaServer } from './users.schema';
+import { ControllerResponse, PaginatedList } from '@data-drop/api-schema';
 import { statusCodes } from '@/constants/statusCodes';
 
 class UsersController {
@@ -41,7 +41,7 @@ class UsersController {
       return {
         success: true,
         data: {
-          nodes: users.map(user => userDtoValidator.parse(user)),
+          nodes: users.map(user => userDtoSchemaServer.parse(user)),
           total,
           pageInfo: {
             page: safePage,
@@ -75,7 +75,7 @@ class UsersController {
         };
       }
 
-      return { success: true, data: userDtoValidator.parse(user) };
+      return { success: true, data: userDtoSchemaServer.parse(user) };
     } catch (error) {
       console.error('Error fetching user:', error);
       return {
@@ -126,7 +126,7 @@ class UsersController {
         where: (fields, { eq }) => eq(fields.id, created!.id),
       });
 
-      return { success: true, data: userDtoValidator.parse(withRole) };
+      return { success: true, data: userDtoSchemaServer.parse(withRole) };
     } catch (error) {
       console.error('Error creating user:', error);
       return {
@@ -165,7 +165,7 @@ class UsersController {
         where: (fields, { eq }) => eq(fields.id, updated.id),
       });
 
-      return { success: true, data: userDtoValidator.parse(withRole) };
+      return { success: true, data: userDtoSchemaServer.parse(withRole) };
     } catch (error) {
       console.error('Error updating user:', error);
       return {

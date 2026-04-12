@@ -4,7 +4,7 @@ import authRouter from '@/api/auth/auth.router';
 import usersRouter from '@/api/users/users.router';
 import datasetsRouter from '@/api/datasets/datasets.router';
 import uploadsRouter from '@/api/uploads/uploads.router';
-import { requireSession } from './middleware/auth.middleware';
+import { requireSession } from '@/middleware/auth.middleware';
 
 const router = Router();
 
