@@ -1,9 +1,11 @@
-import { count, desc, ilike, or } from 'drizzle-orm';
+import { count, desc, eq, ilike, or } from 'drizzle-orm';
+import { nanoid } from 'nanoid';
 
 import { user } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
 import { UserDto, userDtoValidator } from './users.dto';
 import { ControllerResponse, PaginatedList } from '@/types';
+import { statusCodes } from '@/constants/statusCodes';
 
 class UsersController {
   constructor(
@@ -51,7 +53,7 @@ class UsersController {
       return {
         success: false,
         error: {
-          statusCode: 500,
+          statusCode: statusCodes.INTERNAL_SERVER_ERROR,
           message: 'Failed to fetch users',
         },
       };

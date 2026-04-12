@@ -3,6 +3,7 @@ import cors from 'cors';
 
 import env from '@/env';
 import router from '@/router';
+import { statusCodes } from './constants/statusCodes';
 
 const app = express();
 
@@ -24,7 +25,7 @@ app.use('/api', router);
 // Error handler
 app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
   console.error(err);
-  res.status(500).json({ error: 'Internal server error' });
+  res.status(statusCodes.INTERNAL_SERVER_ERROR).json({ error: 'Internal server error' });
 });
 
 export default app;

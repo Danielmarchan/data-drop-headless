@@ -3,6 +3,7 @@ import { fromNodeHeaders } from 'better-auth/node';
 
 import { auth } from '@/api/auth';
 import { db } from '@/db';
+import { statusCodes } from '@/constants/statusCodes';
 
 export async function requireSession(
   req: Request,
@@ -11,7 +12,7 @@ export async function requireSession(
 ): Promise<void> {
   const session = await auth.api.getSession({ headers: fromNodeHeaders(req.headers) });
   if (!session) {
-    res.status(401).json({ error: 'Unauthorized' });
+    res.status(statusCodes.UNAUTHORIZED).json({ error: 'Unauthorized' });
     return;
   }
   res.locals['session'] = session;
@@ -28,7 +29,7 @@ export function requireRole(allowedRoles: string[]) {
     });
 
     if (!allowedRoles.includes(user?.role?.name ?? '')) {
-      res.status(403).json({ error: 'Forbidden' });
+      res.status(statusCodes.FORBIDDEN).json({ error: 'Forbidden' });
       return;
     }
 

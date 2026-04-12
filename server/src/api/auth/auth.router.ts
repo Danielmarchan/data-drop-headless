@@ -4,6 +4,7 @@ import { toNodeHandler } from 'better-auth/node';
 import { auth } from '@/api/auth';
 import { requireSession } from '@/middleware/auth.middleware';
 import { db } from '@/db';
+import { statusCodes } from '@/constants/statusCodes';
 
 const router = Router();
 
@@ -16,7 +17,7 @@ router.get('/me', requireSession, async (req, res) => {
   });
 
   if (!user) {
-    res.status(404).json({ error: 'User not found' });
+    res.status(statusCodes.NOT_FOUND).json({ error: 'User not found' });
     return;
   }  
   res.json({ user });
