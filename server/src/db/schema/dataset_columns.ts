@@ -21,6 +21,3 @@ export const datasetColumn = pgTable('dataset_column', {
     .$defaultFn(() => new Date())
     .notNull(),
 });
-
-export type SelectDatasetColumn = typeof datasetColumn.$inferSelect;
-export type InsertDatasetColumn = typeof datasetColumn.$inferInsert;

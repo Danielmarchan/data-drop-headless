@@ -12,6 +12,3 @@ export const uploadRow = pgTable('upload_row', {
     .$defaultFn(() => new Date())
     .notNull(),
 });
-
-export type SelectUploadRow = typeof uploadRow.$inferSelect;
-export type InsertUploadRow = typeof uploadRow.$inferInsert;

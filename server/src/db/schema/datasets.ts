@@ -10,6 +10,3 @@ export const dataset = pgTable('dataset', {
     .$defaultFn(() => new Date())
     .notNull(),
 });
-
-export type SelectDataset = typeof dataset.$inferSelect;
-export type InsertDataset = typeof dataset.$inferInsert;

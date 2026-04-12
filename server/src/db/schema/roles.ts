@@ -11,6 +11,3 @@ export const role = pgTable('role', {
     .$defaultFn(() => new Date())
     .notNull(),
 });
-
-export type SelectRole = typeof role.$inferSelect;
-export type InsertRole = typeof role.$inferInsert;

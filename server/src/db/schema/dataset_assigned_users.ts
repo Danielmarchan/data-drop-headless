@@ -14,6 +14,3 @@ export const datasetAssignedUser = pgTable(
   },
   (t) => [primaryKey({ columns: [t.assignedUserId, t.datasetId] })],
 );
-
-export type SelectDatasetAssignedUser = typeof datasetAssignedUser.$inferSelect;
-export type InsertDatasetAssignedUser = typeof datasetAssignedUser.$inferInsert;
