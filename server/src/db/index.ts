@@ -7,3 +7,5 @@ import * as schema from '@/db/schema/index';
 const conn = postgres(env.DATABASE_URL);
 
 export const db = drizzle(conn, { schema });
+
+export type Database = typeof db;

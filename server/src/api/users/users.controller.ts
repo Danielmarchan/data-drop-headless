@@ -1,27 +1,30 @@
 import { count, desc, ilike, or } from 'drizzle-orm';
 
 import { user } from '@/db/schema/index';
-import { db } from '@/db/index';
+import { db, type Database } from '@/db/index';
 import { UserDto, userDtoValidator } from './users.dto';
 import { ControllerResponse, PaginatedList } from '@/types';
 
 class UsersController {
+  constructor(
+    private db: Database,
+  ) {}
+
   async getPaginatedUsers(
     search: string | undefined,
     page: number,
     limit: number
   ): Promise<ControllerResponse<PaginatedList<UserDto>>> {
-    const whereClause = search
-      ? or(ilike(user.name, `%${search}%`), ilike(user.email, `%${search}%`))
-      : undefined;
-  
-    const countResult = await db.select({ total: count() }).from(user).where(whereClause);
-    const total = countResult[0]?.total ?? 0;
-    const totalPages = Math.max(1, Math.ceil(total / limit));
-    const safePage = Math.min(page, totalPages);
-  
     try {
-      const users = await db.query.user.findMany({
+      const whereClause = search
+        ? or(ilike(user.name, `%${search}%`), ilike(user.email, `%${search}%`))
+        : undefined;
+    
+      const countResult = await this.db.select({ total: count() }).from(user).where(whereClause);
+      const total = countResult[0]?.total ?? 0;
+      const totalPages = Math.max(1, Math.ceil(total / limit));
+      const safePage = Math.min(page, totalPages);
+      const users = await this.db.query.user.findMany({
         with: { role: true },
         where: search
           ? (fields, ops) =>
@@ -56,4 +59,4 @@ class UsersController {
   }
 }
 
-export default new UsersController();
+export default new UsersController(db);

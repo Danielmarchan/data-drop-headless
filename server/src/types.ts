@@ -1,3 +1,5 @@
+import z from 'zod';
+
 export type ControllerResponse<T> = {
   success: true;
   data: T;
@@ -6,10 +8,12 @@ export type ControllerResponse<T> = {
   error: ControllerError;
 };
 
-export type ControllerError = {
-  statusCode: number;
-  message: string;
-}
+export const controllerErrorValidator = z.object({
+  statusCode: z.number(),
+  message: z.string(),
+});
+
+export type ControllerError = z.infer<typeof controllerErrorValidator>;
 
 export type PaginatedList<T> = {
   nodes: T[];
