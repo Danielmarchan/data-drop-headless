@@ -10,18 +10,21 @@ export const userDtoSchemaServer = userDtoSchema.extend({
 export type { UserDto };
 
 export const createUserSchema = z.object({
-  name: z.string().min(1),
   email: z.string().email(),
   password: z.string().min(8),
-  firstName: z.string().optional(),
+  firstName: z.string(),
   lastName: z.string().optional(),
-  roleId: z.string().uuid().optional(),
+  role: z.string(),
 });
+
+export type CreateUserInput = z.infer<typeof createUserSchema>;
 
 export const updateUserSchema = z.object({
   name: z.string().min(1).optional(),
   email: z.string().email().optional(),
   firstName: z.string().optional(),
   lastName: z.string().optional(),
-  roleId: z.string().uuid().optional(),
+  role: z.string().optional(),
 });
+
+export type UpdateUserInput = z.infer<typeof updateUserSchema>;

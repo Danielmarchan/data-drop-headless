@@ -4,7 +4,7 @@ import { hashPassword } from 'better-auth/crypto';
 
 import { user, account } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
-import { UserDto, userDtoSchemaServer } from './users.schema';
+import { CreateUserInput, UpdateUserInput, UserDto, userDtoSchemaServer } from './users.schema';
 import { ControllerResponse, PaginatedList } from '@data-drop/api-schema';
 import { statusCodes } from '@/constants/statusCodes';
 
@@ -85,28 +85,31 @@ class UsersController {
     }
   }
 
-  async createUser(input: {
-    name: string;
-    email: string;
-    password: string;
-    firstName?: string;
-    lastName?: string;
-    roleId?: string;
-  }): Promise<ControllerResponse<UserDto>> {
+  async createUser(input: CreateUserInput): Promise<ControllerResponse<UserDto>> {
     try {
       const userId = randomUUID();
       const hashedPw = await hashPassword(input.password);
       const now = new Date();
+      const name = `${input.firstName} ${input.lastName ?? ''}`.trim();
+
+      const role = await this.db.query.role.findFirst({
+        where: (fields, { eq }) => eq(fields.name, input.role),
+      });
+
+      if (!role) return {
+        success: false,
+        error: { statusCode: statusCodes.BAD_REQUEST, message: 'Invalid role name' },
+      };
 
       const [created] = await this.db
         .insert(user)
         .values({
           id: userId,
-          name: input.name,
+          name,
           email: input.email,
           firstName: input.firstName,
           lastName: input.lastName,
-          roleId: input.roleId,
+          roleId: role.id,
           emailVerified: false,
         })
         .returning();
@@ -121,51 +124,73 @@ class UsersController {
         updatedAt: now,
       });
 
-      const withRole = await this.db.query.user.findFirst({
+      const userWithRole = await this.db.query.user.findFirst({
         with: { role: true },
         where: (fields, { eq }) => eq(fields.id, created!.id),
       });
 
-      return { success: true, data: userDtoSchemaServer.parse(withRole) };
+      return {
+        success: true,
+        data: userDtoSchemaServer.parse(userWithRole)
+      };
     } catch (error) {
       console.error('Error creating user:', error);
       return {
         success: false,
-        error: { statusCode: statusCodes.INTERNAL_SERVER_ERROR, message: 'Failed to create user' },
+        error: {
+          statusCode: statusCodes.INTERNAL_SERVER_ERROR,
+          message: 'Failed to create user'
+        },
       };
     }
   }
 
   async updateUser(
     id: string,
-    input: {
-      name?: string;
-      email?: string;
-      firstName?: string;
-      lastName?: string;
-      roleId?: string;
-    },
+    input: UpdateUserInput,
   ): Promise<ControllerResponse<UserDto>> {
     try {
+      const role = await this.db.query.role.findFirst({
+        where: (fields, { eq }) => eq(fields.name, input.role ?? ''),
+      });
+
+      if (input.role && !role) return {
+        success: false,
+        error: {
+        statusCode: statusCodes.BAD_REQUEST,
+          message: 'Invalid role name'
+        },
+      };
+
       const [updated] = await this.db
         .update(user)
-        .set({ ...input, updatedAt: new Date() })
+        .set({
+          ...input,
+          roleId: role ? role.id : undefined,
+          updatedAt: new Date()
+        })
         .where(eq(user.id, id))
         .returning();
 
       if (!updated) {
         return {
           success: false,
-          error: { statusCode: statusCodes.NOT_FOUND, message: 'User not found' },
+          error: {
+            statusCode: statusCodes.NOT_FOUND,
+            message: 'User not found'
+          },
         };
       }
 
-      const withRole = await this.db.query.user.findFirst({
+      const userWithRole = await this.db.query.user.findFirst({
         with: { role: true },
         where: (fields, { eq }) => eq(fields.id, updated.id),
       });
 
-      return { success: true, data: userDtoSchemaServer.parse(withRole) };
+      return {
+        success: true,
+        data: userDtoSchemaServer.parse(userWithRole)
+      };
     } catch (error) {
       console.error('Error updating user:', error);
       return {
@@ -185,16 +210,25 @@ class UsersController {
       if (!deleted) {
         return {
           success: false,
-          error: { statusCode: statusCodes.NOT_FOUND, message: 'User not found' },
+          error: {
+            statusCode: statusCodes.NOT_FOUND,
+            message: 'User not found'
+          },
         };
       }
 
-      return { success: true, data: null };
+      return {
+        success: true,
+        data: null
+      };
     } catch (error) {
       console.error('Error deleting user:', error);
       return {
         success: false,
-        error: { statusCode: statusCodes.INTERNAL_SERVER_ERROR, message: 'Failed to delete user' },
+        error: {
+          statusCode: statusCodes.INTERNAL_SERVER_ERROR,
+          message: 'Failed to delete user'
+        },
       };
     }
   }
