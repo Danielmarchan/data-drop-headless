@@ -12,7 +12,11 @@ export function useUsers() {
     queryKey: ['admin', 'users', { search, page }],
     queryFn: () =>
       http
-        .get<PaginatedList<UserDto>>('/api/users', { params: { search, page } })
+        .get<PaginatedList<UserDto>>('/api/users', { params: {
+          search,
+          page,
+          limit: 10,
+        } })
         .then((r) => r.data),
   });
 }
