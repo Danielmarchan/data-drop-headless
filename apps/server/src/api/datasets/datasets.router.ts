@@ -38,6 +38,27 @@ router.get('/:id', requireRole(['admin']), async (req, res) => {
   res.json(result.data);
 });
 
+router.get('/:id/uploads', requireRole(['admin']), async (req, res) => {
+  try {
+    const id = z.string().parse(req.params.id);
+    const search = z.string().optional().parse(req.query.search);
+    const page = z.number().int().positive().parse(Number(req.query.page));
+    const limit = z.number().int().positive().parse(Number(req.query.limit));
+
+    const result = await DatasetsController.getUploadsByDatasetId(id, search, page, limit);
+
+    if (!result.success) {
+      return res.status(result.error.statusCode).json({ error: result.error.message });
+    }
+
+    res.json(result.data);
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return invalidQueryResponse(res, error);
+    }
+  }
+});
+
 router.patch('/:id', requireRole(['admin']), async (req, res) => {
   try {
     const input = updateDatasetSchema.parse(req.body);

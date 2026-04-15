@@ -110,6 +110,25 @@ registry.registerPath({
 });
 
 registry.registerPath({
+  method: 'get',
+  path: '/api/datasets/{id}/uploads',
+  summary: 'List uploads for a dataset (paginated)',
+  tags: ['Datasets'],
+  parameters: [
+    { name: 'id', in: 'path', required: true, schema: { type: 'string' } },
+    ...paginationParams,
+  ],
+  responses: {
+    200: {
+      description: 'Paginated list of uploads for the dataset',
+      content: { 'application/json': { schema: PaginatedUploads } },
+    },
+    404: { description: 'Dataset not found', content: { 'application/json': { schema: ErrorSchema } } },
+    ...unauthorizedResponse,
+  },
+});
+
+registry.registerPath({
   method: 'patch',
   path: '/api/datasets/{id}',
   summary: 'Update a dataset',

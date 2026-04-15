@@ -1,8 +1,9 @@
-import { count, desc, eq, ilike } from 'drizzle-orm';
+import { and, count, desc, eq, ilike } from 'drizzle-orm';
 
-import { dataset } from '@/db/schema/index';
+import { dataset, upload } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
 import { type DatasetDto, datasetDtoSchemaServer } from './datasets.schema';
+import { type UploadDto, uploadDtoSchemaServer } from '../uploads/uploads.schema';
 import { type ControllerResponse, type PaginatedList } from '@data-drop/api-schema';
 import { statusCodes } from '@/constants/statusCodes';
 
@@ -77,6 +78,66 @@ class DatasetsController {
       return {
         success: false,
         error: { statusCode: statusCodes.INTERNAL_SERVER_ERROR, message: 'Failed to fetch dataset' },
+      };
+    }
+  }
+
+  async getUploadsByDatasetId(
+    id: string,
+    search: string | undefined,
+    page: number,
+    limit: number,
+  ): Promise<ControllerResponse<PaginatedList<UploadDto>>> {
+    try {
+      const datasetExists = await this.db.query.dataset.findFirst({
+        where: (fields, { eq }) => eq(fields.id, id),
+      });
+
+      if (!datasetExists) {
+        return {
+          success: false,
+          error: { statusCode: statusCodes.NOT_FOUND, message: 'Dataset not found' },
+        };
+      }
+
+      const whereClause = search
+        ? and(eq(upload.datasetId, id), ilike(upload.title, `%${search}%`))
+        : eq(upload.datasetId, id);
+
+      const countResult = await this.db.select({ total: count() }).from(upload).where(whereClause);
+      const total = countResult[0]?.total ?? 0;
+      const totalPages = Math.max(1, Math.ceil(total / limit));
+      const safePage = Math.min(page, totalPages);
+
+      const uploads = await this.db.query.upload.findMany({
+        with: { dataset: true },
+        where: search
+          ? (fields, ops) => ops.and(ops.eq(fields.datasetId, id), ops.ilike(fields.title, `%${search}%`))
+          : (fields, ops) => ops.eq(fields.datasetId, id),
+        orderBy: [desc(upload.createdAt)],
+        limit,
+        offset: (safePage - 1) * limit,
+      });
+
+      return {
+        success: true,
+        data: {
+          nodes: uploads.map(u => uploadDtoSchemaServer.parse(u)),
+          total,
+          pageInfo: {
+            page: safePage,
+            totalPages,
+          },
+        },
+      };
+    } catch (error) {
+      console.error('Error fetching uploads for dataset:', error);
+      return {
+        success: false,
+        error: {
+          statusCode: statusCodes.INTERNAL_SERVER_ERROR,
+          message: 'Failed to fetch uploads',
+        },
       };
     }
   }
