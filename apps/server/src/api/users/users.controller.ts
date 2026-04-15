@@ -27,7 +27,15 @@ class UsersController {
       const totalPages = Math.max(1, Math.ceil(total / limit));
       const safePage = Math.min(page, totalPages);
       const users = await this.db.query.user.findMany({
-        with: { role: true },
+        with: {
+          role: {
+            columns: {
+              id: true,
+              name: true,
+              description: true,
+            },
+          },
+        },
         where: search
           ? (fields, ops) =>
               ops.or(ops.ilike(fields.name, `%${search}%`), ops.ilike(fields.email, `%${search}%`))
@@ -36,11 +44,19 @@ class UsersController {
         limit,
         offset: (safePage - 1) * limit,
       });
+      const validatedUsers = users.filter(user => {
+        const u = userDtoSchemaServer.safeParse(user);
+        if (!u.success) {
+          console.error('Invalid user data:', u.error, 'Original data:', user);
+        }
+        return u.success;       
+      });
+
 
       return {
         success: true,
         data: {
-          nodes: users.map(user => userDtoSchemaServer.parse(user)),
+          nodes: validatedUsers.map(user => userDtoSchemaServer.parse(user)),
           total,
           pageInfo: {
             page: safePage,
