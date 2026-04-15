@@ -3,12 +3,30 @@
   "private": true,
   "scripts": {
     "dev": "turbo dev",
+    "dev:client": "pnpm --filter client dev",
+    "dev:server": "pnpm --filter server dev",
+    "dev:debug": "turbo dev:debug",
     "build": "turbo build",
+    "build:client": "pnpm --filter client build",
+    "build:server": "pnpm --filter server build",
     "typecheck": "turbo typecheck",
-    "lint": "turbo lint"
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint:fix",
+    "db:generate": "pnpm --filter server db:generate",
+    "db:migrate": "pnpm --filter server db:migrate",
+    "db:push": "pnpm --filter server db:push",
+    "db:seed": "pnpm --filter server db:seed",
+    "db:studio": "pnpm --filter server db:studio"
   },
   "devDependencies": {
-    "turbo": "^2.5.4"
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "eslint-plugin-drizzle": "^0.2.3",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "turbo": "^2.5.4",
+    "typescript-eslint": "^8.27.0"
   },
   "packageManager": "pnpm@10.0.0"
 }
