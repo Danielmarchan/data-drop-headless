@@ -3,7 +3,7 @@ import { ZodError, z } from 'zod';
 
 const EnvSchema = z.object({
   BETTER_AUTH_SECRET:
-    process.env['NODE_ENV'] === 'production'
+    process.env.NODE_ENV === 'production'
       ? z.string()
       : z.string().optional(),
   BETTER_AUTH_URL: z.string().url(),

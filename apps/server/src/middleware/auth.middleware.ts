@@ -1,7 +1,7 @@
 import { type Request, type Response, type NextFunction } from 'express';
 import { fromNodeHeaders } from 'better-auth/node';
 
-import { auth } from '@/api/auth';
+import { auth, type AuthSession } from '@/api/auth';
 import { db } from '@/db';
 import { statusCodes } from '@/constants/statusCodes';
 
@@ -15,13 +15,18 @@ export async function requireSession(
     res.status(statusCodes.UNAUTHORIZED).json({ error: 'Unauthorized' });
     return;
   }
-  res.locals['session'] = session;
+  res.locals.session = session;
   next();
 }
 
 export function requireRole(allowedRoles: string[]) {
   return async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-    const session = res.locals['session'];
+    const session = res.locals.session as AuthSession;
+
+    if (!session) {
+      res.status(statusCodes.UNAUTHORIZED).json({ error: 'Unauthorized' });
+      return;
+    }
 
     const user = await db.query.user.findFirst({
       where: (user, { eq }) => eq(user.id, session.user.id),
@@ -33,7 +38,7 @@ export function requireRole(allowedRoles: string[]) {
       return;
     }
 
-    res.locals['user'] = user;
+    res.locals.user = user;
     next();
   };
 }

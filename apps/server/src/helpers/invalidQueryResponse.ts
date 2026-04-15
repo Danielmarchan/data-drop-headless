@@ -1,5 +1,5 @@
 import { type Response } from 'express';
-import { z } from 'zod';
+import { type z } from 'zod';
 import { statusCodes } from '@/constants/statusCodes';
 
 export function invalidQueryResponse(res: Response, error: z.ZodError) {

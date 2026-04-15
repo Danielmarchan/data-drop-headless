@@ -1,11 +1,10 @@
 import { randomUUID } from 'crypto';
 import { count, desc, eq, ilike, or } from 'drizzle-orm';
-import { hashPassword } from 'better-auth/crypto';
-
 import { user, account } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
-import { CreateUserInput, UpdateUserInput, UserDto, userDtoSchemaServer } from './users.schema';
-import { ControllerResponse, PaginatedList } from '@data-drop/api-schema';
+import { hashPassword } from '@/api/auth';
+import { type CreateUserInput, type UpdateUserInput, type UserDto, userDtoSchemaServer } from './users.schema';
+import { type ControllerResponse, type PaginatedList } from '@data-drop/api-schema';
 import { statusCodes } from '@/constants/statusCodes';
 
 class UsersController {

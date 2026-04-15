@@ -331,7 +331,7 @@ registry.registerPath({
   },
 });
 
-// ─── Security scheme ─────────────────────────────────────────────────────────
+// Security scheme
 
 registry.registerComponent('securitySchemes', 'cookieAuth', {
   type: 'apiKey',
@@ -340,7 +340,7 @@ registry.registerComponent('securitySchemes', 'cookieAuth', {
   description: 'Session cookie issued by better-auth on sign-in via /api/auth/sign-in/email',
 });
 
-// ─── Generator ───────────────────────────────────────────────────────────────
+// Generator
 
 export function generateOpenApiDocument() {
   const generator = new OpenApiGeneratorV3(registry.definitions);

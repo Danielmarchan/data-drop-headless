@@ -51,13 +51,21 @@ export default tseslint.config(
     plugins: { drizzle },
     languageOptions: {
       parserOptions: {
-        projectService: true,
+        projectService: {
+          allowDefaultProject: ['*.config.ts'],
+        },
         tsconfigRootDir: resolve(__dirname, 'apps/server'),
       },
     },
     rules: {
-      'drizzle/enforce-delete-with-where': 'error',
-      'drizzle/enforce-update-with-where': 'error',
+      'drizzle/enforce-delete-with-where': [
+        'error',
+        { 'drizzleObjectName': ['db'] }
+      ],
+      'drizzle/enforce-update-with-where': [
+        'error',
+        { 'drizzleObjectName': ['db'] }
+      ],
     },
   },
 );

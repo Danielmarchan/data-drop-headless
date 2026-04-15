@@ -2,8 +2,8 @@ import { count, desc, eq, ilike } from 'drizzle-orm';
 
 import { upload } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
-import { UploadDto, uploadDtoSchemaServer } from './uploads.schema';
-import { ControllerResponse, PaginatedList } from '@data-drop/api-schema';
+import { type UploadDto, uploadDtoSchemaServer } from './uploads.schema';
+import { type ControllerResponse, type PaginatedList } from '@data-drop/api-schema';
 import { statusCodes } from '@/constants/statusCodes';
 
 class UploadsController {

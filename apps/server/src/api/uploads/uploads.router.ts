@@ -11,9 +11,9 @@ const router = Router();
 
 router.get('/', requireRole(['admin']), async (req, res) => {
   try {
-    const search = z.string().optional().parse(req.query['search']);
-    const page = z.number().int().positive().parse(Number(req.query['page']));
-    const limit = z.number().int().positive().parse(Number(req.query['limit']));
+    const search = z.string().optional().parse(req.query.search);
+    const page = z.number().int().positive().parse(Number(req.query.page));
+    const limit = z.number().int().positive().parse(Number(req.query.limit));
 
     const result = await UploadsController.getPaginatedUploads(search, page, limit);
 
@@ -30,7 +30,7 @@ router.get('/', requireRole(['admin']), async (req, res) => {
 });
 
 router.get('/:id', requireRole(['admin']), async (req, res) => {
-  const result = await UploadsController.getUploadById(z.string().parse(req.params['id']));
+  const result = await UploadsController.getUploadById(z.string().parse(req.params.id));
 
   if (!result.success) {
     return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -59,7 +59,7 @@ router.post('/', requireRole(['admin']), async (req, res) => {
 router.patch('/:id', requireRole(['admin']), async (req, res) => {
   try {
     const input = updateUploadSchema.parse(req.body);
-    const result = await UploadsController.updateUpload(z.string().parse(req.params['id']), input);
+    const result = await UploadsController.updateUpload(z.string().parse(req.params.id), input);
 
     if (!result.success) {
       return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -74,7 +74,7 @@ router.patch('/:id', requireRole(['admin']), async (req, res) => {
 });
 
 router.delete('/:id', requireRole(['admin']), async (req, res) => {
-  const result = await UploadsController.deleteUpload(z.string().parse(req.params['id']));
+  const result = await UploadsController.deleteUpload(z.string().parse(req.params.id));
 
   if (!result.success) {
     return res.status(result.error.statusCode).json({ error: result.error.message });

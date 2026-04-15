@@ -10,9 +10,9 @@ const router = Router();
 
 router.get('/', requireRole(['admin']), async (req, res) => {
   try {
-    const search = z.string().optional().parse(req.query['search']);
-    const page = z.number().int().positive().parse(Number(req.query['page']));
-    const limit = z.number().int().positive().parse(Number(req.query['limit']));
+    const search = z.string().optional().parse(req.query.search);
+    const page = z.number().int().positive().parse(Number(req.query.page));
+    const limit = z.number().int().positive().parse(Number(req.query.limit));
 
     const result = await DatasetsController.getPaginatedDatasets(search, page, limit);
 
@@ -29,7 +29,7 @@ router.get('/', requireRole(['admin']), async (req, res) => {
 });
 
 router.get('/:id', requireRole(['admin']), async (req, res) => {
-  const result = await DatasetsController.getDatasetById(z.string().parse(req.params['id']));
+  const result = await DatasetsController.getDatasetById(z.string().parse(req.params.id));
 
   if (!result.success) {
     return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -41,7 +41,7 @@ router.get('/:id', requireRole(['admin']), async (req, res) => {
 router.patch('/:id', requireRole(['admin']), async (req, res) => {
   try {
     const input = updateDatasetSchema.parse(req.body);
-    const result = await DatasetsController.updateDataset(z.string().parse(req.params['id']), input);
+    const result = await DatasetsController.updateDataset(z.string().parse(req.params.id), input);
 
     if (!result.success) {
       return res.status(result.error.statusCode).json({ error: result.error.message });

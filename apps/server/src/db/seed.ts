@@ -2,7 +2,7 @@
 import 'dotenv/config';
 import { createInterface } from 'readline';
 import { randomUUID } from 'crypto';
-import { hashPassword } from 'better-auth/crypto';
+import { hashPassword } from '@/api/auth';
 import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
 import env from '@/env';

@@ -1,5 +1,6 @@
 import { betterAuth } from 'better-auth';
 import { drizzleAdapter } from 'better-auth/adapters/drizzle';
+import { hashPassword as _hashPassword } from 'better-auth/crypto';
 
 import env from '@/env';
 import { db } from '@/db/index';
@@ -22,3 +23,10 @@ export const auth = betterAuth({
   },
   trustedOrigins: [env.CORS_ORIGIN],
 });
+
+export const hashPassword = (password: string): Promise<string> => {
+  return (_hashPassword as (pw: string) => Promise<string>)(password);
+}
+
+export type AuthAPI = typeof auth.api;
+export type AuthSession = Awaited<ReturnType<AuthAPI['getSession']>>;

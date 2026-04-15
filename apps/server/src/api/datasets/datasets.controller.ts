@@ -2,8 +2,8 @@ import { count, desc, eq, ilike } from 'drizzle-orm';
 
 import { dataset } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
-import { DatasetDto, datasetDtoSchemaServer } from './datasets.schema';
-import { ControllerResponse, PaginatedList } from '@data-drop/api-schema';
+import { type DatasetDto, datasetDtoSchemaServer } from './datasets.schema';
+import { type ControllerResponse, type PaginatedList } from '@data-drop/api-schema';
 import { statusCodes } from '@/constants/statusCodes';
 
 class DatasetsController {
