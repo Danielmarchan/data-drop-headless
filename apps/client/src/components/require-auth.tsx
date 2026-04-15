@@ -6,7 +6,7 @@ interface RequireAuthProps {
   redirectTo?: string;
 }
 
-export function RequireAuth({ roles, redirectTo = '/login' }: RequireAuthProps) {
+export function RequireAuth({ redirectTo = '/login' }: RequireAuthProps) {
   const { data: session, isPending } = authClient.useSession();
 
   if (isPending) return null;
