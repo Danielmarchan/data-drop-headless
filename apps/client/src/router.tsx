@@ -10,6 +10,7 @@ import AdminUsersNewPage from '@/pages/admin/pages/users/user-new';
 import AdminUserEditPage from '@/pages/admin/pages/users/user-edit';
 import AdminDatasetsPage from '@/pages/admin/pages/datasets/datasets-list';
 import AdminDatasetUploadsPage from '@/pages/admin/pages/datasets/datasets-upload';
+import NotFoundPage from '@/pages/not-found';
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
   {
     path: '/redirect',
     element: <AuthRedirect />,
+  },
+  {
+    path: '/not-found',
+    element: <NotFoundPage />,
   },
   {
     element: <ViewerLayout />,
@@ -60,6 +65,6 @@ export const router = createBrowserRouter([
   },
   {
     path: '*',
-    element: <Navigate to="/login" replace />,
+    element: <Navigate to="/not-found" replace />,
   },
 ]);
