@@ -1,9 +1,9 @@
 import { randomUUID } from 'crypto';
 import { count, desc, eq, ilike, or } from 'drizzle-orm';
-import { user, account } from '@/db/schema/index';
+import { user, account, datasetAssignedUser } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
 import { hashPassword } from '@/api/auth';
-import { type CreateUserInput, type UpdateUserInput, type UserDto, userDtoSchemaServer } from './users.schema';
+import { type CreateUserInput, type UpdateUserInput, type UserDto, type UserDetailDto, userDtoSchemaServer, userDetailDtoSchemaServer } from './users.schema';
 import { type PaginatedList } from '@data-drop/api-schema';
 import { type ControllerResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
@@ -70,21 +70,24 @@ class UsersController {
     }
   }
 
-  async getUserById(id: string): Promise<ControllerResponse<UserDto>> {
+  async getUserById(id: string): Promise<ControllerResponse<UserDetailDto>> {
     try {
-      const user = await this.db.query.user.findFirst({
-        with: { role: true },
+      const found = await this.db.query.user.findFirst({
+        with: {
+          role: { columns: { id: true, name: true, description: true } },
+          assignedDatasets: { with: { dataset: { columns: { id: true, title: true } } } },
+        },
         where: (fields, { eq }) => eq(fields.id, id),
       });
 
-      if (!user) {
+      if (!found) {
         return {
           success: false,
           error: { statusCode: statusCodes.NOT_FOUND, message: 'User not found' },
         };
       }
 
-      return { success: true, data: userDtoSchemaServer.parse(user) };
+      return { success: true, data: userDetailDtoSchemaServer.parse(found) };
     } catch (error) {
       console.error('Error fetching user:', error);
       return {
@@ -94,7 +97,7 @@ class UsersController {
     }
   }
 
-  async createUser(input: CreateUserInput): Promise<ControllerResponse<UserDto>> {
+  async createUser(input: CreateUserInput): Promise<ControllerResponse<UserDetailDto>> {
     try {
       const userId = randomUUID();
       const hashedPw = await hashPassword(input.password);
@@ -130,16 +133,25 @@ class UsersController {
           createdAt: now,
           updatedAt: now,
         });
+
+        if (input.assignedDatasetIds && input.assignedDatasetIds.length > 0) {
+          await tx.insert(datasetAssignedUser).values(
+            input.assignedDatasetIds.map((datasetId) => ({ assignedUserId: userId, datasetId }))
+          );
+        }
       });
 
       const userWithRole = await this.db.query.user.findFirst({
-        with: { role: true },
+        with: {
+          role: { columns: { id: true, name: true, description: true } },
+          assignedDatasets: { with: { dataset: { columns: { id: true, title: true } } } },
+        },
         where: (fields, { eq }) => eq(fields.id, userId),
       });
 
       return {
         success: true,
-        data: userDtoSchemaServer.parse(userWithRole)
+        data: userDetailDtoSchemaServer.parse(userWithRole)
       };
     } catch (error) {
       console.error('Error creating user:', error);
@@ -156,7 +168,7 @@ class UsersController {
   async updateUser(
     id: string,
     input: UpdateUserInput,
-  ): Promise<ControllerResponse<UserDto>> {
+  ): Promise<ControllerResponse<UserDetailDto>> {
     try {
       const role = input.role
         ? await this.db.query.role.findFirst({ where: (fields, { eq }) => eq(fields.name, input.role!) })
@@ -170,7 +182,7 @@ class UsersController {
         },
       };
 
-      const { role: _roleName, firstName, lastName, ...rest } = input;
+      const { role: _roleName, firstName, lastName, assignedDatasetIds, ...rest } = input;
 
       // Recompute name if either name part is being updated
       let name: string | undefined;
@@ -183,30 +195,47 @@ class UsersController {
         name = `${resolvedFirst} ${resolvedLast}`.trim();
       }
 
-      const [updated] = await this.db
-        .update(user)
-        .set({ ...rest, firstName, lastName, name, roleId: role?.id, updatedAt: new Date() })
-        .where(eq(user.id, id))
-        .returning();
+      let notFound = false;
+      await this.db.transaction(async (tx) => {
+        const [updated] = await tx
+          .update(user)
+          .set({ ...rest, firstName, lastName, name, roleId: role?.id, updatedAt: new Date() })
+          .where(eq(user.id, id))
+          .returning({ id: user.id });
 
-      if (!updated) {
+        if (!updated) {
+          notFound = true;
+          return;
+        }
+
+        if (assignedDatasetIds !== undefined) {
+          await tx.delete(datasetAssignedUser).where(eq(datasetAssignedUser.assignedUserId, id));
+          if (assignedDatasetIds.length > 0) {
+            await tx.insert(datasetAssignedUser).values(
+              assignedDatasetIds.map((datasetId) => ({ assignedUserId: id, datasetId }))
+            );
+          }
+        }
+      });
+
+      if (notFound) {
         return {
           success: false,
-          error: {
-            statusCode: statusCodes.NOT_FOUND,
-            message: 'User not found'
-          },
+          error: { statusCode: statusCodes.NOT_FOUND, message: 'User not found' },
         };
       }
 
       const userWithRole = await this.db.query.user.findFirst({
-        with: { role: true },
-        where: (fields, { eq }) => eq(fields.id, updated.id),
+        with: {
+          role: { columns: { id: true, name: true, description: true } },
+          assignedDatasets: { with: { dataset: { columns: { id: true, title: true } } } },
+        },
+        where: (fields, { eq }) => eq(fields.id, id),
       });
 
       return {
         success: true,
-        data: userDtoSchemaServer.parse(userWithRole)
+        data: userDetailDtoSchemaServer.parse(userWithRole)
       };
     } catch (error) {
       console.error('Error updating user:', error);

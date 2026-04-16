@@ -9,6 +9,7 @@ import {
   datasetColumnSchema,
   uploadDtoSchema,
   userDtoSchema,
+  userDetailDtoSchema,
   paginatedListSchema,
 } from '@data-drop/api-schema';
 import { updateDatasetSchema } from '@/api/datasets/datasets.schema';
@@ -41,6 +42,11 @@ const UploadDtoSchema = registry.register(
 const UserDtoSchema = registry.register(
   'UserDto',
   userDtoSchema.openapi({ description: 'A platform user with their assigned role' }),
+);
+
+const UserDetailDtoSchema = registry.register(
+  'UserDetailDto',
+  userDetailDtoSchema.openapi({ description: 'A platform user with their assigned role and datasets' }),
 );
 
 const PaginatedDatasets = registry.register(
@@ -295,7 +301,7 @@ registry.registerPath({
   responses: {
     200: {
       description: 'User found',
-      content: { 'application/json': { schema: UserDtoSchema } },
+      content: { 'application/json': { schema: UserDetailDtoSchema } },
     },
     404: { description: 'User not found', content: { 'application/json': { schema: ErrorSchema } } },
     ...unauthorizedResponse,
@@ -321,7 +327,7 @@ registry.registerPath({
   responses: {
     201: {
       description: 'User created',
-      content: { 'application/json': { schema: UserDtoSchema } },
+      content: { 'application/json': { schema: UserDetailDtoSchema } },
     },
     ...unauthorizedResponse,
   },
@@ -347,7 +353,7 @@ registry.registerPath({
   responses: {
     200: {
       description: 'Updated user',
-      content: { 'application/json': { schema: UserDtoSchema } },
+      content: { 'application/json': { schema: UserDetailDtoSchema } },
     },
     404: { description: 'User not found', content: { 'application/json': { schema: ErrorSchema } } },
     ...unauthorizedResponse,

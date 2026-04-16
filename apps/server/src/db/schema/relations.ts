@@ -12,7 +12,7 @@ import { uploadRow } from '@/db/schema/upload_rows';
 export const userRelations = relations(user, ({ many, one }) => ({
   account: many(account),
   session: many(session),
-  datasetAssignedUsers: many(datasetAssignedUser),
+  assignedDatasets: many(datasetAssignedUser),
   role: one(role, { fields: [user.roleId], references: [role.id] }),
 }));
 
