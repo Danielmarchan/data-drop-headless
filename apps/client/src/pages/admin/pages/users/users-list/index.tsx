@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router';
 import { type UserDto } from '@data-drop/api-schema';
 import { useDeleteUser, useUsers } from '@/api/users';
-import { SearchIcon } from '@/components/icons';
+import Button from '@/components/button';
+import SearchInput from '@/components/search-input';
 import ConfirmModal from '@/components/confirm-modal';
 import UserRow from './components/user-row';
 import Pagination from './components/pagination';
@@ -40,24 +41,21 @@ export default function AdminUsersPage() {
         </h1>
         <div className="flex items-center gap-3">
           <form onSubmit={handleSearchSubmit}>
-            <div className="flex items-center h-11 w-72 bg-surface-lowest border border-outline-variant/20 rounded-lg px-3 gap-2.5">
-              <SearchIcon className="shrink-0 text-on-surface-variant/60" />
-              <input
-                name="search"
-                type="text"
-                defaultValue={search}
-                placeholder="Search by name or email..."
-                className="flex-1 bg-transparent font-inter text-sm text-on-surface placeholder:text-on-surface-variant/50 outline-none"
-              />
-            </div>
+            <SearchInput
+              name="search"
+              defaultValue={search}
+              placeholder="Search by name or email..."
+              className="w-72 bg-surface-lowest"
+            />
           </form>
-          <button
+          <Button
             type="button"
+            size="md"
             onClick={() => void navigate('/admin/users/new')}
-            className="h-11 px-5 rounded-lg bg-primary-accent text-white font-inter font-semibold text-base transition-opacity hover:opacity-90 shrink-0"
+            className="px-5 shrink-0"
           >
             New User
-          </button>
+          </Button>
         </div>
       </div>
 

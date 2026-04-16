@@ -1,3 +1,5 @@
+import Button from '@/components/button';
+
 type ConfirmModalProps = {
   open: boolean;
   title: string;
@@ -32,24 +34,18 @@ export default function ConfirmModal({
         <h2 className="font-manrope font-extrabold text-lg text-on-surface mb-2">{title}</h2>
         <p className="font-inter text-sm text-on-surface-variant mb-6">{description}</p>
         <div className="flex items-center justify-end gap-3">
-          <button
-            type="button"
-            onClick={onCancel}
-            disabled={isPending}
-            className="h-10 px-4 rounded-lg font-inter font-semibold text-sm text-on-surface-variant hover:bg-surface-high transition-colors disabled:opacity-50"
-          >
+          <Button variant="ghost" type="button" onClick={onCancel} disabled={isPending} className="px-4">
             Cancel
-          </button>
-          <button
+          </Button>
+          <Button
+            variant={isDestructive ? 'destructive' : 'primary'}
             type="button"
             onClick={onConfirm}
             disabled={isPending}
-            className={`h-10 px-4 rounded-lg font-inter font-semibold text-sm text-white transition-opacity hover:opacity-90 disabled:opacity-50 ${
-              isDestructive ? 'bg-error' : 'bg-linear-to-br from-primary to-primary-accent'
-            }`}
+            className="px-4"
           >
             {isPending ? 'Loading...' : confirmLabel}
-          </button>
+          </Button>
         </div>
       </div>
     </div>

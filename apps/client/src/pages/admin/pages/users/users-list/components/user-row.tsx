@@ -1,5 +1,6 @@
 import { type UserDto } from '@data-drop/api-schema';
 import { PencilIcon, TrashIcon } from '@/components/icons';
+import Button from '@/components/button';
 import RoleBadge from './role-badge';
 
 type UserRowProps = {
@@ -21,22 +22,12 @@ export default function UserRow({ u, onEdit, onDelete }: UserRowProps) {
       </div>
 
       <div className="flex items-center gap-2 shrink-0">
-        <button
-          type="button"
-          onClick={onEdit}
-          className="rounded-md p-1.5 text-on-surface-variant hover:bg-surface-high transition-colors"
-          aria-label={`Edit ${u.name}`}
-        >
+        <Button variant="icon" type="button" onClick={onEdit} aria-label={`Edit ${u.name}`}>
           <PencilIcon />
-        </button>
-        <button
-          type="button"
-          onClick={onDelete}
-          className="rounded-md p-1.5 text-on-surface-variant hover:bg-surface-high transition-colors"
-          aria-label={`Delete ${u.name}`}
-        >
+        </Button>
+        <Button variant="icon" type="button" onClick={onDelete} aria-label={`Delete ${u.name}`}>
           <TrashIcon />
-        </button>
+        </Button>
       </div>
     </div>
   );
