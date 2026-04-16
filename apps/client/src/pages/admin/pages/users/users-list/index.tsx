@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useSearchParams } from 'react-router';
 import { type UserDto } from '@data-drop/api-schema';
 import { useDeleteUser, useUsers } from '@/api/users';
@@ -6,18 +6,29 @@ import Button from '@/components/button';
 import SearchInput from '@/components/search-input';
 import ConfirmModal from '@/components/confirm-modal';
 import UserRow from './components/user-row';
-import Pagination from './components/pagination';
 
 export default function AdminUsersPage() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const search = searchParams.get('search') ?? '';
-  const page = Math.max(1, Number(searchParams.get('page') ?? '1') || 1);
 
-  const { data, isLoading } = useUsers();
+  const { data, isLoading, hasNextPage, fetchNextPage, isFetchingNextPage } = useUsers();
   const deleteUser = useDeleteUser();
 
   const [userToDelete, setUserToDelete] = useState<UserDto | null>(null);
+  const sentinelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!sentinelRef.current || !hasNextPage || isFetchingNextPage) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting) void fetchNextPage();
+      },
+      { threshold: 0.1 },
+    );
+    observer.observe(sentinelRef.current);
+    return () => observer.disconnect();
+  }, [hasNextPage, fetchNextPage, isFetchingNextPage]);
 
   function handleSearchSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -28,10 +39,7 @@ export default function AdminUsersPage() {
     void navigate(`?${params.toString()}`);
   }
 
-  const users = data?.nodes ?? [];
-  const total = data?.total ?? 0;
-  const totalPages = data?.pageInfo?.totalPages ?? 1;
-  const safePage = data?.pageInfo?.page ?? page;
+  const users = data?.pages.flatMap((p) => p.nodes) ?? [];
 
   return (
     <div className="container px-6 py-8 mx-auto">
@@ -91,8 +99,11 @@ export default function AdminUsersPage() {
           </div>
         )}
 
-        {total > 0 && (
-          <Pagination page={safePage} totalPages={totalPages} total={total} search={search} />
+        <div ref={sentinelRef} />
+        {isFetchingNextPage && (
+          <div className="flex items-center justify-center py-6 text-on-surface-variant">
+            <p className="font-inter text-sm">Loading...</p>
+          </div>
         )}
       </div>
 
