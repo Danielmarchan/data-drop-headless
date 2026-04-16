@@ -36,9 +36,9 @@ export default function AdminLayout() {
   }
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div className="h-screen flex flex-col bg-surface">
       <AdminNavBar email={session.user.email} userId={data?.user.id ?? session.user.id} />
-      <main>
+      <main className="flex-1 overflow-y-auto">
         <Outlet />
       </main>
     </div>
