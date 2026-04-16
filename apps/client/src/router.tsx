@@ -1,16 +1,15 @@
 import { createBrowserRouter, Navigate } from 'react-router';
-import { RequireAuth } from '@/components/require-auth';
 
-import LoginPage from '@/app/login/page';
-import AuthRedirect from '@/app/redirect/page';
-import HomePage from '@/app/viewer/page';
-import AdminLayout from '@/app/admin/layout';
-import AdminPage from '@/app/admin/page';
-import AdminUsersPage from '@/app/admin/users/page';
-import AdminUsersNewPage from '@/app/admin/users/new/page';
-import AdminUserEditPage from '@/app/admin/users/[id]/edit/page';
-import AdminDatasetsPage from '@/app/admin/datasets/page';
-import AdminDatasetUploadsPage from '@/app/admin/datasets/[id]/uploads/page';
+import LoginPage from '@/pages/login';
+import AuthRedirect from '@/pages/redirect';
+import HomePage from '@/pages/viewer/pages/home';
+import ViewerLayout from '@/pages/viewer/viewer-layout';
+import AdminLayout from '@/pages/admin/admin-layout';
+import AdminUsersPage from '@/pages/admin/pages/users/users-list';
+import AdminUsersNewPage from '@/pages/admin/pages/users/user-new';
+import AdminUserEditPage from '@/pages/admin/pages/users/user-edit';
+import AdminDatasetsPage from '@/pages/admin/pages/datasets/datasets-list';
+import AdminDatasetUploadsPage from '@/pages/admin/pages/datasets/datasets-upload';
 
 export const router = createBrowserRouter([
   {
@@ -22,7 +21,7 @@ export const router = createBrowserRouter([
     element: <AuthRedirect />,
   },
   {
-    element: <RequireAuth />,
+    element: <ViewerLayout />,
     children: [
       {
         path: '/',
@@ -35,7 +34,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/admin',
-        element: <AdminPage />,
+        element: <Navigate to="/admin/users" replace />,
       },
       {
         path: '/admin/users',
