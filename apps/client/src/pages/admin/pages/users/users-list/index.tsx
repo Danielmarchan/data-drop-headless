@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router';
 import { type UserDto } from '@data-drop/api-schema';
 import { useDeleteUser, useUsers } from '@/api/users';
@@ -16,7 +16,23 @@ export default function AdminUsersPage() {
   const deleteUser = useDeleteUser();
 
   const [userToDelete, setUserToDelete] = useState<UserDto | null>(null);
+  const [searchValue, setSearchValue] = useState(search);
   const sentinelRef = useRef<HTMLDivElement>(null);
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleSearchChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const q = e.target.value;
+      setSearchValue(q);
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+      debounceRef.current = setTimeout(() => {
+        const params = new URLSearchParams();
+        if (q) params.set('search', q);
+        void navigate(`?${params.toString()}`);
+      }, 300);
+    },
+    [navigate],
+  );
 
   useEffect(() => {
     if (!sentinelRef.current || !hasNextPage || isFetchingNextPage) return;
@@ -30,15 +46,6 @@ export default function AdminUsersPage() {
     return () => observer.disconnect();
   }, [hasNextPage, fetchNextPage, isFetchingNextPage]);
 
-  function handleSearchSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const q = (formData.get('search') as string) ?? '';
-    const params = new URLSearchParams();
-    if (q) params.set('search', q);
-    void navigate(`?${params.toString()}`);
-  }
-
   const users = data?.pages.flatMap((p) => p.nodes) ?? [];
 
   return (
@@ -48,14 +55,12 @@ export default function AdminUsersPage() {
           Users
         </h1>
         <div className="flex items-center gap-3">
-          <form onSubmit={handleSearchSubmit}>
-            <SearchInput
-              name="search"
-              defaultValue={search}
-              placeholder="Search by name or email..."
-              className="w-72 bg-surface-lowest"
-            />
-          </form>
+          <SearchInput
+            value={searchValue}
+            onChange={handleSearchChange}
+            placeholder="Search by name or email..."
+            className="w-72 bg-surface-lowest"
+          />
           <Button
             type="button"
             size="md"
