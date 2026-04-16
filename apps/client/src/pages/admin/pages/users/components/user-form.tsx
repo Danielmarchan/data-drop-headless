@@ -65,7 +65,7 @@ export default function UserForm({
     setSelectedDatasetIds(defaultValues?.assignedDatasetIds ?? DEFAULT_VALUES.assignedDatasetIds);
   }, [defaultValues?.role, defaultValues?.assignedDatasetIds?.join('|')]);
 
-  const datasets = datasetsData?.nodes ?? [];
+  const datasets = datasetsData?.pages.flatMap((page) => page.nodes) ?? [];
   const filteredDatasetIds = useMemo(() => datasets.map((dataset) => dataset.id), [datasets]);
 
   function toggleDataset(datasetId: string) {

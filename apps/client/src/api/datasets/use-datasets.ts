@@ -3,9 +3,9 @@ import { useSearchParams } from 'react-router';
 import { http } from '@/lib/http';
 import { type DatasetDto, type PaginatedList } from '@data-drop/api-schema';
 
-export function useDatasets() {
+export function useDatasets(searchOverride?: string) {
   const [searchParams] = useSearchParams();
-  const search = searchParams.get('search') ?? '';
+  const search = searchOverride ?? searchParams.get('search') ?? '';
 
   return useInfiniteQuery({
     queryKey: ['admin', 'datasets', { search }],
