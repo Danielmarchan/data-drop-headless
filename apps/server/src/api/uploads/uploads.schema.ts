@@ -9,14 +9,6 @@ export const uploadDtoSchemaServer = uploadDtoSchema.extend({
 
 export type { UploadDto };
 
-export const createUploadSchema = z.object({
-  title: z.string().min(1),
-  fileName: z.string().min(1),
-  datasetId: z.string().uuid(),
-  visible: z.boolean().optional(),
-  rowCount: z.number().int().nonnegative().optional(),
-});
-
 export const updateUploadSchema = z.object({
   title: z.string().min(1).optional(),
   visible: z.boolean().optional(),

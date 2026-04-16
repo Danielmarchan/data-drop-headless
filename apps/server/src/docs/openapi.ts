@@ -12,7 +12,7 @@ import {
   paginatedListSchema,
 } from '@data-drop/api-schema';
 import { updateDatasetSchema } from '@/api/datasets/datasets.schema';
-import { createUploadSchema, updateUploadSchema } from '@/api/uploads/uploads.schema';
+import { updateUploadSchema } from '@/api/uploads/uploads.schema';
 import { createUserSchema, updateUserSchema } from '@/api/users/users.schema';
 
 extendZodWithOpenApi(z);
@@ -66,9 +66,32 @@ const ErrorSchema = registry.register(
 // Common parameters
 
 const paginationParams = [
-  { name: 'page', in: 'query' as const, required: true, schema: { type: 'integer' as const, minimum: 1 } },
-  { name: 'limit', in: 'query' as const, required: true, schema: { type: 'integer' as const, minimum: 1 } },
-  { name: 'search', in: 'query' as const, required: false, schema: { type: 'string' as const } },
+  {
+    name: 'page',
+    in: 'query' as const,
+    required: true,
+    schema: {
+      type: 'integer' as const,
+      minimum: 1,
+      default: 1,
+    }
+  },
+  {
+    name: 'limit',
+    in: 'query' as const,
+    required: true,
+    schema: {
+      type: 'integer' as const,
+      minimum: 1,
+      default: 10,
+    }
+  },
+  {
+    name: 'search',
+    in: 'query' as const,
+    required: false,
+    schema: { type: 'string' as const }
+  },
 ];
 
 const unauthorizedResponse = {
@@ -102,6 +125,32 @@ registry.registerPath({
   responses: {
     200: {
       description: 'Dataset found',
+      content: { 'application/json': { schema: DatasetDtoSchema } },
+    },
+    404: { description: 'Dataset not found', content: { 'application/json': { schema: ErrorSchema } } },
+    ...unauthorizedResponse,
+  },
+});
+
+registry.registerPath({
+  method: 'patch',
+  path: '/api/datasets/{id}',
+  summary: 'Update a dataset',
+  tags: ['Datasets'],
+  parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
+  request: {
+    body: {
+      required: true,
+      content: {
+        'application/json': {
+          schema: updateDatasetSchema.openapi('UpdateDatasetInput'),
+        },
+      },
+    },
+  },
+  responses: {
+    200: {
+      description: 'Updated dataset',
       content: { 'application/json': { schema: DatasetDtoSchema } },
     },
     404: { description: 'Dataset not found', content: { 'application/json': { schema: ErrorSchema } } },
@@ -162,48 +211,7 @@ registry.registerPath({
   },
 });
 
-registry.registerPath({
-  method: 'patch',
-  path: '/api/datasets/{id}',
-  summary: 'Update a dataset',
-  tags: ['Datasets'],
-  parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
-  request: {
-    body: {
-      required: true,
-      content: {
-        'application/json': {
-          schema: updateDatasetSchema.openapi('UpdateDatasetInput'),
-        },
-      },
-    },
-  },
-  responses: {
-    200: {
-      description: 'Updated dataset',
-      content: { 'application/json': { schema: DatasetDtoSchema } },
-    },
-    404: { description: 'Dataset not found', content: { 'application/json': { schema: ErrorSchema } } },
-    ...unauthorizedResponse,
-  },
-});
-
 // Uploads
-
-registry.registerPath({
-  method: 'get',
-  path: '/api/uploads',
-  summary: 'List uploads (paginated)',
-  tags: ['Uploads'],
-  parameters: paginationParams,
-  responses: {
-    200: {
-      description: 'Paginated list of uploads',
-      content: { 'application/json': { schema: PaginatedUploads } },
-    },
-    ...unauthorizedResponse,
-  },
-});
 
 registry.registerPath({
   method: 'get',
@@ -217,31 +225,6 @@ registry.registerPath({
       content: { 'application/json': { schema: UploadDtoSchema } },
     },
     404: { description: 'Upload not found', content: { 'application/json': { schema: ErrorSchema } } },
-    ...unauthorizedResponse,
-  },
-});
-
-registry.registerPath({
-  method: 'post',
-  path: '/api/uploads',
-  summary: 'Create an upload',
-  tags: ['Uploads'],
-  request: {
-    body: {
-      required: true,
-      content: {
-        'application/json': {
-          schema: createUploadSchema
-            .openapi('CreateUploadInput'),
-        },
-      },
-    },
-  },
-  responses: {
-    201: {
-      description: 'Upload created',
-      content: { 'application/json': { schema: UploadDtoSchema } },
-    },
     ...unauthorizedResponse,
   },
 });

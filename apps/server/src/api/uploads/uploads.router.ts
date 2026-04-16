@@ -5,29 +5,9 @@ import { requireRole } from '@/middleware/auth.middleware';
 import UploadsController from './uploads.controller';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
 import { statusCodes } from '@/constants/statusCodes';
-import { createUploadSchema, updateUploadSchema } from './uploads.schema';
+import { updateUploadSchema } from './uploads.schema';
 
 const router = Router();
-
-router.get('/', requireRole(['admin']), async (req, res) => {
-  try {
-    const search = z.string().optional().parse(req.query.search);
-    const page = z.number().int().positive().parse(Number(req.query.page));
-    const limit = z.number().int().positive().parse(Number(req.query.limit));
-
-    const result = await UploadsController.getPaginatedUploads(search, page, limit);
-
-    if (!result.success) {
-      return res.status(result.error.statusCode).json({ error: result.error.message });
-    }
-
-    res.json(result.data);
-  } catch (error) {
-    if (error instanceof z.ZodError) {
-      return invalidQueryResponse(res, error);
-    }
-  }
-});
 
 router.get('/:id', requireRole(['admin']), async (req, res) => {
   const result = await UploadsController.getUploadById(z.string().parse(req.params.id));
@@ -37,23 +17,6 @@ router.get('/:id', requireRole(['admin']), async (req, res) => {
   }
 
   res.json(result.data);
-});
-
-router.post('/', requireRole(['admin']), async (req, res) => {
-  try {
-    const input = createUploadSchema.parse(req.body);
-    const result = await UploadsController.createUpload(input);
-
-    if (!result.success) {
-      return res.status(result.error.statusCode).json({ error: result.error.message });
-    }
-
-    res.status(statusCodes.CREATED).json(result.data);
-  } catch (error) {
-    if (error instanceof z.ZodError) {
-      return invalidQueryResponse(res, error);
-    }
-  }
 });
 
 router.patch('/:id', requireRole(['admin']), async (req, res) => {

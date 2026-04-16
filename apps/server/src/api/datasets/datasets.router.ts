@@ -3,6 +3,7 @@ import { z } from 'zod';
 
 import { requireRole } from '@/middleware/auth.middleware';
 import DatasetsController from './datasets.controller';
+import UploadsController from '@/api/uploads/uploads.controller';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
 import { updateDatasetSchema } from './datasets.schema';
 import { statusCodes } from '@/constants/statusCodes';
@@ -47,7 +48,7 @@ router.get('/:id/uploads', requireRole(['admin']), async (req, res) => {
     const page = z.number().int().positive().parse(Number(req.query.page));
     const limit = z.number().int().positive().parse(Number(req.query.limit));
 
-    const result = await DatasetsController.getUploadsByDatasetId(id, search, page, limit);
+    const result = await UploadsController.getUploadsByDatasetId(id, search, page, limit);
 
     if (!result.success) {
       return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -69,7 +70,7 @@ router.post('/:id/uploads', requireRole(['admin']), csvUpload, async (req, res) 
       return res.status(statusCodes.BAD_REQUEST).json({ error: 'No file uploaded' });
     }
 
-    const result = await DatasetsController.createUploadFromCsv(id, req.file);
+    const result = await UploadsController.createUploadFromCsv(id, req.file);
 
     if (!result.success) {
       return res.status(result.error.statusCode).json({ error: result.error.message });
