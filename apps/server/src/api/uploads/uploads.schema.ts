@@ -20,5 +20,4 @@ export const createUploadSchema = z.object({
 export const updateUploadSchema = z.object({
   title: z.string().min(1).optional(),
   visible: z.boolean().optional(),
-  rowCount: z.number().int().nonnegative().optional(),
 });

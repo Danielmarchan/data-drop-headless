@@ -129,6 +129,40 @@ registry.registerPath({
 });
 
 registry.registerPath({
+  method: 'post',
+  path: '/api/datasets/{id}/uploads',
+  summary: 'Upload a CSV file to a dataset',
+  tags: ['Datasets'],
+  parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
+  request: {
+    body: {
+      required: true,
+      content: {
+        'multipart/form-data': {
+          schema: z.object({
+            file: z.any().openapi({
+              type: 'string',
+              format: 'binary',
+              description: 'CSV file to upload. Headers must match the dataset column names.',
+            }),
+          }).openapi('UploadCsvInput'),
+        },
+      },
+    },
+  },
+  responses: {
+    201: {
+      description: 'Upload created successfully',
+      content: { 'application/json': { schema: UploadDtoSchema } },
+    },
+    400: { description: 'No file provided or invalid file type', content: { 'application/json': { schema: ErrorSchema } } },
+    404: { description: 'Dataset not found', content: { 'application/json': { schema: ErrorSchema } } },
+    422: { description: 'CSV validation failed (missing columns, no data rows, or parse error)', content: { 'application/json': { schema: ErrorSchema } } },
+    ...unauthorizedResponse,
+  },
+});
+
+registry.registerPath({
   method: 'patch',
   path: '/api/datasets/{id}',
   summary: 'Update a dataset',

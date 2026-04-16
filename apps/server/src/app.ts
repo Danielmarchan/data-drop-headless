@@ -28,7 +28,7 @@ app.use('/docs', requireSession, docsRouter);
 // Error handler
 app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
   console.error(err);
-  res.status(statusCodes.INTERNAL_SERVER_ERROR).json({ error: 'Internal server error' });
+  res.status(statusCodes.INTERNAL_SERVER_ERROR).json({ error: err instanceof Error ? err?.message : 'Internal server error' });
 });
 
 export default app;

@@ -5,6 +5,8 @@ import { requireRole } from '@/middleware/auth.middleware';
 import DatasetsController from './datasets.controller';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
 import { updateDatasetSchema } from './datasets.schema';
+import { statusCodes } from '@/constants/statusCodes';
+import { csvUpload } from '@/middleware/csv-upload.middleware';
 
 const router = Router();
 
@@ -55,6 +57,29 @@ router.get('/:id/uploads', requireRole(['admin']), async (req, res) => {
   } catch (error) {
     if (error instanceof z.ZodError) {
       return invalidQueryResponse(res, error);
+    }
+  }
+});
+
+router.post('/:id/uploads', requireRole(['admin']), csvUpload, async (req, res) => {
+  try {
+    const id = z.string().uuid().parse(req.params.id);
+
+    if (!req.file) {
+      return res.status(statusCodes.BAD_REQUEST).json({ error: 'No file uploaded' });
+    }
+
+    const result = await DatasetsController.createUploadFromCsv(id, req.file);
+
+    if (!result.success) {
+      return res.status(result.error.statusCode).json({ error: result.error.message });
+    }
+
+    return res.status(statusCodes.CREATED).json(result.data);
+  } catch (error) {
+    if (error instanceof z.ZodError) return invalidQueryResponse(res, error);
+    if (error instanceof Error) {
+      return res.status(statusCodes.BAD_REQUEST).json({ error: error.message });
     }
   }
 });

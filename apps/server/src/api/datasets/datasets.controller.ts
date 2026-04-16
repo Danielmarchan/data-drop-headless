@@ -1,6 +1,8 @@
+import path from 'path';
 import { and, count, desc, eq, ilike } from 'drizzle-orm';
+import { parse } from 'csv-parse/sync';
 
-import { dataset, upload } from '@/db/schema/index';
+import { dataset, upload, uploadRow } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
 import { type DatasetDto, datasetDtoSchemaServer } from './datasets.schema';
 import { type UploadDto, uploadDtoSchemaServer } from '../uploads/uploads.schema';
@@ -137,6 +139,133 @@ class DatasetsController {
         error: {
           statusCode: statusCodes.INTERNAL_SERVER_ERROR,
           message: 'Failed to fetch uploads',
+        },
+      };
+    }
+  }
+
+  async createUploadFromCsv(
+    datasetId: string,
+    file: Express.Multer.File,
+  ): Promise<ControllerResponse<UploadDto>> {
+    try {
+      const datasetWithColumns = await this.db.query.dataset.findFirst({
+        with: { columns: true },
+        where: (fields, { eq }) => eq(fields.id, datasetId),
+      });
+
+      if (!datasetWithColumns) {
+        return {
+          success: false,
+          error: {
+            statusCode: statusCodes.NOT_FOUND,
+            message: 'Dataset not found'
+          }
+        };
+      }
+
+      if (datasetWithColumns.columns.length === 0) {
+        return {
+          success: false,
+          error: {
+            statusCode: statusCodes.UNPROCESSABLE_ENTITY,
+            message: 'Dataset has no columns defined'
+          }
+        };
+      }
+
+      // Parse CSV and validate against dataset columns
+      let records: Record<string, string>[];
+      try {
+        records = parse(file.buffer, {
+          columns: true,
+          skip_empty_lines: true,
+          trim: true,
+          bom: true
+        });
+      } catch {
+        return {
+          success: false,
+          error: {
+            statusCode: statusCodes.UNPROCESSABLE_ENTITY,
+            message: 'CSV file could not be parsed',
+          }
+        };
+      }
+
+      if (records.length === 0) {
+        return {
+          success: false,
+          error: {
+            statusCode: statusCodes.UNPROCESSABLE_ENTITY,
+            message: 'CSV file contains no data rows',
+          }
+        };
+      }
+
+      // Check for missing columns
+      const csvHeaders = Object.keys(records[0]!);
+      const columnNames = datasetWithColumns.columns.map(c => c.name);
+      const missingColumns = columnNames.filter(name => !csvHeaders.includes(name));
+
+      if (missingColumns.length > 0) {
+        return {
+          success: false,
+          error: {
+            statusCode: statusCodes.UNPROCESSABLE_ENTITY,
+            message: `CSV is missing required columns: ${missingColumns.join(', ')}`,
+          },
+        };
+      }
+
+      // Create upload and upload-rows in a transaction
+      const fileName = file.originalname;
+      const title = path.basename(fileName, path.extname(fileName));
+      const rowCount = records.length;
+
+      let createdUploadId: string;
+      await this.db.transaction(async (tx) => {
+        // Insert upload record
+        const [newUpload] = await tx.insert(upload).values({
+          title,
+          fileName,
+          datasetId,
+          rowCount
+        }).returning();
+        
+        createdUploadId = newUpload!.id;
+
+        // Define row payloads
+        const rowPayloads = records.map((record, index) => ({
+          uploadId: createdUploadId,
+          rowIndex: index,
+          data: Object.fromEntries(columnNames.map(name => [name, record[name] ?? null])),
+        }));
+
+        // Insert in batches of 500 to avoid overwhelming the database
+        const CHUNK_SIZE = 500;
+        for (let i = 0; i < rowPayloads.length; i += CHUNK_SIZE) {
+          await tx.insert(uploadRow).values(rowPayloads.slice(i, i + CHUNK_SIZE));
+        }
+      });
+
+      // Fetch and return UploadDto
+      const uploadWithDataset = await this.db.query.upload.findFirst({
+        with: { dataset: true },
+        where: (fields, { eq }) => eq(fields.id, createdUploadId),
+      });
+
+      return {
+        success: true,
+        data: uploadDtoSchemaServer.parse(uploadWithDataset)
+      };
+    } catch (error) {
+      console.error('Error creating upload from CSV:', error);
+      return {
+        success: false,
+        error: {
+          statusCode: statusCodes.INTERNAL_SERVER_ERROR,
+          message: 'Failed to create upload'
         },
       };
     }
