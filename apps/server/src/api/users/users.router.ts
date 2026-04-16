@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { requireRole } from '@/middleware/auth.middleware';
 import UsersController from './users.controller';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
+import { idParamSchema, limitParamSchema, pageParamSchema, searchParamSchema } from '@/helpers/query-params.schema';
 import { statusCodes } from '@/constants/statusCodes';
 import { createUserSchema, updateUserSchema } from './users.schema';
 
@@ -11,9 +12,9 @@ const router = Router();
 
 router.get('/', requireRole(['admin']), async (req, res) => {
   try {
-    const search = z.string().optional().parse(req.query.search);
-    const page = z.number().int().positive().parse(Number(req.query.page));
-    const limit = z.number().int().positive().max(100).parse(Number(req.query.limit));
+    const search = searchParamSchema.parse(req.query.search);
+    const page = pageParamSchema.parse(Number(req.query.page));
+    const limit = limitParamSchema.parse(Number(req.query.limit));
 
     const paginatedUsersResponse = await UsersController.getPaginatedUsers(search, page, limit);
 
@@ -32,7 +33,7 @@ router.get('/', requireRole(['admin']), async (req, res) => {
 });
 
 router.get('/:id', requireRole(['admin']), async (req, res) => {
-  const result = await UsersController.getUserById(z.string().parse(req.params.id));
+  const result = await UsersController.getUserById(idParamSchema.parse(req.params.id));
 
   if (!result.success) {
     return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -61,7 +62,7 @@ router.post('/', requireRole(['admin']), async (req, res) => {
 router.patch('/:id', requireRole(['admin']), async (req, res) => {
   try {
     const input = updateUserSchema.parse(req.body);
-    const result = await UsersController.updateUser(z.string().parse(req.params.id), input);
+    const result = await UsersController.updateUser(idParamSchema.parse(req.params.id), input);
 
     if (!result.success) {
       return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -76,7 +77,7 @@ router.patch('/:id', requireRole(['admin']), async (req, res) => {
 });
 
 router.delete('/:id', requireRole(['admin']), async (req, res) => {
-  const result = await UsersController.deleteUser(z.string().parse(req.params.id));
+  const result = await UsersController.deleteUser(idParamSchema.parse(req.params.id));
 
   if (!result.success) {
     return res.status(result.error.statusCode).json({ error: result.error.message });

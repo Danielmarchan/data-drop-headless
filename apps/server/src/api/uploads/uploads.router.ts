@@ -4,13 +4,14 @@ import { z } from 'zod';
 import { requireRole } from '@/middleware/auth.middleware';
 import UploadsController from './uploads.controller';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
+import { idParamSchema } from '@/helpers/query-params.schema';
 import { statusCodes } from '@/constants/statusCodes';
 import { updateUploadSchema } from './uploads.schema';
 
 const router = Router();
 
 router.get('/:id', requireRole(['admin']), async (req, res) => {
-  const result = await UploadsController.getUploadById(z.string().parse(req.params.id));
+  const result = await UploadsController.getUploadById(idParamSchema.parse(req.params.id));
 
   if (!result.success) {
     return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -22,7 +23,7 @@ router.get('/:id', requireRole(['admin']), async (req, res) => {
 router.patch('/:id', requireRole(['admin']), async (req, res) => {
   try {
     const input = updateUploadSchema.parse(req.body);
-    const result = await UploadsController.updateUpload(z.string().parse(req.params.id), input);
+    const result = await UploadsController.updateUpload(idParamSchema.parse(req.params.id), input);
 
     if (!result.success) {
       return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -37,7 +38,7 @@ router.patch('/:id', requireRole(['admin']), async (req, res) => {
 });
 
 router.delete('/:id', requireRole(['admin']), async (req, res) => {
-  const result = await UploadsController.deleteUpload(z.string().parse(req.params.id));
+  const result = await UploadsController.deleteUpload(idParamSchema.parse(req.params.id));
 
   if (!result.success) {
     return res.status(result.error.statusCode).json({ error: result.error.message });
