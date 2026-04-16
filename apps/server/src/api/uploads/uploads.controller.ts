@@ -4,7 +4,7 @@ import { parse } from 'csv-parse/sync';
 
 import { upload, uploadRow } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
-import { type UploadDto, uploadDtoSchemaServer } from './uploads.schema';
+import { type UploadDto, uploadDtoSchemaServer, type UpdateUploadInput } from './uploads.schema';
 import { type PaginatedList } from '@data-drop/api-schema';
 import { type ControllerResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
@@ -40,7 +40,7 @@ class UploadsController {
 
   async updateUpload(
     id: string,
-    input: { title?: string; visible?: boolean; rowCount?: number },
+    input: UpdateUploadInput,
   ): Promise<ControllerResponse<UploadDto>> {
     try {
       const [updated] = await this.db

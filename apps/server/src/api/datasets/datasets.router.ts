@@ -15,7 +15,7 @@ router.get('/', requireRole(['admin']), async (req, res) => {
   try {
     const search = z.string().optional().parse(req.query.search);
     const page = z.number().int().positive().parse(Number(req.query.page));
-    const limit = z.number().int().positive().parse(Number(req.query.limit));
+    const limit = z.number().int().positive().max(100).parse(Number(req.query.limit));
 
     const result = await DatasetsController.getPaginatedDatasets(search, page, limit);
 
@@ -46,7 +46,7 @@ router.get('/:id/uploads', requireRole(['admin']), async (req, res) => {
     const id = z.string().parse(req.params.id);
     const search = z.string().optional().parse(req.query.search);
     const page = z.number().int().positive().parse(Number(req.query.page));
-    const limit = z.number().int().positive().parse(Number(req.query.limit));
+    const limit = z.number().int().positive().max(100).parse(Number(req.query.limit));
 
     const result = await UploadsController.getUploadsByDatasetId(id, search, page, limit);
 

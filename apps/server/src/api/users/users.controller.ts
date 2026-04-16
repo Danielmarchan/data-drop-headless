@@ -45,19 +45,12 @@ class UsersController {
         limit,
         offset: (safePage - 1) * limit,
       });
-      const validatedUsers = users.filter(user => {
-        const u = userDtoSchemaServer.safeParse(user);
-        if (!u.success) {
-          console.error('Invalid user data:', u.error, 'Original data:', user);
-        }
-        return u.success;       
-      });
-
+      const validatedUsers = users.map(u => userDtoSchemaServer.parse(u));
 
       return {
         success: true,
         data: {
-          nodes: validatedUsers.map(user => userDtoSchemaServer.parse(user)),
+          nodes: validatedUsers,
           total,
           pageInfo: {
             page: safePage,
@@ -117,9 +110,8 @@ class UsersController {
         error: { statusCode: statusCodes.BAD_REQUEST, message: 'Invalid role name' },
       };
 
-      const [created] = await this.db
-        .insert(user)
-        .values({
+      await this.db.transaction(async (tx) => {
+        await tx.insert(user).values({
           id: userId,
           name,
           email: input.email,
@@ -127,22 +119,22 @@ class UsersController {
           lastName: input.lastName,
           roleId: role.id,
           emailVerified: false,
-        })
-        .returning();
+        });
 
-      await this.db.insert(account).values({
-        id: randomUUID(),
-        accountId: userId,
-        providerId: 'credential',
-        userId,
-        password: hashedPw,
-        createdAt: now,
-        updatedAt: now,
+        await tx.insert(account).values({
+          id: randomUUID(),
+          accountId: userId,
+          providerId: 'credential',
+          userId,
+          password: hashedPw,
+          createdAt: now,
+          updatedAt: now,
+        });
       });
 
       const userWithRole = await this.db.query.user.findFirst({
         with: { role: true },
-        where: (fields, { eq }) => eq(fields.id, created!.id),
+        where: (fields, { eq }) => eq(fields.id, userId),
       });
 
       return {
@@ -166,25 +158,34 @@ class UsersController {
     input: UpdateUserInput,
   ): Promise<ControllerResponse<UserDto>> {
     try {
-      const role = await this.db.query.role.findFirst({
-        where: (fields, { eq }) => eq(fields.name, input.role ?? ''),
-      });
+      const role = input.role
+        ? await this.db.query.role.findFirst({ where: (fields, { eq }) => eq(fields.name, input.role!) })
+        : undefined;
 
       if (input.role && !role) return {
         success: false,
         error: {
-        statusCode: statusCodes.BAD_REQUEST,
+          statusCode: statusCodes.BAD_REQUEST,
           message: 'Invalid role name'
         },
       };
 
+      const { role: _roleName, firstName, lastName, ...rest } = input;
+
+      // Recompute name if either name part is being updated
+      let name: string | undefined;
+      if (firstName !== undefined || lastName !== undefined) {
+        const existing = await this.db.query.user.findFirst({
+          where: (fields, { eq }) => eq(fields.id, id),
+        });
+        const resolvedFirst = firstName ?? existing?.firstName ?? '';
+        const resolvedLast = lastName ?? existing?.lastName ?? '';
+        name = `${resolvedFirst} ${resolvedLast}`.trim();
+      }
+
       const [updated] = await this.db
         .update(user)
-        .set({
-          ...input,
-          roleId: role ? role.id : undefined,
-          updatedAt: new Date()
-        })
+        .set({ ...rest, firstName, lastName, name, roleId: role?.id, updatedAt: new Date() })
         .where(eq(user.id, id))
         .returning();
 

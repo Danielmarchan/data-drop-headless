@@ -13,7 +13,7 @@ router.get('/', requireRole(['admin']), async (req, res) => {
   try {
     const search = z.string().optional().parse(req.query.search);
     const page = z.number().int().positive().parse(Number(req.query.page));
-    const limit = z.number().int().positive().parse(Number(req.query.limit));
+    const limit = z.number().int().positive().max(100).parse(Number(req.query.limit));
 
     const paginatedUsersResponse = await UsersController.getPaginatedUsers(search, page, limit);
 
