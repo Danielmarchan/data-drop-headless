@@ -1,5 +1,9 @@
+import { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router';
-import { useUsers } from '@/api/users';
+import { type UserDto } from '@data-drop/api-schema';
+import { useDeleteUser, useUsers } from '@/api/users';
+import { SearchIcon } from '@/components/icons';
+import ConfirmModal from '@/components/confirm-modal';
 import UserRow from './components/user-row';
 import Pagination from './components/pagination';
 
@@ -10,6 +14,9 @@ export default function AdminUsersPage() {
   const page = Math.max(1, Number(searchParams.get('page') ?? '1') || 1);
 
   const { data, isLoading } = useUsers();
+  const deleteUser = useDeleteUser();
+
+  const [userToDelete, setUserToDelete] = useState<UserDto | null>(null);
 
   function handleSearchSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -26,7 +33,7 @@ export default function AdminUsersPage() {
   const safePage = data?.pageInfo?.page ?? page;
 
   return (
-    <div className="px-6 py-8">
+    <div className="container px-6 py-8 mx-auto">
       <div className="flex items-center justify-between mb-8">
         <h1 className="font-manrope font-extrabold text-3xl text-on-surface tracking-tight">
           Users
@@ -34,22 +41,7 @@ export default function AdminUsersPage() {
         <div className="flex items-center gap-3">
           <form onSubmit={handleSearchSubmit}>
             <div className="flex items-center h-11 w-72 bg-surface-lowest border border-outline-variant/20 rounded-lg px-3 gap-2.5">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                className="shrink-0 text-on-surface-variant/60"
-                aria-hidden="true"
-              >
-                <path
-                  d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667ZM14 14l-2.9-2.9"
-                  stroke="currentColor"
-                  strokeWidth="1.333"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <SearchIcon className="shrink-0 text-on-surface-variant/60" />
               <input
                 name="search"
                 type="text"
@@ -61,6 +53,7 @@ export default function AdminUsersPage() {
           </form>
           <button
             type="button"
+            onClick={() => void navigate('/admin/users/new')}
             className="h-11 px-5 rounded-lg bg-primary-accent text-white font-inter font-semibold text-base transition-opacity hover:opacity-90 shrink-0"
           >
             New User
@@ -90,7 +83,12 @@ export default function AdminUsersPage() {
         ) : (
           <div className="flex flex-col gap-3">
             {users.map((u) => (
-              <UserRow key={u.id} u={u} />
+              <UserRow
+                key={u.id}
+                u={u}
+                onEdit={() => void navigate(`/admin/users/${u.id}/edit`)}
+                onDelete={() => setUserToDelete(u)}
+              />
             ))}
           </div>
         )}
@@ -99,6 +97,23 @@ export default function AdminUsersPage() {
           <Pagination page={safePage} totalPages={totalPages} total={total} search={search} />
         )}
       </div>
+
+      <ConfirmModal
+        open={userToDelete !== null}
+        title="Delete user"
+        description={`Are you sure you want to delete ${userToDelete?.name}? This action cannot be undone.`}
+        confirmLabel="Delete"
+        isDestructive
+        isPending={deleteUser.isPending}
+        onConfirm={() => {
+          if (userToDelete) {
+            deleteUser.mutate(userToDelete.id, {
+              onSuccess: () => setUserToDelete(null),
+            });
+          }
+        }}
+        onCancel={() => setUserToDelete(null)}
+      />
     </div>
   );
 }

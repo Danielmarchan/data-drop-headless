@@ -1,4 +1,4 @@
-import { useQuery } from '@tanstack/react-query';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { useSearchParams } from 'react-router';
 import { http } from '@/lib/http';
 import { type UserDto, type PaginatedList } from '@data-drop/api-schema';
@@ -18,5 +18,15 @@ export function useUsers() {
           limit: 10,
         } })
         .then((r) => r.data),
+  });
+}
+
+export function useDeleteUser() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: (id: string) => http.delete(`/api/users/${id}`),
+    onSuccess: () => {
+      void queryClient.invalidateQueries({ queryKey: ['admin', 'users'] });
+    },
   });
 }
