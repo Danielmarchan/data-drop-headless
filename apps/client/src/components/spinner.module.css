@@ -1,0 +1,11 @@
+.spinner {
+  border: 5px solid var(--color-surface-high); /* Light grey background circle */
+  border-top: 5px solid var(--color-primary); /* Blue spinning indicator */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

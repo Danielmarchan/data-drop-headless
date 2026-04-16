@@ -1,4 +1,5 @@
 import Button from '@/components/button';
+import Spinner from './spinner';
 
 type ConfirmModalProps = {
   open: boolean;
@@ -44,7 +45,7 @@ export default function ConfirmModal({
             disabled={isPending}
             className="px-4"
           >
-            {isPending ? 'Loading...' : confirmLabel}
+            {isPending ? <Spinner /> : confirmLabel}
           </Button>
         </div>
       </div>

@@ -23,10 +23,10 @@ export default function UserRow({ u, onEdit, onDelete }: UserRowProps) {
 
       <div className="flex items-center gap-2 shrink-0">
         <Button variant="icon" type="button" onClick={onEdit} aria-label={`Edit ${u.name}`}>
-          <PencilIcon />
+          <PencilIcon className="cursor-pointer" />
         </Button>
         <Button variant="icon" type="button" onClick={onDelete} aria-label={`Delete ${u.name}`}>
-          <TrashIcon />
+          <TrashIcon className="cursor-pointer" />
         </Button>
       </div>
     </div>

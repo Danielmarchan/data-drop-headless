@@ -1,13 +1,22 @@
-import { useQuery } from '@tanstack/react-query';
-import { type DatasetDto, type PaginatedList } from '@data-drop/api-schema';
+import { useInfiniteQuery } from '@tanstack/react-query';
+import { useSearchParams } from 'react-router';
 import { http } from '@/lib/http';
+import { type DatasetDto, type PaginatedList } from '@data-drop/api-schema';
 
-export function useDatasets(search = '') {
-  return useQuery({
+export function useDatasets() {
+  const [searchParams] = useSearchParams();
+  const search = searchParams.get('search') ?? '';
+
+  return useInfiniteQuery({
     queryKey: ['admin', 'datasets', { search }],
-    queryFn: () =>
+    queryFn: ({ pageParam }) =>
       http
-        .get<PaginatedList<DatasetDto>>('/api/datasets', { params: { search, limit: 10, page: 1 } })
+        .get<PaginatedList<DatasetDto>>('/api/datasets', { params: { search, page: pageParam, limit: 10 } })
         .then((r) => r.data),
+    initialPageParam: 1,
+    getNextPageParam: (lastPage) =>
+      lastPage.pageInfo.page < lastPage.pageInfo.totalPages
+        ? lastPage.pageInfo.page + 1
+        : undefined,
   });
 }

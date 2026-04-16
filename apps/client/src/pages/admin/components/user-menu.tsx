@@ -88,7 +88,7 @@ export default function UserMenu({ email, userId }: UserMenuProps) {
           <button
             type="button"
             onClick={handleSignOut}
-            className="flex w-full items-center gap-3 px-4 h-11 font-inter font-normal text-sm text-error hover:bg-error-surface rounded-b-lg cursor-pointer border-0 bg-transparent"
+            className="flex w-full items-center gap-3 px-4 h-11 font-inter font-normal text-sm text-error hover:bg-error-surface rounded-b-lg cursor-pointer border-0 bg-transparent cursor-pointer"
           >
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path

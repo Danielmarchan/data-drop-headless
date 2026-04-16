@@ -36,7 +36,13 @@ export default function Button({
 
   return (
     <button
-      className={[VARIANT_CLASSES[variant], sizeClass, fullWidthClass, className]
+      className={[
+        VARIANT_CLASSES[variant],
+        sizeClass,
+        fullWidthClass,
+        className,
+        'cursor-pointer'
+      ]
         .filter(Boolean)
         .join(' ')}
       {...props}

@@ -10,7 +10,7 @@ export default function SearchIcon({ className }: { className?: string }) {
     >
       <path
         d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667ZM14 14l-2.9-2.9"
-        stroke="currentColor"
+        stroke="var(--color-primary)"
         strokeWidth="1.333"
         strokeLinecap="round"
         strokeLinejoin="round"

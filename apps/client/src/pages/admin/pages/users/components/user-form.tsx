@@ -207,7 +207,7 @@ export default function UserForm({
                 <button
                   type="button"
                   onClick={handleAddAll}
-                  className="font-inter text-sm font-semibold text-primary transition-opacity hover:opacity-80"
+                  className="font-inter text-sm font-semibold text-primary transition-opacity hover:opacity-80 cursor-pointer"
                   disabled={filteredDatasetIds.length === 0}
                 >
                   Add all
