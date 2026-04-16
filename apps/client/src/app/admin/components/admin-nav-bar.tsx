@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 import AdminNavLinks from './admin-nav-links';
 import UserMenu from './user-menu';
 
-interface AdminNavBarProps {
+type AdminNavBarProps = {
   email: string;
   userId: string;
 }

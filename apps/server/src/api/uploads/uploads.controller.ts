@@ -5,7 +5,8 @@ import { parse } from 'csv-parse/sync';
 import { upload, uploadRow } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
 import { type UploadDto, uploadDtoSchemaServer } from './uploads.schema';
-import { type ControllerResponse, type PaginatedList } from '@data-drop/api-schema';
+import { type PaginatedList } from '@data-drop/api-schema';
+import { type ControllerResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
 
 class UploadsController {

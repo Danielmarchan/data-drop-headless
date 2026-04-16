@@ -1,7 +1,7 @@
 import { Navigate, Outlet } from 'react-router';
 import { authClient } from '@/lib/auth';
 
-interface RequireAuthProps {
+type RequireAuthProps = {
   roles?: string[];
   redirectTo?: string;
 }

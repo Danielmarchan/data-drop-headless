@@ -40,6 +40,7 @@ export default tseslint.config(
     rules: {
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+      '@typescript-eslint/consistent-type-definitions': 'off',
     },
   },
   {
@@ -66,6 +67,7 @@ export default tseslint.config(
         'error',
         { 'drizzleObjectName': ['db'] }
       ],
+      '@typescript-eslint/consistent-type-definitions': 'off',
     },
   },
 );

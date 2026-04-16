@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router';
 import { useEffect, useRef, useState } from 'react';
 import { authClient } from '@/lib/auth';
 
-interface UserMenuProps {
+type UserMenuProps = {
   email: string;
   userId: string;
 }

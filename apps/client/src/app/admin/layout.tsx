@@ -4,13 +4,13 @@ import { http } from '@/lib/http';
 import { authClient } from '@/lib/auth';
 import AdminNavBar from './components/admin-nav-bar';
 
-interface AdminMeResponse {
+type AdminMeResponse = {
   user: {
     id: string;
     email: string;
     role: { name: string } | null;
-  };
-}
+  }
+};
 
 export default function AdminLayout() {
   const navigate = useNavigate();
