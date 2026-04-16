@@ -67,7 +67,7 @@ export default function UserMenu({ email, userId }: UserMenuProps) {
           </Link>
 
           <Link
-            to="/"
+            to="/charts"
             onClick={() => setOpen(false)}
             className="flex items-center gap-3 px-4 h-11 font-inter font-medium text-sm text-primary hover:bg-surface"
           >
