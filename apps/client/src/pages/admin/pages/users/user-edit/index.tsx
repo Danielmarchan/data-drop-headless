@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import { AxiosError } from 'axios';
 import { type UpdateUserInput } from '@data-drop/api-schema';
-import { useUpdateUser, useUser } from '@/api/users';
+import { useUpdateUser, useUser } from '@/api/admin/users';
 import Button from '@/components/button';
 import UserForm from '../components/user-form';
 

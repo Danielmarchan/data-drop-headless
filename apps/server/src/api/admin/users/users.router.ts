@@ -10,7 +10,7 @@ import { createUserSchema, updateUserSchema } from './users.schema';
 
 const router = Router();
 
-router.get('/', requireRole(['admin']), async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const search = searchParamSchema.parse(req.query.search);
     const page = pageParamSchema.parse(Number(req.query.page));
@@ -32,7 +32,7 @@ router.get('/', requireRole(['admin']), async (req, res) => {
   }
 });
 
-router.get('/:id', requireRole(['admin']), async (req, res) => {
+router.get('/:id', async (req, res) => {
   const result = await UsersController.getUserById(idParamSchema.parse(req.params.id));
 
   if (!result.success) {
@@ -42,7 +42,7 @@ router.get('/:id', requireRole(['admin']), async (req, res) => {
   res.json(result.data);
 });
 
-router.post('/', requireRole(['admin']), async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const input = createUserSchema.parse(req.body);
     const result = await UsersController.createUser(input);
@@ -59,7 +59,7 @@ router.post('/', requireRole(['admin']), async (req, res) => {
   }
 });
 
-router.patch('/:id', requireRole(['admin']), async (req, res) => {
+router.patch('/:id', async (req, res) => {
   try {
     const input = updateUserSchema.parse(req.body);
     const result = await UsersController.updateUser(idParamSchema.parse(req.params.id), input);
@@ -76,7 +76,7 @@ router.patch('/:id', requireRole(['admin']), async (req, res) => {
   }
 });
 
-router.delete('/:id', requireRole(['admin']), async (req, res) => {
+router.delete('/:id', async (req, res) => {
   const result = await UsersController.deleteUser(idParamSchema.parse(req.params.id));
 
   if (!result.success) {

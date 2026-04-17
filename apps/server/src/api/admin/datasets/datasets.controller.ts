@@ -2,8 +2,8 @@ import { count, desc, eq, ilike } from 'drizzle-orm';
 
 import { dataset } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
-import { type DatasetDto, datasetDtoSchemaServer } from './datasets.schema';
-import { type PaginatedList } from '@data-drop/api-schema';
+import { adminListDatasetSchemaServer, datasetDtoSchemaServer } from './datasets.schema';
+import { AdminListDataset, type PaginatedList, type DatasetDto } from '@data-drop/api-schema';
 import { type ControllerResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
 
@@ -16,7 +16,7 @@ class DatasetsController {
     search: string | undefined,
     page: number,
     limit: number,
-  ): Promise<ControllerResponse<PaginatedList<DatasetDto>>> {
+  ): Promise<ControllerResponse<PaginatedList<AdminListDataset>>> {
     try {
       const whereClause = search ? ilike(dataset.title, `%${search}%`) : undefined;
 
@@ -26,7 +26,6 @@ class DatasetsController {
       const safePage = Math.min(page, totalPages);
 
       const datasets = await this.db.query.dataset.findMany({
-        with: { columns: true },
         where: search
           ? (fields, ops) => ops.ilike(fields.title, `%${search}%`)
           : undefined,
@@ -38,7 +37,7 @@ class DatasetsController {
       return {
         success: true,
         data: {
-          nodes: datasets.map(d => datasetDtoSchemaServer.parse(d)),
+          nodes: datasets.map(d => adminListDatasetSchemaServer.parse(d)),
           total,
           pageInfo: {
             page: safePage,
@@ -78,39 +77,6 @@ class DatasetsController {
       return {
         success: false,
         error: { statusCode: statusCodes.INTERNAL_SERVER_ERROR, message: 'Failed to fetch dataset' },
-      };
-    }
-  }
-
-  async updateDataset(
-    id: string,
-    input: { title?: string },
-  ): Promise<ControllerResponse<DatasetDto>> {
-    try {
-      const [updated] = await this.db
-        .update(dataset)
-        .set({ ...input, updatedAt: new Date() })
-        .where(eq(dataset.id, id))
-        .returning();
-
-      if (!updated) {
-        return {
-          success: false,
-          error: { statusCode: statusCodes.NOT_FOUND, message: 'Dataset not found' },
-        };
-      }
-
-      const withRelations = await this.db.query.dataset.findFirst({
-        with: { columns: true },
-        where: (fields, { eq }) => eq(fields.id, updated.id),
-      });
-
-      return { success: true, data: datasetDtoSchemaServer.parse(withRelations) };
-    } catch (error) {
-      console.error('Error updating dataset:', error);
-      return {
-        success: false,
-        error: { statusCode: statusCodes.INTERNAL_SERVER_ERROR, message: 'Failed to update dataset' },
       };
     }
   }

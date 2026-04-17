@@ -1,7 +1,7 @@
 import { useEffect, useId, useMemo, useState } from 'react';
 import { Link } from 'react-router';
 import { type CreateUserInput, type UpdateUserInput } from '@data-drop/api-schema';
-import { useDatasets } from '@/api/datasets';
+import { useDatasets } from '@/api/admin/datasets';
 import Button from '@/components/button';
 import FormSection from '@/components/form-section';
 import SearchInput from '@/components/search-input';

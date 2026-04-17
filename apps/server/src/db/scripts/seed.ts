@@ -249,7 +249,10 @@ async function seed() {
 
   const [ecommerceDataset] = await db
     .insert(dataset)
-    .values({ title: 'eCommerce Store Performance' })
+    .values({
+      title: 'eCommerce Store Performance',
+      slug: 'ecommerce-store-performance'
+    })
     .returning();
 
   console.log('Inserting dataset columns...');

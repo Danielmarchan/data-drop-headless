@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router';
 import { type UserDto } from '@data-drop/api-schema';
-import { useDeleteUser, useUsers } from '@/api/users';
+import { useDeleteUser, useUsers } from '@/api/admin/users';
 import Button from '@/components/button';
 import ConfirmModal from '@/components/confirm-modal';
 import AdminListLayout from '@/components/admin-list-layout';

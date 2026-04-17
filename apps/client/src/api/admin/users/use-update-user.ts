@@ -6,7 +6,7 @@ export function useUpdateUser() {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: ({ id, data }: { id: string; data: UpdateUserInput }) =>
-      http.patch<UserDetailDto>(`/api/users/${id}`, data).then((r) => r.data),
+      http.patch<UserDetailDto>(`/api/admin/users/${id}`, data).then((r) => r.data),
     onSuccess: (_, { id }) => {
       void queryClient.invalidateQueries({ queryKey: ['admin', 'users'] });
       void queryClient.invalidateQueries({ queryKey: ['admin', 'users', id] });

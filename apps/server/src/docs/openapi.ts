@@ -11,10 +11,10 @@ import {
   userDtoSchema,
   userDetailDtoSchema,
   paginatedListSchema,
+  adminListDatasetSchema,
 } from '@data-drop/api-schema';
-import { updateDatasetSchema } from '@/api/datasets/datasets.schema';
-import { updateUploadSchema } from '@/api/uploads/uploads.schema';
-import { createUserSchema, updateUserSchema } from '@/api/users/users.schema';
+import { updateUploadSchema } from '@/api/admin/uploads/uploads.schema';
+import { createUserSchema, updateUserSchema } from '@/api/admin/users/users.schema';
 
 extendZodWithOpenApi(z);
 
@@ -34,6 +34,11 @@ const DatasetDtoSchema = registry.register(
     .openapi({ description: 'A dataset with its column schema' }),
 );
 
+const AdminListDatasetSchema = registry.register(
+  'AdminListDataset',
+  adminListDatasetSchema.openapi({ description: 'A dataset as returned in admin list endpoints, without column details' }),
+);
+
 const UploadDtoSchema = registry.register(
   'UploadDto',
   uploadDtoSchema.openapi({ description: 'A data upload belonging to a dataset' }),
@@ -51,7 +56,7 @@ const UserDetailDtoSchema = registry.register(
 
 const PaginatedDatasets = registry.register(
   'PaginatedDatasets',
-  paginatedListSchema(DatasetDtoSchema).openapi({ description: 'Paginated list of datasets' }),
+  paginatedListSchema(AdminListDatasetSchema).openapi({ description: 'Paginated list of datasets' }),
 );
 
 const PaginatedUploads = registry.register(
@@ -105,13 +110,105 @@ const unauthorizedResponse = {
   403: { description: 'Forbidden — admin role required' },
 };
 
-// Datasets
+// Auth
+
+const SignInEmailInputSchema = registry.register(
+  'SignInEmailInput',
+  z.object({
+    email: z.string().email(),
+    password: z.string(),
+  }).openapi({ description: 'Email and password credentials' }),
+);
+
+const SignUpEmailInputSchema = registry.register(
+  'SignUpEmailInput',
+  z.object({
+    email: z.string().email(),
+    password: z.string(),
+    name: z.string(),
+  }).openapi({ description: 'New account registration data' }),
+);
+
+const MeUserResponseSchema = registry.register(
+  'MeUserResponse',
+  z.object({
+    user: z.object({
+      id: z.string(),
+      email: z.string(),
+      name: z.string(),
+      role: z.object({
+        id: z.string(),
+        name: z.string(),
+      }),
+    }),
+  }).openapi({ description: 'Currently authenticated user with their role' }),
+);
+
+registry.registerPath({
+  method: 'post',
+  path: '/api/auth/sign-in/email',
+  summary: 'Sign in with email and password',
+  tags: ['Auth'],
+  request: {
+    body: {
+      required: true,
+      content: { 'application/json': { schema: SignInEmailInputSchema } },
+    },
+  },
+  responses: {
+    200: { description: 'Signed in — session cookie set' },
+    401: { description: 'Invalid credentials' },
+  },
+});
+
+registry.registerPath({
+  method: 'post',
+  path: '/api/auth/sign-up/email',
+  summary: 'Register a new account',
+  tags: ['Auth'],
+  request: {
+    body: {
+      required: true,
+      content: { 'application/json': { schema: SignUpEmailInputSchema } },
+    },
+  },
+  responses: {
+    200: { description: 'Account created — session cookie set' },
+    422: { description: 'Validation error' },
+  },
+});
+
+registry.registerPath({
+  method: 'post',
+  path: '/api/auth/sign-out',
+  summary: 'Sign out',
+  tags: ['Auth'],
+  responses: {
+    200: { description: 'Signed out — session cookie cleared' },
+  },
+});
 
 registry.registerPath({
   method: 'get',
-  path: '/api/datasets',
+  path: '/api/auth/me',
+  summary: 'Get the currently authenticated user',
+  tags: ['Auth'],
+  responses: {
+    200: {
+      description: 'Authenticated user with their role',
+      content: { 'application/json': { schema: MeUserResponseSchema } },
+    },
+    401: { description: 'Unauthorized — no active session' },
+  },
+});
+
+// Admin: Datasets
+
+registry.registerPath({
+  method: 'get',
+  path: '/api/admin/datasets',
   summary: 'List datasets (paginated)',
-  tags: ['Datasets'],
+  tags: ['Admin: Datasets'],
   parameters: paginationParams,
   responses: {
     200: {
@@ -124,9 +221,9 @@ registry.registerPath({
 
 registry.registerPath({
   method: 'get',
-  path: '/api/datasets/{id}',
+  path: '/api/admin/datasets/{id}',
   summary: 'Get a dataset by ID',
-  tags: ['Datasets'],
+  tags: ['Admin: Datasets'],
   parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
   responses: {
     200: {
@@ -139,36 +236,10 @@ registry.registerPath({
 });
 
 registry.registerPath({
-  method: 'patch',
-  path: '/api/datasets/{id}',
-  summary: 'Update a dataset',
-  tags: ['Datasets'],
-  parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
-  request: {
-    body: {
-      required: true,
-      content: {
-        'application/json': {
-          schema: updateDatasetSchema.openapi('UpdateDatasetInput'),
-        },
-      },
-    },
-  },
-  responses: {
-    200: {
-      description: 'Updated dataset',
-      content: { 'application/json': { schema: DatasetDtoSchema } },
-    },
-    404: { description: 'Dataset not found', content: { 'application/json': { schema: ErrorSchema } } },
-    ...unauthorizedResponse,
-  },
-});
-
-registry.registerPath({
   method: 'get',
-  path: '/api/datasets/{id}/uploads',
+  path: '/api/admin/datasets/{id}/uploads',
   summary: 'List uploads for a dataset (paginated)',
-  tags: ['Datasets'],
+  tags: ['Admin: Datasets'],
   parameters: [
     { name: 'id', in: 'path', required: true, schema: { type: 'string' } },
     ...paginationParams,
@@ -185,9 +256,9 @@ registry.registerPath({
 
 registry.registerPath({
   method: 'post',
-  path: '/api/datasets/{id}/uploads',
+  path: '/api/admin/datasets/{id}/uploads',
   summary: 'Upload a CSV file to a dataset',
-  tags: ['Datasets'],
+  tags: ['Admin: Datasets'],
   parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
   request: {
     body: {
@@ -217,13 +288,13 @@ registry.registerPath({
   },
 });
 
-// Uploads
+// Admin: Uploads
 
 registry.registerPath({
   method: 'get',
-  path: '/api/uploads/{id}',
+  path: '/api/admin/uploads/{id}',
   summary: 'Get an upload by ID',
-  tags: ['Uploads'],
+  tags: ['Admin: Uploads'],
   parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
   responses: {
     200: {
@@ -237,9 +308,9 @@ registry.registerPath({
 
 registry.registerPath({
   method: 'patch',
-  path: '/api/uploads/{id}',
+  path: '/api/admin/uploads/{id}',
   summary: 'Update an upload',
-  tags: ['Uploads'],
+  tags: ['Admin: Uploads'],
   parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
   request: {
     body: {
@@ -264,9 +335,9 @@ registry.registerPath({
 
 registry.registerPath({
   method: 'delete',
-  path: '/api/uploads/{id}',
+  path: '/api/admin/uploads/{id}',
   summary: 'Delete an upload',
-  tags: ['Uploads'],
+  tags: ['Admin: Uploads'],
   parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
   responses: {
     204: { description: 'Upload deleted' },
@@ -275,13 +346,13 @@ registry.registerPath({
   },
 });
 
-// Users
+// Admin: Users
 
 registry.registerPath({
   method: 'get',
-  path: '/api/users',
+  path: '/api/admin/users',
   summary: 'List users (paginated)',
-  tags: ['Users'],
+  tags: ['Admin: Users'],
   parameters: paginationParams,
   responses: {
     200: {
@@ -294,9 +365,9 @@ registry.registerPath({
 
 registry.registerPath({
   method: 'get',
-  path: '/api/users/{id}',
+  path: '/api/admin/users/{id}',
   summary: 'Get a user by ID',
-  tags: ['Users'],
+  tags: ['Admin: Users'],
   parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
   responses: {
     200: {
@@ -310,9 +381,9 @@ registry.registerPath({
 
 registry.registerPath({
   method: 'post',
-  path: '/api/users',
+  path: '/api/admin/users',
   summary: 'Create a user',
-  tags: ['Users'],
+  tags: ['Admin: Users'],
   request: {
     body: {
       required: true,
@@ -335,9 +406,9 @@ registry.registerPath({
 
 registry.registerPath({
   method: 'patch',
-  path: '/api/users/{id}',
+  path: '/api/admin/users/{id}',
   summary: 'Update a user',
-  tags: ['Users'],
+  tags: ['Admin: Users'],
   parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
   request: {
     body: {
@@ -362,9 +433,9 @@ registry.registerPath({
 
 registry.registerPath({
   method: 'delete',
-  path: '/api/users/{id}',
+  path: '/api/admin/users/{id}',
   summary: 'Delete a user',
-  tags: ['Users'],
+  tags: ['Admin: Users'],
   parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
   responses: {
     204: { description: 'User deleted' },

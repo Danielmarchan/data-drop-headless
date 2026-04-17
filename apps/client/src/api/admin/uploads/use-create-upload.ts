@@ -15,7 +15,7 @@ export function useCreateUpload() {
       const form = new FormData();
       form.append('file', file);
       if (title) form.append('title', title);
-      return http.post<UploadDto>(`/api/datasets/${datasetId}/uploads`, form).then((r) => r.data);
+      return http.post<UploadDto>(`/api/admin/datasets/${datasetId}/uploads`, form).then((r) => r.data);
     },
     onSuccess: (_, { datasetId }) => {
       void queryClient.invalidateQueries({ queryKey: ['admin', 'uploads', datasetId] });

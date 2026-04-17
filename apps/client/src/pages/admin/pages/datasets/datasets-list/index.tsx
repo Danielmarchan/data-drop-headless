@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router';
-import { useDatasets } from '@/api/datasets';
+import { useDatasets } from '@/api/admin/datasets';
 import AdminListLayout from '@/components/admin-list-layout';
 import DatasetRow from './components/dataset-row';
 

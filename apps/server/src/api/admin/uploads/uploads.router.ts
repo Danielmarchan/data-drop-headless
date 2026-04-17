@@ -10,7 +10,7 @@ import { updateUploadSchema } from './uploads.schema';
 
 const router = Router();
 
-router.get('/:id', requireRole(['admin']), async (req, res) => {
+router.get('/:id', async (req, res) => {
   const result = await UploadsController.getUploadById(idParamSchema.parse(req.params.id));
 
   if (!result.success) {
@@ -20,7 +20,7 @@ router.get('/:id', requireRole(['admin']), async (req, res) => {
   res.json(result.data);
 });
 
-router.patch('/:id', requireRole(['admin']), async (req, res) => {
+router.patch('/:id', async (req, res) => {
   try {
     const input = updateUploadSchema.parse(req.body);
     const result = await UploadsController.updateUpload(idParamSchema.parse(req.params.id), input);
@@ -37,7 +37,7 @@ router.patch('/:id', requireRole(['admin']), async (req, res) => {
   }
 });
 
-router.delete('/:id', requireRole(['admin']), async (req, res) => {
+router.delete('/:id', async (req, res) => {
   const result = await UploadsController.deleteUpload(idParamSchema.parse(req.params.id));
 
   if (!result.success) {

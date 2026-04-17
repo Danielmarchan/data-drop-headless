@@ -7,7 +7,7 @@ export function useUploads(datasetId: string) {
     queryKey: ['admin', 'uploads', datasetId],
     queryFn: ({ pageParam }) =>
       http
-        .get<PaginatedList<UploadDto>>(`/api/datasets/${datasetId}/uploads`, {
+        .get<PaginatedList<UploadDto>>(`/api/admin/datasets/${datasetId}/uploads`, {
           params: { page: pageParam, limit: 10 },
         })
         .then((r) => r.data),

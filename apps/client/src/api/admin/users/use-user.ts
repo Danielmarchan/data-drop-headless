@@ -5,7 +5,7 @@ import { type UserDetailDto } from '@data-drop/api-schema';
 export function useUser(id: string) {
   return useQuery({
     queryKey: ['admin', 'users', id],
-    queryFn: () => http.get<UserDetailDto>(`/api/users/${id}`).then((r) => r.data),
+    queryFn: () => http.get<UserDetailDto>(`/api/admin/users/${id}`).then((r) => r.data),
     enabled: Boolean(id),
   });
 }

@@ -1,17 +1,17 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
 import { useSearchParams } from 'react-router';
 import { http } from '@/lib/http';
-import { type DatasetDto, type PaginatedList } from '@data-drop/api-schema';
+import { type UserDto, type PaginatedList } from '@data-drop/api-schema';
 
-export function useDatasets(searchOverride?: string) {
+export function useUsers() {
   const [searchParams] = useSearchParams();
-  const search = searchOverride ?? searchParams.get('search') ?? '';
+  const search = searchParams.get('search') ?? '';
 
   return useInfiniteQuery({
-    queryKey: ['admin', 'datasets', { search }],
+    queryKey: ['admin', 'users', { search }],
     queryFn: ({ pageParam }) =>
       http
-        .get<PaginatedList<DatasetDto>>('/api/datasets', { params: { search, page: pageParam, limit: 10 } })
+        .get<PaginatedList<UserDto>>('/api/admin/users', { params: { search, page: pageParam, limit: 5 } })
         .then((r) => r.data),
     initialPageParam: 1,
     getNextPageParam: (lastPage) =>
