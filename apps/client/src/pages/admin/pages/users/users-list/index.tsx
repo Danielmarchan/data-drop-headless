@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router';
 import { type UserDto } from '@data-drop/api-schema';
-import { useDeleteUser, useUsers } from '@/api/admin/users';
+import { useDeleteUser } from './api/use-delete-user';
+import { useUsers } from './api/use-users';
 import Button from '@/components/button';
 import ConfirmModal from '@/components/confirm-modal';
 import AdminListLayout from '@/components/admin-list-layout';
@@ -74,7 +75,6 @@ export default function AdminUsersPage() {
       isLoading={isLoading}
       isEmpty={users.length === 0}
       emptyMessage="No users found."
-      hasNextPage={hasNextPage ?? false}
       isFetchingNextPage={isFetchingNextPage}
       sentinelRef={sentinelRef}
       modal={

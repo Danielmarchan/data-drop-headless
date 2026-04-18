@@ -13,7 +13,6 @@ type AdminListLayoutProps = {
   isLoading: boolean;
   isEmpty: boolean;
   emptyMessage?: string;
-  hasNextPage: boolean;
   isFetchingNextPage: boolean;
   sentinelRef: React.RefObject<HTMLDivElement | null>;
   children: React.ReactNode;
@@ -30,7 +29,6 @@ export default function AdminListLayout({
   isLoading,
   isEmpty,
   emptyMessage = 'No results found.',
-  hasNextPage,
   isFetchingNextPage,
   sentinelRef,
   children,

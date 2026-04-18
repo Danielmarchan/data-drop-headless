@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router';
-import { useDatasets } from '@/api/admin/datasets';
+import { useDatasets } from '@/pages/admin/api/use-datasets';
 import AdminListLayout from '@/components/admin-list-layout';
 import DatasetRow from './components/dataset-row';
 
@@ -59,7 +59,6 @@ export default function AdminDatasetsPage() {
       isLoading={isLoading}
       isEmpty={datasets.length === 0}
       emptyMessage="No datasets found."
-      hasNextPage={hasNextPage ?? false}
       isFetchingNextPage={isFetchingNextPage}
       sentinelRef={sentinelRef}
     >

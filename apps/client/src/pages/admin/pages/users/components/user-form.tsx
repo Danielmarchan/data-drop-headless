@@ -1,11 +1,12 @@
 import { useEffect, useId, useMemo, useState } from 'react';
 import { Link } from 'react-router';
 import { type CreateUserInput, type UpdateUserInput } from '@data-drop/api-schema';
-import { useDatasets } from '@/api/admin/datasets';
+import { useDatasets } from '@/pages/admin/api/use-datasets';
 import Button from '@/components/button';
 import FormSection from '@/components/form-section';
 import SearchInput from '@/components/search-input';
 import TextInput from '@/components/text-input';
+import Spinner from '@/components/spinner';
 
 type UserFormValues = {
   firstName: string;
@@ -224,7 +225,7 @@ export default function UserForm({
               <div className="mt-5 max-h-[480px] overflow-y-auto rounded-lg border border-outline-variant/10">
                 {datasetsLoading ? (
                   <div className="px-4 py-6 font-inter text-sm text-on-surface-variant">
-                    Loading datasets...
+                    <Spinner />
                   </div>
                 ) : datasets.length === 0 ? (
                   <div className="px-4 py-6 font-inter text-sm text-on-surface-variant">

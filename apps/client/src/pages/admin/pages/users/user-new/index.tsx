@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { type CreateUserInput } from '@data-drop/api-schema';
 import { AxiosError } from 'axios';
-import { useCreateUser } from '@/api/admin/users';
+import { useCreateUser } from './api/use-create-user';
 import UserForm from '../components/user-form';
 
 function getErrorMessage(error: unknown) {
