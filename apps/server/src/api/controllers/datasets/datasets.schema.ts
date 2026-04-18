@@ -1,5 +1,5 @@
 import z from 'zod';
-import { adminListDatasetSchema, datasetDtoSchema, type DatasetDto } from '@data-drop/api-schema';
+import { adminListDatasetSchema, datasetDtoSchema } from '@data-drop/api-schema';
 
 // Server-side DTO validator: accepts Date objects from Drizzle and serialises them to ISO strings.
 export const datasetDtoSchemaServer = datasetDtoSchema.extend({

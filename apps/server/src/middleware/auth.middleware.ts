@@ -20,7 +20,7 @@ export async function requireSession(
 }
 
 export function requireRole(allowedRoles: string[]) {
-  return async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  return async (_req: Request, res: Response, next: NextFunction): Promise<void> => {
     const session = res.locals.session as AuthSession;
 
     if (!session) {

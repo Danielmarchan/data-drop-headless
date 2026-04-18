@@ -9,7 +9,7 @@ import { statusCodes } from '@/constants/statusCodes';
 const router = Router();
 
 // Returns the authenticated user with their DB role
-router.get('/me', requireSession, async (req, res) => {
+router.get('/me', requireSession, async (_req, res) => {
   const session = res.locals.session as AuthSession;
 
   if (!session) {
