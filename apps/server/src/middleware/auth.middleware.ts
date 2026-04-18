@@ -1,7 +1,7 @@
 import { type Request, type Response, type NextFunction } from 'express';
 import { fromNodeHeaders } from 'better-auth/node';
 
-import { auth, type AuthSession } from '@/api/auth';
+import { auth, type AuthSession } from '@/auth';
 import { db } from '@/db';
 import { statusCodes } from '@/constants/statusCodes';
 

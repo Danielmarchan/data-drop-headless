@@ -12,9 +12,14 @@ import {
   userDetailDtoSchema,
   paginatedListSchema,
   adminListDatasetSchema,
+  viewerDatasetSchema,
+  viewerDatasetWithUploadCountSchema,
+  viewerUploadListItemSchema,
+  viewerUploadDetailDtoSchema,
+  uploadRowDtoSchema,
 } from '@data-drop/api-schema';
-import { updateUploadSchema } from '@/api/admin/uploads/uploads.schema';
-import { createUserSchema, updateUserSchema } from '@/api/admin/users/users.schema';
+import { updateUploadSchema } from '@/api/controllers/uploads/uploads.schema';
+import { createUserSchema, updateUserSchema } from '@/api/controllers/users/users.schema';
 
 extendZodWithOpenApi(z);
 
@@ -69,6 +74,38 @@ const PaginatedUsers = registry.register(
   paginatedListSchema(UserDtoSchema).openapi({ description: 'Paginated list of users' }),
 );
 
+const ViewerDatasetSchema = registry.register(
+  'ViewerDataset',
+  viewerDatasetSchema.openapi({ description: 'A dataset assigned to the current viewer' }),
+);
+
+const ViewerDatasetWithUploadCountSchema = registry.register(
+  'ViewerDatasetWithUploadCount',
+  viewerDatasetWithUploadCountSchema.openapi({ description: 'A dataset assigned to the current viewer, with its visible upload count' }),
+);
+
+const ViewerUploadListItemSchema = registry.register(
+  'ViewerUploadListItem',
+  viewerUploadListItemSchema.openapi({ description: 'An upload as returned to a viewer, without admin-only metadata' }),
+);
+
+const UploadRowDtoSchema = registry.register(
+  'UploadRowDto',
+  uploadRowDtoSchema.openapi({ description: 'A single data row within an upload, keyed by dataset column name' }),
+);
+
+const ViewerUploadDetailDtoSchema = registry.register(
+  'ViewerUploadDetailDto',
+  viewerUploadDetailDtoSchema
+    .extend({ rows: z.array(UploadRowDtoSchema) })
+    .openapi({ description: 'An upload with all of its rows, scoped to visible uploads only' }),
+);
+
+const PaginatedViewerUploads = registry.register(
+  'PaginatedViewerUploads',
+  paginatedListSchema(ViewerUploadListItemSchema).openapi({ description: 'Paginated list of uploads visible to the viewer' }),
+);
+
 const ErrorSchema = registry.register(
   'ErrorResponse',
   z.object({ error: z.string() }).openapi({ description: 'Error response' }),
@@ -108,6 +145,11 @@ const paginationParams = [
 const unauthorizedResponse = {
   401: { description: 'Unauthorized — valid session required' },
   403: { description: 'Forbidden — admin role required' },
+};
+
+const viewerUnauthorizedResponse = {
+  401: { description: 'Unauthorized — valid session required' },
+  403: { description: 'Forbidden — admin or viewer role required' },
 };
 
 // Auth
@@ -441,6 +483,76 @@ registry.registerPath({
     204: { description: 'User deleted' },
     404: { description: 'User not found', content: { 'application/json': { schema: ErrorSchema } } },
     ...unauthorizedResponse,
+  },
+});
+
+// Viewer: Datasets
+
+registry.registerPath({
+  method: 'get',
+  path: '/api/viewer/datasets',
+  summary: 'List datasets assigned to the current user',
+  tags: ['Viewer: Datasets'],
+  responses: {
+    200: {
+      description: 'Datasets assigned to the current user, with visible upload counts',
+      content: { 'application/json': { schema: z.array(ViewerDatasetWithUploadCountSchema) } },
+    },
+    ...viewerUnauthorizedResponse,
+  },
+});
+
+registry.registerPath({
+  method: 'get',
+  path: '/api/viewer/datasets/{datasetId}',
+  summary: 'Get a dataset assigned to the current user by ID',
+  tags: ['Viewer: Datasets'],
+  parameters: [{ name: 'datasetId', in: 'path', required: true, schema: { type: 'string' } }],
+  responses: {
+    200: {
+      description: 'Dataset found',
+      content: { 'application/json': { schema: ViewerDatasetSchema } },
+    },
+    404: { description: 'Dataset not found or not assigned to the current user', content: { 'application/json': { schema: ErrorSchema } } },
+    ...viewerUnauthorizedResponse,
+  },
+});
+
+registry.registerPath({
+  method: 'get',
+  path: '/api/viewer/datasets/{datasetId}/uploads',
+  summary: 'List visible uploads for a dataset (paginated)',
+  tags: ['Viewer: Datasets'],
+  parameters: [
+    { name: 'datasetId', in: 'path', required: true, schema: { type: 'string' } },
+    ...paginationParams,
+  ],
+  responses: {
+    200: {
+      description: 'Paginated list of visible uploads for the dataset',
+      content: { 'application/json': { schema: PaginatedViewerUploads } },
+    },
+    404: { description: 'Dataset not found or not assigned to the current user', content: { 'application/json': { schema: ErrorSchema } } },
+    ...viewerUnauthorizedResponse,
+  },
+});
+
+registry.registerPath({
+  method: 'get',
+  path: '/api/viewer/datasets/{datasetId}/uploads/{id}',
+  summary: 'Get a visible upload with all of its rows',
+  tags: ['Viewer: Datasets'],
+  parameters: [
+    { name: 'datasetId', in: 'path', required: true, schema: { type: 'string' } },
+    { name: 'id', in: 'path', required: true, schema: { type: 'string' } },
+  ],
+  responses: {
+    200: {
+      description: 'Upload with its rows',
+      content: { 'application/json': { schema: ViewerUploadDetailDtoSchema } },
+    },
+    404: { description: 'Upload not found, not visible, or dataset not assigned to the current user', content: { 'application/json': { schema: ErrorSchema } } },
+    ...viewerUnauthorizedResponse,
   },
 });
 

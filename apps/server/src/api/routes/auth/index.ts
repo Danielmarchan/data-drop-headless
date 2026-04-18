@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { toNodeHandler } from 'better-auth/node';
 
-import { auth, type AuthSession } from '@/api/auth';
+import { auth, type AuthSession } from '@/auth';
 import { requireSession } from '@/middleware/auth.middleware';
 import { db } from '@/db';
 import { statusCodes } from '@/constants/statusCodes';

@@ -1,8 +1,8 @@
 import { Router } from 'express';
 import { z } from 'zod';
 
-import DatasetsController from './datasets.controller';
-import UploadsController from '@/api/admin/uploads/uploads.controller';
+import DatasetsController from '@/api/controllers/datasets/datasets.controller';
+import UploadsController from '@/api/controllers/uploads/uploads.controller';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
 import { idParamSchema, limitParamSchema, pageParamSchema, searchParamSchema } from '@/helpers/query-params.schema';
 import { statusCodes } from '@/constants/statusCodes';

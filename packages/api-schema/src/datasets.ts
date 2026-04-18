@@ -29,4 +29,18 @@ export const adminListDatasetSchema = z.object({
   updatedAt: z.string(),
 });
 
-export type AdminListDataset = z.infer<typeof adminListDatasetSchema>;
+export type AdminListDataset = z.infer<typeof adminListDatasetSchema>; 
+
+export const viewerDatasetSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  slug: z.string(),
+});
+
+export type ViewerDataset = z.infer<typeof viewerDatasetSchema>;
+
+export const viewerDatasetWithUploadCountSchema = viewerDatasetSchema.extend({
+  uploadCount: z.number().int().nonnegative(),
+});
+
+export type ViewerDatasetWithUploadCount = z.infer<typeof viewerDatasetWithUploadCountSchema>;

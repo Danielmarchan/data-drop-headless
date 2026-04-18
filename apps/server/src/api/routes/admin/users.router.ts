@@ -1,12 +1,11 @@
 import { Router } from 'express';
 import { z } from 'zod';
 
-import { requireRole } from '@/middleware/auth.middleware';
-import UsersController from './users.controller';
+import UsersController from '@/api/controllers/users/users.controller';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
 import { idParamSchema, limitParamSchema, pageParamSchema, searchParamSchema } from '@/helpers/query-params.schema';
 import { statusCodes } from '@/constants/statusCodes';
-import { createUserSchema, updateUserSchema } from './users.schema';
+import { createUserSchema, updateUserSchema } from '@/api/controllers/users/users.schema';
 
 const router = Router();
 
