@@ -225,7 +225,7 @@ export default function UserForm({
               <div className="mt-5 max-h-[480px] overflow-y-auto rounded-lg border border-outline-variant/10">
                 {datasetsLoading ? (
                   <div className="px-4 py-6 font-inter text-sm text-on-surface-variant">
-                    <Spinner />
+                    <Spinner pxSize={20} />
                   </div>
                 ) : datasets.length === 0 ? (
                   <div className="px-4 py-6 font-inter text-sm text-on-surface-variant">
