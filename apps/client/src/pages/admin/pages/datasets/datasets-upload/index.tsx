@@ -7,7 +7,6 @@ import { useUploads } from './api/use-uploads';
 import { useCreateUpload } from './api/use-create-upload';
 import { useDeleteUpload } from './api/use-delete-upload';
 import { useUpdateUpload } from './api/use-update-upload';
-import Button from '@/components/button';
 import ConfirmModal from '@/components/confirm-modal';
 import Spinner from '@/components/spinner';
 import UploadRow from './components/upload-row';
@@ -37,8 +36,6 @@ export default function AdminDatasetUploadsPage() {
   const deleteUpload = useDeleteUpload(id ?? '');
   const updateUpload = useUpdateUpload(id ?? '');
 
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
-  const [title, setTitle] = useState('');
   const [dragging, setDragging] = useState(false);
   const [error, setError] = useState('');
   const [deleteTarget, setDeleteTarget] = useState<UploadDto | null>(null);
@@ -60,36 +57,28 @@ export default function AdminDatasetUploadsPage() {
     return () => observer.disconnect();
   }, [hasNextPage, fetchNextPage, isFetchingNextPage]);
 
-  const handleFileSelect = useCallback((file: File) => {
-    setSelectedFile(file);
-    setTitle('');
-    setError('');
-  }, []);
+  const handleFileSelect = useCallback(
+    (file: File) => {
+      if (!id || createUpload.isPending) return;
+      setError('');
+      createUpload.mutate(
+        { datasetId: id, file },
+        { onError: (err) => setError(getErrorMessage(err)) },
+      );
+    },
+    [id, createUpload],
+  );
 
   const handleDrop = useCallback(
     (e: React.DragEvent<HTMLDivElement>) => {
       e.preventDefault();
       setDragging(false);
+      if (createUpload.isPending) return;
       const file = e.dataTransfer.files[0];
       if (file) handleFileSelect(file);
     },
-    [handleFileSelect],
+    [handleFileSelect, createUpload.isPending],
   );
-
-  const handleSave = () => {
-    if (!selectedFile || !id) return;
-    setError('');
-    createUpload.mutate(
-      { datasetId: id, file: selectedFile, title },
-      {
-        onSuccess: () => {
-          setSelectedFile(null);
-          setTitle('');
-        },
-        onError: (err) => setError(getErrorMessage(err)),
-      },
-    );
-  };
 
   const handleConfirmDelete = () => {
     if (!deleteTarget) return;
@@ -102,7 +91,13 @@ export default function AdminDatasetUploadsPage() {
     updateUpload.mutate({ id: upload.id, data: { visible: !upload.visible } });
   };
 
+  const handleRename = (upload: UploadDto, title: string) => {
+    updateUpload.mutate({ id: upload.id, data: { title } });
+  };
+
   if (!id) return null;
+
+  const isUploading = createUpload.isPending;
 
   return (
     <div className="container px-6 py-8 mx-auto">
@@ -126,100 +121,72 @@ export default function AdminDatasetUploadsPage() {
       </h1>
 
       <div className="mb-10">
-        {!selectedFile ? (
-          <FormSection>
-            <div
-              className={`rounded-lg border-2 border-dashed transition-colors cursor-pointer flex flex-col items-center justify-center py-16 px-8 ${
-                dragging
-                  ? 'border-primary bg-surface-low/60'
-                  : 'border-outline-variant/40 bg-surface-low'
-              }`}
-              onDragOver={(e) => { e.preventDefault(); setDragging(true); }}
-              onDragLeave={() => setDragging(false)}
-              onDrop={handleDrop}
-              onClick={() => fileInputRef.current?.click()}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click(); }}
-              aria-label="Drop CSV file here or click to browse"
-            >
-              <input
-                ref={fileInputRef}
-                type="file"
-                accept=".csv"
-                className="hidden"
-                onChange={(e) => { const f = e.target.files?.[0]; if (f) handleFileSelect(f); e.target.value = ''; }}
-              />
-              <div className="bg-surface-lowest rounded-xl p-4 shadow-ghost mb-4">
-                <FileIcon />
-              </div>
-              <p className="font-manrope font-bold text-xl text-on-surface mb-1">
-                Drag and Drop CSV file
-              </p>
-              <p className="font-inter text-sm text-on-surface-variant mb-5">
-                or click to browse from your computer
-              </p>
-              <div className="flex items-center gap-3">
-                <span className="bg-surface-high rounded-sm px-3 py-1 font-inter font-semibold text-[10px] tracking-[1px] uppercase text-on-surface-variant">
-                  Max size: 10MB
-                </span>
-                <span className="bg-surface-high rounded-sm px-3 py-1 font-inter font-semibold text-[10px] tracking-[1px] uppercase text-on-surface-variant">
-                  Format: .csv only
-                </span>
-              </div>
+        <FormSection>
+          <div
+            className={`relative rounded-lg border-2 border-dashed transition-colors flex flex-col items-center justify-center py-16 px-8 ${
+              isUploading ? 'cursor-wait opacity-60' : 'cursor-pointer'
+            } ${
+              dragging
+                ? 'border-primary bg-surface-low/60'
+                : 'border-outline-variant/40 bg-surface-low'
+            }`}
+            onDragOver={(e) => {
+              e.preventDefault();
+              if (!isUploading) setDragging(true);
+            }}
+            onDragLeave={() => setDragging(false)}
+            onDrop={handleDrop}
+            onClick={() => {
+              if (!isUploading) fileInputRef.current?.click();
+            }}
+            role="button"
+            tabIndex={0}
+            aria-disabled={isUploading}
+            onKeyDown={(e) => {
+              if (isUploading) return;
+              if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
+            }}
+            aria-label="Drop CSV file here or click to browse"
+          >
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".csv"
+              className="hidden"
+              disabled={isUploading}
+              onChange={(e) => {
+                const f = e.target.files?.[0];
+                if (f) handleFileSelect(f);
+                e.target.value = '';
+              }}
+            />
+            <div className="bg-surface-lowest rounded-xl p-4 shadow-ghost mb-4">
+              <FileIcon />
             </div>
-          </FormSection>
-        ) : (
-          <div className="bg-surface-lowest border border-outline-variant/10 rounded-lg">
-            <div className="flex items-center px-8 py-4 border-b border-outline-variant/10">
-              <div className="flex-1 min-w-0">
-                <p className="font-inter font-bold text-sm text-on-surface">{selectedFile.name}</p>
-              </div>
-              <button
-                type="button"
-                className="font-inter font-medium text-sm text-error hover:opacity-70 transition-opacity cursor-pointer"
-                onClick={() => { setSelectedFile(null); setTitle(''); setError(''); }}
-              >
-                Remove
-              </button>
+            <p className="font-manrope font-bold text-xl text-on-surface mb-1">
+              Drag and Drop CSV file
+            </p>
+            <p className="font-inter text-sm text-on-surface-variant mb-5">
+              or click to browse from your computer
+            </p>
+            <div className="flex items-center gap-3">
+              <span className="bg-surface-high rounded-sm px-3 py-1 font-inter font-semibold text-[10px] tracking-[1px] uppercase text-on-surface-variant">
+                Max size: 10MB
+              </span>
+              <span className="bg-surface-high rounded-sm px-3 py-1 font-inter font-semibold text-[10px] tracking-[1px] uppercase text-on-surface-variant">
+                Format: .csv only
+              </span>
             </div>
-
-            <div className="px-8 py-6 flex flex-col gap-6">
-              <div className="flex flex-col gap-2">
-                <label
-                  htmlFor="upload-title"
-                  className="font-inter font-semibold text-xs text-on-surface-variant tracking-[0.6px] uppercase"
-                >
-                  Upload Title (Optional)
-                </label>
-                <input
-                  id="upload-title"
-                  type="text"
-                  value={title}
-                  onChange={(e) => setTitle(e.target.value)}
-                  placeholder="e.g. Q3 2023 Financial Data"
-                  className="h-11 w-full rounded-lg bg-surface-low px-4 font-inter text-sm text-on-surface placeholder:text-on-surface-variant/50 outline-none focus:ring-2 focus:ring-primary/30 border border-outline-variant/20 focus:border-primary/50 transition-colors"
-                />
+            {isUploading && (
+              <div className="absolute inset-0 flex items-center justify-center bg-surface-low/70 rounded-lg">
+                <Spinner />
               </div>
-
-              {error && (
-                <p className="font-inter text-sm text-error">{error}</p>
-              )}
-
-              <div className="flex justify-end">
-                <Button
-                  variant="primary"
-                  size="sm"
-                  className="px-6"
-                  onClick={handleSave}
-                  disabled={createUpload.isPending}
-                >
-                  {createUpload.isPending ? <Spinner pxSize={16} /> : 'Save Upload'}
-                </Button>
-              </div>
-            </div>
+            )}
           </div>
-        )}
+          {error && (
+            <p className="font-inter text-sm text-error mt-3">{error}</p>
+          )}
+        </FormSection>
       </div>
 
       <div>
@@ -252,6 +219,7 @@ export default function AdminDatasetUploadsPage() {
                 upload={upload}
                 onDelete={() => setDeleteTarget(upload)}
                 onToggleVisibility={() => handleToggleVisibility(upload)}
+                onRename={(title) => handleRename(upload, title)}
               />
             ))}
           </div>
