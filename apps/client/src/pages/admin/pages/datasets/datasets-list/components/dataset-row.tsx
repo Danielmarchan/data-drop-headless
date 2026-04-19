@@ -1,5 +1,6 @@
 import { type DatasetDto } from '@data-drop/api-schema';
 import { ChevronRightIcon } from '@/components/icons';
+import ListRow from '@/components/list-row';
 
 type DatasetRowProps = {
   d: DatasetDto;
@@ -16,7 +17,7 @@ function formatDate(iso: string) {
 
 export default function DatasetRow({ d, onArrowClick }: DatasetRowProps) {
   return (
-    <div className="flex items-center gap-8 bg-surface-lowest rounded-lg px-6 py-6">
+    <ListRow>
       <div className="flex-1 min-w-0">
         <span className="font-inter font-semibold text-sm text-on-surface">{d.title}</span>
       </div>
@@ -30,6 +31,6 @@ export default function DatasetRow({ d, onArrowClick }: DatasetRowProps) {
           <ChevronRightIcon />
         </div>
       </div>
-    </div>
+    </ListRow>
   );
 }

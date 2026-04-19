@@ -45,7 +45,7 @@ export default function AdminListLayout({
             value={searchValue}
             onChange={onSearchChange}
             placeholder={searchPlaceholder}
-            className="w-72 bg-surface-lowest"
+            className="w-72 bg-surface-lowest border-surface-high"
           />
           {action}
         </div>

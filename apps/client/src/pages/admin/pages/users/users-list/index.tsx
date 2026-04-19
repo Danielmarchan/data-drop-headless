@@ -81,7 +81,7 @@ export default function AdminUsersPage() {
         <ConfirmModal
           open={userToDelete !== null}
           title="Delete user"
-          description={`Are you sure you want to delete ${userToDelete?.name}? This action cannot be undone.`}
+          description={`Are you sure you want to delete "${userToDelete?.name}"? This action cannot be undone.`}
           confirmLabel="Delete"
           isDestructive
           isPending={deleteUser.isPending}

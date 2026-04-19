@@ -260,7 +260,7 @@ export default function UserForm({
         </div>
       </main>
 
-      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-outline-variant/10 bg-white/80 backdrop-blur">
+      <div className="fixed inset-x-0 bottom-0 border-t border-surface-high bg-surface-lowest shadow-sm z-1 backdrop-blur">
         <div className="container mx-auto flex flex-col gap-4 px-6 py-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <div className="flex items-center gap-2 font-inter text-sm text-on-surface-variant">

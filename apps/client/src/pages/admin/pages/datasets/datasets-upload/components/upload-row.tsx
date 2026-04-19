@@ -1,6 +1,7 @@
 import { type UploadDto } from '@data-drop/api-schema';
-import { PencilIcon, TrashIcon } from '@/components/icons';
+import { EyeIcon, TrashIcon } from '@/components/icons';
 import Button from '@/components/button';
+import ListRow from '@/components/list-row';
 
 type UploadRowProps = {
   upload: UploadDto;
@@ -17,7 +18,7 @@ function formatDate(iso: string) {
 
 export default function UploadRow({ upload, onDelete }: UploadRowProps) {
   return (
-    <div className="flex items-center gap-8 bg-surface-lowest rounded-lg px-6 py-5">
+    <ListRow>
       <div className="flex-1 min-w-0">
         <p className="font-inter font-semibold text-sm text-on-surface">{upload.title}</p>
         <p className="font-inter text-xs text-on-surface-variant mt-0.5">{upload.fileName}</p>
@@ -28,13 +29,13 @@ export default function UploadRow({ upload, onDelete }: UploadRowProps) {
       </div>
 
       <div className="w-24 shrink-0 flex items-center justify-end gap-1">
-        <Button variant="icon" aria-label="Edit upload">
-          <PencilIcon />
+        <Button variant="icon" aria-label="Upload Visibility Toggle">
+          <EyeIcon className="w-4"/>
         </Button>
         <Button variant="icon" aria-label="Delete upload" onClick={onDelete}>
           <TrashIcon />
         </Button>
       </div>
-    </div>
+    </ListRow>
   );
 }

@@ -10,6 +10,8 @@ import Button from '@/components/button';
 import ConfirmModal from '@/components/confirm-modal';
 import Spinner from '@/components/spinner';
 import UploadRow from './components/upload-row';
+import FileIcon from '@/components/icons/file-icon';
+import FormSection from '@/components/form-section';
 
 const COLUMN_HEADERS = [
   { label: 'Title', className: 'flex-1' },
@@ -23,27 +25,6 @@ function getErrorMessage(error: unknown) {
   }
   if (error instanceof Error) return error.message;
   return 'Upload failed.';
-}
-
-function FileIcon() {
-  return (
-    <svg width="20" height="25" viewBox="0 0 20 25" fill="none" aria-hidden="true">
-      <path
-        d="M12 1H3a2 2 0 0 0-2 2v19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8L12 1Z"
-        stroke="var(--color-primary)"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M12 1v7h7"
-        stroke="var(--color-primary)"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
 }
 
 export default function AdminDatasetUploadsPage() {
@@ -119,7 +100,6 @@ export default function AdminDatasetUploadsPage() {
 
   return (
     <div className="container px-6 py-8 mx-auto">
-      {/* Breadcrumbs */}
       <nav className="flex items-center gap-2 mb-10">
         <Link
           to="/admin/datasets"
@@ -135,16 +115,13 @@ export default function AdminDatasetUploadsPage() {
         </span>
       </nav>
 
-      {/* Page header */}
       <h1 className="font-manrope font-bold text-[30px] leading-9 tracking-[-0.75px] text-on-surface mb-8">
         Dataset Upload
       </h1>
 
-      {/* Upload section */}
       <div className="mb-10">
         {!selectedFile ? (
-          /* State 1: Dropzone */
-          <div className="bg-surface-lowest rounded-lg p-1">
+          <FormSection>
             <div
               className={`rounded-lg border-2 border-dashed transition-colors cursor-pointer flex flex-col items-center justify-center py-16 px-8 ${
                 dragging
@@ -185,11 +162,9 @@ export default function AdminDatasetUploadsPage() {
                 </span>
               </div>
             </div>
-          </div>
+          </FormSection>
         ) : (
-          /* State 2: File selected */
           <div className="bg-surface-lowest border border-outline-variant/10 rounded-lg">
-            {/* File info row */}
             <div className="flex items-center px-8 py-4 border-b border-outline-variant/10">
               <div className="flex-1 min-w-0">
                 <p className="font-inter font-bold text-sm text-on-surface">{selectedFile.name}</p>
@@ -203,7 +178,6 @@ export default function AdminDatasetUploadsPage() {
               </button>
             </div>
 
-            {/* Form */}
             <div className="px-8 py-6 flex flex-col gap-6">
               <div className="flex flex-col gap-2">
                 <label
@@ -242,7 +216,6 @@ export default function AdminDatasetUploadsPage() {
         )}
       </div>
 
-      {/* Uploads table */}
       <div>
         <h2 className="font-manrope font-bold text-2xl text-on-surface mb-6">Uploads</h2>
 

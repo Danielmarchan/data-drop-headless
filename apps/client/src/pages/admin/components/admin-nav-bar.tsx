@@ -9,7 +9,7 @@ type AdminNavBarProps = {
 
 export default function AdminNavBar({ email, userId }: AdminNavBarProps) {
   return (
-    <header className="h-[58px] w-full bg-surface-lowest flex items-center px-6">
+    <header className=" w-full bg-surface-lowest border-b border-surface-high z-1 flex items-center px-6 py-4">
       <div className="flex items-center gap-8 flex-1">
         <Link to="/admin" className="font-inter font-bold text-xl leading-7 tracking-[-0.5px] text-primary shrink-0">
           DataDrop

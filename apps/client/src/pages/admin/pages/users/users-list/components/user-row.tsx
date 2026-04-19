@@ -2,6 +2,7 @@ import { type UserDto } from '@data-drop/api-schema';
 import { PencilIcon, TrashIcon } from '@/components/icons';
 import Button from '@/components/button';
 import RoleBadge from './role-badge';
+import ListRow from '@/components/list-row';
 
 type UserRowProps = {
   u: UserDto;
@@ -11,7 +12,7 @@ type UserRowProps = {
 
 export default function UserRow({ u, onEdit, onDelete }: UserRowProps) {
   return (
-    <div className="flex items-center gap-8 bg-surface-lowest rounded-lg px-6 py-6">
+    <ListRow>
       <div className="flex flex-col flex-1 min-w-0">
         <span className="font-inter font-semibold text-base text-on-surface">{u.name}</span>
         <span className="font-inter text-sm text-on-surface-variant mt-0.5">{u.email}</span>
@@ -29,6 +30,6 @@ export default function UserRow({ u, onEdit, onDelete }: UserRowProps) {
           <TrashIcon className="cursor-pointer" />
         </Button>
       </div>
-    </div>
+    </ListRow>
   );
 }
