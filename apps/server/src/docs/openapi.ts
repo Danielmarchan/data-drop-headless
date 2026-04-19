@@ -17,8 +17,8 @@ import {
   viewerUploadListItemSchema,
   viewerUploadDetailDtoSchema,
   uploadRowDtoSchema,
+  updateUploadInputSchema
 } from '@data-drop/api-schema';
-import { updateUploadSchema } from '@/api/controllers/uploads/uploads.schema';
 import { createUserSchema, updateUserSchema } from '@/api/controllers/users/users.schema';
 
 extendZodWithOpenApi(z);
@@ -359,7 +359,7 @@ registry.registerPath({
       required: true,
       content: {
         'application/json': {
-          schema: updateUploadSchema
+          schema: updateUploadInputSchema
             .openapi('UpdateUploadInput'),
         },
       },

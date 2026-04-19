@@ -5,7 +5,7 @@ import UploadsController from '@/api/controllers/uploads/uploads.controller';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
 import { idParamSchema } from '@/helpers/query-params.schema';
 import { statusCodes } from '@/constants/statusCodes';
-import { updateUploadSchema } from '@/api/controllers/uploads/uploads.schema';
+import { updateUploadInputSchema } from '@data-drop/api-schema';
 
 const router = Router();
 
@@ -21,7 +21,7 @@ router.get('/:id', async (req, res) => {
 
 router.patch('/:id', async (req, res) => {
   try {
-    const input = updateUploadSchema.parse(req.body);
+    const input = updateUploadInputSchema.parse(req.body);
     const result = await UploadsController.updateUpload(idParamSchema.parse(req.params.id), input);
 
     if (!result.success) {

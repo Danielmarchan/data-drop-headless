@@ -8,10 +8,3 @@ export const uploadDtoSchemaServer = uploadDtoSchema.extend({
 });
 
 export type { UploadDto };
-
-export const updateUploadSchema = z.object({
-  title: z.string().min(1).optional(),
-  visible: z.boolean().optional(),
-});
-
-export type UpdateUploadInput = z.infer<typeof updateUploadSchema>;

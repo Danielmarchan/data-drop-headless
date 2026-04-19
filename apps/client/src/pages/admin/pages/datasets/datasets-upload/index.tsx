@@ -6,6 +6,7 @@ import { useDataset } from './api/use-dataset';
 import { useUploads } from './api/use-uploads';
 import { useCreateUpload } from './api/use-create-upload';
 import { useDeleteUpload } from './api/use-delete-upload';
+import { useUpdateUpload } from './api/use-update-upload';
 import Button from '@/components/button';
 import ConfirmModal from '@/components/confirm-modal';
 import Spinner from '@/components/spinner';
@@ -34,6 +35,7 @@ export default function AdminDatasetUploadsPage() {
   const { data, isLoading, hasNextPage, fetchNextPage, isFetchingNextPage } = useUploads(id ?? '');
   const createUpload = useCreateUpload();
   const deleteUpload = useDeleteUpload(id ?? '');
+  const updateUpload = useUpdateUpload(id ?? '');
 
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [title, setTitle] = useState('');
@@ -94,6 +96,10 @@ export default function AdminDatasetUploadsPage() {
     deleteUpload.mutate(deleteTarget.id, {
       onSuccess: () => setDeleteTarget(null),
     });
+  };
+
+  const handleToggleVisibility = (upload: UploadDto) => {
+    updateUpload.mutate({ id: upload.id, data: { visible: !upload.visible } });
   };
 
   if (!id) return null;
@@ -245,6 +251,7 @@ export default function AdminDatasetUploadsPage() {
                 key={upload.id}
                 upload={upload}
                 onDelete={() => setDeleteTarget(upload)}
+                onToggleVisibility={() => handleToggleVisibility(upload)}
               />
             ))}
           </div>

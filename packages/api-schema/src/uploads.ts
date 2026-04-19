@@ -16,6 +16,13 @@ export const uploadDtoSchema = z.object({
 
 export type UploadDto = z.infer<typeof uploadDtoSchema>;
 
+export const updateUploadInputSchema = z.object({
+  title: z.string().min(1).optional(),
+  visible: z.boolean().optional(),
+});
+
+export type UpdateUploadInput = z.infer<typeof updateUploadInputSchema>;
+
 export const viewerUploadListItemSchema = z.object({
   id: z.string(),
   title: z.string(),
