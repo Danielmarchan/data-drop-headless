@@ -1,6 +1,6 @@
 # DataDrop Headless
 
-A data management platform that allows admins to upload CSV datasets and share them with viewer users. Built with a React + Vite frontend and an Express + Drizzle ORM backend backed by PostgreSQL.
+A data management platform that allows admins to upload CSV datasets and share them with viewer users. Built with a React + Vite frontend and an Express + Drizzle ORM backend backed by PostgreSQL, organized as a pnpm + Turborepo monorepo.
 
 ## Tech Stack
 
@@ -8,14 +8,21 @@ A data management platform that allows admins to upload CSV datasets and share t
 - **Server** — Express 5, Drizzle ORM, Better Auth, Zod
 - **Database** — PostgreSQL 16
 - **Auth** — Better Auth (credentials + GitHub OAuth)
+- **Monorepo** — pnpm workspaces + Turborepo
 
 ## Project Structure
 
 ```
 data-drop-headless/
-├── client/       # React frontend (Vite)
-├── server/       # Express API
-└── docker-compose.yml
+├── apps/
+│   ├── client/              # React frontend (Vite)
+│   └── server/              # Express API
+├── packages/
+│   ├── api-schema/          # Shared Zod request/response schemas
+│   └── shared/              # Shared utilities and types
+├── docker-compose.yml
+├── pnpm-workspace.yaml
+└── turbo.json
 ```
 
 ## Getting Started
@@ -40,19 +47,28 @@ This starts a PostgreSQL 16 instance on port `5432` with:
 
 ### 2. Configure environment variables
 
-**Server** — create `server/.env`:
+Each app ships with a `.env.example` file you can copy as a starting point:
+
+```bash
+cp apps/server/.env.example apps/server/.env
+cp apps/client/.env.example apps/client/.env
+```
+
+**Server** — `apps/server/.env`:
 
 ```env
-DATABASE_URL=postgresql://postgres:password@localhost:5432/data-drop-headless
-SEED_DATABASE_URL=postgresql://postgres:password@localhost:5432/data-drop-headless
+BETTER_AUTH_SECRET=your_random_secret
 BETTER_AUTH_URL=http://localhost:3000
 BETTER_AUTH_GITHUB_CLIENT_ID=your_github_client_id
 BETTER_AUTH_GITHUB_CLIENT_SECRET=your_github_client_secret
-CORS_ORIGIN=http://localhost:8080
+DATABASE_URL=postgresql://postgres:password@localhost:5432/data-drop-headless
+SEED_DATABASE_URL=postgresql://postgres:password@localhost:5432/data-drop-headless
 PORT=3000
+NODE_ENV=development
+CORS_ORIGIN=http://localhost:8080
 ```
 
-**Client** — create `client/.env`:
+**Client** — `apps/client/.env`:
 
 ```env
 API_URL=http://localhost:3000
@@ -62,22 +78,21 @@ API_URL=http://localhost:3000
 
 ### 3. Install dependencies
 
+From the repo root, a single install covers both apps and the shared packages:
+
 ```bash
-cd server && pnpm install
-cd ../client && pnpm install
+pnpm install
 ```
 
 ### 4. Run database migrations
 
 ```bash
-cd server
 pnpm db:migrate
 ```
 
 ### 5. Seed initial data
 
 ```bash
-cd server
 pnpm db:seed
 ```
 
@@ -87,22 +102,35 @@ This seeds the database with demo users and a sample eCommerce dataset. All demo
 |-------|------|
 | demo-admin-user-01@email.com | Admin |
 | demo-admin-user-02@email.com | Admin |
+| demo-admin-user-03@email.com | Admin |
+| demo-admin-user-04@email.com | Admin |
 | demo-viewer-user-01@email.com | Viewer |
 | demo-viewer-user-02@email.com | Viewer |
 | demo-viewer-user-03@email.com | Viewer |
+| demo-viewer-user-04@email.com | Viewer |
+| demo-viewer-user-05@email.com | Viewer |
+| demo-viewer-user-06@email.com | Viewer |
+| demo-viewer-user-07@email.com | Viewer |
+| demo-viewer-user-08@email.com | Viewer |
+| demo-viewer-user-09@email.com | Viewer |
+| demo-viewer-user-10@email.com | Viewer |
+| demo-viewer-user-11@email.com | Viewer |
 
 > **Warning:** The seed script deletes all existing data before inserting. Never run it against a production database.
 
 ### 6. Start the development servers
 
-In two separate terminals:
+Run both apps together via Turbo:
 
 ```bash
-# Terminal 1 — API server (http://localhost:3000)
-cd server && pnpm dev
+pnpm dev
+```
 
-# Terminal 2 — Frontend (http://localhost:8080)
-cd client && pnpm dev
+Or run them individually:
+
+```bash
+pnpm dev:client       # client only — http://localhost:8080
+pnpm dev:server       # server only — http://localhost:3000
 ```
 
 The app will be available at [http://localhost:8080](http://localhost:8080).
@@ -111,8 +139,10 @@ The app will be available at [http://localhost:8080](http://localhost:8080).
 
 | Command | Description |
 |---------|-------------|
+| `pnpm dev` | Run client + server together (Turbo) |
+| `pnpm build` | Build all apps and packages |
+| `pnpm typecheck` | Type-check the whole workspace |
+| `pnpm lint` / `pnpm lint:fix` | Lint (and auto-fix) the whole workspace |
 | `pnpm db:studio` | Open Drizzle Studio (visual DB browser) |
 | `pnpm db:generate` | Generate a new migration from schema changes |
 | `pnpm db:push` | Push schema changes directly (dev only) |
-| `pnpm typecheck` | Run TypeScript type checking |
-| `pnpm lint` | Run ESLint |
