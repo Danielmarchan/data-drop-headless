@@ -59,11 +59,13 @@ export default function UserForm({
   const [role, setRole] = useState(initialValues.role);
   const [datasetsSearch, setDatasetsSearch] = useState('');
   const [selectedDatasetIds, setSelectedDatasetIds] = useState(initialValues.assignedDatasetIds);
+  const [isDirty, setIsDirty] = useState(false);
   const { data: datasetsData, isLoading: datasetsLoading } = useDatasets(datasetsSearch);
 
   useEffect(() => {
     setRole(defaultValues?.role ?? DEFAULT_VALUES.role);
     setSelectedDatasetIds(defaultValues?.assignedDatasetIds ?? DEFAULT_VALUES.assignedDatasetIds);
+    setIsDirty(false);
   }, [defaultValues?.role, defaultValues?.assignedDatasetIds?.join('|')]);
 
   const datasets = datasetsData?.pages.flatMap((page) => page.nodes) ?? [];
@@ -111,7 +113,12 @@ export default function UserForm({
   }
 
   return (
-    <form id={formId} onSubmit={handleSubmit} className="flex min-h-screen flex-col bg-surface pb-28">
+    <form
+      id={formId}
+      onSubmit={handleSubmit}
+      onChange={() => setIsDirty(true)}
+      className="flex min-h-screen flex-col bg-surface pb-28"
+    >
       <div className="container mx-auto px-6 pt-6">
         <nav className="flex items-center gap-2 text-sm font-inter text-on-surface-variant">
           <Link to="/admin/users" className="hover:text-on-surface transition-colors">
@@ -263,10 +270,12 @@ export default function UserForm({
       <div className="fixed inset-x-0 bottom-0 border-t border-surface-high bg-surface-lowest shadow-sm z-1 backdrop-blur">
         <div className="container mx-auto flex flex-col gap-4 px-6 py-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <div className="flex items-center gap-2 font-inter text-sm text-on-surface-variant">
-              <span className="h-2.5 w-2.5 rounded-full bg-error" />
-              Unsaved changes will be lost
-            </div>
+            {isDirty ? (
+              <div className="flex items-center gap-2 font-inter text-sm text-on-surface-variant">
+                <span className="h-2.5 w-2.5 rounded-full bg-error" />
+                Unsaved changes will be lost
+              </div>
+            ) : null}
             {error ? <p className="mt-2 font-inter text-sm text-error">{error}</p> : null}
           </div>
 
