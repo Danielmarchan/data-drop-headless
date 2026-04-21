@@ -17,7 +17,7 @@ import errorHandlerMiddleware from './middleware/error-handler.middleware';
 const app = express();
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100 // limit each IP to 100 requests per windowMs
+  max: 500 // limit each IP to 100 requests per windowMs
 });
 
 // Security Middleware
@@ -27,16 +27,16 @@ app.use(
     credentials: true,
   }),
 ); // CORS headers
-app.use(helmet()) // HTTP headers security
-app.use(hpp()) // Parameter Pollution attacks
-app.use(limiter) // Rate limiting (DDoS protection
+app.use(helmet()); // HTTP headers security
+app.use(hpp()); // Parameter Pollution attacks
+if (env.NODE_ENV !== 'development') app.use(limiter); // Rate limiting (DDoS protection)
 
 // Performance Middleware
-app.use(compression()) // Gzip compression
+app.use(compression()); // Gzip compression
 
 // Observability Middleware
-app.use(loggerMiddleware) // Request logging
-app.use(actuator()) // Application health monitoring
+app.use(loggerMiddleware); // Request logging
+app.use(actuator()); // Application health monitoring
 
 // Request Parsing Middleware
 app.use(express.json());
