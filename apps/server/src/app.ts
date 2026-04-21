@@ -1,37 +1,54 @@
-import express, { type Request, type Response, type NextFunction } from 'express';
+import express from 'express';
 import cors from 'cors';
+import helmet from 'helmet';
+import hpp from 'hpp';
+import rateLimit from 'express-rate-limit';
+import compression from 'compression';
+import actuator from 'express-actuator';
 
 import env from '@/env';
-import router from '@/api/routes/api.router';
 import { createApiRouter } from '@/api/api.router';
 import { db } from '@/db';
 import docsRouter from '@/docs/docs.router';
 import { requireSession } from '@/middleware/auth.middleware';
-import { statusCodes } from './constants/statusCodes';
+import { loggerMiddleware } from './services/logging.service';
+import errorHandlerMiddleware from './middleware/error-handler.middleware';
 
 const app = express();
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100 // limit each IP to 100 requests per windowMs
+});
 
+// Security Middleware
 app.use(
   cors({
     origin: env.CORS_ORIGIN,
     credentials: true,
   }),
-);
+); // CORS headers
+app.use(helmet()) // HTTP headers security
+app.use(hpp()) // Parameter Pollution attacks
+app.use(limiter) // Rate limiting (DDoS protection
 
+// Performance Middleware
+app.use(compression()) // Gzip compression
+
+// Observability Middleware
+app.use(loggerMiddleware) // Request logging
+app.use(actuator()) // Application health monitoring
+
+// Request Parsing Middleware
 app.use(express.json());
 
+// Endpoints
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok' });
 });
-
-app.use('/api', router);
 app.use('/api', createApiRouter(db));
 app.use('/docs', requireSession, docsRouter);
 
 // Error handler
-app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
-  console.error(err);
-  res.status(statusCodes.INTERNAL_SERVER_ERROR).json({ error: err instanceof Error ? err?.message : 'Internal server error' });
-});
+app.use(errorHandlerMiddleware);
 
 export default app;
