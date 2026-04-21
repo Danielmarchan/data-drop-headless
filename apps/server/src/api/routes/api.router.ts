@@ -1,8 +1,8 @@
 import { Router } from 'express';
 
-import authRouter from '@/api/routes/auth';
-import adminRouter from '@/api/routes/admin';
-import viewerRouter from '@/api/routes/viewer';
+import authRouter from './auth/auth.router';
+import adminRouter from './admin/admin.router';
+import viewerRouter from './viewer/viewer.router';
 import { requireRole, requireSession } from '@/middleware/auth.middleware';
 
 const router = Router();

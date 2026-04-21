@@ -4,10 +4,10 @@ import { dataset, datasetAssignedUser, upload } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
 import { adminListDatasetSchemaServer, datasetDtoSchemaServer } from './datasets.schema';
 import { type AdminListDataset, type PaginatedList, type DatasetDto, viewerDatasetSchema, type ViewerDataset, viewerDatasetWithUploadCountSchema, type ViewerDatasetWithUploadCount } from '@data-drop/api-schema';
-import { type ControllerResponse } from '@/types';
+import { type ServiceResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
 
-class DatasetsController {
+class DatasetsService {
   constructor(
     private db: Database,
   ) {}
@@ -16,7 +16,7 @@ class DatasetsController {
     search: string | undefined,
     page: number,
     limit: number,
-  ): Promise<ControllerResponse<PaginatedList<AdminListDataset>>> {
+  ): Promise<ServiceResponse<PaginatedList<AdminListDataset>>> {
     try {
       const whereClause = search ? ilike(dataset.title, `%${search}%`) : undefined;
 
@@ -59,7 +59,7 @@ class DatasetsController {
 
   async getDatasetsAssignedToCurrentUser(
     userId: string,
-  ): Promise<ControllerResponse<ViewerDatasetWithUploadCount[]>> {
+  ): Promise<ServiceResponse<ViewerDatasetWithUploadCount[]>> {
     try {
       const rows = await this.db
         .select({
@@ -98,7 +98,7 @@ class DatasetsController {
 
   async getAssignedDatasetById(
     datasetId: string,
-  ): Promise<ControllerResponse<ViewerDataset>> {
+  ): Promise<ServiceResponse<ViewerDataset>> {
     try {
       const found = await this.db.query.dataset.findFirst({
         where: (fields, { eq }) => eq(fields.id, datasetId),
@@ -124,7 +124,7 @@ class DatasetsController {
     }
   }
 
-  async getDatasetById(id: string): Promise<ControllerResponse<DatasetDto>> {
+  async getDatasetById(id: string): Promise<ServiceResponse<DatasetDto>> {
     try {
       const found = await this.db.query.dataset.findFirst({
         with: { columns: true },
@@ -149,4 +149,4 @@ class DatasetsController {
   }
 }
 
-export default new DatasetsController(db);
+export default new DatasetsService(db);

@@ -1,7 +1,7 @@
 import { Router } from 'express';
 
-import datasetsRouter from './datasets.router';
-import uploadsRouter from './uploads.router';
+import datasetsRouter from './datasets/datasets.router';
+import uploadsRouter from './uploads/uploads.router';
 import { requireViewerDatasetAccess } from '@/middleware/dataset-access.middleware';
 
 const router = Router();

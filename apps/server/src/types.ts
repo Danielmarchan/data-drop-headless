@@ -1,8 +1,8 @@
-export type ControllerResponse<T> =
+export type ServiceResponse<T> =
   | { success: true; data: T }
-  | { success: false; error: ControllerError };
+  | { success: false; error: ServiceError };
 
-export type ControllerError = {
+export type ServiceError = {
   statusCode: number;
   message: string;
 }

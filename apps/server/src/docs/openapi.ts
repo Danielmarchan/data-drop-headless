@@ -19,7 +19,7 @@ import {
   uploadRowDtoSchema,
   updateUploadInputSchema
 } from '@data-drop/api-schema';
-import { createUserSchema, updateUserSchema } from '@/api/controllers/users/users.schema';
+import { createUserSchema, updateUserSchema } from '@/api/features/users/users.schema';
 
 extendZodWithOpenApi(z);
 

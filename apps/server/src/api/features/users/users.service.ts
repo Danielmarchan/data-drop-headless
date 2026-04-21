@@ -5,10 +5,10 @@ import { db, type Database } from '@/db/index';
 import { hashPassword } from '@/auth';
 import { type CreateUserInput, type UpdateUserInput, type UserDto, type UserDetailDto, userDtoSchemaServer, userDetailDtoSchemaServer } from './users.schema';
 import { type PaginatedList } from '@data-drop/api-schema';
-import { type ControllerResponse } from '@/types';
+import { type ServiceResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
 
-class UsersController {
+class UsersService {
   constructor(
     private db: Database,
   ) {}
@@ -17,7 +17,7 @@ class UsersController {
     search: string | undefined,
     page: number,
     limit: number
-  ): Promise<ControllerResponse<PaginatedList<UserDto>>> {
+  ): Promise<ServiceResponse<PaginatedList<UserDto>>> {
     try {
       const whereClause = search
         ? or(ilike(user.name, `%${search}%`), ilike(user.email, `%${search}%`))
@@ -70,7 +70,7 @@ class UsersController {
     }
   }
 
-  async getUserById(id: string): Promise<ControllerResponse<UserDetailDto>> {
+  async getUserById(id: string): Promise<ServiceResponse<UserDetailDto>> {
     try {
       const found = await this.db.query.user.findFirst({
         with: {
@@ -97,7 +97,7 @@ class UsersController {
     }
   }
 
-  async createUser(input: CreateUserInput): Promise<ControllerResponse<UserDetailDto>> {
+  async createUser(input: CreateUserInput): Promise<ServiceResponse<UserDetailDto>> {
     try {
       const userId = randomUUID();
       const hashedPw = await hashPassword(input.password);
@@ -168,7 +168,7 @@ class UsersController {
   async updateUser(
     id: string,
     input: UpdateUserInput,
-  ): Promise<ControllerResponse<UserDetailDto>> {
+  ): Promise<ServiceResponse<UserDetailDto>> {
     try {
       const role = input.role
         ? await this.db.query.role.findFirst({ where: (fields, { eq }) => eq(fields.name, input.role!) })
@@ -246,7 +246,7 @@ class UsersController {
     }
   }
 
-  async deleteUser(id: string): Promise<ControllerResponse<null>> {
+  async deleteUser(id: string): Promise<ServiceResponse<null>> {
     try {
       const [deleted] = await this.db
         .delete(user)
@@ -280,4 +280,4 @@ class UsersController {
   }
 }
 
-export default new UsersController(db);
+export default new UsersService(db);

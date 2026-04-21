@@ -1,4 +1,3 @@
-import path from 'path';
 import { and, count, desc, eq, ilike } from 'drizzle-orm';
 import { parse } from 'csv-parse/sync';
 
@@ -6,15 +5,15 @@ import { upload, uploadRow } from '@/db/schema/index';
 import { db, type Database } from '@/db/index';
 import { type UploadDto, uploadDtoSchemaServer } from './uploads.schema';
 import { type PaginatedList, viewerUploadListItemSchema, type ViewerUploadListItem, viewerUploadDetailDtoSchema, type ViewerUploadDetailDto, type UpdateUploadInput } from '@data-drop/api-schema';
-import { type ControllerResponse } from '@/types';
+import { type ServiceResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
 
-class UploadsController {
+class UploadsService {
   constructor(
     private db: Database,
   ) {}
 
-  async getUploadById(id: string): Promise<ControllerResponse<UploadDto>> {
+  async getUploadById(id: string): Promise<ServiceResponse<UploadDto>> {
     try {
       const found = await this.db.query.upload.findFirst({
         with: { dataset: true },
@@ -41,7 +40,7 @@ class UploadsController {
   async updateUpload(
     id: string,
     input: UpdateUploadInput,
-  ): Promise<ControllerResponse<UploadDto>> {
+  ): Promise<ServiceResponse<UploadDto>> {
     try {
 
       const [updated] = await this.db
@@ -72,7 +71,7 @@ class UploadsController {
     }
   }
 
-  async deleteUpload(id: string): Promise<ControllerResponse<null>> {
+  async deleteUpload(id: string): Promise<ServiceResponse<null>> {
     try {
       const [deleted] = await this.db
         .delete(upload)
@@ -101,7 +100,7 @@ class UploadsController {
     search: string | undefined,
     page: number,
     limit: number,
-  ): Promise<ControllerResponse<PaginatedList<UploadDto>>> {
+  ): Promise<ServiceResponse<PaginatedList<UploadDto>>> {
     try {
       const datasetExists = await this.db.query.dataset.findFirst({
         where: (fields, { eq }) => eq(fields.id, id),
@@ -161,7 +160,7 @@ class UploadsController {
     search: string | undefined,
     page: number,
     limit: number,
-  ): Promise<ControllerResponse<PaginatedList<ViewerUploadListItem>>> {
+  ): Promise<ServiceResponse<PaginatedList<ViewerUploadListItem>>> {
     try {
       const countResult = await this.db
         .select({ total: count() })
@@ -214,7 +213,7 @@ class UploadsController {
   async getUploadWithRowsById(
     id: string,
     datasetId: string,
-  ): Promise<ControllerResponse<ViewerUploadDetailDto>> {
+  ): Promise<ServiceResponse<ViewerUploadDetailDto>> {
     try {
       const found = await this.db.query.upload.findFirst({
         columns: { id: true, title: true },
@@ -251,7 +250,7 @@ class UploadsController {
   async createUploadFromCsv(
     datasetId: string,
     file: Express.Multer.File,
-  ): Promise<ControllerResponse<UploadDto>> {
+  ): Promise<ServiceResponse<UploadDto>> {
     try {
       const datasetWithColumns = await this.db.query.dataset.findFirst({
         with: { columns: true },
@@ -324,7 +323,7 @@ class UploadsController {
 
       // Create upload and upload-rows in a transaction
       const fileName = file.originalname;
-      const title = path.basename(fileName, path.extname(fileName));
+      const title = await this.getUploadTitle(datasetWithColumns.title);
       const rowCount = records.length;
 
       let createdUploadId: string;
@@ -374,6 +373,41 @@ class UploadsController {
       };
     }
   }
+
+  private async getUploadTitle(datasetTitle: string) {
+    const baseTitle = datasetTitle + ' - ' + this.formatDate(new Date());
+
+    const existing = await this.db.query.upload.findMany({
+      columns: { title: true },
+      where: (fields, { or, eq, like }) =>
+        or(eq(fields.title, baseTitle), like(fields.title, `${baseTitle} (%)`)),
+    });
+
+    if (existing.length === 0) {
+      return baseTitle;
+    }
+
+    const escaped = baseTitle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const suffixPattern = new RegExp(`^${escaped} \\((\\d+)\\)$`);
+
+    let maxSuffix = 0;
+    for (const u of existing) {
+      const match = u.title.match(suffixPattern);
+      if (match) {
+        maxSuffix = Math.max(maxSuffix, parseInt(match[1]!, 10));
+      }
+    }
+
+    return `${baseTitle} (${maxSuffix + 1})`;
+  }
+
+  private formatDate(date: Date) {
+    const mm = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+    const dd = String(date.getDate()).padStart(2, '0');
+    const yyyy = date.getFullYear();
+
+    return `${mm}/${dd}/${yyyy}`;
+  }
 }
 
-export default new UploadsController(db);
+export default new UploadsService(db);

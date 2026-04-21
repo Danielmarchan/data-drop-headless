@@ -1,0 +1,49 @@
+import { z } from 'zod';
+import { type Request, type Response } from 'express';
+
+import UploadsService from '@/api/features/uploads/uploads.service';
+import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
+import { idParamSchema } from '@/helpers/query-params.schema';
+import { statusCodes } from '@/constants/statusCodes';
+import { updateUploadInputSchema } from '@data-drop/api-schema';
+
+class AdminUploadsController {
+  getUploadById = async (req: Request, res: Response) => {
+    const result = await UploadsService.getUploadById(idParamSchema.parse(req.params.id));
+
+    if (!result.success) {
+      return res.status(result.error.statusCode).json({ error: result.error.message });
+    }
+
+    res.json(result.data);
+  };
+
+  updateUpload = async (req: Request, res: Response) => {
+    try {
+      const input = updateUploadInputSchema.parse(req.body);
+      const result = await UploadsService.updateUpload(idParamSchema.parse(req.params.id), input);
+
+      if (!result.success) {
+        return res.status(result.error.statusCode).json({ error: result.error.message });
+      }
+
+      res.json(result.data);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return invalidQueryResponse(res, error);
+      }
+    }
+  };
+
+  deleteUpload = async (req: Request, res: Response) => {
+    const result = await UploadsService.deleteUpload(idParamSchema.parse(req.params.id));
+
+    if (!result.success) {
+      return res.status(result.error.statusCode).json({ error: result.error.message });
+    }
+
+    res.status(statusCodes.NO_CONTENT).send();
+  };
+}
+
+export default new AdminUploadsController();

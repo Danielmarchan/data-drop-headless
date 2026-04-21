@@ -1,0 +1,30 @@
+- api
+  - features
+    - admin
+      - datasets
+        - datasets.router.ts
+        - datasets.controller.ts (AdminDatasetsController)
+        - datasets.service.ts (AdminDatasetsService)
+        - datasets.schema.ts
+      - uploads
+        - uploads.router.ts
+        - uploads.controller.ts (AdminUploadsController)
+        - uploads.service.ts (AdminUploadsService)
+        - uploads.schema.ts
+      - users
+        - users.router.ts
+        - users.controller.ts (AdminUsersController)
+        - users.service.ts (AdminUsersController)
+        - users.schema.ts
+    - viewer
+      - datasets
+        - datasets.router.ts
+        - datasets.controller.ts (ViewerDatasetsController)
+        - datasets.service.ts (ViewerDatasetsService)
+        - datasets.schema.ts
+      - uploads
+        - uploads.router.ts
+        - uploads.controller.ts (ViewerUploadsController)
+        - uploads.service.ts (ViewerUploadsService)
+        - uploads.schema.ts
+  api.router.ts

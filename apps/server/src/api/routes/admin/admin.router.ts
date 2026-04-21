@@ -1,8 +1,8 @@
 import { Router } from 'express';
 
-import usersRouter from '@/api/routes/admin/users.router';
-import datasetsRouter from '@/api/routes/admin/datasets.router';
-import uploadsRouter from '@/api/routes/admin/uploads.router';
+import usersRouter from './users/users.router';
+import datasetsRouter from './datasets/datasets.router';
+import uploadsRouter from './uploads/uploads.router';
 
 const router = Router();
 
