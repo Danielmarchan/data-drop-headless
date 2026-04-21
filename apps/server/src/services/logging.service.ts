@@ -6,12 +6,21 @@ import {
   type Response,
   type Handler
 } from 'express'
+import env from '@/env';
 
 class LoggingService {
   logger: winston.Logger;
   loggerMiddleware: Handler;
   
   constructor() {
+    const sensitiveHeaders = [
+      'authorization',
+      'cookie',
+      'set-cookie',
+      'proxy-authorization',
+      'x-api-key',
+    ];
+
     let loggerOptions = {
       transports: [new winston.transports.Console()],
       format: format.combine(
@@ -20,13 +29,14 @@ class LoggingService {
         format.prettyPrint()
       ),
       meta: true,
+      headerBlacklist: sensitiveHeaders,
       colorize: false,
       expressFormat: true
     }
     
     if (
-      process.env.NODE_ENV === 'development' ||
-      process.env.NODE_ENV === 'test'
+      env.NODE_ENV === 'development' ||
+      env.NODE_ENV === 'test'
     ) {
       // logger options for error logs
       loggerOptions = {
