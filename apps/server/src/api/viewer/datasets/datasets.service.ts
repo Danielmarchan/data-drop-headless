@@ -5,6 +5,7 @@ import { type Database } from '@/db/index';
 import { viewerDatasetSchema, type ViewerDataset, viewerDatasetWithUploadCountSchema, type ViewerDatasetWithUploadCount } from '@data-drop/api-schema';
 import { type ServiceResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
+import logger from '@/services/logging.service';
 
 class ViewerDatasetsService {
   constructor(
@@ -39,7 +40,7 @@ class ViewerDatasetsService {
         ),
       };
     } catch (error) {
-      console.error('Error fetching assigned datasets:', error);
+      logger.error('Error fetching assigned datasets:', error);
       return {
         success: false,
         error: {
@@ -67,7 +68,7 @@ class ViewerDatasetsService {
 
       return { success: true, data: viewerDatasetSchema.parse(found) };
     } catch (error) {
-      console.error('Error fetching assigned dataset:', error);
+      logger.error('Error fetching assigned dataset:', error);
       return {
         success: false,
         error: {

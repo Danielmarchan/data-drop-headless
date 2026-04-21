@@ -1,5 +1,6 @@
 import { and, count, desc, eq, ilike } from 'drizzle-orm';
 import { parse } from 'csv-parse/sync';
+import { logger } from '@/services/logging.service';
 
 import { upload, uploadRow } from '@/db/schema/index';
 import { type Database } from '@/db/index';
@@ -29,7 +30,7 @@ class AdminUploadsService {
 
       return { success: true, data: uploadDtoSchemaServer.parse(found) };
     } catch (error) {
-      console.error('Error fetching upload:', error);
+      logger.error('Error fetching upload:', error);
       return {
         success: false,
         error: { statusCode: statusCodes.INTERNAL_SERVER_ERROR, message: 'Failed to fetch upload' },
@@ -63,7 +64,7 @@ class AdminUploadsService {
 
       return { success: true, data: uploadDtoSchemaServer.parse(withRelations) };
     } catch (error) {
-      console.error('Error updating upload:', error);
+      logger.error('Error updating upload:', error);
       return {
         success: false,
         error: { statusCode: statusCodes.INTERNAL_SERVER_ERROR, message: 'Failed to update upload' },
@@ -87,7 +88,7 @@ class AdminUploadsService {
 
       return { success: true, data: null };
     } catch (error) {
-      console.error('Error deleting upload:', error);
+      logger.error('Error deleting upload:', error);
       return {
         success: false,
         error: { statusCode: statusCodes.INTERNAL_SERVER_ERROR, message: 'Failed to delete upload' },
@@ -144,7 +145,7 @@ class AdminUploadsService {
         },
       };
     } catch (error) {
-      console.error('Error fetching uploads for dataset:', error);
+      logger.error('Error fetching uploads for dataset:', error);
       return {
         success: false,
         error: {
@@ -271,7 +272,7 @@ class AdminUploadsService {
         data: uploadDtoSchemaServer.parse(uploadWithDataset)
       };
     } catch (error) {
-      console.error('Error creating upload from CSV:', error);
+      logger.error('Error creating upload from CSV:', error);
       return {
         success: false,
         error: {

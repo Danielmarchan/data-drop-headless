@@ -6,6 +6,7 @@ import { adminListDatasetSchemaServer, datasetDtoSchemaServer } from './datasets
 import { type AdminListDataset, type PaginatedList, type DatasetDto } from '@data-drop/api-schema';
 import { type ServiceResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
+import logger from '@/services/logging.service';
 
 class AdminDatasetsService {
   constructor(
@@ -46,7 +47,7 @@ class AdminDatasetsService {
         },
       };
     } catch (error) {
-      console.error('Error fetching datasets:', error);
+      logger.error('Error fetching datasets:', error);
       return {
         success: false,
         error: {
@@ -73,7 +74,7 @@ class AdminDatasetsService {
 
       return { success: true, data: datasetDtoSchemaServer.parse(found) };
     } catch (error) {
-      console.error('Error fetching dataset:', error);
+      logger.error('Error fetching dataset:', error);
       return {
         success: false,
         error: { statusCode: statusCodes.INTERNAL_SERVER_ERROR, message: 'Failed to fetch dataset' },

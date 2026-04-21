@@ -1,5 +1,7 @@
 import { randomUUID } from 'crypto';
 import { count, desc, eq, ilike, or } from 'drizzle-orm';
+import logger from '@/services/logging.service';
+
 import { user, account, datasetAssignedUser } from '@/db/schema/index';
 import { type Database } from '@/db/index';
 import { hashPassword } from '@/auth';
@@ -59,7 +61,7 @@ class AdminUsersService {
         },
       };
     } catch (error) {
-      console.error('Error fetching users:', error);
+      logger.error('Error fetching users:', error);
       return {
         success: false,
         error: {
@@ -89,7 +91,7 @@ class AdminUsersService {
 
       return { success: true, data: userDetailDtoSchemaServer.parse(found) };
     } catch (error) {
-      console.error('Error fetching user:', error);
+      logger.error('Error fetching user:', error);
       return {
         success: false,
         error: { statusCode: statusCodes.INTERNAL_SERVER_ERROR, message: 'Failed to fetch user' },
@@ -154,7 +156,7 @@ class AdminUsersService {
         data: userDetailDtoSchemaServer.parse(userWithRole)
       };
     } catch (error) {
-      console.error('Error creating user:', error);
+      logger.error('Error creating user:', error);
       return {
         success: false,
         error: {
@@ -238,7 +240,7 @@ class AdminUsersService {
         data: userDetailDtoSchemaServer.parse(userWithRole)
       };
     } catch (error) {
-      console.error('Error updating user:', error);
+      logger.error('Error updating user:', error);
       return {
         success: false,
         error: { statusCode: statusCodes.INTERNAL_SERVER_ERROR, message: 'Failed to update user' },
@@ -268,7 +270,7 @@ class AdminUsersService {
         data: null
       };
     } catch (error) {
-      console.error('Error deleting user:', error);
+      logger.error('Error deleting user:', error);
       return {
         success: false,
         error: {

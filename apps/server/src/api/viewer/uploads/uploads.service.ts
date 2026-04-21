@@ -1,4 +1,5 @@
 import { and, count, desc, eq, ilike } from 'drizzle-orm';
+import logger from '@/services/logging.service';
 
 import { upload } from '@/db/schema/index';
 import { type Database } from '@/db/index';
@@ -55,7 +56,7 @@ class ViewerUploadsService {
         },
       };
     } catch (error) {
-      console.error('Error fetching visible uploads for dataset:', error);
+      logger.error('Error fetching visible uploads for dataset:', error);
       return {
         success: false,
         error: {
@@ -92,7 +93,7 @@ class ViewerUploadsService {
 
       return { success: true, data: viewerUploadDetailDtoSchema.parse(found) };
     } catch (error) {
-      console.error('Error fetching upload with rows:', error);
+      logger.error('Error fetching upload with rows:', error);
       return {
         success: false,
         error: {
