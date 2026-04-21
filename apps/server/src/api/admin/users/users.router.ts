@@ -1,12 +1,17 @@
 import { Router } from 'express';
+
+import type AdminUsersService from './users.service';
 import AdminUsersController from './users.controller';
 
-const router = Router();
+export function createAdminUsersRouter(usersService: AdminUsersService) {
+  const controller = new AdminUsersController(usersService);
+  const router = Router();
 
-router.get('/', AdminUsersController.getUsers);
-router.get('/:id', AdminUsersController.getUserById);
-router.post('/', AdminUsersController.createUser);
-router.patch('/:id', AdminUsersController.updateUser);
-router.delete('/:id', AdminUsersController.deleteUser);
+  router.get('/', controller.getUsers);
+  router.get('/:id', controller.getUserById);
+  router.post('/', controller.createUser);
+  router.patch('/:id', controller.updateUser);
+  router.delete('/:id', controller.deleteUser);
 
-export default router;
+  return router;
+}

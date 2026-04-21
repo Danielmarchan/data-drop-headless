@@ -1,7 +1,7 @@
 import { and, count, desc, eq } from 'drizzle-orm';
 
 import { dataset, datasetAssignedUser, upload } from '@/db/schema/index';
-import { db, type Database } from '@/db/index';
+import { type Database } from '@/db/index';
 import { viewerDatasetSchema, type ViewerDataset, viewerDatasetWithUploadCountSchema, type ViewerDatasetWithUploadCount } from '@data-drop/api-schema';
 import { type ServiceResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
@@ -79,4 +79,4 @@ class ViewerDatasetsService {
   }
 }
 
-export default new ViewerDatasetsService(db);
+export default ViewerDatasetsService;

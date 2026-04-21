@@ -1,7 +1,7 @@
 import { and, count, desc, eq, ilike } from 'drizzle-orm';
 
 import { upload } from '@/db/schema/index';
-import { db, type Database } from '@/db/index';
+import { type Database } from '@/db/index';
 import { type PaginatedList, viewerUploadListItemSchema, type ViewerUploadListItem, viewerUploadDetailDtoSchema, type ViewerUploadDetailDto } from '@data-drop/api-schema';
 import { type ServiceResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
@@ -104,4 +104,4 @@ class ViewerUploadsService {
   }
 }
 
-export default new ViewerUploadsService(db);
+export default ViewerUploadsService;

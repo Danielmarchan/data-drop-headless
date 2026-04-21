@@ -1,10 +1,15 @@
 import { Router } from 'express';
+
 import AdminUploadsController from './uploads.controller';
+import AdminUploadsService from './uploads.service';
 
-const router = Router();
+export function createAdminUploadsRouter(uploadsService: AdminUploadsService) {
+  const controller = new AdminUploadsController(uploadsService);
+  const router = Router();
 
-router.get('/:id', AdminUploadsController.getUploadById);
-router.patch('/:id', AdminUploadsController.updateUpload);
-router.delete('/:id', AdminUploadsController.deleteUpload);
+  router.get('/:id', controller.getUploadById);
+  router.patch('/:id', controller.updateUpload);
+  router.delete('/:id', controller.deleteUpload);
 
-export default router;
+  return router;
+}

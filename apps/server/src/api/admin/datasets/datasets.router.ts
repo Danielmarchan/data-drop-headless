@@ -1,16 +1,25 @@
 import { Router } from 'express';
-import AdminDatasetsController from './datasets.controller'
+
 import { csvUpload } from '@/middleware/csv-upload.middleware';
+import AdminDatasetsController from './datasets.controller';
+import type AdminDatasetsService from './datasets.service';
+import type AdminUploadsService from '../uploads/uploads.service';
 
-const router = Router();
+export function createAdminDatasetsRouter(
+  datasetsService: AdminDatasetsService,
+  uploadsService: AdminUploadsService,
+) {
+  const controller = new AdminDatasetsController(datasetsService, uploadsService);
+  const router = Router();
 
-router.get('/', AdminDatasetsController.getDatasets);
-router.get('/:id', AdminDatasetsController.getDatasetById);
-router.get('/:id/uploads', AdminDatasetsController.getUploadsByDatasetId);
-router.post(
-  '/:id/uploads',
-  csvUpload,
-  AdminDatasetsController.createUpload
-);
+  router.get('/', controller.getDatasets);
+  router.get('/:id', controller.getDatasetById);
+  router.get('/:id/uploads', controller.getUploadsByDatasetId);
+  router.post(
+    '/:id/uploads',
+    csvUpload,
+    controller.createUpload
+  );
 
-export default router;
+  return router;
+}

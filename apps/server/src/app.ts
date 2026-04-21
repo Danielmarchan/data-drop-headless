@@ -3,6 +3,8 @@ import cors from 'cors';
 
 import env from '@/env';
 import router from '@/api/routes/api.router';
+import { createApiRouter } from '@/api/api.router';
+import { db } from '@/db';
 import docsRouter from '@/docs/docs.router';
 import { requireSession } from '@/middleware/auth.middleware';
 import { statusCodes } from './constants/statusCodes';
@@ -23,6 +25,7 @@ app.get('/health', (_req, res) => {
 });
 
 app.use('/api', router);
+app.use('/api', createApiRouter(db));
 app.use('/docs', requireSession, docsRouter);
 
 // Error handler

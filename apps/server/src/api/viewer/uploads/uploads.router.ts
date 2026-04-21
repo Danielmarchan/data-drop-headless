@@ -1,10 +1,14 @@
 import { Router } from 'express';
 
 import ViewerUploadsController from './uploads.controller';
+import type ViewerUploadsService from './uploads.service';
 
-const router = Router({ mergeParams: true });
+export function createViewerUploadsRouter(uploadsService: ViewerUploadsService) {
+  const controller = new ViewerUploadsController(uploadsService);
+  const router = Router({ mergeParams: true });
 
-router.get('/', ViewerUploadsController.getVisibleUploads);
-router.get('/:id', ViewerUploadsController.getUploadWithRows);
+  router.get('/', controller.getVisibleUploads);
+  router.get('/:id', controller.getUploadWithRows);
 
-export default router;
+  return router;
+}

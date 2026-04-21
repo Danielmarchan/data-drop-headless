@@ -1,7 +1,7 @@
 import { count, desc, ilike } from 'drizzle-orm';
 
 import { dataset } from '@/db/schema/index';
-import { db, type Database } from '@/db/index';
+import { type Database } from '@/db/index';
 import { adminListDatasetSchemaServer, datasetDtoSchemaServer } from './datasets.schema';
 import { type AdminListDataset, type PaginatedList, type DatasetDto } from '@data-drop/api-schema';
 import { type ServiceResponse } from '@/types';
@@ -82,4 +82,4 @@ class AdminDatasetsService {
   }
 }
 
-export default new AdminDatasetsService(db);
+export default AdminDatasetsService;

@@ -2,7 +2,7 @@ import { and, count, desc, eq, ilike } from 'drizzle-orm';
 import { parse } from 'csv-parse/sync';
 
 import { upload, uploadRow } from '@/db/schema/index';
-import { db, type Database } from '@/db/index';
+import { type Database } from '@/db/index';
 import { type UploadDto, uploadDtoSchemaServer } from './uploads.schema';
 import { type PaginatedList, type UpdateUploadInput } from '@data-drop/api-schema';
 import { type ServiceResponse } from '@/types';
@@ -318,4 +318,4 @@ class AdminUploadsService {
   }
 }
 
-export default new AdminUploadsService(db);
+export default AdminUploadsService;

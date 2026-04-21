@@ -1,7 +1,7 @@
 import { randomUUID } from 'crypto';
 import { count, desc, eq, ilike, or } from 'drizzle-orm';
 import { user, account, datasetAssignedUser } from '@/db/schema/index';
-import { db, type Database } from '@/db/index';
+import { type Database } from '@/db/index';
 import { hashPassword } from '@/auth';
 import { type CreateUserInput, type UpdateUserInput, type UserDto, type UserDetailDto, userDtoSchemaServer, userDetailDtoSchemaServer } from './users.schema';
 import { type PaginatedList } from '@data-drop/api-schema';
@@ -280,4 +280,4 @@ class AdminUsersService {
   }
 }
 
-export default new AdminUsersService(db);
+export default AdminUsersService;

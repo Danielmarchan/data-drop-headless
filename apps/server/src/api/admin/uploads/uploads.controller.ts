@@ -8,8 +8,12 @@ import { statusCodes } from '@/constants/statusCodes';
 import { updateUploadInputSchema } from '@data-drop/api-schema';
 
 class AdminUploadsController {
+  constructor(
+    private uploadsService: AdminUploadsService,
+  ) {}
+
   getUploadById = async (req: Request, res: Response) => {
-    const result = await AdminUploadsService.getUploadById(idParamSchema.parse(req.params.id));
+    const result = await this.uploadsService.getUploadById(idParamSchema.parse(req.params.id));
 
     if (!result.success) {
       return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -21,7 +25,7 @@ class AdminUploadsController {
   updateUpload = async (req: Request, res: Response) => {
     try {
       const input = updateUploadInputSchema.parse(req.body);
-      const result = await AdminUploadsService.updateUpload(idParamSchema.parse(req.params.id), input);
+      const result = await this.uploadsService.updateUpload(idParamSchema.parse(req.params.id), input);
 
       if (!result.success) {
         return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -36,7 +40,7 @@ class AdminUploadsController {
   };
 
   deleteUpload = async (req: Request, res: Response) => {
-    const result = await AdminUploadsService.deleteUpload(idParamSchema.parse(req.params.id));
+    const result = await this.uploadsService.deleteUpload(idParamSchema.parse(req.params.id));
 
     if (!result.success) {
       return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -46,4 +50,4 @@ class AdminUploadsController {
   };
 }
 
-export default new AdminUploadsController();
+export default AdminUploadsController;

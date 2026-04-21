@@ -2,10 +2,14 @@ import { Router } from 'express';
 
 import { requireViewerDatasetAccess } from '@/middleware/dataset-access.middleware';
 import ViewerDatasetsController from './datasets.controller';
+import type ViewerDatasetsService from './datasets.service';
 
-const router = Router();
+export function createViewerDatasetsRouter(datasetsService: ViewerDatasetsService) {
+  const controller = new ViewerDatasetsController(datasetsService);
+  const router = Router();
 
-router.get('/', ViewerDatasetsController.getAssignedDatasets);
-router.get('/:datasetId', requireViewerDatasetAccess, ViewerDatasetsController.getAssignedDatasetById);
+  router.get('/', controller.getAssignedDatasets);
+  router.get('/:datasetId', requireViewerDatasetAccess, controller.getAssignedDatasetById);
 
-export default router;
+  return router;
+}

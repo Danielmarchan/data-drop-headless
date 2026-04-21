@@ -1,16 +1,23 @@
 import { Router } from 'express';
 
-import datasetsRouter from './datasets/datasets.router';
-import uploadsRouter from './uploads/uploads.router';
+import { type Database } from '@/db';
 import { requireViewerDatasetAccess } from '@/middleware/dataset-access.middleware';
+import { createViewerDatasetsRouter } from './datasets/datasets.router';
+import { createViewerUploadsRouter } from './uploads/uploads.router';
+import ViewerDatasetsService from './datasets/datasets.service';
+import ViewerUploadsService from './uploads/uploads.service';
 
-const router = Router();
+export function createViewerRouter(db: Database)  {
+  const datasetsService = new ViewerDatasetsService(db);
+  const uploadsService = new ViewerUploadsService(db);
+  const router = Router();
 
-router.use('/datasets', datasetsRouter);
-router.use(
-  '/datasets/:datasetId/uploads',
-  requireViewerDatasetAccess,
-  uploadsRouter
-);
+  router.use('/datasets', createViewerDatasetsRouter(datasetsService));
+  router.use(
+    '/datasets/:datasetId/uploads',
+    requireViewerDatasetAccess,
+    createViewerUploadsRouter(uploadsService)
+  );
 
-export default router;
+  return router;
+}
