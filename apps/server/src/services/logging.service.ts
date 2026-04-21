@@ -64,7 +64,7 @@ class LoggingService {
     
     // if not in test environment, use expressWinston logger
     if (process.env.NODE_ENV === 'test') {
-      middleware = (req: Request, res: Response, next: NextFunction) => {
+      middleware = (_req: Request, _res: Response, next: NextFunction) => {
         next()
       }
     }
