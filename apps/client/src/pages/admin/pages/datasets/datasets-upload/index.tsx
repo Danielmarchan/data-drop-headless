@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { Link, useParams } from 'react-router';
+import { useParams } from 'react-router';
 import { AxiosError } from 'axios';
 import { type UploadDto } from '@data-drop/api-schema';
 import { useDataset } from './api/use-dataset';
@@ -7,6 +7,7 @@ import { useUploads } from './api/use-uploads';
 import { useCreateUpload } from './api/use-create-upload';
 import { useDeleteUpload } from './api/use-delete-upload';
 import { useUpdateUpload } from './api/use-update-upload';
+import Breadcrumbs from '@/components/breadcrumbs';
 import ConfirmModal from '@/components/confirm-modal';
 import Spinner from '@/components/spinner';
 import UploadRow from './components/upload-row';
@@ -101,20 +102,13 @@ export default function AdminDatasetUploadsPage() {
 
   return (
     <div className="container px-6 py-8 mx-auto">
-      <nav className="flex items-center gap-2 mb-10">
-        <Link
-          to="/admin/datasets"
-          className="font-inter text-sm text-on-surface-variant hover:text-on-surface transition-colors"
-        >
-          Datasets
-        </Link>
-        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" aria-hidden="true">
-          <path d="M1 1l3 3-3 3" stroke="var(--color-on-surface-variant)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-        <span className="font-inter font-medium text-sm text-on-surface">
-          {dataset ? `${dataset.title} Uploads` : 'Uploads'}
-        </span>
-      </nav>
+      <Breadcrumbs
+        className="mb-10"
+        items={[
+          { label: 'Datasets', to: '/admin/datasets' },
+          { label: dataset ? `${dataset.title} Uploads` : 'Uploads' },
+        ]}
+      />
 
       <h1 className="font-manrope font-bold text-[30px] leading-9 tracking-[-0.75px] text-on-surface mb-8">
         Dataset Upload

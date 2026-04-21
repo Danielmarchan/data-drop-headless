@@ -1,7 +1,7 @@
 import { useEffect, useId, useMemo, useState } from 'react';
-import { Link } from 'react-router';
 import { type CreateUserInput, type UpdateUserInput } from '@data-drop/api-schema';
 import { useDatasets } from '@/pages/admin/api/use-datasets';
+import Breadcrumbs from '@/components/breadcrumbs';
 import Button from '@/components/button';
 import FormSection from '@/components/form-section';
 import SearchInput from '@/components/search-input';
@@ -120,13 +120,12 @@ export default function UserForm({
       className="flex min-h-screen flex-col bg-surface pb-28"
     >
       <div className="container mx-auto px-6 pt-6">
-        <nav className="flex items-center gap-2 text-sm font-inter text-on-surface-variant">
-          <Link to="/admin/users" className="hover:text-on-surface transition-colors">
-            Users
-          </Link>
-          <span>/</span>
-          <span className="text-on-surface">{mode === 'create' ? 'New User' : 'Edit User'}</span>
-        </nav>
+        <Breadcrumbs
+          items={[
+            { label: 'Users', to: '/admin/users' },
+            { label: mode === 'create' ? 'New User' : 'Edit User' },
+          ]}
+        />
       </div>
 
       <main className="container mx-auto flex-1 px-6 py-8">

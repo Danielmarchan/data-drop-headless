@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { type Request, type Response } from 'express';
 
-import AdminUploadsService from './uploads.service';
+import type AdminUploadsService from './uploads.service';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
 import { idParamSchema } from '@/helpers/query-params.schema';
 import { statusCodes } from '@/constants/statusCodes';
