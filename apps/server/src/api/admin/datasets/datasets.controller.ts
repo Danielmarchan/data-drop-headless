@@ -1,8 +1,8 @@
 import { z } from 'zod';
 import { type Request, type Response } from 'express';
 
-import DatasetsService from '@/api/features/datasets/datasets.service';
-import UploadsService from '@/api/features/uploads/uploads.service';
+import AdminDatasetsService from './datasets.service';
+import AdminUploadsService from '../uploads/uploads.service';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
 import { idParamSchema, limitParamSchema, pageParamSchema, searchParamSchema } from '@/helpers/query-params.schema';
 import { statusCodes } from '@/constants/statusCodes';
@@ -14,7 +14,7 @@ class AdminDatasetsController {
       const page = pageParamSchema.parse(Number(req.query.page));
       const limit = limitParamSchema.parse(Number(req.query.limit));
 
-      const result = await DatasetsService.getPaginatedDatasets(search, page, limit);
+      const result = await AdminDatasetsService.getPaginatedDatasets(search, page, limit);
 
       if (!result.success) {
         return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -29,7 +29,7 @@ class AdminDatasetsController {
   }
 
   getDatasetById = async (req: Request, res: Response) => {
-    const result = await DatasetsService.getDatasetById(idParamSchema.parse(req.params.id));
+    const result = await AdminDatasetsService.getDatasetById(idParamSchema.parse(req.params.id));
 
     if (!result.success) {
       return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -45,7 +45,7 @@ class AdminDatasetsController {
       const page = pageParamSchema.parse(Number(req.query.page));
       const limit = limitParamSchema.parse(Number(req.query.limit));
 
-      const result = await UploadsService.getUploadsByDatasetId(id, search, page, limit);
+      const result = await AdminUploadsService.getUploadsByDatasetId(id, search, page, limit);
 
       if (!result.success) {
         return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -67,7 +67,7 @@ class AdminDatasetsController {
         return res.status(statusCodes.BAD_REQUEST).json({ error: 'No file uploaded' });
       }
 
-      const result = await UploadsService.createUploadFromCsv(id, req.file);
+      const result = await AdminUploadsService.createUploadFromCsv(id, req.file);
 
       if (!result.success) {
         return res.status(result.error.statusCode).json({ error: result.error.message });

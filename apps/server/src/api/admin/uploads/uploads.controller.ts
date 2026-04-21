@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { type Request, type Response } from 'express';
 
-import UploadsService from '@/api/features/uploads/uploads.service';
+import AdminUploadsService from './uploads.service';
 import { invalidQueryResponse } from '@/helpers/invalidQueryResponse';
 import { idParamSchema } from '@/helpers/query-params.schema';
 import { statusCodes } from '@/constants/statusCodes';
@@ -9,7 +9,7 @@ import { updateUploadInputSchema } from '@data-drop/api-schema';
 
 class AdminUploadsController {
   getUploadById = async (req: Request, res: Response) => {
-    const result = await UploadsService.getUploadById(idParamSchema.parse(req.params.id));
+    const result = await AdminUploadsService.getUploadById(idParamSchema.parse(req.params.id));
 
     if (!result.success) {
       return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -21,7 +21,7 @@ class AdminUploadsController {
   updateUpload = async (req: Request, res: Response) => {
     try {
       const input = updateUploadInputSchema.parse(req.body);
-      const result = await UploadsService.updateUpload(idParamSchema.parse(req.params.id), input);
+      const result = await AdminUploadsService.updateUpload(idParamSchema.parse(req.params.id), input);
 
       if (!result.success) {
         return res.status(result.error.statusCode).json({ error: result.error.message });
@@ -36,7 +36,7 @@ class AdminUploadsController {
   };
 
   deleteUpload = async (req: Request, res: Response) => {
-    const result = await UploadsService.deleteUpload(idParamSchema.parse(req.params.id));
+    const result = await AdminUploadsService.deleteUpload(idParamSchema.parse(req.params.id));
 
     if (!result.success) {
       return res.status(result.error.statusCode).json({ error: result.error.message });

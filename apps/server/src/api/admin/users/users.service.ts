@@ -8,7 +8,7 @@ import { type PaginatedList } from '@data-drop/api-schema';
 import { type ServiceResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
 
-class UsersService {
+class AdminUsersService {
   constructor(
     private db: Database,
   ) {}
@@ -22,7 +22,7 @@ class UsersService {
       const whereClause = search
         ? or(ilike(user.name, `%${search}%`), ilike(user.email, `%${search}%`))
         : undefined;
-    
+
       const countResult = await this.db.select({ total: count() }).from(user).where(whereClause);
       const total = countResult[0]?.total ?? 0;
       const totalPages = Math.max(1, Math.ceil(total / limit));
@@ -280,4 +280,4 @@ class UsersService {
   }
 }
 
-export default new UsersService(db);
+export default new AdminUsersService(db);
