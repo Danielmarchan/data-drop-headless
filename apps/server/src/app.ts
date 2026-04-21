@@ -42,9 +42,6 @@ app.use(actuator()) // Application health monitoring
 app.use(express.json());
 
 // Endpoints
-app.get('/health', (_req, res) => {
-  res.json({ status: 'ok' });
-});
 app.use('/api', createApiRouter(db));
 app.use('/docs', requireSession, docsRouter);
 
