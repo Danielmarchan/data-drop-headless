@@ -9,6 +9,7 @@ export default function AdminLayout() {
   const { data: session, isPending: sessionPending } = authClient.useSession();
 
   const { data, isPending: mePending, isError } = useUserProfile();
+  const isAdmin = data?.user.role?.name === 'admin';
 
   if (sessionPending) return null;
 
@@ -32,6 +33,7 @@ export default function AdminLayout() {
         userId={data?.user.id ?? session.user.id}
         navLinks={<AdminNavLinks />}
         secondaryLink={{ label: 'Go to Charts Viewer', href: '/datasets' }}
+        canEditProfile={isAdmin}
       />
       <main className="flex-1 overflow-y-auto">
         <Outlet />

@@ -7,9 +7,10 @@ type UserMenuProps = {
   email: string;
   userId: string;
   secondaryLink?: { label: string; href: string } | null;
+  canEditProfile: boolean;
 };
 
-export default function UserMenu({ email, userId, secondaryLink }: UserMenuProps) {
+export default function UserMenu({ email, userId, secondaryLink, canEditProfile }: UserMenuProps) {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -42,14 +43,16 @@ export default function UserMenu({ email, userId, secondaryLink }: UserMenuProps
 
       {open && (
         <div className="absolute right-0 top-full mt-1 w-56 rounded-lg bg-surface-lowest z-50 border border-outline-variant/20 shadow-ghost">
-          <Link
-            to={`/admin/users/${userId}/edit`}
-            onClick={() => setOpen(false)}
-            className="flex items-center gap-3 px-4 h-10 font-inter font-normal text-sm text-on-surface-variant hover:bg-surface rounded-t-lg"
-          >
-            <PencilIcon />
-            Edit Profile
-          </Link>
+          {canEditProfile && (
+            <Link
+              to={`/admin/users/${userId}/edit`}
+              onClick={() => setOpen(false)}
+              className="flex items-center gap-3 px-4 h-10 font-inter font-normal text-sm text-on-surface-variant hover:bg-surface rounded-t-lg"
+            >
+              <PencilIcon />
+              Edit Profile
+            </Link>
+          )}
 
           {secondaryLink && (
             <>

@@ -7,9 +7,10 @@ type TopNavProps = {
   userId: string;
   navLinks?: React.ReactNode;
   secondaryLink?: { label: string; href: string } | null;
+  canEditProfile: boolean;
 };
 
-export default function TopNav({ logoHref, email, userId, navLinks, secondaryLink }: TopNavProps) {
+export default function TopNav({ logoHref, email, userId, navLinks, secondaryLink, canEditProfile }: TopNavProps) {
   return (
     <header className="w-full bg-surface-lowest z-1 flex items-center px-6 py-4">
       <div className="flex items-center gap-8 flex-1">
@@ -21,7 +22,12 @@ export default function TopNav({ logoHref, email, userId, navLinks, secondaryLin
         </Link>
         {navLinks}
       </div>
-      <UserMenu email={email} userId={userId} secondaryLink={secondaryLink} />
+      <UserMenu
+        email={email}
+        userId={userId}
+        secondaryLink={secondaryLink}
+        canEditProfile={canEditProfile}
+      />
     </header>
   );
 }

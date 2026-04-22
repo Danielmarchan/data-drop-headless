@@ -27,6 +27,7 @@ export default function ViewerLayout() {
         email={session.user.email}
         userId={data?.user.id ?? session.user.id}
         secondaryLink={isAdmin ? { label: 'Go to Admin Dashboard', href: '/admin' } : null}
+        canEditProfile={isAdmin}
       />
       <main className="flex-1 overflow-y-auto">
         <Outlet />
