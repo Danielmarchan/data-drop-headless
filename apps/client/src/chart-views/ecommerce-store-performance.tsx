@@ -428,10 +428,10 @@ function FulfillmentStatusPie({ rows }: { rows: UploadRowDto[] }) {
         <EmptyState />
       ) : (
         <>
-          <div className="h-56">
+          <div className="h-56 flex">
             <AgCharts options={options} />
           </div>
-          <ul className="mt-6 flex flex-col items-center gap-2">
+          <ul className="mt-6 flex items-center gap-2 flex-wrap">
             {data.map((d) => (
               <li
                 key={d.statusKey}
@@ -624,7 +624,6 @@ export default function EcommerceStorePerformance({
         <StatCard
           label="Most Recent Order"
           value={stats.mostRecentOrder ? dateFormatter.format(stats.mostRecentOrder) : '—'}
-          trend="From created_at"
         />
       </div>
     </div>
