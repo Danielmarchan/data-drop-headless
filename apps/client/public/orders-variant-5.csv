@@ -1,0 +1,689 @@
+order_id,order_number,created_at,customer_name,customer_email,fulfillment_status,financial_status,total_price,subtotal_price,total_tax,shipping_price,discount_amount,currency,city,country,line_item_id,product_title,sku,quantity,unit_price,line_total
+8401234567001,6001,2026-05-09 19:30:00,Amelia Rodriguez,amelia.rodriguez21@email.com,pending,cancelled,964.30,892.87,71.43,0.00,0.00,USD,Charlotte,US,1,Weekender Bag,SKU-ODR-011,4,124.99,499.96
+8401234567001,6001,2026-05-09 19:30:00,Amelia Rodriguez,amelia.rodriguez21@email.com,pending,cancelled,964.30,892.87,71.43,0.00,0.00,USD,Charlotte,US,2,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567001,6001,2026-05-09 19:30:00,Amelia Rodriguez,amelia.rodriguez21@email.com,pending,cancelled,964.30,892.87,71.43,0.00,0.00,USD,Charlotte,US,3,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567001,6001,2026-05-09 19:30:00,Amelia Rodriguez,amelia.rodriguez21@email.com,pending,cancelled,964.30,892.87,71.43,0.00,0.00,USD,Charlotte,US,4,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567001,6001,2026-05-09 19:30:00,Amelia Rodriguez,amelia.rodriguez21@email.com,pending,cancelled,964.30,892.87,71.43,0.00,0.00,USD,Charlotte,US,5,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567002,6002,2026-05-06 09:59:25,Samuel Parker,samuel.parker22@email.com,fulfilled,cancelled,609.95,613.88,45.18,0.00,49.11,USD,Charlotte,US,6,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567002,6002,2026-05-06 09:59:25,Samuel Parker,samuel.parker22@email.com,fulfilled,cancelled,609.95,613.88,45.18,0.00,49.11,USD,Charlotte,US,7,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567002,6002,2026-05-06 09:59:25,Samuel Parker,samuel.parker22@email.com,fulfilled,cancelled,609.95,613.88,45.18,0.00,49.11,USD,Charlotte,US,8,Yoga Mat,SKU-ODR-010,4,49.99,199.96
+8401234567002,6002,2026-05-06 09:59:25,Samuel Parker,samuel.parker22@email.com,fulfilled,cancelled,609.95,613.88,45.18,0.00,49.11,USD,Charlotte,US,9,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567003,6003,2026-05-06 10:51:08,Penelope Ward,penelope.ward0@email.com,unfulfilled,cancelled,1026.94,950.87,76.07,0.00,0.00,USD,Seattle,US,10,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567003,6003,2026-05-06 10:51:08,Penelope Ward,penelope.ward0@email.com,unfulfilled,cancelled,1026.94,950.87,76.07,0.00,0.00,USD,Seattle,US,11,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567003,6003,2026-05-06 10:51:08,Penelope Ward,penelope.ward0@email.com,unfulfilled,cancelled,1026.94,950.87,76.07,0.00,0.00,USD,Seattle,US,12,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567003,6003,2026-05-06 10:51:08,Penelope Ward,penelope.ward0@email.com,unfulfilled,cancelled,1026.94,950.87,76.07,0.00,0.00,USD,Seattle,US,13,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567003,6003,2026-05-06 10:51:08,Penelope Ward,penelope.ward0@email.com,unfulfilled,cancelled,1026.94,950.87,76.07,0.00,0.00,USD,Seattle,US,14,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567003,6003,2026-05-06 10:51:08,Penelope Ward,penelope.ward0@email.com,unfulfilled,cancelled,1026.94,950.87,76.07,0.00,0.00,USD,Seattle,US,15,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567004,6004,2026-05-06 20:26:42,Daniel Turner,daniel.turner1@email.com,fulfilled,paid,971.56,977.82,71.97,0.00,78.23,USD,Seattle,US,16,Performance Tee,SKU-ODR-006,4,32.99,131.96
+8401234567004,6004,2026-05-06 20:26:42,Daniel Turner,daniel.turner1@email.com,fulfilled,paid,971.56,977.82,71.97,0.00,78.23,USD,Seattle,US,17,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567004,6004,2026-05-06 20:26:42,Daniel Turner,daniel.turner1@email.com,fulfilled,paid,971.56,977.82,71.97,0.00,78.23,USD,Seattle,US,18,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567004,6004,2026-05-06 20:26:42,Daniel Turner,daniel.turner1@email.com,fulfilled,paid,971.56,977.82,71.97,0.00,78.23,USD,Seattle,US,19,Cap,SKU-ODR-009,3,26.99,80.97
+8401234567004,6004,2026-05-06 20:26:42,Daniel Turner,daniel.turner1@email.com,fulfilled,paid,971.56,977.82,71.97,0.00,78.23,USD,Seattle,US,20,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567004,6004,2026-05-06 20:26:42,Daniel Turner,daniel.turner1@email.com,fulfilled,paid,971.56,977.82,71.97,0.00,78.23,USD,Seattle,US,21,Lounge Joggers,SKU-ODR-013,5,58.99,294.95
+8401234567005,6005,2026-05-05 09:41:28,Harper Davis,harper.davis2@email.com,pending,cancelled,789.36,730.89,58.47,0.00,0.00,USD,Nashville,US,22,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567005,6005,2026-05-05 09:41:28,Harper Davis,harper.davis2@email.com,pending,cancelled,789.36,730.89,58.47,0.00,0.00,USD,Nashville,US,23,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567005,6005,2026-05-05 09:41:28,Harper Davis,harper.davis2@email.com,pending,cancelled,789.36,730.89,58.47,0.00,0.00,USD,Nashville,US,24,Windbreaker,SKU-ODR-007,4,94.99,379.96
+8401234567005,6005,2026-05-05 09:41:28,Harper Davis,harper.davis2@email.com,pending,cancelled,789.36,730.89,58.47,0.00,0.00,USD,Nashville,US,25,Daypack,SKU-ODR-005,1,84.99,84.99
+8401234567005,6005,2026-05-05 09:41:28,Harper Davis,harper.davis2@email.com,pending,cancelled,789.36,730.89,58.47,0.00,0.00,USD,Nashville,US,26,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567006,6006,2026-05-06 10:10:22,Amelia Collins,amelia.collins3@email.com,fulfilled,refunded,514.56,517.87,38.12,0.00,41.43,USD,Nashville,US,27,Yoga Mat,SKU-ODR-010,1,49.99,49.99
+8401234567006,6006,2026-05-06 10:10:22,Amelia Collins,amelia.collins3@email.com,fulfilled,refunded,514.56,517.87,38.12,0.00,41.43,USD,Nashville,US,28,Water Bottle,SKU-ODR-008,5,24.99,124.95
+8401234567006,6006,2026-05-06 10:10:22,Amelia Collins,amelia.collins3@email.com,fulfilled,refunded,514.56,517.87,38.12,0.00,41.43,USD,Nashville,US,29,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567006,6006,2026-05-06 10:10:22,Amelia Collins,amelia.collins3@email.com,fulfilled,refunded,514.56,517.87,38.12,0.00,41.43,USD,Nashville,US,30,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567006,6006,2026-05-06 10:10:22,Amelia Collins,amelia.collins3@email.com,fulfilled,refunded,514.56,517.87,38.12,0.00,41.43,USD,Nashville,US,31,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567007,6007,2026-05-06 17:58:25,Leo Bennett,leo.bennett4@email.com,fulfilled,refunded,1295.89,1199.90,95.99,0.00,0.00,USD,Charlotte,US,32,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567007,6007,2026-05-06 17:58:25,Leo Bennett,leo.bennett4@email.com,fulfilled,refunded,1295.89,1199.90,95.99,0.00,0.00,USD,Charlotte,US,33,Running Shoes,SKU-ODR-001,4,159.99,639.96
+8401234567007,6007,2026-05-06 17:58:25,Leo Bennett,leo.bennett4@email.com,fulfilled,refunded,1295.89,1199.90,95.99,0.00,0.00,USD,Charlotte,US,34,Windbreaker,SKU-ODR-007,1,94.99,94.99
+8401234567007,6007,2026-05-06 17:58:25,Leo Bennett,leo.bennett4@email.com,fulfilled,refunded,1295.89,1199.90,95.99,0.00,0.00,USD,Charlotte,US,35,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567008,6008,2026-05-10 10:30:35,Elijah Flores,elijah.flores5@email.com,pending,cancelled,774.26,716.91,57.35,0.00,0.00,USD,Portland,US,36,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567008,6008,2026-05-10 10:30:35,Elijah Flores,elijah.flores5@email.com,pending,cancelled,774.26,716.91,57.35,0.00,0.00,USD,Portland,US,37,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567008,6008,2026-05-10 10:30:35,Elijah Flores,elijah.flores5@email.com,pending,cancelled,774.26,716.91,57.35,0.00,0.00,USD,Portland,US,38,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567008,6008,2026-05-10 10:30:35,Elijah Flores,elijah.flores5@email.com,pending,cancelled,774.26,716.91,57.35,0.00,0.00,USD,Portland,US,39,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567009,6009,2026-05-13 21:38:08,Ava Flores,ava.flores6@email.com,unfulfilled,pending,571.47,562.91,42.33,0.00,33.77,USD,Charlotte,US,40,Water Bottle,SKU-ODR-008,1,24.99,24.99
+8401234567009,6009,2026-05-13 21:38:08,Ava Flores,ava.flores6@email.com,unfulfilled,pending,571.47,562.91,42.33,0.00,33.77,USD,Charlotte,US,41,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567009,6009,2026-05-13 21:38:08,Ava Flores,ava.flores6@email.com,unfulfilled,pending,571.47,562.91,42.33,0.00,33.77,USD,Charlotte,US,42,Lightweight Hoodie,SKU-ODR-003,1,64.99,64.99
+8401234567009,6009,2026-05-13 21:38:08,Ava Flores,ava.flores6@email.com,unfulfilled,pending,571.47,562.91,42.33,0.00,33.77,USD,Charlotte,US,43,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567009,6009,2026-05-13 21:38:08,Ava Flores,ava.flores6@email.com,unfulfilled,pending,571.47,562.91,42.33,0.00,33.77,USD,Charlotte,US,44,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567009,6009,2026-05-13 21:38:08,Ava Flores,ava.flores6@email.com,unfulfilled,pending,571.47,562.91,42.33,0.00,33.77,USD,Charlotte,US,45,Compression Leggings,SKU-ODR-002,1,74.99,74.99
+8401234567010,6010,2026-05-11 12:06:04,Noah Collins,noah.collins7@email.com,pending,paid,973.54,979.82,72.11,0.00,78.39,USD,Nashville,US,46,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567010,6010,2026-05-11 12:06:04,Noah Collins,noah.collins7@email.com,pending,paid,973.54,979.82,72.11,0.00,78.39,USD,Nashville,US,47,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567010,6010,2026-05-11 12:06:04,Noah Collins,noah.collins7@email.com,pending,paid,973.54,979.82,72.11,0.00,78.39,USD,Nashville,US,48,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567010,6010,2026-05-11 12:06:04,Noah Collins,noah.collins7@email.com,pending,paid,973.54,979.82,72.11,0.00,78.39,USD,Nashville,US,49,Lounge Joggers,SKU-ODR-013,4,58.99,235.96
+8401234567010,6010,2026-05-11 12:06:04,Noah Collins,noah.collins7@email.com,pending,paid,973.54,979.82,72.11,0.00,78.39,USD,Nashville,US,50,Water Bottle,SKU-ODR-008,1,24.99,24.99
+8401234567010,6010,2026-05-11 12:06:04,Noah Collins,noah.collins7@email.com,pending,paid,973.54,979.82,72.11,0.00,78.39,USD,Nashville,US,51,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567010,6010,2026-05-11 12:06:04,Noah Collins,noah.collins7@email.com,pending,paid,973.54,979.82,72.11,0.00,78.39,USD,Nashville,US,52,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567010,6010,2026-05-11 12:06:04,Noah Collins,noah.collins7@email.com,pending,paid,973.54,979.82,72.11,0.00,78.39,USD,Nashville,US,53,Daypack,SKU-ODR-005,1,84.99,84.99
+8401234567011,6011,2026-05-17 16:20:02,Ellie Martinez,ellie.martinez8@email.com,unfulfilled,cancelled,605.80,560.93,44.87,0.00,0.00,USD,Portland,US,54,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567011,6011,2026-05-17 16:20:02,Ellie Martinez,ellie.martinez8@email.com,unfulfilled,cancelled,605.80,560.93,44.87,0.00,0.00,USD,Portland,US,55,Water Bottle,SKU-ODR-008,1,24.99,24.99
+8401234567011,6011,2026-05-17 16:20:02,Ellie Martinez,ellie.martinez8@email.com,unfulfilled,cancelled,605.80,560.93,44.87,0.00,0.00,USD,Portland,US,56,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567011,6011,2026-05-17 16:20:02,Ellie Martinez,ellie.martinez8@email.com,unfulfilled,cancelled,605.80,560.93,44.87,0.00,0.00,USD,Portland,US,57,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567012,6012,2026-05-12 10:05:03,Lucas Murphy,lucas.murphy9@email.com,pending,pending,793.77,781.88,58.80,0.00,46.91,USD,Denver,US,58,Lightweight Hoodie,SKU-ODR-003,1,64.99,64.99
+8401234567012,6012,2026-05-12 10:05:03,Lucas Murphy,lucas.murphy9@email.com,pending,pending,793.77,781.88,58.80,0.00,46.91,USD,Denver,US,59,Performance Tee,SKU-ODR-006,4,32.99,131.96
+8401234567012,6012,2026-05-12 10:05:03,Lucas Murphy,lucas.murphy9@email.com,pending,pending,793.77,781.88,58.80,0.00,46.91,USD,Denver,US,60,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567012,6012,2026-05-12 10:05:03,Lucas Murphy,lucas.murphy9@email.com,pending,pending,793.77,781.88,58.80,0.00,46.91,USD,Denver,US,61,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567012,6012,2026-05-12 10:05:03,Lucas Murphy,lucas.murphy9@email.com,pending,pending,793.77,781.88,58.80,0.00,46.91,USD,Denver,US,62,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567013,6013,2026-05-14 12:56:10,Chloe Ward,chloe.ward10@email.com,pending,pending,952.41,881.86,70.55,0.00,0.00,USD,Nashville,US,63,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567013,6013,2026-05-14 12:56:10,Chloe Ward,chloe.ward10@email.com,pending,pending,952.41,881.86,70.55,0.00,0.00,USD,Nashville,US,64,Compression Leggings,SKU-ODR-002,1,74.99,74.99
+8401234567013,6013,2026-05-14 12:56:10,Chloe Ward,chloe.ward10@email.com,pending,pending,952.41,881.86,70.55,0.00,0.00,USD,Nashville,US,65,Daypack,SKU-ODR-005,3,84.99,254.97
+8401234567013,6013,2026-05-14 12:56:10,Chloe Ward,chloe.ward10@email.com,pending,pending,952.41,881.86,70.55,0.00,0.00,USD,Nashville,US,66,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567013,6013,2026-05-14 12:56:10,Chloe Ward,chloe.ward10@email.com,pending,pending,952.41,881.86,70.55,0.00,0.00,USD,Nashville,US,67,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567013,6013,2026-05-14 12:56:10,Chloe Ward,chloe.ward10@email.com,pending,pending,952.41,881.86,70.55,0.00,0.00,USD,Nashville,US,68,Lightweight Hoodie,SKU-ODR-003,4,64.99,259.96
+8401234567014,6014,2026-05-11 21:27:45,Noah Wilson,noah.wilson11@email.com,fulfilled,refunded,1558.76,1568.80,115.46,0.00,125.50,USD,San Diego,US,69,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567014,6014,2026-05-11 21:27:45,Noah Wilson,noah.wilson11@email.com,fulfilled,refunded,1558.76,1568.80,115.46,0.00,125.50,USD,San Diego,US,70,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567014,6014,2026-05-11 21:27:45,Noah Wilson,noah.wilson11@email.com,fulfilled,refunded,1558.76,1568.80,115.46,0.00,125.50,USD,San Diego,US,71,Performance Tee,SKU-ODR-006,4,32.99,131.96
+8401234567014,6014,2026-05-11 21:27:45,Noah Wilson,noah.wilson11@email.com,fulfilled,refunded,1558.76,1568.80,115.46,0.00,125.50,USD,San Diego,US,72,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567014,6014,2026-05-11 21:27:45,Noah Wilson,noah.wilson11@email.com,fulfilled,refunded,1558.76,1568.80,115.46,0.00,125.50,USD,San Diego,US,73,Running Shoes,SKU-ODR-001,5,159.99,799.95
+8401234567014,6014,2026-05-11 21:27:45,Noah Wilson,noah.wilson11@email.com,fulfilled,refunded,1558.76,1568.80,115.46,0.00,125.50,USD,San Diego,US,74,Water Bottle,SKU-ODR-008,4,24.99,99.96
+8401234567015,6015,2026-05-12 10:23:10,Lily Kelly,lily.kelly12@email.com,unfulfilled,pending,884.26,852.88,65.50,0.00,34.12,USD,Nashville,US,75,Performance Tee,SKU-ODR-006,1,32.99,32.99
+8401234567015,6015,2026-05-12 10:23:10,Lily Kelly,lily.kelly12@email.com,unfulfilled,pending,884.26,852.88,65.50,0.00,34.12,USD,Nashville,US,76,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567015,6015,2026-05-12 10:23:10,Lily Kelly,lily.kelly12@email.com,unfulfilled,pending,884.26,852.88,65.50,0.00,34.12,USD,Nashville,US,77,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567015,6015,2026-05-12 10:23:10,Lily Kelly,lily.kelly12@email.com,unfulfilled,pending,884.26,852.88,65.50,0.00,34.12,USD,Nashville,US,78,Sport Sunglasses,SKU-ODR-012,4,44.99,179.96
+8401234567015,6015,2026-05-12 10:23:10,Lily Kelly,lily.kelly12@email.com,unfulfilled,pending,884.26,852.88,65.50,0.00,34.12,USD,Nashville,US,79,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567016,6016,2026-05-16 11:22:07,Stella Collins,stella.collins13@email.com,unfulfilled,refunded,1725.62,1699.79,127.82,0.00,101.99,USD,Seattle,US,80,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567016,6016,2026-05-16 11:22:07,Stella Collins,stella.collins13@email.com,unfulfilled,refunded,1725.62,1699.79,127.82,0.00,101.99,USD,Seattle,US,81,Performance Tee,SKU-ODR-006,1,32.99,32.99
+8401234567016,6016,2026-05-16 11:22:07,Stella Collins,stella.collins13@email.com,unfulfilled,refunded,1725.62,1699.79,127.82,0.00,101.99,USD,Seattle,US,82,Weekender Bag,SKU-ODR-011,4,124.99,499.96
+8401234567016,6016,2026-05-16 11:22:07,Stella Collins,stella.collins13@email.com,unfulfilled,refunded,1725.62,1699.79,127.82,0.00,101.99,USD,Seattle,US,83,Lounge Joggers,SKU-ODR-013,4,58.99,235.96
+8401234567016,6016,2026-05-16 11:22:07,Stella Collins,stella.collins13@email.com,unfulfilled,refunded,1725.62,1699.79,127.82,0.00,101.99,USD,Seattle,US,84,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567016,6016,2026-05-16 11:22:07,Stella Collins,stella.collins13@email.com,unfulfilled,refunded,1725.62,1699.79,127.82,0.00,101.99,USD,Seattle,US,85,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567016,6016,2026-05-16 11:22:07,Stella Collins,stella.collins13@email.com,unfulfilled,refunded,1725.62,1699.79,127.82,0.00,101.99,USD,Seattle,US,86,Cap,SKU-ODR-009,3,26.99,80.97
+8401234567016,6016,2026-05-16 11:22:07,Stella Collins,stella.collins13@email.com,unfulfilled,refunded,1725.62,1699.79,127.82,0.00,101.99,USD,Seattle,US,87,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567017,6017,2026-05-19 17:30:31,Jackson Hughes,jackson.hughes14@email.com,unfulfilled,pending,396.37,398.92,29.36,0.00,31.91,USD,Portland,US,88,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567017,6017,2026-05-19 17:30:31,Jackson Hughes,jackson.hughes14@email.com,unfulfilled,pending,396.37,398.92,29.36,0.00,31.91,USD,Portland,US,89,Water Bottle,SKU-ODR-008,4,24.99,99.96
+8401234567017,6017,2026-05-19 17:30:31,Jackson Hughes,jackson.hughes14@email.com,unfulfilled,pending,396.37,398.92,29.36,0.00,31.91,USD,Portland,US,90,Yoga Mat,SKU-ODR-010,1,49.99,49.99
+8401234567017,6017,2026-05-19 17:30:31,Jackson Hughes,jackson.hughes14@email.com,unfulfilled,pending,396.37,398.92,29.36,0.00,31.91,USD,Portland,US,91,Lounge Joggers,SKU-ODR-013,1,58.99,58.99
+8401234567018,6018,2026-05-24 17:42:17,Daniel Griffin,daniel.griffin15@email.com,unfulfilled,refunded,616.13,606.90,45.64,0.00,36.41,USD,Denver,US,92,Sport Sunglasses,SKU-ODR-012,1,44.99,44.99
+8401234567018,6018,2026-05-24 17:42:17,Daniel Griffin,daniel.griffin15@email.com,unfulfilled,refunded,616.13,606.90,45.64,0.00,36.41,USD,Denver,US,93,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567018,6018,2026-05-24 17:42:17,Daniel Griffin,daniel.griffin15@email.com,unfulfilled,refunded,616.13,606.90,45.64,0.00,36.41,USD,Denver,US,94,Lightweight Hoodie,SKU-ODR-003,1,64.99,64.99
+8401234567018,6018,2026-05-24 17:42:17,Daniel Griffin,daniel.griffin15@email.com,unfulfilled,refunded,616.13,606.90,45.64,0.00,36.41,USD,Denver,US,95,Daypack,SKU-ODR-005,1,84.99,84.99
+8401234567018,6018,2026-05-24 17:42:17,Daniel Griffin,daniel.griffin15@email.com,unfulfilled,refunded,616.13,606.90,45.64,0.00,36.41,USD,Denver,US,96,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567018,6018,2026-05-24 17:42:17,Daniel Griffin,daniel.griffin15@email.com,unfulfilled,refunded,616.13,606.90,45.64,0.00,36.41,USD,Denver,US,97,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567019,6019,2026-05-23 09:05:15,Evelyn Kelly,evelyn.kelly16@email.com,pending,cancelled,1746.94,1720.79,129.40,0.00,103.25,USD,Portland,US,98,Trail Shorts,SKU-ODR-004,4,54.99,219.96
+8401234567019,6019,2026-05-23 09:05:15,Evelyn Kelly,evelyn.kelly16@email.com,pending,cancelled,1746.94,1720.79,129.40,0.00,103.25,USD,Portland,US,99,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567019,6019,2026-05-23 09:05:15,Evelyn Kelly,evelyn.kelly16@email.com,pending,cancelled,1746.94,1720.79,129.40,0.00,103.25,USD,Portland,US,100,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567019,6019,2026-05-23 09:05:15,Evelyn Kelly,evelyn.kelly16@email.com,pending,cancelled,1746.94,1720.79,129.40,0.00,103.25,USD,Portland,US,101,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567019,6019,2026-05-23 09:05:15,Evelyn Kelly,evelyn.kelly16@email.com,pending,cancelled,1746.94,1720.79,129.40,0.00,103.25,USD,Portland,US,102,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567019,6019,2026-05-23 09:05:15,Evelyn Kelly,evelyn.kelly16@email.com,pending,cancelled,1746.94,1720.79,129.40,0.00,103.25,USD,Portland,US,103,Weekender Bag,SKU-ODR-011,5,124.99,624.95
+8401234567019,6019,2026-05-23 09:05:15,Evelyn Kelly,evelyn.kelly16@email.com,pending,cancelled,1746.94,1720.79,129.40,0.00,103.25,USD,Portland,US,104,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567020,6020,2026-05-23 14:18:50,Scarlett Nguyen,scarlett.nguyen17@email.com,unfulfilled,refunded,834.47,839.85,61.81,0.00,67.19,USD,Seattle,US,105,Sport Sunglasses,SKU-ODR-012,4,44.99,179.96
+8401234567020,6020,2026-05-23 14:18:50,Scarlett Nguyen,scarlett.nguyen17@email.com,unfulfilled,refunded,834.47,839.85,61.81,0.00,67.19,USD,Seattle,US,106,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567020,6020,2026-05-23 14:18:50,Scarlett Nguyen,scarlett.nguyen17@email.com,unfulfilled,refunded,834.47,839.85,61.81,0.00,67.19,USD,Seattle,US,107,Yoga Mat,SKU-ODR-010,1,49.99,49.99
+8401234567020,6020,2026-05-23 14:18:50,Scarlett Nguyen,scarlett.nguyen17@email.com,unfulfilled,refunded,834.47,839.85,61.81,0.00,67.19,USD,Seattle,US,108,Trail Shorts,SKU-ODR-004,1,54.99,54.99
+8401234567020,6020,2026-05-23 14:18:50,Scarlett Nguyen,scarlett.nguyen17@email.com,unfulfilled,refunded,834.47,839.85,61.81,0.00,67.19,USD,Seattle,US,109,Cap,SKU-ODR-009,3,26.99,80.97
+8401234567020,6020,2026-05-23 14:18:50,Scarlett Nguyen,scarlett.nguyen17@email.com,unfulfilled,refunded,834.47,839.85,61.81,0.00,67.19,USD,Seattle,US,110,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567021,6021,2026-05-19 17:09:39,Ellie Evans,ellie.evans18@email.com,unfulfilled,refunded,1281.58,1289.84,94.93,0.00,103.19,USD,Charlotte,US,111,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567021,6021,2026-05-19 17:09:39,Ellie Evans,ellie.evans18@email.com,unfulfilled,refunded,1281.58,1289.84,94.93,0.00,103.19,USD,Charlotte,US,112,Weekender Bag,SKU-ODR-011,4,124.99,499.96
+8401234567021,6021,2026-05-19 17:09:39,Ellie Evans,ellie.evans18@email.com,unfulfilled,refunded,1281.58,1289.84,94.93,0.00,103.19,USD,Charlotte,US,113,Sport Sunglasses,SKU-ODR-012,1,44.99,44.99
+8401234567021,6021,2026-05-19 17:09:39,Ellie Evans,ellie.evans18@email.com,unfulfilled,refunded,1281.58,1289.84,94.93,0.00,103.19,USD,Charlotte,US,114,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567021,6021,2026-05-19 17:09:39,Ellie Evans,ellie.evans18@email.com,unfulfilled,refunded,1281.58,1289.84,94.93,0.00,103.19,USD,Charlotte,US,115,Daypack,SKU-ODR-005,3,84.99,254.97
+8401234567021,6021,2026-05-19 17:09:39,Ellie Evans,ellie.evans18@email.com,unfulfilled,refunded,1281.58,1289.84,94.93,0.00,103.19,USD,Charlotte,US,116,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567021,6021,2026-05-19 17:09:39,Ellie Evans,ellie.evans18@email.com,unfulfilled,refunded,1281.58,1289.84,94.93,0.00,103.19,USD,Charlotte,US,117,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567022,6022,2026-05-21 18:12:23,Jackson Price,jackson.price19@email.com,unfulfilled,cancelled,427.31,420.91,31.65,0.00,25.25,USD,Portland,US,118,Performance Tee,SKU-ODR-006,4,32.99,131.96
+8401234567022,6022,2026-05-21 18:12:23,Jackson Price,jackson.price19@email.com,unfulfilled,cancelled,427.31,420.91,31.65,0.00,25.25,USD,Portland,US,119,Weekender Bag,SKU-ODR-011,1,124.99,124.99
+8401234567022,6022,2026-05-21 18:12:23,Jackson Price,jackson.price19@email.com,unfulfilled,cancelled,427.31,420.91,31.65,0.00,25.25,USD,Portland,US,120,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567022,6022,2026-05-21 18:12:23,Jackson Price,jackson.price19@email.com,unfulfilled,cancelled,427.31,420.91,31.65,0.00,25.25,USD,Portland,US,121,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567023,6023,2026-05-23 18:51:58,Grace Parker,grace.parker20@email.com,fulfilled,paid,864.97,800.90,64.07,0.00,0.00,USD,Denver,US,122,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567023,6023,2026-05-23 18:51:58,Grace Parker,grace.parker20@email.com,fulfilled,paid,864.97,800.90,64.07,0.00,0.00,USD,Denver,US,123,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567023,6023,2026-05-23 18:51:58,Grace Parker,grace.parker20@email.com,fulfilled,paid,864.97,800.90,64.07,0.00,0.00,USD,Denver,US,124,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567023,6023,2026-05-23 18:51:58,Grace Parker,grace.parker20@email.com,fulfilled,paid,864.97,800.90,64.07,0.00,0.00,USD,Denver,US,125,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567024,6024,2026-05-21 19:10:19,Penelope Reed,penelope.reed21@email.com,unfulfilled,refunded,744.13,748.92,55.12,0.00,59.91,USD,San Diego,US,126,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567024,6024,2026-05-21 19:10:19,Penelope Reed,penelope.reed21@email.com,unfulfilled,refunded,744.13,748.92,55.12,0.00,59.91,USD,San Diego,US,127,Weekender Bag,SKU-ODR-011,1,124.99,124.99
+8401234567024,6024,2026-05-21 19:10:19,Penelope Reed,penelope.reed21@email.com,unfulfilled,refunded,744.13,748.92,55.12,0.00,59.91,USD,San Diego,US,128,Lounge Joggers,SKU-ODR-013,1,58.99,58.99
+8401234567024,6024,2026-05-21 19:10:19,Penelope Reed,penelope.reed21@email.com,unfulfilled,refunded,744.13,748.92,55.12,0.00,59.91,USD,San Diego,US,129,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567024,6024,2026-05-21 19:10:19,Penelope Reed,penelope.reed21@email.com,unfulfilled,refunded,744.13,748.92,55.12,0.00,59.91,USD,San Diego,US,130,Daypack,SKU-ODR-005,3,84.99,254.97
+8401234567025,6025,2026-05-21 14:32:14,Lucas Nguyen,lucas.nguyen22@email.com,unfulfilled,refunded,563.89,543.87,41.77,0.00,21.75,USD,Charlotte,US,131,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567025,6025,2026-05-21 14:32:14,Lucas Nguyen,lucas.nguyen22@email.com,unfulfilled,refunded,563.89,543.87,41.77,0.00,21.75,USD,Charlotte,US,132,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567025,6025,2026-05-21 14:32:14,Lucas Nguyen,lucas.nguyen22@email.com,unfulfilled,refunded,563.89,543.87,41.77,0.00,21.75,USD,Charlotte,US,133,Yoga Mat,SKU-ODR-010,3,49.99,149.97
+8401234567025,6025,2026-05-21 14:32:14,Lucas Nguyen,lucas.nguyen22@email.com,unfulfilled,refunded,563.89,543.87,41.77,0.00,21.75,USD,Charlotte,US,134,Performance Tee,SKU-ODR-006,5,32.99,164.95
+8401234567025,6025,2026-05-21 14:32:14,Lucas Nguyen,lucas.nguyen22@email.com,unfulfilled,refunded,563.89,543.87,41.77,0.00,21.75,USD,Charlotte,US,135,Lightweight Hoodie,SKU-ODR-003,1,64.99,64.99
+8401234567026,6026,2026-05-29 13:19:41,Aiden Martin,aiden.martin0@email.com,pending,cancelled,1179.23,1091.88,87.35,0.00,0.00,USD,Portland,US,136,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567026,6026,2026-05-29 13:19:41,Aiden Martin,aiden.martin0@email.com,pending,cancelled,1179.23,1091.88,87.35,0.00,0.00,USD,Portland,US,137,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567026,6026,2026-05-29 13:19:41,Aiden Martin,aiden.martin0@email.com,pending,cancelled,1179.23,1091.88,87.35,0.00,0.00,USD,Portland,US,138,Daypack,SKU-ODR-005,3,84.99,254.97
+8401234567026,6026,2026-05-29 13:19:41,Aiden Martin,aiden.martin0@email.com,pending,cancelled,1179.23,1091.88,87.35,0.00,0.00,USD,Portland,US,139,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567027,6027,2026-05-30 18:13:45,Stella Martin,stella.martin1@email.com,unfulfilled,cancelled,587.41,543.90,43.51,0.00,0.00,USD,Denver,US,140,Weekender Bag,SKU-ODR-011,1,124.99,124.99
+8401234567027,6027,2026-05-30 18:13:45,Stella Martin,stella.martin1@email.com,unfulfilled,cancelled,587.41,543.90,43.51,0.00,0.00,USD,Denver,US,141,Daypack,SKU-ODR-005,1,84.99,84.99
+8401234567027,6027,2026-05-30 18:13:45,Stella Martin,stella.martin1@email.com,unfulfilled,cancelled,587.41,543.90,43.51,0.00,0.00,USD,Denver,US,142,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567027,6027,2026-05-30 18:13:45,Stella Martin,stella.martin1@email.com,unfulfilled,cancelled,587.41,543.90,43.51,0.00,0.00,USD,Denver,US,143,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567027,6027,2026-05-30 18:13:45,Stella Martin,stella.martin1@email.com,unfulfilled,cancelled,587.41,543.90,43.51,0.00,0.00,USD,Denver,US,144,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567027,6027,2026-05-30 18:13:45,Stella Martin,stella.martin1@email.com,unfulfilled,cancelled,587.41,543.90,43.51,0.00,0.00,USD,Denver,US,145,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567028,6028,2026-05-29 09:12:10,Benjamin Ross,benjamin.ross2@email.com,fulfilled,paid,982.63,909.84,72.79,0.00,0.00,USD,Seattle,US,146,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567028,6028,2026-05-29 09:12:10,Benjamin Ross,benjamin.ross2@email.com,fulfilled,paid,982.63,909.84,72.79,0.00,0.00,USD,Seattle,US,147,Cap,SKU-ODR-009,5,26.99,134.95
+8401234567028,6028,2026-05-29 09:12:10,Benjamin Ross,benjamin.ross2@email.com,fulfilled,paid,982.63,909.84,72.79,0.00,0.00,USD,Seattle,US,148,Lightweight Hoodie,SKU-ODR-003,5,64.99,324.95
+8401234567028,6028,2026-05-29 09:12:10,Benjamin Ross,benjamin.ross2@email.com,fulfilled,paid,982.63,909.84,72.79,0.00,0.00,USD,Seattle,US,149,Windbreaker,SKU-ODR-007,1,94.99,94.99
+8401234567028,6028,2026-05-29 09:12:10,Benjamin Ross,benjamin.ross2@email.com,fulfilled,paid,982.63,909.84,72.79,0.00,0.00,USD,Seattle,US,150,Daypack,SKU-ODR-005,3,84.99,254.97
+8401234567029,6029,2026-05-29 12:49:50,Evelyn Turner,evelyn.turner3@email.com,unfulfilled,paid,1490.21,1379.82,110.39,0.00,0.00,USD,Seattle,US,151,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567029,6029,2026-05-29 12:49:50,Evelyn Turner,evelyn.turner3@email.com,unfulfilled,paid,1490.21,1379.82,110.39,0.00,0.00,USD,Seattle,US,152,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567029,6029,2026-05-29 12:49:50,Evelyn Turner,evelyn.turner3@email.com,unfulfilled,paid,1490.21,1379.82,110.39,0.00,0.00,USD,Seattle,US,153,Weekender Bag,SKU-ODR-011,5,124.99,624.95
+8401234567029,6029,2026-05-29 12:49:50,Evelyn Turner,evelyn.turner3@email.com,unfulfilled,paid,1490.21,1379.82,110.39,0.00,0.00,USD,Seattle,US,154,Water Bottle,SKU-ODR-008,1,24.99,24.99
+8401234567029,6029,2026-05-29 12:49:50,Evelyn Turner,evelyn.turner3@email.com,unfulfilled,paid,1490.21,1379.82,110.39,0.00,0.00,USD,Seattle,US,155,Performance Tee,SKU-ODR-006,1,32.99,32.99
+8401234567029,6029,2026-05-29 12:49:50,Evelyn Turner,evelyn.turner3@email.com,unfulfilled,paid,1490.21,1379.82,110.39,0.00,0.00,USD,Seattle,US,156,Sport Sunglasses,SKU-ODR-012,4,44.99,179.96
+8401234567029,6029,2026-05-29 12:49:50,Evelyn Turner,evelyn.turner3@email.com,unfulfilled,paid,1490.21,1379.82,110.39,0.00,0.00,USD,Seattle,US,157,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567030,6030,2026-05-26 12:59:00,Aria Wilson,aria.wilson4@email.com,pending,pending,678.10,627.87,50.23,0.00,0.00,USD,Denver,US,158,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567030,6030,2026-05-26 12:59:00,Aria Wilson,aria.wilson4@email.com,pending,pending,678.10,627.87,50.23,0.00,0.00,USD,Denver,US,159,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567030,6030,2026-05-26 12:59:00,Aria Wilson,aria.wilson4@email.com,pending,pending,678.10,627.87,50.23,0.00,0.00,USD,Denver,US,160,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567030,6030,2026-05-26 12:59:00,Aria Wilson,aria.wilson4@email.com,pending,pending,678.10,627.87,50.23,0.00,0.00,USD,Denver,US,161,Yoga Mat,SKU-ODR-010,1,49.99,49.99
+8401234567030,6030,2026-05-26 12:59:00,Aria Wilson,aria.wilson4@email.com,pending,pending,678.10,627.87,50.23,0.00,0.00,USD,Denver,US,162,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567030,6030,2026-05-26 12:59:00,Aria Wilson,aria.wilson4@email.com,pending,pending,678.10,627.87,50.23,0.00,0.00,USD,Denver,US,163,Windbreaker,SKU-ODR-007,1,94.99,94.99
+8401234567031,6031,2026-05-26 17:36:32,Aiden Flores,aiden.flores5@email.com,unfulfilled,pending,515.59,518.91,38.19,0.00,41.51,USD,Seattle,US,164,Water Bottle,SKU-ODR-008,1,24.99,24.99
+8401234567031,6031,2026-05-26 17:36:32,Aiden Flores,aiden.flores5@email.com,unfulfilled,pending,515.59,518.91,38.19,0.00,41.51,USD,Seattle,US,165,Sport Sunglasses,SKU-ODR-012,1,44.99,44.99
+8401234567031,6031,2026-05-26 17:36:32,Aiden Flores,aiden.flores5@email.com,unfulfilled,pending,515.59,518.91,38.19,0.00,41.51,USD,Seattle,US,166,Windbreaker,SKU-ODR-007,1,94.99,94.99
+8401234567031,6031,2026-05-26 17:36:32,Aiden Flores,aiden.flores5@email.com,unfulfilled,pending,515.59,518.91,38.19,0.00,41.51,USD,Seattle,US,167,Daypack,SKU-ODR-005,3,84.99,254.97
+8401234567031,6031,2026-05-26 17:36:32,Aiden Flores,aiden.flores5@email.com,unfulfilled,pending,515.59,518.91,38.19,0.00,41.51,USD,Seattle,US,168,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567032,6032,2026-05-25 20:43:27,Madison Kim,madison.kim6@email.com,fulfilled,refunded,1809.85,1675.79,134.06,0.00,0.00,USD,Denver,US,169,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567032,6032,2026-05-25 20:43:27,Madison Kim,madison.kim6@email.com,fulfilled,refunded,1809.85,1675.79,134.06,0.00,0.00,USD,Denver,US,170,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567032,6032,2026-05-25 20:43:27,Madison Kim,madison.kim6@email.com,fulfilled,refunded,1809.85,1675.79,134.06,0.00,0.00,USD,Denver,US,171,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567032,6032,2026-05-25 20:43:27,Madison Kim,madison.kim6@email.com,fulfilled,refunded,1809.85,1675.79,134.06,0.00,0.00,USD,Denver,US,172,Sport Sunglasses,SKU-ODR-012,5,44.99,224.95
+8401234567032,6032,2026-05-25 20:43:27,Madison Kim,madison.kim6@email.com,fulfilled,refunded,1809.85,1675.79,134.06,0.00,0.00,USD,Denver,US,173,Performance Tee,SKU-ODR-006,1,32.99,32.99
+8401234567032,6032,2026-05-25 20:43:27,Madison Kim,madison.kim6@email.com,fulfilled,refunded,1809.85,1675.79,134.06,0.00,0.00,USD,Denver,US,174,Windbreaker,SKU-ODR-007,1,94.99,94.99
+8401234567032,6032,2026-05-25 20:43:27,Madison Kim,madison.kim6@email.com,fulfilled,refunded,1809.85,1675.79,134.06,0.00,0.00,USD,Denver,US,175,Yoga Mat,SKU-ODR-010,4,49.99,199.96
+8401234567032,6032,2026-05-25 20:43:27,Madison Kim,madison.kim6@email.com,fulfilled,refunded,1809.85,1675.79,134.06,0.00,0.00,USD,Denver,US,176,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567033,6033,2026-05-29 21:02:11,Thomas Anderson,thomas.anderson7@email.com,unfulfilled,cancelled,328.81,330.92,24.36,0.00,26.47,USD,Nashville,US,177,Yoga Mat,SKU-ODR-010,1,49.99,49.99
+8401234567033,6033,2026-05-29 21:02:11,Thomas Anderson,thomas.anderson7@email.com,unfulfilled,cancelled,328.81,330.92,24.36,0.00,26.47,USD,Nashville,US,178,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567033,6033,2026-05-29 21:02:11,Thomas Anderson,thomas.anderson7@email.com,unfulfilled,cancelled,328.81,330.92,24.36,0.00,26.47,USD,Nashville,US,179,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567033,6033,2026-05-29 21:02:11,Thomas Anderson,thomas.anderson7@email.com,unfulfilled,cancelled,328.81,330.92,24.36,0.00,26.47,USD,Nashville,US,180,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567034,6034,2026-05-29 19:39:10,Wyatt Hughes,wyatt.hughes8@email.com,fulfilled,refunded,1473.97,1364.79,109.18,0.00,0.00,USD,Nashville,US,181,Performance Tee,SKU-ODR-006,4,32.99,131.96
+8401234567034,6034,2026-05-29 19:39:10,Wyatt Hughes,wyatt.hughes8@email.com,fulfilled,refunded,1473.97,1364.79,109.18,0.00,0.00,USD,Nashville,US,182,Compression Leggings,SKU-ODR-002,1,74.99,74.99
+8401234567034,6034,2026-05-29 19:39:10,Wyatt Hughes,wyatt.hughes8@email.com,fulfilled,refunded,1473.97,1364.79,109.18,0.00,0.00,USD,Nashville,US,183,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567034,6034,2026-05-29 19:39:10,Wyatt Hughes,wyatt.hughes8@email.com,fulfilled,refunded,1473.97,1364.79,109.18,0.00,0.00,USD,Nashville,US,184,Trail Shorts,SKU-ODR-004,5,54.99,274.95
+8401234567034,6034,2026-05-29 19:39:10,Wyatt Hughes,wyatt.hughes8@email.com,fulfilled,refunded,1473.97,1364.79,109.18,0.00,0.00,USD,Nashville,US,185,Running Shoes,SKU-ODR-001,4,159.99,639.96
+8401234567034,6034,2026-05-29 19:39:10,Wyatt Hughes,wyatt.hughes8@email.com,fulfilled,refunded,1473.97,1364.79,109.18,0.00,0.00,USD,Nashville,US,186,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567035,6035,2026-06-05 20:56:06,Owen Parker,owen.parker9@email.com,pending,cancelled,920.55,887.88,68.19,0.00,35.52,USD,Nashville,US,187,Performance Tee,SKU-ODR-006,1,32.99,32.99
+8401234567035,6035,2026-06-05 20:56:06,Owen Parker,owen.parker9@email.com,pending,cancelled,920.55,887.88,68.19,0.00,35.52,USD,Nashville,US,188,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567035,6035,2026-06-05 20:56:06,Owen Parker,owen.parker9@email.com,pending,cancelled,920.55,887.88,68.19,0.00,35.52,USD,Nashville,US,189,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567035,6035,2026-06-05 20:56:06,Owen Parker,owen.parker9@email.com,pending,cancelled,920.55,887.88,68.19,0.00,35.52,USD,Nashville,US,190,Sport Sunglasses,SKU-ODR-012,1,44.99,44.99
+8401234567035,6035,2026-06-05 20:56:06,Owen Parker,owen.parker9@email.com,pending,cancelled,920.55,887.88,68.19,0.00,35.52,USD,Nashville,US,191,Yoga Mat,SKU-ODR-010,4,49.99,199.96
+8401234567035,6035,2026-06-05 20:56:06,Owen Parker,owen.parker9@email.com,pending,cancelled,920.55,887.88,68.19,0.00,35.52,USD,Nashville,US,192,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567036,6036,2026-06-06 13:44:24,Owen Foster,owen.foster10@email.com,pending,cancelled,976.58,982.87,72.34,0.00,78.63,USD,Denver,US,193,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567036,6036,2026-06-06 13:44:24,Owen Foster,owen.foster10@email.com,pending,cancelled,976.58,982.87,72.34,0.00,78.63,USD,Denver,US,194,Water Bottle,SKU-ODR-008,1,24.99,24.99
+8401234567036,6036,2026-06-06 13:44:24,Owen Foster,owen.foster10@email.com,pending,cancelled,976.58,982.87,72.34,0.00,78.63,USD,Denver,US,195,Lounge Joggers,SKU-ODR-013,1,58.99,58.99
+8401234567036,6036,2026-06-06 13:44:24,Owen Foster,owen.foster10@email.com,pending,cancelled,976.58,982.87,72.34,0.00,78.63,USD,Denver,US,196,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567036,6036,2026-06-06 13:44:24,Owen Foster,owen.foster10@email.com,pending,cancelled,976.58,982.87,72.34,0.00,78.63,USD,Denver,US,197,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567036,6036,2026-06-06 13:44:24,Owen Foster,owen.foster10@email.com,pending,cancelled,976.58,982.87,72.34,0.00,78.63,USD,Denver,US,198,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567036,6036,2026-06-06 13:44:24,Owen Foster,owen.foster10@email.com,pending,cancelled,976.58,982.87,72.34,0.00,78.63,USD,Denver,US,199,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567037,6037,2026-06-04 10:45:42,Henry Ward,henry.ward11@email.com,fulfilled,paid,971.85,899.86,71.99,0.00,0.00,USD,Portland,US,200,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567037,6037,2026-06-04 10:45:42,Henry Ward,henry.ward11@email.com,fulfilled,paid,971.85,899.86,71.99,0.00,0.00,USD,Portland,US,201,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567037,6037,2026-06-04 10:45:42,Henry Ward,henry.ward11@email.com,fulfilled,paid,971.85,899.86,71.99,0.00,0.00,USD,Portland,US,202,Lightweight Hoodie,SKU-ODR-003,4,64.99,259.96
+8401234567037,6037,2026-06-04 10:45:42,Henry Ward,henry.ward11@email.com,fulfilled,paid,971.85,899.86,71.99,0.00,0.00,USD,Portland,US,203,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567037,6037,2026-06-04 10:45:42,Henry Ward,henry.ward11@email.com,fulfilled,paid,971.85,899.86,71.99,0.00,0.00,USD,Portland,US,204,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567037,6037,2026-06-04 10:45:42,Henry Ward,henry.ward11@email.com,fulfilled,paid,971.85,899.86,71.99,0.00,0.00,USD,Portland,US,205,Yoga Mat,SKU-ODR-010,3,49.99,149.97
+8401234567038,6038,2026-06-03 18:49:31,Grace Brown,grace.brown12@email.com,pending,pending,572.23,551.92,42.39,0.00,22.08,USD,Nashville,US,206,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567038,6038,2026-06-03 18:49:31,Grace Brown,grace.brown12@email.com,pending,pending,572.23,551.92,42.39,0.00,22.08,USD,Nashville,US,207,Water Bottle,SKU-ODR-008,1,24.99,24.99
+8401234567038,6038,2026-06-03 18:49:31,Grace Brown,grace.brown12@email.com,pending,pending,572.23,551.92,42.39,0.00,22.08,USD,Nashville,US,208,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567038,6038,2026-06-03 18:49:31,Grace Brown,grace.brown12@email.com,pending,pending,572.23,551.92,42.39,0.00,22.08,USD,Nashville,US,209,Sport Sunglasses,SKU-ODR-012,4,44.99,179.96
+8401234567039,6039,2026-06-03 18:35:43,Henry Butler,henry.butler13@email.com,pending,pending,919.89,925.82,68.14,0.00,74.07,USD,Charlotte,US,210,Cap,SKU-ODR-009,3,26.99,80.97
+8401234567039,6039,2026-06-03 18:35:43,Henry Butler,henry.butler13@email.com,pending,pending,919.89,925.82,68.14,0.00,74.07,USD,Charlotte,US,211,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567039,6039,2026-06-03 18:35:43,Henry Butler,henry.butler13@email.com,pending,pending,919.89,925.82,68.14,0.00,74.07,USD,Charlotte,US,212,Water Bottle,SKU-ODR-008,4,24.99,99.96
+8401234567039,6039,2026-06-03 18:35:43,Henry Butler,henry.butler13@email.com,pending,pending,919.89,925.82,68.14,0.00,74.07,USD,Charlotte,US,213,Performance Tee,SKU-ODR-006,5,32.99,164.95
+8401234567039,6039,2026-06-03 18:35:43,Henry Butler,henry.butler13@email.com,pending,pending,919.89,925.82,68.14,0.00,74.07,USD,Charlotte,US,214,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567039,6039,2026-06-03 18:35:43,Henry Butler,henry.butler13@email.com,pending,pending,919.89,925.82,68.14,0.00,74.07,USD,Charlotte,US,215,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567040,6040,2026-06-04 16:44:31,Ella Hughes,ella.hughes14@email.com,fulfilled,paid,647.89,599.90,47.99,0.00,0.00,USD,Nashville,US,216,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567040,6040,2026-06-04 16:44:31,Ella Hughes,ella.hughes14@email.com,fulfilled,paid,647.89,599.90,47.99,0.00,0.00,USD,Nashville,US,217,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567040,6040,2026-06-04 16:44:31,Ella Hughes,ella.hughes14@email.com,fulfilled,paid,647.89,599.90,47.99,0.00,0.00,USD,Nashville,US,218,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567040,6040,2026-06-04 16:44:31,Ella Hughes,ella.hughes14@email.com,fulfilled,paid,647.89,599.90,47.99,0.00,0.00,USD,Nashville,US,219,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567041,6041,2026-06-04 12:06:05,Madison Murphy,madison.murphy15@email.com,fulfilled,refunded,633.37,610.89,46.92,0.00,24.44,USD,San Diego,US,220,Performance Tee,SKU-ODR-006,1,32.99,32.99
+8401234567041,6041,2026-06-04 12:06:05,Madison Murphy,madison.murphy15@email.com,fulfilled,refunded,633.37,610.89,46.92,0.00,24.44,USD,San Diego,US,221,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567041,6041,2026-06-04 12:06:05,Madison Murphy,madison.murphy15@email.com,fulfilled,refunded,633.37,610.89,46.92,0.00,24.44,USD,San Diego,US,222,Daypack,SKU-ODR-005,4,84.99,339.96
+8401234567041,6041,2026-06-04 12:06:05,Madison Murphy,madison.murphy15@email.com,fulfilled,refunded,633.37,610.89,46.92,0.00,24.44,USD,San Diego,US,223,Sport Sunglasses,SKU-ODR-012,1,44.99,44.99
+8401234567041,6041,2026-06-04 12:06:05,Madison Murphy,madison.murphy15@email.com,fulfilled,refunded,633.37,610.89,46.92,0.00,24.44,USD,San Diego,US,224,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567042,6042,2026-06-04 15:15:34,Nathan Simmons,nathan.simmons16@email.com,fulfilled,paid,1314.33,1322.79,97.36,0.00,105.82,USD,San Diego,US,225,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567042,6042,2026-06-04 15:15:34,Nathan Simmons,nathan.simmons16@email.com,fulfilled,paid,1314.33,1322.79,97.36,0.00,105.82,USD,San Diego,US,226,Weekender Bag,SKU-ODR-011,5,124.99,624.95
+8401234567042,6042,2026-06-04 15:15:34,Nathan Simmons,nathan.simmons16@email.com,fulfilled,paid,1314.33,1322.79,97.36,0.00,105.82,USD,San Diego,US,227,Lightweight Hoodie,SKU-ODR-003,1,64.99,64.99
+8401234567042,6042,2026-06-04 15:15:34,Nathan Simmons,nathan.simmons16@email.com,fulfilled,paid,1314.33,1322.79,97.36,0.00,105.82,USD,San Diego,US,228,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567042,6042,2026-06-04 15:15:34,Nathan Simmons,nathan.simmons16@email.com,fulfilled,paid,1314.33,1322.79,97.36,0.00,105.82,USD,San Diego,US,229,Trail Shorts,SKU-ODR-004,4,54.99,219.96
+8401234567042,6042,2026-06-04 15:15:34,Nathan Simmons,nathan.simmons16@email.com,fulfilled,paid,1314.33,1322.79,97.36,0.00,105.82,USD,San Diego,US,230,Windbreaker,SKU-ODR-007,1,94.99,94.99
+8401234567042,6042,2026-06-04 15:15:34,Nathan Simmons,nathan.simmons16@email.com,fulfilled,paid,1314.33,1322.79,97.36,0.00,105.82,USD,San Diego,US,231,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567043,6043,2026-06-07 14:42:43,Hannah Wilson,hannah.wilson17@email.com,pending,cancelled,1119.64,1102.87,82.94,0.00,66.17,USD,San Diego,US,232,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567043,6043,2026-06-07 14:42:43,Hannah Wilson,hannah.wilson17@email.com,pending,cancelled,1119.64,1102.87,82.94,0.00,66.17,USD,San Diego,US,233,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567043,6043,2026-06-07 14:42:43,Hannah Wilson,hannah.wilson17@email.com,pending,cancelled,1119.64,1102.87,82.94,0.00,66.17,USD,San Diego,US,234,Lightweight Hoodie,SKU-ODR-003,4,64.99,259.96
+8401234567043,6043,2026-06-07 14:42:43,Hannah Wilson,hannah.wilson17@email.com,pending,cancelled,1119.64,1102.87,82.94,0.00,66.17,USD,San Diego,US,235,Windbreaker,SKU-ODR-007,5,94.99,474.95
+8401234567044,6044,2026-06-05 16:58:57,Abigail Harris,abigail.harris18@email.com,fulfilled,pending,943.80,949.88,69.91,0.00,75.99,USD,Denver,US,236,Yoga Mat,SKU-ODR-010,3,49.99,149.97
+8401234567044,6044,2026-06-05 16:58:57,Abigail Harris,abigail.harris18@email.com,fulfilled,pending,943.80,949.88,69.91,0.00,75.99,USD,Denver,US,237,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567044,6044,2026-06-05 16:58:57,Abigail Harris,abigail.harris18@email.com,fulfilled,pending,943.80,949.88,69.91,0.00,75.99,USD,Denver,US,238,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567044,6044,2026-06-05 16:58:57,Abigail Harris,abigail.harris18@email.com,fulfilled,pending,943.80,949.88,69.91,0.00,75.99,USD,Denver,US,239,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567044,6044,2026-06-05 16:58:57,Abigail Harris,abigail.harris18@email.com,fulfilled,pending,943.80,949.88,69.91,0.00,75.99,USD,Denver,US,240,Lightweight Hoodie,SKU-ODR-003,1,64.99,64.99
+8401234567044,6044,2026-06-05 16:58:57,Abigail Harris,abigail.harris18@email.com,fulfilled,pending,943.80,949.88,69.91,0.00,75.99,USD,Denver,US,241,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567045,6045,2026-06-11 14:35:31,James Ross,james.ross19@email.com,fulfilled,refunded,489.79,492.95,36.28,0.00,39.44,USD,Denver,US,242,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567045,6045,2026-06-11 14:35:31,James Ross,james.ross19@email.com,fulfilled,refunded,489.79,492.95,36.28,0.00,39.44,USD,Denver,US,243,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567045,6045,2026-06-11 14:35:31,James Ross,james.ross19@email.com,fulfilled,refunded,489.79,492.95,36.28,0.00,39.44,USD,Denver,US,244,Performance Tee,SKU-ODR-006,1,32.99,32.99
+8401234567045,6045,2026-06-11 14:35:31,James Ross,james.ross19@email.com,fulfilled,refunded,489.79,492.95,36.28,0.00,39.44,USD,Denver,US,245,Yoga Mat,SKU-ODR-010,1,49.99,49.99
+8401234567046,6046,2026-06-11 21:54:30,Nora Wilson,nora.wilson20@email.com,pending,pending,1998.87,2011.75,148.06,0.00,160.94,USD,Denver,US,246,Windbreaker,SKU-ODR-007,5,94.99,474.95
+8401234567046,6046,2026-06-11 21:54:30,Nora Wilson,nora.wilson20@email.com,pending,pending,1998.87,2011.75,148.06,0.00,160.94,USD,Denver,US,247,Compression Leggings,SKU-ODR-002,3,74.99,224.97
+8401234567046,6046,2026-06-11 21:54:30,Nora Wilson,nora.wilson20@email.com,pending,pending,1998.87,2011.75,148.06,0.00,160.94,USD,Denver,US,248,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567046,6046,2026-06-11 21:54:30,Nora Wilson,nora.wilson20@email.com,pending,pending,1998.87,2011.75,148.06,0.00,160.94,USD,Denver,US,249,Lightweight Hoodie,SKU-ODR-003,4,64.99,259.96
+8401234567046,6046,2026-06-11 21:54:30,Nora Wilson,nora.wilson20@email.com,pending,pending,1998.87,2011.75,148.06,0.00,160.94,USD,Denver,US,250,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567046,6046,2026-06-11 21:54:30,Nora Wilson,nora.wilson20@email.com,pending,pending,1998.87,2011.75,148.06,0.00,160.94,USD,Denver,US,251,Yoga Mat,SKU-ODR-010,3,49.99,149.97
+8401234567046,6046,2026-06-11 21:54:30,Nora Wilson,nora.wilson20@email.com,pending,pending,1998.87,2011.75,148.06,0.00,160.94,USD,Denver,US,252,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567046,6046,2026-06-11 21:54:30,Nora Wilson,nora.wilson20@email.com,pending,pending,1998.87,2011.75,148.06,0.00,160.94,USD,Denver,US,253,Sport Sunglasses,SKU-ODR-012,4,44.99,179.96
+8401234567047,6047,2026-06-14 17:06:01,Elijah Walker,elijah.walker21@email.com,fulfilled,paid,623.04,576.89,46.15,0.00,0.00,USD,Nashville,US,254,Trail Shorts,SKU-ODR-004,4,54.99,219.96
+8401234567047,6047,2026-06-14 17:06:01,Elijah Walker,elijah.walker21@email.com,fulfilled,paid,623.04,576.89,46.15,0.00,0.00,USD,Nashville,US,255,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567047,6047,2026-06-14 17:06:01,Elijah Walker,elijah.walker21@email.com,fulfilled,paid,623.04,576.89,46.15,0.00,0.00,USD,Nashville,US,256,Performance Tee,SKU-ODR-006,4,32.99,131.96
+8401234567047,6047,2026-06-14 17:06:01,Elijah Walker,elijah.walker21@email.com,fulfilled,paid,623.04,576.89,46.15,0.00,0.00,USD,Nashville,US,257,Weekender Bag,SKU-ODR-011,1,124.99,124.99
+8401234567048,6048,2026-06-11 09:47:52,Daniel Powell,daniel.powell22@email.com,pending,paid,1305.34,1285.80,96.69,0.00,77.15,USD,Seattle,US,258,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567048,6048,2026-06-11 09:47:52,Daniel Powell,daniel.powell22@email.com,pending,paid,1305.34,1285.80,96.69,0.00,77.15,USD,Seattle,US,259,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567048,6048,2026-06-11 09:47:52,Daniel Powell,daniel.powell22@email.com,pending,paid,1305.34,1285.80,96.69,0.00,77.15,USD,Seattle,US,260,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567048,6048,2026-06-11 09:47:52,Daniel Powell,daniel.powell22@email.com,pending,paid,1305.34,1285.80,96.69,0.00,77.15,USD,Seattle,US,261,Lounge Joggers,SKU-ODR-013,4,58.99,235.96
+8401234567048,6048,2026-06-11 09:47:52,Daniel Powell,daniel.powell22@email.com,pending,paid,1305.34,1285.80,96.69,0.00,77.15,USD,Seattle,US,262,Performance Tee,SKU-ODR-006,5,32.99,164.95
+8401234567048,6048,2026-06-11 09:47:52,Daniel Powell,daniel.powell22@email.com,pending,paid,1305.34,1285.80,96.69,0.00,77.15,USD,Seattle,US,263,Daypack,SKU-ODR-005,1,84.99,84.99
+8401234567048,6048,2026-06-11 09:47:52,Daniel Powell,daniel.powell22@email.com,pending,paid,1305.34,1285.80,96.69,0.00,77.15,USD,Seattle,US,264,Compression Leggings,SKU-ODR-002,3,74.99,224.97
+8401234567049,6049,2026-06-10 11:41:34,Jackson Collins,jackson.collins0@email.com,fulfilled,paid,1120.61,1080.83,83.01,0.00,43.23,USD,Denver,US,265,Performance Tee,SKU-ODR-006,4,32.99,131.96
+8401234567049,6049,2026-06-10 11:41:34,Jackson Collins,jackson.collins0@email.com,fulfilled,paid,1120.61,1080.83,83.01,0.00,43.23,USD,Denver,US,266,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567049,6049,2026-06-10 11:41:34,Jackson Collins,jackson.collins0@email.com,fulfilled,paid,1120.61,1080.83,83.01,0.00,43.23,USD,Denver,US,267,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567049,6049,2026-06-10 11:41:34,Jackson Collins,jackson.collins0@email.com,fulfilled,paid,1120.61,1080.83,83.01,0.00,43.23,USD,Denver,US,268,Sport Sunglasses,SKU-ODR-012,4,44.99,179.96
+8401234567049,6049,2026-06-10 11:41:34,Jackson Collins,jackson.collins0@email.com,fulfilled,paid,1120.61,1080.83,83.01,0.00,43.23,USD,Denver,US,269,Running Shoes,SKU-ODR-001,4,159.99,639.96
+8401234567050,6050,2026-06-08 20:46:39,Thomas Brooks,thomas.brooks1@email.com,pending,pending,1259.56,1214.85,93.30,0.00,48.59,USD,San Diego,US,270,Weekender Bag,SKU-ODR-011,4,124.99,499.96
+8401234567050,6050,2026-06-08 20:46:39,Thomas Brooks,thomas.brooks1@email.com,pending,pending,1259.56,1214.85,93.30,0.00,48.59,USD,San Diego,US,271,Daypack,SKU-ODR-005,5,84.99,424.95
+8401234567050,6050,2026-06-08 20:46:39,Thomas Brooks,thomas.brooks1@email.com,pending,pending,1259.56,1214.85,93.30,0.00,48.59,USD,San Diego,US,272,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567050,6050,2026-06-08 20:46:39,Thomas Brooks,thomas.brooks1@email.com,pending,pending,1259.56,1214.85,93.30,0.00,48.59,USD,San Diego,US,273,Water Bottle,SKU-ODR-008,4,24.99,99.96
+8401234567051,6051,2026-06-11 14:43:45,Gabriel Butler,gabriel.butler2@email.com,pending,cancelled,1234.33,1215.85,91.43,0.00,72.95,USD,San Diego,US,274,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567051,6051,2026-06-11 14:43:45,Gabriel Butler,gabriel.butler2@email.com,pending,cancelled,1234.33,1215.85,91.43,0.00,72.95,USD,San Diego,US,275,Weekender Bag,SKU-ODR-011,1,124.99,124.99
+8401234567051,6051,2026-06-11 14:43:45,Gabriel Butler,gabriel.butler2@email.com,pending,cancelled,1234.33,1215.85,91.43,0.00,72.95,USD,San Diego,US,276,Yoga Mat,SKU-ODR-010,4,49.99,199.96
+8401234567051,6051,2026-06-11 14:43:45,Gabriel Butler,gabriel.butler2@email.com,pending,cancelled,1234.33,1215.85,91.43,0.00,72.95,USD,San Diego,US,277,Cap,SKU-ODR-009,3,26.99,80.97
+8401234567051,6051,2026-06-11 14:43:45,Gabriel Butler,gabriel.butler2@email.com,pending,cancelled,1234.33,1215.85,91.43,0.00,72.95,USD,San Diego,US,278,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567051,6051,2026-06-11 14:43:45,Gabriel Butler,gabriel.butler2@email.com,pending,cancelled,1234.33,1215.85,91.43,0.00,72.95,USD,San Diego,US,279,Sport Sunglasses,SKU-ODR-012,1,44.99,44.99
+8401234567052,6052,2026-06-13 19:17:01,Owen Ross,owen.ross3@email.com,pending,paid,567.97,525.90,42.07,0.00,0.00,USD,San Diego,US,280,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567052,6052,2026-06-13 19:17:01,Owen Ross,owen.ross3@email.com,pending,paid,567.97,525.90,42.07,0.00,0.00,USD,San Diego,US,281,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567052,6052,2026-06-13 19:17:01,Owen Ross,owen.ross3@email.com,pending,paid,567.97,525.90,42.07,0.00,0.00,USD,San Diego,US,282,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567052,6052,2026-06-13 19:17:01,Owen Ross,owen.ross3@email.com,pending,paid,567.97,525.90,42.07,0.00,0.00,USD,San Diego,US,283,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567052,6052,2026-06-13 19:17:01,Owen Ross,owen.ross3@email.com,pending,paid,567.97,525.90,42.07,0.00,0.00,USD,San Diego,US,284,Water Bottle,SKU-ODR-008,1,24.99,24.99
+8401234567053,6053,2026-06-10 09:43:11,Ellie Wilson,ellie.wilson4@email.com,pending,paid,744.02,688.91,55.11,0.00,0.00,USD,Portland,US,285,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567053,6053,2026-06-10 09:43:11,Ellie Wilson,ellie.wilson4@email.com,pending,paid,744.02,688.91,55.11,0.00,0.00,USD,Portland,US,286,Weekender Bag,SKU-ODR-011,4,124.99,499.96
+8401234567053,6053,2026-06-10 09:43:11,Ellie Wilson,ellie.wilson4@email.com,pending,paid,744.02,688.91,55.11,0.00,0.00,USD,Portland,US,287,Water Bottle,SKU-ODR-008,1,24.99,24.99
+8401234567053,6053,2026-06-10 09:43:11,Ellie Wilson,ellie.wilson4@email.com,pending,paid,744.02,688.91,55.11,0.00,0.00,USD,Portland,US,288,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567054,6054,2026-06-13 13:16:09,Nora Butler,nora.butler5@email.com,unfulfilled,cancelled,995.76,980.85,73.76,0.00,58.85,USD,San Diego,US,289,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567054,6054,2026-06-13 13:16:09,Nora Butler,nora.butler5@email.com,unfulfilled,cancelled,995.76,980.85,73.76,0.00,58.85,USD,San Diego,US,290,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567054,6054,2026-06-13 13:16:09,Nora Butler,nora.butler5@email.com,unfulfilled,cancelled,995.76,980.85,73.76,0.00,58.85,USD,San Diego,US,291,Lounge Joggers,SKU-ODR-013,4,58.99,235.96
+8401234567054,6054,2026-06-13 13:16:09,Nora Butler,nora.butler5@email.com,unfulfilled,cancelled,995.76,980.85,73.76,0.00,58.85,USD,San Diego,US,292,Sport Sunglasses,SKU-ODR-012,4,44.99,179.96
+8401234567054,6054,2026-06-13 13:16:09,Nora Butler,nora.butler5@email.com,unfulfilled,cancelled,995.76,980.85,73.76,0.00,58.85,USD,San Diego,US,293,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567055,6055,2026-06-20 14:02:48,Benjamin Kim,benjamin.kim6@email.com,fulfilled,refunded,945.76,951.85,70.06,0.00,76.15,USD,Denver,US,294,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567055,6055,2026-06-20 14:02:48,Benjamin Kim,benjamin.kim6@email.com,fulfilled,refunded,945.76,951.85,70.06,0.00,76.15,USD,Denver,US,295,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567055,6055,2026-06-20 14:02:48,Benjamin Kim,benjamin.kim6@email.com,fulfilled,refunded,945.76,951.85,70.06,0.00,76.15,USD,Denver,US,296,Lightweight Hoodie,SKU-ODR-003,5,64.99,324.95
+8401234567055,6055,2026-06-20 14:02:48,Benjamin Kim,benjamin.kim6@email.com,fulfilled,refunded,945.76,951.85,70.06,0.00,76.15,USD,Denver,US,297,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567055,6055,2026-06-20 14:02:48,Benjamin Kim,benjamin.kim6@email.com,fulfilled,refunded,945.76,951.85,70.06,0.00,76.15,USD,Denver,US,298,Cap,SKU-ODR-009,3,26.99,80.97
+8401234567055,6055,2026-06-20 14:02:48,Benjamin Kim,benjamin.kim6@email.com,fulfilled,refunded,945.76,951.85,70.06,0.00,76.15,USD,Denver,US,299,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567056,6056,2026-06-16 20:26:08,Samuel Patel,samuel.patel7@email.com,pending,pending,938.93,924.87,69.55,0.00,55.49,USD,Portland,US,300,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567056,6056,2026-06-16 20:26:08,Samuel Patel,samuel.patel7@email.com,pending,pending,938.93,924.87,69.55,0.00,55.49,USD,Portland,US,301,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567056,6056,2026-06-16 20:26:08,Samuel Patel,samuel.patel7@email.com,pending,pending,938.93,924.87,69.55,0.00,55.49,USD,Portland,US,302,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567056,6056,2026-06-16 20:26:08,Samuel Patel,samuel.patel7@email.com,pending,pending,938.93,924.87,69.55,0.00,55.49,USD,Portland,US,303,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567056,6056,2026-06-16 20:26:08,Samuel Patel,samuel.patel7@email.com,pending,pending,938.93,924.87,69.55,0.00,55.49,USD,Portland,US,304,Lightweight Hoodie,SKU-ODR-003,4,64.99,259.96
+8401234567057,6057,2026-06-20 13:51:34,Ella Harris,ella.harris8@email.com,pending,pending,784.64,772.89,58.12,0.00,46.37,USD,Denver,US,305,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567057,6057,2026-06-20 13:51:34,Ella Harris,ella.harris8@email.com,pending,pending,784.64,772.89,58.12,0.00,46.37,USD,Denver,US,306,Yoga Mat,SKU-ODR-010,4,49.99,199.96
+8401234567057,6057,2026-06-20 13:51:34,Ella Harris,ella.harris8@email.com,pending,pending,784.64,772.89,58.12,0.00,46.37,USD,Denver,US,307,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567057,6057,2026-06-20 13:51:34,Ella Harris,ella.harris8@email.com,pending,pending,784.64,772.89,58.12,0.00,46.37,USD,Denver,US,308,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567058,6058,2026-06-16 17:52:35,Nora Price,nora.price9@email.com,fulfilled,paid,470.85,473.88,34.88,0.00,37.91,USD,Nashville,US,309,Cap,SKU-ODR-009,5,26.99,134.95
+8401234567058,6058,2026-06-16 17:52:35,Nora Price,nora.price9@email.com,fulfilled,paid,470.85,473.88,34.88,0.00,37.91,USD,Nashville,US,310,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567058,6058,2026-06-16 17:52:35,Nora Price,nora.price9@email.com,fulfilled,paid,470.85,473.88,34.88,0.00,37.91,USD,Nashville,US,311,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567058,6058,2026-06-16 17:52:35,Nora Price,nora.price9@email.com,fulfilled,paid,470.85,473.88,34.88,0.00,37.91,USD,Nashville,US,312,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567059,6059,2026-06-18 13:07:55,Evelyn Nguyen,evelyn.nguyen10@email.com,fulfilled,cancelled,1335.74,1236.80,98.94,0.00,0.00,USD,Nashville,US,313,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567059,6059,2026-06-18 13:07:55,Evelyn Nguyen,evelyn.nguyen10@email.com,fulfilled,cancelled,1335.74,1236.80,98.94,0.00,0.00,USD,Nashville,US,314,Weekender Bag,SKU-ODR-011,1,124.99,124.99
+8401234567059,6059,2026-06-18 13:07:55,Evelyn Nguyen,evelyn.nguyen10@email.com,fulfilled,cancelled,1335.74,1236.80,98.94,0.00,0.00,USD,Nashville,US,315,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567059,6059,2026-06-18 13:07:55,Evelyn Nguyen,evelyn.nguyen10@email.com,fulfilled,cancelled,1335.74,1236.80,98.94,0.00,0.00,USD,Nashville,US,316,Trail Shorts,SKU-ODR-004,5,54.99,274.95
+8401234567059,6059,2026-06-18 13:07:55,Evelyn Nguyen,evelyn.nguyen10@email.com,fulfilled,cancelled,1335.74,1236.80,98.94,0.00,0.00,USD,Nashville,US,317,Performance Tee,SKU-ODR-006,1,32.99,32.99
+8401234567059,6059,2026-06-18 13:07:55,Evelyn Nguyen,evelyn.nguyen10@email.com,fulfilled,cancelled,1335.74,1236.80,98.94,0.00,0.00,USD,Nashville,US,318,Compression Leggings,SKU-ODR-002,5,74.99,374.95
+8401234567059,6059,2026-06-18 13:07:55,Evelyn Nguyen,evelyn.nguyen10@email.com,fulfilled,cancelled,1335.74,1236.80,98.94,0.00,0.00,USD,Nashville,US,319,Lounge Joggers,SKU-ODR-013,1,58.99,58.99
+8401234567059,6059,2026-06-18 13:07:55,Evelyn Nguyen,evelyn.nguyen10@email.com,fulfilled,cancelled,1335.74,1236.80,98.94,0.00,0.00,USD,Nashville,US,320,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567060,6060,2026-06-21 18:24:16,Sebastian Reed,sebastian.reed11@email.com,pending,cancelled,1481.38,1428.80,109.73,0.00,57.15,USD,Charlotte,US,321,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567060,6060,2026-06-21 18:24:16,Sebastian Reed,sebastian.reed11@email.com,pending,cancelled,1481.38,1428.80,109.73,0.00,57.15,USD,Charlotte,US,322,Daypack,SKU-ODR-005,3,84.99,254.97
+8401234567060,6060,2026-06-21 18:24:16,Sebastian Reed,sebastian.reed11@email.com,pending,cancelled,1481.38,1428.80,109.73,0.00,57.15,USD,Charlotte,US,323,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567060,6060,2026-06-21 18:24:16,Sebastian Reed,sebastian.reed11@email.com,pending,cancelled,1481.38,1428.80,109.73,0.00,57.15,USD,Charlotte,US,324,Windbreaker,SKU-ODR-007,5,94.99,474.95
+8401234567060,6060,2026-06-21 18:24:16,Sebastian Reed,sebastian.reed11@email.com,pending,cancelled,1481.38,1428.80,109.73,0.00,57.15,USD,Charlotte,US,325,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567060,6060,2026-06-21 18:24:16,Sebastian Reed,sebastian.reed11@email.com,pending,cancelled,1481.38,1428.80,109.73,0.00,57.15,USD,Charlotte,US,326,Lounge Joggers,SKU-ODR-013,4,58.99,235.96
+8401234567061,6061,2026-06-19 11:18:54,Julian Evans,julian.evans12@email.com,pending,pending,637.07,589.88,47.19,0.00,0.00,USD,San Diego,US,327,Cap,SKU-ODR-009,3,26.99,80.97
+8401234567061,6061,2026-06-19 11:18:54,Julian Evans,julian.evans12@email.com,pending,pending,637.07,589.88,47.19,0.00,0.00,USD,San Diego,US,328,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567061,6061,2026-06-19 11:18:54,Julian Evans,julian.evans12@email.com,pending,pending,637.07,589.88,47.19,0.00,0.00,USD,San Diego,US,329,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567061,6061,2026-06-19 11:18:54,Julian Evans,julian.evans12@email.com,pending,pending,637.07,589.88,47.19,0.00,0.00,USD,San Diego,US,330,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567061,6061,2026-06-19 11:18:54,Julian Evans,julian.evans12@email.com,pending,pending,637.07,589.88,47.19,0.00,0.00,USD,San Diego,US,331,Compression Leggings,SKU-ODR-002,3,74.99,224.97
+8401234567062,6062,2026-06-18 18:01:50,Nathan Wilson,nathan.wilson13@email.com,fulfilled,paid,880.08,814.89,65.19,0.00,0.00,USD,Denver,US,332,Compression Leggings,SKU-ODR-002,4,74.99,299.96
+8401234567062,6062,2026-06-18 18:01:50,Nathan Wilson,nathan.wilson13@email.com,fulfilled,paid,880.08,814.89,65.19,0.00,0.00,USD,Denver,US,333,Sport Sunglasses,SKU-ODR-012,1,44.99,44.99
+8401234567062,6062,2026-06-18 18:01:50,Nathan Wilson,nathan.wilson13@email.com,fulfilled,paid,880.08,814.89,65.19,0.00,0.00,USD,Denver,US,334,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567062,6062,2026-06-18 18:01:50,Nathan Wilson,nathan.wilson13@email.com,fulfilled,paid,880.08,814.89,65.19,0.00,0.00,USD,Denver,US,335,Trail Shorts,SKU-ODR-004,1,54.99,54.99
+8401234567062,6062,2026-06-18 18:01:50,Nathan Wilson,nathan.wilson13@email.com,fulfilled,paid,880.08,814.89,65.19,0.00,0.00,USD,Denver,US,336,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567063,6063,2026-06-17 09:45:01,Sebastian Nguyen,sebastian.nguyen14@email.com,fulfilled,paid,1344.55,1296.82,99.60,0.00,51.87,USD,Nashville,US,337,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567063,6063,2026-06-17 09:45:01,Sebastian Nguyen,sebastian.nguyen14@email.com,fulfilled,paid,1344.55,1296.82,99.60,0.00,51.87,USD,Nashville,US,338,Daypack,SKU-ODR-005,1,84.99,84.99
+8401234567063,6063,2026-06-17 09:45:01,Sebastian Nguyen,sebastian.nguyen14@email.com,fulfilled,paid,1344.55,1296.82,99.60,0.00,51.87,USD,Nashville,US,339,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567063,6063,2026-06-17 09:45:01,Sebastian Nguyen,sebastian.nguyen14@email.com,fulfilled,paid,1344.55,1296.82,99.60,0.00,51.87,USD,Nashville,US,340,Yoga Mat,SKU-ODR-010,3,49.99,149.97
+8401234567063,6063,2026-06-17 09:45:01,Sebastian Nguyen,sebastian.nguyen14@email.com,fulfilled,paid,1344.55,1296.82,99.60,0.00,51.87,USD,Nashville,US,341,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567063,6063,2026-06-17 09:45:01,Sebastian Nguyen,sebastian.nguyen14@email.com,fulfilled,paid,1344.55,1296.82,99.60,0.00,51.87,USD,Nashville,US,342,Compression Leggings,SKU-ODR-002,5,74.99,374.95
+8401234567063,6063,2026-06-17 09:45:01,Sebastian Nguyen,sebastian.nguyen14@email.com,fulfilled,paid,1344.55,1296.82,99.60,0.00,51.87,USD,Nashville,US,343,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567064,6064,2026-06-18 21:30:18,Lucas Parker,lucas.parker15@email.com,fulfilled,paid,1052.20,1014.85,77.94,0.00,40.59,USD,Denver,US,344,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567064,6064,2026-06-18 21:30:18,Lucas Parker,lucas.parker15@email.com,fulfilled,paid,1052.20,1014.85,77.94,0.00,40.59,USD,Denver,US,345,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567064,6064,2026-06-18 21:30:18,Lucas Parker,lucas.parker15@email.com,fulfilled,paid,1052.20,1014.85,77.94,0.00,40.59,USD,Denver,US,346,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567064,6064,2026-06-18 21:30:18,Lucas Parker,lucas.parker15@email.com,fulfilled,paid,1052.20,1014.85,77.94,0.00,40.59,USD,Denver,US,347,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567064,6064,2026-06-18 21:30:18,Lucas Parker,lucas.parker15@email.com,fulfilled,paid,1052.20,1014.85,77.94,0.00,40.59,USD,Denver,US,348,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567065,6065,2026-06-18 19:25:13,Nora Flores,nora.flores16@email.com,fulfilled,refunded,662.82,652.89,49.10,0.00,39.17,USD,Nashville,US,349,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567065,6065,2026-06-18 19:25:13,Nora Flores,nora.flores16@email.com,fulfilled,refunded,662.82,652.89,49.10,0.00,39.17,USD,Nashville,US,350,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567065,6065,2026-06-18 19:25:13,Nora Flores,nora.flores16@email.com,fulfilled,refunded,662.82,652.89,49.10,0.00,39.17,USD,Nashville,US,351,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567065,6065,2026-06-18 19:25:13,Nora Flores,nora.flores16@email.com,fulfilled,refunded,662.82,652.89,49.10,0.00,39.17,USD,Nashville,US,352,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567065,6065,2026-06-18 19:25:13,Nora Flores,nora.flores16@email.com,fulfilled,refunded,662.82,652.89,49.10,0.00,39.17,USD,Nashville,US,353,Weekender Bag,SKU-ODR-011,1,124.99,124.99
+8401234567066,6066,2026-06-25 18:15:00,Emma Turner,emma.turner17@email.com,pending,paid,589.70,580.87,43.68,0.00,34.85,USD,San Diego,US,354,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567066,6066,2026-06-25 18:15:00,Emma Turner,emma.turner17@email.com,pending,paid,589.70,580.87,43.68,0.00,34.85,USD,San Diego,US,355,Lightweight Hoodie,SKU-ODR-003,4,64.99,259.96
+8401234567066,6066,2026-06-25 18:15:00,Emma Turner,emma.turner17@email.com,pending,paid,589.70,580.87,43.68,0.00,34.85,USD,San Diego,US,356,Cap,SKU-ODR-009,3,26.99,80.97
+8401234567066,6066,2026-06-25 18:15:00,Emma Turner,emma.turner17@email.com,pending,paid,589.70,580.87,43.68,0.00,34.85,USD,San Diego,US,357,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567067,6067,2026-06-25 11:11:26,Aria Kim,aria.kim18@email.com,unfulfilled,refunded,658.74,648.87,48.80,0.00,38.93,USD,Nashville,US,358,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567067,6067,2026-06-25 11:11:26,Aria Kim,aria.kim18@email.com,unfulfilled,refunded,658.74,648.87,48.80,0.00,38.93,USD,Nashville,US,359,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567067,6067,2026-06-25 11:11:26,Aria Kim,aria.kim18@email.com,unfulfilled,refunded,658.74,648.87,48.80,0.00,38.93,USD,Nashville,US,360,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567067,6067,2026-06-25 11:11:26,Aria Kim,aria.kim18@email.com,unfulfilled,refunded,658.74,648.87,48.80,0.00,38.93,USD,Nashville,US,361,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567067,6067,2026-06-25 11:11:26,Aria Kim,aria.kim18@email.com,unfulfilled,refunded,658.74,648.87,48.80,0.00,38.93,USD,Nashville,US,362,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567067,6067,2026-06-25 11:11:26,Aria Kim,aria.kim18@email.com,unfulfilled,refunded,658.74,648.87,48.80,0.00,38.93,USD,Nashville,US,363,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567068,6068,2026-06-25 16:06:01,Lucas Rodriguez,lucas.rodriguez19@email.com,pending,pending,1280.56,1288.80,94.86,0.00,103.10,USD,Denver,US,364,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567068,6068,2026-06-25 16:06:01,Lucas Rodriguez,lucas.rodriguez19@email.com,pending,pending,1280.56,1288.80,94.86,0.00,103.10,USD,Denver,US,365,Daypack,SKU-ODR-005,1,84.99,84.99
+8401234567068,6068,2026-06-25 16:06:01,Lucas Rodriguez,lucas.rodriguez19@email.com,pending,pending,1280.56,1288.80,94.86,0.00,103.10,USD,Denver,US,366,Weekender Bag,SKU-ODR-011,4,124.99,499.96
+8401234567068,6068,2026-06-25 16:06:01,Lucas Rodriguez,lucas.rodriguez19@email.com,pending,pending,1280.56,1288.80,94.86,0.00,103.10,USD,Denver,US,367,Yoga Mat,SKU-ODR-010,5,49.99,249.95
+8401234567068,6068,2026-06-25 16:06:01,Lucas Rodriguez,lucas.rodriguez19@email.com,pending,pending,1280.56,1288.80,94.86,0.00,103.10,USD,Denver,US,368,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567068,6068,2026-06-25 16:06:01,Lucas Rodriguez,lucas.rodriguez19@email.com,pending,pending,1280.56,1288.80,94.86,0.00,103.10,USD,Denver,US,369,Water Bottle,SKU-ODR-008,4,24.99,99.96
+8401234567068,6068,2026-06-25 16:06:01,Lucas Rodriguez,lucas.rodriguez19@email.com,pending,pending,1280.56,1288.80,94.86,0.00,103.10,USD,Denver,US,370,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567069,6069,2026-06-25 14:25:01,Madison Griffin,madison.griffin20@email.com,fulfilled,refunded,375.56,369.94,27.82,0.00,22.20,USD,Charlotte,US,371,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567069,6069,2026-06-25 14:25:01,Madison Griffin,madison.griffin20@email.com,fulfilled,refunded,375.56,369.94,27.82,0.00,22.20,USD,Charlotte,US,372,Water Bottle,SKU-ODR-008,1,24.99,24.99
+8401234567069,6069,2026-06-25 14:25:01,Madison Griffin,madison.griffin20@email.com,fulfilled,refunded,375.56,369.94,27.82,0.00,22.20,USD,Charlotte,US,373,Lightweight Hoodie,SKU-ODR-003,1,64.99,64.99
+8401234567069,6069,2026-06-25 14:25:01,Madison Griffin,madison.griffin20@email.com,fulfilled,refunded,375.56,369.94,27.82,0.00,22.20,USD,Charlotte,US,374,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567070,6070,2026-06-24 14:11:01,Aurora Cooper,aurora.cooper21@email.com,fulfilled,refunded,1280.71,1185.84,94.87,0.00,0.00,USD,Portland,US,375,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567070,6070,2026-06-24 14:11:01,Aurora Cooper,aurora.cooper21@email.com,fulfilled,refunded,1280.71,1185.84,94.87,0.00,0.00,USD,Portland,US,376,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567070,6070,2026-06-24 14:11:01,Aurora Cooper,aurora.cooper21@email.com,fulfilled,refunded,1280.71,1185.84,94.87,0.00,0.00,USD,Portland,US,377,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567070,6070,2026-06-24 14:11:01,Aurora Cooper,aurora.cooper21@email.com,fulfilled,refunded,1280.71,1185.84,94.87,0.00,0.00,USD,Portland,US,378,Windbreaker,SKU-ODR-007,1,94.99,94.99
+8401234567070,6070,2026-06-24 14:11:01,Aurora Cooper,aurora.cooper21@email.com,fulfilled,refunded,1280.71,1185.84,94.87,0.00,0.00,USD,Portland,US,379,Daypack,SKU-ODR-005,4,84.99,339.96
+8401234567070,6070,2026-06-24 14:11:01,Aurora Cooper,aurora.cooper21@email.com,fulfilled,refunded,1280.71,1185.84,94.87,0.00,0.00,USD,Portland,US,380,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567070,6070,2026-06-24 14:11:01,Aurora Cooper,aurora.cooper21@email.com,fulfilled,refunded,1280.71,1185.84,94.87,0.00,0.00,USD,Portland,US,381,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567071,6071,2026-06-27 20:02:20,Julian Collins,julian.collins22@email.com,fulfilled,cancelled,1124.14,1040.87,83.27,0.00,0.00,USD,San Diego,US,382,Compression Leggings,SKU-ODR-002,3,74.99,224.97
+8401234567071,6071,2026-06-27 20:02:20,Julian Collins,julian.collins22@email.com,fulfilled,cancelled,1124.14,1040.87,83.27,0.00,0.00,USD,San Diego,US,383,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567071,6071,2026-06-27 20:02:20,Julian Collins,julian.collins22@email.com,fulfilled,cancelled,1124.14,1040.87,83.27,0.00,0.00,USD,San Diego,US,384,Weekender Bag,SKU-ODR-011,5,124.99,624.95
+8401234567071,6071,2026-06-27 20:02:20,Julian Collins,julian.collins22@email.com,fulfilled,cancelled,1124.14,1040.87,83.27,0.00,0.00,USD,San Diego,US,385,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567071,6071,2026-06-27 20:02:20,Julian Collins,julian.collins22@email.com,fulfilled,cancelled,1124.14,1040.87,83.27,0.00,0.00,USD,San Diego,US,386,Water Bottle,SKU-ODR-008,1,24.99,24.99
+8401234567072,6072,2026-06-28 16:16:02,Nora Murphy,nora.murphy0@email.com,unfulfilled,refunded,795.77,800.89,58.95,0.00,64.07,USD,Charlotte,US,387,Lounge Joggers,SKU-ODR-013,4,58.99,235.96
+8401234567072,6072,2026-06-28 16:16:02,Nora Murphy,nora.murphy0@email.com,unfulfilled,refunded,795.77,800.89,58.95,0.00,64.07,USD,Charlotte,US,388,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567072,6072,2026-06-28 16:16:02,Nora Murphy,nora.murphy0@email.com,unfulfilled,refunded,795.77,800.89,58.95,0.00,64.07,USD,Charlotte,US,389,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567072,6072,2026-06-28 16:16:02,Nora Murphy,nora.murphy0@email.com,unfulfilled,refunded,795.77,800.89,58.95,0.00,64.07,USD,Charlotte,US,390,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567073,6073,2026-06-24 19:32:12,Scarlett Patel,scarlett.patel1@email.com,fulfilled,paid,1550.79,1495.75,114.87,0.00,59.83,USD,Portland,US,391,Lounge Joggers,SKU-ODR-013,4,58.99,235.96
+8401234567073,6073,2026-06-24 19:32:12,Scarlett Patel,scarlett.patel1@email.com,fulfilled,paid,1550.79,1495.75,114.87,0.00,59.83,USD,Portland,US,392,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567073,6073,2026-06-24 19:32:12,Scarlett Patel,scarlett.patel1@email.com,fulfilled,paid,1550.79,1495.75,114.87,0.00,59.83,USD,Portland,US,393,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567073,6073,2026-06-24 19:32:12,Scarlett Patel,scarlett.patel1@email.com,fulfilled,paid,1550.79,1495.75,114.87,0.00,59.83,USD,Portland,US,394,Cap,SKU-ODR-009,5,26.99,134.95
+8401234567073,6073,2026-06-24 19:32:12,Scarlett Patel,scarlett.patel1@email.com,fulfilled,paid,1550.79,1495.75,114.87,0.00,59.83,USD,Portland,US,395,Trail Shorts,SKU-ODR-004,5,54.99,274.95
+8401234567073,6073,2026-06-24 19:32:12,Scarlett Patel,scarlett.patel1@email.com,fulfilled,paid,1550.79,1495.75,114.87,0.00,59.83,USD,Portland,US,396,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567073,6073,2026-06-24 19:32:12,Scarlett Patel,scarlett.patel1@email.com,fulfilled,paid,1550.79,1495.75,114.87,0.00,59.83,USD,Portland,US,397,Yoga Mat,SKU-ODR-010,3,49.99,149.97
+8401234567074,6074,2026-06-25 20:01:18,Emma Reed,emma.reed2@email.com,fulfilled,refunded,885.50,819.91,65.59,0.00,0.00,USD,Charlotte,US,398,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567074,6074,2026-06-25 20:01:18,Emma Reed,emma.reed2@email.com,fulfilled,refunded,885.50,819.91,65.59,0.00,0.00,USD,Charlotte,US,399,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567074,6074,2026-06-25 20:01:18,Emma Reed,emma.reed2@email.com,fulfilled,refunded,885.50,819.91,65.59,0.00,0.00,USD,Charlotte,US,400,Trail Shorts,SKU-ODR-004,1,54.99,54.99
+8401234567074,6074,2026-06-25 20:01:18,Emma Reed,emma.reed2@email.com,fulfilled,refunded,885.50,819.91,65.59,0.00,0.00,USD,Charlotte,US,401,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567075,6075,2026-06-24 19:40:22,Grace Collins,grace.collins3@email.com,fulfilled,refunded,1171.27,1178.81,86.76,0.00,94.30,USD,Seattle,US,402,Sport Sunglasses,SKU-ODR-012,1,44.99,44.99
+8401234567075,6075,2026-06-24 19:40:22,Grace Collins,grace.collins3@email.com,fulfilled,refunded,1171.27,1178.81,86.76,0.00,94.30,USD,Seattle,US,403,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567075,6075,2026-06-24 19:40:22,Grace Collins,grace.collins3@email.com,fulfilled,refunded,1171.27,1178.81,86.76,0.00,94.30,USD,Seattle,US,404,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567075,6075,2026-06-24 19:40:22,Grace Collins,grace.collins3@email.com,fulfilled,refunded,1171.27,1178.81,86.76,0.00,94.30,USD,Seattle,US,405,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567075,6075,2026-06-24 19:40:22,Grace Collins,grace.collins3@email.com,fulfilled,refunded,1171.27,1178.81,86.76,0.00,94.30,USD,Seattle,US,406,Lounge Joggers,SKU-ODR-013,5,58.99,294.95
+8401234567075,6075,2026-06-24 19:40:22,Grace Collins,grace.collins3@email.com,fulfilled,refunded,1171.27,1178.81,86.76,0.00,94.30,USD,Seattle,US,407,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567075,6075,2026-06-24 19:40:22,Grace Collins,grace.collins3@email.com,fulfilled,refunded,1171.27,1178.81,86.76,0.00,94.30,USD,Seattle,US,408,Yoga Mat,SKU-ODR-010,4,49.99,199.96
+8401234567076,6076,2026-06-28 14:04:12,Stella Anderson,stella.anderson4@email.com,pending,pending,1035.36,1019.86,76.69,0.00,61.19,USD,Portland,US,409,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567076,6076,2026-06-28 14:04:12,Stella Anderson,stella.anderson4@email.com,pending,pending,1035.36,1019.86,76.69,0.00,61.19,USD,Portland,US,410,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567076,6076,2026-06-28 14:04:12,Stella Anderson,stella.anderson4@email.com,pending,pending,1035.36,1019.86,76.69,0.00,61.19,USD,Portland,US,411,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567076,6076,2026-06-28 14:04:12,Stella Anderson,stella.anderson4@email.com,pending,pending,1035.36,1019.86,76.69,0.00,61.19,USD,Portland,US,412,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567076,6076,2026-06-28 14:04:12,Stella Anderson,stella.anderson4@email.com,pending,pending,1035.36,1019.86,76.69,0.00,61.19,USD,Portland,US,413,Daypack,SKU-ODR-005,4,84.99,339.96
+8401234567077,6077,2026-07-01 16:37:25,Benjamin Bennett,benjamin.bennett5@email.com,fulfilled,paid,486.19,478.92,36.01,0.00,28.74,USD,Seattle,US,414,Yoga Mat,SKU-ODR-010,1,49.99,49.99
+8401234567077,6077,2026-07-01 16:37:25,Benjamin Bennett,benjamin.bennett5@email.com,fulfilled,paid,486.19,478.92,36.01,0.00,28.74,USD,Seattle,US,415,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567077,6077,2026-07-01 16:37:25,Benjamin Bennett,benjamin.bennett5@email.com,fulfilled,paid,486.19,478.92,36.01,0.00,28.74,USD,Seattle,US,416,Compression Leggings,SKU-ODR-002,3,74.99,224.97
+8401234567077,6077,2026-07-01 16:37:25,Benjamin Bennett,benjamin.bennett5@email.com,fulfilled,paid,486.19,478.92,36.01,0.00,28.74,USD,Seattle,US,417,Daypack,SKU-ODR-005,1,84.99,84.99
+8401234567077,6077,2026-07-01 16:37:25,Benjamin Bennett,benjamin.bennett5@email.com,fulfilled,paid,486.19,478.92,36.01,0.00,28.74,USD,Seattle,US,418,Lightweight Hoodie,SKU-ODR-003,1,64.99,64.99
+8401234567078,6078,2026-06-29 14:06:14,Nora Lee,nora.lee6@email.com,unfulfilled,refunded,1100.34,1018.83,81.51,0.00,0.00,USD,San Diego,US,419,Windbreaker,SKU-ODR-007,1,94.99,94.99
+8401234567078,6078,2026-06-29 14:06:14,Nora Lee,nora.lee6@email.com,unfulfilled,refunded,1100.34,1018.83,81.51,0.00,0.00,USD,San Diego,US,420,Sport Sunglasses,SKU-ODR-012,1,44.99,44.99
+8401234567078,6078,2026-06-29 14:06:14,Nora Lee,nora.lee6@email.com,unfulfilled,refunded,1100.34,1018.83,81.51,0.00,0.00,USD,San Diego,US,421,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567078,6078,2026-06-29 14:06:14,Nora Lee,nora.lee6@email.com,unfulfilled,refunded,1100.34,1018.83,81.51,0.00,0.00,USD,San Diego,US,422,Lounge Joggers,SKU-ODR-013,5,58.99,294.95
+8401234567078,6078,2026-06-29 14:06:14,Nora Lee,nora.lee6@email.com,unfulfilled,refunded,1100.34,1018.83,81.51,0.00,0.00,USD,San Diego,US,423,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567078,6078,2026-06-29 14:06:14,Nora Lee,nora.lee6@email.com,unfulfilled,refunded,1100.34,1018.83,81.51,0.00,0.00,USD,San Diego,US,424,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567078,6078,2026-06-29 14:06:14,Nora Lee,nora.lee6@email.com,unfulfilled,refunded,1100.34,1018.83,81.51,0.00,0.00,USD,San Diego,US,425,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567079,6079,2026-06-29 12:01:58,Mason Powell,mason.powell7@email.com,fulfilled,paid,1985.89,1838.79,147.10,0.00,0.00,USD,Seattle,US,426,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567079,6079,2026-06-29 12:01:58,Mason Powell,mason.powell7@email.com,fulfilled,paid,1985.89,1838.79,147.10,0.00,0.00,USD,Seattle,US,427,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567079,6079,2026-06-29 12:01:58,Mason Powell,mason.powell7@email.com,fulfilled,paid,1985.89,1838.79,147.10,0.00,0.00,USD,Seattle,US,428,Compression Leggings,SKU-ODR-002,5,74.99,374.95
+8401234567079,6079,2026-06-29 12:01:58,Mason Powell,mason.powell7@email.com,fulfilled,paid,1985.89,1838.79,147.10,0.00,0.00,USD,Seattle,US,429,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567079,6079,2026-06-29 12:01:58,Mason Powell,mason.powell7@email.com,fulfilled,paid,1985.89,1838.79,147.10,0.00,0.00,USD,Seattle,US,430,Running Shoes,SKU-ODR-001,4,159.99,639.96
+8401234567079,6079,2026-06-29 12:01:58,Mason Powell,mason.powell7@email.com,fulfilled,paid,1985.89,1838.79,147.10,0.00,0.00,USD,Seattle,US,431,Yoga Mat,SKU-ODR-010,4,49.99,199.96
+8401234567080,6080,2026-07-03 14:48:29,Daniel Brown,daniel.brown8@email.com,unfulfilled,pending,1447.19,1395.82,107.20,0.00,55.83,USD,Denver,US,432,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567080,6080,2026-07-03 14:48:29,Daniel Brown,daniel.brown8@email.com,unfulfilled,pending,1447.19,1395.82,107.20,0.00,55.83,USD,Denver,US,433,Yoga Mat,SKU-ODR-010,3,49.99,149.97
+8401234567080,6080,2026-07-03 14:48:29,Daniel Brown,daniel.brown8@email.com,unfulfilled,pending,1447.19,1395.82,107.20,0.00,55.83,USD,Denver,US,434,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567080,6080,2026-07-03 14:48:29,Daniel Brown,daniel.brown8@email.com,unfulfilled,pending,1447.19,1395.82,107.20,0.00,55.83,USD,Denver,US,435,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567080,6080,2026-07-03 14:48:29,Daniel Brown,daniel.brown8@email.com,unfulfilled,pending,1447.19,1395.82,107.20,0.00,55.83,USD,Denver,US,436,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567080,6080,2026-07-03 14:48:29,Daniel Brown,daniel.brown8@email.com,unfulfilled,pending,1447.19,1395.82,107.20,0.00,55.83,USD,Denver,US,437,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567080,6080,2026-07-03 14:48:29,Daniel Brown,daniel.brown8@email.com,unfulfilled,pending,1447.19,1395.82,107.20,0.00,55.83,USD,Denver,US,438,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567081,6081,2026-07-01 16:49:29,Isaac Kim,isaac.kim9@email.com,fulfilled,paid,711.57,658.86,52.71,0.00,0.00,USD,San Diego,US,439,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567081,6081,2026-07-01 16:49:29,Isaac Kim,isaac.kim9@email.com,fulfilled,paid,711.57,658.86,52.71,0.00,0.00,USD,San Diego,US,440,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567081,6081,2026-07-01 16:49:29,Isaac Kim,isaac.kim9@email.com,fulfilled,paid,711.57,658.86,52.71,0.00,0.00,USD,San Diego,US,441,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567081,6081,2026-07-01 16:49:29,Isaac Kim,isaac.kim9@email.com,fulfilled,paid,711.57,658.86,52.71,0.00,0.00,USD,San Diego,US,442,Sport Sunglasses,SKU-ODR-012,4,44.99,179.96
+8401234567081,6081,2026-07-01 16:49:29,Isaac Kim,isaac.kim9@email.com,fulfilled,paid,711.57,658.86,52.71,0.00,0.00,USD,San Diego,US,443,Water Bottle,SKU-ODR-008,4,24.99,99.96
+8401234567082,6082,2026-07-02 11:45:14,Jackson Brown,jackson.brown10@email.com,fulfilled,paid,822.15,809.84,60.90,0.00,48.59,USD,Denver,US,444,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567082,6082,2026-07-02 11:45:14,Jackson Brown,jackson.brown10@email.com,fulfilled,paid,822.15,809.84,60.90,0.00,48.59,USD,Denver,US,445,Trail Shorts,SKU-ODR-004,4,54.99,219.96
+8401234567082,6082,2026-07-02 11:45:14,Jackson Brown,jackson.brown10@email.com,fulfilled,paid,822.15,809.84,60.90,0.00,48.59,USD,Denver,US,446,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567082,6082,2026-07-02 11:45:14,Jackson Brown,jackson.brown10@email.com,fulfilled,paid,822.15,809.84,60.90,0.00,48.59,USD,Denver,US,447,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567082,6082,2026-07-02 11:45:14,Jackson Brown,jackson.brown10@email.com,fulfilled,paid,822.15,809.84,60.90,0.00,48.59,USD,Denver,US,448,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567083,6083,2026-07-03 15:46:04,Hannah Bennett,hannah.bennett11@email.com,pending,pending,759.82,732.85,56.28,0.00,29.31,USD,Nashville,US,449,Daypack,SKU-ODR-005,1,84.99,84.99
+8401234567083,6083,2026-07-03 15:46:04,Hannah Bennett,hannah.bennett11@email.com,pending,pending,759.82,732.85,56.28,0.00,29.31,USD,Nashville,US,450,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567083,6083,2026-07-03 15:46:04,Hannah Bennett,hannah.bennett11@email.com,pending,pending,759.82,732.85,56.28,0.00,29.31,USD,Nashville,US,451,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567083,6083,2026-07-03 15:46:04,Hannah Bennett,hannah.bennett11@email.com,pending,pending,759.82,732.85,56.28,0.00,29.31,USD,Nashville,US,452,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567083,6083,2026-07-03 15:46:04,Hannah Bennett,hannah.bennett11@email.com,pending,pending,759.82,732.85,56.28,0.00,29.31,USD,Nashville,US,453,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567083,6083,2026-07-03 15:46:04,Hannah Bennett,hannah.bennett11@email.com,pending,pending,759.82,732.85,56.28,0.00,29.31,USD,Nashville,US,454,Performance Tee,SKU-ODR-006,4,32.99,131.96
+8401234567084,6084,2026-07-03 17:14:07,Henry Collins,henry.collins12@email.com,pending,cancelled,993.49,919.90,73.59,0.00,0.00,USD,San Diego,US,455,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567084,6084,2026-07-03 17:14:07,Henry Collins,henry.collins12@email.com,pending,cancelled,993.49,919.90,73.59,0.00,0.00,USD,San Diego,US,456,Weekender Bag,SKU-ODR-011,1,124.99,124.99
+8401234567084,6084,2026-07-03 17:14:07,Henry Collins,henry.collins12@email.com,pending,cancelled,993.49,919.90,73.59,0.00,0.00,USD,San Diego,US,457,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567084,6084,2026-07-03 17:14:07,Henry Collins,henry.collins12@email.com,pending,cancelled,993.49,919.90,73.59,0.00,0.00,USD,San Diego,US,458,Daypack,SKU-ODR-005,4,84.99,339.96
+8401234567085,6085,2026-07-04 19:37:32,Isaac Jackson,isaac.jackson13@email.com,pending,pending,527.63,508.91,39.08,0.00,20.36,USD,Charlotte,US,459,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567085,6085,2026-07-04 19:37:32,Isaac Jackson,isaac.jackson13@email.com,pending,pending,527.63,508.91,39.08,0.00,20.36,USD,Charlotte,US,460,Windbreaker,SKU-ODR-007,1,94.99,94.99
+8401234567085,6085,2026-07-04 19:37:32,Isaac Jackson,isaac.jackson13@email.com,pending,pending,527.63,508.91,39.08,0.00,20.36,USD,Charlotte,US,461,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567085,6085,2026-07-04 19:37:32,Isaac Jackson,isaac.jackson13@email.com,pending,pending,527.63,508.91,39.08,0.00,20.36,USD,Charlotte,US,462,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567085,6085,2026-07-04 19:37:32,Isaac Jackson,isaac.jackson13@email.com,pending,pending,527.63,508.91,39.08,0.00,20.36,USD,Charlotte,US,463,Lounge Joggers,SKU-ODR-013,1,58.99,58.99
+8401234567086,6086,2026-06-30 20:44:01,Thomas Lee,thomas.lee14@email.com,fulfilled,cancelled,686.23,661.88,50.83,0.00,26.48,USD,Denver,US,464,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567086,6086,2026-06-30 20:44:01,Thomas Lee,thomas.lee14@email.com,fulfilled,cancelled,686.23,661.88,50.83,0.00,26.48,USD,Denver,US,465,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567086,6086,2026-06-30 20:44:01,Thomas Lee,thomas.lee14@email.com,fulfilled,cancelled,686.23,661.88,50.83,0.00,26.48,USD,Denver,US,466,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567086,6086,2026-06-30 20:44:01,Thomas Lee,thomas.lee14@email.com,fulfilled,cancelled,686.23,661.88,50.83,0.00,26.48,USD,Denver,US,467,Performance Tee,SKU-ODR-006,4,32.99,131.96
+8401234567087,6087,2026-07-01 09:07:45,Isabella Collins,isabella.collins15@email.com,pending,cancelled,592.93,571.89,43.92,0.00,22.88,USD,Denver,US,468,Yoga Mat,SKU-ODR-010,3,49.99,149.97
+8401234567087,6087,2026-07-01 09:07:45,Isabella Collins,isabella.collins15@email.com,pending,cancelled,592.93,571.89,43.92,0.00,22.88,USD,Denver,US,469,Performance Tee,SKU-ODR-006,4,32.99,131.96
+8401234567087,6087,2026-07-01 09:07:45,Isabella Collins,isabella.collins15@email.com,pending,cancelled,592.93,571.89,43.92,0.00,22.88,USD,Denver,US,470,Compression Leggings,SKU-ODR-002,3,74.99,224.97
+8401234567087,6087,2026-07-01 09:07:45,Isabella Collins,isabella.collins15@email.com,pending,cancelled,592.93,571.89,43.92,0.00,22.88,USD,Denver,US,471,Lightweight Hoodie,SKU-ODR-003,1,64.99,64.99
+8401234567088,6088,2026-07-01 19:14:22,James Harris,james.harris16@email.com,pending,pending,813.10,752.87,60.23,0.00,0.00,USD,Nashville,US,472,Lightweight Hoodie,SKU-ODR-003,4,64.99,259.96
+8401234567088,6088,2026-07-01 19:14:22,James Harris,james.harris16@email.com,pending,pending,813.10,752.87,60.23,0.00,0.00,USD,Nashville,US,473,Lounge Joggers,SKU-ODR-013,1,58.99,58.99
+8401234567088,6088,2026-07-01 19:14:22,James Harris,james.harris16@email.com,pending,pending,813.10,752.87,60.23,0.00,0.00,USD,Nashville,US,474,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567088,6088,2026-07-01 19:14:22,James Harris,james.harris16@email.com,pending,pending,813.10,752.87,60.23,0.00,0.00,USD,Nashville,US,475,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567088,6088,2026-07-01 19:14:22,James Harris,james.harris16@email.com,pending,pending,813.10,752.87,60.23,0.00,0.00,USD,Nashville,US,476,Compression Leggings,SKU-ODR-002,3,74.99,224.97
+8401234567089,6089,2026-07-11 11:13:16,Daniel Simmons,daniel.simmons17@email.com,pending,cancelled,1047.46,969.87,77.59,0.00,0.00,USD,San Diego,US,477,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567089,6089,2026-07-11 11:13:16,Daniel Simmons,daniel.simmons17@email.com,pending,cancelled,1047.46,969.87,77.59,0.00,0.00,USD,San Diego,US,478,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567089,6089,2026-07-11 11:13:16,Daniel Simmons,daniel.simmons17@email.com,pending,cancelled,1047.46,969.87,77.59,0.00,0.00,USD,San Diego,US,479,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567089,6089,2026-07-11 11:13:16,Daniel Simmons,daniel.simmons17@email.com,pending,cancelled,1047.46,969.87,77.59,0.00,0.00,USD,San Diego,US,480,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567089,6089,2026-07-11 11:13:16,Daniel Simmons,daniel.simmons17@email.com,pending,cancelled,1047.46,969.87,77.59,0.00,0.00,USD,San Diego,US,481,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567089,6089,2026-07-11 11:13:16,Daniel Simmons,daniel.simmons17@email.com,pending,cancelled,1047.46,969.87,77.59,0.00,0.00,USD,San Diego,US,482,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567089,6089,2026-07-11 11:13:16,Daniel Simmons,daniel.simmons17@email.com,pending,cancelled,1047.46,969.87,77.59,0.00,0.00,USD,San Diego,US,483,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567090,6090,2026-07-10 14:33:59,Mia Brown,mia.brown18@email.com,fulfilled,refunded,1355.11,1334.82,100.38,0.00,80.09,USD,San Diego,US,484,Yoga Mat,SKU-ODR-010,4,49.99,199.96
+8401234567090,6090,2026-07-10 14:33:59,Mia Brown,mia.brown18@email.com,fulfilled,refunded,1355.11,1334.82,100.38,0.00,80.09,USD,San Diego,US,485,Lightweight Hoodie,SKU-ODR-003,4,64.99,259.96
+8401234567090,6090,2026-07-10 14:33:59,Mia Brown,mia.brown18@email.com,fulfilled,refunded,1355.11,1334.82,100.38,0.00,80.09,USD,San Diego,US,486,Compression Leggings,SKU-ODR-002,3,74.99,224.97
+8401234567090,6090,2026-07-10 14:33:59,Mia Brown,mia.brown18@email.com,fulfilled,refunded,1355.11,1334.82,100.38,0.00,80.09,USD,San Diego,US,487,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567090,6090,2026-07-10 14:33:59,Mia Brown,mia.brown18@email.com,fulfilled,refunded,1355.11,1334.82,100.38,0.00,80.09,USD,San Diego,US,488,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567090,6090,2026-07-10 14:33:59,Mia Brown,mia.brown18@email.com,fulfilled,refunded,1355.11,1334.82,100.38,0.00,80.09,USD,San Diego,US,489,Lounge Joggers,SKU-ODR-013,1,58.99,58.99
+8401234567090,6090,2026-07-10 14:33:59,Mia Brown,mia.brown18@email.com,fulfilled,refunded,1355.11,1334.82,100.38,0.00,80.09,USD,San Diego,US,490,Sport Sunglasses,SKU-ODR-012,1,44.99,44.99
+8401234567091,6091,2026-07-10 16:59:54,James Patel,james.patel19@email.com,pending,paid,1331.27,1339.85,98.61,0.00,107.19,USD,San Diego,US,491,Windbreaker,SKU-ODR-007,4,94.99,379.96
+8401234567091,6091,2026-07-10 16:59:54,James Patel,james.patel19@email.com,pending,paid,1331.27,1339.85,98.61,0.00,107.19,USD,San Diego,US,492,Trail Shorts,SKU-ODR-004,1,54.99,54.99
+8401234567091,6091,2026-07-10 16:59:54,James Patel,james.patel19@email.com,pending,paid,1331.27,1339.85,98.61,0.00,107.19,USD,San Diego,US,493,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567091,6091,2026-07-10 16:59:54,James Patel,james.patel19@email.com,pending,paid,1331.27,1339.85,98.61,0.00,107.19,USD,San Diego,US,494,Yoga Mat,SKU-ODR-010,3,49.99,149.97
+8401234567091,6091,2026-07-10 16:59:54,James Patel,james.patel19@email.com,pending,paid,1331.27,1339.85,98.61,0.00,107.19,USD,San Diego,US,495,Weekender Bag,SKU-ODR-011,5,124.99,624.95
+8401234567092,6092,2026-07-07 17:38:28,Zoe Griffin,zoe.griffin20@email.com,fulfilled,paid,952.43,881.88,70.55,0.00,0.00,USD,Seattle,US,496,Sport Sunglasses,SKU-ODR-012,1,44.99,44.99
+8401234567092,6092,2026-07-07 17:38:28,Zoe Griffin,zoe.griffin20@email.com,fulfilled,paid,952.43,881.88,70.55,0.00,0.00,USD,Seattle,US,497,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567092,6092,2026-07-07 17:38:28,Zoe Griffin,zoe.griffin20@email.com,fulfilled,paid,952.43,881.88,70.55,0.00,0.00,USD,Seattle,US,498,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567092,6092,2026-07-07 17:38:28,Zoe Griffin,zoe.griffin20@email.com,fulfilled,paid,952.43,881.88,70.55,0.00,0.00,USD,Seattle,US,499,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567092,6092,2026-07-07 17:38:28,Zoe Griffin,zoe.griffin20@email.com,fulfilled,paid,952.43,881.88,70.55,0.00,0.00,USD,Seattle,US,500,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567092,6092,2026-07-07 17:38:28,Zoe Griffin,zoe.griffin20@email.com,fulfilled,paid,952.43,881.88,70.55,0.00,0.00,USD,Seattle,US,501,Windbreaker,SKU-ODR-007,4,94.99,379.96
+8401234567093,6093,2026-07-12 12:58:39,Caleb Bennett,caleb.bennett21@email.com,fulfilled,paid,696.48,644.89,51.59,0.00,0.00,USD,Denver,US,502,Yoga Mat,SKU-ODR-010,1,49.99,49.99
+8401234567093,6093,2026-07-12 12:58:39,Caleb Bennett,caleb.bennett21@email.com,fulfilled,paid,696.48,644.89,51.59,0.00,0.00,USD,Denver,US,503,Lounge Joggers,SKU-ODR-013,5,58.99,294.95
+8401234567093,6093,2026-07-12 12:58:39,Caleb Bennett,caleb.bennett21@email.com,fulfilled,paid,696.48,644.89,51.59,0.00,0.00,USD,Denver,US,504,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567093,6093,2026-07-12 12:58:39,Caleb Bennett,caleb.bennett21@email.com,fulfilled,paid,696.48,644.89,51.59,0.00,0.00,USD,Denver,US,505,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567093,6093,2026-07-12 12:58:39,Caleb Bennett,caleb.bennett21@email.com,fulfilled,paid,696.48,644.89,51.59,0.00,0.00,USD,Denver,US,506,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567094,6094,2026-07-07 11:45:03,Harper Price,harper.price22@email.com,pending,pending,1077.89,1084.84,79.84,0.00,86.79,USD,Charlotte,US,507,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567094,6094,2026-07-07 11:45:03,Harper Price,harper.price22@email.com,pending,pending,1077.89,1084.84,79.84,0.00,86.79,USD,Charlotte,US,508,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567094,6094,2026-07-07 11:45:03,Harper Price,harper.price22@email.com,pending,pending,1077.89,1084.84,79.84,0.00,86.79,USD,Charlotte,US,509,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567094,6094,2026-07-07 11:45:03,Harper Price,harper.price22@email.com,pending,pending,1077.89,1084.84,79.84,0.00,86.79,USD,Charlotte,US,510,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567094,6094,2026-07-07 11:45:03,Harper Price,harper.price22@email.com,pending,pending,1077.89,1084.84,79.84,0.00,86.79,USD,Charlotte,US,511,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567094,6094,2026-07-07 11:45:03,Harper Price,harper.price22@email.com,pending,pending,1077.89,1084.84,79.84,0.00,86.79,USD,Charlotte,US,512,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567095,6095,2026-07-07 16:29:45,Emma Patel,emma.patel0@email.com,unfulfilled,refunded,743.02,731.89,55.04,0.00,43.91,USD,San Diego,US,513,Compression Leggings,SKU-ODR-002,1,74.99,74.99
+8401234567095,6095,2026-07-07 16:29:45,Emma Patel,emma.patel0@email.com,unfulfilled,refunded,743.02,731.89,55.04,0.00,43.91,USD,San Diego,US,514,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567095,6095,2026-07-07 16:29:45,Emma Patel,emma.patel0@email.com,unfulfilled,refunded,743.02,731.89,55.04,0.00,43.91,USD,San Diego,US,515,Yoga Mat,SKU-ODR-010,3,49.99,149.97
+8401234567095,6095,2026-07-07 16:29:45,Emma Patel,emma.patel0@email.com,unfulfilled,refunded,743.02,731.89,55.04,0.00,43.91,USD,San Diego,US,516,Performance Tee,SKU-ODR-006,1,32.99,32.99
+8401234567095,6095,2026-07-07 16:29:45,Emma Patel,emma.patel0@email.com,unfulfilled,refunded,743.02,731.89,55.04,0.00,43.91,USD,San Diego,US,517,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567095,6095,2026-07-07 16:29:45,Emma Patel,emma.patel0@email.com,unfulfilled,refunded,743.02,731.89,55.04,0.00,43.91,USD,San Diego,US,518,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567096,6096,2026-07-11 13:25:56,Elijah Anderson,elijah.anderson1@email.com,fulfilled,refunded,864.82,851.87,64.06,0.00,51.11,USD,Seattle,US,519,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567096,6096,2026-07-11 13:25:56,Elijah Anderson,elijah.anderson1@email.com,fulfilled,refunded,864.82,851.87,64.06,0.00,51.11,USD,Seattle,US,520,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567096,6096,2026-07-11 13:25:56,Elijah Anderson,elijah.anderson1@email.com,fulfilled,refunded,864.82,851.87,64.06,0.00,51.11,USD,Seattle,US,521,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567096,6096,2026-07-11 13:25:56,Elijah Anderson,elijah.anderson1@email.com,fulfilled,refunded,864.82,851.87,64.06,0.00,51.11,USD,Seattle,US,522,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567097,6097,2026-07-09 11:26:43,Emma Kelly,emma.kelly2@email.com,unfulfilled,cancelled,574.18,577.88,42.53,0.00,46.23,USD,Denver,US,523,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567097,6097,2026-07-09 11:26:43,Emma Kelly,emma.kelly2@email.com,unfulfilled,cancelled,574.18,577.88,42.53,0.00,46.23,USD,Denver,US,524,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567097,6097,2026-07-09 11:26:43,Emma Kelly,emma.kelly2@email.com,unfulfilled,cancelled,574.18,577.88,42.53,0.00,46.23,USD,Denver,US,525,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567097,6097,2026-07-09 11:26:43,Emma Kelly,emma.kelly2@email.com,unfulfilled,cancelled,574.18,577.88,42.53,0.00,46.23,USD,Denver,US,526,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567097,6097,2026-07-09 11:26:43,Emma Kelly,emma.kelly2@email.com,unfulfilled,cancelled,574.18,577.88,42.53,0.00,46.23,USD,Denver,US,527,Sport Sunglasses,SKU-ODR-012,4,44.99,179.96
+8401234567098,6098,2026-07-08 11:31:54,Isaac Patel,isaac.patel3@email.com,pending,pending,676.89,652.86,50.14,0.00,26.11,USD,Charlotte,US,528,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567098,6098,2026-07-08 11:31:54,Isaac Patel,isaac.patel3@email.com,pending,pending,676.89,652.86,50.14,0.00,26.11,USD,Charlotte,US,529,Cap,SKU-ODR-009,3,26.99,80.97
+8401234567098,6098,2026-07-08 11:31:54,Isaac Patel,isaac.patel3@email.com,pending,pending,676.89,652.86,50.14,0.00,26.11,USD,Charlotte,US,530,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567098,6098,2026-07-08 11:31:54,Isaac Patel,isaac.patel3@email.com,pending,pending,676.89,652.86,50.14,0.00,26.11,USD,Charlotte,US,531,Water Bottle,SKU-ODR-008,4,24.99,99.96
+8401234567098,6098,2026-07-08 11:31:54,Isaac Patel,isaac.patel3@email.com,pending,pending,676.89,652.86,50.14,0.00,26.11,USD,Charlotte,US,532,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567099,6099,2026-07-06 20:03:26,Charlotte Nguyen,charlotte.nguyen4@email.com,unfulfilled,cancelled,1023.17,1007.85,75.79,0.00,60.47,USD,San Diego,US,533,Water Bottle,SKU-ODR-008,4,24.99,99.96
+8401234567099,6099,2026-07-06 20:03:26,Charlotte Nguyen,charlotte.nguyen4@email.com,unfulfilled,cancelled,1023.17,1007.85,75.79,0.00,60.47,USD,San Diego,US,534,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567099,6099,2026-07-06 20:03:26,Charlotte Nguyen,charlotte.nguyen4@email.com,unfulfilled,cancelled,1023.17,1007.85,75.79,0.00,60.47,USD,San Diego,US,535,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567099,6099,2026-07-06 20:03:26,Charlotte Nguyen,charlotte.nguyen4@email.com,unfulfilled,cancelled,1023.17,1007.85,75.79,0.00,60.47,USD,San Diego,US,536,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567099,6099,2026-07-06 20:03:26,Charlotte Nguyen,charlotte.nguyen4@email.com,unfulfilled,cancelled,1023.17,1007.85,75.79,0.00,60.47,USD,San Diego,US,537,Compression Leggings,SKU-ODR-002,1,74.99,74.99
+8401234567099,6099,2026-07-06 20:03:26,Charlotte Nguyen,charlotte.nguyen4@email.com,unfulfilled,cancelled,1023.17,1007.85,75.79,0.00,60.47,USD,San Diego,US,538,Lounge Joggers,SKU-ODR-013,1,58.99,58.99
+8401234567100,6100,2026-07-09 18:00:15,Julian Butler,julian.butler5@email.com,pending,pending,1532.34,1418.83,113.51,0.00,0.00,USD,Nashville,US,539,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567100,6100,2026-07-09 18:00:15,Julian Butler,julian.butler5@email.com,pending,pending,1532.34,1418.83,113.51,0.00,0.00,USD,Nashville,US,540,Compression Leggings,SKU-ODR-002,4,74.99,299.96
+8401234567100,6100,2026-07-09 18:00:15,Julian Butler,julian.butler5@email.com,pending,pending,1532.34,1418.83,113.51,0.00,0.00,USD,Nashville,US,541,Weekender Bag,SKU-ODR-011,1,124.99,124.99
+8401234567100,6100,2026-07-09 18:00:15,Julian Butler,julian.butler5@email.com,pending,pending,1532.34,1418.83,113.51,0.00,0.00,USD,Nashville,US,542,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567100,6100,2026-07-09 18:00:15,Julian Butler,julian.butler5@email.com,pending,pending,1532.34,1418.83,113.51,0.00,0.00,USD,Nashville,US,543,Lounge Joggers,SKU-ODR-013,1,58.99,58.99
+8401234567100,6100,2026-07-09 18:00:15,Julian Butler,julian.butler5@email.com,pending,pending,1532.34,1418.83,113.51,0.00,0.00,USD,Nashville,US,544,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567100,6100,2026-07-09 18:00:15,Julian Butler,julian.butler5@email.com,pending,pending,1532.34,1418.83,113.51,0.00,0.00,USD,Nashville,US,545,Running Shoes,SKU-ODR-001,4,159.99,639.96
+8401234567101,6101,2026-07-14 14:40:26,Wyatt Butler,wyatt.butler6@email.com,unfulfilled,cancelled,496.70,499.90,36.79,0.00,39.99,USD,Portland,US,546,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567101,6101,2026-07-14 14:40:26,Wyatt Butler,wyatt.butler6@email.com,unfulfilled,cancelled,496.70,499.90,36.79,0.00,39.99,USD,Portland,US,547,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567101,6101,2026-07-14 14:40:26,Wyatt Butler,wyatt.butler6@email.com,unfulfilled,cancelled,496.70,499.90,36.79,0.00,39.99,USD,Portland,US,548,Weekender Bag,SKU-ODR-011,1,124.99,124.99
+8401234567101,6101,2026-07-14 14:40:26,Wyatt Butler,wyatt.butler6@email.com,unfulfilled,cancelled,496.70,499.90,36.79,0.00,39.99,USD,Portland,US,549,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567102,6102,2026-07-15 19:37:10,Henry Sanders,henry.sanders7@email.com,fulfilled,refunded,1260.54,1215.80,93.37,0.00,48.63,USD,Charlotte,US,550,Lounge Joggers,SKU-ODR-013,4,58.99,235.96
+8401234567102,6102,2026-07-15 19:37:10,Henry Sanders,henry.sanders7@email.com,fulfilled,refunded,1260.54,1215.80,93.37,0.00,48.63,USD,Charlotte,US,551,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567102,6102,2026-07-15 19:37:10,Henry Sanders,henry.sanders7@email.com,fulfilled,refunded,1260.54,1215.80,93.37,0.00,48.63,USD,Charlotte,US,552,Performance Tee,SKU-ODR-006,5,32.99,164.95
+8401234567102,6102,2026-07-15 19:37:10,Henry Sanders,henry.sanders7@email.com,fulfilled,refunded,1260.54,1215.80,93.37,0.00,48.63,USD,Charlotte,US,553,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567102,6102,2026-07-15 19:37:10,Henry Sanders,henry.sanders7@email.com,fulfilled,refunded,1260.54,1215.80,93.37,0.00,48.63,USD,Charlotte,US,554,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567102,6102,2026-07-15 19:37:10,Henry Sanders,henry.sanders7@email.com,fulfilled,refunded,1260.54,1215.80,93.37,0.00,48.63,USD,Charlotte,US,555,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567102,6102,2026-07-15 19:37:10,Henry Sanders,henry.sanders7@email.com,fulfilled,refunded,1260.54,1215.80,93.37,0.00,48.63,USD,Charlotte,US,556,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567103,6103,2026-07-17 16:22:48,Samuel Martin,samuel.martin8@email.com,pending,pending,1296.22,1276.81,96.02,0.00,76.61,USD,Charlotte,US,557,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567103,6103,2026-07-17 16:22:48,Samuel Martin,samuel.martin8@email.com,pending,pending,1296.22,1276.81,96.02,0.00,76.61,USD,Charlotte,US,558,Trail Shorts,SKU-ODR-004,1,54.99,54.99
+8401234567103,6103,2026-07-17 16:22:48,Samuel Martin,samuel.martin8@email.com,pending,pending,1296.22,1276.81,96.02,0.00,76.61,USD,Charlotte,US,559,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567103,6103,2026-07-17 16:22:48,Samuel Martin,samuel.martin8@email.com,pending,pending,1296.22,1276.81,96.02,0.00,76.61,USD,Charlotte,US,560,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567103,6103,2026-07-17 16:22:48,Samuel Martin,samuel.martin8@email.com,pending,pending,1296.22,1276.81,96.02,0.00,76.61,USD,Charlotte,US,561,Daypack,SKU-ODR-005,4,84.99,339.96
+8401234567103,6103,2026-07-17 16:22:48,Samuel Martin,samuel.martin8@email.com,pending,pending,1296.22,1276.81,96.02,0.00,76.61,USD,Charlotte,US,562,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567103,6103,2026-07-17 16:22:48,Samuel Martin,samuel.martin8@email.com,pending,pending,1296.22,1276.81,96.02,0.00,76.61,USD,Charlotte,US,563,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567104,6104,2026-07-17 12:52:23,Liam Sanders,liam.sanders9@email.com,fulfilled,paid,827.18,797.82,61.27,0.00,31.91,USD,Portland,US,564,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567104,6104,2026-07-17 12:52:23,Liam Sanders,liam.sanders9@email.com,fulfilled,paid,827.18,797.82,61.27,0.00,31.91,USD,Portland,US,565,Performance Tee,SKU-ODR-006,5,32.99,164.95
+8401234567104,6104,2026-07-17 12:52:23,Liam Sanders,liam.sanders9@email.com,fulfilled,paid,827.18,797.82,61.27,0.00,31.91,USD,Portland,US,566,Compression Leggings,SKU-ODR-002,4,74.99,299.96
+8401234567104,6104,2026-07-17 12:52:23,Liam Sanders,liam.sanders9@email.com,fulfilled,paid,827.18,797.82,61.27,0.00,31.91,USD,Portland,US,567,Sport Sunglasses,SKU-ODR-012,5,44.99,224.95
+8401234567105,6105,2026-07-17 21:39:23,Olivia Brooks,olivia.brooks10@email.com,pending,paid,1001.43,965.89,74.18,0.00,38.64,USD,San Diego,US,568,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567105,6105,2026-07-17 21:39:23,Olivia Brooks,olivia.brooks10@email.com,pending,paid,1001.43,965.89,74.18,0.00,38.64,USD,San Diego,US,569,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567105,6105,2026-07-17 21:39:23,Olivia Brooks,olivia.brooks10@email.com,pending,paid,1001.43,965.89,74.18,0.00,38.64,USD,San Diego,US,570,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567105,6105,2026-07-17 21:39:23,Olivia Brooks,olivia.brooks10@email.com,pending,paid,1001.43,965.89,74.18,0.00,38.64,USD,San Diego,US,571,Daypack,SKU-ODR-005,1,84.99,84.99
+8401234567105,6105,2026-07-17 21:39:23,Olivia Brooks,olivia.brooks10@email.com,pending,paid,1001.43,965.89,74.18,0.00,38.64,USD,San Diego,US,572,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567106,6106,2026-07-15 16:09:36,Abigail Murphy,abigail.murphy11@email.com,pending,cancelled,1564.77,1448.86,115.91,0.00,0.00,USD,San Diego,US,573,Weekender Bag,SKU-ODR-011,5,124.99,624.95
+8401234567106,6106,2026-07-15 16:09:36,Abigail Murphy,abigail.murphy11@email.com,pending,cancelled,1564.77,1448.86,115.91,0.00,0.00,USD,San Diego,US,574,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567106,6106,2026-07-15 16:09:36,Abigail Murphy,abigail.murphy11@email.com,pending,cancelled,1564.77,1448.86,115.91,0.00,0.00,USD,San Diego,US,575,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567106,6106,2026-07-15 16:09:36,Abigail Murphy,abigail.murphy11@email.com,pending,cancelled,1564.77,1448.86,115.91,0.00,0.00,USD,San Diego,US,576,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567106,6106,2026-07-15 16:09:36,Abigail Murphy,abigail.murphy11@email.com,pending,cancelled,1564.77,1448.86,115.91,0.00,0.00,USD,San Diego,US,577,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567107,6107,2026-07-16 13:33:16,Ellie Bennett,ellie.bennett12@email.com,pending,pending,1280.60,1288.85,94.86,0.00,103.11,USD,Charlotte,US,578,Compression Leggings,SKU-ODR-002,4,74.99,299.96
+8401234567107,6107,2026-07-16 13:33:16,Ellie Bennett,ellie.bennett12@email.com,pending,pending,1280.60,1288.85,94.86,0.00,103.11,USD,Charlotte,US,579,Daypack,SKU-ODR-005,1,84.99,84.99
+8401234567107,6107,2026-07-16 13:33:16,Ellie Bennett,ellie.bennett12@email.com,pending,pending,1280.60,1288.85,94.86,0.00,103.11,USD,Charlotte,US,580,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567107,6107,2026-07-16 13:33:16,Ellie Bennett,ellie.bennett12@email.com,pending,pending,1280.60,1288.85,94.86,0.00,103.11,USD,Charlotte,US,581,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567107,6107,2026-07-16 13:33:16,Ellie Bennett,ellie.bennett12@email.com,pending,pending,1280.60,1288.85,94.86,0.00,103.11,USD,Charlotte,US,582,Windbreaker,SKU-ODR-007,4,94.99,379.96
+8401234567107,6107,2026-07-16 13:33:16,Ellie Bennett,ellie.bennett12@email.com,pending,pending,1280.60,1288.85,94.86,0.00,103.11,USD,Charlotte,US,583,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567108,6108,2026-07-16 09:54:08,Stella Brooks,stella.brooks13@email.com,unfulfilled,pending,538.97,530.90,39.92,0.00,31.85,USD,Nashville,US,584,Trail Shorts,SKU-ODR-004,1,54.99,54.99
+8401234567108,6108,2026-07-16 09:54:08,Stella Brooks,stella.brooks13@email.com,unfulfilled,pending,538.97,530.90,39.92,0.00,31.85,USD,Nashville,US,585,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567108,6108,2026-07-16 09:54:08,Stella Brooks,stella.brooks13@email.com,unfulfilled,pending,538.97,530.90,39.92,0.00,31.85,USD,Nashville,US,586,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567108,6108,2026-07-16 09:54:08,Stella Brooks,stella.brooks13@email.com,unfulfilled,pending,538.97,530.90,39.92,0.00,31.85,USD,Nashville,US,587,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567108,6108,2026-07-16 09:54:08,Stella Brooks,stella.brooks13@email.com,unfulfilled,pending,538.97,530.90,39.92,0.00,31.85,USD,Nashville,US,588,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567109,6109,2026-07-14 19:20:05,Chloe Ross,chloe.ross14@email.com,fulfilled,paid,1513.58,1459.85,112.12,0.00,58.39,USD,Nashville,US,589,Weekender Bag,SKU-ODR-011,5,124.99,624.95
+8401234567109,6109,2026-07-14 19:20:05,Chloe Ross,chloe.ross14@email.com,fulfilled,paid,1513.58,1459.85,112.12,0.00,58.39,USD,Nashville,US,590,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567109,6109,2026-07-14 19:20:05,Chloe Ross,chloe.ross14@email.com,fulfilled,paid,1513.58,1459.85,112.12,0.00,58.39,USD,Nashville,US,591,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567109,6109,2026-07-14 19:20:05,Chloe Ross,chloe.ross14@email.com,fulfilled,paid,1513.58,1459.85,112.12,0.00,58.39,USD,Nashville,US,592,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567109,6109,2026-07-14 19:20:05,Chloe Ross,chloe.ross14@email.com,fulfilled,paid,1513.58,1459.85,112.12,0.00,58.39,USD,Nashville,US,593,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567110,6110,2026-07-17 14:02:39,Elijah Harris,elijah.harris15@email.com,pending,cancelled,1003.34,1009.80,74.32,0.00,80.78,USD,Nashville,US,594,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567110,6110,2026-07-17 14:02:39,Elijah Harris,elijah.harris15@email.com,pending,cancelled,1003.34,1009.80,74.32,0.00,80.78,USD,Nashville,US,595,Yoga Mat,SKU-ODR-010,4,49.99,199.96
+8401234567110,6110,2026-07-17 14:02:39,Elijah Harris,elijah.harris15@email.com,pending,cancelled,1003.34,1009.80,74.32,0.00,80.78,USD,Nashville,US,596,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567110,6110,2026-07-17 14:02:39,Elijah Harris,elijah.harris15@email.com,pending,cancelled,1003.34,1009.80,74.32,0.00,80.78,USD,Nashville,US,597,Lightweight Hoodie,SKU-ODR-003,3,64.99,194.97
+8401234567110,6110,2026-07-17 14:02:39,Elijah Harris,elijah.harris15@email.com,pending,cancelled,1003.34,1009.80,74.32,0.00,80.78,USD,Nashville,US,598,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567110,6110,2026-07-17 14:02:39,Elijah Harris,elijah.harris15@email.com,pending,cancelled,1003.34,1009.80,74.32,0.00,80.78,USD,Nashville,US,599,Lounge Joggers,SKU-ODR-013,5,58.99,294.95
+8401234567111,6111,2026-07-16 16:42:46,Lincoln Foster,lincoln.foster16@email.com,fulfilled,refunded,927.77,913.88,68.72,0.00,54.83,USD,Nashville,US,600,Trail Shorts,SKU-ODR-004,3,54.99,164.97
+8401234567111,6111,2026-07-16 16:42:46,Lincoln Foster,lincoln.foster16@email.com,fulfilled,refunded,927.77,913.88,68.72,0.00,54.83,USD,Nashville,US,601,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567111,6111,2026-07-16 16:42:46,Lincoln Foster,lincoln.foster16@email.com,fulfilled,refunded,927.77,913.88,68.72,0.00,54.83,USD,Nashville,US,602,Daypack,SKU-ODR-005,1,84.99,84.99
+8401234567111,6111,2026-07-16 16:42:46,Lincoln Foster,lincoln.foster16@email.com,fulfilled,refunded,927.77,913.88,68.72,0.00,54.83,USD,Nashville,US,603,Weekender Bag,SKU-ODR-011,4,124.99,499.96
+8401234567111,6111,2026-07-16 16:42:46,Lincoln Foster,lincoln.foster16@email.com,fulfilled,refunded,927.77,913.88,68.72,0.00,54.83,USD,Nashville,US,604,Lightweight Hoodie,SKU-ODR-003,1,64.99,64.99
+8401234567112,6112,2026-07-17 21:03:36,James Brooks,james.brooks17@email.com,unfulfilled,pending,1959.39,1889.84,145.14,0.00,75.59,USD,Charlotte,US,605,Windbreaker,SKU-ODR-007,5,94.99,474.95
+8401234567112,6112,2026-07-17 21:03:36,James Brooks,james.brooks17@email.com,unfulfilled,pending,1959.39,1889.84,145.14,0.00,75.59,USD,Charlotte,US,606,Weekender Bag,SKU-ODR-011,5,124.99,624.95
+8401234567112,6112,2026-07-17 21:03:36,James Brooks,james.brooks17@email.com,unfulfilled,pending,1959.39,1889.84,145.14,0.00,75.59,USD,Charlotte,US,607,Running Shoes,SKU-ODR-001,4,159.99,639.96
+8401234567112,6112,2026-07-17 21:03:36,James Brooks,james.brooks17@email.com,unfulfilled,pending,1959.39,1889.84,145.14,0.00,75.59,USD,Charlotte,US,608,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567113,6113,2026-07-18 14:27:32,Grace Simmons,grace.simmons18@email.com,fulfilled,refunded,704.89,679.87,52.21,0.00,27.19,USD,Nashville,US,609,Yoga Mat,SKU-ODR-010,4,49.99,199.96
+8401234567113,6113,2026-07-18 14:27:32,Grace Simmons,grace.simmons18@email.com,fulfilled,refunded,704.89,679.87,52.21,0.00,27.19,USD,Nashville,US,610,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567113,6113,2026-07-18 14:27:32,Grace Simmons,grace.simmons18@email.com,fulfilled,refunded,704.89,679.87,52.21,0.00,27.19,USD,Nashville,US,611,Performance Tee,SKU-ODR-006,1,32.99,32.99
+8401234567113,6113,2026-07-18 14:27:32,Grace Simmons,grace.simmons18@email.com,fulfilled,refunded,704.89,679.87,52.21,0.00,27.19,USD,Nashville,US,612,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567113,6113,2026-07-18 14:27:32,Grace Simmons,grace.simmons18@email.com,fulfilled,refunded,704.89,679.87,52.21,0.00,27.19,USD,Nashville,US,613,Lounge Joggers,SKU-ODR-013,2,58.99,117.98
+8401234567113,6113,2026-07-18 14:27:32,Grace Simmons,grace.simmons18@email.com,fulfilled,refunded,704.89,679.87,52.21,0.00,27.19,USD,Nashville,US,614,Lightweight Hoodie,SKU-ODR-003,1,64.99,64.99
+8401234567113,6113,2026-07-18 14:27:32,Grace Simmons,grace.simmons18@email.com,fulfilled,refunded,704.89,679.87,52.21,0.00,27.19,USD,Nashville,US,615,Cap,SKU-ODR-009,2,26.99,53.98
+8401234567114,6114,2026-07-26 16:20:07,Leo Cox,leo.cox19@email.com,fulfilled,paid,979.54,964.87,72.56,0.00,57.89,USD,San Diego,US,616,Lightweight Hoodie,SKU-ODR-003,4,64.99,259.96
+8401234567114,6114,2026-07-26 16:20:07,Leo Cox,leo.cox19@email.com,fulfilled,paid,979.54,964.87,72.56,0.00,57.89,USD,San Diego,US,617,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567114,6114,2026-07-26 16:20:07,Leo Cox,leo.cox19@email.com,fulfilled,paid,979.54,964.87,72.56,0.00,57.89,USD,San Diego,US,618,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567114,6114,2026-07-26 16:20:07,Leo Cox,leo.cox19@email.com,fulfilled,paid,979.54,964.87,72.56,0.00,57.89,USD,San Diego,US,619,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567114,6114,2026-07-26 16:20:07,Leo Cox,leo.cox19@email.com,fulfilled,paid,979.54,964.87,72.56,0.00,57.89,USD,San Diego,US,620,Windbreaker,SKU-ODR-007,1,94.99,94.99
+8401234567114,6114,2026-07-26 16:20:07,Leo Cox,leo.cox19@email.com,fulfilled,paid,979.54,964.87,72.56,0.00,57.89,USD,San Diego,US,621,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567115,6115,2026-07-21 09:28:45,Charlotte Turner,charlotte.turner20@email.com,pending,cancelled,775.40,747.87,57.44,0.00,29.91,USD,Seattle,US,622,Lounge Joggers,SKU-ODR-013,4,58.99,235.96
+8401234567115,6115,2026-07-21 09:28:45,Charlotte Turner,charlotte.turner20@email.com,pending,cancelled,775.40,747.87,57.44,0.00,29.91,USD,Seattle,US,623,Cap,SKU-ODR-009,1,26.99,26.99
+8401234567115,6115,2026-07-21 09:28:45,Charlotte Turner,charlotte.turner20@email.com,pending,cancelled,775.40,747.87,57.44,0.00,29.91,USD,Seattle,US,624,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567115,6115,2026-07-21 09:28:45,Charlotte Turner,charlotte.turner20@email.com,pending,cancelled,775.40,747.87,57.44,0.00,29.91,USD,Seattle,US,625,Water Bottle,SKU-ODR-008,2,24.99,49.98
+8401234567115,6115,2026-07-21 09:28:45,Charlotte Turner,charlotte.turner20@email.com,pending,cancelled,775.40,747.87,57.44,0.00,29.91,USD,Seattle,US,626,Yoga Mat,SKU-ODR-010,3,49.99,149.97
+8401234567116,6116,2026-07-25 09:44:38,James Brown,james.brown21@email.com,unfulfilled,refunded,1113.48,1096.81,82.48,0.00,65.81,USD,Charlotte,US,627,Compression Leggings,SKU-ODR-002,4,74.99,299.96
+8401234567116,6116,2026-07-25 09:44:38,James Brown,james.brown21@email.com,unfulfilled,refunded,1113.48,1096.81,82.48,0.00,65.81,USD,Charlotte,US,628,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567116,6116,2026-07-25 09:44:38,James Brown,james.brown21@email.com,unfulfilled,refunded,1113.48,1096.81,82.48,0.00,65.81,USD,Charlotte,US,629,Lounge Joggers,SKU-ODR-013,4,58.99,235.96
+8401234567116,6116,2026-07-25 09:44:38,James Brown,james.brown21@email.com,unfulfilled,refunded,1113.48,1096.81,82.48,0.00,65.81,USD,Charlotte,US,630,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567116,6116,2026-07-25 09:44:38,James Brown,james.brown21@email.com,unfulfilled,refunded,1113.48,1096.81,82.48,0.00,65.81,USD,Charlotte,US,631,Water Bottle,SKU-ODR-008,3,24.99,74.97
+8401234567116,6116,2026-07-25 09:44:38,James Brown,james.brown21@email.com,unfulfilled,refunded,1113.48,1096.81,82.48,0.00,65.81,USD,Charlotte,US,632,Performance Tee,SKU-ODR-006,2,32.99,65.98
+8401234567117,6117,2026-07-23 19:13:52,Scarlett Wilson,scarlett.wilson22@email.com,unfulfilled,cancelled,557.25,548.90,41.28,0.00,32.93,USD,Nashville,US,633,Sport Sunglasses,SKU-ODR-012,4,44.99,179.96
+8401234567117,6117,2026-07-23 19:13:52,Scarlett Wilson,scarlett.wilson22@email.com,unfulfilled,cancelled,557.25,548.90,41.28,0.00,32.93,USD,Nashville,US,634,Running Shoes,SKU-ODR-001,1,159.99,159.99
+8401234567117,6117,2026-07-23 19:13:52,Scarlett Wilson,scarlett.wilson22@email.com,unfulfilled,cancelled,557.25,548.90,41.28,0.00,32.93,USD,Nashville,US,635,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567117,6117,2026-07-23 19:13:52,Scarlett Wilson,scarlett.wilson22@email.com,unfulfilled,cancelled,557.25,548.90,41.28,0.00,32.93,USD,Nashville,US,636,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567118,6118,2026-07-21 16:26:37,Elijah Price,elijah.price0@email.com,fulfilled,paid,1152.78,1111.86,85.39,0.00,44.47,USD,Nashville,US,637,Performance Tee,SKU-ODR-006,4,32.99,131.96
+8401234567118,6118,2026-07-21 16:26:37,Elijah Price,elijah.price0@email.com,fulfilled,paid,1152.78,1111.86,85.39,0.00,44.47,USD,Nashville,US,638,Lightweight Hoodie,SKU-ODR-003,2,64.99,129.98
+8401234567118,6118,2026-07-21 16:26:37,Elijah Price,elijah.price0@email.com,fulfilled,paid,1152.78,1111.86,85.39,0.00,44.47,USD,Nashville,US,639,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567118,6118,2026-07-21 16:26:37,Elijah Price,elijah.price0@email.com,fulfilled,paid,1152.78,1111.86,85.39,0.00,44.47,USD,Nashville,US,640,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567118,6118,2026-07-21 16:26:37,Elijah Price,elijah.price0@email.com,fulfilled,paid,1152.78,1111.86,85.39,0.00,44.47,USD,Nashville,US,641,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567118,6118,2026-07-21 16:26:37,Elijah Price,elijah.price0@email.com,fulfilled,paid,1152.78,1111.86,85.39,0.00,44.47,USD,Nashville,US,642,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567119,6119,2026-07-23 18:50:44,Samuel Jackson,samuel.jackson1@email.com,unfulfilled,refunded,1343.12,1351.77,99.49,0.00,108.14,USD,Portland,US,643,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567119,6119,2026-07-23 18:50:44,Samuel Jackson,samuel.jackson1@email.com,unfulfilled,refunded,1343.12,1351.77,99.49,0.00,108.14,USD,Portland,US,644,Compression Leggings,SKU-ODR-002,1,74.99,74.99
+8401234567119,6119,2026-07-23 18:50:44,Samuel Jackson,samuel.jackson1@email.com,unfulfilled,refunded,1343.12,1351.77,99.49,0.00,108.14,USD,Portland,US,645,Performance Tee,SKU-ODR-006,3,32.99,98.97
+8401234567119,6119,2026-07-23 18:50:44,Samuel Jackson,samuel.jackson1@email.com,unfulfilled,refunded,1343.12,1351.77,99.49,0.00,108.14,USD,Portland,US,646,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567119,6119,2026-07-23 18:50:44,Samuel Jackson,samuel.jackson1@email.com,unfulfilled,refunded,1343.12,1351.77,99.49,0.00,108.14,USD,Portland,US,647,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567119,6119,2026-07-23 18:50:44,Samuel Jackson,samuel.jackson1@email.com,unfulfilled,refunded,1343.12,1351.77,99.49,0.00,108.14,USD,Portland,US,648,Trail Shorts,SKU-ODR-004,4,54.99,219.96
+8401234567119,6119,2026-07-23 18:50:44,Samuel Jackson,samuel.jackson1@email.com,unfulfilled,refunded,1343.12,1351.77,99.49,0.00,108.14,USD,Portland,US,649,Water Bottle,SKU-ODR-008,4,24.99,99.96
+8401234567119,6119,2026-07-23 18:50:44,Samuel Jackson,samuel.jackson1@email.com,unfulfilled,refunded,1343.12,1351.77,99.49,0.00,108.14,USD,Portland,US,650,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567120,6120,2026-07-25 20:57:42,Chloe Evans,chloe.evans2@email.com,fulfilled,paid,1078.01,1061.87,79.85,0.00,63.71,USD,Portland,US,651,Water Bottle,SKU-ODR-008,1,24.99,24.99
+8401234567120,6120,2026-07-25 20:57:42,Chloe Evans,chloe.evans2@email.com,fulfilled,paid,1078.01,1061.87,79.85,0.00,63.71,USD,Portland,US,652,Windbreaker,SKU-ODR-007,2,94.99,189.98
+8401234567120,6120,2026-07-25 20:57:42,Chloe Evans,chloe.evans2@email.com,fulfilled,paid,1078.01,1061.87,79.85,0.00,63.71,USD,Portland,US,653,Sport Sunglasses,SKU-ODR-012,2,44.99,89.98
+8401234567120,6120,2026-07-25 20:57:42,Chloe Evans,chloe.evans2@email.com,fulfilled,paid,1078.01,1061.87,79.85,0.00,63.71,USD,Portland,US,654,Running Shoes,SKU-ODR-001,3,159.99,479.97
+8401234567120,6120,2026-07-25 20:57:42,Chloe Evans,chloe.evans2@email.com,fulfilled,paid,1078.01,1061.87,79.85,0.00,63.71,USD,Portland,US,655,Lounge Joggers,SKU-ODR-013,3,58.99,176.97
+8401234567120,6120,2026-07-25 20:57:42,Chloe Evans,chloe.evans2@email.com,fulfilled,paid,1078.01,1061.87,79.85,0.00,63.71,USD,Portland,US,656,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567121,6121,2026-07-23 20:01:20,Nathan Walker,nathan.walker3@email.com,pending,refunded,807.01,794.93,59.78,0.00,47.70,USD,Nashville,US,657,Daypack,SKU-ODR-005,2,84.99,169.98
+8401234567121,6121,2026-07-23 20:01:20,Nathan Walker,nathan.walker3@email.com,pending,refunded,807.01,794.93,59.78,0.00,47.70,USD,Nashville,US,658,Trail Shorts,SKU-ODR-004,1,54.99,54.99
+8401234567121,6121,2026-07-23 20:01:20,Nathan Walker,nathan.walker3@email.com,pending,refunded,807.01,794.93,59.78,0.00,47.70,USD,Nashville,US,659,Running Shoes,SKU-ODR-001,2,159.99,319.98
+8401234567121,6121,2026-07-23 20:01:20,Nathan Walker,nathan.walker3@email.com,pending,refunded,807.01,794.93,59.78,0.00,47.70,USD,Nashville,US,660,Weekender Bag,SKU-ODR-011,2,124.99,249.98
+8401234567122,6122,2026-07-23 20:43:46,Grace Cooper,grace.cooper4@email.com,fulfilled,refunded,1023.21,1029.80,75.79,0.00,82.38,USD,Portland,US,661,Performance Tee,SKU-ODR-006,5,32.99,164.95
+8401234567122,6122,2026-07-23 20:43:46,Grace Cooper,grace.cooper4@email.com,fulfilled,refunded,1023.21,1029.80,75.79,0.00,82.38,USD,Portland,US,662,Cap,SKU-ODR-009,3,26.99,80.97
+8401234567122,6122,2026-07-23 20:43:46,Grace Cooper,grace.cooper4@email.com,fulfilled,refunded,1023.21,1029.80,75.79,0.00,82.38,USD,Portland,US,663,Lounge Joggers,SKU-ODR-013,1,58.99,58.99
+8401234567122,6122,2026-07-23 20:43:46,Grace Cooper,grace.cooper4@email.com,fulfilled,refunded,1023.21,1029.80,75.79,0.00,82.38,USD,Portland,US,664,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567122,6122,2026-07-23 20:43:46,Grace Cooper,grace.cooper4@email.com,fulfilled,refunded,1023.21,1029.80,75.79,0.00,82.38,USD,Portland,US,665,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567122,6122,2026-07-23 20:43:46,Grace Cooper,grace.cooper4@email.com,fulfilled,refunded,1023.21,1029.80,75.79,0.00,82.38,USD,Portland,US,666,Sport Sunglasses,SKU-ODR-012,4,44.99,179.96
+8401234567122,6122,2026-07-23 20:43:46,Grace Cooper,grace.cooper4@email.com,fulfilled,refunded,1023.21,1029.80,75.79,0.00,82.38,USD,Portland,US,667,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567123,6123,2026-07-22 16:49:54,Charlotte Kim,charlotte.kim5@email.com,unfulfilled,cancelled,903.39,889.86,66.92,0.00,53.39,USD,Charlotte,US,668,Daypack,SKU-ODR-005,3,84.99,254.97
+8401234567123,6123,2026-07-22 16:49:54,Charlotte Kim,charlotte.kim5@email.com,unfulfilled,cancelled,903.39,889.86,66.92,0.00,53.39,USD,Charlotte,US,669,Compression Leggings,SKU-ODR-002,2,74.99,149.98
+8401234567123,6123,2026-07-22 16:49:54,Charlotte Kim,charlotte.kim5@email.com,unfulfilled,cancelled,903.39,889.86,66.92,0.00,53.39,USD,Charlotte,US,670,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567123,6123,2026-07-22 16:49:54,Charlotte Kim,charlotte.kim5@email.com,unfulfilled,cancelled,903.39,889.86,66.92,0.00,53.39,USD,Charlotte,US,671,Windbreaker,SKU-ODR-007,3,94.99,284.97
+8401234567123,6123,2026-07-22 16:49:54,Charlotte Kim,charlotte.kim5@email.com,unfulfilled,cancelled,903.39,889.86,66.92,0.00,53.39,USD,Charlotte,US,672,Water Bottle,SKU-ODR-008,4,24.99,99.96
+8401234567124,6124,2026-07-26 11:31:04,Zoe Bennett,zoe.bennett6@email.com,fulfilled,paid,974.47,959.88,72.18,0.00,57.59,USD,Nashville,US,673,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567124,6124,2026-07-26 11:31:04,Zoe Bennett,zoe.bennett6@email.com,fulfilled,paid,974.47,959.88,72.18,0.00,57.59,USD,Nashville,US,674,Weekender Bag,SKU-ODR-011,3,124.99,374.97
+8401234567124,6124,2026-07-26 11:31:04,Zoe Bennett,zoe.bennett6@email.com,fulfilled,paid,974.47,959.88,72.18,0.00,57.59,USD,Nashville,US,675,Windbreaker,SKU-ODR-007,1,94.99,94.99
+8401234567124,6124,2026-07-26 11:31:04,Zoe Bennett,zoe.bennett6@email.com,fulfilled,paid,974.47,959.88,72.18,0.00,57.59,USD,Nashville,US,676,Daypack,SKU-ODR-005,3,84.99,254.97
+8401234567124,6124,2026-07-26 11:31:04,Zoe Bennett,zoe.bennett6@email.com,fulfilled,paid,974.47,959.88,72.18,0.00,57.59,USD,Nashville,US,677,Yoga Mat,SKU-ODR-010,2,49.99,99.98
+8401234567125,6125,2026-07-23 20:11:39,Henry Anderson,henry.anderson7@email.com,unfulfilled,pending,961.61,967.80,71.23,0.00,77.42,USD,Nashville,US,678,Lightweight Hoodie,SKU-ODR-003,4,64.99,259.96
+8401234567125,6125,2026-07-23 20:11:39,Henry Anderson,henry.anderson7@email.com,unfulfilled,pending,961.61,967.80,71.23,0.00,77.42,USD,Nashville,US,679,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567125,6125,2026-07-23 20:11:39,Henry Anderson,henry.anderson7@email.com,unfulfilled,pending,961.61,967.80,71.23,0.00,77.42,USD,Nashville,US,680,Cap,SKU-ODR-009,4,26.99,107.96
+8401234567125,6125,2026-07-23 20:11:39,Henry Anderson,henry.anderson7@email.com,unfulfilled,pending,961.61,967.80,71.23,0.00,77.42,USD,Nashville,US,681,Daypack,SKU-ODR-005,3,84.99,254.97
+8401234567125,6125,2026-07-23 20:11:39,Henry Anderson,henry.anderson7@email.com,unfulfilled,pending,961.61,967.80,71.23,0.00,77.42,USD,Nashville,US,682,Sport Sunglasses,SKU-ODR-012,3,44.99,134.97
+8401234567125,6125,2026-07-23 20:11:39,Henry Anderson,henry.anderson7@email.com,unfulfilled,pending,961.61,967.80,71.23,0.00,77.42,USD,Nashville,US,683,Water Bottle,SKU-ODR-008,4,24.99,99.96
+8401234567126,6126,2026-07-24 13:12:53,Charlotte Perry,charlotte.perry8@email.com,unfulfilled,pending,517.56,520.89,38.34,0.00,41.67,USD,Portland,US,684,Trail Shorts,SKU-ODR-004,2,54.99,109.98
+8401234567126,6126,2026-07-24 13:12:53,Charlotte Perry,charlotte.perry8@email.com,unfulfilled,pending,517.56,520.89,38.34,0.00,41.67,USD,Portland,US,685,Cap,SKU-ODR-009,3,26.99,80.97
+8401234567126,6126,2026-07-24 13:12:53,Charlotte Perry,charlotte.perry8@email.com,unfulfilled,pending,517.56,520.89,38.34,0.00,41.67,USD,Portland,US,686,Sport Sunglasses,SKU-ODR-012,4,44.99,179.96
+8401234567126,6126,2026-07-24 13:12:53,Charlotte Perry,charlotte.perry8@email.com,unfulfilled,pending,517.56,520.89,38.34,0.00,41.67,USD,Portland,US,687,Lightweight Hoodie,SKU-ODR-003,1,64.99,64.99
+8401234567126,6126,2026-07-24 13:12:53,Charlotte Perry,charlotte.perry8@email.com,unfulfilled,pending,517.56,520.89,38.34,0.00,41.67,USD,Portland,US,688,Daypack,SKU-ODR-005,1,84.99,84.99

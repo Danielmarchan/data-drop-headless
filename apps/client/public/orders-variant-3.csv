@@ -1,0 +1,618 @@
+order_id,order_number,created_at,customer_name,customer_email,fulfillment_status,financial_status,total_price,subtotal_price,total_tax,shipping_price,discount_amount,currency,city,country,line_item_id,product_title,sku,quantity,unit_price,line_total
+8201234567001,4001,2026-03-08 17:52:14,Samuel Simmons,samuel.simmons22@email.com,fulfilled,refunded,1025.87,949.88,75.99,0.00,0.00,USD,Miami,US,1,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567001,4001,2026-03-08 17:52:14,Samuel Simmons,samuel.simmons22@email.com,fulfilled,refunded,1025.87,949.88,75.99,0.00,0.00,USD,Miami,US,2,Maxi Dress,SKU-FSN-009,3,99.99,299.97
+8201234567001,4001,2026-03-08 17:52:14,Samuel Simmons,samuel.simmons22@email.com,fulfilled,refunded,1025.87,949.88,75.99,0.00,0.00,USD,Miami,US,3,Lace Bodysuit,SKU-FSN-012,4,69.99,279.96
+8201234567001,4001,2026-03-08 17:52:14,Samuel Simmons,samuel.simmons22@email.com,fulfilled,refunded,1025.87,949.88,75.99,0.00,0.00,USD,Miami,US,4,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567001,4001,2026-03-08 17:52:14,Samuel Simmons,samuel.simmons22@email.com,fulfilled,refunded,1025.87,949.88,75.99,0.00,0.00,USD,Miami,US,5,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567002,4002,2026-03-04 20:18:20,Stella Ward,stella.ward0@email.com,pending,pending,1093.69,1054.88,81.01,0.00,42.20,USD,Los Angeles,US,6,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567002,4002,2026-03-04 20:18:20,Stella Ward,stella.ward0@email.com,pending,pending,1093.69,1054.88,81.01,0.00,42.20,USD,Los Angeles,US,7,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567002,4002,2026-03-04 20:18:20,Stella Ward,stella.ward0@email.com,pending,pending,1093.69,1054.88,81.01,0.00,42.20,USD,Los Angeles,US,8,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567002,4002,2026-03-04 20:18:20,Stella Ward,stella.ward0@email.com,pending,pending,1093.69,1054.88,81.01,0.00,42.20,USD,Los Angeles,US,9,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567002,4002,2026-03-04 20:18:20,Stella Ward,stella.ward0@email.com,pending,pending,1093.69,1054.88,81.01,0.00,42.20,USD,Los Angeles,US,10,Clutch Bag,SKU-FSN-004,4,89.99,359.96
+8201234567002,4002,2026-03-04 20:18:20,Stella Ward,stella.ward0@email.com,pending,pending,1093.69,1054.88,81.01,0.00,42.20,USD,Los Angeles,US,11,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567003,4003,2026-03-04 19:03:41,Ella Cox,ella.cox1@email.com,pending,cancelled,1361.10,1369.87,100.82,0.00,109.59,USD,Los Angeles,US,12,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567003,4003,2026-03-04 19:03:41,Ella Cox,ella.cox1@email.com,pending,cancelled,1361.10,1369.87,100.82,0.00,109.59,USD,Los Angeles,US,13,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567003,4003,2026-03-04 19:03:41,Ella Cox,ella.cox1@email.com,pending,cancelled,1361.10,1369.87,100.82,0.00,109.59,USD,Los Angeles,US,14,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567003,4003,2026-03-04 19:03:41,Ella Cox,ella.cox1@email.com,pending,cancelled,1361.10,1369.87,100.82,0.00,109.59,USD,Los Angeles,US,15,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567003,4003,2026-03-04 19:03:41,Ella Cox,ella.cox1@email.com,pending,cancelled,1361.10,1369.87,100.82,0.00,109.59,USD,Los Angeles,US,16,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567003,4003,2026-03-04 19:03:41,Ella Cox,ella.cox1@email.com,pending,cancelled,1361.10,1369.87,100.82,0.00,109.59,USD,Los Angeles,US,17,Faux Fur Coat,SKU-FSN-011,2,179.99,359.98
+8201234567003,4003,2026-03-04 19:03:41,Ella Cox,ella.cox1@email.com,pending,cancelled,1361.10,1369.87,100.82,0.00,109.59,USD,Los Angeles,US,18,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567004,4004,2026-03-03 11:16:24,Grace Cooper,grace.cooper2@email.com,unfulfilled,refunded,1482.04,1459.85,109.78,0.00,87.59,USD,Atlanta,US,19,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567004,4004,2026-03-03 11:16:24,Grace Cooper,grace.cooper2@email.com,unfulfilled,refunded,1482.04,1459.85,109.78,0.00,87.59,USD,Atlanta,US,20,Pleated Skirt,SKU-FSN-007,4,79.99,319.96
+8201234567004,4004,2026-03-03 11:16:24,Grace Cooper,grace.cooper2@email.com,unfulfilled,refunded,1482.04,1459.85,109.78,0.00,87.59,USD,Atlanta,US,21,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567004,4004,2026-03-03 11:16:24,Grace Cooper,grace.cooper2@email.com,unfulfilled,refunded,1482.04,1459.85,109.78,0.00,87.59,USD,Atlanta,US,22,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567004,4004,2026-03-03 11:16:24,Grace Cooper,grace.cooper2@email.com,unfulfilled,refunded,1482.04,1459.85,109.78,0.00,87.59,USD,Atlanta,US,23,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567004,4004,2026-03-03 11:16:24,Grace Cooper,grace.cooper2@email.com,unfulfilled,refunded,1482.04,1459.85,109.78,0.00,87.59,USD,Atlanta,US,24,Sequin Dress,SKU-FSN-001,4,119.99,479.96
+8201234567004,4004,2026-03-03 11:16:24,Grace Cooper,grace.cooper2@email.com,unfulfilled,refunded,1482.04,1459.85,109.78,0.00,87.59,USD,Atlanta,US,25,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567005,4005,2026-03-05 15:48:31,Gabriel Parker,gabriel.parker3@email.com,fulfilled,cancelled,995.22,959.90,73.72,0.00,38.40,USD,Los Angeles,US,26,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567005,4005,2026-03-05 15:48:31,Gabriel Parker,gabriel.parker3@email.com,fulfilled,cancelled,995.22,959.90,73.72,0.00,38.40,USD,Los Angeles,US,27,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567005,4005,2026-03-05 15:48:31,Gabriel Parker,gabriel.parker3@email.com,fulfilled,cancelled,995.22,959.90,73.72,0.00,38.40,USD,Los Angeles,US,28,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567005,4005,2026-03-05 15:48:31,Gabriel Parker,gabriel.parker3@email.com,fulfilled,cancelled,995.22,959.90,73.72,0.00,38.40,USD,Los Angeles,US,29,Cropped Jacket,SKU-FSN-005,2,109.99,219.98
+8201234567005,4005,2026-03-05 15:48:31,Gabriel Parker,gabriel.parker3@email.com,fulfilled,cancelled,995.22,959.90,73.72,0.00,38.40,USD,Los Angeles,US,30,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567005,4005,2026-03-05 15:48:31,Gabriel Parker,gabriel.parker3@email.com,fulfilled,cancelled,995.22,959.90,73.72,0.00,38.40,USD,Los Angeles,US,31,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567005,4005,2026-03-05 15:48:31,Gabriel Parker,gabriel.parker3@email.com,fulfilled,cancelled,995.22,959.90,73.72,0.00,38.40,USD,Los Angeles,US,32,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567006,4006,2026-03-04 18:47:22,Aiden Price,aiden.price4@email.com,unfulfilled,pending,487.23,469.94,36.09,0.00,18.80,USD,Las Vegas,US,33,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567006,4006,2026-03-04 18:47:22,Aiden Price,aiden.price4@email.com,unfulfilled,pending,487.23,469.94,36.09,0.00,18.80,USD,Las Vegas,US,34,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567006,4006,2026-03-04 18:47:22,Aiden Price,aiden.price4@email.com,unfulfilled,pending,487.23,469.94,36.09,0.00,18.80,USD,Las Vegas,US,35,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567006,4006,2026-03-04 18:47:22,Aiden Price,aiden.price4@email.com,unfulfilled,pending,487.23,469.94,36.09,0.00,18.80,USD,Las Vegas,US,36,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567006,4006,2026-03-04 18:47:22,Aiden Price,aiden.price4@email.com,unfulfilled,pending,487.23,469.94,36.09,0.00,18.80,USD,Las Vegas,US,37,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567007,4007,2026-03-05 19:02:24,Isaac Wilson,isaac.wilson5@email.com,fulfilled,paid,694.59,669.94,51.45,0.00,26.80,USD,Austin,US,38,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567007,4007,2026-03-05 19:02:24,Isaac Wilson,isaac.wilson5@email.com,fulfilled,paid,694.59,669.94,51.45,0.00,26.80,USD,Austin,US,39,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567007,4007,2026-03-05 19:02:24,Isaac Wilson,isaac.wilson5@email.com,fulfilled,paid,694.59,669.94,51.45,0.00,26.80,USD,Austin,US,40,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567007,4007,2026-03-05 19:02:24,Isaac Wilson,isaac.wilson5@email.com,fulfilled,paid,694.59,669.94,51.45,0.00,26.80,USD,Austin,US,41,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567008,4008,2026-03-04 15:10:03,Lucas Russell,lucas.russell6@email.com,fulfilled,refunded,1560.22,1504.84,115.57,0.00,60.19,USD,Los Angeles,US,42,Satin Heels,SKU-FSN-002,2,139.99,279.98
+8201234567008,4008,2026-03-04 15:10:03,Lucas Russell,lucas.russell6@email.com,fulfilled,refunded,1560.22,1504.84,115.57,0.00,60.19,USD,Los Angeles,US,43,Pleated Skirt,SKU-FSN-007,4,79.99,319.96
+8201234567008,4008,2026-03-04 15:10:03,Lucas Russell,lucas.russell6@email.com,fulfilled,refunded,1560.22,1504.84,115.57,0.00,60.19,USD,Los Angeles,US,44,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567008,4008,2026-03-04 15:10:03,Lucas Russell,lucas.russell6@email.com,fulfilled,refunded,1560.22,1504.84,115.57,0.00,60.19,USD,Los Angeles,US,45,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567008,4008,2026-03-04 15:10:03,Lucas Russell,lucas.russell6@email.com,fulfilled,refunded,1560.22,1504.84,115.57,0.00,60.19,USD,Los Angeles,US,46,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567008,4008,2026-03-04 15:10:03,Lucas Russell,lucas.russell6@email.com,fulfilled,refunded,1560.22,1504.84,115.57,0.00,60.19,USD,Los Angeles,US,47,Maxi Dress,SKU-FSN-009,4,99.99,399.96
+8201234567008,4008,2026-03-04 15:10:03,Lucas Russell,lucas.russell6@email.com,fulfilled,refunded,1560.22,1504.84,115.57,0.00,60.19,USD,Los Angeles,US,48,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567009,4009,2026-03-03 21:16:49,Aria Turner,aria.turner7@email.com,pending,cancelled,903.44,889.92,66.92,0.00,53.40,USD,Austin,US,49,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567009,4009,2026-03-03 21:16:49,Aria Turner,aria.turner7@email.com,pending,cancelled,903.44,889.92,66.92,0.00,53.40,USD,Austin,US,50,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567009,4009,2026-03-03 21:16:49,Aria Turner,aria.turner7@email.com,pending,cancelled,903.44,889.92,66.92,0.00,53.40,USD,Austin,US,51,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567009,4009,2026-03-03 21:16:49,Aria Turner,aria.turner7@email.com,pending,cancelled,903.44,889.92,66.92,0.00,53.40,USD,Austin,US,52,Satin Heels,SKU-FSN-002,2,139.99,279.98
+8201234567009,4009,2026-03-03 21:16:49,Aria Turner,aria.turner7@email.com,pending,cancelled,903.44,889.92,66.92,0.00,53.40,USD,Austin,US,53,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567010,4010,2026-03-04 17:42:53,Elijah Davis,elijah.davis8@email.com,fulfilled,paid,884.21,889.90,65.50,0.00,71.19,USD,Los Angeles,US,54,Statement Earrings,SKU-FSN-003,4,59.99,239.96
+8201234567010,4010,2026-03-04 17:42:53,Elijah Davis,elijah.davis8@email.com,fulfilled,paid,884.21,889.90,65.50,0.00,71.19,USD,Los Angeles,US,55,Faux Fur Coat,SKU-FSN-011,2,179.99,359.98
+8201234567010,4010,2026-03-04 17:42:53,Elijah Davis,elijah.davis8@email.com,fulfilled,paid,884.21,889.90,65.50,0.00,71.19,USD,Los Angeles,US,56,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567010,4010,2026-03-04 17:42:53,Elijah Davis,elijah.davis8@email.com,fulfilled,paid,884.21,889.90,65.50,0.00,71.19,USD,Los Angeles,US,57,Pleated Skirt,SKU-FSN-007,3,79.99,239.97
+8201234567011,4011,2026-03-08 16:21:53,Caleb Collins,caleb.collins9@email.com,fulfilled,paid,777.51,749.92,57.59,0.00,30.00,USD,New York,US,58,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567011,4011,2026-03-08 16:21:53,Caleb Collins,caleb.collins9@email.com,fulfilled,paid,777.51,749.92,57.59,0.00,30.00,USD,New York,US,59,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567011,4011,2026-03-08 16:21:53,Caleb Collins,caleb.collins9@email.com,fulfilled,paid,777.51,749.92,57.59,0.00,30.00,USD,New York,US,60,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567011,4011,2026-03-08 16:21:53,Caleb Collins,caleb.collins9@email.com,fulfilled,paid,777.51,749.92,57.59,0.00,30.00,USD,New York,US,61,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567011,4011,2026-03-08 16:21:53,Caleb Collins,caleb.collins9@email.com,fulfilled,paid,777.51,749.92,57.59,0.00,30.00,USD,New York,US,62,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567011,4011,2026-03-08 16:21:53,Caleb Collins,caleb.collins9@email.com,fulfilled,paid,777.51,749.92,57.59,0.00,30.00,USD,New York,US,63,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567012,4012,2026-03-05 16:25:30,Ava Walker,ava.walker10@email.com,fulfilled,refunded,735.20,739.93,54.46,0.00,59.19,USD,Los Angeles,US,64,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567012,4012,2026-03-05 16:25:30,Ava Walker,ava.walker10@email.com,fulfilled,refunded,735.20,739.93,54.46,0.00,59.19,USD,Los Angeles,US,65,Faux Fur Coat,SKU-FSN-011,2,179.99,359.98
+8201234567012,4012,2026-03-05 16:25:30,Ava Walker,ava.walker10@email.com,fulfilled,refunded,735.20,739.93,54.46,0.00,59.19,USD,Los Angeles,US,66,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567012,4012,2026-03-05 16:25:30,Ava Walker,ava.walker10@email.com,fulfilled,refunded,735.20,739.93,54.46,0.00,59.19,USD,Los Angeles,US,67,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567012,4012,2026-03-05 16:25:30,Ava Walker,ava.walker10@email.com,fulfilled,refunded,735.20,739.93,54.46,0.00,59.19,USD,Los Angeles,US,68,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567013,4013,2026-03-07 10:19:52,Amelia Foster,amelia.foster11@email.com,pending,pending,1468.64,1359.85,108.79,0.00,0.00,USD,Los Angeles,US,69,Silk Blouse,SKU-FSN-006,4,94.99,379.96
+8201234567013,4013,2026-03-07 10:19:52,Amelia Foster,amelia.foster11@email.com,pending,pending,1468.64,1359.85,108.79,0.00,0.00,USD,Los Angeles,US,70,Clutch Bag,SKU-FSN-004,3,89.99,269.97
+8201234567013,4013,2026-03-07 10:19:52,Amelia Foster,amelia.foster11@email.com,pending,pending,1468.64,1359.85,108.79,0.00,0.00,USD,Los Angeles,US,71,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567013,4013,2026-03-07 10:19:52,Amelia Foster,amelia.foster11@email.com,pending,pending,1468.64,1359.85,108.79,0.00,0.00,USD,Los Angeles,US,72,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567013,4013,2026-03-07 10:19:52,Amelia Foster,amelia.foster11@email.com,pending,pending,1468.64,1359.85,108.79,0.00,0.00,USD,Los Angeles,US,73,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567013,4013,2026-03-07 10:19:52,Amelia Foster,amelia.foster11@email.com,pending,pending,1468.64,1359.85,108.79,0.00,0.00,USD,Los Angeles,US,74,Pleated Skirt,SKU-FSN-007,3,79.99,239.97
+8201234567013,4013,2026-03-07 10:19:52,Amelia Foster,amelia.foster11@email.com,pending,pending,1468.64,1359.85,108.79,0.00,0.00,USD,Los Angeles,US,75,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567014,4014,2026-03-03 13:44:30,Penelope Russell,penelope.russell12@email.com,unfulfilled,pending,527.85,519.95,39.10,0.00,31.20,USD,Atlanta,US,76,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567014,4014,2026-03-03 13:44:30,Penelope Russell,penelope.russell12@email.com,unfulfilled,pending,527.85,519.95,39.10,0.00,31.20,USD,Atlanta,US,77,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567014,4014,2026-03-03 13:44:30,Penelope Russell,penelope.russell12@email.com,unfulfilled,pending,527.85,519.95,39.10,0.00,31.20,USD,Atlanta,US,78,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567014,4014,2026-03-03 13:44:30,Penelope Russell,penelope.russell12@email.com,unfulfilled,pending,527.85,519.95,39.10,0.00,31.20,USD,Atlanta,US,79,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567015,4015,2026-03-04 15:22:13,Stella Martin,stella.martin13@email.com,fulfilled,refunded,610.99,614.92,45.26,0.00,49.19,USD,Las Vegas,US,80,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567015,4015,2026-03-04 15:22:13,Stella Martin,stella.martin13@email.com,fulfilled,refunded,610.99,614.92,45.26,0.00,49.19,USD,Las Vegas,US,81,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567015,4015,2026-03-04 15:22:13,Stella Martin,stella.martin13@email.com,fulfilled,refunded,610.99,614.92,45.26,0.00,49.19,USD,Las Vegas,US,82,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567015,4015,2026-03-04 15:22:13,Stella Martin,stella.martin13@email.com,fulfilled,refunded,610.99,614.92,45.26,0.00,49.19,USD,Las Vegas,US,83,Lace Bodysuit,SKU-FSN-012,3,69.99,209.97
+8201234567015,4015,2026-03-04 15:22:13,Stella Martin,stella.martin13@email.com,fulfilled,refunded,610.99,614.92,45.26,0.00,49.19,USD,Las Vegas,US,84,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567016,4016,2026-03-03 09:21:51,Thomas Sanders,thomas.sanders14@email.com,unfulfilled,pending,735.19,739.92,54.46,0.00,59.19,USD,New York,US,85,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567016,4016,2026-03-03 09:21:51,Thomas Sanders,thomas.sanders14@email.com,unfulfilled,pending,735.19,739.92,54.46,0.00,59.19,USD,New York,US,86,Cropped Jacket,SKU-FSN-005,2,109.99,219.98
+8201234567016,4016,2026-03-03 09:21:51,Thomas Sanders,thomas.sanders14@email.com,unfulfilled,pending,735.19,739.92,54.46,0.00,59.19,USD,New York,US,87,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567016,4016,2026-03-03 09:21:51,Thomas Sanders,thomas.sanders14@email.com,unfulfilled,pending,735.19,739.92,54.46,0.00,59.19,USD,New York,US,88,Rhinestone Belt,SKU-FSN-010,3,49.99,149.97
+8201234567017,4017,2026-03-07 14:13:32,Isaac Lee,isaac.lee15@email.com,pending,cancelled,625.90,629.93,46.36,0.00,50.39,USD,New York,US,89,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567017,4017,2026-03-07 14:13:32,Isaac Lee,isaac.lee15@email.com,pending,cancelled,625.90,629.93,46.36,0.00,50.39,USD,New York,US,90,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567017,4017,2026-03-07 14:13:32,Isaac Lee,isaac.lee15@email.com,pending,cancelled,625.90,629.93,46.36,0.00,50.39,USD,New York,US,91,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567017,4017,2026-03-07 14:13:32,Isaac Lee,isaac.lee15@email.com,pending,cancelled,625.90,629.93,46.36,0.00,50.39,USD,New York,US,92,Statement Earrings,SKU-FSN-003,3,59.99,179.97
+8201234567018,4018,2026-03-04 15:41:24,Emma Cooper,emma.cooper16@email.com,fulfilled,paid,984.85,949.90,72.95,0.00,38.00,USD,Las Vegas,US,93,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567018,4018,2026-03-04 15:41:24,Emma Cooper,emma.cooper16@email.com,fulfilled,paid,984.85,949.90,72.95,0.00,38.00,USD,Las Vegas,US,94,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567018,4018,2026-03-04 15:41:24,Emma Cooper,emma.cooper16@email.com,fulfilled,paid,984.85,949.90,72.95,0.00,38.00,USD,Las Vegas,US,95,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567018,4018,2026-03-04 15:41:24,Emma Cooper,emma.cooper16@email.com,fulfilled,paid,984.85,949.90,72.95,0.00,38.00,USD,Las Vegas,US,96,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567018,4018,2026-03-04 15:41:24,Emma Cooper,emma.cooper16@email.com,fulfilled,paid,984.85,949.90,72.95,0.00,38.00,USD,Las Vegas,US,97,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567018,4018,2026-03-04 15:41:24,Emma Cooper,emma.cooper16@email.com,fulfilled,paid,984.85,949.90,72.95,0.00,38.00,USD,Las Vegas,US,98,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567018,4018,2026-03-04 15:41:24,Emma Cooper,emma.cooper16@email.com,fulfilled,paid,984.85,949.90,72.95,0.00,38.00,USD,Las Vegas,US,99,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567019,4019,2026-03-03 11:43:03,Hannah Sanders,hannah.sanders17@email.com,unfulfilled,refunded,690.25,679.92,51.13,0.00,40.80,USD,Los Angeles,US,100,Strappy Sandals,SKU-FSN-008,3,89.99,269.97
+8201234567019,4019,2026-03-03 11:43:03,Hannah Sanders,hannah.sanders17@email.com,unfulfilled,refunded,690.25,679.92,51.13,0.00,40.80,USD,Los Angeles,US,101,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567019,4019,2026-03-03 11:43:03,Hannah Sanders,hannah.sanders17@email.com,unfulfilled,refunded,690.25,679.92,51.13,0.00,40.80,USD,Los Angeles,US,102,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567019,4019,2026-03-03 11:43:03,Hannah Sanders,hannah.sanders17@email.com,unfulfilled,refunded,690.25,679.92,51.13,0.00,40.80,USD,Los Angeles,US,103,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567019,4019,2026-03-03 11:43:03,Hannah Sanders,hannah.sanders17@email.com,unfulfilled,refunded,690.25,679.92,51.13,0.00,40.80,USD,Los Angeles,US,104,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567020,4020,2026-03-05 19:28:09,Nathan Price,nathan.price18@email.com,unfulfilled,paid,950.31,879.92,70.39,0.00,0.00,USD,New York,US,105,Cropped Jacket,SKU-FSN-005,3,109.99,329.97
+8201234567020,4020,2026-03-05 19:28:09,Nathan Price,nathan.price18@email.com,unfulfilled,paid,950.31,879.92,70.39,0.00,0.00,USD,New York,US,106,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567020,4020,2026-03-05 19:28:09,Nathan Price,nathan.price18@email.com,unfulfilled,paid,950.31,879.92,70.39,0.00,0.00,USD,New York,US,107,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567020,4020,2026-03-05 19:28:09,Nathan Price,nathan.price18@email.com,unfulfilled,paid,950.31,879.92,70.39,0.00,0.00,USD,New York,US,108,Sequin Dress,SKU-FSN-001,3,119.99,359.97
+8201234567021,4021,2026-03-03 19:23:48,Hannah Simmons,hannah.simmons19@email.com,fulfilled,refunded,626.32,579.93,46.39,0.00,0.00,USD,Las Vegas,US,109,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567021,4021,2026-03-03 19:23:48,Hannah Simmons,hannah.simmons19@email.com,fulfilled,refunded,626.32,579.93,46.39,0.00,0.00,USD,Las Vegas,US,110,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567021,4021,2026-03-03 19:23:48,Hannah Simmons,hannah.simmons19@email.com,fulfilled,refunded,626.32,579.93,46.39,0.00,0.00,USD,Las Vegas,US,111,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567021,4021,2026-03-03 19:23:48,Hannah Simmons,hannah.simmons19@email.com,fulfilled,refunded,626.32,579.93,46.39,0.00,0.00,USD,Las Vegas,US,112,Pleated Skirt,SKU-FSN-007,3,79.99,239.97
+8201234567022,4022,2026-03-03 09:26:04,Caleb Nguyen,caleb.nguyen20@email.com,fulfilled,refunded,869.32,874.92,64.39,0.00,69.99,USD,Las Vegas,US,113,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567022,4022,2026-03-03 09:26:04,Caleb Nguyen,caleb.nguyen20@email.com,fulfilled,refunded,869.32,874.92,64.39,0.00,69.99,USD,Las Vegas,US,114,Maxi Dress,SKU-FSN-009,4,99.99,399.96
+8201234567022,4022,2026-03-03 09:26:04,Caleb Nguyen,caleb.nguyen20@email.com,fulfilled,refunded,869.32,874.92,64.39,0.00,69.99,USD,Las Vegas,US,115,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567022,4022,2026-03-03 09:26:04,Caleb Nguyen,caleb.nguyen20@email.com,fulfilled,refunded,869.32,874.92,64.39,0.00,69.99,USD,Las Vegas,US,116,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567023,4023,2026-03-06 21:48:43,Emma Flores,emma.flores21@email.com,fulfilled,refunded,874.28,879.91,64.76,0.00,70.39,USD,Atlanta,US,117,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567023,4023,2026-03-06 21:48:43,Emma Flores,emma.flores21@email.com,fulfilled,refunded,874.28,879.91,64.76,0.00,70.39,USD,Atlanta,US,118,Sequin Dress,SKU-FSN-001,3,119.99,359.97
+8201234567023,4023,2026-03-06 21:48:43,Emma Flores,emma.flores21@email.com,fulfilled,refunded,874.28,879.91,64.76,0.00,70.39,USD,Atlanta,US,119,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567023,4023,2026-03-06 21:48:43,Emma Flores,emma.flores21@email.com,fulfilled,refunded,874.28,879.91,64.76,0.00,70.39,USD,Atlanta,US,120,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567023,4023,2026-03-06 21:48:43,Emma Flores,emma.flores21@email.com,fulfilled,refunded,874.28,879.91,64.76,0.00,70.39,USD,Atlanta,US,121,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567023,4023,2026-03-06 21:48:43,Emma Flores,emma.flores21@email.com,fulfilled,refunded,874.28,879.91,64.76,0.00,70.39,USD,Atlanta,US,122,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567024,4024,2026-03-07 13:23:06,Stella Flores,stella.flores22@email.com,fulfilled,refunded,1625.27,1504.88,120.39,0.00,0.00,USD,Miami,US,123,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567024,4024,2026-03-07 13:23:06,Stella Flores,stella.flores22@email.com,fulfilled,refunded,1625.27,1504.88,120.39,0.00,0.00,USD,Miami,US,124,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567024,4024,2026-03-07 13:23:06,Stella Flores,stella.flores22@email.com,fulfilled,refunded,1625.27,1504.88,120.39,0.00,0.00,USD,Miami,US,125,Sequin Dress,SKU-FSN-001,4,119.99,479.96
+8201234567024,4024,2026-03-07 13:23:06,Stella Flores,stella.flores22@email.com,fulfilled,refunded,1625.27,1504.88,120.39,0.00,0.00,USD,Miami,US,126,Satin Heels,SKU-FSN-002,4,139.99,559.96
+8201234567024,4024,2026-03-07 13:23:06,Stella Flores,stella.flores22@email.com,fulfilled,refunded,1625.27,1504.88,120.39,0.00,0.00,USD,Miami,US,127,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567024,4024,2026-03-07 13:23:06,Stella Flores,stella.flores22@email.com,fulfilled,refunded,1625.27,1504.88,120.39,0.00,0.00,USD,Miami,US,128,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567025,4025,2026-03-12 17:06:02,Jackson Ross,jackson.ross0@email.com,pending,cancelled,1482.05,1459.86,109.78,0.00,87.59,USD,Atlanta,US,129,Maxi Dress,SKU-FSN-009,3,99.99,299.97
+8201234567025,4025,2026-03-12 17:06:02,Jackson Ross,jackson.ross0@email.com,pending,cancelled,1482.05,1459.86,109.78,0.00,87.59,USD,Atlanta,US,130,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567025,4025,2026-03-12 17:06:02,Jackson Ross,jackson.ross0@email.com,pending,cancelled,1482.05,1459.86,109.78,0.00,87.59,USD,Atlanta,US,131,Cropped Jacket,SKU-FSN-005,4,109.99,439.96
+8201234567025,4025,2026-03-12 17:06:02,Jackson Ross,jackson.ross0@email.com,pending,cancelled,1482.05,1459.86,109.78,0.00,87.59,USD,Atlanta,US,132,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567025,4025,2026-03-12 17:06:02,Jackson Ross,jackson.ross0@email.com,pending,cancelled,1482.05,1459.86,109.78,0.00,87.59,USD,Atlanta,US,133,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567025,4025,2026-03-12 17:06:02,Jackson Ross,jackson.ross0@email.com,pending,cancelled,1482.05,1459.86,109.78,0.00,87.59,USD,Atlanta,US,134,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567025,4025,2026-03-12 17:06:02,Jackson Ross,jackson.ross0@email.com,pending,cancelled,1482.05,1459.86,109.78,0.00,87.59,USD,Atlanta,US,135,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567026,4026,2026-03-11 13:22:39,Evelyn Ramirez,evelyn.ramirez1@email.com,fulfilled,pending,619.19,609.92,45.87,0.00,36.60,USD,Miami,US,136,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567026,4026,2026-03-11 13:22:39,Evelyn Ramirez,evelyn.ramirez1@email.com,fulfilled,pending,619.19,609.92,45.87,0.00,36.60,USD,Miami,US,137,Rhinestone Belt,SKU-FSN-010,3,49.99,149.97
+8201234567026,4026,2026-03-11 13:22:39,Evelyn Ramirez,evelyn.ramirez1@email.com,fulfilled,pending,619.19,609.92,45.87,0.00,36.60,USD,Miami,US,138,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567026,4026,2026-03-11 13:22:39,Evelyn Ramirez,evelyn.ramirez1@email.com,fulfilled,pending,619.19,609.92,45.87,0.00,36.60,USD,Miami,US,139,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567027,4027,2026-03-13 11:44:27,Elijah Ramirez,elijah.ramirez2@email.com,pending,cancelled,950.30,879.91,70.39,0.00,0.00,USD,Las Vegas,US,140,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567027,4027,2026-03-13 11:44:27,Elijah Ramirez,elijah.ramirez2@email.com,pending,cancelled,950.30,879.91,70.39,0.00,0.00,USD,Las Vegas,US,141,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567027,4027,2026-03-13 11:44:27,Elijah Ramirez,elijah.ramirez2@email.com,pending,cancelled,950.30,879.91,70.39,0.00,0.00,USD,Las Vegas,US,142,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567027,4027,2026-03-13 11:44:27,Elijah Ramirez,elijah.ramirez2@email.com,pending,cancelled,950.30,879.91,70.39,0.00,0.00,USD,Las Vegas,US,143,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567027,4027,2026-03-13 11:44:27,Elijah Ramirez,elijah.ramirez2@email.com,pending,cancelled,950.30,879.91,70.39,0.00,0.00,USD,Las Vegas,US,144,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567027,4027,2026-03-13 11:44:27,Elijah Ramirez,elijah.ramirez2@email.com,pending,cancelled,950.30,879.91,70.39,0.00,0.00,USD,Las Vegas,US,145,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567028,4028,2026-03-13 17:37:39,Ethan Russell,ethan.russell3@email.com,unfulfilled,refunded,1003.43,1009.89,74.33,0.00,80.79,USD,Austin,US,146,Clutch Bag,SKU-FSN-004,3,89.99,269.97
+8201234567028,4028,2026-03-13 17:37:39,Ethan Russell,ethan.russell3@email.com,unfulfilled,refunded,1003.43,1009.89,74.33,0.00,80.79,USD,Austin,US,147,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567028,4028,2026-03-13 17:37:39,Ethan Russell,ethan.russell3@email.com,unfulfilled,refunded,1003.43,1009.89,74.33,0.00,80.79,USD,Austin,US,148,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567028,4028,2026-03-13 17:37:39,Ethan Russell,ethan.russell3@email.com,unfulfilled,refunded,1003.43,1009.89,74.33,0.00,80.79,USD,Austin,US,149,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567028,4028,2026-03-13 17:37:39,Ethan Russell,ethan.russell3@email.com,unfulfilled,refunded,1003.43,1009.89,74.33,0.00,80.79,USD,Austin,US,150,Sequin Dress,SKU-FSN-001,3,119.99,359.97
+8201234567029,4029,2026-03-10 14:55:02,Scarlett Bennett,scarlett.bennett4@email.com,pending,cancelled,824.60,829.91,61.08,0.00,66.39,USD,Atlanta,US,151,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567029,4029,2026-03-10 14:55:02,Scarlett Bennett,scarlett.bennett4@email.com,pending,cancelled,824.60,829.91,61.08,0.00,66.39,USD,Atlanta,US,152,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567029,4029,2026-03-10 14:55:02,Scarlett Bennett,scarlett.bennett4@email.com,pending,cancelled,824.60,829.91,61.08,0.00,66.39,USD,Atlanta,US,153,Cropped Jacket,SKU-FSN-005,2,109.99,219.98
+8201234567029,4029,2026-03-10 14:55:02,Scarlett Bennett,scarlett.bennett4@email.com,pending,cancelled,824.60,829.91,61.08,0.00,66.39,USD,Atlanta,US,154,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567029,4029,2026-03-10 14:55:02,Scarlett Bennett,scarlett.bennett4@email.com,pending,cancelled,824.60,829.91,61.08,0.00,66.39,USD,Atlanta,US,155,Statement Earrings,SKU-FSN-003,3,59.99,179.97
+8201234567030,4030,2026-03-12 09:36:13,Ellie Reed,ellie.reed5@email.com,fulfilled,pending,635.84,639.94,47.10,0.00,51.20,USD,Miami,US,156,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567030,4030,2026-03-12 09:36:13,Ellie Reed,ellie.reed5@email.com,fulfilled,pending,635.84,639.94,47.10,0.00,51.20,USD,Miami,US,157,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567030,4030,2026-03-12 09:36:13,Ellie Reed,ellie.reed5@email.com,fulfilled,pending,635.84,639.94,47.10,0.00,51.20,USD,Miami,US,158,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567030,4030,2026-03-12 09:36:13,Ellie Reed,ellie.reed5@email.com,fulfilled,pending,635.84,639.94,47.10,0.00,51.20,USD,Miami,US,159,Satin Heels,SKU-FSN-002,2,139.99,279.98
+8201234567031,4031,2026-03-14 10:00:21,Aria Ross,aria.ross6@email.com,pending,cancelled,701.94,649.94,52.00,0.00,0.00,USD,Miami,US,160,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567031,4031,2026-03-14 10:00:21,Aria Ross,aria.ross6@email.com,pending,cancelled,701.94,649.94,52.00,0.00,0.00,USD,Miami,US,161,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567031,4031,2026-03-14 10:00:21,Aria Ross,aria.ross6@email.com,pending,cancelled,701.94,649.94,52.00,0.00,0.00,USD,Miami,US,162,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567031,4031,2026-03-14 10:00:21,Aria Ross,aria.ross6@email.com,pending,cancelled,701.94,649.94,52.00,0.00,0.00,USD,Miami,US,163,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567031,4031,2026-03-14 10:00:21,Aria Ross,aria.ross6@email.com,pending,cancelled,701.94,649.94,52.00,0.00,0.00,USD,Miami,US,164,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567032,4032,2026-03-09 18:33:43,Benjamin Kelly,benjamin.kelly7@email.com,pending,paid,471.68,454.94,34.94,0.00,18.20,USD,New York,US,165,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567032,4032,2026-03-09 18:33:43,Benjamin Kelly,benjamin.kelly7@email.com,pending,paid,471.68,454.94,34.94,0.00,18.20,USD,New York,US,166,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567032,4032,2026-03-09 18:33:43,Benjamin Kelly,benjamin.kelly7@email.com,pending,paid,471.68,454.94,34.94,0.00,18.20,USD,New York,US,167,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567032,4032,2026-03-09 18:33:43,Benjamin Kelly,benjamin.kelly7@email.com,pending,paid,471.68,454.94,34.94,0.00,18.20,USD,New York,US,168,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567033,4033,2026-03-12 15:12:02,Aria Perry,aria.perry8@email.com,pending,refunded,625.90,629.93,46.36,0.00,50.39,USD,Miami,US,169,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567033,4033,2026-03-12 15:12:02,Aria Perry,aria.perry8@email.com,pending,refunded,625.90,629.93,46.36,0.00,50.39,USD,Miami,US,170,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567033,4033,2026-03-12 15:12:02,Aria Perry,aria.perry8@email.com,pending,refunded,625.90,629.93,46.36,0.00,50.39,USD,Miami,US,171,Maxi Dress,SKU-FSN-009,3,99.99,299.97
+8201234567033,4033,2026-03-12 15:12:02,Aria Perry,aria.perry8@email.com,pending,refunded,625.90,629.93,46.36,0.00,50.39,USD,Miami,US,172,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567034,4034,2026-03-15 11:58:47,Zoe Powell,zoe.powell9@email.com,fulfilled,refunded,1090.69,1009.90,80.79,0.00,0.00,USD,Los Angeles,US,173,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567034,4034,2026-03-15 11:58:47,Zoe Powell,zoe.powell9@email.com,fulfilled,refunded,1090.69,1009.90,80.79,0.00,0.00,USD,Los Angeles,US,174,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567034,4034,2026-03-15 11:58:47,Zoe Powell,zoe.powell9@email.com,fulfilled,refunded,1090.69,1009.90,80.79,0.00,0.00,USD,Los Angeles,US,175,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567034,4034,2026-03-15 11:58:47,Zoe Powell,zoe.powell9@email.com,fulfilled,refunded,1090.69,1009.90,80.79,0.00,0.00,USD,Los Angeles,US,176,Cropped Jacket,SKU-FSN-005,3,109.99,329.97
+8201234567034,4034,2026-03-15 11:58:47,Zoe Powell,zoe.powell9@email.com,fulfilled,refunded,1090.69,1009.90,80.79,0.00,0.00,USD,Los Angeles,US,177,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567035,4035,2026-03-10 20:53:18,Lily Ross,lily.ross10@email.com,pending,paid,927.84,894.91,68.73,0.00,35.80,USD,Los Angeles,US,178,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567035,4035,2026-03-10 20:53:18,Lily Ross,lily.ross10@email.com,pending,paid,927.84,894.91,68.73,0.00,35.80,USD,Los Angeles,US,179,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567035,4035,2026-03-10 20:53:18,Lily Ross,lily.ross10@email.com,pending,paid,927.84,894.91,68.73,0.00,35.80,USD,Los Angeles,US,180,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567035,4035,2026-03-10 20:53:18,Lily Ross,lily.ross10@email.com,pending,paid,927.84,894.91,68.73,0.00,35.80,USD,Los Angeles,US,181,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567035,4035,2026-03-10 20:53:18,Lily Ross,lily.ross10@email.com,pending,paid,927.84,894.91,68.73,0.00,35.80,USD,Los Angeles,US,182,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567035,4035,2026-03-10 20:53:18,Lily Ross,lily.ross10@email.com,pending,paid,927.84,894.91,68.73,0.00,35.80,USD,Los Angeles,US,183,Satin Heels,SKU-FSN-002,3,139.99,419.97
+8201234567036,4036,2026-03-12 19:34:38,Harper Davis,harper.davis11@email.com,unfulfilled,pending,437.36,404.96,32.40,0.00,0.00,USD,Las Vegas,US,184,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567036,4036,2026-03-12 19:34:38,Harper Davis,harper.davis11@email.com,unfulfilled,pending,437.36,404.96,32.40,0.00,0.00,USD,Las Vegas,US,185,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567036,4036,2026-03-12 19:34:38,Harper Davis,harper.davis11@email.com,unfulfilled,pending,437.36,404.96,32.40,0.00,0.00,USD,Las Vegas,US,186,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567036,4036,2026-03-12 19:34:38,Harper Davis,harper.davis11@email.com,unfulfilled,pending,437.36,404.96,32.40,0.00,0.00,USD,Las Vegas,US,187,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567037,4037,2026-03-11 16:43:23,Ethan Ward,ethan.ward12@email.com,fulfilled,refunded,546.42,549.94,40.48,0.00,44.00,USD,New York,US,188,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567037,4037,2026-03-11 16:43:23,Ethan Ward,ethan.ward12@email.com,fulfilled,refunded,546.42,549.94,40.48,0.00,44.00,USD,New York,US,189,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567037,4037,2026-03-11 16:43:23,Ethan Ward,ethan.ward12@email.com,fulfilled,refunded,546.42,549.94,40.48,0.00,44.00,USD,New York,US,190,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567037,4037,2026-03-11 16:43:23,Ethan Ward,ethan.ward12@email.com,fulfilled,refunded,546.42,549.94,40.48,0.00,44.00,USD,New York,US,191,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567038,4038,2026-03-10 14:28:56,Scarlett Flores,scarlett.flores13@email.com,unfulfilled,paid,815.32,754.93,60.39,0.00,0.00,USD,Los Angeles,US,192,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567038,4038,2026-03-10 14:28:56,Scarlett Flores,scarlett.flores13@email.com,unfulfilled,paid,815.32,754.93,60.39,0.00,0.00,USD,Los Angeles,US,193,Cropped Jacket,SKU-FSN-005,2,109.99,219.98
+8201234567038,4038,2026-03-10 14:28:56,Scarlett Flores,scarlett.flores13@email.com,unfulfilled,paid,815.32,754.93,60.39,0.00,0.00,USD,Los Angeles,US,194,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567038,4038,2026-03-10 14:28:56,Scarlett Flores,scarlett.flores13@email.com,unfulfilled,paid,815.32,754.93,60.39,0.00,0.00,USD,Los Angeles,US,195,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567039,4039,2026-03-11 21:13:29,Sebastian Martinez,sebastian.martinez14@email.com,pending,cancelled,1241.89,1149.90,91.99,0.00,0.00,USD,Miami,US,196,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567039,4039,2026-03-11 21:13:29,Sebastian Martinez,sebastian.martinez14@email.com,pending,cancelled,1241.89,1149.90,91.99,0.00,0.00,USD,Miami,US,197,Faux Fur Coat,SKU-FSN-011,3,179.99,539.97
+8201234567039,4039,2026-03-11 21:13:29,Sebastian Martinez,sebastian.martinez14@email.com,pending,cancelled,1241.89,1149.90,91.99,0.00,0.00,USD,Miami,US,198,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567039,4039,2026-03-11 21:13:29,Sebastian Martinez,sebastian.martinez14@email.com,pending,cancelled,1241.89,1149.90,91.99,0.00,0.00,USD,Miami,US,199,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567039,4039,2026-03-11 21:13:29,Sebastian Martinez,sebastian.martinez14@email.com,pending,cancelled,1241.89,1149.90,91.99,0.00,0.00,USD,Miami,US,200,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567039,4039,2026-03-11 21:13:29,Sebastian Martinez,sebastian.martinez14@email.com,pending,cancelled,1241.89,1149.90,91.99,0.00,0.00,USD,Miami,US,201,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567040,4040,2026-03-13 11:34:33,Hannah Hughes,hannah.hughes15@email.com,unfulfilled,refunded,1279.05,1259.90,94.74,0.00,75.59,USD,Los Angeles,US,202,Faux Fur Coat,SKU-FSN-011,3,179.99,539.97
+8201234567040,4040,2026-03-13 11:34:33,Hannah Hughes,hannah.hughes15@email.com,unfulfilled,refunded,1279.05,1259.90,94.74,0.00,75.59,USD,Los Angeles,US,203,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567040,4040,2026-03-13 11:34:33,Hannah Hughes,hannah.hughes15@email.com,unfulfilled,refunded,1279.05,1259.90,94.74,0.00,75.59,USD,Los Angeles,US,204,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567040,4040,2026-03-13 11:34:33,Hannah Hughes,hannah.hughes15@email.com,unfulfilled,refunded,1279.05,1259.90,94.74,0.00,75.59,USD,Los Angeles,US,205,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567040,4040,2026-03-13 11:34:33,Hannah Hughes,hannah.hughes15@email.com,unfulfilled,refunded,1279.05,1259.90,94.74,0.00,75.59,USD,Los Angeles,US,206,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567041,4041,2026-03-15 10:00:47,Julian Foster,julian.foster16@email.com,pending,paid,784.86,789.91,58.14,0.00,63.19,USD,Austin,US,207,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567041,4041,2026-03-15 10:00:47,Julian Foster,julian.foster16@email.com,pending,paid,784.86,789.91,58.14,0.00,63.19,USD,Austin,US,208,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567041,4041,2026-03-15 10:00:47,Julian Foster,julian.foster16@email.com,pending,paid,784.86,789.91,58.14,0.00,63.19,USD,Austin,US,209,Strappy Sandals,SKU-FSN-008,3,89.99,269.97
+8201234567041,4041,2026-03-15 10:00:47,Julian Foster,julian.foster16@email.com,pending,paid,784.86,789.91,58.14,0.00,63.19,USD,Austin,US,210,Maxi Dress,SKU-FSN-009,3,99.99,299.97
+8201234567042,4042,2026-03-14 15:17:12,Aria Nguyen,aria.nguyen17@email.com,fulfilled,cancelled,1580.99,1524.87,117.11,0.00,60.99,USD,Atlanta,US,211,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567042,4042,2026-03-14 15:17:12,Aria Nguyen,aria.nguyen17@email.com,fulfilled,cancelled,1580.99,1524.87,117.11,0.00,60.99,USD,Atlanta,US,212,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567042,4042,2026-03-14 15:17:12,Aria Nguyen,aria.nguyen17@email.com,fulfilled,cancelled,1580.99,1524.87,117.11,0.00,60.99,USD,Atlanta,US,213,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567042,4042,2026-03-14 15:17:12,Aria Nguyen,aria.nguyen17@email.com,fulfilled,cancelled,1580.99,1524.87,117.11,0.00,60.99,USD,Atlanta,US,214,Sequin Dress,SKU-FSN-001,3,119.99,359.97
+8201234567042,4042,2026-03-14 15:17:12,Aria Nguyen,aria.nguyen17@email.com,fulfilled,cancelled,1580.99,1524.87,117.11,0.00,60.99,USD,Atlanta,US,215,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567042,4042,2026-03-14 15:17:12,Aria Nguyen,aria.nguyen17@email.com,fulfilled,cancelled,1580.99,1524.87,117.11,0.00,60.99,USD,Atlanta,US,216,Satin Heels,SKU-FSN-002,4,139.99,559.96
+8201234567042,4042,2026-03-14 15:17:12,Aria Nguyen,aria.nguyen17@email.com,fulfilled,cancelled,1580.99,1524.87,117.11,0.00,60.99,USD,Atlanta,US,217,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567043,4043,2026-03-14 11:49:05,Stella Flores,stella.flores18@email.com,fulfilled,refunded,496.74,499.93,36.80,0.00,39.99,USD,New York,US,218,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567043,4043,2026-03-14 11:49:05,Stella Flores,stella.flores18@email.com,fulfilled,refunded,496.74,499.93,36.80,0.00,39.99,USD,New York,US,219,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567043,4043,2026-03-14 11:49:05,Stella Flores,stella.flores18@email.com,fulfilled,refunded,496.74,499.93,36.80,0.00,39.99,USD,New York,US,220,Statement Earrings,SKU-FSN-003,3,59.99,179.97
+8201234567043,4043,2026-03-14 11:49:05,Stella Flores,stella.flores18@email.com,fulfilled,refunded,496.74,499.93,36.80,0.00,39.99,USD,New York,US,221,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567044,4044,2026-03-12 18:19:39,Emma Ramirez,emma.ramirez19@email.com,fulfilled,paid,497.39,489.95,36.84,0.00,29.40,USD,Miami,US,222,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567044,4044,2026-03-12 18:19:39,Emma Ramirez,emma.ramirez19@email.com,fulfilled,paid,497.39,489.95,36.84,0.00,29.40,USD,Miami,US,223,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567044,4044,2026-03-12 18:19:39,Emma Ramirez,emma.ramirez19@email.com,fulfilled,paid,497.39,489.95,36.84,0.00,29.40,USD,Miami,US,224,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567044,4044,2026-03-12 18:19:39,Emma Ramirez,emma.ramirez19@email.com,fulfilled,paid,497.39,489.95,36.84,0.00,29.40,USD,Miami,US,225,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567045,4045,2026-03-14 18:10:50,Elijah Clark,elijah.clark20@email.com,unfulfilled,cancelled,777.50,749.91,57.59,0.00,30.00,USD,Los Angeles,US,226,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567045,4045,2026-03-14 18:10:50,Elijah Clark,elijah.clark20@email.com,unfulfilled,cancelled,777.50,749.91,57.59,0.00,30.00,USD,Los Angeles,US,227,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567045,4045,2026-03-14 18:10:50,Elijah Clark,elijah.clark20@email.com,unfulfilled,cancelled,777.50,749.91,57.59,0.00,30.00,USD,Los Angeles,US,228,Lace Bodysuit,SKU-FSN-012,4,69.99,279.96
+8201234567045,4045,2026-03-14 18:10:50,Elijah Clark,elijah.clark20@email.com,unfulfilled,cancelled,777.50,749.91,57.59,0.00,30.00,USD,Los Angeles,US,229,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567046,4046,2026-03-20 11:07:21,Grace Powell,grace.powell21@email.com,fulfilled,paid,1390.92,1399.88,103.03,0.00,111.99,USD,Miami,US,230,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567046,4046,2026-03-20 11:07:21,Grace Powell,grace.powell21@email.com,fulfilled,paid,1390.92,1399.88,103.03,0.00,111.99,USD,Miami,US,231,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567046,4046,2026-03-20 11:07:21,Grace Powell,grace.powell21@email.com,fulfilled,paid,1390.92,1399.88,103.03,0.00,111.99,USD,Miami,US,232,Satin Heels,SKU-FSN-002,3,139.99,419.97
+8201234567046,4046,2026-03-20 11:07:21,Grace Powell,grace.powell21@email.com,fulfilled,paid,1390.92,1399.88,103.03,0.00,111.99,USD,Miami,US,233,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567046,4046,2026-03-20 11:07:21,Grace Powell,grace.powell21@email.com,fulfilled,paid,1390.92,1399.88,103.03,0.00,111.99,USD,Miami,US,234,Faux Fur Coat,SKU-FSN-011,3,179.99,539.97
+8201234567047,4047,2026-03-22 17:28:15,Elijah Brown,elijah.brown22@email.com,pending,pending,1365.33,1344.88,101.14,0.00,80.69,USD,Las Vegas,US,235,Satin Heels,SKU-FSN-002,3,139.99,419.97
+8201234567047,4047,2026-03-22 17:28:15,Elijah Brown,elijah.brown22@email.com,pending,pending,1365.33,1344.88,101.14,0.00,80.69,USD,Las Vegas,US,236,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567047,4047,2026-03-22 17:28:15,Elijah Brown,elijah.brown22@email.com,pending,pending,1365.33,1344.88,101.14,0.00,80.69,USD,Las Vegas,US,237,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567047,4047,2026-03-22 17:28:15,Elijah Brown,elijah.brown22@email.com,pending,pending,1365.33,1344.88,101.14,0.00,80.69,USD,Las Vegas,US,238,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567047,4047,2026-03-22 17:28:15,Elijah Brown,elijah.brown22@email.com,pending,pending,1365.33,1344.88,101.14,0.00,80.69,USD,Las Vegas,US,239,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567047,4047,2026-03-22 17:28:15,Elijah Brown,elijah.brown22@email.com,pending,pending,1365.33,1344.88,101.14,0.00,80.69,USD,Las Vegas,US,240,Silk Blouse,SKU-FSN-006,3,94.99,284.97
+8201234567047,4047,2026-03-22 17:28:15,Elijah Brown,elijah.brown22@email.com,pending,pending,1365.33,1344.88,101.14,0.00,80.69,USD,Las Vegas,US,241,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567048,4048,2026-03-20 18:30:08,Liam Murphy,liam.murphy0@email.com,fulfilled,refunded,735.20,739.93,54.46,0.00,59.19,USD,Los Angeles,US,242,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567048,4048,2026-03-20 18:30:08,Liam Murphy,liam.murphy0@email.com,fulfilled,refunded,735.20,739.93,54.46,0.00,59.19,USD,Los Angeles,US,243,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567048,4048,2026-03-20 18:30:08,Liam Murphy,liam.murphy0@email.com,fulfilled,refunded,735.20,739.93,54.46,0.00,59.19,USD,Los Angeles,US,244,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567048,4048,2026-03-20 18:30:08,Liam Murphy,liam.murphy0@email.com,fulfilled,refunded,735.20,739.93,54.46,0.00,59.19,USD,Los Angeles,US,245,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567048,4048,2026-03-20 18:30:08,Liam Murphy,liam.murphy0@email.com,fulfilled,refunded,735.20,739.93,54.46,0.00,59.19,USD,Los Angeles,US,246,Lace Bodysuit,SKU-FSN-012,3,69.99,209.97
+8201234567049,4049,2026-03-20 20:04:33,Ella Anderson,ella.anderson1@email.com,unfulfilled,refunded,943.81,949.89,69.91,0.00,75.99,USD,Los Angeles,US,247,Satin Heels,SKU-FSN-002,3,139.99,419.97
+8201234567049,4049,2026-03-20 20:04:33,Ella Anderson,ella.anderson1@email.com,unfulfilled,refunded,943.81,949.89,69.91,0.00,75.99,USD,Los Angeles,US,248,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567049,4049,2026-03-20 20:04:33,Ella Anderson,ella.anderson1@email.com,unfulfilled,refunded,943.81,949.89,69.91,0.00,75.99,USD,Los Angeles,US,249,Statement Earrings,SKU-FSN-003,3,59.99,179.97
+8201234567049,4049,2026-03-20 20:04:33,Ella Anderson,ella.anderson1@email.com,unfulfilled,refunded,943.81,949.89,69.91,0.00,75.99,USD,Los Angeles,US,250,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567049,4049,2026-03-20 20:04:33,Ella Anderson,ella.anderson1@email.com,unfulfilled,refunded,943.81,949.89,69.91,0.00,75.99,USD,Los Angeles,US,251,Rhinestone Belt,SKU-FSN-010,3,49.99,149.97
+8201234567050,4050,2026-03-22 18:50:51,Harper Collins,harper.collins2@email.com,pending,cancelled,799.10,739.91,59.19,0.00,0.00,USD,Austin,US,252,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567050,4050,2026-03-22 18:50:51,Harper Collins,harper.collins2@email.com,pending,cancelled,799.10,739.91,59.19,0.00,0.00,USD,Austin,US,253,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567050,4050,2026-03-22 18:50:51,Harper Collins,harper.collins2@email.com,pending,cancelled,799.10,739.91,59.19,0.00,0.00,USD,Austin,US,254,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567050,4050,2026-03-22 18:50:51,Harper Collins,harper.collins2@email.com,pending,cancelled,799.10,739.91,59.19,0.00,0.00,USD,Austin,US,255,Pleated Skirt,SKU-FSN-007,3,79.99,239.97
+8201234567050,4050,2026-03-22 18:50:51,Harper Collins,harper.collins2@email.com,pending,cancelled,799.10,739.91,59.19,0.00,0.00,USD,Austin,US,256,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567051,4051,2026-03-21 13:07:45,Julian Cooper,julian.cooper3@email.com,unfulfilled,refunded,745.12,749.92,55.19,0.00,59.99,USD,Austin,US,257,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567051,4051,2026-03-21 13:07:45,Julian Cooper,julian.cooper3@email.com,unfulfilled,refunded,745.12,749.92,55.19,0.00,59.99,USD,Austin,US,258,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567051,4051,2026-03-21 13:07:45,Julian Cooper,julian.cooper3@email.com,unfulfilled,refunded,745.12,749.92,55.19,0.00,59.99,USD,Austin,US,259,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567051,4051,2026-03-21 13:07:45,Julian Cooper,julian.cooper3@email.com,unfulfilled,refunded,745.12,749.92,55.19,0.00,59.99,USD,Austin,US,260,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567051,4051,2026-03-21 13:07:45,Julian Cooper,julian.cooper3@email.com,unfulfilled,refunded,745.12,749.92,55.19,0.00,59.99,USD,Austin,US,261,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567052,4052,2026-03-17 15:44:08,Benjamin Simmons,benjamin.simmons4@email.com,fulfilled,refunded,1155.90,1114.87,85.62,0.00,44.59,USD,New York,US,262,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567052,4052,2026-03-17 15:44:08,Benjamin Simmons,benjamin.simmons4@email.com,fulfilled,refunded,1155.90,1114.87,85.62,0.00,44.59,USD,New York,US,263,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567052,4052,2026-03-17 15:44:08,Benjamin Simmons,benjamin.simmons4@email.com,fulfilled,refunded,1155.90,1114.87,85.62,0.00,44.59,USD,New York,US,264,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567052,4052,2026-03-17 15:44:08,Benjamin Simmons,benjamin.simmons4@email.com,fulfilled,refunded,1155.90,1114.87,85.62,0.00,44.59,USD,New York,US,265,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567052,4052,2026-03-17 15:44:08,Benjamin Simmons,benjamin.simmons4@email.com,fulfilled,refunded,1155.90,1114.87,85.62,0.00,44.59,USD,New York,US,266,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567052,4052,2026-03-17 15:44:08,Benjamin Simmons,benjamin.simmons4@email.com,fulfilled,refunded,1155.90,1114.87,85.62,0.00,44.59,USD,New York,US,267,Pleated Skirt,SKU-FSN-007,3,79.99,239.97
+8201234567052,4052,2026-03-17 15:44:08,Benjamin Simmons,benjamin.simmons4@email.com,fulfilled,refunded,1155.90,1114.87,85.62,0.00,44.59,USD,New York,US,268,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567053,4053,2026-03-22 09:07:06,Abigail Ramirez,abigail.ramirez5@email.com,fulfilled,refunded,827.30,814.91,61.28,0.00,48.89,USD,Los Angeles,US,269,Rhinestone Belt,SKU-FSN-010,3,49.99,149.97
+8201234567053,4053,2026-03-22 09:07:06,Abigail Ramirez,abigail.ramirez5@email.com,fulfilled,refunded,827.30,814.91,61.28,0.00,48.89,USD,Los Angeles,US,270,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567053,4053,2026-03-22 09:07:06,Abigail Ramirez,abigail.ramirez5@email.com,fulfilled,refunded,827.30,814.91,61.28,0.00,48.89,USD,Los Angeles,US,271,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567053,4053,2026-03-22 09:07:06,Abigail Ramirez,abigail.ramirez5@email.com,fulfilled,refunded,827.30,814.91,61.28,0.00,48.89,USD,Los Angeles,US,272,Faux Fur Coat,SKU-FSN-011,2,179.99,359.98
+8201234567053,4053,2026-03-22 09:07:06,Abigail Ramirez,abigail.ramirez5@email.com,fulfilled,refunded,827.30,814.91,61.28,0.00,48.89,USD,Los Angeles,US,273,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567054,4054,2026-03-18 14:55:13,Sebastian Collins,sebastian.collins6@email.com,fulfilled,refunded,809.91,749.92,59.99,0.00,0.00,USD,New York,US,274,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567054,4054,2026-03-18 14:55:13,Sebastian Collins,sebastian.collins6@email.com,fulfilled,refunded,809.91,749.92,59.99,0.00,0.00,USD,New York,US,275,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567054,4054,2026-03-18 14:55:13,Sebastian Collins,sebastian.collins6@email.com,fulfilled,refunded,809.91,749.92,59.99,0.00,0.00,USD,New York,US,276,Cropped Jacket,SKU-FSN-005,3,109.99,329.97
+8201234567054,4054,2026-03-18 14:55:13,Sebastian Collins,sebastian.collins6@email.com,fulfilled,refunded,809.91,749.92,59.99,0.00,0.00,USD,New York,US,277,Strappy Sandals,SKU-FSN-008,3,89.99,269.97
+8201234567055,4055,2026-03-21 13:50:39,Aria Reed,aria.reed7@email.com,unfulfilled,pending,1241.89,1249.89,91.99,0.00,99.99,USD,Las Vegas,US,278,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567055,4055,2026-03-21 13:50:39,Aria Reed,aria.reed7@email.com,unfulfilled,pending,1241.89,1249.89,91.99,0.00,99.99,USD,Las Vegas,US,279,Cropped Jacket,SKU-FSN-005,2,109.99,219.98
+8201234567055,4055,2026-03-21 13:50:39,Aria Reed,aria.reed7@email.com,unfulfilled,pending,1241.89,1249.89,91.99,0.00,99.99,USD,Las Vegas,US,280,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567055,4055,2026-03-21 13:50:39,Aria Reed,aria.reed7@email.com,unfulfilled,pending,1241.89,1249.89,91.99,0.00,99.99,USD,Las Vegas,US,281,Faux Fur Coat,SKU-FSN-011,3,179.99,539.97
+8201234567055,4055,2026-03-21 13:50:39,Aria Reed,aria.reed7@email.com,unfulfilled,pending,1241.89,1249.89,91.99,0.00,99.99,USD,Las Vegas,US,282,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567056,4056,2026-03-18 19:25:22,Nathan Kim,nathan.kim8@email.com,unfulfilled,pending,1202.57,1159.89,89.08,0.00,46.40,USD,Miami,US,283,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567056,4056,2026-03-18 19:25:22,Nathan Kim,nathan.kim8@email.com,unfulfilled,pending,1202.57,1159.89,89.08,0.00,46.40,USD,Miami,US,284,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567056,4056,2026-03-18 19:25:22,Nathan Kim,nathan.kim8@email.com,unfulfilled,pending,1202.57,1159.89,89.08,0.00,46.40,USD,Miami,US,285,Lace Bodysuit,SKU-FSN-012,3,69.99,209.97
+8201234567056,4056,2026-03-18 19:25:22,Nathan Kim,nathan.kim8@email.com,unfulfilled,pending,1202.57,1159.89,89.08,0.00,46.40,USD,Miami,US,286,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567056,4056,2026-03-18 19:25:22,Nathan Kim,nathan.kim8@email.com,unfulfilled,pending,1202.57,1159.89,89.08,0.00,46.40,USD,Miami,US,287,Satin Heels,SKU-FSN-002,3,139.99,419.97
+8201234567056,4056,2026-03-18 19:25:22,Nathan Kim,nathan.kim8@email.com,unfulfilled,pending,1202.57,1159.89,89.08,0.00,46.40,USD,Miami,US,288,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567056,4056,2026-03-18 19:25:22,Nathan Kim,nathan.kim8@email.com,unfulfilled,pending,1202.57,1159.89,89.08,0.00,46.40,USD,Miami,US,289,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567057,4057,2026-03-21 20:26:27,Gabriel Wilson,gabriel.wilson9@email.com,unfulfilled,cancelled,870.80,839.90,64.50,0.00,33.60,USD,New York,US,290,Satin Heels,SKU-FSN-002,2,139.99,279.98
+8201234567057,4057,2026-03-21 20:26:27,Gabriel Wilson,gabriel.wilson9@email.com,unfulfilled,cancelled,870.80,839.90,64.50,0.00,33.60,USD,New York,US,291,Statement Earrings,SKU-FSN-003,3,59.99,179.97
+8201234567057,4057,2026-03-21 20:26:27,Gabriel Wilson,gabriel.wilson9@email.com,unfulfilled,cancelled,870.80,839.90,64.50,0.00,33.60,USD,New York,US,292,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567057,4057,2026-03-21 20:26:27,Gabriel Wilson,gabriel.wilson9@email.com,unfulfilled,cancelled,870.80,839.90,64.50,0.00,33.60,USD,New York,US,293,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567057,4057,2026-03-21 20:26:27,Gabriel Wilson,gabriel.wilson9@email.com,unfulfilled,cancelled,870.80,839.90,64.50,0.00,33.60,USD,New York,US,294,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567058,4058,2026-03-21 09:05:34,Ethan Walker,ethan.walker10@email.com,fulfilled,paid,1317.46,1219.87,97.59,0.00,0.00,USD,Los Angeles,US,295,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567058,4058,2026-03-21 09:05:34,Ethan Walker,ethan.walker10@email.com,fulfilled,paid,1317.46,1219.87,97.59,0.00,0.00,USD,Los Angeles,US,296,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567058,4058,2026-03-21 09:05:34,Ethan Walker,ethan.walker10@email.com,fulfilled,paid,1317.46,1219.87,97.59,0.00,0.00,USD,Los Angeles,US,297,Pleated Skirt,SKU-FSN-007,3,79.99,239.97
+8201234567058,4058,2026-03-21 09:05:34,Ethan Walker,ethan.walker10@email.com,fulfilled,paid,1317.46,1219.87,97.59,0.00,0.00,USD,Los Angeles,US,298,Maxi Dress,SKU-FSN-009,3,99.99,299.97
+8201234567058,4058,2026-03-21 09:05:34,Ethan Walker,ethan.walker10@email.com,fulfilled,paid,1317.46,1219.87,97.59,0.00,0.00,USD,Los Angeles,US,299,Cropped Jacket,SKU-FSN-005,4,109.99,439.96
+8201234567059,4059,2026-03-20 10:15:44,Aiden Anderson,aiden.anderson11@email.com,unfulfilled,refunded,502.80,484.96,37.24,0.00,19.40,USD,Miami,US,300,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567059,4059,2026-03-20 10:15:44,Aiden Anderson,aiden.anderson11@email.com,unfulfilled,refunded,502.80,484.96,37.24,0.00,19.40,USD,Miami,US,301,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567059,4059,2026-03-20 10:15:44,Aiden Anderson,aiden.anderson11@email.com,unfulfilled,refunded,502.80,484.96,37.24,0.00,19.40,USD,Miami,US,302,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567059,4059,2026-03-20 10:15:44,Aiden Anderson,aiden.anderson11@email.com,unfulfilled,refunded,502.80,484.96,37.24,0.00,19.40,USD,Miami,US,303,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567060,4060,2026-03-21 15:20:10,Stella Griffin,stella.griffin12@email.com,fulfilled,cancelled,984.85,949.90,72.95,0.00,38.00,USD,Los Angeles,US,304,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567060,4060,2026-03-21 15:20:10,Stella Griffin,stella.griffin12@email.com,fulfilled,cancelled,984.85,949.90,72.95,0.00,38.00,USD,Los Angeles,US,305,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567060,4060,2026-03-21 15:20:10,Stella Griffin,stella.griffin12@email.com,fulfilled,cancelled,984.85,949.90,72.95,0.00,38.00,USD,Los Angeles,US,306,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567060,4060,2026-03-21 15:20:10,Stella Griffin,stella.griffin12@email.com,fulfilled,cancelled,984.85,949.90,72.95,0.00,38.00,USD,Los Angeles,US,307,Clutch Bag,SKU-FSN-004,3,89.99,269.97
+8201234567060,4060,2026-03-21 15:20:10,Stella Griffin,stella.griffin12@email.com,fulfilled,cancelled,984.85,949.90,72.95,0.00,38.00,USD,Los Angeles,US,308,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567060,4060,2026-03-21 15:20:10,Stella Griffin,stella.griffin12@email.com,fulfilled,cancelled,984.85,949.90,72.95,0.00,38.00,USD,Los Angeles,US,309,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567061,4061,2026-03-22 16:22:27,Chloe Rodriguez,chloe.rodriguez13@email.com,fulfilled,refunded,844.46,849.90,62.55,0.00,67.99,USD,Los Angeles,US,310,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567061,4061,2026-03-22 16:22:27,Chloe Rodriguez,chloe.rodriguez13@email.com,fulfilled,refunded,844.46,849.90,62.55,0.00,67.99,USD,Los Angeles,US,311,Sequin Dress,SKU-FSN-001,3,119.99,359.97
+8201234567061,4061,2026-03-22 16:22:27,Chloe Rodriguez,chloe.rodriguez13@email.com,fulfilled,refunded,844.46,849.90,62.55,0.00,67.99,USD,Los Angeles,US,312,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567061,4061,2026-03-22 16:22:27,Chloe Rodriguez,chloe.rodriguez13@email.com,fulfilled,refunded,844.46,849.90,62.55,0.00,67.99,USD,Los Angeles,US,313,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567061,4061,2026-03-22 16:22:27,Chloe Rodriguez,chloe.rodriguez13@email.com,fulfilled,refunded,844.46,849.90,62.55,0.00,67.99,USD,Los Angeles,US,314,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567061,4061,2026-03-22 16:22:27,Chloe Rodriguez,chloe.rodriguez13@email.com,fulfilled,refunded,844.46,849.90,62.55,0.00,67.99,USD,Los Angeles,US,315,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567062,4062,2026-03-22 11:41:08,Nathan Lee,nathan.lee14@email.com,fulfilled,refunded,869.31,874.91,64.39,0.00,69.99,USD,New York,US,316,Silk Blouse,SKU-FSN-006,3,94.99,284.97
+8201234567062,4062,2026-03-22 11:41:08,Nathan Lee,nathan.lee14@email.com,fulfilled,refunded,869.31,874.91,64.39,0.00,69.99,USD,New York,US,317,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567062,4062,2026-03-22 11:41:08,Nathan Lee,nathan.lee14@email.com,fulfilled,refunded,869.31,874.91,64.39,0.00,69.99,USD,New York,US,318,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567062,4062,2026-03-22 11:41:08,Nathan Lee,nathan.lee14@email.com,fulfilled,refunded,869.31,874.91,64.39,0.00,69.99,USD,New York,US,319,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567062,4062,2026-03-22 11:41:08,Nathan Lee,nathan.lee14@email.com,fulfilled,refunded,869.31,874.91,64.39,0.00,69.99,USD,New York,US,320,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567062,4062,2026-03-22 11:41:08,Nathan Lee,nathan.lee14@email.com,fulfilled,refunded,869.31,874.91,64.39,0.00,69.99,USD,New York,US,321,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567063,4063,2026-03-19 13:52:07,James Kim,james.kim15@email.com,fulfilled,refunded,1152.45,1159.87,85.37,0.00,92.79,USD,Los Angeles,US,322,Maxi Dress,SKU-FSN-009,4,99.99,399.96
+8201234567063,4063,2026-03-19 13:52:07,James Kim,james.kim15@email.com,fulfilled,refunded,1152.45,1159.87,85.37,0.00,92.79,USD,Los Angeles,US,323,Lace Bodysuit,SKU-FSN-012,3,69.99,209.97
+8201234567063,4063,2026-03-19 13:52:07,James Kim,james.kim15@email.com,fulfilled,refunded,1152.45,1159.87,85.37,0.00,92.79,USD,Los Angeles,US,324,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567063,4063,2026-03-19 13:52:07,James Kim,james.kim15@email.com,fulfilled,refunded,1152.45,1159.87,85.37,0.00,92.79,USD,Los Angeles,US,325,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567063,4063,2026-03-19 13:52:07,James Kim,james.kim15@email.com,fulfilled,refunded,1152.45,1159.87,85.37,0.00,92.79,USD,Los Angeles,US,326,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567063,4063,2026-03-19 13:52:07,James Kim,james.kim15@email.com,fulfilled,refunded,1152.45,1159.87,85.37,0.00,92.79,USD,Los Angeles,US,327,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567063,4063,2026-03-19 13:52:07,James Kim,james.kim15@email.com,fulfilled,refunded,1152.45,1159.87,85.37,0.00,92.79,USD,Los Angeles,US,328,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567064,4064,2026-03-27 13:30:42,Wyatt Hughes,wyatt.hughes16@email.com,pending,cancelled,539.92,499.93,39.99,0.00,0.00,USD,Miami,US,329,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567064,4064,2026-03-27 13:30:42,Wyatt Hughes,wyatt.hughes16@email.com,pending,cancelled,539.92,499.93,39.99,0.00,0.00,USD,Miami,US,330,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567064,4064,2026-03-27 13:30:42,Wyatt Hughes,wyatt.hughes16@email.com,pending,cancelled,539.92,499.93,39.99,0.00,0.00,USD,Miami,US,331,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567064,4064,2026-03-27 13:30:42,Wyatt Hughes,wyatt.hughes16@email.com,pending,cancelled,539.92,499.93,39.99,0.00,0.00,USD,Miami,US,332,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567064,4064,2026-03-27 13:30:42,Wyatt Hughes,wyatt.hughes16@email.com,pending,cancelled,539.92,499.93,39.99,0.00,0.00,USD,Miami,US,333,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567065,4065,2026-03-27 17:46:37,Aria Hughes,aria.hughes17@email.com,fulfilled,paid,774.94,779.93,57.40,0.00,62.39,USD,Atlanta,US,334,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567065,4065,2026-03-27 17:46:37,Aria Hughes,aria.hughes17@email.com,fulfilled,paid,774.94,779.93,57.40,0.00,62.39,USD,Atlanta,US,335,Cropped Jacket,SKU-FSN-005,2,109.99,219.98
+8201234567065,4065,2026-03-27 17:46:37,Aria Hughes,aria.hughes17@email.com,fulfilled,paid,774.94,779.93,57.40,0.00,62.39,USD,Atlanta,US,336,Satin Heels,SKU-FSN-002,3,139.99,419.97
+8201234567065,4065,2026-03-27 17:46:37,Aria Hughes,aria.hughes17@email.com,fulfilled,paid,774.94,779.93,57.40,0.00,62.39,USD,Atlanta,US,337,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567066,4066,2026-03-29 21:54:57,Sebastian Brown,sebastian.brown18@email.com,unfulfilled,cancelled,1031.27,954.88,76.39,0.00,0.00,USD,Los Angeles,US,338,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567066,4066,2026-03-29 21:54:57,Sebastian Brown,sebastian.brown18@email.com,unfulfilled,cancelled,1031.27,954.88,76.39,0.00,0.00,USD,Los Angeles,US,339,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567066,4066,2026-03-29 21:54:57,Sebastian Brown,sebastian.brown18@email.com,unfulfilled,cancelled,1031.27,954.88,76.39,0.00,0.00,USD,Los Angeles,US,340,Maxi Dress,SKU-FSN-009,3,99.99,299.97
+8201234567066,4066,2026-03-29 21:54:57,Sebastian Brown,sebastian.brown18@email.com,unfulfilled,cancelled,1031.27,954.88,76.39,0.00,0.00,USD,Los Angeles,US,341,Rhinestone Belt,SKU-FSN-010,4,49.99,199.96
+8201234567066,4066,2026-03-29 21:54:57,Sebastian Brown,sebastian.brown18@email.com,unfulfilled,cancelled,1031.27,954.88,76.39,0.00,0.00,USD,Los Angeles,US,342,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567066,4066,2026-03-29 21:54:57,Sebastian Brown,sebastian.brown18@email.com,unfulfilled,cancelled,1031.27,954.88,76.39,0.00,0.00,USD,Los Angeles,US,343,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567066,4066,2026-03-29 21:54:57,Sebastian Brown,sebastian.brown18@email.com,unfulfilled,cancelled,1031.27,954.88,76.39,0.00,0.00,USD,Los Angeles,US,344,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567067,4067,2026-03-25 13:09:41,Harper Cox,harper.cox19@email.com,unfulfilled,refunded,1045.57,1029.91,77.45,0.00,61.79,USD,Las Vegas,US,345,Cropped Jacket,SKU-FSN-005,4,109.99,439.96
+8201234567067,4067,2026-03-25 13:09:41,Harper Cox,harper.cox19@email.com,unfulfilled,refunded,1045.57,1029.91,77.45,0.00,61.79,USD,Las Vegas,US,346,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567067,4067,2026-03-25 13:09:41,Harper Cox,harper.cox19@email.com,unfulfilled,refunded,1045.57,1029.91,77.45,0.00,61.79,USD,Las Vegas,US,347,Strappy Sandals,SKU-FSN-008,3,89.99,269.97
+8201234567067,4067,2026-03-25 13:09:41,Harper Cox,harper.cox19@email.com,unfulfilled,refunded,1045.57,1029.91,77.45,0.00,61.79,USD,Las Vegas,US,348,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567068,4068,2026-03-27 15:00:15,Mason Murphy,mason.murphy20@email.com,unfulfilled,cancelled,522.77,514.95,38.72,0.00,30.90,USD,Miami,US,349,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567068,4068,2026-03-27 15:00:15,Mason Murphy,mason.murphy20@email.com,unfulfilled,cancelled,522.77,514.95,38.72,0.00,30.90,USD,Miami,US,350,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567068,4068,2026-03-27 15:00:15,Mason Murphy,mason.murphy20@email.com,unfulfilled,cancelled,522.77,514.95,38.72,0.00,30.90,USD,Miami,US,351,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567068,4068,2026-03-27 15:00:15,Mason Murphy,mason.murphy20@email.com,unfulfilled,cancelled,522.77,514.95,38.72,0.00,30.90,USD,Miami,US,352,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567068,4068,2026-03-27 15:00:15,Mason Murphy,mason.murphy20@email.com,unfulfilled,cancelled,522.77,514.95,38.72,0.00,30.90,USD,Miami,US,353,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567069,4069,2026-03-27 15:12:04,Aria Cooper,aria.cooper21@email.com,fulfilled,refunded,1140.38,1099.91,84.47,0.00,44.00,USD,Miami,US,354,Faux Fur Coat,SKU-FSN-011,2,179.99,359.98
+8201234567069,4069,2026-03-27 15:12:04,Aria Cooper,aria.cooper21@email.com,fulfilled,refunded,1140.38,1099.91,84.47,0.00,44.00,USD,Miami,US,355,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567069,4069,2026-03-27 15:12:04,Aria Cooper,aria.cooper21@email.com,fulfilled,refunded,1140.38,1099.91,84.47,0.00,44.00,USD,Miami,US,356,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567069,4069,2026-03-27 15:12:04,Aria Cooper,aria.cooper21@email.com,fulfilled,refunded,1140.38,1099.91,84.47,0.00,44.00,USD,Miami,US,357,Satin Heels,SKU-FSN-002,3,139.99,419.97
+8201234567069,4069,2026-03-27 15:12:04,Aria Cooper,aria.cooper21@email.com,fulfilled,refunded,1140.38,1099.91,84.47,0.00,44.00,USD,Miami,US,358,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567070,4070,2026-03-25 21:49:57,Penelope Brooks,penelope.brooks22@email.com,fulfilled,cancelled,741.03,729.94,54.89,0.00,43.80,USD,Atlanta,US,359,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567070,4070,2026-03-25 21:49:57,Penelope Brooks,penelope.brooks22@email.com,fulfilled,cancelled,741.03,729.94,54.89,0.00,43.80,USD,Atlanta,US,360,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567070,4070,2026-03-25 21:49:57,Penelope Brooks,penelope.brooks22@email.com,fulfilled,cancelled,741.03,729.94,54.89,0.00,43.80,USD,Atlanta,US,361,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567070,4070,2026-03-25 21:49:57,Penelope Brooks,penelope.brooks22@email.com,fulfilled,cancelled,741.03,729.94,54.89,0.00,43.80,USD,Atlanta,US,362,Sequin Dress,SKU-FSN-001,3,119.99,359.97
+8201234567071,4071,2026-03-23 21:35:28,Nathan Collins,nathan.collins0@email.com,unfulfilled,pending,1263.82,1244.89,93.62,0.00,74.69,USD,New York,US,363,Faux Fur Coat,SKU-FSN-011,3,179.99,539.97
+8201234567071,4071,2026-03-23 21:35:28,Nathan Collins,nathan.collins0@email.com,unfulfilled,pending,1263.82,1244.89,93.62,0.00,74.69,USD,New York,US,364,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567071,4071,2026-03-23 21:35:28,Nathan Collins,nathan.collins0@email.com,unfulfilled,pending,1263.82,1244.89,93.62,0.00,74.69,USD,New York,US,365,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567071,4071,2026-03-23 21:35:28,Nathan Collins,nathan.collins0@email.com,unfulfilled,pending,1263.82,1244.89,93.62,0.00,74.69,USD,New York,US,366,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567071,4071,2026-03-23 21:35:28,Nathan Collins,nathan.collins0@email.com,unfulfilled,pending,1263.82,1244.89,93.62,0.00,74.69,USD,New York,US,367,Lace Bodysuit,SKU-FSN-012,3,69.99,209.97
+8201234567072,4072,2026-03-26 11:05:09,Amelia Martin,amelia.martin1@email.com,pending,paid,1382.26,1279.87,102.39,0.00,0.00,USD,Las Vegas,US,368,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567072,4072,2026-03-26 11:05:09,Amelia Martin,amelia.martin1@email.com,pending,paid,1382.26,1279.87,102.39,0.00,0.00,USD,Las Vegas,US,369,Clutch Bag,SKU-FSN-004,3,89.99,269.97
+8201234567072,4072,2026-03-26 11:05:09,Amelia Martin,amelia.martin1@email.com,pending,paid,1382.26,1279.87,102.39,0.00,0.00,USD,Las Vegas,US,370,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567072,4072,2026-03-26 11:05:09,Amelia Martin,amelia.martin1@email.com,pending,paid,1382.26,1279.87,102.39,0.00,0.00,USD,Las Vegas,US,371,Faux Fur Coat,SKU-FSN-011,2,179.99,359.98
+8201234567072,4072,2026-03-26 11:05:09,Amelia Martin,amelia.martin1@email.com,pending,paid,1382.26,1279.87,102.39,0.00,0.00,USD,Las Vegas,US,372,Rhinestone Belt,SKU-FSN-010,3,49.99,149.97
+8201234567072,4072,2026-03-26 11:05:09,Amelia Martin,amelia.martin1@email.com,pending,paid,1382.26,1279.87,102.39,0.00,0.00,USD,Las Vegas,US,373,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567072,4072,2026-03-26 11:05:09,Amelia Martin,amelia.martin1@email.com,pending,paid,1382.26,1279.87,102.39,0.00,0.00,USD,Las Vegas,US,374,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567073,4073,2026-03-24 21:11:30,Benjamin Rodriguez,benjamin.rodriguez2@email.com,fulfilled,refunded,966.49,894.90,71.59,0.00,0.00,USD,Austin,US,375,Rhinestone Belt,SKU-FSN-010,3,49.99,149.97
+8201234567073,4073,2026-03-24 21:11:30,Benjamin Rodriguez,benjamin.rodriguez2@email.com,fulfilled,refunded,966.49,894.90,71.59,0.00,0.00,USD,Austin,US,376,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567073,4073,2026-03-24 21:11:30,Benjamin Rodriguez,benjamin.rodriguez2@email.com,fulfilled,refunded,966.49,894.90,71.59,0.00,0.00,USD,Austin,US,377,Cropped Jacket,SKU-FSN-005,3,109.99,329.97
+8201234567073,4073,2026-03-24 21:11:30,Benjamin Rodriguez,benjamin.rodriguez2@email.com,fulfilled,refunded,966.49,894.90,71.59,0.00,0.00,USD,Austin,US,378,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567073,4073,2026-03-24 21:11:30,Benjamin Rodriguez,benjamin.rodriguez2@email.com,fulfilled,refunded,966.49,894.90,71.59,0.00,0.00,USD,Austin,US,379,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567074,4074,2026-03-27 18:32:14,Aria Walker,aria.walker3@email.com,unfulfilled,refunded,772.34,744.93,57.21,0.00,29.80,USD,Los Angeles,US,380,Cropped Jacket,SKU-FSN-005,2,109.99,219.98
+8201234567074,4074,2026-03-27 18:32:14,Aria Walker,aria.walker3@email.com,unfulfilled,refunded,772.34,744.93,57.21,0.00,29.80,USD,Los Angeles,US,381,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567074,4074,2026-03-27 18:32:14,Aria Walker,aria.walker3@email.com,unfulfilled,refunded,772.34,744.93,57.21,0.00,29.80,USD,Los Angeles,US,382,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567074,4074,2026-03-27 18:32:14,Aria Walker,aria.walker3@email.com,unfulfilled,refunded,772.34,744.93,57.21,0.00,29.80,USD,Los Angeles,US,383,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567074,4074,2026-03-27 18:32:14,Aria Walker,aria.walker3@email.com,unfulfilled,refunded,772.34,744.93,57.21,0.00,29.80,USD,Los Angeles,US,384,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567075,4075,2026-03-23 19:33:24,Nathan Murphy,nathan.murphy4@email.com,unfulfilled,pending,767.13,739.91,56.82,0.00,29.60,USD,Atlanta,US,385,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567075,4075,2026-03-23 19:33:24,Nathan Murphy,nathan.murphy4@email.com,unfulfilled,pending,767.13,739.91,56.82,0.00,29.60,USD,Atlanta,US,386,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567075,4075,2026-03-23 19:33:24,Nathan Murphy,nathan.murphy4@email.com,unfulfilled,pending,767.13,739.91,56.82,0.00,29.60,USD,Atlanta,US,387,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567075,4075,2026-03-23 19:33:24,Nathan Murphy,nathan.murphy4@email.com,unfulfilled,pending,767.13,739.91,56.82,0.00,29.60,USD,Atlanta,US,388,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567075,4075,2026-03-23 19:33:24,Nathan Murphy,nathan.murphy4@email.com,unfulfilled,pending,767.13,739.91,56.82,0.00,29.60,USD,Atlanta,US,389,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567075,4075,2026-03-23 19:33:24,Nathan Murphy,nathan.murphy4@email.com,unfulfilled,pending,767.13,739.91,56.82,0.00,29.60,USD,Atlanta,US,390,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567076,4076,2026-03-26 10:24:21,Evelyn Clark,evelyn.clark5@email.com,pending,pending,674.91,624.92,49.99,0.00,0.00,USD,Miami,US,391,Statement Earrings,SKU-FSN-003,4,59.99,239.96
+8201234567076,4076,2026-03-26 10:24:21,Evelyn Clark,evelyn.clark5@email.com,pending,pending,674.91,624.92,49.99,0.00,0.00,USD,Miami,US,392,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567076,4076,2026-03-26 10:24:21,Evelyn Clark,evelyn.clark5@email.com,pending,pending,674.91,624.92,49.99,0.00,0.00,USD,Miami,US,393,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567076,4076,2026-03-26 10:24:21,Evelyn Clark,evelyn.clark5@email.com,pending,pending,674.91,624.92,49.99,0.00,0.00,USD,Miami,US,394,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567077,4077,2026-03-23 12:52:39,Nora Price,nora.price6@email.com,fulfilled,refunded,497.39,489.95,36.84,0.00,29.40,USD,Las Vegas,US,395,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567077,4077,2026-03-23 12:52:39,Nora Price,nora.price6@email.com,fulfilled,refunded,497.39,489.95,36.84,0.00,29.40,USD,Las Vegas,US,396,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567077,4077,2026-03-23 12:52:39,Nora Price,nora.price6@email.com,fulfilled,refunded,497.39,489.95,36.84,0.00,29.40,USD,Las Vegas,US,397,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567077,4077,2026-03-23 12:52:39,Nora Price,nora.price6@email.com,fulfilled,refunded,497.39,489.95,36.84,0.00,29.40,USD,Las Vegas,US,398,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567077,4077,2026-03-23 12:52:39,Nora Price,nora.price6@email.com,fulfilled,refunded,497.39,489.95,36.84,0.00,29.40,USD,Las Vegas,US,399,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567078,4078,2026-03-26 09:20:04,Aurora Martinez,aurora.martinez7@email.com,fulfilled,pending,896.31,829.92,66.39,0.00,0.00,USD,Atlanta,US,400,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567078,4078,2026-03-26 09:20:04,Aurora Martinez,aurora.martinez7@email.com,fulfilled,pending,896.31,829.92,66.39,0.00,0.00,USD,Atlanta,US,401,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567078,4078,2026-03-26 09:20:04,Aurora Martinez,aurora.martinez7@email.com,fulfilled,pending,896.31,829.92,66.39,0.00,0.00,USD,Atlanta,US,402,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567078,4078,2026-03-26 09:20:04,Aurora Martinez,aurora.martinez7@email.com,fulfilled,pending,896.31,829.92,66.39,0.00,0.00,USD,Atlanta,US,403,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567078,4078,2026-03-26 09:20:04,Aurora Martinez,aurora.martinez7@email.com,fulfilled,pending,896.31,829.92,66.39,0.00,0.00,USD,Atlanta,US,404,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567079,4079,2026-04-03 19:50:29,Benjamin Hughes,benjamin.hughes8@email.com,fulfilled,pending,1101.50,1019.91,81.59,0.00,0.00,USD,New York,US,405,Faux Fur Coat,SKU-FSN-011,2,179.99,359.98
+8201234567079,4079,2026-04-03 19:50:29,Benjamin Hughes,benjamin.hughes8@email.com,fulfilled,pending,1101.50,1019.91,81.59,0.00,0.00,USD,New York,US,406,Cropped Jacket,SKU-FSN-005,3,109.99,329.97
+8201234567079,4079,2026-04-03 19:50:29,Benjamin Hughes,benjamin.hughes8@email.com,fulfilled,pending,1101.50,1019.91,81.59,0.00,0.00,USD,New York,US,407,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567079,4079,2026-04-03 19:50:29,Benjamin Hughes,benjamin.hughes8@email.com,fulfilled,pending,1101.50,1019.91,81.59,0.00,0.00,USD,New York,US,408,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567079,4079,2026-04-03 19:50:29,Benjamin Hughes,benjamin.hughes8@email.com,fulfilled,pending,1101.50,1019.91,81.59,0.00,0.00,USD,New York,US,409,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567080,4080,2026-04-05 21:41:09,Evelyn Kim,evelyn.kim9@email.com,pending,cancelled,615.95,619.91,45.63,0.00,49.59,USD,Los Angeles,US,410,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567080,4080,2026-04-05 21:41:09,Evelyn Kim,evelyn.kim9@email.com,pending,cancelled,615.95,619.91,45.63,0.00,49.59,USD,Los Angeles,US,411,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567080,4080,2026-04-05 21:41:09,Evelyn Kim,evelyn.kim9@email.com,pending,cancelled,615.95,619.91,45.63,0.00,49.59,USD,Los Angeles,US,412,Rhinestone Belt,SKU-FSN-010,3,49.99,149.97
+8201234567080,4080,2026-04-05 21:41:09,Evelyn Kim,evelyn.kim9@email.com,pending,cancelled,615.95,619.91,45.63,0.00,49.59,USD,Los Angeles,US,413,Statement Earrings,SKU-FSN-003,3,59.99,179.97
+8201234567080,4080,2026-04-05 21:41:09,Evelyn Kim,evelyn.kim9@email.com,pending,cancelled,615.95,619.91,45.63,0.00,49.59,USD,Los Angeles,US,414,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567081,4081,2026-04-02 09:21:41,Caleb Brooks,caleb.brooks10@email.com,unfulfilled,refunded,447.07,449.95,33.12,0.00,36.00,USD,Austin,US,415,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567081,4081,2026-04-02 09:21:41,Caleb Brooks,caleb.brooks10@email.com,unfulfilled,refunded,447.07,449.95,33.12,0.00,36.00,USD,Austin,US,416,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567081,4081,2026-04-02 09:21:41,Caleb Brooks,caleb.brooks10@email.com,unfulfilled,refunded,447.07,449.95,33.12,0.00,36.00,USD,Austin,US,417,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567081,4081,2026-04-02 09:21:41,Caleb Brooks,caleb.brooks10@email.com,unfulfilled,refunded,447.07,449.95,33.12,0.00,36.00,USD,Austin,US,418,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567082,4082,2026-04-01 14:21:56,Julian Walker,julian.walker11@email.com,pending,refunded,684.21,659.93,50.68,0.00,26.40,USD,Atlanta,US,419,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567082,4082,2026-04-01 14:21:56,Julian Walker,julian.walker11@email.com,pending,refunded,684.21,659.93,50.68,0.00,26.40,USD,Atlanta,US,420,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567082,4082,2026-04-01 14:21:56,Julian Walker,julian.walker11@email.com,pending,refunded,684.21,659.93,50.68,0.00,26.40,USD,Atlanta,US,421,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567082,4082,2026-04-01 14:21:56,Julian Walker,julian.walker11@email.com,pending,refunded,684.21,659.93,50.68,0.00,26.40,USD,Atlanta,US,422,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567082,4082,2026-04-01 14:21:56,Julian Walker,julian.walker11@email.com,pending,refunded,684.21,659.93,50.68,0.00,26.40,USD,Atlanta,US,423,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567083,4083,2026-03-30 14:58:02,Isaac Parker,isaac.parker12@email.com,fulfilled,refunded,464.35,429.95,34.40,0.00,0.00,USD,Los Angeles,US,424,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567083,4083,2026-03-30 14:58:02,Isaac Parker,isaac.parker12@email.com,fulfilled,refunded,464.35,429.95,34.40,0.00,0.00,USD,Los Angeles,US,425,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567083,4083,2026-03-30 14:58:02,Isaac Parker,isaac.parker12@email.com,fulfilled,refunded,464.35,429.95,34.40,0.00,0.00,USD,Los Angeles,US,426,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567083,4083,2026-03-30 14:58:02,Isaac Parker,isaac.parker12@email.com,fulfilled,refunded,464.35,429.95,34.40,0.00,0.00,USD,Los Angeles,US,427,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567084,4084,2026-04-04 19:56:55,Charlotte Wilson,charlotte.wilson13@email.com,unfulfilled,paid,774.93,779.92,57.40,0.00,62.39,USD,Las Vegas,US,428,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567084,4084,2026-04-04 19:56:55,Charlotte Wilson,charlotte.wilson13@email.com,unfulfilled,paid,774.93,779.92,57.40,0.00,62.39,USD,Las Vegas,US,429,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567084,4084,2026-04-04 19:56:55,Charlotte Wilson,charlotte.wilson13@email.com,unfulfilled,paid,774.93,779.92,57.40,0.00,62.39,USD,Las Vegas,US,430,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567084,4084,2026-04-04 19:56:55,Charlotte Wilson,charlotte.wilson13@email.com,unfulfilled,paid,774.93,779.92,57.40,0.00,62.39,USD,Las Vegas,US,431,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567084,4084,2026-04-04 19:56:55,Charlotte Wilson,charlotte.wilson13@email.com,unfulfilled,paid,774.93,779.92,57.40,0.00,62.39,USD,Las Vegas,US,432,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567084,4084,2026-04-04 19:56:55,Charlotte Wilson,charlotte.wilson13@email.com,unfulfilled,paid,774.93,779.92,57.40,0.00,62.39,USD,Las Vegas,US,433,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567085,4085,2026-04-01 09:47:47,Ellie Turner,ellie.turner14@email.com,fulfilled,paid,1285.06,1189.87,95.19,0.00,0.00,USD,Los Angeles,US,434,Rhinestone Belt,SKU-FSN-010,3,49.99,149.97
+8201234567085,4085,2026-04-01 09:47:47,Ellie Turner,ellie.turner14@email.com,fulfilled,paid,1285.06,1189.87,95.19,0.00,0.00,USD,Los Angeles,US,435,Satin Heels,SKU-FSN-002,3,139.99,419.97
+8201234567085,4085,2026-04-01 09:47:47,Ellie Turner,ellie.turner14@email.com,fulfilled,paid,1285.06,1189.87,95.19,0.00,0.00,USD,Los Angeles,US,436,Clutch Bag,SKU-FSN-004,4,89.99,359.96
+8201234567085,4085,2026-04-01 09:47:47,Ellie Turner,ellie.turner14@email.com,fulfilled,paid,1285.06,1189.87,95.19,0.00,0.00,USD,Los Angeles,US,437,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567085,4085,2026-04-01 09:47:47,Ellie Turner,ellie.turner14@email.com,fulfilled,paid,1285.06,1189.87,95.19,0.00,0.00,USD,Los Angeles,US,438,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567086,4086,2026-03-31 15:42:32,Thomas Reed,thomas.reed15@email.com,fulfilled,refunded,537.99,529.94,39.85,0.00,31.80,USD,Austin,US,439,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567086,4086,2026-03-31 15:42:32,Thomas Reed,thomas.reed15@email.com,fulfilled,refunded,537.99,529.94,39.85,0.00,31.80,USD,Austin,US,440,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567086,4086,2026-03-31 15:42:32,Thomas Reed,thomas.reed15@email.com,fulfilled,refunded,537.99,529.94,39.85,0.00,31.80,USD,Austin,US,441,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567086,4086,2026-03-31 15:42:32,Thomas Reed,thomas.reed15@email.com,fulfilled,refunded,537.99,529.94,39.85,0.00,31.80,USD,Austin,US,442,Cropped Jacket,SKU-FSN-005,2,109.99,219.98
+8201234567087,4087,2026-04-01 09:25:24,Ava Cox,ava.cox16@email.com,fulfilled,paid,796.85,784.92,59.03,0.00,47.10,USD,Atlanta,US,443,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567087,4087,2026-04-01 09:25:24,Ava Cox,ava.cox16@email.com,fulfilled,paid,796.85,784.92,59.03,0.00,47.10,USD,Atlanta,US,444,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567087,4087,2026-04-01 09:25:24,Ava Cox,ava.cox16@email.com,fulfilled,paid,796.85,784.92,59.03,0.00,47.10,USD,Atlanta,US,445,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567087,4087,2026-04-01 09:25:24,Ava Cox,ava.cox16@email.com,fulfilled,paid,796.85,784.92,59.03,0.00,47.10,USD,Atlanta,US,446,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567087,4087,2026-04-01 09:25:24,Ava Cox,ava.cox16@email.com,fulfilled,paid,796.85,784.92,59.03,0.00,47.10,USD,Atlanta,US,447,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567087,4087,2026-04-01 09:25:24,Ava Cox,ava.cox16@email.com,fulfilled,paid,796.85,784.92,59.03,0.00,47.10,USD,Atlanta,US,448,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567088,4088,2026-03-31 13:56:28,Henry Butler,henry.butler17@email.com,unfulfilled,refunded,1544.22,1429.83,114.39,0.00,0.00,USD,Atlanta,US,449,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567088,4088,2026-03-31 13:56:28,Henry Butler,henry.butler17@email.com,unfulfilled,refunded,1544.22,1429.83,114.39,0.00,0.00,USD,Atlanta,US,450,Cropped Jacket,SKU-FSN-005,4,109.99,439.96
+8201234567088,4088,2026-03-31 13:56:28,Henry Butler,henry.butler17@email.com,unfulfilled,refunded,1544.22,1429.83,114.39,0.00,0.00,USD,Atlanta,US,451,Rhinestone Belt,SKU-FSN-010,3,49.99,149.97
+8201234567088,4088,2026-03-31 13:56:28,Henry Butler,henry.butler17@email.com,unfulfilled,refunded,1544.22,1429.83,114.39,0.00,0.00,USD,Atlanta,US,452,Statement Earrings,SKU-FSN-003,3,59.99,179.97
+8201234567088,4088,2026-03-31 13:56:28,Henry Butler,henry.butler17@email.com,unfulfilled,refunded,1544.22,1429.83,114.39,0.00,0.00,USD,Atlanta,US,453,Pleated Skirt,SKU-FSN-007,3,79.99,239.97
+8201234567088,4088,2026-03-31 13:56:28,Henry Butler,henry.butler17@email.com,unfulfilled,refunded,1544.22,1429.83,114.39,0.00,0.00,USD,Atlanta,US,454,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567089,4089,2026-04-05 19:30:00,Ella Reed,ella.reed18@email.com,pending,pending,974.52,959.93,72.19,0.00,57.60,USD,Atlanta,US,455,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567089,4089,2026-04-05 19:30:00,Ella Reed,ella.reed18@email.com,pending,pending,974.52,959.93,72.19,0.00,57.60,USD,Atlanta,US,456,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567089,4089,2026-04-05 19:30:00,Ella Reed,ella.reed18@email.com,pending,pending,974.52,959.93,72.19,0.00,57.60,USD,Atlanta,US,457,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567089,4089,2026-04-05 19:30:00,Ella Reed,ella.reed18@email.com,pending,pending,974.52,959.93,72.19,0.00,57.60,USD,Atlanta,US,458,Faux Fur Coat,SKU-FSN-011,3,179.99,539.97
+8201234567090,4090,2026-04-01 11:06:04,Abigail Cox,abigail.cox19@email.com,pending,cancelled,808.62,779.92,59.90,0.00,31.20,USD,New York,US,459,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567090,4090,2026-04-01 11:06:04,Abigail Cox,abigail.cox19@email.com,pending,cancelled,808.62,779.92,59.90,0.00,31.20,USD,New York,US,460,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567090,4090,2026-04-01 11:06:04,Abigail Cox,abigail.cox19@email.com,pending,cancelled,808.62,779.92,59.90,0.00,31.20,USD,New York,US,461,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567090,4090,2026-04-01 11:06:04,Abigail Cox,abigail.cox19@email.com,pending,cancelled,808.62,779.92,59.90,0.00,31.20,USD,New York,US,462,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567090,4090,2026-04-01 11:06:04,Abigail Cox,abigail.cox19@email.com,pending,cancelled,808.62,779.92,59.90,0.00,31.20,USD,New York,US,463,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567091,4091,2026-04-09 10:15:11,Lily Simmons,lily.simmons20@email.com,fulfilled,refunded,1008.37,1014.87,74.69,0.00,81.19,USD,Atlanta,US,464,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567091,4091,2026-04-09 10:15:11,Lily Simmons,lily.simmons20@email.com,fulfilled,refunded,1008.37,1014.87,74.69,0.00,81.19,USD,Atlanta,US,465,Lace Bodysuit,SKU-FSN-012,3,69.99,209.97
+8201234567091,4091,2026-04-09 10:15:11,Lily Simmons,lily.simmons20@email.com,fulfilled,refunded,1008.37,1014.87,74.69,0.00,81.19,USD,Atlanta,US,466,Silk Blouse,SKU-FSN-006,3,94.99,284.97
+8201234567091,4091,2026-04-09 10:15:11,Lily Simmons,lily.simmons20@email.com,fulfilled,refunded,1008.37,1014.87,74.69,0.00,81.19,USD,Atlanta,US,467,Rhinestone Belt,SKU-FSN-010,4,49.99,199.96
+8201234567091,4091,2026-04-09 10:15:11,Lily Simmons,lily.simmons20@email.com,fulfilled,refunded,1008.37,1014.87,74.69,0.00,81.19,USD,Atlanta,US,468,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567091,4091,2026-04-09 10:15:11,Lily Simmons,lily.simmons20@email.com,fulfilled,refunded,1008.37,1014.87,74.69,0.00,81.19,USD,Atlanta,US,469,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567092,4092,2026-04-08 20:39:58,Ellie Russell,ellie.russell21@email.com,fulfilled,paid,893.29,879.91,66.17,0.00,52.79,USD,Austin,US,470,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567092,4092,2026-04-08 20:39:58,Ellie Russell,ellie.russell21@email.com,fulfilled,paid,893.29,879.91,66.17,0.00,52.79,USD,Austin,US,471,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567092,4092,2026-04-08 20:39:58,Ellie Russell,ellie.russell21@email.com,fulfilled,paid,893.29,879.91,66.17,0.00,52.79,USD,Austin,US,472,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567092,4092,2026-04-08 20:39:58,Ellie Russell,ellie.russell21@email.com,fulfilled,paid,893.29,879.91,66.17,0.00,52.79,USD,Austin,US,473,Pleated Skirt,SKU-FSN-007,3,79.99,239.97
+8201234567092,4092,2026-04-08 20:39:58,Ellie Russell,ellie.russell21@email.com,fulfilled,paid,893.29,879.91,66.17,0.00,52.79,USD,Austin,US,474,Satin Heels,SKU-FSN-002,2,139.99,279.98
+8201234567093,4093,2026-04-08 20:04:46,Abigail Butler,abigail.butler22@email.com,unfulfilled,paid,517.68,509.93,38.35,0.00,30.60,USD,Atlanta,US,475,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567093,4093,2026-04-08 20:04:46,Abigail Butler,abigail.butler22@email.com,unfulfilled,paid,517.68,509.93,38.35,0.00,30.60,USD,Atlanta,US,476,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567093,4093,2026-04-08 20:04:46,Abigail Butler,abigail.butler22@email.com,unfulfilled,paid,517.68,509.93,38.35,0.00,30.60,USD,Atlanta,US,477,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567093,4093,2026-04-08 20:04:46,Abigail Butler,abigail.butler22@email.com,unfulfilled,paid,517.68,509.93,38.35,0.00,30.60,USD,Atlanta,US,478,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567093,4093,2026-04-08 20:04:46,Abigail Butler,abigail.butler22@email.com,unfulfilled,paid,517.68,509.93,38.35,0.00,30.60,USD,Atlanta,US,479,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567094,4094,2026-04-07 21:30:35,Noah Griffin,noah.griffin0@email.com,pending,cancelled,2008.59,1859.81,148.78,0.00,0.00,USD,New York,US,480,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567094,4094,2026-04-07 21:30:35,Noah Griffin,noah.griffin0@email.com,pending,cancelled,2008.59,1859.81,148.78,0.00,0.00,USD,New York,US,481,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567094,4094,2026-04-07 21:30:35,Noah Griffin,noah.griffin0@email.com,pending,cancelled,2008.59,1859.81,148.78,0.00,0.00,USD,New York,US,482,Pleated Skirt,SKU-FSN-007,3,79.99,239.97
+8201234567094,4094,2026-04-07 21:30:35,Noah Griffin,noah.griffin0@email.com,pending,cancelled,2008.59,1859.81,148.78,0.00,0.00,USD,New York,US,483,Silk Blouse,SKU-FSN-006,4,94.99,379.96
+8201234567094,4094,2026-04-07 21:30:35,Noah Griffin,noah.griffin0@email.com,pending,cancelled,2008.59,1859.81,148.78,0.00,0.00,USD,New York,US,484,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567094,4094,2026-04-07 21:30:35,Noah Griffin,noah.griffin0@email.com,pending,cancelled,2008.59,1859.81,148.78,0.00,0.00,USD,New York,US,485,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567094,4094,2026-04-07 21:30:35,Noah Griffin,noah.griffin0@email.com,pending,cancelled,2008.59,1859.81,148.78,0.00,0.00,USD,New York,US,486,Satin Heels,SKU-FSN-002,4,139.99,559.96
+8201234567095,4095,2026-04-08 11:29:54,Evelyn Bennett,evelyn.bennett1@email.com,fulfilled,refunded,715.29,689.91,52.98,0.00,27.60,USD,Los Angeles,US,487,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567095,4095,2026-04-08 11:29:54,Evelyn Bennett,evelyn.bennett1@email.com,fulfilled,refunded,715.29,689.91,52.98,0.00,27.60,USD,Los Angeles,US,488,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567095,4095,2026-04-08 11:29:54,Evelyn Bennett,evelyn.bennett1@email.com,fulfilled,refunded,715.29,689.91,52.98,0.00,27.60,USD,Los Angeles,US,489,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567095,4095,2026-04-08 11:29:54,Evelyn Bennett,evelyn.bennett1@email.com,fulfilled,refunded,715.29,689.91,52.98,0.00,27.60,USD,Los Angeles,US,490,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567095,4095,2026-04-08 11:29:54,Evelyn Bennett,evelyn.bennett1@email.com,fulfilled,refunded,715.29,689.91,52.98,0.00,27.60,USD,Los Angeles,US,491,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567095,4095,2026-04-08 11:29:54,Evelyn Bennett,evelyn.bennett1@email.com,fulfilled,refunded,715.29,689.91,52.98,0.00,27.60,USD,Los Angeles,US,492,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567096,4096,2026-04-08 13:45:10,Mia Flores,mia.flores2@email.com,fulfilled,cancelled,842.30,779.91,62.39,0.00,0.00,USD,Los Angeles,US,493,Maxi Dress,SKU-FSN-009,3,99.99,299.97
+8201234567096,4096,2026-04-08 13:45:10,Mia Flores,mia.flores2@email.com,fulfilled,cancelled,842.30,779.91,62.39,0.00,0.00,USD,Los Angeles,US,494,Lace Bodysuit,SKU-FSN-012,3,69.99,209.97
+8201234567096,4096,2026-04-08 13:45:10,Mia Flores,mia.flores2@email.com,fulfilled,cancelled,842.30,779.91,62.39,0.00,0.00,USD,Los Angeles,US,495,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567096,4096,2026-04-08 13:45:10,Mia Flores,mia.flores2@email.com,fulfilled,cancelled,842.30,779.91,62.39,0.00,0.00,USD,Los Angeles,US,496,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567097,4097,2026-04-11 19:38:54,Amelia Bennett,amelia.bennett3@email.com,fulfilled,paid,994.80,979.90,73.69,0.00,58.79,USD,Los Angeles,US,497,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567097,4097,2026-04-11 19:38:54,Amelia Bennett,amelia.bennett3@email.com,fulfilled,paid,994.80,979.90,73.69,0.00,58.79,USD,Los Angeles,US,498,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567097,4097,2026-04-11 19:38:54,Amelia Bennett,amelia.bennett3@email.com,fulfilled,paid,994.80,979.90,73.69,0.00,58.79,USD,Los Angeles,US,499,Cropped Jacket,SKU-FSN-005,4,109.99,439.96
+8201234567097,4097,2026-04-11 19:38:54,Amelia Bennett,amelia.bennett3@email.com,fulfilled,paid,994.80,979.90,73.69,0.00,58.79,USD,Los Angeles,US,500,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567097,4097,2026-04-11 19:38:54,Amelia Bennett,amelia.bennett3@email.com,fulfilled,paid,994.80,979.90,73.69,0.00,58.79,USD,Los Angeles,US,501,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567097,4097,2026-04-11 19:38:54,Amelia Bennett,amelia.bennett3@email.com,fulfilled,paid,994.80,979.90,73.69,0.00,58.79,USD,Los Angeles,US,502,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567098,4098,2026-04-08 11:20:51,Sebastian Perry,sebastian.perry4@email.com,unfulfilled,refunded,794.79,799.91,58.87,0.00,63.99,USD,Los Angeles,US,503,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567098,4098,2026-04-08 11:20:51,Sebastian Perry,sebastian.perry4@email.com,unfulfilled,refunded,794.79,799.91,58.87,0.00,63.99,USD,Los Angeles,US,504,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567098,4098,2026-04-08 11:20:51,Sebastian Perry,sebastian.perry4@email.com,unfulfilled,refunded,794.79,799.91,58.87,0.00,63.99,USD,Los Angeles,US,505,Strappy Sandals,SKU-FSN-008,3,89.99,269.97
+8201234567098,4098,2026-04-08 11:20:51,Sebastian Perry,sebastian.perry4@email.com,unfulfilled,refunded,794.79,799.91,58.87,0.00,63.99,USD,Los Angeles,US,506,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567099,4099,2026-04-09 13:38:11,Ava Lee,ava.lee5@email.com,fulfilled,refunded,1018.32,1024.88,75.43,0.00,81.99,USD,Miami,US,507,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567099,4099,2026-04-09 13:38:11,Ava Lee,ava.lee5@email.com,fulfilled,refunded,1018.32,1024.88,75.43,0.00,81.99,USD,Miami,US,508,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567099,4099,2026-04-09 13:38:11,Ava Lee,ava.lee5@email.com,fulfilled,refunded,1018.32,1024.88,75.43,0.00,81.99,USD,Miami,US,509,Statement Earrings,SKU-FSN-003,3,59.99,179.97
+8201234567099,4099,2026-04-09 13:38:11,Ava Lee,ava.lee5@email.com,fulfilled,refunded,1018.32,1024.88,75.43,0.00,81.99,USD,Miami,US,510,Maxi Dress,SKU-FSN-009,3,99.99,299.97
+8201234567099,4099,2026-04-09 13:38:11,Ava Lee,ava.lee5@email.com,fulfilled,refunded,1018.32,1024.88,75.43,0.00,81.99,USD,Miami,US,511,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567099,4099,2026-04-09 13:38:11,Ava Lee,ava.lee5@email.com,fulfilled,refunded,1018.32,1024.88,75.43,0.00,81.99,USD,Miami,US,512,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567100,4100,2026-04-12 20:41:15,Scarlett Powell,scarlett.powell6@email.com,fulfilled,refunded,831.49,769.90,61.59,0.00,0.00,USD,Miami,US,513,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567100,4100,2026-04-12 20:41:15,Scarlett Powell,scarlett.powell6@email.com,fulfilled,refunded,831.49,769.90,61.59,0.00,0.00,USD,Miami,US,514,Strappy Sandals,SKU-FSN-008,3,89.99,269.97
+8201234567100,4100,2026-04-12 20:41:15,Scarlett Powell,scarlett.powell6@email.com,fulfilled,refunded,831.49,769.90,61.59,0.00,0.00,USD,Miami,US,515,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567100,4100,2026-04-12 20:41:15,Scarlett Powell,scarlett.powell6@email.com,fulfilled,refunded,831.49,769.90,61.59,0.00,0.00,USD,Miami,US,516,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567100,4100,2026-04-12 20:41:15,Scarlett Powell,scarlett.powell6@email.com,fulfilled,refunded,831.49,769.90,61.59,0.00,0.00,USD,Miami,US,517,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567100,4100,2026-04-12 20:41:15,Scarlett Powell,scarlett.powell6@email.com,fulfilled,refunded,831.49,769.90,61.59,0.00,0.00,USD,Miami,US,518,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567101,4101,2026-04-15 09:04:25,Elijah Lee,elijah.lee7@email.com,fulfilled,refunded,1393.09,1289.90,103.19,0.00,0.00,USD,Las Vegas,US,519,Cropped Jacket,SKU-FSN-005,2,109.99,219.98
+8201234567101,4101,2026-04-15 09:04:25,Elijah Lee,elijah.lee7@email.com,fulfilled,refunded,1393.09,1289.90,103.19,0.00,0.00,USD,Las Vegas,US,520,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567101,4101,2026-04-15 09:04:25,Elijah Lee,elijah.lee7@email.com,fulfilled,refunded,1393.09,1289.90,103.19,0.00,0.00,USD,Las Vegas,US,521,Faux Fur Coat,SKU-FSN-011,4,179.99,719.96
+8201234567101,4101,2026-04-15 09:04:25,Elijah Lee,elijah.lee7@email.com,fulfilled,refunded,1393.09,1289.90,103.19,0.00,0.00,USD,Las Vegas,US,522,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567102,4102,2026-04-16 15:07:59,Mason Brown,mason.brown8@email.com,fulfilled,refunded,1041.85,1004.88,77.17,0.00,40.20,USD,Las Vegas,US,523,Rhinestone Belt,SKU-FSN-010,4,49.99,199.96
+8201234567102,4102,2026-04-16 15:07:59,Mason Brown,mason.brown8@email.com,fulfilled,refunded,1041.85,1004.88,77.17,0.00,40.20,USD,Las Vegas,US,524,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567102,4102,2026-04-16 15:07:59,Mason Brown,mason.brown8@email.com,fulfilled,refunded,1041.85,1004.88,77.17,0.00,40.20,USD,Las Vegas,US,525,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567102,4102,2026-04-16 15:07:59,Mason Brown,mason.brown8@email.com,fulfilled,refunded,1041.85,1004.88,77.17,0.00,40.20,USD,Las Vegas,US,526,Sequin Dress,SKU-FSN-001,3,119.99,359.97
+8201234567102,4102,2026-04-16 15:07:59,Mason Brown,mason.brown8@email.com,fulfilled,refunded,1041.85,1004.88,77.17,0.00,40.20,USD,Las Vegas,US,527,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567102,4102,2026-04-16 15:07:59,Mason Brown,mason.brown8@email.com,fulfilled,refunded,1041.85,1004.88,77.17,0.00,40.20,USD,Las Vegas,US,528,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567102,4102,2026-04-16 15:07:59,Mason Brown,mason.brown8@email.com,fulfilled,refunded,1041.85,1004.88,77.17,0.00,40.20,USD,Las Vegas,US,529,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567103,4103,2026-04-19 17:06:44,Sophia Kim,sophia.kim9@email.com,unfulfilled,refunded,1390.90,1399.86,103.03,0.00,111.99,USD,Austin,US,530,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567103,4103,2026-04-19 17:06:44,Sophia Kim,sophia.kim9@email.com,unfulfilled,refunded,1390.90,1399.86,103.03,0.00,111.99,USD,Austin,US,531,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567103,4103,2026-04-19 17:06:44,Sophia Kim,sophia.kim9@email.com,unfulfilled,refunded,1390.90,1399.86,103.03,0.00,111.99,USD,Austin,US,532,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567103,4103,2026-04-19 17:06:44,Sophia Kim,sophia.kim9@email.com,unfulfilled,refunded,1390.90,1399.86,103.03,0.00,111.99,USD,Austin,US,533,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567103,4103,2026-04-19 17:06:44,Sophia Kim,sophia.kim9@email.com,unfulfilled,refunded,1390.90,1399.86,103.03,0.00,111.99,USD,Austin,US,534,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567103,4103,2026-04-19 17:06:44,Sophia Kim,sophia.kim9@email.com,unfulfilled,refunded,1390.90,1399.86,103.03,0.00,111.99,USD,Austin,US,535,Silk Blouse,SKU-FSN-006,4,94.99,379.96
+8201234567103,4103,2026-04-19 17:06:44,Sophia Kim,sophia.kim9@email.com,unfulfilled,refunded,1390.90,1399.86,103.03,0.00,111.99,USD,Austin,US,536,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567104,4104,2026-04-16 21:14:30,Emma Jackson,emma.jackson10@email.com,unfulfilled,refunded,642.74,619.93,47.61,0.00,24.80,USD,New York,US,537,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567104,4104,2026-04-16 21:14:30,Emma Jackson,emma.jackson10@email.com,unfulfilled,refunded,642.74,619.93,47.61,0.00,24.80,USD,New York,US,538,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567104,4104,2026-04-16 21:14:30,Emma Jackson,emma.jackson10@email.com,unfulfilled,refunded,642.74,619.93,47.61,0.00,24.80,USD,New York,US,539,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567104,4104,2026-04-16 21:14:30,Emma Jackson,emma.jackson10@email.com,unfulfilled,refunded,642.74,619.93,47.61,0.00,24.80,USD,New York,US,540,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567104,4104,2026-04-16 21:14:30,Emma Jackson,emma.jackson10@email.com,unfulfilled,refunded,642.74,619.93,47.61,0.00,24.80,USD,New York,US,541,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567105,4105,2026-04-17 09:04:24,Lucas Jackson,lucas.jackson11@email.com,fulfilled,paid,1322.85,1224.86,97.99,0.00,0.00,USD,Miami,US,542,Pleated Skirt,SKU-FSN-007,3,79.99,239.97
+8201234567105,4105,2026-04-17 09:04:24,Lucas Jackson,lucas.jackson11@email.com,fulfilled,paid,1322.85,1224.86,97.99,0.00,0.00,USD,Miami,US,543,Cropped Jacket,SKU-FSN-005,2,109.99,219.98
+8201234567105,4105,2026-04-17 09:04:24,Lucas Jackson,lucas.jackson11@email.com,fulfilled,paid,1322.85,1224.86,97.99,0.00,0.00,USD,Miami,US,544,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567105,4105,2026-04-17 09:04:24,Lucas Jackson,lucas.jackson11@email.com,fulfilled,paid,1322.85,1224.86,97.99,0.00,0.00,USD,Miami,US,545,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567105,4105,2026-04-17 09:04:24,Lucas Jackson,lucas.jackson11@email.com,fulfilled,paid,1322.85,1224.86,97.99,0.00,0.00,USD,Miami,US,546,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567105,4105,2026-04-17 09:04:24,Lucas Jackson,lucas.jackson11@email.com,fulfilled,paid,1322.85,1224.86,97.99,0.00,0.00,USD,Miami,US,547,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567105,4105,2026-04-17 09:04:24,Lucas Jackson,lucas.jackson11@email.com,fulfilled,paid,1322.85,1224.86,97.99,0.00,0.00,USD,Miami,US,548,Silk Blouse,SKU-FSN-006,3,94.99,284.97
+8201234567106,4106,2026-04-17 09:49:51,Isabella Martinez,isabella.martinez12@email.com,unfulfilled,pending,596.10,599.93,44.16,0.00,47.99,USD,Los Angeles,US,549,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567106,4106,2026-04-17 09:49:51,Isabella Martinez,isabella.martinez12@email.com,unfulfilled,pending,596.10,599.93,44.16,0.00,47.99,USD,Los Angeles,US,550,Satin Heels,SKU-FSN-002,2,139.99,279.98
+8201234567106,4106,2026-04-17 09:49:51,Isabella Martinez,isabella.martinez12@email.com,unfulfilled,pending,596.10,599.93,44.16,0.00,47.99,USD,Los Angeles,US,551,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567106,4106,2026-04-17 09:49:51,Isabella Martinez,isabella.martinez12@email.com,unfulfilled,pending,596.10,599.93,44.16,0.00,47.99,USD,Los Angeles,US,552,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567107,4107,2026-04-16 10:00:47,Ethan Sanders,ethan.sanders13@email.com,fulfilled,refunded,922.65,889.91,68.34,0.00,35.60,USD,Miami,US,553,Faux Fur Coat,SKU-FSN-011,1,179.99,179.99
+8201234567107,4107,2026-04-16 10:00:47,Ethan Sanders,ethan.sanders13@email.com,fulfilled,refunded,922.65,889.91,68.34,0.00,35.60,USD,Miami,US,554,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567107,4107,2026-04-16 10:00:47,Ethan Sanders,ethan.sanders13@email.com,fulfilled,refunded,922.65,889.91,68.34,0.00,35.60,USD,Miami,US,555,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567107,4107,2026-04-16 10:00:47,Ethan Sanders,ethan.sanders13@email.com,fulfilled,refunded,922.65,889.91,68.34,0.00,35.60,USD,Miami,US,556,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567107,4107,2026-04-16 10:00:47,Ethan Sanders,ethan.sanders13@email.com,fulfilled,refunded,922.65,889.91,68.34,0.00,35.60,USD,Miami,US,557,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567107,4107,2026-04-16 10:00:47,Ethan Sanders,ethan.sanders13@email.com,fulfilled,refunded,922.65,889.91,68.34,0.00,35.60,USD,Miami,US,558,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567107,4107,2026-04-16 10:00:47,Ethan Sanders,ethan.sanders13@email.com,fulfilled,refunded,922.65,889.91,68.34,0.00,35.60,USD,Miami,US,559,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567108,4108,2026-04-13 19:28:43,Ella Martin,ella.martin14@email.com,pending,cancelled,771.47,759.92,57.15,0.00,45.60,USD,New York,US,560,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567108,4108,2026-04-13 19:28:43,Ella Martin,ella.martin14@email.com,pending,cancelled,771.47,759.92,57.15,0.00,45.60,USD,New York,US,561,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567108,4108,2026-04-13 19:28:43,Ella Martin,ella.martin14@email.com,pending,cancelled,771.47,759.92,57.15,0.00,45.60,USD,New York,US,562,Cropped Jacket,SKU-FSN-005,3,109.99,329.97
+8201234567108,4108,2026-04-13 19:28:43,Ella Martin,ella.martin14@email.com,pending,cancelled,771.47,759.92,57.15,0.00,45.60,USD,New York,US,563,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567108,4108,2026-04-13 19:28:43,Ella Martin,ella.martin14@email.com,pending,cancelled,771.47,759.92,57.15,0.00,45.60,USD,New York,US,564,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567109,4109,2026-04-23 09:44:36,Madison Cox,madison.cox15@email.com,fulfilled,refunded,832.37,819.90,61.66,0.00,49.19,USD,Austin,US,565,Pleated Skirt,SKU-FSN-007,3,79.99,239.97
+8201234567109,4109,2026-04-23 09:44:36,Madison Cox,madison.cox15@email.com,fulfilled,refunded,832.37,819.90,61.66,0.00,49.19,USD,Austin,US,566,Statement Earrings,SKU-FSN-003,1,59.99,59.99
+8201234567109,4109,2026-04-23 09:44:36,Madison Cox,madison.cox15@email.com,fulfilled,refunded,832.37,819.90,61.66,0.00,49.19,USD,Austin,US,567,Cropped Jacket,SKU-FSN-005,2,109.99,219.98
+8201234567109,4109,2026-04-23 09:44:36,Madison Cox,madison.cox15@email.com,fulfilled,refunded,832.37,819.90,61.66,0.00,49.19,USD,Austin,US,568,Lace Bodysuit,SKU-FSN-012,3,69.99,209.97
+8201234567109,4109,2026-04-23 09:44:36,Madison Cox,madison.cox15@email.com,fulfilled,refunded,832.37,819.90,61.66,0.00,49.19,USD,Austin,US,569,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567110,4110,2026-04-26 20:33:38,Amelia Turner,amelia.turner16@email.com,unfulfilled,refunded,526.54,529.94,39.00,0.00,42.40,USD,New York,US,570,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567110,4110,2026-04-26 20:33:38,Amelia Turner,amelia.turner16@email.com,unfulfilled,refunded,526.54,529.94,39.00,0.00,42.40,USD,New York,US,571,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567110,4110,2026-04-26 20:33:38,Amelia Turner,amelia.turner16@email.com,unfulfilled,refunded,526.54,529.94,39.00,0.00,42.40,USD,New York,US,572,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567110,4110,2026-04-26 20:33:38,Amelia Turner,amelia.turner16@email.com,unfulfilled,refunded,526.54,529.94,39.00,0.00,42.40,USD,New York,US,573,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567111,4111,2026-04-20 16:05:29,Olivia Griffin,olivia.griffin17@email.com,unfulfilled,refunded,799.75,804.90,59.24,0.00,64.39,USD,Miami,US,574,Rhinestone Belt,SKU-FSN-010,3,49.99,149.97
+8201234567111,4111,2026-04-20 16:05:29,Olivia Griffin,olivia.griffin17@email.com,unfulfilled,refunded,799.75,804.90,59.24,0.00,64.39,USD,Miami,US,575,Silk Blouse,SKU-FSN-006,1,94.99,94.99
+8201234567111,4111,2026-04-20 16:05:29,Olivia Griffin,olivia.griffin17@email.com,unfulfilled,refunded,799.75,804.90,59.24,0.00,64.39,USD,Miami,US,576,Strappy Sandals,SKU-FSN-008,1,89.99,89.99
+8201234567111,4111,2026-04-20 16:05:29,Olivia Griffin,olivia.griffin17@email.com,unfulfilled,refunded,799.75,804.90,59.24,0.00,64.39,USD,Miami,US,577,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567111,4111,2026-04-20 16:05:29,Olivia Griffin,olivia.griffin17@email.com,unfulfilled,refunded,799.75,804.90,59.24,0.00,64.39,USD,Miami,US,578,Maxi Dress,SKU-FSN-009,3,99.99,299.97
+8201234567111,4111,2026-04-20 16:05:29,Olivia Griffin,olivia.griffin17@email.com,unfulfilled,refunded,799.75,804.90,59.24,0.00,64.39,USD,Miami,US,579,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567112,4112,2026-04-22 12:04:34,Evelyn Collins,evelyn.collins18@email.com,fulfilled,refunded,1092.84,1099.88,80.95,0.00,87.99,USD,Miami,US,580,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567112,4112,2026-04-22 12:04:34,Evelyn Collins,evelyn.collins18@email.com,fulfilled,refunded,1092.84,1099.88,80.95,0.00,87.99,USD,Miami,US,581,Clutch Bag,SKU-FSN-004,4,89.99,359.96
+8201234567112,4112,2026-04-22 12:04:34,Evelyn Collins,evelyn.collins18@email.com,fulfilled,refunded,1092.84,1099.88,80.95,0.00,87.99,USD,Miami,US,582,Strappy Sandals,SKU-FSN-008,4,89.99,359.96
+8201234567112,4112,2026-04-22 12:04:34,Evelyn Collins,evelyn.collins18@email.com,fulfilled,refunded,1092.84,1099.88,80.95,0.00,87.99,USD,Miami,US,583,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567112,4112,2026-04-22 12:04:34,Evelyn Collins,evelyn.collins18@email.com,fulfilled,refunded,1092.84,1099.88,80.95,0.00,87.99,USD,Miami,US,584,Cropped Jacket,SKU-FSN-005,1,109.99,109.99
+8201234567113,4113,2026-04-24 15:55:46,Julian Ramirez,julian.ramirez19@email.com,unfulfilled,refunded,637.11,589.92,47.19,0.00,0.00,USD,New York,US,585,Sequin Dress,SKU-FSN-001,1,119.99,119.99
+8201234567113,4113,2026-04-24 15:55:46,Julian Ramirez,julian.ramirez19@email.com,unfulfilled,refunded,637.11,589.92,47.19,0.00,0.00,USD,New York,US,586,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567113,4113,2026-04-24 15:55:46,Julian Ramirez,julian.ramirez19@email.com,unfulfilled,refunded,637.11,589.92,47.19,0.00,0.00,USD,New York,US,587,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567113,4113,2026-04-24 15:55:46,Julian Ramirez,julian.ramirez19@email.com,unfulfilled,refunded,637.11,589.92,47.19,0.00,0.00,USD,New York,US,588,Lace Bodysuit,SKU-FSN-012,2,69.99,139.98
+8201234567113,4113,2026-04-24 15:55:46,Julian Ramirez,julian.ramirez19@email.com,unfulfilled,refunded,637.11,589.92,47.19,0.00,0.00,USD,New York,US,589,Rhinestone Belt,SKU-FSN-010,3,49.99,149.97
+8201234567114,4114,2026-04-22 10:18:01,Mia Anderson,mia.anderson20@email.com,unfulfilled,pending,1368.45,1319.88,101.37,0.00,52.80,USD,Austin,US,590,Clutch Bag,SKU-FSN-004,2,89.99,179.98
+8201234567114,4114,2026-04-22 10:18:01,Mia Anderson,mia.anderson20@email.com,unfulfilled,pending,1368.45,1319.88,101.37,0.00,52.80,USD,Austin,US,591,Faux Fur Coat,SKU-FSN-011,2,179.99,359.98
+8201234567114,4114,2026-04-22 10:18:01,Mia Anderson,mia.anderson20@email.com,unfulfilled,pending,1368.45,1319.88,101.37,0.00,52.80,USD,Austin,US,592,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567114,4114,2026-04-22 10:18:01,Mia Anderson,mia.anderson20@email.com,unfulfilled,pending,1368.45,1319.88,101.37,0.00,52.80,USD,Austin,US,593,Maxi Dress,SKU-FSN-009,2,99.99,199.98
+8201234567114,4114,2026-04-22 10:18:01,Mia Anderson,mia.anderson20@email.com,unfulfilled,pending,1368.45,1319.88,101.37,0.00,52.80,USD,Austin,US,594,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567114,4114,2026-04-22 10:18:01,Mia Anderson,mia.anderson20@email.com,unfulfilled,pending,1368.45,1319.88,101.37,0.00,52.80,USD,Austin,US,595,Sequin Dress,SKU-FSN-001,2,119.99,239.98
+8201234567114,4114,2026-04-22 10:18:01,Mia Anderson,mia.anderson20@email.com,unfulfilled,pending,1368.45,1319.88,101.37,0.00,52.80,USD,Austin,US,596,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567115,4115,2026-04-28 10:43:19,Samuel Simmons,samuel.simmons21@email.com,unfulfilled,cancelled,487.22,479.93,36.09,0.00,28.80,USD,New York,US,597,Rhinestone Belt,SKU-FSN-010,3,49.99,149.97
+8201234567115,4115,2026-04-28 10:43:19,Samuel Simmons,samuel.simmons21@email.com,unfulfilled,cancelled,487.22,479.93,36.09,0.00,28.80,USD,New York,US,598,Lace Bodysuit,SKU-FSN-012,1,69.99,69.99
+8201234567115,4115,2026-04-28 10:43:19,Samuel Simmons,samuel.simmons21@email.com,unfulfilled,cancelled,487.22,479.93,36.09,0.00,28.80,USD,New York,US,599,Pleated Skirt,SKU-FSN-007,1,79.99,79.99
+8201234567115,4115,2026-04-28 10:43:19,Samuel Simmons,samuel.simmons21@email.com,unfulfilled,cancelled,487.22,479.93,36.09,0.00,28.80,USD,New York,US,600,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567116,4116,2026-04-27 19:50:09,Benjamin Brooks,benjamin.brooks22@email.com,fulfilled,refunded,1009.68,934.89,74.79,0.00,0.00,USD,Las Vegas,US,601,Maxi Dress,SKU-FSN-009,3,99.99,299.97
+8201234567116,4116,2026-04-27 19:50:09,Benjamin Brooks,benjamin.brooks22@email.com,fulfilled,refunded,1009.68,934.89,74.79,0.00,0.00,USD,Las Vegas,US,602,Pleated Skirt,SKU-FSN-007,2,79.99,159.98
+8201234567116,4116,2026-04-27 19:50:09,Benjamin Brooks,benjamin.brooks22@email.com,fulfilled,refunded,1009.68,934.89,74.79,0.00,0.00,USD,Las Vegas,US,603,Silk Blouse,SKU-FSN-006,3,94.99,284.97
+8201234567116,4116,2026-04-27 19:50:09,Benjamin Brooks,benjamin.brooks22@email.com,fulfilled,refunded,1009.68,934.89,74.79,0.00,0.00,USD,Las Vegas,US,604,Rhinestone Belt,SKU-FSN-010,2,49.99,99.98
+8201234567116,4116,2026-04-27 19:50:09,Benjamin Brooks,benjamin.brooks22@email.com,fulfilled,refunded,1009.68,934.89,74.79,0.00,0.00,USD,Las Vegas,US,605,Clutch Bag,SKU-FSN-004,1,89.99,89.99
+8201234567117,4117,2026-04-28 18:49:04,Jackson Griffin,jackson.griffin0@email.com,fulfilled,refunded,923.75,909.91,68.43,0.00,54.59,USD,Atlanta,US,606,Silk Blouse,SKU-FSN-006,2,94.99,189.98
+8201234567117,4117,2026-04-28 18:49:04,Jackson Griffin,jackson.griffin0@email.com,fulfilled,refunded,923.75,909.91,68.43,0.00,54.59,USD,Atlanta,US,607,Statement Earrings,SKU-FSN-003,2,59.99,119.98
+8201234567117,4117,2026-04-28 18:49:04,Jackson Griffin,jackson.griffin0@email.com,fulfilled,refunded,923.75,909.91,68.43,0.00,54.59,USD,Atlanta,US,608,Satin Heels,SKU-FSN-002,3,139.99,419.97
+8201234567117,4117,2026-04-28 18:49:04,Jackson Griffin,jackson.griffin0@email.com,fulfilled,refunded,923.75,909.91,68.43,0.00,54.59,USD,Atlanta,US,609,Strappy Sandals,SKU-FSN-008,2,89.99,179.98
+8201234567118,4118,2026-04-30 10:07:25,Caleb Cooper,caleb.cooper1@email.com,fulfilled,refunded,1233.69,1189.91,91.38,0.00,47.60,USD,Austin,US,610,Strappy Sandals,SKU-FSN-008,3,89.99,269.97
+8201234567118,4118,2026-04-30 10:07:25,Caleb Cooper,caleb.cooper1@email.com,fulfilled,refunded,1233.69,1189.91,91.38,0.00,47.60,USD,Austin,US,611,Satin Heels,SKU-FSN-002,2,139.99,279.98
+8201234567118,4118,2026-04-30 10:07:25,Caleb Cooper,caleb.cooper1@email.com,fulfilled,refunded,1233.69,1189.91,91.38,0.00,47.60,USD,Austin,US,612,Faux Fur Coat,SKU-FSN-011,3,179.99,539.97
+8201234567118,4118,2026-04-30 10:07:25,Caleb Cooper,caleb.cooper1@email.com,fulfilled,refunded,1233.69,1189.91,91.38,0.00,47.60,USD,Austin,US,613,Maxi Dress,SKU-FSN-009,1,99.99,99.99
+8201234567119,4119,2026-05-02 16:26:01,Ethan Hughes,ethan.hughes2@email.com,fulfilled,refunded,820.71,759.92,60.79,0.00,0.00,USD,Los Angeles,US,614,Satin Heels,SKU-FSN-002,1,139.99,139.99
+8201234567119,4119,2026-05-02 16:26:01,Ethan Hughes,ethan.hughes2@email.com,fulfilled,refunded,820.71,759.92,60.79,0.00,0.00,USD,Los Angeles,US,615,Maxi Dress,SKU-FSN-009,3,99.99,299.97
+8201234567119,4119,2026-05-02 16:26:01,Ethan Hughes,ethan.hughes2@email.com,fulfilled,refunded,820.71,759.92,60.79,0.00,0.00,USD,Los Angeles,US,616,Rhinestone Belt,SKU-FSN-010,1,49.99,49.99
+8201234567119,4119,2026-05-02 16:26:01,Ethan Hughes,ethan.hughes2@email.com,fulfilled,refunded,820.71,759.92,60.79,0.00,0.00,USD,Los Angeles,US,617,Clutch Bag,SKU-FSN-004,3,89.99,269.97

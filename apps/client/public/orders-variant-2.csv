@@ -1,0 +1,966 @@
+order_id,order_number,created_at,customer_name,customer_email,fulfillment_status,financial_status,total_price,subtotal_price,total_tax,shipping_price,discount_amount,currency,city,country,line_item_id,product_title,sku,quantity,unit_price,line_total
+8101234567001,3001,2026-02-04 09:59:58,Grace Martin,grace.martin11@email.com,fulfilled,refunded,138.05,138.93,10.23,0.00,11.11,USD,Columbus,US,1,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567001,3001,2026-02-04 09:59:58,Grace Martin,grace.martin11@email.com,fulfilled,refunded,138.05,138.93,10.23,0.00,11.11,USD,Columbus,US,2,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567001,3001,2026-02-04 09:59:58,Grace Martin,grace.martin11@email.com,fulfilled,refunded,138.05,138.93,10.23,0.00,11.11,USD,Columbus,US,3,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567001,3001,2026-02-04 09:59:58,Grace Martin,grace.martin11@email.com,fulfilled,refunded,138.05,138.93,10.23,0.00,11.11,USD,Columbus,US,4,Canvas Tote,SKU-BDG-004,1,24.99,24.99
+8101234567002,3002,2026-02-08 09:14:59,Grace Brooks,grace.brooks12@email.com,pending,refunded,234.84,228.88,17.40,0.00,11.44,USD,Phoenix,US,5,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567002,3002,2026-02-08 09:14:59,Grace Brooks,grace.brooks12@email.com,pending,refunded,234.84,228.88,17.40,0.00,11.44,USD,Phoenix,US,6,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567002,3002,2026-02-08 09:14:59,Grace Brooks,grace.brooks12@email.com,pending,refunded,234.84,228.88,17.40,0.00,11.44,USD,Phoenix,US,7,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567002,3002,2026-02-08 09:14:59,Grace Brooks,grace.brooks12@email.com,pending,refunded,234.84,228.88,17.40,0.00,11.44,USD,Phoenix,US,8,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567002,3002,2026-02-08 09:14:59,Grace Brooks,grace.brooks12@email.com,pending,refunded,234.84,228.88,17.40,0.00,11.44,USD,Phoenix,US,9,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567003,3003,2026-02-06 16:34:54,Stella Collins,stella.collins13@email.com,fulfilled,paid,111.39,111.95,7.88,4.99,13.43,USD,San Antonio,US,10,Canvas Tote,SKU-BDG-004,1,24.99,24.99
+8101234567003,3003,2026-02-06 16:34:54,Stella Collins,stella.collins13@email.com,fulfilled,paid,111.39,111.95,7.88,4.99,13.43,USD,San Antonio,US,11,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567003,3003,2026-02-06 16:34:54,Stella Collins,stella.collins13@email.com,fulfilled,paid,111.39,111.95,7.88,4.99,13.43,USD,San Antonio,US,12,Running Shorts,SKU-BDG-013,1,24.99,24.99
+8101234567003,3003,2026-02-06 16:34:54,Stella Collins,stella.collins13@email.com,fulfilled,paid,111.39,111.95,7.88,4.99,13.43,USD,San Antonio,US,13,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567004,3004,2026-02-08 17:15:38,Leo Butler,leo.butler14@email.com,pending,pending,315.87,307.86,23.40,0.00,15.39,USD,San Antonio,US,14,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567004,3004,2026-02-08 17:15:38,Leo Butler,leo.butler14@email.com,pending,pending,315.87,307.86,23.40,0.00,15.39,USD,San Antonio,US,15,Notebook Set,SKU-BDG-009,5,15.99,79.95
+8101234567004,3004,2026-02-08 17:15:38,Leo Butler,leo.butler14@email.com,pending,pending,315.87,307.86,23.40,0.00,15.39,USD,San Antonio,US,16,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567004,3004,2026-02-08 17:15:38,Leo Butler,leo.butler14@email.com,pending,pending,315.87,307.86,23.40,0.00,15.39,USD,San Antonio,US,17,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567004,3004,2026-02-08 17:15:38,Leo Butler,leo.butler14@email.com,pending,pending,315.87,307.86,23.40,0.00,15.39,USD,San Antonio,US,18,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567005,3005,2026-02-04 12:43:52,Grace Harris,grace.harris15@email.com,fulfilled,pending,257.37,250.85,19.06,0.00,12.54,USD,Dallas,US,19,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567005,3005,2026-02-04 12:43:52,Grace Harris,grace.harris15@email.com,fulfilled,pending,257.37,250.85,19.06,0.00,12.54,USD,Dallas,US,20,Sticker Pack,SKU-BDG-011,4,7.99,31.96
+8101234567005,3005,2026-02-04 12:43:52,Grace Harris,grace.harris15@email.com,fulfilled,pending,257.37,250.85,19.06,0.00,12.54,USD,Dallas,US,21,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567005,3005,2026-02-04 12:43:52,Grace Harris,grace.harris15@email.com,fulfilled,pending,257.37,250.85,19.06,0.00,12.54,USD,Dallas,US,22,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567005,3005,2026-02-04 12:43:52,Grace Harris,grace.harris15@email.com,fulfilled,pending,257.37,250.85,19.06,0.00,12.54,USD,Dallas,US,23,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567006,3006,2026-02-06 20:46:47,Lucas Evans,lucas.evans16@email.com,fulfilled,paid,406.12,395.83,30.08,0.00,19.79,USD,Columbus,US,24,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567006,3006,2026-02-06 20:46:47,Lucas Evans,lucas.evans16@email.com,fulfilled,paid,406.12,395.83,30.08,0.00,19.79,USD,Columbus,US,25,Canvas Tote,SKU-BDG-004,4,24.99,99.96
+8101234567006,3006,2026-02-06 20:46:47,Lucas Evans,lucas.evans16@email.com,fulfilled,paid,406.12,395.83,30.08,0.00,19.79,USD,Columbus,US,26,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567006,3006,2026-02-06 20:46:47,Lucas Evans,lucas.evans16@email.com,fulfilled,paid,406.12,395.83,30.08,0.00,19.79,USD,Columbus,US,27,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567006,3006,2026-02-06 20:46:47,Lucas Evans,lucas.evans16@email.com,fulfilled,paid,406.12,395.83,30.08,0.00,19.79,USD,Columbus,US,28,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567006,3006,2026-02-06 20:46:47,Lucas Evans,lucas.evans16@email.com,fulfilled,paid,406.12,395.83,30.08,0.00,19.79,USD,Columbus,US,29,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567007,3007,2026-02-10 11:51:16,Madison Davis,madison.davis17@email.com,fulfilled,paid,251.24,252.86,18.61,0.00,20.23,USD,Columbus,US,30,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567007,3007,2026-02-10 11:51:16,Madison Davis,madison.davis17@email.com,fulfilled,paid,251.24,252.86,18.61,0.00,20.23,USD,Columbus,US,31,Graphic Tee,SKU-BDG-002,4,18.99,75.96
+8101234567007,3007,2026-02-10 11:51:16,Madison Davis,madison.davis17@email.com,fulfilled,paid,251.24,252.86,18.61,0.00,20.23,USD,Columbus,US,32,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567007,3007,2026-02-10 11:51:16,Madison Davis,madison.davis17@email.com,fulfilled,paid,251.24,252.86,18.61,0.00,20.23,USD,Columbus,US,33,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567007,3007,2026-02-10 11:51:16,Madison Davis,madison.davis17@email.com,fulfilled,paid,251.24,252.86,18.61,0.00,20.23,USD,Columbus,US,34,Phone Stand,SKU-BDG-010,5,12.99,64.95
+8101234567008,3008,2026-02-10 14:20:07,Alexander Evans,alexander.evans18@email.com,fulfilled,refunded,361.50,363.83,26.78,0.00,29.11,USD,Columbus,US,35,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567008,3008,2026-02-10 14:20:07,Alexander Evans,alexander.evans18@email.com,fulfilled,refunded,361.50,363.83,26.78,0.00,29.11,USD,Columbus,US,36,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567008,3008,2026-02-10 14:20:07,Alexander Evans,alexander.evans18@email.com,fulfilled,refunded,361.50,363.83,26.78,0.00,29.11,USD,Columbus,US,37,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567008,3008,2026-02-10 14:20:07,Alexander Evans,alexander.evans18@email.com,fulfilled,refunded,361.50,363.83,26.78,0.00,29.11,USD,Columbus,US,38,Baseball Cap,SKU-BDG-003,4,22.99,91.96
+8101234567008,3008,2026-02-10 14:20:07,Alexander Evans,alexander.evans18@email.com,fulfilled,refunded,361.50,363.83,26.78,0.00,29.11,USD,Columbus,US,39,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567008,3008,2026-02-10 14:20:07,Alexander Evans,alexander.evans18@email.com,fulfilled,refunded,361.50,363.83,26.78,0.00,29.11,USD,Columbus,US,40,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567009,3009,2026-02-15 17:01:38,Chloe Jackson,chloe.jackson19@email.com,unfulfilled,pending,252.24,245.85,18.68,0.00,12.29,USD,San Antonio,US,41,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567009,3009,2026-02-15 17:01:38,Chloe Jackson,chloe.jackson19@email.com,unfulfilled,pending,252.24,245.85,18.68,0.00,12.29,USD,San Antonio,US,42,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567009,3009,2026-02-15 17:01:38,Chloe Jackson,chloe.jackson19@email.com,unfulfilled,pending,252.24,245.85,18.68,0.00,12.29,USD,San Antonio,US,43,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567009,3009,2026-02-15 17:01:38,Chloe Jackson,chloe.jackson19@email.com,unfulfilled,pending,252.24,245.85,18.68,0.00,12.29,USD,San Antonio,US,44,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567009,3009,2026-02-15 17:01:38,Chloe Jackson,chloe.jackson19@email.com,unfulfilled,pending,252.24,245.85,18.68,0.00,12.29,USD,San Antonio,US,45,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567009,3009,2026-02-15 17:01:38,Chloe Jackson,chloe.jackson19@email.com,unfulfilled,pending,252.24,245.85,18.68,0.00,12.29,USD,San Antonio,US,46,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567009,3009,2026-02-15 17:01:38,Chloe Jackson,chloe.jackson19@email.com,unfulfilled,pending,252.24,245.85,18.68,0.00,12.29,USD,San Antonio,US,47,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567010,3010,2026-02-15 14:53:59,Thomas Davis,thomas.davis20@email.com,pending,refunded,227.63,221.86,16.86,0.00,11.09,USD,Jacksonville,US,48,Belt Bag,SKU-BDG-008,1,27.99,27.99
+8101234567010,3010,2026-02-15 14:53:59,Thomas Davis,thomas.davis20@email.com,pending,refunded,227.63,221.86,16.86,0.00,11.09,USD,Jacksonville,US,49,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567010,3010,2026-02-15 14:53:59,Thomas Davis,thomas.davis20@email.com,pending,refunded,227.63,221.86,16.86,0.00,11.09,USD,Jacksonville,US,50,Sticker Pack,SKU-BDG-011,4,7.99,31.96
+8101234567010,3010,2026-02-15 14:53:59,Thomas Davis,thomas.davis20@email.com,pending,refunded,227.63,221.86,16.86,0.00,11.09,USD,Jacksonville,US,51,Lanyard,SKU-BDG-012,4,8.99,35.96
+8101234567010,3010,2026-02-15 14:53:59,Thomas Davis,thomas.davis20@email.com,pending,refunded,227.63,221.86,16.86,0.00,11.09,USD,Jacksonville,US,52,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567011,3011,2026-02-12 16:10:00,Daniel Bennett,daniel.bennett21@email.com,fulfilled,paid,298.23,306.82,22.09,0.00,30.68,USD,San Antonio,US,53,Baseball Cap,SKU-BDG-003,4,22.99,91.96
+8101234567011,3011,2026-02-12 16:10:00,Daniel Bennett,daniel.bennett21@email.com,fulfilled,paid,298.23,306.82,22.09,0.00,30.68,USD,San Antonio,US,54,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567011,3011,2026-02-12 16:10:00,Daniel Bennett,daniel.bennett21@email.com,fulfilled,paid,298.23,306.82,22.09,0.00,30.68,USD,San Antonio,US,55,Canvas Tote,SKU-BDG-004,1,24.99,24.99
+8101234567011,3011,2026-02-12 16:10:00,Daniel Bennett,daniel.bennett21@email.com,fulfilled,paid,298.23,306.82,22.09,0.00,30.68,USD,San Antonio,US,56,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567011,3011,2026-02-12 16:10:00,Daniel Bennett,daniel.bennett21@email.com,fulfilled,paid,298.23,306.82,22.09,0.00,30.68,USD,San Antonio,US,57,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567011,3011,2026-02-12 16:10:00,Daniel Bennett,daniel.bennett21@email.com,fulfilled,paid,298.23,306.82,22.09,0.00,30.68,USD,San Antonio,US,58,Sticker Pack,SKU-BDG-011,5,7.99,39.95
+8101234567011,3011,2026-02-12 16:10:00,Daniel Bennett,daniel.bennett21@email.com,fulfilled,paid,298.23,306.82,22.09,0.00,30.68,USD,San Antonio,US,59,Belt Bag,SKU-BDG-008,1,27.99,27.99
+8101234567012,3012,2026-02-12 16:49:12,Ellie Hughes,ellie.hughes22@email.com,pending,paid,386.33,388.82,28.62,0.00,31.11,USD,Columbus,US,60,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567012,3012,2026-02-12 16:49:12,Ellie Hughes,ellie.hughes22@email.com,pending,paid,386.33,388.82,28.62,0.00,31.11,USD,Columbus,US,61,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567012,3012,2026-02-12 16:49:12,Ellie Hughes,ellie.hughes22@email.com,pending,paid,386.33,388.82,28.62,0.00,31.11,USD,Columbus,US,62,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567012,3012,2026-02-12 16:49:12,Ellie Hughes,ellie.hughes22@email.com,pending,paid,386.33,388.82,28.62,0.00,31.11,USD,Columbus,US,63,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567012,3012,2026-02-12 16:49:12,Ellie Hughes,ellie.hughes22@email.com,pending,paid,386.33,388.82,28.62,0.00,31.11,USD,Columbus,US,64,Belt Bag,SKU-BDG-008,5,27.99,139.95
+8101234567012,3012,2026-02-12 16:49:12,Ellie Hughes,ellie.hughes22@email.com,pending,paid,386.33,388.82,28.62,0.00,31.11,USD,Columbus,US,65,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567012,3012,2026-02-12 16:49:12,Ellie Hughes,ellie.hughes22@email.com,pending,paid,386.33,388.82,28.62,0.00,31.11,USD,Columbus,US,66,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567013,3013,2026-02-12 14:10:56,Mason Reed,mason.reed0@email.com,pending,pending,205.09,199.89,15.19,0.00,9.99,USD,San Antonio,US,67,Sticker Pack,SKU-BDG-011,4,7.99,31.96
+8101234567013,3013,2026-02-12 14:10:56,Mason Reed,mason.reed0@email.com,pending,pending,205.09,199.89,15.19,0.00,9.99,USD,San Antonio,US,68,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567013,3013,2026-02-12 14:10:56,Mason Reed,mason.reed0@email.com,pending,pending,205.09,199.89,15.19,0.00,9.99,USD,San Antonio,US,69,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567013,3013,2026-02-12 14:10:56,Mason Reed,mason.reed0@email.com,pending,pending,205.09,199.89,15.19,0.00,9.99,USD,San Antonio,US,70,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567014,3014,2026-02-14 16:34:51,Chloe Flores,chloe.flores1@email.com,fulfilled,refunded,171.94,180.91,12.74,0.00,21.71,USD,Columbus,US,71,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567014,3014,2026-02-14 16:34:51,Chloe Flores,chloe.flores1@email.com,fulfilled,refunded,171.94,180.91,12.74,0.00,21.71,USD,Columbus,US,72,Baseball Cap,SKU-BDG-003,1,22.99,22.99
+8101234567014,3014,2026-02-14 16:34:51,Chloe Flores,chloe.flores1@email.com,fulfilled,refunded,171.94,180.91,12.74,0.00,21.71,USD,Columbus,US,73,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567014,3014,2026-02-14 16:34:51,Chloe Flores,chloe.flores1@email.com,fulfilled,refunded,171.94,180.91,12.74,0.00,21.71,USD,Columbus,US,74,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567015,3015,2026-02-19 19:52:50,Ava Clark,ava.clark2@email.com,fulfilled,paid,165.25,173.88,12.24,0.00,20.87,USD,Phoenix,US,75,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567015,3015,2026-02-19 19:52:50,Ava Clark,ava.clark2@email.com,fulfilled,paid,165.25,173.88,12.24,0.00,20.87,USD,Phoenix,US,76,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567015,3015,2026-02-19 19:52:50,Ava Clark,ava.clark2@email.com,fulfilled,paid,165.25,173.88,12.24,0.00,20.87,USD,Phoenix,US,77,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567015,3015,2026-02-19 19:52:50,Ava Clark,ava.clark2@email.com,fulfilled,paid,165.25,173.88,12.24,0.00,20.87,USD,Phoenix,US,78,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567015,3015,2026-02-19 19:52:50,Ava Clark,ava.clark2@email.com,fulfilled,paid,165.25,173.88,12.24,0.00,20.87,USD,Phoenix,US,79,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567016,3016,2026-02-19 10:19:18,Samuel Murphy,samuel.murphy3@email.com,fulfilled,paid,244.07,237.88,18.08,0.00,11.89,USD,Columbus,US,80,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567016,3016,2026-02-19 10:19:18,Samuel Murphy,samuel.murphy3@email.com,fulfilled,paid,244.07,237.88,18.08,0.00,11.89,USD,Columbus,US,81,Canvas Tote,SKU-BDG-004,4,24.99,99.96
+8101234567016,3016,2026-02-19 10:19:18,Samuel Murphy,samuel.murphy3@email.com,fulfilled,paid,244.07,237.88,18.08,0.00,11.89,USD,Columbus,US,82,Pocket Tee,SKU-BDG-006,1,21.99,21.99
+8101234567016,3016,2026-02-19 10:19:18,Samuel Murphy,samuel.murphy3@email.com,fulfilled,paid,244.07,237.88,18.08,0.00,11.89,USD,Columbus,US,83,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567016,3016,2026-02-19 10:19:18,Samuel Murphy,samuel.murphy3@email.com,fulfilled,paid,244.07,237.88,18.08,0.00,11.89,USD,Columbus,US,84,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567017,3017,2026-02-17 18:40:05,Harper Foster,harper.foster4@email.com,pending,paid,424.54,413.78,31.45,0.00,20.69,USD,Columbus,US,85,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567017,3017,2026-02-17 18:40:05,Harper Foster,harper.foster4@email.com,pending,paid,424.54,413.78,31.45,0.00,20.69,USD,Columbus,US,86,Canvas Tote,SKU-BDG-004,5,24.99,124.95
+8101234567017,3017,2026-02-17 18:40:05,Harper Foster,harper.foster4@email.com,pending,paid,424.54,413.78,31.45,0.00,20.69,USD,Columbus,US,87,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567017,3017,2026-02-17 18:40:05,Harper Foster,harper.foster4@email.com,pending,paid,424.54,413.78,31.45,0.00,20.69,USD,Columbus,US,88,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567017,3017,2026-02-17 18:40:05,Harper Foster,harper.foster4@email.com,pending,paid,424.54,413.78,31.45,0.00,20.69,USD,Columbus,US,89,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567017,3017,2026-02-17 18:40:05,Harper Foster,harper.foster4@email.com,pending,paid,424.54,413.78,31.45,0.00,20.69,USD,Columbus,US,90,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567018,3018,2026-02-19 19:30:22,Penelope Clark,penelope.clark5@email.com,fulfilled,paid,329.61,346.81,24.42,0.00,41.62,USD,San Antonio,US,91,Crew Socks,SKU-BDG-001,4,9.99,39.96
+8101234567018,3018,2026-02-19 19:30:22,Penelope Clark,penelope.clark5@email.com,fulfilled,paid,329.61,346.81,24.42,0.00,41.62,USD,San Antonio,US,92,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567018,3018,2026-02-19 19:30:22,Penelope Clark,penelope.clark5@email.com,fulfilled,paid,329.61,346.81,24.42,0.00,41.62,USD,San Antonio,US,93,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567018,3018,2026-02-19 19:30:22,Penelope Clark,penelope.clark5@email.com,fulfilled,paid,329.61,346.81,24.42,0.00,41.62,USD,San Antonio,US,94,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567018,3018,2026-02-19 19:30:22,Penelope Clark,penelope.clark5@email.com,fulfilled,paid,329.61,346.81,24.42,0.00,41.62,USD,San Antonio,US,95,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567018,3018,2026-02-19 19:30:22,Penelope Clark,penelope.clark5@email.com,fulfilled,paid,329.61,346.81,24.42,0.00,41.62,USD,San Antonio,US,96,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567019,3019,2026-02-21 09:26:24,Ava Perry,ava.perry6@email.com,pending,pending,183.56,188.85,13.60,0.00,18.89,USD,Jacksonville,US,97,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567019,3019,2026-02-21 09:26:24,Ava Perry,ava.perry6@email.com,pending,pending,183.56,188.85,13.60,0.00,18.89,USD,Jacksonville,US,98,Lanyard,SKU-BDG-012,5,8.99,44.95
+8101234567019,3019,2026-02-21 09:26:24,Ava Perry,ava.perry6@email.com,pending,pending,183.56,188.85,13.60,0.00,18.89,USD,Jacksonville,US,99,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567019,3019,2026-02-21 09:26:24,Ava Perry,ava.perry6@email.com,pending,pending,183.56,188.85,13.60,0.00,18.89,USD,Jacksonville,US,100,Sticker Pack,SKU-BDG-011,5,7.99,39.95
+8101234567020,3020,2026-02-16 12:55:57,Julian Sanders,julian.sanders7@email.com,fulfilled,paid,215.35,209.90,15.95,0.00,10.50,USD,Phoenix,US,101,Belt Bag,SKU-BDG-008,1,27.99,27.99
+8101234567020,3020,2026-02-16 12:55:57,Julian Sanders,julian.sanders7@email.com,fulfilled,paid,215.35,209.90,15.95,0.00,10.50,USD,Phoenix,US,102,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567020,3020,2026-02-16 12:55:57,Julian Sanders,julian.sanders7@email.com,fulfilled,paid,215.35,209.90,15.95,0.00,10.50,USD,Phoenix,US,103,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567020,3020,2026-02-16 12:55:57,Julian Sanders,julian.sanders7@email.com,fulfilled,paid,215.35,209.90,15.95,0.00,10.50,USD,Phoenix,US,104,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567020,3020,2026-02-16 12:55:57,Julian Sanders,julian.sanders7@email.com,fulfilled,paid,215.35,209.90,15.95,0.00,10.50,USD,Phoenix,US,105,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567021,3021,2026-02-22 18:28:36,Elijah Rodriguez,elijah.rodriguez8@email.com,fulfilled,pending,320.98,312.84,23.78,0.00,15.64,USD,Orlando,US,106,Lanyard,SKU-BDG-012,5,8.99,44.95
+8101234567021,3021,2026-02-22 18:28:36,Elijah Rodriguez,elijah.rodriguez8@email.com,fulfilled,pending,320.98,312.84,23.78,0.00,15.64,USD,Orlando,US,107,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567021,3021,2026-02-22 18:28:36,Elijah Rodriguez,elijah.rodriguez8@email.com,fulfilled,pending,320.98,312.84,23.78,0.00,15.64,USD,Orlando,US,108,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567021,3021,2026-02-22 18:28:36,Elijah Rodriguez,elijah.rodriguez8@email.com,fulfilled,pending,320.98,312.84,23.78,0.00,15.64,USD,Orlando,US,109,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567021,3021,2026-02-22 18:28:36,Elijah Rodriguez,elijah.rodriguez8@email.com,fulfilled,pending,320.98,312.84,23.78,0.00,15.64,USD,Orlando,US,110,Reusable Bottle,SKU-BDG-005,1,14.99,14.99
+8101234567022,3022,2026-02-22 18:53:02,Wyatt Anderson,wyatt.anderson9@email.com,fulfilled,paid,278.93,271.86,20.66,0.00,13.59,USD,Columbus,US,111,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567022,3022,2026-02-22 18:53:02,Wyatt Anderson,wyatt.anderson9@email.com,fulfilled,paid,278.93,271.86,20.66,0.00,13.59,USD,Columbus,US,112,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567022,3022,2026-02-22 18:53:02,Wyatt Anderson,wyatt.anderson9@email.com,fulfilled,paid,278.93,271.86,20.66,0.00,13.59,USD,Columbus,US,113,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567022,3022,2026-02-22 18:53:02,Wyatt Anderson,wyatt.anderson9@email.com,fulfilled,paid,278.93,271.86,20.66,0.00,13.59,USD,Columbus,US,114,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567022,3022,2026-02-22 18:53:02,Wyatt Anderson,wyatt.anderson9@email.com,fulfilled,paid,278.93,271.86,20.66,0.00,13.59,USD,Columbus,US,115,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567022,3022,2026-02-22 18:53:02,Wyatt Anderson,wyatt.anderson9@email.com,fulfilled,paid,278.93,271.86,20.66,0.00,13.59,USD,Columbus,US,116,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567023,3023,2026-02-16 19:02:12,Scarlett Collins,scarlett.collins10@email.com,pending,pending,313.82,305.86,23.25,0.00,15.29,USD,Phoenix,US,117,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567023,3023,2026-02-16 19:02:12,Scarlett Collins,scarlett.collins10@email.com,pending,pending,313.82,305.86,23.25,0.00,15.29,USD,Phoenix,US,118,Reusable Bottle,SKU-BDG-005,1,14.99,14.99
+8101234567023,3023,2026-02-16 19:02:12,Scarlett Collins,scarlett.collins10@email.com,pending,pending,313.82,305.86,23.25,0.00,15.29,USD,Phoenix,US,119,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567023,3023,2026-02-16 19:02:12,Scarlett Collins,scarlett.collins10@email.com,pending,pending,313.82,305.86,23.25,0.00,15.29,USD,Phoenix,US,120,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567023,3023,2026-02-16 19:02:12,Scarlett Collins,scarlett.collins10@email.com,pending,pending,313.82,305.86,23.25,0.00,15.29,USD,Phoenix,US,121,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567023,3023,2026-02-16 19:02:12,Scarlett Collins,scarlett.collins10@email.com,pending,pending,313.82,305.86,23.25,0.00,15.29,USD,Phoenix,US,122,Canvas Tote,SKU-BDG-004,4,24.99,99.96
+8101234567024,3024,2026-02-18 21:40:48,Mia Perry,mia.perry11@email.com,fulfilled,pending,267.63,260.85,19.82,0.00,13.04,USD,Jacksonville,US,123,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567024,3024,2026-02-18 21:40:48,Mia Perry,mia.perry11@email.com,fulfilled,pending,267.63,260.85,19.82,0.00,13.04,USD,Jacksonville,US,124,Reusable Bottle,SKU-BDG-005,4,14.99,59.96
+8101234567024,3024,2026-02-18 21:40:48,Mia Perry,mia.perry11@email.com,fulfilled,pending,267.63,260.85,19.82,0.00,13.04,USD,Jacksonville,US,125,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567024,3024,2026-02-18 21:40:48,Mia Perry,mia.perry11@email.com,fulfilled,pending,267.63,260.85,19.82,0.00,13.04,USD,Jacksonville,US,126,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567024,3024,2026-02-18 21:40:48,Mia Perry,mia.perry11@email.com,fulfilled,pending,267.63,260.85,19.82,0.00,13.04,USD,Jacksonville,US,127,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567024,3024,2026-02-18 21:40:48,Mia Perry,mia.perry11@email.com,fulfilled,pending,267.63,260.85,19.82,0.00,13.04,USD,Jacksonville,US,128,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567025,3025,2026-02-28 19:48:48,Abigail Price,abigail.price12@email.com,fulfilled,paid,259.46,252.88,19.22,0.00,12.64,USD,Dallas,US,129,Graphic Tee,SKU-BDG-002,5,18.99,94.95
+8101234567025,3025,2026-02-28 19:48:48,Abigail Price,abigail.price12@email.com,fulfilled,paid,259.46,252.88,19.22,0.00,12.64,USD,Dallas,US,130,Reusable Bottle,SKU-BDG-005,1,14.99,14.99
+8101234567025,3025,2026-02-28 19:48:48,Abigail Price,abigail.price12@email.com,fulfilled,paid,259.46,252.88,19.22,0.00,12.64,USD,Dallas,US,131,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567025,3025,2026-02-28 19:48:48,Abigail Price,abigail.price12@email.com,fulfilled,paid,259.46,252.88,19.22,0.00,12.64,USD,Dallas,US,132,Phone Stand,SKU-BDG-010,1,12.99,12.99
+8101234567025,3025,2026-02-28 19:48:48,Abigail Price,abigail.price12@email.com,fulfilled,paid,259.46,252.88,19.22,0.00,12.64,USD,Dallas,US,133,Canvas Tote,SKU-BDG-004,4,24.99,99.96
+8101234567026,3026,2026-02-27 14:42:46,Mason Murphy,mason.murphy13@email.com,unfulfilled,paid,308.71,324.82,22.87,0.00,38.98,USD,Orlando,US,134,Belt Bag,SKU-BDG-008,4,27.99,111.96
+8101234567026,3026,2026-02-27 14:42:46,Mason Murphy,mason.murphy13@email.com,unfulfilled,paid,308.71,324.82,22.87,0.00,38.98,USD,Orlando,US,135,Running Shorts,SKU-BDG-013,1,24.99,24.99
+8101234567026,3026,2026-02-27 14:42:46,Mason Murphy,mason.murphy13@email.com,unfulfilled,paid,308.71,324.82,22.87,0.00,38.98,USD,Orlando,US,136,Sticker Pack,SKU-BDG-011,4,7.99,31.96
+8101234567026,3026,2026-02-27 14:42:46,Mason Murphy,mason.murphy13@email.com,unfulfilled,paid,308.71,324.82,22.87,0.00,38.98,USD,Orlando,US,137,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567026,3026,2026-02-27 14:42:46,Mason Murphy,mason.murphy13@email.com,unfulfilled,paid,308.71,324.82,22.87,0.00,38.98,USD,Orlando,US,138,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567026,3026,2026-02-27 14:42:46,Mason Murphy,mason.murphy13@email.com,unfulfilled,paid,308.71,324.82,22.87,0.00,38.98,USD,Orlando,US,139,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567026,3026,2026-02-27 14:42:46,Mason Murphy,mason.murphy13@email.com,unfulfilled,paid,308.71,324.82,22.87,0.00,38.98,USD,Orlando,US,140,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567027,3027,2026-03-01 18:11:16,Nora Foster,nora.foster14@email.com,unfulfilled,refunded,320.75,322.81,23.76,0.00,25.82,USD,San Antonio,US,141,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567027,3027,2026-03-01 18:11:16,Nora Foster,nora.foster14@email.com,unfulfilled,refunded,320.75,322.81,23.76,0.00,25.82,USD,San Antonio,US,142,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567027,3027,2026-03-01 18:11:16,Nora Foster,nora.foster14@email.com,unfulfilled,refunded,320.75,322.81,23.76,0.00,25.82,USD,San Antonio,US,143,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567027,3027,2026-03-01 18:11:16,Nora Foster,nora.foster14@email.com,unfulfilled,refunded,320.75,322.81,23.76,0.00,25.82,USD,San Antonio,US,144,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567027,3027,2026-03-01 18:11:16,Nora Foster,nora.foster14@email.com,unfulfilled,refunded,320.75,322.81,23.76,0.00,25.82,USD,San Antonio,US,145,Sticker Pack,SKU-BDG-011,5,7.99,39.95
+8101234567027,3027,2026-03-01 18:11:16,Nora Foster,nora.foster14@email.com,unfulfilled,refunded,320.75,322.81,23.76,0.00,25.82,USD,San Antonio,US,146,Lanyard,SKU-BDG-012,1,8.99,8.99
+8101234567027,3027,2026-03-01 18:11:16,Nora Foster,nora.foster14@email.com,unfulfilled,refunded,320.75,322.81,23.76,0.00,25.82,USD,San Antonio,US,147,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567028,3028,2026-02-23 21:28:07,Elijah Kelly,elijah.kelly15@email.com,fulfilled,paid,206.93,212.89,15.33,0.00,21.29,USD,Orlando,US,148,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567028,3028,2026-02-23 21:28:07,Elijah Kelly,elijah.kelly15@email.com,fulfilled,paid,206.93,212.89,15.33,0.00,21.29,USD,Orlando,US,149,Baseball Cap,SKU-BDG-003,1,22.99,22.99
+8101234567028,3028,2026-02-23 21:28:07,Elijah Kelly,elijah.kelly15@email.com,fulfilled,paid,206.93,212.89,15.33,0.00,21.29,USD,Orlando,US,150,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567028,3028,2026-02-23 21:28:07,Elijah Kelly,elijah.kelly15@email.com,fulfilled,paid,206.93,212.89,15.33,0.00,21.29,USD,Orlando,US,151,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567028,3028,2026-02-23 21:28:07,Elijah Kelly,elijah.kelly15@email.com,fulfilled,paid,206.93,212.89,15.33,0.00,21.29,USD,Orlando,US,152,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567029,3029,2026-02-26 18:42:15,Amelia Walker,amelia.walker16@email.com,fulfilled,paid,198.17,203.88,14.68,0.00,20.39,USD,Columbus,US,153,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567029,3029,2026-02-26 18:42:15,Amelia Walker,amelia.walker16@email.com,fulfilled,paid,198.17,203.88,14.68,0.00,20.39,USD,Columbus,US,154,Reusable Bottle,SKU-BDG-005,4,14.99,59.96
+8101234567029,3029,2026-02-26 18:42:15,Amelia Walker,amelia.walker16@email.com,fulfilled,paid,198.17,203.88,14.68,0.00,20.39,USD,Columbus,US,155,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567029,3029,2026-02-26 18:42:15,Amelia Walker,amelia.walker16@email.com,fulfilled,paid,198.17,203.88,14.68,0.00,20.39,USD,Columbus,US,156,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567029,3029,2026-02-26 18:42:15,Amelia Walker,amelia.walker16@email.com,fulfilled,paid,198.17,203.88,14.68,0.00,20.39,USD,Columbus,US,157,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567030,3030,2026-03-01 20:13:26,Ethan Perry,ethan.perry17@email.com,fulfilled,paid,231.78,243.88,17.17,0.00,29.27,USD,Columbus,US,158,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567030,3030,2026-03-01 20:13:26,Ethan Perry,ethan.perry17@email.com,fulfilled,paid,231.78,243.88,17.17,0.00,29.27,USD,Columbus,US,159,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567030,3030,2026-03-01 20:13:26,Ethan Perry,ethan.perry17@email.com,fulfilled,paid,231.78,243.88,17.17,0.00,29.27,USD,Columbus,US,160,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567030,3030,2026-03-01 20:13:26,Ethan Perry,ethan.perry17@email.com,fulfilled,paid,231.78,243.88,17.17,0.00,29.27,USD,Columbus,US,161,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567030,3030,2026-03-01 20:13:26,Ethan Perry,ethan.perry17@email.com,fulfilled,paid,231.78,243.88,17.17,0.00,29.27,USD,Columbus,US,162,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567031,3031,2026-02-25 21:36:09,Jackson Foster,jackson.foster18@email.com,fulfilled,paid,227.64,221.87,16.86,0.00,11.09,USD,Dallas,US,163,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567031,3031,2026-02-25 21:36:09,Jackson Foster,jackson.foster18@email.com,fulfilled,paid,227.64,221.87,16.86,0.00,11.09,USD,Dallas,US,164,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567031,3031,2026-02-25 21:36:09,Jackson Foster,jackson.foster18@email.com,fulfilled,paid,227.64,221.87,16.86,0.00,11.09,USD,Dallas,US,165,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567031,3031,2026-02-25 21:36:09,Jackson Foster,jackson.foster18@email.com,fulfilled,paid,227.64,221.87,16.86,0.00,11.09,USD,Dallas,US,166,Baseball Cap,SKU-BDG-003,4,22.99,91.96
+8101234567031,3031,2026-02-25 21:36:09,Jackson Foster,jackson.foster18@email.com,fulfilled,paid,227.64,221.87,16.86,0.00,11.09,USD,Dallas,US,167,Lanyard,SKU-BDG-012,1,8.99,8.99
+8101234567032,3032,2026-02-25 14:16:26,Lily Price,lily.price19@email.com,pending,cancelled,233.68,245.88,17.31,0.00,29.51,USD,Orlando,US,168,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567032,3032,2026-02-25 14:16:26,Lily Price,lily.price19@email.com,pending,cancelled,233.68,245.88,17.31,0.00,29.51,USD,Orlando,US,169,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567032,3032,2026-02-25 14:16:26,Lily Price,lily.price19@email.com,pending,cancelled,233.68,245.88,17.31,0.00,29.51,USD,Orlando,US,170,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567032,3032,2026-02-25 14:16:26,Lily Price,lily.price19@email.com,pending,cancelled,233.68,245.88,17.31,0.00,29.51,USD,Orlando,US,171,Canvas Tote,SKU-BDG-004,4,24.99,99.96
+8101234567032,3032,2026-02-25 14:16:26,Lily Price,lily.price19@email.com,pending,cancelled,233.68,245.88,17.31,0.00,29.51,USD,Orlando,US,172,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567033,3033,2026-02-26 21:44:25,Sebastian Patel,sebastian.patel20@email.com,fulfilled,paid,283.06,297.83,20.97,0.00,35.74,USD,Columbus,US,173,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567033,3033,2026-02-26 21:44:25,Sebastian Patel,sebastian.patel20@email.com,fulfilled,paid,283.06,297.83,20.97,0.00,35.74,USD,Columbus,US,174,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567033,3033,2026-02-26 21:44:25,Sebastian Patel,sebastian.patel20@email.com,fulfilled,paid,283.06,297.83,20.97,0.00,35.74,USD,Columbus,US,175,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567033,3033,2026-02-26 21:44:25,Sebastian Patel,sebastian.patel20@email.com,fulfilled,paid,283.06,297.83,20.97,0.00,35.74,USD,Columbus,US,176,Baseball Cap,SKU-BDG-003,5,22.99,114.95
+8101234567033,3033,2026-02-26 21:44:25,Sebastian Patel,sebastian.patel20@email.com,fulfilled,paid,283.06,297.83,20.97,0.00,35.74,USD,Columbus,US,177,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567033,3033,2026-02-26 21:44:25,Sebastian Patel,sebastian.patel20@email.com,fulfilled,paid,283.06,297.83,20.97,0.00,35.74,USD,Columbus,US,178,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567033,3033,2026-02-26 21:44:25,Sebastian Patel,sebastian.patel20@email.com,fulfilled,paid,283.06,297.83,20.97,0.00,35.74,USD,Columbus,US,179,Phone Stand,SKU-BDG-010,1,12.99,12.99
+8101234567034,3034,2026-02-28 12:20:28,Stella Ross,stella.ross21@email.com,unfulfilled,cancelled,271.13,272.88,20.08,0.00,21.83,USD,Orlando,US,180,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567034,3034,2026-02-28 12:20:28,Stella Ross,stella.ross21@email.com,unfulfilled,cancelled,271.13,272.88,20.08,0.00,21.83,USD,Orlando,US,181,Graphic Tee,SKU-BDG-002,4,18.99,75.96
+8101234567034,3034,2026-02-28 12:20:28,Stella Ross,stella.ross21@email.com,unfulfilled,cancelled,271.13,272.88,20.08,0.00,21.83,USD,Orlando,US,182,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567034,3034,2026-02-28 12:20:28,Stella Ross,stella.ross21@email.com,unfulfilled,cancelled,271.13,272.88,20.08,0.00,21.83,USD,Orlando,US,183,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567035,3035,2026-02-26 18:50:24,Grace Nguyen,grace.nguyen22@email.com,pending,pending,303.10,311.83,22.45,0.00,31.18,USD,Phoenix,US,184,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567035,3035,2026-02-26 18:50:24,Grace Nguyen,grace.nguyen22@email.com,pending,pending,303.10,311.83,22.45,0.00,31.18,USD,Phoenix,US,185,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567035,3035,2026-02-26 18:50:24,Grace Nguyen,grace.nguyen22@email.com,pending,pending,303.10,311.83,22.45,0.00,31.18,USD,Phoenix,US,186,Crew Socks,SKU-BDG-001,4,9.99,39.96
+8101234567035,3035,2026-02-26 18:50:24,Grace Nguyen,grace.nguyen22@email.com,pending,pending,303.10,311.83,22.45,0.00,31.18,USD,Phoenix,US,187,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567035,3035,2026-02-26 18:50:24,Grace Nguyen,grace.nguyen22@email.com,pending,pending,303.10,311.83,22.45,0.00,31.18,USD,Phoenix,US,188,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567035,3035,2026-02-26 18:50:24,Grace Nguyen,grace.nguyen22@email.com,pending,pending,303.10,311.83,22.45,0.00,31.18,USD,Phoenix,US,189,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567035,3035,2026-02-26 18:50:24,Grace Nguyen,grace.nguyen22@email.com,pending,pending,303.10,311.83,22.45,0.00,31.18,USD,Phoenix,US,190,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567036,3036,2026-02-28 13:01:29,Samuel Jackson,samuel.jackson0@email.com,unfulfilled,paid,268.13,269.86,19.86,0.00,21.59,USD,Dallas,US,191,Belt Bag,SKU-BDG-008,4,27.99,111.96
+8101234567036,3036,2026-02-28 13:01:29,Samuel Jackson,samuel.jackson0@email.com,unfulfilled,paid,268.13,269.86,19.86,0.00,21.59,USD,Dallas,US,192,Crew Socks,SKU-BDG-001,4,9.99,39.96
+8101234567036,3036,2026-02-28 13:01:29,Samuel Jackson,samuel.jackson0@email.com,unfulfilled,paid,268.13,269.86,19.86,0.00,21.59,USD,Dallas,US,193,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567036,3036,2026-02-28 13:01:29,Samuel Jackson,samuel.jackson0@email.com,unfulfilled,paid,268.13,269.86,19.86,0.00,21.59,USD,Dallas,US,194,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567037,3037,2026-03-04 15:37:26,Harper Rodriguez,harper.rodriguez1@email.com,fulfilled,paid,273.95,281.85,20.29,0.00,28.19,USD,Jacksonville,US,195,Graphic Tee,SKU-BDG-002,4,18.99,75.96
+8101234567037,3037,2026-03-04 15:37:26,Harper Rodriguez,harper.rodriguez1@email.com,fulfilled,paid,273.95,281.85,20.29,0.00,28.19,USD,Jacksonville,US,196,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567037,3037,2026-03-04 15:37:26,Harper Rodriguez,harper.rodriguez1@email.com,fulfilled,paid,273.95,281.85,20.29,0.00,28.19,USD,Jacksonville,US,197,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567037,3037,2026-03-04 15:37:26,Harper Rodriguez,harper.rodriguez1@email.com,fulfilled,paid,273.95,281.85,20.29,0.00,28.19,USD,Jacksonville,US,198,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567037,3037,2026-03-04 15:37:26,Harper Rodriguez,harper.rodriguez1@email.com,fulfilled,paid,273.95,281.85,20.29,0.00,28.19,USD,Jacksonville,US,199,Running Shorts,SKU-BDG-013,1,24.99,24.99
+8101234567037,3037,2026-03-04 15:37:26,Harper Rodriguez,harper.rodriguez1@email.com,fulfilled,paid,273.95,281.85,20.29,0.00,28.19,USD,Jacksonville,US,200,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567038,3038,2026-03-03 12:55:16,Daniel Clark,daniel.clark2@email.com,unfulfilled,paid,343.60,345.81,25.45,0.00,27.66,USD,Phoenix,US,201,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567038,3038,2026-03-03 12:55:16,Daniel Clark,daniel.clark2@email.com,unfulfilled,paid,343.60,345.81,25.45,0.00,27.66,USD,Phoenix,US,202,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567038,3038,2026-03-03 12:55:16,Daniel Clark,daniel.clark2@email.com,unfulfilled,paid,343.60,345.81,25.45,0.00,27.66,USD,Phoenix,US,203,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567038,3038,2026-03-03 12:55:16,Daniel Clark,daniel.clark2@email.com,unfulfilled,paid,343.60,345.81,25.45,0.00,27.66,USD,Phoenix,US,204,Crew Socks,SKU-BDG-001,5,9.99,49.95
+8101234567038,3038,2026-03-03 12:55:16,Daniel Clark,daniel.clark2@email.com,unfulfilled,paid,343.60,345.81,25.45,0.00,27.66,USD,Phoenix,US,205,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567038,3038,2026-03-03 12:55:16,Daniel Clark,daniel.clark2@email.com,unfulfilled,paid,343.60,345.81,25.45,0.00,27.66,USD,Phoenix,US,206,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567038,3038,2026-03-03 12:55:16,Daniel Clark,daniel.clark2@email.com,unfulfilled,paid,343.60,345.81,25.45,0.00,27.66,USD,Phoenix,US,207,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567039,3039,2026-03-04 16:57:27,Ethan Butler,ethan.butler3@email.com,fulfilled,refunded,288.03,289.88,21.34,0.00,23.19,USD,Phoenix,US,208,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567039,3039,2026-03-04 16:57:27,Ethan Butler,ethan.butler3@email.com,fulfilled,refunded,288.03,289.88,21.34,0.00,23.19,USD,Phoenix,US,209,Running Shorts,SKU-BDG-013,5,24.99,124.95
+8101234567039,3039,2026-03-04 16:57:27,Ethan Butler,ethan.butler3@email.com,fulfilled,refunded,288.03,289.88,21.34,0.00,23.19,USD,Phoenix,US,210,Reusable Bottle,SKU-BDG-005,1,14.99,14.99
+8101234567039,3039,2026-03-04 16:57:27,Ethan Butler,ethan.butler3@email.com,fulfilled,refunded,288.03,289.88,21.34,0.00,23.19,USD,Phoenix,US,211,Belt Bag,SKU-BDG-008,4,27.99,111.96
+8101234567040,3040,2026-03-06 09:28:51,James Foster,james.foster4@email.com,fulfilled,paid,226.38,227.84,16.77,0.00,18.23,USD,Jacksonville,US,212,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567040,3040,2026-03-06 09:28:51,James Foster,james.foster4@email.com,fulfilled,paid,226.38,227.84,16.77,0.00,18.23,USD,Jacksonville,US,213,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567040,3040,2026-03-06 09:28:51,James Foster,james.foster4@email.com,fulfilled,paid,226.38,227.84,16.77,0.00,18.23,USD,Jacksonville,US,214,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567040,3040,2026-03-06 09:28:51,James Foster,james.foster4@email.com,fulfilled,paid,226.38,227.84,16.77,0.00,18.23,USD,Jacksonville,US,215,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567040,3040,2026-03-06 09:28:51,James Foster,james.foster4@email.com,fulfilled,paid,226.38,227.84,16.77,0.00,18.23,USD,Jacksonville,US,216,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567040,3040,2026-03-06 09:28:51,James Foster,james.foster4@email.com,fulfilled,paid,226.38,227.84,16.77,0.00,18.23,USD,Jacksonville,US,217,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567041,3041,2026-03-07 15:50:39,Ethan Ramirez,ethan.ramirez5@email.com,pending,cancelled,438.94,441.77,32.51,0.00,35.34,USD,Orlando,US,218,Baseball Cap,SKU-BDG-003,5,22.99,114.95
+8101234567041,3041,2026-03-07 15:50:39,Ethan Ramirez,ethan.ramirez5@email.com,pending,cancelled,438.94,441.77,32.51,0.00,35.34,USD,Orlando,US,219,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567041,3041,2026-03-07 15:50:39,Ethan Ramirez,ethan.ramirez5@email.com,pending,cancelled,438.94,441.77,32.51,0.00,35.34,USD,Orlando,US,220,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567041,3041,2026-03-07 15:50:39,Ethan Ramirez,ethan.ramirez5@email.com,pending,cancelled,438.94,441.77,32.51,0.00,35.34,USD,Orlando,US,221,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567041,3041,2026-03-07 15:50:39,Ethan Ramirez,ethan.ramirez5@email.com,pending,cancelled,438.94,441.77,32.51,0.00,35.34,USD,Orlando,US,222,Belt Bag,SKU-BDG-008,4,27.99,111.96
+8101234567041,3041,2026-03-07 15:50:39,Ethan Ramirez,ethan.ramirez5@email.com,pending,cancelled,438.94,441.77,32.51,0.00,35.34,USD,Orlando,US,223,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567042,3042,2026-03-06 18:37:22,Charlotte Martinez,charlotte.martinez6@email.com,fulfilled,refunded,378.98,398.76,28.07,0.00,47.85,USD,Phoenix,US,224,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567042,3042,2026-03-06 18:37:22,Charlotte Martinez,charlotte.martinez6@email.com,fulfilled,refunded,378.98,398.76,28.07,0.00,47.85,USD,Phoenix,US,225,Sticker Pack,SKU-BDG-011,4,7.99,31.96
+8101234567042,3042,2026-03-06 18:37:22,Charlotte Martinez,charlotte.martinez6@email.com,fulfilled,refunded,378.98,398.76,28.07,0.00,47.85,USD,Phoenix,US,226,Canvas Tote,SKU-BDG-004,4,24.99,99.96
+8101234567042,3042,2026-03-06 18:37:22,Charlotte Martinez,charlotte.martinez6@email.com,fulfilled,refunded,378.98,398.76,28.07,0.00,47.85,USD,Phoenix,US,227,Belt Bag,SKU-BDG-008,4,27.99,111.96
+8101234567042,3042,2026-03-06 18:37:22,Charlotte Martinez,charlotte.martinez6@email.com,fulfilled,refunded,378.98,398.76,28.07,0.00,47.85,USD,Phoenix,US,228,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567042,3042,2026-03-06 18:37:22,Charlotte Martinez,charlotte.martinez6@email.com,fulfilled,refunded,378.98,398.76,28.07,0.00,47.85,USD,Phoenix,US,229,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567042,3042,2026-03-06 18:37:22,Charlotte Martinez,charlotte.martinez6@email.com,fulfilled,refunded,378.98,398.76,28.07,0.00,47.85,USD,Phoenix,US,230,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567043,3043,2026-03-07 19:53:29,Aurora Flores,aurora.flores7@email.com,fulfilled,paid,243.03,236.87,18.00,0.00,11.84,USD,San Antonio,US,231,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567043,3043,2026-03-07 19:53:29,Aurora Flores,aurora.flores7@email.com,fulfilled,paid,243.03,236.87,18.00,0.00,11.84,USD,San Antonio,US,232,Graphic Tee,SKU-BDG-002,4,18.99,75.96
+8101234567043,3043,2026-03-07 19:53:29,Aurora Flores,aurora.flores7@email.com,fulfilled,paid,243.03,236.87,18.00,0.00,11.84,USD,San Antonio,US,233,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567043,3043,2026-03-07 19:53:29,Aurora Flores,aurora.flores7@email.com,fulfilled,paid,243.03,236.87,18.00,0.00,11.84,USD,San Antonio,US,234,Reusable Bottle,SKU-BDG-005,4,14.99,59.96
+8101234567044,3044,2026-03-07 13:33:27,Ella Powell,ella.powell8@email.com,pending,paid,171.23,166.89,12.68,0.00,8.34,USD,Columbus,US,235,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567044,3044,2026-03-07 13:33:27,Ella Powell,ella.powell8@email.com,pending,paid,171.23,166.89,12.68,0.00,8.34,USD,Columbus,US,236,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567044,3044,2026-03-07 13:33:27,Ella Powell,ella.powell8@email.com,pending,paid,171.23,166.89,12.68,0.00,8.34,USD,Columbus,US,237,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567044,3044,2026-03-07 13:33:27,Ella Powell,ella.powell8@email.com,pending,paid,171.23,166.89,12.68,0.00,8.34,USD,Columbus,US,238,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567045,3045,2026-03-07 11:00:43,Abigail Turner,abigail.turner9@email.com,fulfilled,paid,244.27,245.85,18.09,0.00,19.67,USD,Dallas,US,239,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567045,3045,2026-03-07 11:00:43,Abigail Turner,abigail.turner9@email.com,fulfilled,paid,244.27,245.85,18.09,0.00,19.67,USD,Dallas,US,240,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567045,3045,2026-03-07 11:00:43,Abigail Turner,abigail.turner9@email.com,fulfilled,paid,244.27,245.85,18.09,0.00,19.67,USD,Dallas,US,241,Canvas Tote,SKU-BDG-004,4,24.99,99.96
+8101234567045,3045,2026-03-07 11:00:43,Abigail Turner,abigail.turner9@email.com,fulfilled,paid,244.27,245.85,18.09,0.00,19.67,USD,Dallas,US,242,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567045,3045,2026-03-07 11:00:43,Abigail Turner,abigail.turner9@email.com,fulfilled,paid,244.27,245.85,18.09,0.00,19.67,USD,Dallas,US,243,Reusable Bottle,SKU-BDG-005,4,14.99,59.96
+8101234567046,3046,2026-03-06 17:04:38,Harper Griffin,harper.griffin10@email.com,fulfilled,paid,255.52,268.85,18.93,0.00,32.26,USD,Columbus,US,244,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567046,3046,2026-03-06 17:04:38,Harper Griffin,harper.griffin10@email.com,fulfilled,paid,255.52,268.85,18.93,0.00,32.26,USD,Columbus,US,245,Canvas Tote,SKU-BDG-004,5,24.99,124.95
+8101234567046,3046,2026-03-06 17:04:38,Harper Griffin,harper.griffin10@email.com,fulfilled,paid,255.52,268.85,18.93,0.00,32.26,USD,Columbus,US,246,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567046,3046,2026-03-06 17:04:38,Harper Griffin,harper.griffin10@email.com,fulfilled,paid,255.52,268.85,18.93,0.00,32.26,USD,Columbus,US,247,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567046,3046,2026-03-06 17:04:38,Harper Griffin,harper.griffin10@email.com,fulfilled,paid,255.52,268.85,18.93,0.00,32.26,USD,Columbus,US,248,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567047,3047,2026-03-05 21:59:18,Benjamin Brooks,benjamin.brooks11@email.com,fulfilled,paid,348.63,339.80,25.82,0.00,16.99,USD,Jacksonville,US,249,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567047,3047,2026-03-05 21:59:18,Benjamin Brooks,benjamin.brooks11@email.com,fulfilled,paid,348.63,339.80,25.82,0.00,16.99,USD,Jacksonville,US,250,Baseball Cap,SKU-BDG-003,1,22.99,22.99
+8101234567047,3047,2026-03-05 21:59:18,Benjamin Brooks,benjamin.brooks11@email.com,fulfilled,paid,348.63,339.80,25.82,0.00,16.99,USD,Jacksonville,US,251,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567047,3047,2026-03-05 21:59:18,Benjamin Brooks,benjamin.brooks11@email.com,fulfilled,paid,348.63,339.80,25.82,0.00,16.99,USD,Jacksonville,US,252,Graphic Tee,SKU-BDG-002,5,18.99,94.95
+8101234567047,3047,2026-03-05 21:59:18,Benjamin Brooks,benjamin.brooks11@email.com,fulfilled,paid,348.63,339.80,25.82,0.00,16.99,USD,Jacksonville,US,253,Canvas Tote,SKU-BDG-004,5,24.99,124.95
+8101234567047,3047,2026-03-05 21:59:18,Benjamin Brooks,benjamin.brooks11@email.com,fulfilled,paid,348.63,339.80,25.82,0.00,16.99,USD,Jacksonville,US,254,Crew Socks,SKU-BDG-001,4,9.99,39.96
+8101234567048,3048,2026-03-07 19:13:26,Liam Lee,liam.lee12@email.com,fulfilled,paid,307.85,309.84,22.80,0.00,24.79,USD,Dallas,US,255,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567048,3048,2026-03-07 19:13:26,Liam Lee,liam.lee12@email.com,fulfilled,paid,307.85,309.84,22.80,0.00,24.79,USD,Dallas,US,256,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567048,3048,2026-03-07 19:13:26,Liam Lee,liam.lee12@email.com,fulfilled,paid,307.85,309.84,22.80,0.00,24.79,USD,Dallas,US,257,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567048,3048,2026-03-07 19:13:26,Liam Lee,liam.lee12@email.com,fulfilled,paid,307.85,309.84,22.80,0.00,24.79,USD,Dallas,US,258,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567048,3048,2026-03-07 19:13:26,Liam Lee,liam.lee12@email.com,fulfilled,paid,307.85,309.84,22.80,0.00,24.79,USD,Dallas,US,259,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567048,3048,2026-03-07 19:13:26,Liam Lee,liam.lee12@email.com,fulfilled,paid,307.85,309.84,22.80,0.00,24.79,USD,Dallas,US,260,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567049,3049,2026-03-05 11:12:20,Henry Reed,henry.reed13@email.com,fulfilled,paid,357.50,367.80,26.48,0.00,36.78,USD,San Antonio,US,261,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567049,3049,2026-03-05 11:12:20,Henry Reed,henry.reed13@email.com,fulfilled,paid,357.50,367.80,26.48,0.00,36.78,USD,San Antonio,US,262,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567049,3049,2026-03-05 11:12:20,Henry Reed,henry.reed13@email.com,fulfilled,paid,357.50,367.80,26.48,0.00,36.78,USD,San Antonio,US,263,Sticker Pack,SKU-BDG-011,5,7.99,39.95
+8101234567049,3049,2026-03-05 11:12:20,Henry Reed,henry.reed13@email.com,fulfilled,paid,357.50,367.80,26.48,0.00,36.78,USD,San Antonio,US,264,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567049,3049,2026-03-05 11:12:20,Henry Reed,henry.reed13@email.com,fulfilled,paid,357.50,367.80,26.48,0.00,36.78,USD,San Antonio,US,265,Baseball Cap,SKU-BDG-003,5,22.99,114.95
+8101234567049,3049,2026-03-05 11:12:20,Henry Reed,henry.reed13@email.com,fulfilled,paid,357.50,367.80,26.48,0.00,36.78,USD,San Antonio,US,266,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567050,3050,2026-03-03 16:52:48,Madison Cox,madison.cox14@email.com,fulfilled,paid,432.33,444.79,32.02,0.00,44.48,USD,Jacksonville,US,267,Canvas Tote,SKU-BDG-004,5,24.99,124.95
+8101234567050,3050,2026-03-03 16:52:48,Madison Cox,madison.cox14@email.com,fulfilled,paid,432.33,444.79,32.02,0.00,44.48,USD,Jacksonville,US,268,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567050,3050,2026-03-03 16:52:48,Madison Cox,madison.cox14@email.com,fulfilled,paid,432.33,444.79,32.02,0.00,44.48,USD,Jacksonville,US,269,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567050,3050,2026-03-03 16:52:48,Madison Cox,madison.cox14@email.com,fulfilled,paid,432.33,444.79,32.02,0.00,44.48,USD,Jacksonville,US,270,Pocket Tee,SKU-BDG-006,1,21.99,21.99
+8101234567050,3050,2026-03-03 16:52:48,Madison Cox,madison.cox14@email.com,fulfilled,paid,432.33,444.79,32.02,0.00,44.48,USD,Jacksonville,US,271,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567050,3050,2026-03-03 16:52:48,Madison Cox,madison.cox14@email.com,fulfilled,paid,432.33,444.79,32.02,0.00,44.48,USD,Jacksonville,US,272,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567050,3050,2026-03-03 16:52:48,Madison Cox,madison.cox14@email.com,fulfilled,paid,432.33,444.79,32.02,0.00,44.48,USD,Jacksonville,US,273,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567051,3051,2026-03-13 16:59:23,Zoe Ross,zoe.ross15@email.com,pending,pending,165.08,160.90,12.23,0.00,8.05,USD,Columbus,US,274,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567051,3051,2026-03-13 16:59:23,Zoe Ross,zoe.ross15@email.com,pending,pending,165.08,160.90,12.23,0.00,8.05,USD,Columbus,US,275,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567051,3051,2026-03-13 16:59:23,Zoe Ross,zoe.ross15@email.com,pending,pending,165.08,160.90,12.23,0.00,8.05,USD,Columbus,US,276,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567051,3051,2026-03-13 16:59:23,Zoe Ross,zoe.ross15@email.com,pending,pending,165.08,160.90,12.23,0.00,8.05,USD,Columbus,US,277,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567052,3052,2026-03-12 15:58:32,Elijah Sanders,elijah.sanders16@email.com,fulfilled,cancelled,224.42,225.87,16.62,0.00,18.07,USD,Dallas,US,278,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567052,3052,2026-03-12 15:58:32,Elijah Sanders,elijah.sanders16@email.com,fulfilled,cancelled,224.42,225.87,16.62,0.00,18.07,USD,Dallas,US,279,Belt Bag,SKU-BDG-008,1,27.99,27.99
+8101234567052,3052,2026-03-12 15:58:32,Elijah Sanders,elijah.sanders16@email.com,fulfilled,cancelled,224.42,225.87,16.62,0.00,18.07,USD,Dallas,US,280,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567052,3052,2026-03-12 15:58:32,Elijah Sanders,elijah.sanders16@email.com,fulfilled,cancelled,224.42,225.87,16.62,0.00,18.07,USD,Dallas,US,281,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567052,3052,2026-03-12 15:58:32,Elijah Sanders,elijah.sanders16@email.com,fulfilled,cancelled,224.42,225.87,16.62,0.00,18.07,USD,Dallas,US,282,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567053,3053,2026-03-15 09:39:38,Aurora Cooper,aurora.cooper17@email.com,fulfilled,refunded,246.74,253.84,18.28,0.00,25.38,USD,San Antonio,US,283,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567053,3053,2026-03-15 09:39:38,Aurora Cooper,aurora.cooper17@email.com,fulfilled,refunded,246.74,253.84,18.28,0.00,25.38,USD,San Antonio,US,284,Lanyard,SKU-BDG-012,4,8.99,35.96
+8101234567053,3053,2026-03-15 09:39:38,Aurora Cooper,aurora.cooper17@email.com,fulfilled,refunded,246.74,253.84,18.28,0.00,25.38,USD,San Antonio,US,285,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567053,3053,2026-03-15 09:39:38,Aurora Cooper,aurora.cooper17@email.com,fulfilled,refunded,246.74,253.84,18.28,0.00,25.38,USD,San Antonio,US,286,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567053,3053,2026-03-15 09:39:38,Aurora Cooper,aurora.cooper17@email.com,fulfilled,refunded,246.74,253.84,18.28,0.00,25.38,USD,San Antonio,US,287,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567053,3053,2026-03-15 09:39:38,Aurora Cooper,aurora.cooper17@email.com,fulfilled,refunded,246.74,253.84,18.28,0.00,25.38,USD,San Antonio,US,288,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567054,3054,2026-03-14 18:51:14,Nora Russell,nora.russell18@email.com,pending,paid,136.79,143.93,10.13,0.00,17.27,USD,Columbus,US,289,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567054,3054,2026-03-14 18:51:14,Nora Russell,nora.russell18@email.com,pending,paid,136.79,143.93,10.13,0.00,17.27,USD,Columbus,US,290,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567054,3054,2026-03-14 18:51:14,Nora Russell,nora.russell18@email.com,pending,paid,136.79,143.93,10.13,0.00,17.27,USD,Columbus,US,291,Canvas Tote,SKU-BDG-004,1,24.99,24.99
+8101234567054,3054,2026-03-14 18:51:14,Nora Russell,nora.russell18@email.com,pending,paid,136.79,143.93,10.13,0.00,17.27,USD,Columbus,US,292,Phone Stand,SKU-BDG-010,1,12.99,12.99
+8101234567054,3054,2026-03-14 18:51:14,Nora Russell,nora.russell18@email.com,pending,paid,136.79,143.93,10.13,0.00,17.27,USD,Columbus,US,293,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567055,3055,2026-03-10 15:58:22,Hannah Parker,hannah.parker19@email.com,fulfilled,paid,310.82,312.83,23.02,0.00,25.03,USD,Columbus,US,294,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567055,3055,2026-03-10 15:58:22,Hannah Parker,hannah.parker19@email.com,fulfilled,paid,310.82,312.83,23.02,0.00,25.03,USD,Columbus,US,295,Belt Bag,SKU-BDG-008,1,27.99,27.99
+8101234567055,3055,2026-03-10 15:58:22,Hannah Parker,hannah.parker19@email.com,fulfilled,paid,310.82,312.83,23.02,0.00,25.03,USD,Columbus,US,296,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567055,3055,2026-03-10 15:58:22,Hannah Parker,hannah.parker19@email.com,fulfilled,paid,310.82,312.83,23.02,0.00,25.03,USD,Columbus,US,297,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567055,3055,2026-03-10 15:58:22,Hannah Parker,hannah.parker19@email.com,fulfilled,paid,310.82,312.83,23.02,0.00,25.03,USD,Columbus,US,298,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567055,3055,2026-03-10 15:58:22,Hannah Parker,hannah.parker19@email.com,fulfilled,paid,310.82,312.83,23.02,0.00,25.03,USD,Columbus,US,299,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567055,3055,2026-03-10 15:58:22,Hannah Parker,hannah.parker19@email.com,fulfilled,paid,310.82,312.83,23.02,0.00,25.03,USD,Columbus,US,300,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567056,3056,2026-03-10 17:36:57,Caleb Evans,caleb.evans20@email.com,fulfilled,paid,155.78,163.91,11.54,0.00,19.67,USD,Orlando,US,301,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567056,3056,2026-03-10 17:36:57,Caleb Evans,caleb.evans20@email.com,fulfilled,paid,155.78,163.91,11.54,0.00,19.67,USD,Orlando,US,302,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567056,3056,2026-03-10 17:36:57,Caleb Evans,caleb.evans20@email.com,fulfilled,paid,155.78,163.91,11.54,0.00,19.67,USD,Orlando,US,303,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567056,3056,2026-03-10 17:36:57,Caleb Evans,caleb.evans20@email.com,fulfilled,paid,155.78,163.91,11.54,0.00,19.67,USD,Orlando,US,304,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567057,3057,2026-03-14 18:23:43,Harper Flores,harper.flores21@email.com,fulfilled,paid,286.58,294.83,21.23,0.00,29.48,USD,Orlando,US,305,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567057,3057,2026-03-14 18:23:43,Harper Flores,harper.flores21@email.com,fulfilled,paid,286.58,294.83,21.23,0.00,29.48,USD,Orlando,US,306,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567057,3057,2026-03-14 18:23:43,Harper Flores,harper.flores21@email.com,fulfilled,paid,286.58,294.83,21.23,0.00,29.48,USD,Orlando,US,307,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567057,3057,2026-03-14 18:23:43,Harper Flores,harper.flores21@email.com,fulfilled,paid,286.58,294.83,21.23,0.00,29.48,USD,Orlando,US,308,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567057,3057,2026-03-14 18:23:43,Harper Flores,harper.flores21@email.com,fulfilled,paid,286.58,294.83,21.23,0.00,29.48,USD,Orlando,US,309,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567057,3057,2026-03-14 18:23:43,Harper Flores,harper.flores21@email.com,fulfilled,paid,286.58,294.83,21.23,0.00,29.48,USD,Orlando,US,310,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567057,3057,2026-03-14 18:23:43,Harper Flores,harper.flores21@email.com,fulfilled,paid,286.58,294.83,21.23,0.00,29.48,USD,Orlando,US,311,Graphic Tee,SKU-BDG-002,5,18.99,94.95
+8101234567058,3058,2026-03-11 15:03:27,Lily Evans,lily.evans22@email.com,fulfilled,paid,255.36,248.88,18.92,0.00,12.44,USD,Dallas,US,312,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567058,3058,2026-03-11 15:03:27,Lily Evans,lily.evans22@email.com,fulfilled,paid,255.36,248.88,18.92,0.00,12.44,USD,Dallas,US,313,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567058,3058,2026-03-11 15:03:27,Lily Evans,lily.evans22@email.com,fulfilled,paid,255.36,248.88,18.92,0.00,12.44,USD,Dallas,US,314,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567058,3058,2026-03-11 15:03:27,Lily Evans,lily.evans22@email.com,fulfilled,paid,255.36,248.88,18.92,0.00,12.44,USD,Dallas,US,315,Running Shorts,SKU-BDG-013,1,24.99,24.99
+8101234567058,3058,2026-03-11 15:03:27,Lily Evans,lily.evans22@email.com,fulfilled,paid,255.36,248.88,18.92,0.00,12.44,USD,Dallas,US,316,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567058,3058,2026-03-11 15:03:27,Lily Evans,lily.evans22@email.com,fulfilled,paid,255.36,248.88,18.92,0.00,12.44,USD,Dallas,US,317,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567059,3059,2026-03-12 19:20:45,Owen Turner,owen.turner0@email.com,unfulfilled,pending,182.51,177.88,13.52,0.00,8.89,USD,Columbus,US,318,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567059,3059,2026-03-12 19:20:45,Owen Turner,owen.turner0@email.com,unfulfilled,pending,182.51,177.88,13.52,0.00,8.89,USD,Columbus,US,319,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567059,3059,2026-03-12 19:20:45,Owen Turner,owen.turner0@email.com,unfulfilled,pending,182.51,177.88,13.52,0.00,8.89,USD,Columbus,US,320,Lanyard,SKU-BDG-012,4,8.99,35.96
+8101234567059,3059,2026-03-12 19:20:45,Owen Turner,owen.turner0@email.com,unfulfilled,pending,182.51,177.88,13.52,0.00,8.89,USD,Columbus,US,321,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567060,3060,2026-03-13 17:22:21,Jackson Patel,jackson.patel1@email.com,fulfilled,paid,266.92,280.85,19.77,0.00,33.70,USD,Columbus,US,322,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567060,3060,2026-03-13 17:22:21,Jackson Patel,jackson.patel1@email.com,fulfilled,paid,266.92,280.85,19.77,0.00,33.70,USD,Columbus,US,323,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567060,3060,2026-03-13 17:22:21,Jackson Patel,jackson.patel1@email.com,fulfilled,paid,266.92,280.85,19.77,0.00,33.70,USD,Columbus,US,324,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567060,3060,2026-03-13 17:22:21,Jackson Patel,jackson.patel1@email.com,fulfilled,paid,266.92,280.85,19.77,0.00,33.70,USD,Columbus,US,325,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567060,3060,2026-03-13 17:22:21,Jackson Patel,jackson.patel1@email.com,fulfilled,paid,266.92,280.85,19.77,0.00,33.70,USD,Columbus,US,326,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567060,3060,2026-03-13 17:22:21,Jackson Patel,jackson.patel1@email.com,fulfilled,paid,266.92,280.85,19.77,0.00,33.70,USD,Columbus,US,327,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567061,3061,2026-03-14 14:43:46,Amelia Walker,amelia.walker2@email.com,fulfilled,paid,313.83,315.85,23.25,0.00,25.27,USD,Phoenix,US,328,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567061,3061,2026-03-14 14:43:46,Amelia Walker,amelia.walker2@email.com,fulfilled,paid,313.83,315.85,23.25,0.00,25.27,USD,Phoenix,US,329,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567061,3061,2026-03-14 14:43:46,Amelia Walker,amelia.walker2@email.com,fulfilled,paid,313.83,315.85,23.25,0.00,25.27,USD,Phoenix,US,330,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567061,3061,2026-03-14 14:43:46,Amelia Walker,amelia.walker2@email.com,fulfilled,paid,313.83,315.85,23.25,0.00,25.27,USD,Phoenix,US,331,Slide Sandals,SKU-BDG-007,5,29.99,149.95
+8101234567061,3061,2026-03-14 14:43:46,Amelia Walker,amelia.walker2@email.com,fulfilled,paid,313.83,315.85,23.25,0.00,25.27,USD,Phoenix,US,332,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567062,3062,2026-03-13 15:25:01,Aria Foster,aria.foster3@email.com,unfulfilled,refunded,258.41,251.86,19.14,0.00,12.59,USD,Columbus,US,333,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567062,3062,2026-03-13 15:25:01,Aria Foster,aria.foster3@email.com,unfulfilled,refunded,258.41,251.86,19.14,0.00,12.59,USD,Columbus,US,334,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567062,3062,2026-03-13 15:25:01,Aria Foster,aria.foster3@email.com,unfulfilled,refunded,258.41,251.86,19.14,0.00,12.59,USD,Columbus,US,335,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567062,3062,2026-03-13 15:25:01,Aria Foster,aria.foster3@email.com,unfulfilled,refunded,258.41,251.86,19.14,0.00,12.59,USD,Columbus,US,336,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567062,3062,2026-03-13 15:25:01,Aria Foster,aria.foster3@email.com,unfulfilled,refunded,258.41,251.86,19.14,0.00,12.59,USD,Columbus,US,337,Sticker Pack,SKU-BDG-011,4,7.99,31.96
+8101234567063,3063,2026-03-10 14:11:59,Ella Kim,ella.kim4@email.com,pending,pending,365.30,375.82,27.06,0.00,37.58,USD,San Antonio,US,338,Canvas Tote,SKU-BDG-004,4,24.99,99.96
+8101234567063,3063,2026-03-10 14:11:59,Ella Kim,ella.kim4@email.com,pending,pending,365.30,375.82,27.06,0.00,37.58,USD,San Antonio,US,339,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567063,3063,2026-03-10 14:11:59,Ella Kim,ella.kim4@email.com,pending,pending,365.30,375.82,27.06,0.00,37.58,USD,San Antonio,US,340,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567063,3063,2026-03-10 14:11:59,Ella Kim,ella.kim4@email.com,pending,pending,365.30,375.82,27.06,0.00,37.58,USD,San Antonio,US,341,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567063,3063,2026-03-10 14:11:59,Ella Kim,ella.kim4@email.com,pending,pending,365.30,375.82,27.06,0.00,37.58,USD,San Antonio,US,342,Baseball Cap,SKU-BDG-003,4,22.99,91.96
+8101234567063,3063,2026-03-10 14:11:59,Ella Kim,ella.kim4@email.com,pending,pending,365.30,375.82,27.06,0.00,37.58,USD,San Antonio,US,343,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567064,3064,2026-03-14 11:52:07,Liam Davis,liam.davis5@email.com,fulfilled,paid,239.38,251.87,17.73,0.00,30.22,USD,Jacksonville,US,344,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567064,3064,2026-03-14 11:52:07,Liam Davis,liam.davis5@email.com,fulfilled,paid,239.38,251.87,17.73,0.00,30.22,USD,Jacksonville,US,345,Graphic Tee,SKU-BDG-002,5,18.99,94.95
+8101234567064,3064,2026-03-14 11:52:07,Liam Davis,liam.davis5@email.com,fulfilled,paid,239.38,251.87,17.73,0.00,30.22,USD,Jacksonville,US,346,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567064,3064,2026-03-14 11:52:07,Liam Davis,liam.davis5@email.com,fulfilled,paid,239.38,251.87,17.73,0.00,30.22,USD,Jacksonville,US,347,Canvas Tote,SKU-BDG-004,5,24.99,124.95
+8101234567065,3065,2026-03-10 11:52:30,Nora Cox,nora.cox6@email.com,pending,pending,416.37,405.82,30.84,0.00,20.29,USD,Dallas,US,348,Canvas Tote,SKU-BDG-004,5,24.99,124.95
+8101234567065,3065,2026-03-10 11:52:30,Nora Cox,nora.cox6@email.com,pending,pending,416.37,405.82,30.84,0.00,20.29,USD,Dallas,US,349,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567065,3065,2026-03-10 11:52:30,Nora Cox,nora.cox6@email.com,pending,pending,416.37,405.82,30.84,0.00,20.29,USD,Dallas,US,350,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567065,3065,2026-03-10 11:52:30,Nora Cox,nora.cox6@email.com,pending,pending,416.37,405.82,30.84,0.00,20.29,USD,Dallas,US,351,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567065,3065,2026-03-10 11:52:30,Nora Cox,nora.cox6@email.com,pending,pending,416.37,405.82,30.84,0.00,20.29,USD,Dallas,US,352,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567065,3065,2026-03-10 11:52:30,Nora Cox,nora.cox6@email.com,pending,pending,416.37,405.82,30.84,0.00,20.29,USD,Dallas,US,353,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567066,3066,2026-03-11 20:00:23,Gabriel Simmons,gabriel.simmons7@email.com,fulfilled,cancelled,206.14,216.90,15.27,0.00,26.03,USD,Orlando,US,354,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567066,3066,2026-03-11 20:00:23,Gabriel Simmons,gabriel.simmons7@email.com,fulfilled,cancelled,206.14,216.90,15.27,0.00,26.03,USD,Orlando,US,355,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567066,3066,2026-03-11 20:00:23,Gabriel Simmons,gabriel.simmons7@email.com,fulfilled,cancelled,206.14,216.90,15.27,0.00,26.03,USD,Orlando,US,356,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567066,3066,2026-03-11 20:00:23,Gabriel Simmons,gabriel.simmons7@email.com,fulfilled,cancelled,206.14,216.90,15.27,0.00,26.03,USD,Orlando,US,357,Belt Bag,SKU-BDG-008,1,27.99,27.99
+8101234567066,3066,2026-03-11 20:00:23,Gabriel Simmons,gabriel.simmons7@email.com,fulfilled,cancelled,206.14,216.90,15.27,0.00,26.03,USD,Orlando,US,358,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567067,3067,2026-03-21 10:34:23,Chloe Parker,chloe.parker8@email.com,fulfilled,pending,295.42,310.84,21.88,0.00,37.30,USD,Phoenix,US,359,Pocket Tee,SKU-BDG-006,5,21.99,109.95
+8101234567067,3067,2026-03-21 10:34:23,Chloe Parker,chloe.parker8@email.com,fulfilled,pending,295.42,310.84,21.88,0.00,37.30,USD,Phoenix,US,360,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567067,3067,2026-03-21 10:34:23,Chloe Parker,chloe.parker8@email.com,fulfilled,pending,295.42,310.84,21.88,0.00,37.30,USD,Phoenix,US,361,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567067,3067,2026-03-21 10:34:23,Chloe Parker,chloe.parker8@email.com,fulfilled,pending,295.42,310.84,21.88,0.00,37.30,USD,Phoenix,US,362,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567067,3067,2026-03-21 10:34:23,Chloe Parker,chloe.parker8@email.com,fulfilled,pending,295.42,310.84,21.88,0.00,37.30,USD,Phoenix,US,363,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567068,3068,2026-03-19 15:46:34,Samuel Russell,samuel.russell9@email.com,fulfilled,paid,253.20,254.83,18.76,0.00,20.39,USD,San Antonio,US,364,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567068,3068,2026-03-19 15:46:34,Samuel Russell,samuel.russell9@email.com,fulfilled,paid,253.20,254.83,18.76,0.00,20.39,USD,San Antonio,US,365,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567068,3068,2026-03-19 15:46:34,Samuel Russell,samuel.russell9@email.com,fulfilled,paid,253.20,254.83,18.76,0.00,20.39,USD,San Antonio,US,366,Reusable Bottle,SKU-BDG-005,5,14.99,74.95
+8101234567068,3068,2026-03-19 15:46:34,Samuel Russell,samuel.russell9@email.com,fulfilled,paid,253.20,254.83,18.76,0.00,20.39,USD,San Antonio,US,367,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567068,3068,2026-03-19 15:46:34,Samuel Russell,samuel.russell9@email.com,fulfilled,paid,253.20,254.83,18.76,0.00,20.39,USD,San Antonio,US,368,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567069,3069,2026-03-19 18:54:10,Evelyn Turner,evelyn.turner10@email.com,fulfilled,paid,312.82,321.83,23.17,0.00,32.18,USD,Orlando,US,369,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567069,3069,2026-03-19 18:54:10,Evelyn Turner,evelyn.turner10@email.com,fulfilled,paid,312.82,321.83,23.17,0.00,32.18,USD,Orlando,US,370,Crew Socks,SKU-BDG-001,5,9.99,49.95
+8101234567069,3069,2026-03-19 18:54:10,Evelyn Turner,evelyn.turner10@email.com,fulfilled,paid,312.82,321.83,23.17,0.00,32.18,USD,Orlando,US,371,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567069,3069,2026-03-19 18:54:10,Evelyn Turner,evelyn.turner10@email.com,fulfilled,paid,312.82,321.83,23.17,0.00,32.18,USD,Orlando,US,372,Phone Stand,SKU-BDG-010,1,12.99,12.99
+8101234567069,3069,2026-03-19 18:54:10,Evelyn Turner,evelyn.turner10@email.com,fulfilled,paid,312.82,321.83,23.17,0.00,32.18,USD,Orlando,US,373,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567069,3069,2026-03-19 18:54:10,Evelyn Turner,evelyn.turner10@email.com,fulfilled,paid,312.82,321.83,23.17,0.00,32.18,USD,Orlando,US,374,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567070,3070,2026-03-20 15:44:46,Mason Harris,mason.harris11@email.com,fulfilled,paid,394.85,384.84,29.25,0.00,19.24,USD,Jacksonville,US,375,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567070,3070,2026-03-20 15:44:46,Mason Harris,mason.harris11@email.com,fulfilled,paid,394.85,384.84,29.25,0.00,19.24,USD,Jacksonville,US,376,Canvas Tote,SKU-BDG-004,5,24.99,124.95
+8101234567070,3070,2026-03-20 15:44:46,Mason Harris,mason.harris11@email.com,fulfilled,paid,394.85,384.84,29.25,0.00,19.24,USD,Jacksonville,US,377,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567070,3070,2026-03-20 15:44:46,Mason Harris,mason.harris11@email.com,fulfilled,paid,394.85,384.84,29.25,0.00,19.24,USD,Jacksonville,US,378,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567070,3070,2026-03-20 15:44:46,Mason Harris,mason.harris11@email.com,fulfilled,paid,394.85,384.84,29.25,0.00,19.24,USD,Jacksonville,US,379,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567071,3071,2026-03-22 20:48:24,Benjamin Ramirez,benjamin.ramirez12@email.com,fulfilled,paid,300.45,292.83,22.26,0.00,14.64,USD,Orlando,US,380,Reusable Bottle,SKU-BDG-005,1,14.99,14.99
+8101234567071,3071,2026-03-22 20:48:24,Benjamin Ramirez,benjamin.ramirez12@email.com,fulfilled,paid,300.45,292.83,22.26,0.00,14.64,USD,Orlando,US,381,Lanyard,SKU-BDG-012,5,8.99,44.95
+8101234567071,3071,2026-03-22 20:48:24,Benjamin Ramirez,benjamin.ramirez12@email.com,fulfilled,paid,300.45,292.83,22.26,0.00,14.64,USD,Orlando,US,382,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567071,3071,2026-03-22 20:48:24,Benjamin Ramirez,benjamin.ramirez12@email.com,fulfilled,paid,300.45,292.83,22.26,0.00,14.64,USD,Orlando,US,383,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567071,3071,2026-03-22 20:48:24,Benjamin Ramirez,benjamin.ramirez12@email.com,fulfilled,paid,300.45,292.83,22.26,0.00,14.64,USD,Orlando,US,384,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567071,3071,2026-03-22 20:48:24,Benjamin Ramirez,benjamin.ramirez12@email.com,fulfilled,paid,300.45,292.83,22.26,0.00,14.64,USD,Orlando,US,385,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567072,3072,2026-03-17 18:05:08,Aiden Turner,aiden.turner13@email.com,fulfilled,paid,182.68,183.86,13.53,0.00,14.71,USD,Dallas,US,386,Sticker Pack,SKU-BDG-011,5,7.99,39.95
+8101234567072,3072,2026-03-17 18:05:08,Aiden Turner,aiden.turner13@email.com,fulfilled,paid,182.68,183.86,13.53,0.00,14.71,USD,Dallas,US,387,Crew Socks,SKU-BDG-001,4,9.99,39.96
+8101234567072,3072,2026-03-17 18:05:08,Aiden Turner,aiden.turner13@email.com,fulfilled,paid,182.68,183.86,13.53,0.00,14.71,USD,Dallas,US,388,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567072,3072,2026-03-17 18:05:08,Aiden Turner,aiden.turner13@email.com,fulfilled,paid,182.68,183.86,13.53,0.00,14.71,USD,Dallas,US,389,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567073,3073,2026-03-19 15:14:18,Sophia Reed,sophia.reed14@email.com,fulfilled,paid,272.04,279.88,20.15,0.00,27.99,USD,Jacksonville,US,390,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567073,3073,2026-03-19 15:14:18,Sophia Reed,sophia.reed14@email.com,fulfilled,paid,272.04,279.88,20.15,0.00,27.99,USD,Jacksonville,US,391,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567073,3073,2026-03-19 15:14:18,Sophia Reed,sophia.reed14@email.com,fulfilled,paid,272.04,279.88,20.15,0.00,27.99,USD,Jacksonville,US,392,Belt Bag,SKU-BDG-008,5,27.99,139.95
+8101234567073,3073,2026-03-19 15:14:18,Sophia Reed,sophia.reed14@email.com,fulfilled,paid,272.04,279.88,20.15,0.00,27.99,USD,Jacksonville,US,393,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567073,3073,2026-03-19 15:14:18,Sophia Reed,sophia.reed14@email.com,fulfilled,paid,272.04,279.88,20.15,0.00,27.99,USD,Jacksonville,US,394,Running Shorts,SKU-BDG-013,1,24.99,24.99
+8101234567074,3074,2026-03-19 19:04:41,Gabriel Collins,gabriel.collins15@email.com,pending,refunded,360.45,370.83,26.70,0.00,37.08,USD,Jacksonville,US,395,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567074,3074,2026-03-19 19:04:41,Gabriel Collins,gabriel.collins15@email.com,pending,refunded,360.45,370.83,26.70,0.00,37.08,USD,Jacksonville,US,396,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567074,3074,2026-03-19 19:04:41,Gabriel Collins,gabriel.collins15@email.com,pending,refunded,360.45,370.83,26.70,0.00,37.08,USD,Jacksonville,US,397,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567074,3074,2026-03-19 19:04:41,Gabriel Collins,gabriel.collins15@email.com,pending,refunded,360.45,370.83,26.70,0.00,37.08,USD,Jacksonville,US,398,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567074,3074,2026-03-19 19:04:41,Gabriel Collins,gabriel.collins15@email.com,pending,refunded,360.45,370.83,26.70,0.00,37.08,USD,Jacksonville,US,399,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567074,3074,2026-03-19 19:04:41,Gabriel Collins,gabriel.collins15@email.com,pending,refunded,360.45,370.83,26.70,0.00,37.08,USD,Jacksonville,US,400,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567075,3075,2026-03-20 17:35:10,Evelyn Lee,evelyn.lee16@email.com,pending,cancelled,190.70,185.86,14.13,0.00,9.29,USD,Dallas,US,401,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567075,3075,2026-03-20 17:35:10,Evelyn Lee,evelyn.lee16@email.com,pending,cancelled,190.70,185.86,14.13,0.00,9.29,USD,Dallas,US,402,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567075,3075,2026-03-20 17:35:10,Evelyn Lee,evelyn.lee16@email.com,pending,cancelled,190.70,185.86,14.13,0.00,9.29,USD,Dallas,US,403,Crew Socks,SKU-BDG-001,4,9.99,39.96
+8101234567075,3075,2026-03-20 17:35:10,Evelyn Lee,evelyn.lee16@email.com,pending,cancelled,190.70,185.86,14.13,0.00,9.29,USD,Dallas,US,404,Lanyard,SKU-BDG-012,5,8.99,44.95
+8101234567076,3076,2026-03-21 17:04:09,Caleb Clark,caleb.clark17@email.com,pending,refunded,440.80,463.81,32.65,0.00,55.66,USD,Orlando,US,405,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567076,3076,2026-03-21 17:04:09,Caleb Clark,caleb.clark17@email.com,pending,refunded,440.80,463.81,32.65,0.00,55.66,USD,Orlando,US,406,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567076,3076,2026-03-21 17:04:09,Caleb Clark,caleb.clark17@email.com,pending,refunded,440.80,463.81,32.65,0.00,55.66,USD,Orlando,US,407,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567076,3076,2026-03-21 17:04:09,Caleb Clark,caleb.clark17@email.com,pending,refunded,440.80,463.81,32.65,0.00,55.66,USD,Orlando,US,408,Belt Bag,SKU-BDG-008,4,27.99,111.96
+8101234567076,3076,2026-03-21 17:04:09,Caleb Clark,caleb.clark17@email.com,pending,refunded,440.80,463.81,32.65,0.00,55.66,USD,Orlando,US,409,Slide Sandals,SKU-BDG-007,5,29.99,149.95
+8101234567076,3076,2026-03-21 17:04:09,Caleb Clark,caleb.clark17@email.com,pending,refunded,440.80,463.81,32.65,0.00,55.66,USD,Orlando,US,410,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567077,3077,2026-03-19 17:41:47,Nathan Davis,nathan.davis18@email.com,fulfilled,paid,246.96,259.85,18.29,0.00,31.18,USD,Phoenix,US,411,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567077,3077,2026-03-19 17:41:47,Nathan Davis,nathan.davis18@email.com,fulfilled,paid,246.96,259.85,18.29,0.00,31.18,USD,Phoenix,US,412,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567077,3077,2026-03-19 17:41:47,Nathan Davis,nathan.davis18@email.com,fulfilled,paid,246.96,259.85,18.29,0.00,31.18,USD,Phoenix,US,413,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567077,3077,2026-03-19 17:41:47,Nathan Davis,nathan.davis18@email.com,fulfilled,paid,246.96,259.85,18.29,0.00,31.18,USD,Phoenix,US,414,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567077,3077,2026-03-19 17:41:47,Nathan Davis,nathan.davis18@email.com,fulfilled,paid,246.96,259.85,18.29,0.00,31.18,USD,Phoenix,US,415,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567078,3078,2026-03-22 12:31:17,Ella Bennett,ella.bennett19@email.com,fulfilled,paid,375.40,377.82,27.81,0.00,30.23,USD,Phoenix,US,416,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567078,3078,2026-03-22 12:31:17,Ella Bennett,ella.bennett19@email.com,fulfilled,paid,375.40,377.82,27.81,0.00,30.23,USD,Phoenix,US,417,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567078,3078,2026-03-22 12:31:17,Ella Bennett,ella.bennett19@email.com,fulfilled,paid,375.40,377.82,27.81,0.00,30.23,USD,Phoenix,US,418,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567078,3078,2026-03-22 12:31:17,Ella Bennett,ella.bennett19@email.com,fulfilled,paid,375.40,377.82,27.81,0.00,30.23,USD,Phoenix,US,419,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567078,3078,2026-03-22 12:31:17,Ella Bennett,ella.bennett19@email.com,fulfilled,paid,375.40,377.82,27.81,0.00,30.23,USD,Phoenix,US,420,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567078,3078,2026-03-22 12:31:17,Ella Bennett,ella.bennett19@email.com,fulfilled,paid,375.40,377.82,27.81,0.00,30.23,USD,Phoenix,US,421,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567079,3079,2026-03-20 18:16:18,Amelia Davis,amelia.davis20@email.com,pending,paid,272.01,279.85,20.15,0.00,27.99,USD,Orlando,US,422,Baseball Cap,SKU-BDG-003,4,22.99,91.96
+8101234567079,3079,2026-03-20 18:16:18,Amelia Davis,amelia.davis20@email.com,pending,paid,272.01,279.85,20.15,0.00,27.99,USD,Orlando,US,423,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567079,3079,2026-03-20 18:16:18,Amelia Davis,amelia.davis20@email.com,pending,paid,272.01,279.85,20.15,0.00,27.99,USD,Orlando,US,424,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567079,3079,2026-03-20 18:16:18,Amelia Davis,amelia.davis20@email.com,pending,paid,272.01,279.85,20.15,0.00,27.99,USD,Orlando,US,425,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567079,3079,2026-03-20 18:16:18,Amelia Davis,amelia.davis20@email.com,pending,paid,272.01,279.85,20.15,0.00,27.99,USD,Orlando,US,426,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567080,3080,2026-03-17 15:22:54,Thomas Parker,thomas.parker21@email.com,fulfilled,paid,368.10,358.77,27.27,0.00,17.94,USD,Columbus,US,427,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567080,3080,2026-03-17 15:22:54,Thomas Parker,thomas.parker21@email.com,fulfilled,paid,368.10,358.77,27.27,0.00,17.94,USD,Columbus,US,428,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567080,3080,2026-03-17 15:22:54,Thomas Parker,thomas.parker21@email.com,fulfilled,paid,368.10,358.77,27.27,0.00,17.94,USD,Columbus,US,429,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567080,3080,2026-03-17 15:22:54,Thomas Parker,thomas.parker21@email.com,fulfilled,paid,368.10,358.77,27.27,0.00,17.94,USD,Columbus,US,430,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567080,3080,2026-03-17 15:22:54,Thomas Parker,thomas.parker21@email.com,fulfilled,paid,368.10,358.77,27.27,0.00,17.94,USD,Columbus,US,431,Graphic Tee,SKU-BDG-002,4,18.99,75.96
+8101234567080,3080,2026-03-17 15:22:54,Thomas Parker,thomas.parker21@email.com,fulfilled,paid,368.10,358.77,27.27,0.00,17.94,USD,Columbus,US,432,Sticker Pack,SKU-BDG-011,5,7.99,39.95
+8101234567080,3080,2026-03-17 15:22:54,Thomas Parker,thomas.parker21@email.com,fulfilled,paid,368.10,358.77,27.27,0.00,17.94,USD,Columbus,US,433,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567081,3081,2026-03-22 15:52:45,Zoe Ward,zoe.ward22@email.com,pending,pending,249.71,256.90,18.50,0.00,25.69,USD,Jacksonville,US,434,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567081,3081,2026-03-22 15:52:45,Zoe Ward,zoe.ward22@email.com,pending,pending,249.71,256.90,18.50,0.00,25.69,USD,Jacksonville,US,435,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567081,3081,2026-03-22 15:52:45,Zoe Ward,zoe.ward22@email.com,pending,pending,249.71,256.90,18.50,0.00,25.69,USD,Jacksonville,US,436,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567081,3081,2026-03-22 15:52:45,Zoe Ward,zoe.ward22@email.com,pending,pending,249.71,256.90,18.50,0.00,25.69,USD,Jacksonville,US,437,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567082,3082,2026-03-18 14:28:20,Isabella Kim,isabella.kim0@email.com,fulfilled,paid,217.39,211.88,16.10,0.00,10.59,USD,Orlando,US,438,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567082,3082,2026-03-18 14:28:20,Isabella Kim,isabella.kim0@email.com,fulfilled,paid,217.39,211.88,16.10,0.00,10.59,USD,Orlando,US,439,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567082,3082,2026-03-18 14:28:20,Isabella Kim,isabella.kim0@email.com,fulfilled,paid,217.39,211.88,16.10,0.00,10.59,USD,Orlando,US,440,Baseball Cap,SKU-BDG-003,1,22.99,22.99
+8101234567082,3082,2026-03-18 14:28:20,Isabella Kim,isabella.kim0@email.com,fulfilled,paid,217.39,211.88,16.10,0.00,10.59,USD,Orlando,US,441,Reusable Bottle,SKU-BDG-005,1,14.99,14.99
+8101234567082,3082,2026-03-18 14:28:20,Isabella Kim,isabella.kim0@email.com,fulfilled,paid,217.39,211.88,16.10,0.00,10.59,USD,Orlando,US,442,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567082,3082,2026-03-18 14:28:20,Isabella Kim,isabella.kim0@email.com,fulfilled,paid,217.39,211.88,16.10,0.00,10.59,USD,Orlando,US,443,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567083,3083,2026-03-19 18:09:10,Nathan Reed,nathan.reed1@email.com,fulfilled,paid,322.78,324.86,23.91,0.00,25.99,USD,Jacksonville,US,444,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567083,3083,2026-03-19 18:09:10,Nathan Reed,nathan.reed1@email.com,fulfilled,paid,322.78,324.86,23.91,0.00,25.99,USD,Jacksonville,US,445,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567083,3083,2026-03-19 18:09:10,Nathan Reed,nathan.reed1@email.com,fulfilled,paid,322.78,324.86,23.91,0.00,25.99,USD,Jacksonville,US,446,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567083,3083,2026-03-19 18:09:10,Nathan Reed,nathan.reed1@email.com,fulfilled,paid,322.78,324.86,23.91,0.00,25.99,USD,Jacksonville,US,447,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567083,3083,2026-03-19 18:09:10,Nathan Reed,nathan.reed1@email.com,fulfilled,paid,322.78,324.86,23.91,0.00,25.99,USD,Jacksonville,US,448,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567083,3083,2026-03-19 18:09:10,Nathan Reed,nathan.reed1@email.com,fulfilled,paid,322.78,324.86,23.91,0.00,25.99,USD,Jacksonville,US,449,Reusable Bottle,SKU-BDG-005,1,14.99,14.99
+8101234567084,3084,2026-03-22 20:53:30,Caleb Kim,caleb.kim2@email.com,fulfilled,refunded,300.15,308.80,22.23,0.00,30.88,USD,Jacksonville,US,450,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567084,3084,2026-03-22 20:53:30,Caleb Kim,caleb.kim2@email.com,fulfilled,refunded,300.15,308.80,22.23,0.00,30.88,USD,Jacksonville,US,451,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567084,3084,2026-03-22 20:53:30,Caleb Kim,caleb.kim2@email.com,fulfilled,refunded,300.15,308.80,22.23,0.00,30.88,USD,Jacksonville,US,452,Graphic Tee,SKU-BDG-002,5,18.99,94.95
+8101234567084,3084,2026-03-22 20:53:30,Caleb Kim,caleb.kim2@email.com,fulfilled,refunded,300.15,308.80,22.23,0.00,30.88,USD,Jacksonville,US,453,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567084,3084,2026-03-22 20:53:30,Caleb Kim,caleb.kim2@email.com,fulfilled,refunded,300.15,308.80,22.23,0.00,30.88,USD,Jacksonville,US,454,Lanyard,SKU-BDG-012,5,8.99,44.95
+8101234567084,3084,2026-03-22 20:53:30,Caleb Kim,caleb.kim2@email.com,fulfilled,refunded,300.15,308.80,22.23,0.00,30.88,USD,Jacksonville,US,455,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567084,3084,2026-03-22 20:53:30,Caleb Kim,caleb.kim2@email.com,fulfilled,refunded,300.15,308.80,22.23,0.00,30.88,USD,Jacksonville,US,456,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567085,3085,2026-03-27 09:35:53,Henry Martinez,henry.martinez3@email.com,fulfilled,paid,349.67,340.81,25.90,0.00,17.04,USD,Columbus,US,457,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567085,3085,2026-03-27 09:35:53,Henry Martinez,henry.martinez3@email.com,fulfilled,paid,349.67,340.81,25.90,0.00,17.04,USD,Columbus,US,458,Lanyard,SKU-BDG-012,4,8.99,35.96
+8101234567085,3085,2026-03-27 09:35:53,Henry Martinez,henry.martinez3@email.com,fulfilled,paid,349.67,340.81,25.90,0.00,17.04,USD,Columbus,US,459,Graphic Tee,SKU-BDG-002,5,18.99,94.95
+8101234567085,3085,2026-03-27 09:35:53,Henry Martinez,henry.martinez3@email.com,fulfilled,paid,349.67,340.81,25.90,0.00,17.04,USD,Columbus,US,460,Canvas Tote,SKU-BDG-004,1,24.99,24.99
+8101234567085,3085,2026-03-27 09:35:53,Henry Martinez,henry.martinez3@email.com,fulfilled,paid,349.67,340.81,25.90,0.00,17.04,USD,Columbus,US,461,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567085,3085,2026-03-27 09:35:53,Henry Martinez,henry.martinez3@email.com,fulfilled,paid,349.67,340.81,25.90,0.00,17.04,USD,Columbus,US,462,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567086,3086,2026-03-28 10:57:54,Emma Murphy,emma.murphy4@email.com,fulfilled,refunded,165.28,173.91,12.24,0.00,20.87,USD,Orlando,US,463,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567086,3086,2026-03-28 10:57:54,Emma Murphy,emma.murphy4@email.com,fulfilled,refunded,165.28,173.91,12.24,0.00,20.87,USD,Orlando,US,464,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567086,3086,2026-03-28 10:57:54,Emma Murphy,emma.murphy4@email.com,fulfilled,refunded,165.28,173.91,12.24,0.00,20.87,USD,Orlando,US,465,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567086,3086,2026-03-28 10:57:54,Emma Murphy,emma.murphy4@email.com,fulfilled,refunded,165.28,173.91,12.24,0.00,20.87,USD,Orlando,US,466,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567086,3086,2026-03-28 10:57:54,Emma Murphy,emma.murphy4@email.com,fulfilled,refunded,165.28,173.91,12.24,0.00,20.87,USD,Orlando,US,467,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567087,3087,2026-03-28 17:14:56,Ella Martinez,ella.martinez5@email.com,fulfilled,pending,397.32,408.77,29.43,0.00,40.88,USD,Columbus,US,468,Lanyard,SKU-BDG-012,4,8.99,35.96
+8101234567087,3087,2026-03-28 17:14:56,Ella Martinez,ella.martinez5@email.com,fulfilled,pending,397.32,408.77,29.43,0.00,40.88,USD,Columbus,US,469,Slide Sandals,SKU-BDG-007,5,29.99,149.95
+8101234567087,3087,2026-03-28 17:14:56,Ella Martinez,ella.martinez5@email.com,fulfilled,pending,397.32,408.77,29.43,0.00,40.88,USD,Columbus,US,470,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567087,3087,2026-03-28 17:14:56,Ella Martinez,ella.martinez5@email.com,fulfilled,pending,397.32,408.77,29.43,0.00,40.88,USD,Columbus,US,471,Phone Stand,SKU-BDG-010,5,12.99,64.95
+8101234567087,3087,2026-03-28 17:14:56,Ella Martinez,ella.martinez5@email.com,fulfilled,pending,397.32,408.77,29.43,0.00,40.88,USD,Columbus,US,472,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567087,3087,2026-03-28 17:14:56,Ella Martinez,ella.martinez5@email.com,fulfilled,pending,397.32,408.77,29.43,0.00,40.88,USD,Columbus,US,473,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567087,3087,2026-03-28 17:14:56,Ella Martinez,ella.martinez5@email.com,fulfilled,pending,397.32,408.77,29.43,0.00,40.88,USD,Columbus,US,474,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567088,3088,2026-03-27 09:31:38,Aurora Martinez,aurora.martinez6@email.com,pending,cancelled,303.58,295.88,22.49,0.00,14.79,USD,Dallas,US,475,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567088,3088,2026-03-27 09:31:38,Aurora Martinez,aurora.martinez6@email.com,pending,cancelled,303.58,295.88,22.49,0.00,14.79,USD,Dallas,US,476,Baseball Cap,SKU-BDG-003,4,22.99,91.96
+8101234567088,3088,2026-03-27 09:31:38,Aurora Martinez,aurora.martinez6@email.com,pending,cancelled,303.58,295.88,22.49,0.00,14.79,USD,Dallas,US,477,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567088,3088,2026-03-27 09:31:38,Aurora Martinez,aurora.martinez6@email.com,pending,cancelled,303.58,295.88,22.49,0.00,14.79,USD,Dallas,US,478,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567088,3088,2026-03-27 09:31:38,Aurora Martinez,aurora.martinez6@email.com,pending,cancelled,303.58,295.88,22.49,0.00,14.79,USD,Dallas,US,479,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567089,3089,2026-03-28 09:19:35,Samuel Patel,samuel.patel7@email.com,unfulfilled,pending,263.53,256.85,19.52,0.00,12.84,USD,Dallas,US,480,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567089,3089,2026-03-28 09:19:35,Samuel Patel,samuel.patel7@email.com,unfulfilled,pending,263.53,256.85,19.52,0.00,12.84,USD,Dallas,US,481,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567089,3089,2026-03-28 09:19:35,Samuel Patel,samuel.patel7@email.com,unfulfilled,pending,263.53,256.85,19.52,0.00,12.84,USD,Dallas,US,482,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567089,3089,2026-03-28 09:19:35,Samuel Patel,samuel.patel7@email.com,unfulfilled,pending,263.53,256.85,19.52,0.00,12.84,USD,Dallas,US,483,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567089,3089,2026-03-28 09:19:35,Samuel Patel,samuel.patel7@email.com,unfulfilled,pending,263.53,256.85,19.52,0.00,12.84,USD,Dallas,US,484,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567089,3089,2026-03-28 09:19:35,Samuel Patel,samuel.patel7@email.com,unfulfilled,pending,263.53,256.85,19.52,0.00,12.84,USD,Dallas,US,485,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567090,3090,2026-03-24 10:11:47,Stella Lee,stella.lee8@email.com,fulfilled,paid,247.74,254.88,18.35,0.00,25.49,USD,Phoenix,US,486,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567090,3090,2026-03-24 10:11:47,Stella Lee,stella.lee8@email.com,fulfilled,paid,247.74,254.88,18.35,0.00,25.49,USD,Phoenix,US,487,Baseball Cap,SKU-BDG-003,4,22.99,91.96
+8101234567090,3090,2026-03-24 10:11:47,Stella Lee,stella.lee8@email.com,fulfilled,paid,247.74,254.88,18.35,0.00,25.49,USD,Phoenix,US,488,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567090,3090,2026-03-24 10:11:47,Stella Lee,stella.lee8@email.com,fulfilled,paid,247.74,254.88,18.35,0.00,25.49,USD,Phoenix,US,489,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567090,3090,2026-03-24 10:11:47,Stella Lee,stella.lee8@email.com,fulfilled,paid,247.74,254.88,18.35,0.00,25.49,USD,Phoenix,US,490,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567091,3091,2026-03-29 11:17:18,Liam Lee,liam.lee9@email.com,fulfilled,paid,292.26,284.85,21.65,0.00,14.24,USD,Orlando,US,491,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567091,3091,2026-03-29 11:17:18,Liam Lee,liam.lee9@email.com,fulfilled,paid,292.26,284.85,21.65,0.00,14.24,USD,Orlando,US,492,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567091,3091,2026-03-29 11:17:18,Liam Lee,liam.lee9@email.com,fulfilled,paid,292.26,284.85,21.65,0.00,14.24,USD,Orlando,US,493,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567091,3091,2026-03-29 11:17:18,Liam Lee,liam.lee9@email.com,fulfilled,paid,292.26,284.85,21.65,0.00,14.24,USD,Orlando,US,494,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567091,3091,2026-03-29 11:17:18,Liam Lee,liam.lee9@email.com,fulfilled,paid,292.26,284.85,21.65,0.00,14.24,USD,Orlando,US,495,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567091,3091,2026-03-29 11:17:18,Liam Lee,liam.lee9@email.com,fulfilled,paid,292.26,284.85,21.65,0.00,14.24,USD,Orlando,US,496,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567092,3092,2026-03-25 18:16:37,Julian Walker,julian.walker10@email.com,pending,cancelled,303.97,319.83,22.52,0.00,38.38,USD,San Antonio,US,497,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567092,3092,2026-03-25 18:16:37,Julian Walker,julian.walker10@email.com,pending,cancelled,303.97,319.83,22.52,0.00,38.38,USD,San Antonio,US,498,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567092,3092,2026-03-25 18:16:37,Julian Walker,julian.walker10@email.com,pending,cancelled,303.97,319.83,22.52,0.00,38.38,USD,San Antonio,US,499,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567092,3092,2026-03-25 18:16:37,Julian Walker,julian.walker10@email.com,pending,cancelled,303.97,319.83,22.52,0.00,38.38,USD,San Antonio,US,500,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567092,3092,2026-03-25 18:16:37,Julian Walker,julian.walker10@email.com,pending,cancelled,303.97,319.83,22.52,0.00,38.38,USD,San Antonio,US,501,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567092,3092,2026-03-25 18:16:37,Julian Walker,julian.walker10@email.com,pending,cancelled,303.97,319.83,22.52,0.00,38.38,USD,San Antonio,US,502,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567093,3093,2026-03-28 15:27:29,Leo Harris,leo.harris11@email.com,unfulfilled,cancelled,274.09,275.86,20.30,0.00,22.07,USD,San Antonio,US,503,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567093,3093,2026-03-28 15:27:29,Leo Harris,leo.harris11@email.com,unfulfilled,cancelled,274.09,275.86,20.30,0.00,22.07,USD,San Antonio,US,504,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567093,3093,2026-03-28 15:27:29,Leo Harris,leo.harris11@email.com,unfulfilled,cancelled,274.09,275.86,20.30,0.00,22.07,USD,San Antonio,US,505,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567093,3093,2026-03-28 15:27:29,Leo Harris,leo.harris11@email.com,unfulfilled,cancelled,274.09,275.86,20.30,0.00,22.07,USD,San Antonio,US,506,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567093,3093,2026-03-28 15:27:29,Leo Harris,leo.harris11@email.com,unfulfilled,cancelled,274.09,275.86,20.30,0.00,22.07,USD,San Antonio,US,507,Running Shorts,SKU-BDG-013,1,24.99,24.99
+8101234567093,3093,2026-03-28 15:27:29,Leo Harris,leo.harris11@email.com,unfulfilled,cancelled,274.09,275.86,20.30,0.00,22.07,USD,San Antonio,US,508,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567094,3094,2026-03-27 21:07:26,Liam Cooper,liam.cooper12@email.com,fulfilled,paid,258.38,271.86,19.14,0.00,32.62,USD,Phoenix,US,509,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567094,3094,2026-03-27 21:07:26,Liam Cooper,liam.cooper12@email.com,fulfilled,paid,258.38,271.86,19.14,0.00,32.62,USD,Phoenix,US,510,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567094,3094,2026-03-27 21:07:26,Liam Cooper,liam.cooper12@email.com,fulfilled,paid,258.38,271.86,19.14,0.00,32.62,USD,Phoenix,US,511,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567094,3094,2026-03-27 21:07:26,Liam Cooper,liam.cooper12@email.com,fulfilled,paid,258.38,271.86,19.14,0.00,32.62,USD,Phoenix,US,512,Baseball Cap,SKU-BDG-003,4,22.99,91.96
+8101234567094,3094,2026-03-27 21:07:26,Liam Cooper,liam.cooper12@email.com,fulfilled,paid,258.38,271.86,19.14,0.00,32.62,USD,Phoenix,US,513,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567094,3094,2026-03-27 21:07:26,Liam Cooper,liam.cooper12@email.com,fulfilled,paid,258.38,271.86,19.14,0.00,32.62,USD,Phoenix,US,514,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567095,3095,2026-03-28 16:37:24,Daniel Ross,daniel.ross13@email.com,unfulfilled,pending,227.03,238.87,16.82,0.00,28.66,USD,Jacksonville,US,515,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567095,3095,2026-03-28 16:37:24,Daniel Ross,daniel.ross13@email.com,unfulfilled,pending,227.03,238.87,16.82,0.00,28.66,USD,Jacksonville,US,516,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567095,3095,2026-03-28 16:37:24,Daniel Ross,daniel.ross13@email.com,unfulfilled,pending,227.03,238.87,16.82,0.00,28.66,USD,Jacksonville,US,517,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567095,3095,2026-03-28 16:37:24,Daniel Ross,daniel.ross13@email.com,unfulfilled,pending,227.03,238.87,16.82,0.00,28.66,USD,Jacksonville,US,518,Lanyard,SKU-BDG-012,4,8.99,35.96
+8101234567095,3095,2026-03-28 16:37:24,Daniel Ross,daniel.ross13@email.com,unfulfilled,pending,227.03,238.87,16.82,0.00,28.66,USD,Jacksonville,US,519,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567096,3096,2026-03-29 16:37:47,Leo Collins,leo.collins14@email.com,pending,paid,209.81,215.86,15.54,0.00,21.59,USD,Columbus,US,520,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567096,3096,2026-03-29 16:37:47,Leo Collins,leo.collins14@email.com,pending,paid,209.81,215.86,15.54,0.00,21.59,USD,Columbus,US,521,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567096,3096,2026-03-29 16:37:47,Leo Collins,leo.collins14@email.com,pending,paid,209.81,215.86,15.54,0.00,21.59,USD,Columbus,US,522,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567096,3096,2026-03-29 16:37:47,Leo Collins,leo.collins14@email.com,pending,paid,209.81,215.86,15.54,0.00,21.59,USD,Columbus,US,523,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567096,3096,2026-03-29 16:37:47,Leo Collins,leo.collins14@email.com,pending,paid,209.81,215.86,15.54,0.00,21.59,USD,Columbus,US,524,Crew Socks,SKU-BDG-001,4,9.99,39.96
+8101234567097,3097,2026-03-28 13:23:20,Harper Griffin,harper.griffin15@email.com,fulfilled,cancelled,246.10,239.86,18.23,0.00,11.99,USD,Jacksonville,US,525,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567097,3097,2026-03-28 13:23:20,Harper Griffin,harper.griffin15@email.com,fulfilled,cancelled,246.10,239.86,18.23,0.00,11.99,USD,Jacksonville,US,526,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567097,3097,2026-03-28 13:23:20,Harper Griffin,harper.griffin15@email.com,fulfilled,cancelled,246.10,239.86,18.23,0.00,11.99,USD,Jacksonville,US,527,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567097,3097,2026-03-28 13:23:20,Harper Griffin,harper.griffin15@email.com,fulfilled,cancelled,246.10,239.86,18.23,0.00,11.99,USD,Jacksonville,US,528,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567097,3097,2026-03-28 13:23:20,Harper Griffin,harper.griffin15@email.com,fulfilled,cancelled,246.10,239.86,18.23,0.00,11.99,USD,Jacksonville,US,529,Belt Bag,SKU-BDG-008,1,27.99,27.99
+8101234567097,3097,2026-03-28 13:23:20,Harper Griffin,harper.griffin15@email.com,fulfilled,cancelled,246.10,239.86,18.23,0.00,11.99,USD,Jacksonville,US,530,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567098,3098,2026-03-23 12:40:19,Stella Ramirez,stella.ramirez16@email.com,fulfilled,paid,375.99,386.82,27.85,0.00,38.68,USD,San Antonio,US,531,Running Shorts,SKU-BDG-013,1,24.99,24.99
+8101234567098,3098,2026-03-23 12:40:19,Stella Ramirez,stella.ramirez16@email.com,fulfilled,paid,375.99,386.82,27.85,0.00,38.68,USD,San Antonio,US,532,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567098,3098,2026-03-23 12:40:19,Stella Ramirez,stella.ramirez16@email.com,fulfilled,paid,375.99,386.82,27.85,0.00,38.68,USD,San Antonio,US,533,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567098,3098,2026-03-23 12:40:19,Stella Ramirez,stella.ramirez16@email.com,fulfilled,paid,375.99,386.82,27.85,0.00,38.68,USD,San Antonio,US,534,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567098,3098,2026-03-23 12:40:19,Stella Ramirez,stella.ramirez16@email.com,fulfilled,paid,375.99,386.82,27.85,0.00,38.68,USD,San Antonio,US,535,Slide Sandals,SKU-BDG-007,5,29.99,149.95
+8101234567098,3098,2026-03-23 12:40:19,Stella Ramirez,stella.ramirez16@email.com,fulfilled,paid,375.99,386.82,27.85,0.00,38.68,USD,San Antonio,US,536,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567098,3098,2026-03-23 12:40:19,Stella Ramirez,stella.ramirez16@email.com,fulfilled,paid,375.99,386.82,27.85,0.00,38.68,USD,San Antonio,US,537,Lanyard,SKU-BDG-012,1,8.99,8.99
+8101234567099,3099,2026-03-25 18:36:59,Penelope Nguyen,penelope.nguyen17@email.com,fulfilled,paid,286.99,288.84,21.26,0.00,23.11,USD,Phoenix,US,538,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567099,3099,2026-03-25 18:36:59,Penelope Nguyen,penelope.nguyen17@email.com,fulfilled,paid,286.99,288.84,21.26,0.00,23.11,USD,Phoenix,US,539,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567099,3099,2026-03-25 18:36:59,Penelope Nguyen,penelope.nguyen17@email.com,fulfilled,paid,286.99,288.84,21.26,0.00,23.11,USD,Phoenix,US,540,Reusable Bottle,SKU-BDG-005,4,14.99,59.96
+8101234567099,3099,2026-03-25 18:36:59,Penelope Nguyen,penelope.nguyen17@email.com,fulfilled,paid,286.99,288.84,21.26,0.00,23.11,USD,Phoenix,US,541,Notebook Set,SKU-BDG-009,5,15.99,79.95
+8101234567099,3099,2026-03-25 18:36:59,Penelope Nguyen,penelope.nguyen17@email.com,fulfilled,paid,286.99,288.84,21.26,0.00,23.11,USD,Phoenix,US,542,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567100,3100,2026-03-28 13:57:45,Amelia Davis,amelia.davis18@email.com,unfulfilled,pending,263.12,276.85,19.49,0.00,33.22,USD,Columbus,US,543,Graphic Tee,SKU-BDG-002,4,18.99,75.96
+8101234567100,3100,2026-03-28 13:57:45,Amelia Davis,amelia.davis18@email.com,unfulfilled,pending,263.12,276.85,19.49,0.00,33.22,USD,Columbus,US,544,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567100,3100,2026-03-28 13:57:45,Amelia Davis,amelia.davis18@email.com,unfulfilled,pending,263.12,276.85,19.49,0.00,33.22,USD,Columbus,US,545,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567100,3100,2026-03-28 13:57:45,Amelia Davis,amelia.davis18@email.com,unfulfilled,pending,263.12,276.85,19.49,0.00,33.22,USD,Columbus,US,546,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567100,3100,2026-03-28 13:57:45,Amelia Davis,amelia.davis18@email.com,unfulfilled,pending,263.12,276.85,19.49,0.00,33.22,USD,Columbus,US,547,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567101,3101,2026-03-29 12:09:39,Mia Nguyen,mia.nguyen19@email.com,fulfilled,paid,142.01,142.92,10.52,0.00,11.43,USD,Orlando,US,548,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567101,3101,2026-03-29 12:09:39,Mia Nguyen,mia.nguyen19@email.com,fulfilled,paid,142.01,142.92,10.52,0.00,11.43,USD,Orlando,US,549,Reusable Bottle,SKU-BDG-005,1,14.99,14.99
+8101234567101,3101,2026-03-29 12:09:39,Mia Nguyen,mia.nguyen19@email.com,fulfilled,paid,142.01,142.92,10.52,0.00,11.43,USD,Orlando,US,550,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567101,3101,2026-03-29 12:09:39,Mia Nguyen,mia.nguyen19@email.com,fulfilled,paid,142.01,142.92,10.52,0.00,11.43,USD,Orlando,US,551,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567101,3101,2026-03-29 12:09:39,Mia Nguyen,mia.nguyen19@email.com,fulfilled,paid,142.01,142.92,10.52,0.00,11.43,USD,Orlando,US,552,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567102,3102,2026-03-27 17:20:30,Elijah Brown,elijah.brown20@email.com,fulfilled,paid,342.93,352.81,25.40,0.00,35.28,USD,San Antonio,US,553,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567102,3102,2026-03-27 17:20:30,Elijah Brown,elijah.brown20@email.com,fulfilled,paid,342.93,352.81,25.40,0.00,35.28,USD,San Antonio,US,554,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567102,3102,2026-03-27 17:20:30,Elijah Brown,elijah.brown20@email.com,fulfilled,paid,342.93,352.81,25.40,0.00,35.28,USD,San Antonio,US,555,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567102,3102,2026-03-27 17:20:30,Elijah Brown,elijah.brown20@email.com,fulfilled,paid,342.93,352.81,25.40,0.00,35.28,USD,San Antonio,US,556,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567102,3102,2026-03-27 17:20:30,Elijah Brown,elijah.brown20@email.com,fulfilled,paid,342.93,352.81,25.40,0.00,35.28,USD,San Antonio,US,557,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567102,3102,2026-03-27 17:20:30,Elijah Brown,elijah.brown20@email.com,fulfilled,paid,342.93,352.81,25.40,0.00,35.28,USD,San Antonio,US,558,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567102,3102,2026-03-27 17:20:30,Elijah Brown,elijah.brown20@email.com,fulfilled,paid,342.93,352.81,25.40,0.00,35.28,USD,San Antonio,US,559,Graphic Tee,SKU-BDG-002,4,18.99,75.96
+8101234567103,3103,2026-03-28 16:12:55,Elijah Cox,elijah.cox21@email.com,fulfilled,paid,327.70,329.82,24.27,0.00,26.39,USD,San Antonio,US,560,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567103,3103,2026-03-28 16:12:55,Elijah Cox,elijah.cox21@email.com,fulfilled,paid,327.70,329.82,24.27,0.00,26.39,USD,San Antonio,US,561,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567103,3103,2026-03-28 16:12:55,Elijah Cox,elijah.cox21@email.com,fulfilled,paid,327.70,329.82,24.27,0.00,26.39,USD,San Antonio,US,562,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567103,3103,2026-03-28 16:12:55,Elijah Cox,elijah.cox21@email.com,fulfilled,paid,327.70,329.82,24.27,0.00,26.39,USD,San Antonio,US,563,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567103,3103,2026-03-28 16:12:55,Elijah Cox,elijah.cox21@email.com,fulfilled,paid,327.70,329.82,24.27,0.00,26.39,USD,San Antonio,US,564,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567103,3103,2026-03-28 16:12:55,Elijah Cox,elijah.cox21@email.com,fulfilled,paid,327.70,329.82,24.27,0.00,26.39,USD,San Antonio,US,565,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567104,3104,2026-03-23 09:13:45,Alexander Anderson,alexander.anderson22@email.com,fulfilled,paid,183.70,184.88,13.61,0.00,14.79,USD,Columbus,US,566,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567104,3104,2026-03-23 09:13:45,Alexander Anderson,alexander.anderson22@email.com,fulfilled,paid,183.70,184.88,13.61,0.00,14.79,USD,Columbus,US,567,Notebook Set,SKU-BDG-009,5,15.99,79.95
+8101234567104,3104,2026-03-23 09:13:45,Alexander Anderson,alexander.anderson22@email.com,fulfilled,paid,183.70,184.88,13.61,0.00,14.79,USD,Columbus,US,568,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567104,3104,2026-03-23 09:13:45,Alexander Anderson,alexander.anderson22@email.com,fulfilled,paid,183.70,184.88,13.61,0.00,14.79,USD,Columbus,US,569,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567105,3105,2026-04-03 11:22:02,Sophia Foster,sophia.foster0@email.com,pending,cancelled,308.96,317.86,22.89,0.00,31.79,USD,Columbus,US,570,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567105,3105,2026-04-03 11:22:02,Sophia Foster,sophia.foster0@email.com,pending,cancelled,308.96,317.86,22.89,0.00,31.79,USD,Columbus,US,571,Canvas Tote,SKU-BDG-004,4,24.99,99.96
+8101234567105,3105,2026-04-03 11:22:02,Sophia Foster,sophia.foster0@email.com,pending,cancelled,308.96,317.86,22.89,0.00,31.79,USD,Columbus,US,572,Belt Bag,SKU-BDG-008,4,27.99,111.96
+8101234567105,3105,2026-04-03 11:22:02,Sophia Foster,sophia.foster0@email.com,pending,cancelled,308.96,317.86,22.89,0.00,31.79,USD,Columbus,US,573,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567105,3105,2026-04-03 11:22:02,Sophia Foster,sophia.foster0@email.com,pending,cancelled,308.96,317.86,22.89,0.00,31.79,USD,Columbus,US,574,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567106,3106,2026-04-01 13:38:28,Lucas Ross,lucas.ross1@email.com,fulfilled,paid,259.46,252.88,19.22,0.00,12.64,USD,Phoenix,US,575,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567106,3106,2026-04-01 13:38:28,Lucas Ross,lucas.ross1@email.com,fulfilled,paid,259.46,252.88,19.22,0.00,12.64,USD,Phoenix,US,576,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567106,3106,2026-04-01 13:38:28,Lucas Ross,lucas.ross1@email.com,fulfilled,paid,259.46,252.88,19.22,0.00,12.64,USD,Phoenix,US,577,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567106,3106,2026-04-01 13:38:28,Lucas Ross,lucas.ross1@email.com,fulfilled,paid,259.46,252.88,19.22,0.00,12.64,USD,Phoenix,US,578,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567107,3107,2026-03-30 20:37:26,Leo Kim,leo.kim2@email.com,fulfilled,paid,331.70,333.84,24.57,0.00,26.71,USD,Orlando,US,579,Graphic Tee,SKU-BDG-002,4,18.99,75.96
+8101234567107,3107,2026-03-30 20:37:26,Leo Kim,leo.kim2@email.com,fulfilled,paid,331.70,333.84,24.57,0.00,26.71,USD,Orlando,US,580,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567107,3107,2026-03-30 20:37:26,Leo Kim,leo.kim2@email.com,fulfilled,paid,331.70,333.84,24.57,0.00,26.71,USD,Orlando,US,581,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567107,3107,2026-03-30 20:37:26,Leo Kim,leo.kim2@email.com,fulfilled,paid,331.70,333.84,24.57,0.00,26.71,USD,Orlando,US,582,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567107,3107,2026-03-30 20:37:26,Leo Kim,leo.kim2@email.com,fulfilled,paid,331.70,333.84,24.57,0.00,26.71,USD,Orlando,US,583,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567107,3107,2026-03-30 20:37:26,Leo Kim,leo.kim2@email.com,fulfilled,paid,331.70,333.84,24.57,0.00,26.71,USD,Orlando,US,584,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567108,3108,2026-04-02 21:42:46,Ella Simmons,ella.simmons3@email.com,fulfilled,paid,310.69,302.82,23.01,0.00,15.14,USD,Dallas,US,585,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567108,3108,2026-04-02 21:42:46,Ella Simmons,ella.simmons3@email.com,fulfilled,paid,310.69,302.82,23.01,0.00,15.14,USD,Dallas,US,586,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567108,3108,2026-04-02 21:42:46,Ella Simmons,ella.simmons3@email.com,fulfilled,paid,310.69,302.82,23.01,0.00,15.14,USD,Dallas,US,587,Reusable Bottle,SKU-BDG-005,4,14.99,59.96
+8101234567108,3108,2026-04-02 21:42:46,Ella Simmons,ella.simmons3@email.com,fulfilled,paid,310.69,302.82,23.01,0.00,15.14,USD,Dallas,US,588,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567108,3108,2026-04-02 21:42:46,Ella Simmons,ella.simmons3@email.com,fulfilled,paid,310.69,302.82,23.01,0.00,15.14,USD,Dallas,US,589,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567108,3108,2026-04-02 21:42:46,Ella Simmons,ella.simmons3@email.com,fulfilled,paid,310.69,302.82,23.01,0.00,15.14,USD,Dallas,US,590,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567109,3109,2026-04-03 11:37:06,Jackson Kim,jackson.kim4@email.com,pending,cancelled,295.40,310.82,21.88,0.00,37.30,USD,San Antonio,US,591,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567109,3109,2026-04-03 11:37:06,Jackson Kim,jackson.kim4@email.com,pending,cancelled,295.40,310.82,21.88,0.00,37.30,USD,San Antonio,US,592,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567109,3109,2026-04-03 11:37:06,Jackson Kim,jackson.kim4@email.com,pending,cancelled,295.40,310.82,21.88,0.00,37.30,USD,San Antonio,US,593,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567109,3109,2026-04-03 11:37:06,Jackson Kim,jackson.kim4@email.com,pending,cancelled,295.40,310.82,21.88,0.00,37.30,USD,San Antonio,US,594,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567109,3109,2026-04-03 11:37:06,Jackson Kim,jackson.kim4@email.com,pending,cancelled,295.40,310.82,21.88,0.00,37.30,USD,San Antonio,US,595,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567109,3109,2026-04-03 11:37:06,Jackson Kim,jackson.kim4@email.com,pending,cancelled,295.40,310.82,21.88,0.00,37.30,USD,San Antonio,US,596,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567110,3110,2026-04-02 16:58:17,Aurora Wilson,aurora.wilson5@email.com,unfulfilled,paid,184.57,179.90,13.67,0.00,9.00,USD,Dallas,US,597,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567110,3110,2026-04-02 16:58:17,Aurora Wilson,aurora.wilson5@email.com,unfulfilled,paid,184.57,179.90,13.67,0.00,9.00,USD,Dallas,US,598,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567110,3110,2026-04-02 16:58:17,Aurora Wilson,aurora.wilson5@email.com,unfulfilled,paid,184.57,179.90,13.67,0.00,9.00,USD,Dallas,US,599,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567110,3110,2026-04-02 16:58:17,Aurora Wilson,aurora.wilson5@email.com,unfulfilled,paid,184.57,179.90,13.67,0.00,9.00,USD,Dallas,US,600,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567111,3111,2026-04-01 18:47:18,Henry Ward,henry.ward6@email.com,fulfilled,refunded,204.54,205.86,15.15,0.00,16.47,USD,Dallas,US,601,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567111,3111,2026-04-01 18:47:18,Henry Ward,henry.ward6@email.com,fulfilled,refunded,204.54,205.86,15.15,0.00,16.47,USD,Dallas,US,602,Pocket Tee,SKU-BDG-006,5,21.99,109.95
+8101234567111,3111,2026-04-01 18:47:18,Henry Ward,henry.ward6@email.com,fulfilled,refunded,204.54,205.86,15.15,0.00,16.47,USD,Dallas,US,603,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567111,3111,2026-04-01 18:47:18,Henry Ward,henry.ward6@email.com,fulfilled,refunded,204.54,205.86,15.15,0.00,16.47,USD,Dallas,US,604,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567111,3111,2026-04-01 18:47:18,Henry Ward,henry.ward6@email.com,fulfilled,refunded,204.54,205.86,15.15,0.00,16.47,USD,Dallas,US,605,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567111,3111,2026-04-01 18:47:18,Henry Ward,henry.ward6@email.com,fulfilled,refunded,204.54,205.86,15.15,0.00,16.47,USD,Dallas,US,606,Phone Stand,SKU-BDG-010,1,12.99,12.99
+8101234567112,3112,2026-03-31 18:27:41,Ethan Martinez,ethan.martinez7@email.com,fulfilled,paid,241.35,242.90,17.88,0.00,19.43,USD,Dallas,US,607,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567112,3112,2026-03-31 18:27:41,Ethan Martinez,ethan.martinez7@email.com,fulfilled,paid,241.35,242.90,17.88,0.00,19.43,USD,Dallas,US,608,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567112,3112,2026-03-31 18:27:41,Ethan Martinez,ethan.martinez7@email.com,fulfilled,paid,241.35,242.90,17.88,0.00,19.43,USD,Dallas,US,609,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567112,3112,2026-03-31 18:27:41,Ethan Martinez,ethan.martinez7@email.com,fulfilled,paid,241.35,242.90,17.88,0.00,19.43,USD,Dallas,US,610,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567112,3112,2026-03-31 18:27:41,Ethan Martinez,ethan.martinez7@email.com,fulfilled,paid,241.35,242.90,17.88,0.00,19.43,USD,Dallas,US,611,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567113,3113,2026-04-04 15:17:40,Evelyn Rodriguez,evelyn.rodriguez8@email.com,fulfilled,refunded,350.51,368.81,25.96,0.00,44.26,USD,Orlando,US,612,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567113,3113,2026-04-04 15:17:40,Evelyn Rodriguez,evelyn.rodriguez8@email.com,fulfilled,refunded,350.51,368.81,25.96,0.00,44.26,USD,Orlando,US,613,Canvas Tote,SKU-BDG-004,4,24.99,99.96
+8101234567113,3113,2026-04-04 15:17:40,Evelyn Rodriguez,evelyn.rodriguez8@email.com,fulfilled,refunded,350.51,368.81,25.96,0.00,44.26,USD,Orlando,US,614,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567113,3113,2026-04-04 15:17:40,Evelyn Rodriguez,evelyn.rodriguez8@email.com,fulfilled,refunded,350.51,368.81,25.96,0.00,44.26,USD,Orlando,US,615,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567113,3113,2026-04-04 15:17:40,Evelyn Rodriguez,evelyn.rodriguez8@email.com,fulfilled,refunded,350.51,368.81,25.96,0.00,44.26,USD,Orlando,US,616,Graphic Tee,SKU-BDG-002,5,18.99,94.95
+8101234567113,3113,2026-04-04 15:17:40,Evelyn Rodriguez,evelyn.rodriguez8@email.com,fulfilled,refunded,350.51,368.81,25.96,0.00,44.26,USD,Orlando,US,617,Reusable Bottle,SKU-BDG-005,1,14.99,14.99
+8101234567114,3114,2026-04-05 11:21:02,Lily Murphy,lily.murphy9@email.com,fulfilled,pending,194.29,199.89,14.39,0.00,19.99,USD,San Antonio,US,618,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567114,3114,2026-04-05 11:21:02,Lily Murphy,lily.murphy9@email.com,fulfilled,pending,194.29,199.89,14.39,0.00,19.99,USD,San Antonio,US,619,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567114,3114,2026-04-05 11:21:02,Lily Murphy,lily.murphy9@email.com,fulfilled,pending,194.29,199.89,14.39,0.00,19.99,USD,San Antonio,US,620,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567114,3114,2026-04-05 11:21:02,Lily Murphy,lily.murphy9@email.com,fulfilled,pending,194.29,199.89,14.39,0.00,19.99,USD,San Antonio,US,621,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567115,3115,2026-04-01 15:59:59,Emma Powell,emma.powell10@email.com,pending,pending,304.08,312.85,22.52,0.00,31.29,USD,Orlando,US,622,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567115,3115,2026-04-01 15:59:59,Emma Powell,emma.powell10@email.com,pending,pending,304.08,312.85,22.52,0.00,31.29,USD,Orlando,US,623,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567115,3115,2026-04-01 15:59:59,Emma Powell,emma.powell10@email.com,pending,pending,304.08,312.85,22.52,0.00,31.29,USD,Orlando,US,624,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567115,3115,2026-04-01 15:59:59,Emma Powell,emma.powell10@email.com,pending,pending,304.08,312.85,22.52,0.00,31.29,USD,Orlando,US,625,Belt Bag,SKU-BDG-008,5,27.99,139.95
+8101234567115,3115,2026-04-01 15:59:59,Emma Powell,emma.powell10@email.com,pending,pending,304.08,312.85,22.52,0.00,31.29,USD,Orlando,US,626,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567115,3115,2026-04-01 15:59:59,Emma Powell,emma.powell10@email.com,pending,pending,304.08,312.85,22.52,0.00,31.29,USD,Orlando,US,627,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567116,3116,2026-04-02 19:31:08,Ethan Patel,ethan.patel11@email.com,unfulfilled,pending,269.09,276.84,19.93,0.00,27.68,USD,Columbus,US,628,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567116,3116,2026-04-02 19:31:08,Ethan Patel,ethan.patel11@email.com,unfulfilled,pending,269.09,276.84,19.93,0.00,27.68,USD,Columbus,US,629,Belt Bag,SKU-BDG-008,4,27.99,111.96
+8101234567116,3116,2026-04-02 19:31:08,Ethan Patel,ethan.patel11@email.com,unfulfilled,pending,269.09,276.84,19.93,0.00,27.68,USD,Columbus,US,630,Crew Socks,SKU-BDG-001,5,9.99,49.95
+8101234567116,3116,2026-04-02 19:31:08,Ethan Patel,ethan.patel11@email.com,unfulfilled,pending,269.09,276.84,19.93,0.00,27.68,USD,Columbus,US,631,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567116,3116,2026-04-02 19:31:08,Ethan Patel,ethan.patel11@email.com,unfulfilled,pending,269.09,276.84,19.93,0.00,27.68,USD,Columbus,US,632,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567117,3117,2026-04-04 15:10:31,Mason Anderson,mason.anderson12@email.com,pending,pending,402.76,423.78,29.83,0.00,50.85,USD,San Antonio,US,633,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567117,3117,2026-04-04 15:10:31,Mason Anderson,mason.anderson12@email.com,pending,pending,402.76,423.78,29.83,0.00,50.85,USD,San Antonio,US,634,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567117,3117,2026-04-04 15:10:31,Mason Anderson,mason.anderson12@email.com,pending,pending,402.76,423.78,29.83,0.00,50.85,USD,San Antonio,US,635,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567117,3117,2026-04-04 15:10:31,Mason Anderson,mason.anderson12@email.com,pending,pending,402.76,423.78,29.83,0.00,50.85,USD,San Antonio,US,636,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567117,3117,2026-04-04 15:10:31,Mason Anderson,mason.anderson12@email.com,pending,pending,402.76,423.78,29.83,0.00,50.85,USD,San Antonio,US,637,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567117,3117,2026-04-04 15:10:31,Mason Anderson,mason.anderson12@email.com,pending,pending,402.76,423.78,29.83,0.00,50.85,USD,San Antonio,US,638,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567117,3117,2026-04-04 15:10:31,Mason Anderson,mason.anderson12@email.com,pending,pending,402.76,423.78,29.83,0.00,50.85,USD,San Antonio,US,639,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567118,3118,2026-04-02 10:10:57,Daniel Walker,daniel.walker13@email.com,pending,cancelled,253.55,260.86,18.78,0.00,26.09,USD,Phoenix,US,640,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567118,3118,2026-04-02 10:10:57,Daniel Walker,daniel.walker13@email.com,pending,cancelled,253.55,260.86,18.78,0.00,26.09,USD,Phoenix,US,641,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567118,3118,2026-04-02 10:10:57,Daniel Walker,daniel.walker13@email.com,pending,cancelled,253.55,260.86,18.78,0.00,26.09,USD,Phoenix,US,642,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567118,3118,2026-04-02 10:10:57,Daniel Walker,daniel.walker13@email.com,pending,cancelled,253.55,260.86,18.78,0.00,26.09,USD,Phoenix,US,643,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567118,3118,2026-04-02 10:10:57,Daniel Walker,daniel.walker13@email.com,pending,cancelled,253.55,260.86,18.78,0.00,26.09,USD,Phoenix,US,644,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567118,3118,2026-04-02 10:10:57,Daniel Walker,daniel.walker13@email.com,pending,cancelled,253.55,260.86,18.78,0.00,26.09,USD,Phoenix,US,645,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567119,3119,2026-04-01 20:53:59,Nathan Rodriguez,nathan.rodriguez14@email.com,unfulfilled,pending,247.28,248.87,18.32,0.00,19.91,USD,San Antonio,US,646,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567119,3119,2026-04-01 20:53:59,Nathan Rodriguez,nathan.rodriguez14@email.com,unfulfilled,pending,247.28,248.87,18.32,0.00,19.91,USD,San Antonio,US,647,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567119,3119,2026-04-01 20:53:59,Nathan Rodriguez,nathan.rodriguez14@email.com,unfulfilled,pending,247.28,248.87,18.32,0.00,19.91,USD,San Antonio,US,648,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567119,3119,2026-04-01 20:53:59,Nathan Rodriguez,nathan.rodriguez14@email.com,unfulfilled,pending,247.28,248.87,18.32,0.00,19.91,USD,San Antonio,US,649,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567119,3119,2026-04-01 20:53:59,Nathan Rodriguez,nathan.rodriguez14@email.com,unfulfilled,pending,247.28,248.87,18.32,0.00,19.91,USD,San Antonio,US,650,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567119,3119,2026-04-01 20:53:59,Nathan Rodriguez,nathan.rodriguez14@email.com,unfulfilled,pending,247.28,248.87,18.32,0.00,19.91,USD,San Antonio,US,651,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567120,3120,2026-04-02 10:17:07,Amelia Clark,amelia.clark15@email.com,fulfilled,paid,378.99,398.77,28.07,0.00,47.85,USD,Phoenix,US,652,Graphic Tee,SKU-BDG-002,4,18.99,75.96
+8101234567120,3120,2026-04-02 10:17:07,Amelia Clark,amelia.clark15@email.com,fulfilled,paid,378.99,398.77,28.07,0.00,47.85,USD,Phoenix,US,653,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567120,3120,2026-04-02 10:17:07,Amelia Clark,amelia.clark15@email.com,fulfilled,paid,378.99,398.77,28.07,0.00,47.85,USD,Phoenix,US,654,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567120,3120,2026-04-02 10:17:07,Amelia Clark,amelia.clark15@email.com,fulfilled,paid,378.99,398.77,28.07,0.00,47.85,USD,Phoenix,US,655,Lanyard,SKU-BDG-012,4,8.99,35.96
+8101234567120,3120,2026-04-02 10:17:07,Amelia Clark,amelia.clark15@email.com,fulfilled,paid,378.99,398.77,28.07,0.00,47.85,USD,Phoenix,US,656,Running Shorts,SKU-BDG-013,5,24.99,124.95
+8101234567120,3120,2026-04-02 10:17:07,Amelia Clark,amelia.clark15@email.com,fulfilled,paid,378.99,398.77,28.07,0.00,47.85,USD,Phoenix,US,657,Canvas Tote,SKU-BDG-004,4,24.99,99.96
+8101234567120,3120,2026-04-02 10:17:07,Amelia Clark,amelia.clark15@email.com,fulfilled,paid,378.99,398.77,28.07,0.00,47.85,USD,Phoenix,US,658,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567121,3121,2026-04-04 16:54:32,Ava Martinez,ava.martinez16@email.com,fulfilled,paid,193.77,203.89,14.35,0.00,24.47,USD,Phoenix,US,659,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567121,3121,2026-04-04 16:54:32,Ava Martinez,ava.martinez16@email.com,fulfilled,paid,193.77,203.89,14.35,0.00,24.47,USD,Phoenix,US,660,Reusable Bottle,SKU-BDG-005,5,14.99,74.95
+8101234567121,3121,2026-04-04 16:54:32,Ava Martinez,ava.martinez16@email.com,fulfilled,paid,193.77,203.89,14.35,0.00,24.47,USD,Phoenix,US,661,Pocket Tee,SKU-BDG-006,1,21.99,21.99
+8101234567121,3121,2026-04-04 16:54:32,Ava Martinez,ava.martinez16@email.com,fulfilled,paid,193.77,203.89,14.35,0.00,24.47,USD,Phoenix,US,662,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567122,3122,2026-03-30 19:59:58,Alexander Brooks,alexander.brooks17@email.com,fulfilled,paid,236.53,248.87,17.52,0.00,29.86,USD,Orlando,US,663,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567122,3122,2026-03-30 19:59:58,Alexander Brooks,alexander.brooks17@email.com,fulfilled,paid,236.53,248.87,17.52,0.00,29.86,USD,Orlando,US,664,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567122,3122,2026-03-30 19:59:58,Alexander Brooks,alexander.brooks17@email.com,fulfilled,paid,236.53,248.87,17.52,0.00,29.86,USD,Orlando,US,665,Graphic Tee,SKU-BDG-002,4,18.99,75.96
+8101234567122,3122,2026-03-30 19:59:58,Alexander Brooks,alexander.brooks17@email.com,fulfilled,paid,236.53,248.87,17.52,0.00,29.86,USD,Orlando,US,666,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567122,3122,2026-03-30 19:59:58,Alexander Brooks,alexander.brooks17@email.com,fulfilled,paid,236.53,248.87,17.52,0.00,29.86,USD,Orlando,US,667,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567123,3123,2026-03-31 19:54:58,Julian Ramirez,julian.ramirez18@email.com,fulfilled,paid,196.62,206.89,14.56,0.00,24.83,USD,Columbus,US,668,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567123,3123,2026-03-31 19:54:58,Julian Ramirez,julian.ramirez18@email.com,fulfilled,paid,196.62,206.89,14.56,0.00,24.83,USD,Columbus,US,669,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567123,3123,2026-03-31 19:54:58,Julian Ramirez,julian.ramirez18@email.com,fulfilled,paid,196.62,206.89,14.56,0.00,24.83,USD,Columbus,US,670,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567123,3123,2026-03-31 19:54:58,Julian Ramirez,julian.ramirez18@email.com,fulfilled,paid,196.62,206.89,14.56,0.00,24.83,USD,Columbus,US,671,Baseball Cap,SKU-BDG-003,4,22.99,91.96
+8101234567124,3124,2026-04-03 15:29:36,Stella Powell,stella.powell19@email.com,fulfilled,paid,327.41,336.84,24.25,0.00,33.68,USD,Columbus,US,672,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567124,3124,2026-04-03 15:29:36,Stella Powell,stella.powell19@email.com,fulfilled,paid,327.41,336.84,24.25,0.00,33.68,USD,Columbus,US,673,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567124,3124,2026-04-03 15:29:36,Stella Powell,stella.powell19@email.com,fulfilled,paid,327.41,336.84,24.25,0.00,33.68,USD,Columbus,US,674,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567124,3124,2026-04-03 15:29:36,Stella Powell,stella.powell19@email.com,fulfilled,paid,327.41,336.84,24.25,0.00,33.68,USD,Columbus,US,675,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567124,3124,2026-04-03 15:29:36,Stella Powell,stella.powell19@email.com,fulfilled,paid,327.41,336.84,24.25,0.00,33.68,USD,Columbus,US,676,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567124,3124,2026-04-03 15:29:36,Stella Powell,stella.powell19@email.com,fulfilled,paid,327.41,336.84,24.25,0.00,33.68,USD,Columbus,US,677,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567125,3125,2026-04-04 16:28:08,Lucas Nguyen,lucas.nguyen20@email.com,fulfilled,refunded,311.58,327.84,23.08,0.00,39.34,USD,Dallas,US,678,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567125,3125,2026-04-04 16:28:08,Lucas Nguyen,lucas.nguyen20@email.com,fulfilled,refunded,311.58,327.84,23.08,0.00,39.34,USD,Dallas,US,679,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567125,3125,2026-04-04 16:28:08,Lucas Nguyen,lucas.nguyen20@email.com,fulfilled,refunded,311.58,327.84,23.08,0.00,39.34,USD,Dallas,US,680,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567125,3125,2026-04-04 16:28:08,Lucas Nguyen,lucas.nguyen20@email.com,fulfilled,refunded,311.58,327.84,23.08,0.00,39.34,USD,Dallas,US,681,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567125,3125,2026-04-04 16:28:08,Lucas Nguyen,lucas.nguyen20@email.com,fulfilled,refunded,311.58,327.84,23.08,0.00,39.34,USD,Dallas,US,682,Belt Bag,SKU-BDG-008,5,27.99,139.95
+8101234567125,3125,2026-04-04 16:28:08,Lucas Nguyen,lucas.nguyen20@email.com,fulfilled,refunded,311.58,327.84,23.08,0.00,39.34,USD,Dallas,US,683,Lanyard,SKU-BDG-012,1,8.99,8.99
+8101234567125,3125,2026-04-04 16:28:08,Lucas Nguyen,lucas.nguyen20@email.com,fulfilled,refunded,311.58,327.84,23.08,0.00,39.34,USD,Dallas,US,684,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567126,3126,2026-03-30 14:58:52,Aria Ross,aria.ross21@email.com,fulfilled,paid,153.81,149.92,11.39,0.00,7.50,USD,Phoenix,US,685,Running Shorts,SKU-BDG-013,1,24.99,24.99
+8101234567126,3126,2026-03-30 14:58:52,Aria Ross,aria.ross21@email.com,fulfilled,paid,153.81,149.92,11.39,0.00,7.50,USD,Phoenix,US,686,Baseball Cap,SKU-BDG-003,1,22.99,22.99
+8101234567126,3126,2026-03-30 14:58:52,Aria Ross,aria.ross21@email.com,fulfilled,paid,153.81,149.92,11.39,0.00,7.50,USD,Phoenix,US,687,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567126,3126,2026-03-30 14:58:52,Aria Ross,aria.ross21@email.com,fulfilled,paid,153.81,149.92,11.39,0.00,7.50,USD,Phoenix,US,688,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567126,3126,2026-03-30 14:58:52,Aria Ross,aria.ross21@email.com,fulfilled,paid,153.81,149.92,11.39,0.00,7.50,USD,Phoenix,US,689,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567127,3127,2026-04-10 17:24:11,Emma Brown,emma.brown22@email.com,fulfilled,paid,277.40,291.88,20.55,0.00,35.03,USD,San Antonio,US,690,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567127,3127,2026-04-10 17:24:11,Emma Brown,emma.brown22@email.com,fulfilled,paid,277.40,291.88,20.55,0.00,35.03,USD,San Antonio,US,691,Baseball Cap,SKU-BDG-003,4,22.99,91.96
+8101234567127,3127,2026-04-10 17:24:11,Emma Brown,emma.brown22@email.com,fulfilled,paid,277.40,291.88,20.55,0.00,35.03,USD,San Antonio,US,692,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567127,3127,2026-04-10 17:24:11,Emma Brown,emma.brown22@email.com,fulfilled,paid,277.40,291.88,20.55,0.00,35.03,USD,San Antonio,US,693,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567128,3128,2026-04-10 16:53:35,Ellie Kim,ellie.kim0@email.com,pending,cancelled,221.31,232.86,16.39,0.00,27.94,USD,Phoenix,US,694,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567128,3128,2026-04-10 16:53:35,Ellie Kim,ellie.kim0@email.com,pending,cancelled,221.31,232.86,16.39,0.00,27.94,USD,Phoenix,US,695,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567128,3128,2026-04-10 16:53:35,Ellie Kim,ellie.kim0@email.com,pending,cancelled,221.31,232.86,16.39,0.00,27.94,USD,Phoenix,US,696,Canvas Tote,SKU-BDG-004,4,24.99,99.96
+8101234567128,3128,2026-04-10 16:53:35,Ellie Kim,ellie.kim0@email.com,pending,cancelled,221.31,232.86,16.39,0.00,27.94,USD,Phoenix,US,697,Belt Bag,SKU-BDG-008,1,27.99,27.99
+8101234567128,3128,2026-04-10 16:53:35,Ellie Kim,ellie.kim0@email.com,pending,cancelled,221.31,232.86,16.39,0.00,27.94,USD,Phoenix,US,698,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567129,3129,2026-04-06 18:15:19,Lincoln Lee,lincoln.lee1@email.com,pending,cancelled,142.82,146.93,10.58,0.00,14.69,USD,Jacksonville,US,699,Running Shorts,SKU-BDG-013,1,24.99,24.99
+8101234567129,3129,2026-04-06 18:15:19,Lincoln Lee,lincoln.lee1@email.com,pending,cancelled,142.82,146.93,10.58,0.00,14.69,USD,Jacksonville,US,700,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567129,3129,2026-04-06 18:15:19,Lincoln Lee,lincoln.lee1@email.com,pending,cancelled,142.82,146.93,10.58,0.00,14.69,USD,Jacksonville,US,701,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567129,3129,2026-04-06 18:15:19,Lincoln Lee,lincoln.lee1@email.com,pending,cancelled,142.82,146.93,10.58,0.00,14.69,USD,Jacksonville,US,702,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567130,3130,2026-04-07 20:29:34,Abigail Martin,abigail.martin2@email.com,fulfilled,paid,282.70,290.85,20.94,0.00,29.09,USD,Columbus,US,703,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567130,3130,2026-04-07 20:29:34,Abigail Martin,abigail.martin2@email.com,fulfilled,paid,282.70,290.85,20.94,0.00,29.09,USD,Columbus,US,704,Canvas Tote,SKU-BDG-004,5,24.99,124.95
+8101234567130,3130,2026-04-07 20:29:34,Abigail Martin,abigail.martin2@email.com,fulfilled,paid,282.70,290.85,20.94,0.00,29.09,USD,Columbus,US,705,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567130,3130,2026-04-07 20:29:34,Abigail Martin,abigail.martin2@email.com,fulfilled,paid,282.70,290.85,20.94,0.00,29.09,USD,Columbus,US,706,Phone Stand,SKU-BDG-010,1,12.99,12.99
+8101234567130,3130,2026-04-07 20:29:34,Abigail Martin,abigail.martin2@email.com,fulfilled,paid,282.70,290.85,20.94,0.00,29.09,USD,Columbus,US,707,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567131,3131,2026-04-08 17:31:51,Ella Kim,ella.kim3@email.com,fulfilled,paid,157.91,158.92,11.70,0.00,12.71,USD,San Antonio,US,708,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567131,3131,2026-04-08 17:31:51,Ella Kim,ella.kim3@email.com,fulfilled,paid,157.91,158.92,11.70,0.00,12.71,USD,San Antonio,US,709,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567131,3131,2026-04-08 17:31:51,Ella Kim,ella.kim3@email.com,fulfilled,paid,157.91,158.92,11.70,0.00,12.71,USD,San Antonio,US,710,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567131,3131,2026-04-08 17:31:51,Ella Kim,ella.kim3@email.com,fulfilled,paid,157.91,158.92,11.70,0.00,12.71,USD,San Antonio,US,711,Phone Stand,SKU-BDG-010,1,12.99,12.99
+8101234567132,3132,2026-04-09 12:06:23,Emma Kelly,emma.kelly4@email.com,fulfilled,paid,207.91,213.90,15.40,0.00,21.39,USD,Phoenix,US,712,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567132,3132,2026-04-09 12:06:23,Emma Kelly,emma.kelly4@email.com,fulfilled,paid,207.91,213.90,15.40,0.00,21.39,USD,Phoenix,US,713,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567132,3132,2026-04-09 12:06:23,Emma Kelly,emma.kelly4@email.com,fulfilled,paid,207.91,213.90,15.40,0.00,21.39,USD,Phoenix,US,714,Canvas Tote,SKU-BDG-004,1,24.99,24.99
+8101234567132,3132,2026-04-09 12:06:23,Emma Kelly,emma.kelly4@email.com,fulfilled,paid,207.91,213.90,15.40,0.00,21.39,USD,Phoenix,US,715,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567132,3132,2026-04-09 12:06:23,Emma Kelly,emma.kelly4@email.com,fulfilled,paid,207.91,213.90,15.40,0.00,21.39,USD,Phoenix,US,716,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567133,3133,2026-04-11 10:27:33,Lily Nguyen,lily.nguyen5@email.com,pending,cancelled,305.85,321.81,22.66,0.00,38.62,USD,Orlando,US,717,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567133,3133,2026-04-11 10:27:33,Lily Nguyen,lily.nguyen5@email.com,pending,cancelled,305.85,321.81,22.66,0.00,38.62,USD,Orlando,US,718,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567133,3133,2026-04-11 10:27:33,Lily Nguyen,lily.nguyen5@email.com,pending,cancelled,305.85,321.81,22.66,0.00,38.62,USD,Orlando,US,719,Lanyard,SKU-BDG-012,5,8.99,44.95
+8101234567133,3133,2026-04-11 10:27:33,Lily Nguyen,lily.nguyen5@email.com,pending,cancelled,305.85,321.81,22.66,0.00,38.62,USD,Orlando,US,720,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567133,3133,2026-04-11 10:27:33,Lily Nguyen,lily.nguyen5@email.com,pending,cancelled,305.85,321.81,22.66,0.00,38.62,USD,Orlando,US,721,Baseball Cap,SKU-BDG-003,1,22.99,22.99
+8101234567133,3133,2026-04-11 10:27:33,Lily Nguyen,lily.nguyen5@email.com,pending,cancelled,305.85,321.81,22.66,0.00,38.62,USD,Orlando,US,722,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567133,3133,2026-04-11 10:27:33,Lily Nguyen,lily.nguyen5@email.com,pending,cancelled,305.85,321.81,22.66,0.00,38.62,USD,Orlando,US,723,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567134,3134,2026-04-12 20:04:47,Benjamin Powell,benjamin.powell6@email.com,pending,cancelled,330.54,347.80,24.48,0.00,41.74,USD,Phoenix,US,724,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567134,3134,2026-04-12 20:04:47,Benjamin Powell,benjamin.powell6@email.com,pending,cancelled,330.54,347.80,24.48,0.00,41.74,USD,Phoenix,US,725,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567134,3134,2026-04-12 20:04:47,Benjamin Powell,benjamin.powell6@email.com,pending,cancelled,330.54,347.80,24.48,0.00,41.74,USD,Phoenix,US,726,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567134,3134,2026-04-12 20:04:47,Benjamin Powell,benjamin.powell6@email.com,pending,cancelled,330.54,347.80,24.48,0.00,41.74,USD,Phoenix,US,727,Lanyard,SKU-BDG-012,5,8.99,44.95
+8101234567134,3134,2026-04-12 20:04:47,Benjamin Powell,benjamin.powell6@email.com,pending,cancelled,330.54,347.80,24.48,0.00,41.74,USD,Phoenix,US,728,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567134,3134,2026-04-12 20:04:47,Benjamin Powell,benjamin.powell6@email.com,pending,cancelled,330.54,347.80,24.48,0.00,41.74,USD,Phoenix,US,729,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567135,3135,2026-04-10 10:38:12,Olivia Rodriguez,olivia.rodriguez7@email.com,pending,pending,444.92,447.78,32.96,0.00,35.82,USD,Jacksonville,US,730,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567135,3135,2026-04-10 10:38:12,Olivia Rodriguez,olivia.rodriguez7@email.com,pending,pending,444.92,447.78,32.96,0.00,35.82,USD,Jacksonville,US,731,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567135,3135,2026-04-10 10:38:12,Olivia Rodriguez,olivia.rodriguez7@email.com,pending,pending,444.92,447.78,32.96,0.00,35.82,USD,Jacksonville,US,732,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567135,3135,2026-04-10 10:38:12,Olivia Rodriguez,olivia.rodriguez7@email.com,pending,pending,444.92,447.78,32.96,0.00,35.82,USD,Jacksonville,US,733,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567135,3135,2026-04-10 10:38:12,Olivia Rodriguez,olivia.rodriguez7@email.com,pending,pending,444.92,447.78,32.96,0.00,35.82,USD,Jacksonville,US,734,Reusable Bottle,SKU-BDG-005,5,14.99,74.95
+8101234567135,3135,2026-04-10 10:38:12,Olivia Rodriguez,olivia.rodriguez7@email.com,pending,pending,444.92,447.78,32.96,0.00,35.82,USD,Jacksonville,US,735,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567135,3135,2026-04-10 10:38:12,Olivia Rodriguez,olivia.rodriguez7@email.com,pending,pending,444.92,447.78,32.96,0.00,35.82,USD,Jacksonville,US,736,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567136,3136,2026-04-09 21:23:02,Sebastian Cox,sebastian.cox8@email.com,fulfilled,paid,321.99,313.83,23.85,0.00,15.69,USD,Orlando,US,737,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567136,3136,2026-04-09 21:23:02,Sebastian Cox,sebastian.cox8@email.com,fulfilled,paid,321.99,313.83,23.85,0.00,15.69,USD,Orlando,US,738,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567136,3136,2026-04-09 21:23:02,Sebastian Cox,sebastian.cox8@email.com,fulfilled,paid,321.99,313.83,23.85,0.00,15.69,USD,Orlando,US,739,Crew Socks,SKU-BDG-001,4,9.99,39.96
+8101234567136,3136,2026-04-09 21:23:02,Sebastian Cox,sebastian.cox8@email.com,fulfilled,paid,321.99,313.83,23.85,0.00,15.69,USD,Orlando,US,740,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567136,3136,2026-04-09 21:23:02,Sebastian Cox,sebastian.cox8@email.com,fulfilled,paid,321.99,313.83,23.85,0.00,15.69,USD,Orlando,US,741,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567136,3136,2026-04-09 21:23:02,Sebastian Cox,sebastian.cox8@email.com,fulfilled,paid,321.99,313.83,23.85,0.00,15.69,USD,Orlando,US,742,Phone Stand,SKU-BDG-010,1,12.99,12.99
+8101234567137,3137,2026-04-11 13:40:24,Julian Bennett,julian.bennett9@email.com,pending,paid,140.97,141.88,10.44,0.00,11.35,USD,Phoenix,US,743,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567137,3137,2026-04-11 13:40:24,Julian Bennett,julian.bennett9@email.com,pending,paid,140.97,141.88,10.44,0.00,11.35,USD,Phoenix,US,744,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567137,3137,2026-04-11 13:40:24,Julian Bennett,julian.bennett9@email.com,pending,paid,140.97,141.88,10.44,0.00,11.35,USD,Phoenix,US,745,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567137,3137,2026-04-11 13:40:24,Julian Bennett,julian.bennett9@email.com,pending,paid,140.97,141.88,10.44,0.00,11.35,USD,Phoenix,US,746,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567137,3137,2026-04-11 13:40:24,Julian Bennett,julian.bennett9@email.com,pending,paid,140.97,141.88,10.44,0.00,11.35,USD,Phoenix,US,747,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567137,3137,2026-04-11 13:40:24,Julian Bennett,julian.bennett9@email.com,pending,paid,140.97,141.88,10.44,0.00,11.35,USD,Phoenix,US,748,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567138,3138,2026-04-11 09:11:48,Owen Anderson,owen.anderson10@email.com,fulfilled,paid,224.43,225.88,16.62,0.00,18.07,USD,San Antonio,US,749,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567138,3138,2026-04-11 09:11:48,Owen Anderson,owen.anderson10@email.com,fulfilled,paid,224.43,225.88,16.62,0.00,18.07,USD,San Antonio,US,750,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567138,3138,2026-04-11 09:11:48,Owen Anderson,owen.anderson10@email.com,fulfilled,paid,224.43,225.88,16.62,0.00,18.07,USD,San Antonio,US,751,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567138,3138,2026-04-11 09:11:48,Owen Anderson,owen.anderson10@email.com,fulfilled,paid,224.43,225.88,16.62,0.00,18.07,USD,San Antonio,US,752,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567138,3138,2026-04-11 09:11:48,Owen Anderson,owen.anderson10@email.com,fulfilled,paid,224.43,225.88,16.62,0.00,18.07,USD,San Antonio,US,753,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567139,3139,2026-04-09 16:06:28,Ava Russell,ava.russell11@email.com,fulfilled,paid,294.36,302.84,21.80,0.00,30.28,USD,Orlando,US,754,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567139,3139,2026-04-09 16:06:28,Ava Russell,ava.russell11@email.com,fulfilled,paid,294.36,302.84,21.80,0.00,30.28,USD,Orlando,US,755,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567139,3139,2026-04-09 16:06:28,Ava Russell,ava.russell11@email.com,fulfilled,paid,294.36,302.84,21.80,0.00,30.28,USD,Orlando,US,756,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567139,3139,2026-04-09 16:06:28,Ava Russell,ava.russell11@email.com,fulfilled,paid,294.36,302.84,21.80,0.00,30.28,USD,Orlando,US,757,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567139,3139,2026-04-09 16:06:28,Ava Russell,ava.russell11@email.com,fulfilled,paid,294.36,302.84,21.80,0.00,30.28,USD,Orlando,US,758,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567139,3139,2026-04-09 16:06:28,Ava Russell,ava.russell11@email.com,fulfilled,paid,294.36,302.84,21.80,0.00,30.28,USD,Orlando,US,759,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567140,3140,2026-04-10 13:16:35,Lincoln Cooper,lincoln.cooper12@email.com,fulfilled,paid,178.72,183.87,13.24,0.00,18.39,USD,Phoenix,US,760,Belt Bag,SKU-BDG-008,1,27.99,27.99
+8101234567140,3140,2026-04-10 13:16:35,Lincoln Cooper,lincoln.cooper12@email.com,fulfilled,paid,178.72,183.87,13.24,0.00,18.39,USD,Phoenix,US,761,Notebook Set,SKU-BDG-009,5,15.99,79.95
+8101234567140,3140,2026-04-10 13:16:35,Lincoln Cooper,lincoln.cooper12@email.com,fulfilled,paid,178.72,183.87,13.24,0.00,18.39,USD,Phoenix,US,762,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567140,3140,2026-04-10 13:16:35,Lincoln Cooper,lincoln.cooper12@email.com,fulfilled,paid,178.72,183.87,13.24,0.00,18.39,USD,Phoenix,US,763,Crew Socks,SKU-BDG-001,5,9.99,49.95
+8101234567141,3141,2026-04-11 14:01:00,Aiden Martin,aiden.martin13@email.com,pending,cancelled,299.24,314.85,22.17,0.00,37.78,USD,San Antonio,US,764,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567141,3141,2026-04-11 14:01:00,Aiden Martin,aiden.martin13@email.com,pending,cancelled,299.24,314.85,22.17,0.00,37.78,USD,San Antonio,US,765,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567141,3141,2026-04-11 14:01:00,Aiden Martin,aiden.martin13@email.com,pending,cancelled,299.24,314.85,22.17,0.00,37.78,USD,San Antonio,US,766,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567141,3141,2026-04-11 14:01:00,Aiden Martin,aiden.martin13@email.com,pending,cancelled,299.24,314.85,22.17,0.00,37.78,USD,San Antonio,US,767,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567141,3141,2026-04-11 14:01:00,Aiden Martin,aiden.martin13@email.com,pending,cancelled,299.24,314.85,22.17,0.00,37.78,USD,San Antonio,US,768,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567141,3141,2026-04-11 14:01:00,Aiden Martin,aiden.martin13@email.com,pending,cancelled,299.24,314.85,22.17,0.00,37.78,USD,San Antonio,US,769,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567142,3142,2026-04-09 15:20:55,Samuel Turner,samuel.turner14@email.com,unfulfilled,refunded,459.45,447.81,34.03,0.00,22.39,USD,Jacksonville,US,770,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567142,3142,2026-04-09 15:20:55,Samuel Turner,samuel.turner14@email.com,unfulfilled,refunded,459.45,447.81,34.03,0.00,22.39,USD,Jacksonville,US,771,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567142,3142,2026-04-09 15:20:55,Samuel Turner,samuel.turner14@email.com,unfulfilled,refunded,459.45,447.81,34.03,0.00,22.39,USD,Jacksonville,US,772,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567142,3142,2026-04-09 15:20:55,Samuel Turner,samuel.turner14@email.com,unfulfilled,refunded,459.45,447.81,34.03,0.00,22.39,USD,Jacksonville,US,773,Belt Bag,SKU-BDG-008,5,27.99,139.95
+8101234567142,3142,2026-04-09 15:20:55,Samuel Turner,samuel.turner14@email.com,unfulfilled,refunded,459.45,447.81,34.03,0.00,22.39,USD,Jacksonville,US,774,Graphic Tee,SKU-BDG-002,5,18.99,94.95
+8101234567143,3143,2026-04-08 12:06:55,Chloe Reed,chloe.reed15@email.com,pending,pending,243.86,250.89,18.06,0.00,25.09,USD,Dallas,US,775,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567143,3143,2026-04-08 12:06:55,Chloe Reed,chloe.reed15@email.com,pending,pending,243.86,250.89,18.06,0.00,25.09,USD,Dallas,US,776,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567143,3143,2026-04-08 12:06:55,Chloe Reed,chloe.reed15@email.com,pending,pending,243.86,250.89,18.06,0.00,25.09,USD,Dallas,US,777,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567143,3143,2026-04-08 12:06:55,Chloe Reed,chloe.reed15@email.com,pending,pending,243.86,250.89,18.06,0.00,25.09,USD,Dallas,US,778,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567143,3143,2026-04-08 12:06:55,Chloe Reed,chloe.reed15@email.com,pending,pending,243.86,250.89,18.06,0.00,25.09,USD,Dallas,US,779,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567144,3144,2026-04-09 16:21:43,Abigail Powell,abigail.powell16@email.com,fulfilled,paid,267.16,274.86,19.79,0.00,27.49,USD,Columbus,US,780,Baseball Cap,SKU-BDG-003,5,22.99,114.95
+8101234567144,3144,2026-04-09 16:21:43,Abigail Powell,abigail.powell16@email.com,fulfilled,paid,267.16,274.86,19.79,0.00,27.49,USD,Columbus,US,781,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567144,3144,2026-04-09 16:21:43,Abigail Powell,abigail.powell16@email.com,fulfilled,paid,267.16,274.86,19.79,0.00,27.49,USD,Columbus,US,782,Reusable Bottle,SKU-BDG-005,1,14.99,14.99
+8101234567144,3144,2026-04-09 16:21:43,Abigail Powell,abigail.powell16@email.com,fulfilled,paid,267.16,274.86,19.79,0.00,27.49,USD,Columbus,US,783,Lanyard,SKU-BDG-012,1,8.99,8.99
+8101234567144,3144,2026-04-09 16:21:43,Abigail Powell,abigail.powell16@email.com,fulfilled,paid,267.16,274.86,19.79,0.00,27.49,USD,Columbus,US,784,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567145,3145,2026-04-06 21:17:06,Jackson Ramirez,jackson.ramirez17@email.com,fulfilled,refunded,352.74,343.80,26.13,0.00,17.19,USD,San Antonio,US,785,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567145,3145,2026-04-06 21:17:06,Jackson Ramirez,jackson.ramirez17@email.com,fulfilled,refunded,352.74,343.80,26.13,0.00,17.19,USD,San Antonio,US,786,Sticker Pack,SKU-BDG-011,5,7.99,39.95
+8101234567145,3145,2026-04-06 21:17:06,Jackson Ramirez,jackson.ramirez17@email.com,fulfilled,refunded,352.74,343.80,26.13,0.00,17.19,USD,San Antonio,US,787,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567145,3145,2026-04-06 21:17:06,Jackson Ramirez,jackson.ramirez17@email.com,fulfilled,refunded,352.74,343.80,26.13,0.00,17.19,USD,San Antonio,US,788,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567145,3145,2026-04-06 21:17:06,Jackson Ramirez,jackson.ramirez17@email.com,fulfilled,refunded,352.74,343.80,26.13,0.00,17.19,USD,San Antonio,US,789,Notebook Set,SKU-BDG-009,5,15.99,79.95
+8101234567145,3145,2026-04-06 21:17:06,Jackson Ramirez,jackson.ramirez17@email.com,fulfilled,refunded,352.74,343.80,26.13,0.00,17.19,USD,San Antonio,US,790,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567146,3146,2026-04-09 17:58:01,Thomas Price,thomas.price18@email.com,pending,cancelled,303.07,311.80,22.45,0.00,31.18,USD,Columbus,US,791,Notebook Set,SKU-BDG-009,4,15.99,63.96
+8101234567146,3146,2026-04-09 17:58:01,Thomas Price,thomas.price18@email.com,pending,cancelled,303.07,311.80,22.45,0.00,31.18,USD,Columbus,US,792,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567146,3146,2026-04-09 17:58:01,Thomas Price,thomas.price18@email.com,pending,cancelled,303.07,311.80,22.45,0.00,31.18,USD,Columbus,US,793,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567146,3146,2026-04-09 17:58:01,Thomas Price,thomas.price18@email.com,pending,cancelled,303.07,311.80,22.45,0.00,31.18,USD,Columbus,US,794,Phone Stand,SKU-BDG-010,5,12.99,64.95
+8101234567146,3146,2026-04-09 17:58:01,Thomas Price,thomas.price18@email.com,pending,cancelled,303.07,311.80,22.45,0.00,31.18,USD,Columbus,US,795,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567146,3146,2026-04-09 17:58:01,Thomas Price,thomas.price18@email.com,pending,cancelled,303.07,311.80,22.45,0.00,31.18,USD,Columbus,US,796,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567147,3147,2026-04-09 14:24:12,Grace Kelly,grace.kelly19@email.com,fulfilled,refunded,228.00,239.90,16.89,0.00,28.79,USD,Jacksonville,US,797,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567147,3147,2026-04-09 14:24:12,Grace Kelly,grace.kelly19@email.com,fulfilled,refunded,228.00,239.90,16.89,0.00,28.79,USD,Jacksonville,US,798,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567147,3147,2026-04-09 14:24:12,Grace Kelly,grace.kelly19@email.com,fulfilled,refunded,228.00,239.90,16.89,0.00,28.79,USD,Jacksonville,US,799,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567147,3147,2026-04-09 14:24:12,Grace Kelly,grace.kelly19@email.com,fulfilled,refunded,228.00,239.90,16.89,0.00,28.79,USD,Jacksonville,US,800,Pocket Tee,SKU-BDG-006,1,21.99,21.99
+8101234567147,3147,2026-04-09 14:24:12,Grace Kelly,grace.kelly19@email.com,fulfilled,refunded,228.00,239.90,16.89,0.00,28.79,USD,Jacksonville,US,801,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567148,3148,2026-04-10 17:36:45,Aiden Sanders,aiden.sanders20@email.com,fulfilled,paid,171.90,176.86,12.73,0.00,17.69,USD,Orlando,US,802,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567148,3148,2026-04-10 17:36:45,Aiden Sanders,aiden.sanders20@email.com,fulfilled,paid,171.90,176.86,12.73,0.00,17.69,USD,Orlando,US,803,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567148,3148,2026-04-10 17:36:45,Aiden Sanders,aiden.sanders20@email.com,fulfilled,paid,171.90,176.86,12.73,0.00,17.69,USD,Orlando,US,804,Sticker Pack,SKU-BDG-011,5,7.99,39.95
+8101234567148,3148,2026-04-10 17:36:45,Aiden Sanders,aiden.sanders20@email.com,fulfilled,paid,171.90,176.86,12.73,0.00,17.69,USD,Orlando,US,805,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567148,3148,2026-04-10 17:36:45,Aiden Sanders,aiden.sanders20@email.com,fulfilled,paid,171.90,176.86,12.73,0.00,17.69,USD,Orlando,US,806,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567149,3149,2026-04-07 20:58:22,Jackson Flores,jackson.flores21@email.com,fulfilled,paid,208.03,218.89,15.41,0.00,26.27,USD,Columbus,US,807,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567149,3149,2026-04-07 20:58:22,Jackson Flores,jackson.flores21@email.com,fulfilled,paid,208.03,218.89,15.41,0.00,26.27,USD,Columbus,US,808,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567149,3149,2026-04-07 20:58:22,Jackson Flores,jackson.flores21@email.com,fulfilled,paid,208.03,218.89,15.41,0.00,26.27,USD,Columbus,US,809,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567149,3149,2026-04-07 20:58:22,Jackson Flores,jackson.flores21@email.com,fulfilled,paid,208.03,218.89,15.41,0.00,26.27,USD,Columbus,US,810,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567149,3149,2026-04-07 20:58:22,Jackson Flores,jackson.flores21@email.com,fulfilled,paid,208.03,218.89,15.41,0.00,26.27,USD,Columbus,US,811,Belt Bag,SKU-BDG-008,1,27.99,27.99
+8101234567150,3150,2026-04-10 13:29:02,Madison Price,madison.price22@email.com,fulfilled,paid,367.46,369.83,27.22,0.00,29.59,USD,Dallas,US,812,Belt Bag,SKU-BDG-008,1,27.99,27.99
+8101234567150,3150,2026-04-10 13:29:02,Madison Price,madison.price22@email.com,fulfilled,paid,367.46,369.83,27.22,0.00,29.59,USD,Dallas,US,813,Crew Socks,SKU-BDG-001,4,9.99,39.96
+8101234567150,3150,2026-04-10 13:29:02,Madison Price,madison.price22@email.com,fulfilled,paid,367.46,369.83,27.22,0.00,29.59,USD,Dallas,US,814,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567150,3150,2026-04-10 13:29:02,Madison Price,madison.price22@email.com,fulfilled,paid,367.46,369.83,27.22,0.00,29.59,USD,Dallas,US,815,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567150,3150,2026-04-10 13:29:02,Madison Price,madison.price22@email.com,fulfilled,paid,367.46,369.83,27.22,0.00,29.59,USD,Dallas,US,816,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567150,3150,2026-04-10 13:29:02,Madison Price,madison.price22@email.com,fulfilled,paid,367.46,369.83,27.22,0.00,29.59,USD,Dallas,US,817,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567150,3150,2026-04-10 13:29:02,Madison Price,madison.price22@email.com,fulfilled,paid,367.46,369.83,27.22,0.00,29.59,USD,Dallas,US,818,Canvas Tote,SKU-BDG-004,1,24.99,24.99
+8101234567151,3151,2026-04-14 10:22:12,Abigail Kelly,abigail.kelly0@email.com,pending,pending,277.10,278.88,20.53,0.00,22.31,USD,Columbus,US,819,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567151,3151,2026-04-14 10:22:12,Abigail Kelly,abigail.kelly0@email.com,pending,pending,277.10,278.88,20.53,0.00,22.31,USD,Columbus,US,820,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567151,3151,2026-04-14 10:22:12,Abigail Kelly,abigail.kelly0@email.com,pending,pending,277.10,278.88,20.53,0.00,22.31,USD,Columbus,US,821,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567151,3151,2026-04-14 10:22:12,Abigail Kelly,abigail.kelly0@email.com,pending,pending,277.10,278.88,20.53,0.00,22.31,USD,Columbus,US,822,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567151,3151,2026-04-14 10:22:12,Abigail Kelly,abigail.kelly0@email.com,pending,pending,277.10,278.88,20.53,0.00,22.31,USD,Columbus,US,823,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567152,3152,2026-04-18 21:36:05,Benjamin Ramirez,benjamin.ramirez1@email.com,unfulfilled,pending,211.77,217.87,15.69,0.00,21.79,USD,Phoenix,US,824,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567152,3152,2026-04-18 21:36:05,Benjamin Ramirez,benjamin.ramirez1@email.com,unfulfilled,pending,211.77,217.87,15.69,0.00,21.79,USD,Phoenix,US,825,Crew Socks,SKU-BDG-001,4,9.99,39.96
+8101234567152,3152,2026-04-18 21:36:05,Benjamin Ramirez,benjamin.ramirez1@email.com,unfulfilled,pending,211.77,217.87,15.69,0.00,21.79,USD,Phoenix,US,826,Graphic Tee,SKU-BDG-002,1,18.99,18.99
+8101234567152,3152,2026-04-18 21:36:05,Benjamin Ramirez,benjamin.ramirez1@email.com,unfulfilled,pending,211.77,217.87,15.69,0.00,21.79,USD,Phoenix,US,827,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567152,3152,2026-04-18 21:36:05,Benjamin Ramirez,benjamin.ramirez1@email.com,unfulfilled,pending,211.77,217.87,15.69,0.00,21.79,USD,Phoenix,US,828,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567152,3152,2026-04-18 21:36:05,Benjamin Ramirez,benjamin.ramirez1@email.com,unfulfilled,pending,211.77,217.87,15.69,0.00,21.79,USD,Phoenix,US,829,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567153,3153,2026-04-17 20:22:56,Lily Foster,lily.foster2@email.com,fulfilled,paid,310.83,312.84,23.02,0.00,25.03,USD,Phoenix,US,830,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567153,3153,2026-04-17 20:22:56,Lily Foster,lily.foster2@email.com,fulfilled,paid,310.83,312.84,23.02,0.00,25.03,USD,Phoenix,US,831,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567153,3153,2026-04-17 20:22:56,Lily Foster,lily.foster2@email.com,fulfilled,paid,310.83,312.84,23.02,0.00,25.03,USD,Phoenix,US,832,Reusable Bottle,SKU-BDG-005,4,14.99,59.96
+8101234567153,3153,2026-04-17 20:22:56,Lily Foster,lily.foster2@email.com,fulfilled,paid,310.83,312.84,23.02,0.00,25.03,USD,Phoenix,US,833,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567153,3153,2026-04-17 20:22:56,Lily Foster,lily.foster2@email.com,fulfilled,paid,310.83,312.84,23.02,0.00,25.03,USD,Phoenix,US,834,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567153,3153,2026-04-17 20:22:56,Lily Foster,lily.foster2@email.com,fulfilled,paid,310.83,312.84,23.02,0.00,25.03,USD,Phoenix,US,835,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567154,3154,2026-04-13 09:49:22,Sophia Walker,sophia.walker3@email.com,fulfilled,paid,206.55,207.88,15.30,0.00,16.63,USD,Phoenix,US,836,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567154,3154,2026-04-13 09:49:22,Sophia Walker,sophia.walker3@email.com,fulfilled,paid,206.55,207.88,15.30,0.00,16.63,USD,Phoenix,US,837,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567154,3154,2026-04-13 09:49:22,Sophia Walker,sophia.walker3@email.com,fulfilled,paid,206.55,207.88,15.30,0.00,16.63,USD,Phoenix,US,838,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567154,3154,2026-04-13 09:49:22,Sophia Walker,sophia.walker3@email.com,fulfilled,paid,206.55,207.88,15.30,0.00,16.63,USD,Phoenix,US,839,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567154,3154,2026-04-13 09:49:22,Sophia Walker,sophia.walker3@email.com,fulfilled,paid,206.55,207.88,15.30,0.00,16.63,USD,Phoenix,US,840,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567155,3155,2026-04-18 16:22:33,Samuel Ramirez,samuel.ramirez4@email.com,fulfilled,paid,156.38,160.89,11.58,0.00,16.09,USD,Jacksonville,US,841,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567155,3155,2026-04-18 16:22:33,Samuel Ramirez,samuel.ramirez4@email.com,fulfilled,paid,156.38,160.89,11.58,0.00,16.09,USD,Jacksonville,US,842,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567155,3155,2026-04-18 16:22:33,Samuel Ramirez,samuel.ramirez4@email.com,fulfilled,paid,156.38,160.89,11.58,0.00,16.09,USD,Jacksonville,US,843,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567155,3155,2026-04-18 16:22:33,Samuel Ramirez,samuel.ramirez4@email.com,fulfilled,paid,156.38,160.89,11.58,0.00,16.09,USD,Jacksonville,US,844,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567155,3155,2026-04-18 16:22:33,Samuel Ramirez,samuel.ramirez4@email.com,fulfilled,paid,156.38,160.89,11.58,0.00,16.09,USD,Jacksonville,US,845,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567155,3155,2026-04-18 16:22:33,Samuel Ramirez,samuel.ramirez4@email.com,fulfilled,paid,156.38,160.89,11.58,0.00,16.09,USD,Jacksonville,US,846,Running Shorts,SKU-BDG-013,1,24.99,24.99
+8101234567156,3156,2026-04-17 21:24:59,Isabella Parker,isabella.parker5@email.com,fulfilled,pending,226.08,237.87,16.75,0.00,28.54,USD,Phoenix,US,847,Slide Sandals,SKU-BDG-007,4,29.99,119.96
+8101234567156,3156,2026-04-17 21:24:59,Isabella Parker,isabella.parker5@email.com,fulfilled,pending,226.08,237.87,16.75,0.00,28.54,USD,Phoenix,US,848,Running Shorts,SKU-BDG-013,1,24.99,24.99
+8101234567156,3156,2026-04-17 21:24:59,Isabella Parker,isabella.parker5@email.com,fulfilled,pending,226.08,237.87,16.75,0.00,28.54,USD,Phoenix,US,849,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567156,3156,2026-04-17 21:24:59,Isabella Parker,isabella.parker5@email.com,fulfilled,pending,226.08,237.87,16.75,0.00,28.54,USD,Phoenix,US,850,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567156,3156,2026-04-17 21:24:59,Isabella Parker,isabella.parker5@email.com,fulfilled,pending,226.08,237.87,16.75,0.00,28.54,USD,Phoenix,US,851,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567156,3156,2026-04-17 21:24:59,Isabella Parker,isabella.parker5@email.com,fulfilled,pending,226.08,237.87,16.75,0.00,28.54,USD,Phoenix,US,852,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567157,3157,2026-04-14 21:07:22,Scarlett Sanders,scarlett.sanders6@email.com,fulfilled,paid,412.11,414.76,30.53,0.00,33.18,USD,San Antonio,US,853,Sticker Pack,SKU-BDG-011,4,7.99,31.96
+8101234567157,3157,2026-04-14 21:07:22,Scarlett Sanders,scarlett.sanders6@email.com,fulfilled,paid,412.11,414.76,30.53,0.00,33.18,USD,San Antonio,US,854,Running Shorts,SKU-BDG-013,1,24.99,24.99
+8101234567157,3157,2026-04-14 21:07:22,Scarlett Sanders,scarlett.sanders6@email.com,fulfilled,paid,412.11,414.76,30.53,0.00,33.18,USD,San Antonio,US,855,Belt Bag,SKU-BDG-008,4,27.99,111.96
+8101234567157,3157,2026-04-14 21:07:22,Scarlett Sanders,scarlett.sanders6@email.com,fulfilled,paid,412.11,414.76,30.53,0.00,33.18,USD,San Antonio,US,856,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567157,3157,2026-04-14 21:07:22,Scarlett Sanders,scarlett.sanders6@email.com,fulfilled,paid,412.11,414.76,30.53,0.00,33.18,USD,San Antonio,US,857,Crew Socks,SKU-BDG-001,4,9.99,39.96
+8101234567157,3157,2026-04-14 21:07:22,Scarlett Sanders,scarlett.sanders6@email.com,fulfilled,paid,412.11,414.76,30.53,0.00,33.18,USD,San Antonio,US,858,Pocket Tee,SKU-BDG-006,5,21.99,109.95
+8101234567157,3157,2026-04-14 21:07:22,Scarlett Sanders,scarlett.sanders6@email.com,fulfilled,paid,412.11,414.76,30.53,0.00,33.18,USD,San Antonio,US,859,Lanyard,SKU-BDG-012,4,8.99,35.96
+8101234567158,3158,2026-04-15 21:45:31,Evelyn Ramirez,evelyn.ramirez7@email.com,pending,pending,207.55,208.89,15.37,0.00,16.71,USD,Dallas,US,860,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567158,3158,2026-04-15 21:45:31,Evelyn Ramirez,evelyn.ramirez7@email.com,pending,pending,207.55,208.89,15.37,0.00,16.71,USD,Dallas,US,861,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567158,3158,2026-04-15 21:45:31,Evelyn Ramirez,evelyn.ramirez7@email.com,pending,pending,207.55,208.89,15.37,0.00,16.71,USD,Dallas,US,862,Notebook Set,SKU-BDG-009,5,15.99,79.95
+8101234567158,3158,2026-04-15 21:45:31,Evelyn Ramirez,evelyn.ramirez7@email.com,pending,pending,207.55,208.89,15.37,0.00,16.71,USD,Dallas,US,863,Baseball Cap,SKU-BDG-003,1,22.99,22.99
+8101234567158,3158,2026-04-15 21:45:31,Evelyn Ramirez,evelyn.ramirez7@email.com,pending,pending,207.55,208.89,15.37,0.00,16.71,USD,Dallas,US,864,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567159,3159,2026-04-18 19:53:58,Ethan Parker,ethan.parker8@email.com,fulfilled,paid,203.29,213.90,15.06,0.00,25.67,USD,Orlando,US,865,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567159,3159,2026-04-18 19:53:58,Ethan Parker,ethan.parker8@email.com,fulfilled,paid,203.29,213.90,15.06,0.00,25.67,USD,Orlando,US,866,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567159,3159,2026-04-18 19:53:58,Ethan Parker,ethan.parker8@email.com,fulfilled,paid,203.29,213.90,15.06,0.00,25.67,USD,Orlando,US,867,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567159,3159,2026-04-18 19:53:58,Ethan Parker,ethan.parker8@email.com,fulfilled,paid,203.29,213.90,15.06,0.00,25.67,USD,Orlando,US,868,Slide Sandals,SKU-BDG-007,5,29.99,149.95
+8101234567160,3160,2026-04-13 21:12:17,Sebastian Jackson,sebastian.jackson9@email.com,pending,paid,123.01,119.90,9.11,0.00,6.00,USD,Orlando,US,869,Phone Stand,SKU-BDG-010,1,12.99,12.99
+8101234567160,3160,2026-04-13 21:12:17,Sebastian Jackson,sebastian.jackson9@email.com,pending,paid,123.01,119.90,9.11,0.00,6.00,USD,Orlando,US,870,Pocket Tee,SKU-BDG-006,1,21.99,21.99
+8101234567160,3160,2026-04-13 21:12:17,Sebastian Jackson,sebastian.jackson9@email.com,pending,paid,123.01,119.90,9.11,0.00,6.00,USD,Orlando,US,871,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567160,3160,2026-04-13 21:12:17,Sebastian Jackson,sebastian.jackson9@email.com,pending,paid,123.01,119.90,9.11,0.00,6.00,USD,Orlando,US,872,Sticker Pack,SKU-BDG-011,5,7.99,39.95
+8101234567161,3161,2026-04-16 09:50:27,Julian Wilson,julian.wilson10@email.com,pending,cancelled,248.16,241.87,18.38,0.00,12.09,USD,Jacksonville,US,873,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567161,3161,2026-04-16 09:50:27,Julian Wilson,julian.wilson10@email.com,pending,cancelled,248.16,241.87,18.38,0.00,12.09,USD,Jacksonville,US,874,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567161,3161,2026-04-16 09:50:27,Julian Wilson,julian.wilson10@email.com,pending,cancelled,248.16,241.87,18.38,0.00,12.09,USD,Jacksonville,US,875,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567161,3161,2026-04-16 09:50:27,Julian Wilson,julian.wilson10@email.com,pending,cancelled,248.16,241.87,18.38,0.00,12.09,USD,Jacksonville,US,876,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567161,3161,2026-04-16 09:50:27,Julian Wilson,julian.wilson10@email.com,pending,cancelled,248.16,241.87,18.38,0.00,12.09,USD,Jacksonville,US,877,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567161,3161,2026-04-16 09:50:27,Julian Wilson,julian.wilson10@email.com,pending,cancelled,248.16,241.87,18.38,0.00,12.09,USD,Jacksonville,US,878,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567162,3162,2026-04-15 20:58:07,Lucas Rodriguez,lucas.rodriguez11@email.com,fulfilled,paid,413.15,415.81,30.60,0.00,33.26,USD,Orlando,US,879,Lanyard,SKU-BDG-012,1,8.99,8.99
+8101234567162,3162,2026-04-15 20:58:07,Lucas Rodriguez,lucas.rodriguez11@email.com,fulfilled,paid,413.15,415.81,30.60,0.00,33.26,USD,Orlando,US,880,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567162,3162,2026-04-15 20:58:07,Lucas Rodriguez,lucas.rodriguez11@email.com,fulfilled,paid,413.15,415.81,30.60,0.00,33.26,USD,Orlando,US,881,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567162,3162,2026-04-15 20:58:07,Lucas Rodriguez,lucas.rodriguez11@email.com,fulfilled,paid,413.15,415.81,30.60,0.00,33.26,USD,Orlando,US,882,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567162,3162,2026-04-15 20:58:07,Lucas Rodriguez,lucas.rodriguez11@email.com,fulfilled,paid,413.15,415.81,30.60,0.00,33.26,USD,Orlando,US,883,Reusable Bottle,SKU-BDG-005,4,14.99,59.96
+8101234567162,3162,2026-04-15 20:58:07,Lucas Rodriguez,lucas.rodriguez11@email.com,fulfilled,paid,413.15,415.81,30.60,0.00,33.26,USD,Orlando,US,884,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567163,3163,2026-04-18 14:02:55,Zoe Hughes,zoe.hughes12@email.com,fulfilled,paid,198.17,203.88,14.68,0.00,20.39,USD,Columbus,US,885,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567163,3163,2026-04-18 14:02:55,Zoe Hughes,zoe.hughes12@email.com,fulfilled,paid,198.17,203.88,14.68,0.00,20.39,USD,Columbus,US,886,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567163,3163,2026-04-18 14:02:55,Zoe Hughes,zoe.hughes12@email.com,fulfilled,paid,198.17,203.88,14.68,0.00,20.39,USD,Columbus,US,887,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567163,3163,2026-04-18 14:02:55,Zoe Hughes,zoe.hughes12@email.com,fulfilled,paid,198.17,203.88,14.68,0.00,20.39,USD,Columbus,US,888,Phone Stand,SKU-BDG-010,1,12.99,12.99
+8101234567163,3163,2026-04-18 14:02:55,Zoe Hughes,zoe.hughes12@email.com,fulfilled,paid,198.17,203.88,14.68,0.00,20.39,USD,Columbus,US,889,Lanyard,SKU-BDG-012,3,8.99,26.97
+8101234567164,3164,2026-04-17 14:06:36,Isaac Foster,isaac.foster13@email.com,pending,paid,189.68,190.90,14.05,0.00,15.27,USD,Dallas,US,890,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567164,3164,2026-04-17 14:06:36,Isaac Foster,isaac.foster13@email.com,pending,paid,189.68,190.90,14.05,0.00,15.27,USD,Dallas,US,891,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567164,3164,2026-04-17 14:06:36,Isaac Foster,isaac.foster13@email.com,pending,paid,189.68,190.90,14.05,0.00,15.27,USD,Dallas,US,892,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567164,3164,2026-04-17 14:06:36,Isaac Foster,isaac.foster13@email.com,pending,paid,189.68,190.90,14.05,0.00,15.27,USD,Dallas,US,893,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567164,3164,2026-04-17 14:06:36,Isaac Foster,isaac.foster13@email.com,pending,paid,189.68,190.90,14.05,0.00,15.27,USD,Dallas,US,894,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567165,3165,2026-04-18 12:15:50,Isabella Clark,isabella.clark14@email.com,fulfilled,paid,276.89,269.87,20.51,0.00,13.49,USD,Phoenix,US,895,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567165,3165,2026-04-18 12:15:50,Isabella Clark,isabella.clark14@email.com,fulfilled,paid,276.89,269.87,20.51,0.00,13.49,USD,Phoenix,US,896,Running Shorts,SKU-BDG-013,4,24.99,99.96
+8101234567165,3165,2026-04-18 12:15:50,Isabella Clark,isabella.clark14@email.com,fulfilled,paid,276.89,269.87,20.51,0.00,13.49,USD,Phoenix,US,897,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567165,3165,2026-04-18 12:15:50,Isabella Clark,isabella.clark14@email.com,fulfilled,paid,276.89,269.87,20.51,0.00,13.49,USD,Phoenix,US,898,Graphic Tee,SKU-BDG-002,2,18.99,37.98
+8101234567165,3165,2026-04-18 12:15:50,Isabella Clark,isabella.clark14@email.com,fulfilled,paid,276.89,269.87,20.51,0.00,13.49,USD,Phoenix,US,899,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567166,3166,2026-04-16 16:58:40,Henry Hughes,henry.hughes15@email.com,pending,refunded,250.65,257.87,18.57,0.00,25.79,USD,Phoenix,US,900,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567166,3166,2026-04-16 16:58:40,Henry Hughes,henry.hughes15@email.com,pending,refunded,250.65,257.87,18.57,0.00,25.79,USD,Phoenix,US,901,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567166,3166,2026-04-16 16:58:40,Henry Hughes,henry.hughes15@email.com,pending,refunded,250.65,257.87,18.57,0.00,25.79,USD,Phoenix,US,902,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567166,3166,2026-04-16 16:58:40,Henry Hughes,henry.hughes15@email.com,pending,refunded,250.65,257.87,18.57,0.00,25.79,USD,Phoenix,US,903,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567166,3166,2026-04-16 16:58:40,Henry Hughes,henry.hughes15@email.com,pending,refunded,250.65,257.87,18.57,0.00,25.79,USD,Phoenix,US,904,Lanyard,SKU-BDG-012,1,8.99,8.99
+8101234567166,3166,2026-04-16 16:58:40,Henry Hughes,henry.hughes15@email.com,pending,refunded,250.65,257.87,18.57,0.00,25.79,USD,Phoenix,US,905,Notebook Set,SKU-BDG-009,3,15.99,47.97
+8101234567167,3167,2026-04-15 16:47:51,Mason Reed,mason.reed16@email.com,pending,cancelled,242.31,243.87,17.95,0.00,19.51,USD,Jacksonville,US,906,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567167,3167,2026-04-15 16:47:51,Mason Reed,mason.reed16@email.com,pending,cancelled,242.31,243.87,17.95,0.00,19.51,USD,Jacksonville,US,907,Phone Stand,SKU-BDG-010,1,12.99,12.99
+8101234567167,3167,2026-04-15 16:47:51,Mason Reed,mason.reed16@email.com,pending,cancelled,242.31,243.87,17.95,0.00,19.51,USD,Jacksonville,US,908,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567167,3167,2026-04-15 16:47:51,Mason Reed,mason.reed16@email.com,pending,cancelled,242.31,243.87,17.95,0.00,19.51,USD,Jacksonville,US,909,Pocket Tee,SKU-BDG-006,4,21.99,87.96
+8101234567167,3167,2026-04-15 16:47:51,Mason Reed,mason.reed16@email.com,pending,cancelled,242.31,243.87,17.95,0.00,19.51,USD,Jacksonville,US,910,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567167,3167,2026-04-15 16:47:51,Mason Reed,mason.reed16@email.com,pending,cancelled,242.31,243.87,17.95,0.00,19.51,USD,Jacksonville,US,911,Sticker Pack,SKU-BDG-011,2,7.99,15.98
+8101234567168,3168,2026-04-17 14:45:42,Elijah Martinez,elijah.martinez17@email.com,fulfilled,paid,429.67,418.78,31.83,0.00,20.94,USD,Orlando,US,912,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567168,3168,2026-04-17 14:45:42,Elijah Martinez,elijah.martinez17@email.com,fulfilled,paid,429.67,418.78,31.83,0.00,20.94,USD,Orlando,US,913,Baseball Cap,SKU-BDG-003,3,22.99,68.97
+8101234567168,3168,2026-04-17 14:45:42,Elijah Martinez,elijah.martinez17@email.com,fulfilled,paid,429.67,418.78,31.83,0.00,20.94,USD,Orlando,US,914,Reusable Bottle,SKU-BDG-005,3,14.99,44.97
+8101234567168,3168,2026-04-17 14:45:42,Elijah Martinez,elijah.martinez17@email.com,fulfilled,paid,429.67,418.78,31.83,0.00,20.94,USD,Orlando,US,915,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567168,3168,2026-04-17 14:45:42,Elijah Martinez,elijah.martinez17@email.com,fulfilled,paid,429.67,418.78,31.83,0.00,20.94,USD,Orlando,US,916,Belt Bag,SKU-BDG-008,1,27.99,27.99
+8101234567168,3168,2026-04-17 14:45:42,Elijah Martinez,elijah.martinez17@email.com,fulfilled,paid,429.67,418.78,31.83,0.00,20.94,USD,Orlando,US,917,Lanyard,SKU-BDG-012,5,8.99,44.95
+8101234567168,3168,2026-04-17 14:45:42,Elijah Martinez,elijah.martinez17@email.com,fulfilled,paid,429.67,418.78,31.83,0.00,20.94,USD,Orlando,US,918,Graphic Tee,SKU-BDG-002,4,18.99,75.96
+8101234567169,3169,2026-04-14 14:27:31,Noah Turner,noah.turner18@email.com,pending,cancelled,318.79,320.85,23.61,0.00,25.67,USD,Columbus,US,919,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567169,3169,2026-04-14 14:27:31,Noah Turner,noah.turner18@email.com,pending,cancelled,318.79,320.85,23.61,0.00,25.67,USD,Columbus,US,920,Baseball Cap,SKU-BDG-003,2,22.99,45.98
+8101234567169,3169,2026-04-14 14:27:31,Noah Turner,noah.turner18@email.com,pending,cancelled,318.79,320.85,23.61,0.00,25.67,USD,Columbus,US,921,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567169,3169,2026-04-14 14:27:31,Noah Turner,noah.turner18@email.com,pending,cancelled,318.79,320.85,23.61,0.00,25.67,USD,Columbus,US,922,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567169,3169,2026-04-14 14:27:31,Noah Turner,noah.turner18@email.com,pending,cancelled,318.79,320.85,23.61,0.00,25.67,USD,Columbus,US,923,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567169,3169,2026-04-14 14:27:31,Noah Turner,noah.turner18@email.com,pending,cancelled,318.79,320.85,23.61,0.00,25.67,USD,Columbus,US,924,Sticker Pack,SKU-BDG-011,3,7.99,23.97
+8101234567170,3170,2026-04-16 16:09:11,Nathan Martinez,nathan.martinez19@email.com,fulfilled,paid,304.05,312.81,22.52,0.00,31.28,USD,Dallas,US,925,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567170,3170,2026-04-16 16:09:11,Nathan Martinez,nathan.martinez19@email.com,fulfilled,paid,304.05,312.81,22.52,0.00,31.28,USD,Dallas,US,926,Notebook Set,SKU-BDG-009,5,15.99,79.95
+8101234567170,3170,2026-04-16 16:09:11,Nathan Martinez,nathan.martinez19@email.com,fulfilled,paid,304.05,312.81,22.52,0.00,31.28,USD,Dallas,US,927,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567170,3170,2026-04-16 16:09:11,Nathan Martinez,nathan.martinez19@email.com,fulfilled,paid,304.05,312.81,22.52,0.00,31.28,USD,Dallas,US,928,Crew Socks,SKU-BDG-001,4,9.99,39.96
+8101234567170,3170,2026-04-16 16:09:11,Nathan Martinez,nathan.martinez19@email.com,fulfilled,paid,304.05,312.81,22.52,0.00,31.28,USD,Dallas,US,929,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567171,3171,2026-04-15 18:43:53,Lucas Ramirez,lucas.ramirez20@email.com,fulfilled,paid,334.67,336.83,24.79,0.00,26.95,USD,Orlando,US,930,Lanyard,SKU-BDG-012,4,8.99,35.96
+8101234567171,3171,2026-04-15 18:43:53,Lucas Ramirez,lucas.ramirez20@email.com,fulfilled,paid,334.67,336.83,24.79,0.00,26.95,USD,Orlando,US,931,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567171,3171,2026-04-15 18:43:53,Lucas Ramirez,lucas.ramirez20@email.com,fulfilled,paid,334.67,336.83,24.79,0.00,26.95,USD,Orlando,US,932,Crew Socks,SKU-BDG-001,1,9.99,9.99
+8101234567171,3171,2026-04-15 18:43:53,Lucas Ramirez,lucas.ramirez20@email.com,fulfilled,paid,334.67,336.83,24.79,0.00,26.95,USD,Orlando,US,933,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567171,3171,2026-04-15 18:43:53,Lucas Ramirez,lucas.ramirez20@email.com,fulfilled,paid,334.67,336.83,24.79,0.00,26.95,USD,Orlando,US,934,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567171,3171,2026-04-15 18:43:53,Lucas Ramirez,lucas.ramirez20@email.com,fulfilled,paid,334.67,336.83,24.79,0.00,26.95,USD,Orlando,US,935,Graphic Tee,SKU-BDG-002,3,18.99,56.97
+8101234567172,3172,2026-04-18 14:59:50,Owen Anderson,owen.anderson21@email.com,pending,paid,244.84,251.89,18.14,0.00,25.19,USD,Dallas,US,936,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567172,3172,2026-04-18 14:59:50,Owen Anderson,owen.anderson21@email.com,pending,paid,244.84,251.89,18.14,0.00,25.19,USD,Dallas,US,937,Graphic Tee,SKU-BDG-002,4,18.99,75.96
+8101234567172,3172,2026-04-18 14:59:50,Owen Anderson,owen.anderson21@email.com,pending,paid,244.84,251.89,18.14,0.00,25.19,USD,Dallas,US,938,Pocket Tee,SKU-BDG-006,3,21.99,65.97
+8101234567172,3172,2026-04-18 14:59:50,Owen Anderson,owen.anderson21@email.com,pending,paid,244.84,251.89,18.14,0.00,25.19,USD,Dallas,US,939,Slide Sandals,SKU-BDG-007,2,29.99,59.98
+8101234567173,3173,2026-04-18 16:28:47,Henry Brooks,henry.brooks22@email.com,fulfilled,paid,397.26,399.81,29.43,0.00,31.98,USD,San Antonio,US,940,Phone Stand,SKU-BDG-010,4,12.99,51.96
+8101234567173,3173,2026-04-18 16:28:47,Henry Brooks,henry.brooks22@email.com,fulfilled,paid,397.26,399.81,29.43,0.00,31.98,USD,San Antonio,US,941,Lanyard,SKU-BDG-012,2,8.99,17.98
+8101234567173,3173,2026-04-18 16:28:47,Henry Brooks,henry.brooks22@email.com,fulfilled,paid,397.26,399.81,29.43,0.00,31.98,USD,San Antonio,US,942,Reusable Bottle,SKU-BDG-005,1,14.99,14.99
+8101234567173,3173,2026-04-18 16:28:47,Henry Brooks,henry.brooks22@email.com,fulfilled,paid,397.26,399.81,29.43,0.00,31.98,USD,San Antonio,US,943,Pocket Tee,SKU-BDG-006,2,21.99,43.98
+8101234567173,3173,2026-04-18 16:28:47,Henry Brooks,henry.brooks22@email.com,fulfilled,paid,397.26,399.81,29.43,0.00,31.98,USD,San Antonio,US,944,Belt Bag,SKU-BDG-008,2,27.99,55.98
+8101234567173,3173,2026-04-18 16:28:47,Henry Brooks,henry.brooks22@email.com,fulfilled,paid,397.26,399.81,29.43,0.00,31.98,USD,San Antonio,US,945,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567173,3173,2026-04-18 16:28:47,Henry Brooks,henry.brooks22@email.com,fulfilled,paid,397.26,399.81,29.43,0.00,31.98,USD,San Antonio,US,946,Canvas Tote,SKU-BDG-004,5,24.99,124.95
+8101234567174,3174,2026-04-17 15:13:52,Isaac Jackson,isaac.jackson0@email.com,pending,cancelled,287.56,295.84,21.30,0.00,29.58,USD,Orlando,US,947,Canvas Tote,SKU-BDG-004,3,24.99,74.97
+8101234567174,3174,2026-04-17 15:13:52,Isaac Jackson,isaac.jackson0@email.com,pending,cancelled,287.56,295.84,21.30,0.00,29.58,USD,Orlando,US,948,Crew Socks,SKU-BDG-001,3,9.99,29.97
+8101234567174,3174,2026-04-17 15:13:52,Isaac Jackson,isaac.jackson0@email.com,pending,cancelled,287.56,295.84,21.30,0.00,29.58,USD,Orlando,US,949,Reusable Bottle,SKU-BDG-005,2,14.99,29.98
+8101234567174,3174,2026-04-17 15:13:52,Isaac Jackson,isaac.jackson0@email.com,pending,cancelled,287.56,295.84,21.30,0.00,29.58,USD,Orlando,US,950,Notebook Set,SKU-BDG-009,2,15.99,31.98
+8101234567174,3174,2026-04-17 15:13:52,Isaac Jackson,isaac.jackson0@email.com,pending,cancelled,287.56,295.84,21.30,0.00,29.58,USD,Orlando,US,951,Phone Stand,SKU-BDG-010,3,12.99,38.97
+8101234567174,3174,2026-04-17 15:13:52,Isaac Jackson,isaac.jackson0@email.com,pending,cancelled,287.56,295.84,21.30,0.00,29.58,USD,Orlando,US,952,Slide Sandals,SKU-BDG-007,3,29.99,89.97
+8101234567175,3175,2026-04-16 10:33:44,Amelia Murphy,amelia.murphy1@email.com,fulfilled,paid,256.49,263.88,19.00,0.00,26.39,USD,Columbus,US,953,Belt Bag,SKU-BDG-008,3,27.99,83.97
+8101234567175,3175,2026-04-16 10:33:44,Amelia Murphy,amelia.murphy1@email.com,fulfilled,paid,256.49,263.88,19.00,0.00,26.39,USD,Columbus,US,954,Notebook Set,SKU-BDG-009,1,15.99,15.99
+8101234567175,3175,2026-04-16 10:33:44,Amelia Murphy,amelia.murphy1@email.com,fulfilled,paid,256.49,263.88,19.00,0.00,26.39,USD,Columbus,US,955,Phone Stand,SKU-BDG-010,2,12.99,25.98
+8101234567175,3175,2026-04-16 10:33:44,Amelia Murphy,amelia.murphy1@email.com,fulfilled,paid,256.49,263.88,19.00,0.00,26.39,USD,Columbus,US,956,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567175,3175,2026-04-16 10:33:44,Amelia Murphy,amelia.murphy1@email.com,fulfilled,paid,256.49,263.88,19.00,0.00,26.39,USD,Columbus,US,957,Sticker Pack,SKU-BDG-011,1,7.99,7.99
+8101234567175,3175,2026-04-16 10:33:44,Amelia Murphy,amelia.murphy1@email.com,fulfilled,paid,256.49,263.88,19.00,0.00,26.39,USD,Columbus,US,958,Running Shorts,SKU-BDG-013,2,24.99,49.98
+8101234567175,3175,2026-04-16 10:33:44,Amelia Murphy,amelia.murphy1@email.com,fulfilled,paid,256.49,263.88,19.00,0.00,26.39,USD,Columbus,US,959,Canvas Tote,SKU-BDG-004,2,24.99,49.98
+8101234567176,3176,2026-04-17 19:01:41,Owen Jackson,owen.jackson2@email.com,fulfilled,paid,306.82,322.83,22.73,0.00,38.74,USD,Columbus,US,960,Lanyard,SKU-BDG-012,5,8.99,44.95
+8101234567176,3176,2026-04-17 19:01:41,Owen Jackson,owen.jackson2@email.com,fulfilled,paid,306.82,322.83,22.73,0.00,38.74,USD,Columbus,US,961,Running Shorts,SKU-BDG-013,3,24.99,74.97
+8101234567176,3176,2026-04-17 19:01:41,Owen Jackson,owen.jackson2@email.com,fulfilled,paid,306.82,322.83,22.73,0.00,38.74,USD,Columbus,US,962,Crew Socks,SKU-BDG-001,2,9.99,19.98
+8101234567176,3176,2026-04-17 19:01:41,Owen Jackson,owen.jackson2@email.com,fulfilled,paid,306.82,322.83,22.73,0.00,38.74,USD,Columbus,US,963,Phone Stand,SKU-BDG-010,1,12.99,12.99
+8101234567176,3176,2026-04-17 19:01:41,Owen Jackson,owen.jackson2@email.com,fulfilled,paid,306.82,322.83,22.73,0.00,38.74,USD,Columbus,US,964,Slide Sandals,SKU-BDG-007,1,29.99,29.99
+8101234567176,3176,2026-04-17 19:01:41,Owen Jackson,owen.jackson2@email.com,fulfilled,paid,306.82,322.83,22.73,0.00,38.74,USD,Columbus,US,965,Belt Bag,SKU-BDG-008,5,27.99,139.95

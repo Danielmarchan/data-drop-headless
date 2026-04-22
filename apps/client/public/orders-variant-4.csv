@@ -1,0 +1,816 @@
+order_id,order_number,created_at,customer_name,customer_email,fulfillment_status,financial_status,total_price,subtotal_price,total_tax,shipping_price,discount_amount,currency,city,country,line_item_id,product_title,sku,quantity,unit_price,line_total
+8301234567001,5001,2026-04-09 12:37:34,Caleb Kim,caleb.kim10@email.com,pending,pending,404.27,385.90,29.95,0.00,11.58,USD,Minneapolis,US,1,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567001,5001,2026-04-09 12:37:34,Caleb Kim,caleb.kim10@email.com,pending,pending,404.27,385.90,29.95,0.00,11.58,USD,Minneapolis,US,2,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567001,5001,2026-04-09 12:37:34,Caleb Kim,caleb.kim10@email.com,pending,pending,404.27,385.90,29.95,0.00,11.58,USD,Minneapolis,US,3,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567001,5001,2026-04-09 12:37:34,Caleb Kim,caleb.kim10@email.com,pending,pending,404.27,385.90,29.95,0.00,11.58,USD,Minneapolis,US,4,Packing Cubes,SKU-BKO-007,3,24.99,74.97
+8301234567001,5001,2026-04-09 12:37:34,Caleb Kim,caleb.kim10@email.com,pending,pending,404.27,385.90,29.95,0.00,11.58,USD,Minneapolis,US,5,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567002,5002,2026-04-07 14:20:51,Isaac Kelly,isaac.kelly11@email.com,unfulfilled,cancelled,986.87,961.86,73.10,0.00,48.09,USD,Minneapolis,US,6,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567002,5002,2026-04-07 14:20:51,Isaac Kelly,isaac.kelly11@email.com,unfulfilled,cancelled,986.87,961.86,73.10,0.00,48.09,USD,Minneapolis,US,7,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567002,5002,2026-04-07 14:20:51,Isaac Kelly,isaac.kelly11@email.com,unfulfilled,cancelled,986.87,961.86,73.10,0.00,48.09,USD,Minneapolis,US,8,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567002,5002,2026-04-07 14:20:51,Isaac Kelly,isaac.kelly11@email.com,unfulfilled,cancelled,986.87,961.86,73.10,0.00,48.09,USD,Minneapolis,US,9,Packing Cubes,SKU-BKO-007,3,24.99,74.97
+8301234567002,5002,2026-04-07 14:20:51,Isaac Kelly,isaac.kelly11@email.com,unfulfilled,cancelled,986.87,961.86,73.10,0.00,48.09,USD,Minneapolis,US,10,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567002,5002,2026-04-07 14:20:51,Isaac Kelly,isaac.kelly11@email.com,unfulfilled,cancelled,986.87,961.86,73.10,0.00,48.09,USD,Minneapolis,US,11,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567003,5003,2026-04-10 13:54:00,Zoe Parker,zoe.parker12@email.com,pending,pending,740.70,685.83,54.87,0.00,0.00,USD,Detroit,US,12,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567003,5003,2026-04-10 13:54:00,Zoe Parker,zoe.parker12@email.com,pending,pending,740.70,685.83,54.87,0.00,0.00,USD,Detroit,US,13,Tech Organizer,SKU-BKO-009,5,29.99,149.95
+8301234567003,5003,2026-04-10 13:54:00,Zoe Parker,zoe.parker12@email.com,pending,pending,740.70,685.83,54.87,0.00,0.00,USD,Detroit,US,14,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567003,5003,2026-04-10 13:54:00,Zoe Parker,zoe.parker12@email.com,pending,pending,740.70,685.83,54.87,0.00,0.00,USD,Detroit,US,15,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567003,5003,2026-04-10 13:54:00,Zoe Parker,zoe.parker12@email.com,pending,pending,740.70,685.83,54.87,0.00,0.00,USD,Detroit,US,16,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567003,5003,2026-04-10 13:54:00,Zoe Parker,zoe.parker12@email.com,pending,pending,740.70,685.83,54.87,0.00,0.00,USD,Detroit,US,17,Duffel Bag,SKU-BKO-002,4,74.99,299.96
+8301234567004,5004,2026-04-07 18:31:02,Emma Harris,emma.harris13@email.com,unfulfilled,refunded,836.08,814.90,61.93,0.00,40.75,USD,Denver,US,18,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567004,5004,2026-04-07 18:31:02,Emma Harris,emma.harris13@email.com,unfulfilled,refunded,836.08,814.90,61.93,0.00,40.75,USD,Denver,US,19,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567004,5004,2026-04-07 18:31:02,Emma Harris,emma.harris13@email.com,unfulfilled,refunded,836.08,814.90,61.93,0.00,40.75,USD,Denver,US,20,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567004,5004,2026-04-07 18:31:02,Emma Harris,emma.harris13@email.com,unfulfilled,refunded,836.08,814.90,61.93,0.00,40.75,USD,Denver,US,21,Insulated Bottle,SKU-BKO-006,3,34.99,104.97
+8301234567004,5004,2026-04-07 18:31:02,Emma Harris,emma.harris13@email.com,unfulfilled,refunded,836.08,814.90,61.93,0.00,40.75,USD,Denver,US,22,Travel Backpack,SKU-BKO-001,3,89.99,269.97
+8301234567004,5004,2026-04-07 18:31:02,Emma Harris,emma.harris13@email.com,unfulfilled,refunded,836.08,814.90,61.93,0.00,40.75,USD,Denver,US,23,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567005,5005,2026-04-10 13:12:12,Scarlett Sanders,scarlett.sanders14@email.com,pending,pending,762.21,758.87,56.46,0.00,53.12,USD,Boise,US,24,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567005,5005,2026-04-10 13:12:12,Scarlett Sanders,scarlett.sanders14@email.com,pending,pending,762.21,758.87,56.46,0.00,53.12,USD,Boise,US,25,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567005,5005,2026-04-10 13:12:12,Scarlett Sanders,scarlett.sanders14@email.com,pending,pending,762.21,758.87,56.46,0.00,53.12,USD,Boise,US,26,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567005,5005,2026-04-10 13:12:12,Scarlett Sanders,scarlett.sanders14@email.com,pending,pending,762.21,758.87,56.46,0.00,53.12,USD,Boise,US,27,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567005,5005,2026-04-10 13:12:12,Scarlett Sanders,scarlett.sanders14@email.com,pending,pending,762.21,758.87,56.46,0.00,53.12,USD,Boise,US,28,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567005,5005,2026-04-10 13:12:12,Scarlett Sanders,scarlett.sanders14@email.com,pending,pending,762.21,758.87,56.46,0.00,53.12,USD,Boise,US,29,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567005,5005,2026-04-10 13:12:12,Scarlett Sanders,scarlett.sanders14@email.com,pending,pending,762.21,758.87,56.46,0.00,53.12,USD,Boise,US,30,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567006,5006,2026-04-14 15:02:51,Ava Brown,ava.brown15@email.com,fulfilled,paid,617.51,601.86,45.74,0.00,30.09,USD,Salt Lake City,US,31,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567006,5006,2026-04-14 15:02:51,Ava Brown,ava.brown15@email.com,fulfilled,paid,617.51,601.86,45.74,0.00,30.09,USD,Salt Lake City,US,32,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567006,5006,2026-04-14 15:02:51,Ava Brown,ava.brown15@email.com,fulfilled,paid,617.51,601.86,45.74,0.00,30.09,USD,Salt Lake City,US,33,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567006,5006,2026-04-14 15:02:51,Ava Brown,ava.brown15@email.com,fulfilled,paid,617.51,601.86,45.74,0.00,30.09,USD,Salt Lake City,US,34,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567006,5006,2026-04-14 15:02:51,Ava Brown,ava.brown15@email.com,fulfilled,paid,617.51,601.86,45.74,0.00,30.09,USD,Salt Lake City,US,35,Packing Cubes,SKU-BKO-007,5,24.99,124.95
+8301234567006,5006,2026-04-14 15:02:51,Ava Brown,ava.brown15@email.com,fulfilled,paid,617.51,601.86,45.74,0.00,30.09,USD,Salt Lake City,US,36,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567006,5006,2026-04-14 15:02:51,Ava Brown,ava.brown15@email.com,fulfilled,paid,617.51,601.86,45.74,0.00,30.09,USD,Salt Lake City,US,37,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567007,5007,2026-04-16 10:27:19,Ella Kim,ella.kim16@email.com,pending,pending,1387.61,1284.82,102.79,0.00,0.00,USD,Boise,US,38,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567007,5007,2026-04-16 10:27:19,Ella Kim,ella.kim16@email.com,pending,pending,1387.61,1284.82,102.79,0.00,0.00,USD,Boise,US,39,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567007,5007,2026-04-16 10:27:19,Ella Kim,ella.kim16@email.com,pending,pending,1387.61,1284.82,102.79,0.00,0.00,USD,Boise,US,40,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567007,5007,2026-04-16 10:27:19,Ella Kim,ella.kim16@email.com,pending,pending,1387.61,1284.82,102.79,0.00,0.00,USD,Boise,US,41,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567007,5007,2026-04-16 10:27:19,Ella Kim,ella.kim16@email.com,pending,pending,1387.61,1284.82,102.79,0.00,0.00,USD,Boise,US,42,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567007,5007,2026-04-16 10:27:19,Ella Kim,ella.kim16@email.com,pending,pending,1387.61,1284.82,102.79,0.00,0.00,USD,Boise,US,43,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567007,5007,2026-04-16 10:27:19,Ella Kim,ella.kim16@email.com,pending,pending,1387.61,1284.82,102.79,0.00,0.00,USD,Boise,US,44,Fleece Vest,SKU-BKO-005,5,64.99,324.95
+8301234567008,5008,2026-04-18 19:28:31,Nora Jackson,nora.jackson17@email.com,fulfilled,refunded,1372.46,1270.80,101.66,0.00,0.00,USD,Denver,US,45,Rain Shell,SKU-BKO-010,5,129.99,649.95
+8301234567008,5008,2026-04-18 19:28:31,Nora Jackson,nora.jackson17@email.com,fulfilled,refunded,1372.46,1270.80,101.66,0.00,0.00,USD,Denver,US,46,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567008,5008,2026-04-18 19:28:31,Nora Jackson,nora.jackson17@email.com,fulfilled,refunded,1372.46,1270.80,101.66,0.00,0.00,USD,Denver,US,47,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567008,5008,2026-04-18 19:28:31,Nora Jackson,nora.jackson17@email.com,fulfilled,refunded,1372.46,1270.80,101.66,0.00,0.00,USD,Denver,US,48,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567008,5008,2026-04-18 19:28:31,Nora Jackson,nora.jackson17@email.com,fulfilled,refunded,1372.46,1270.80,101.66,0.00,0.00,USD,Denver,US,49,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567008,5008,2026-04-18 19:28:31,Nora Jackson,nora.jackson17@email.com,fulfilled,refunded,1372.46,1270.80,101.66,0.00,0.00,USD,Denver,US,50,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567008,5008,2026-04-18 19:28:31,Nora Jackson,nora.jackson17@email.com,fulfilled,refunded,1372.46,1270.80,101.66,0.00,0.00,USD,Denver,US,51,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567008,5008,2026-04-18 19:28:31,Nora Jackson,nora.jackson17@email.com,fulfilled,refunded,1372.46,1270.80,101.66,0.00,0.00,USD,Denver,US,52,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567009,5009,2026-04-14 11:30:59,Mason Foster,mason.foster18@email.com,unfulfilled,pending,1051.49,1024.84,77.89,0.00,51.24,USD,Detroit,US,53,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567009,5009,2026-04-14 11:30:59,Mason Foster,mason.foster18@email.com,unfulfilled,pending,1051.49,1024.84,77.89,0.00,51.24,USD,Detroit,US,54,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567009,5009,2026-04-14 11:30:59,Mason Foster,mason.foster18@email.com,unfulfilled,pending,1051.49,1024.84,77.89,0.00,51.24,USD,Detroit,US,55,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567009,5009,2026-04-14 11:30:59,Mason Foster,mason.foster18@email.com,unfulfilled,pending,1051.49,1024.84,77.89,0.00,51.24,USD,Detroit,US,56,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567009,5009,2026-04-14 11:30:59,Mason Foster,mason.foster18@email.com,unfulfilled,pending,1051.49,1024.84,77.89,0.00,51.24,USD,Detroit,US,57,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567009,5009,2026-04-14 11:30:59,Mason Foster,mason.foster18@email.com,unfulfilled,pending,1051.49,1024.84,77.89,0.00,51.24,USD,Detroit,US,58,Portable Charger,SKU-BKO-008,5,39.99,199.95
+8301234567009,5009,2026-04-14 11:30:59,Mason Foster,mason.foster18@email.com,unfulfilled,pending,1051.49,1024.84,77.89,0.00,51.24,USD,Detroit,US,59,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567010,5010,2026-04-16 12:13:17,Lily Jackson,lily.jackson19@email.com,fulfilled,pending,763.43,706.88,56.55,0.00,0.00,USD,Salt Lake City,US,60,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567010,5010,2026-04-16 12:13:17,Lily Jackson,lily.jackson19@email.com,fulfilled,pending,763.43,706.88,56.55,0.00,0.00,USD,Salt Lake City,US,61,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567010,5010,2026-04-16 12:13:17,Lily Jackson,lily.jackson19@email.com,fulfilled,pending,763.43,706.88,56.55,0.00,0.00,USD,Salt Lake City,US,62,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567010,5010,2026-04-16 12:13:17,Lily Jackson,lily.jackson19@email.com,fulfilled,pending,763.43,706.88,56.55,0.00,0.00,USD,Salt Lake City,US,63,Beanie,SKU-BKO-012,4,19.99,79.96
+8301234567010,5010,2026-04-16 12:13:17,Lily Jackson,lily.jackson19@email.com,fulfilled,pending,763.43,706.88,56.55,0.00,0.00,USD,Salt Lake City,US,64,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567010,5010,2026-04-16 12:13:17,Lily Jackson,lily.jackson19@email.com,fulfilled,pending,763.43,706.88,56.55,0.00,0.00,USD,Salt Lake City,US,65,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567010,5010,2026-04-16 12:13:17,Lily Jackson,lily.jackson19@email.com,fulfilled,pending,763.43,706.88,56.55,0.00,0.00,USD,Salt Lake City,US,66,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567011,5011,2026-04-18 20:16:29,Owen Martin,owen.martin20@email.com,unfulfilled,pending,900.55,833.84,66.71,0.00,0.00,USD,Portland,US,67,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567011,5011,2026-04-18 20:16:29,Owen Martin,owen.martin20@email.com,unfulfilled,pending,900.55,833.84,66.71,0.00,0.00,USD,Portland,US,68,Portable Charger,SKU-BKO-008,4,39.99,159.96
+8301234567011,5011,2026-04-18 20:16:29,Owen Martin,owen.martin20@email.com,unfulfilled,pending,900.55,833.84,66.71,0.00,0.00,USD,Portland,US,69,Travel Backpack,SKU-BKO-001,3,89.99,269.97
+8301234567011,5011,2026-04-18 20:16:29,Owen Martin,owen.martin20@email.com,unfulfilled,pending,900.55,833.84,66.71,0.00,0.00,USD,Portland,US,70,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567011,5011,2026-04-18 20:16:29,Owen Martin,owen.martin20@email.com,unfulfilled,pending,900.55,833.84,66.71,0.00,0.00,USD,Portland,US,71,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567011,5011,2026-04-18 20:16:29,Owen Martin,owen.martin20@email.com,unfulfilled,pending,900.55,833.84,66.71,0.00,0.00,USD,Portland,US,72,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567011,5011,2026-04-18 20:16:29,Owen Martin,owen.martin20@email.com,unfulfilled,pending,900.55,833.84,66.71,0.00,0.00,USD,Portland,US,73,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567012,5012,2026-04-13 14:26:07,Chloe Simmons,chloe.simmons21@email.com,fulfilled,refunded,811.43,790.86,60.11,0.00,39.54,USD,Denver,US,74,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567012,5012,2026-04-13 14:26:07,Chloe Simmons,chloe.simmons21@email.com,fulfilled,refunded,811.43,790.86,60.11,0.00,39.54,USD,Denver,US,75,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567012,5012,2026-04-13 14:26:07,Chloe Simmons,chloe.simmons21@email.com,fulfilled,refunded,811.43,790.86,60.11,0.00,39.54,USD,Denver,US,76,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567012,5012,2026-04-13 14:26:07,Chloe Simmons,chloe.simmons21@email.com,fulfilled,refunded,811.43,790.86,60.11,0.00,39.54,USD,Denver,US,77,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567012,5012,2026-04-13 14:26:07,Chloe Simmons,chloe.simmons21@email.com,fulfilled,refunded,811.43,790.86,60.11,0.00,39.54,USD,Denver,US,78,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567012,5012,2026-04-13 14:26:07,Chloe Simmons,chloe.simmons21@email.com,fulfilled,refunded,811.43,790.86,60.11,0.00,39.54,USD,Denver,US,79,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567013,5013,2026-04-15 12:54:47,Lily Cox,lily.cox22@email.com,pending,cancelled,589.83,574.88,43.69,0.00,28.74,USD,Boise,US,80,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567013,5013,2026-04-15 12:54:47,Lily Cox,lily.cox22@email.com,pending,cancelled,589.83,574.88,43.69,0.00,28.74,USD,Boise,US,81,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567013,5013,2026-04-15 12:54:47,Lily Cox,lily.cox22@email.com,pending,cancelled,589.83,574.88,43.69,0.00,28.74,USD,Boise,US,82,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567013,5013,2026-04-15 12:54:47,Lily Cox,lily.cox22@email.com,pending,cancelled,589.83,574.88,43.69,0.00,28.74,USD,Boise,US,83,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567013,5013,2026-04-15 12:54:47,Lily Cox,lily.cox22@email.com,pending,cancelled,589.83,574.88,43.69,0.00,28.74,USD,Boise,US,84,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567013,5013,2026-04-15 12:54:47,Lily Cox,lily.cox22@email.com,pending,cancelled,589.83,574.88,43.69,0.00,28.74,USD,Boise,US,85,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567014,5014,2026-04-13 11:26:36,Ella Ward,ella.ward0@email.com,unfulfilled,cancelled,1234.94,1178.82,91.48,0.00,35.36,USD,Boise,US,86,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567014,5014,2026-04-13 11:26:36,Ella Ward,ella.ward0@email.com,unfulfilled,cancelled,1234.94,1178.82,91.48,0.00,35.36,USD,Boise,US,87,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567014,5014,2026-04-13 11:26:36,Ella Ward,ella.ward0@email.com,unfulfilled,cancelled,1234.94,1178.82,91.48,0.00,35.36,USD,Boise,US,88,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567014,5014,2026-04-13 11:26:36,Ella Ward,ella.ward0@email.com,unfulfilled,cancelled,1234.94,1178.82,91.48,0.00,35.36,USD,Boise,US,89,Rain Shell,SKU-BKO-010,4,129.99,519.96
+8301234567014,5014,2026-04-13 11:26:36,Ella Ward,ella.ward0@email.com,unfulfilled,cancelled,1234.94,1178.82,91.48,0.00,35.36,USD,Boise,US,90,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567014,5014,2026-04-13 11:26:36,Ella Ward,ella.ward0@email.com,unfulfilled,cancelled,1234.94,1178.82,91.48,0.00,35.36,USD,Boise,US,91,Packing Cubes,SKU-BKO-007,4,24.99,99.96
+8301234567014,5014,2026-04-13 11:26:36,Ella Ward,ella.ward0@email.com,unfulfilled,cancelled,1234.94,1178.82,91.48,0.00,35.36,USD,Boise,US,92,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567015,5015,2026-04-18 16:17:14,Stella Hughes,stella.hughes1@email.com,pending,cancelled,706.98,703.88,52.37,0.00,49.27,USD,Salt Lake City,US,93,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567015,5015,2026-04-18 16:17:14,Stella Hughes,stella.hughes1@email.com,pending,cancelled,706.98,703.88,52.37,0.00,49.27,USD,Salt Lake City,US,94,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567015,5015,2026-04-18 16:17:14,Stella Hughes,stella.hughes1@email.com,pending,cancelled,706.98,703.88,52.37,0.00,49.27,USD,Salt Lake City,US,95,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567015,5015,2026-04-18 16:17:14,Stella Hughes,stella.hughes1@email.com,pending,cancelled,706.98,703.88,52.37,0.00,49.27,USD,Salt Lake City,US,96,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567015,5015,2026-04-18 16:17:14,Stella Hughes,stella.hughes1@email.com,pending,cancelled,706.98,703.88,52.37,0.00,49.27,USD,Salt Lake City,US,97,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567015,5015,2026-04-18 16:17:14,Stella Hughes,stella.hughes1@email.com,pending,cancelled,706.98,703.88,52.37,0.00,49.27,USD,Salt Lake City,US,98,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567015,5015,2026-04-18 16:17:14,Stella Hughes,stella.hughes1@email.com,pending,cancelled,706.98,703.88,52.37,0.00,49.27,USD,Salt Lake City,US,99,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567016,5016,2026-04-14 13:20:17,Olivia Price,olivia.price2@email.com,pending,cancelled,1237.24,1231.82,91.65,0.00,86.23,USD,Denver,US,100,Insulated Bottle,SKU-BKO-006,4,34.99,139.96
+8301234567016,5016,2026-04-14 13:20:17,Olivia Price,olivia.price2@email.com,pending,cancelled,1237.24,1231.82,91.65,0.00,86.23,USD,Denver,US,101,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567016,5016,2026-04-14 13:20:17,Olivia Price,olivia.price2@email.com,pending,cancelled,1237.24,1231.82,91.65,0.00,86.23,USD,Denver,US,102,Rain Shell,SKU-BKO-010,5,129.99,649.95
+8301234567016,5016,2026-04-14 13:20:17,Olivia Price,olivia.price2@email.com,pending,cancelled,1237.24,1231.82,91.65,0.00,86.23,USD,Denver,US,103,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567016,5016,2026-04-14 13:20:17,Olivia Price,olivia.price2@email.com,pending,cancelled,1237.24,1231.82,91.65,0.00,86.23,USD,Denver,US,104,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567016,5016,2026-04-14 13:20:17,Olivia Price,olivia.price2@email.com,pending,cancelled,1237.24,1231.82,91.65,0.00,86.23,USD,Denver,US,105,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567016,5016,2026-04-14 13:20:17,Olivia Price,olivia.price2@email.com,pending,cancelled,1237.24,1231.82,91.65,0.00,86.23,USD,Denver,US,106,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567017,5017,2026-04-15 12:58:02,Noah Anderson,noah.anderson3@email.com,pending,pending,974.53,949.83,72.19,0.00,47.49,USD,Denver,US,107,Tech Organizer,SKU-BKO-009,5,29.99,149.95
+8301234567017,5017,2026-04-15 12:58:02,Noah Anderson,noah.anderson3@email.com,pending,pending,974.53,949.83,72.19,0.00,47.49,USD,Denver,US,108,Portable Charger,SKU-BKO-008,4,39.99,159.96
+8301234567017,5017,2026-04-15 12:58:02,Noah Anderson,noah.anderson3@email.com,pending,pending,974.53,949.83,72.19,0.00,47.49,USD,Denver,US,109,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567017,5017,2026-04-15 12:58:02,Noah Anderson,noah.anderson3@email.com,pending,pending,974.53,949.83,72.19,0.00,47.49,USD,Denver,US,110,Duffel Bag,SKU-BKO-002,4,74.99,299.96
+8301234567017,5017,2026-04-15 12:58:02,Noah Anderson,noah.anderson3@email.com,pending,pending,974.53,949.83,72.19,0.00,47.49,USD,Denver,US,111,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567017,5017,2026-04-15 12:58:02,Noah Anderson,noah.anderson3@email.com,pending,pending,974.53,949.83,72.19,0.00,47.49,USD,Denver,US,112,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567018,5018,2026-04-18 09:09:32,Hannah Clark,hannah.clark4@email.com,unfulfilled,cancelled,684.21,666.87,50.68,0.00,33.34,USD,Minneapolis,US,113,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567018,5018,2026-04-18 09:09:32,Hannah Clark,hannah.clark4@email.com,unfulfilled,cancelled,684.21,666.87,50.68,0.00,33.34,USD,Minneapolis,US,114,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567018,5018,2026-04-18 09:09:32,Hannah Clark,hannah.clark4@email.com,unfulfilled,cancelled,684.21,666.87,50.68,0.00,33.34,USD,Minneapolis,US,115,Portable Charger,SKU-BKO-008,4,39.99,159.96
+8301234567018,5018,2026-04-18 09:09:32,Hannah Clark,hannah.clark4@email.com,unfulfilled,cancelled,684.21,666.87,50.68,0.00,33.34,USD,Minneapolis,US,116,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567018,5018,2026-04-18 09:09:32,Hannah Clark,hannah.clark4@email.com,unfulfilled,cancelled,684.21,666.87,50.68,0.00,33.34,USD,Minneapolis,US,117,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567018,5018,2026-04-18 09:09:32,Hannah Clark,hannah.clark4@email.com,unfulfilled,cancelled,684.21,666.87,50.68,0.00,33.34,USD,Minneapolis,US,118,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567018,5018,2026-04-18 09:09:32,Hannah Clark,hannah.clark4@email.com,unfulfilled,cancelled,684.21,666.87,50.68,0.00,33.34,USD,Minneapolis,US,119,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567019,5019,2026-04-15 15:25:50,Aria Martinez,aria.martinez5@email.com,pending,pending,1692.13,1566.79,125.34,0.00,0.00,USD,Salt Lake City,US,120,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567019,5019,2026-04-15 15:25:50,Aria Martinez,aria.martinez5@email.com,pending,pending,1692.13,1566.79,125.34,0.00,0.00,USD,Salt Lake City,US,121,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567019,5019,2026-04-15 15:25:50,Aria Martinez,aria.martinez5@email.com,pending,pending,1692.13,1566.79,125.34,0.00,0.00,USD,Salt Lake City,US,122,Travel Backpack,SKU-BKO-001,5,89.99,449.95
+8301234567019,5019,2026-04-15 15:25:50,Aria Martinez,aria.martinez5@email.com,pending,pending,1692.13,1566.79,125.34,0.00,0.00,USD,Salt Lake City,US,123,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567019,5019,2026-04-15 15:25:50,Aria Martinez,aria.martinez5@email.com,pending,pending,1692.13,1566.79,125.34,0.00,0.00,USD,Salt Lake City,US,124,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567019,5019,2026-04-15 15:25:50,Aria Martinez,aria.martinez5@email.com,pending,pending,1692.13,1566.79,125.34,0.00,0.00,USD,Salt Lake City,US,125,Crossbody Sling,SKU-BKO-013,4,49.99,199.96
+8301234567019,5019,2026-04-15 15:25:50,Aria Martinez,aria.martinez5@email.com,pending,pending,1692.13,1566.79,125.34,0.00,0.00,USD,Salt Lake City,US,126,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567019,5019,2026-04-15 15:25:50,Aria Martinez,aria.martinez5@email.com,pending,pending,1692.13,1566.79,125.34,0.00,0.00,USD,Salt Lake City,US,127,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567020,5020,2026-04-17 21:40:00,Samuel Lee,samuel.lee6@email.com,unfulfilled,pending,1204.03,1114.84,89.19,0.00,0.00,USD,Salt Lake City,US,128,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567020,5020,2026-04-17 21:40:00,Samuel Lee,samuel.lee6@email.com,unfulfilled,pending,1204.03,1114.84,89.19,0.00,0.00,USD,Salt Lake City,US,129,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567020,5020,2026-04-17 21:40:00,Samuel Lee,samuel.lee6@email.com,unfulfilled,pending,1204.03,1114.84,89.19,0.00,0.00,USD,Salt Lake City,US,130,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567020,5020,2026-04-17 21:40:00,Samuel Lee,samuel.lee6@email.com,unfulfilled,pending,1204.03,1114.84,89.19,0.00,0.00,USD,Salt Lake City,US,131,Beanie,SKU-BKO-012,5,19.99,99.95
+8301234567020,5020,2026-04-17 21:40:00,Samuel Lee,samuel.lee6@email.com,unfulfilled,pending,1204.03,1114.84,89.19,0.00,0.00,USD,Salt Lake City,US,132,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567020,5020,2026-04-17 21:40:00,Samuel Lee,samuel.lee6@email.com,unfulfilled,pending,1204.03,1114.84,89.19,0.00,0.00,USD,Salt Lake City,US,133,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567021,5021,2026-04-19 14:12:20,Daniel Hughes,daniel.hughes7@email.com,pending,pending,874.61,834.87,64.79,0.00,25.05,USD,Denver,US,134,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567021,5021,2026-04-19 14:12:20,Daniel Hughes,daniel.hughes7@email.com,pending,pending,874.61,834.87,64.79,0.00,25.05,USD,Denver,US,135,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567021,5021,2026-04-19 14:12:20,Daniel Hughes,daniel.hughes7@email.com,pending,pending,874.61,834.87,64.79,0.00,25.05,USD,Denver,US,136,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567021,5021,2026-04-19 14:12:20,Daniel Hughes,daniel.hughes7@email.com,pending,pending,874.61,834.87,64.79,0.00,25.05,USD,Denver,US,137,Crossbody Sling,SKU-BKO-013,4,49.99,199.96
+8301234567021,5021,2026-04-19 14:12:20,Daniel Hughes,daniel.hughes7@email.com,pending,pending,874.61,834.87,64.79,0.00,25.05,USD,Denver,US,138,Duffel Bag,SKU-BKO-002,5,74.99,374.95
+8301234567021,5021,2026-04-19 14:12:20,Daniel Hughes,daniel.hughes7@email.com,pending,pending,874.61,834.87,64.79,0.00,25.05,USD,Denver,US,139,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567022,5022,2026-04-22 17:58:16,Hannah Simmons,hannah.simmons8@email.com,unfulfilled,pending,812.41,808.85,60.18,0.00,56.62,USD,Portland,US,140,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567022,5022,2026-04-22 17:58:16,Hannah Simmons,hannah.simmons8@email.com,unfulfilled,pending,812.41,808.85,60.18,0.00,56.62,USD,Portland,US,141,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567022,5022,2026-04-22 17:58:16,Hannah Simmons,hannah.simmons8@email.com,unfulfilled,pending,812.41,808.85,60.18,0.00,56.62,USD,Portland,US,142,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567022,5022,2026-04-22 17:58:16,Hannah Simmons,hannah.simmons8@email.com,unfulfilled,pending,812.41,808.85,60.18,0.00,56.62,USD,Portland,US,143,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567022,5022,2026-04-22 17:58:16,Hannah Simmons,hannah.simmons8@email.com,unfulfilled,pending,812.41,808.85,60.18,0.00,56.62,USD,Portland,US,144,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567022,5022,2026-04-22 17:58:16,Hannah Simmons,hannah.simmons8@email.com,unfulfilled,pending,812.41,808.85,60.18,0.00,56.62,USD,Portland,US,145,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567022,5022,2026-04-22 17:58:16,Hannah Simmons,hannah.simmons8@email.com,unfulfilled,pending,812.41,808.85,60.18,0.00,56.62,USD,Portland,US,146,Packing Cubes,SKU-BKO-007,3,24.99,74.97
+8301234567023,5023,2026-04-23 16:35:34,Ava Martinez,ava.martinez9@email.com,pending,cancelled,866.20,826.85,64.16,0.00,24.81,USD,Denver,US,147,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567023,5023,2026-04-23 16:35:34,Ava Martinez,ava.martinez9@email.com,pending,cancelled,866.20,826.85,64.16,0.00,24.81,USD,Denver,US,148,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567023,5023,2026-04-23 16:35:34,Ava Martinez,ava.martinez9@email.com,pending,cancelled,866.20,826.85,64.16,0.00,24.81,USD,Denver,US,149,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567023,5023,2026-04-23 16:35:34,Ava Martinez,ava.martinez9@email.com,pending,cancelled,866.20,826.85,64.16,0.00,24.81,USD,Denver,US,150,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567023,5023,2026-04-23 16:35:34,Ava Martinez,ava.martinez9@email.com,pending,cancelled,866.20,826.85,64.16,0.00,24.81,USD,Denver,US,151,Insulated Bottle,SKU-BKO-006,5,34.99,174.95
+8301234567023,5023,2026-04-23 16:35:34,Ava Martinez,ava.martinez9@email.com,pending,cancelled,866.20,826.85,64.16,0.00,24.81,USD,Denver,US,152,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567024,5024,2026-04-24 20:42:46,Owen Kelly,owen.kelly10@email.com,pending,cancelled,784.50,748.86,58.11,0.00,22.47,USD,Detroit,US,153,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567024,5024,2026-04-24 20:42:46,Owen Kelly,owen.kelly10@email.com,pending,cancelled,784.50,748.86,58.11,0.00,22.47,USD,Detroit,US,154,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567024,5024,2026-04-24 20:42:46,Owen Kelly,owen.kelly10@email.com,pending,cancelled,784.50,748.86,58.11,0.00,22.47,USD,Detroit,US,155,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567024,5024,2026-04-24 20:42:46,Owen Kelly,owen.kelly10@email.com,pending,cancelled,784.50,748.86,58.11,0.00,22.47,USD,Detroit,US,156,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567024,5024,2026-04-24 20:42:46,Owen Kelly,owen.kelly10@email.com,pending,cancelled,784.50,748.86,58.11,0.00,22.47,USD,Detroit,US,157,Crossbody Sling,SKU-BKO-013,4,49.99,199.96
+8301234567024,5024,2026-04-24 20:42:46,Owen Kelly,owen.kelly10@email.com,pending,cancelled,784.50,748.86,58.11,0.00,22.47,USD,Detroit,US,158,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567025,5025,2026-04-23 09:03:01,Daniel Butler,daniel.butler11@email.com,fulfilled,refunded,1686.42,1609.79,124.92,0.00,48.29,USD,Denver,US,159,Hiking Boots,SKU-BKO-004,5,149.99,749.95
+8301234567025,5025,2026-04-23 09:03:01,Daniel Butler,daniel.butler11@email.com,fulfilled,refunded,1686.42,1609.79,124.92,0.00,48.29,USD,Denver,US,160,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567025,5025,2026-04-23 09:03:01,Daniel Butler,daniel.butler11@email.com,fulfilled,refunded,1686.42,1609.79,124.92,0.00,48.29,USD,Denver,US,161,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567025,5025,2026-04-23 09:03:01,Daniel Butler,daniel.butler11@email.com,fulfilled,refunded,1686.42,1609.79,124.92,0.00,48.29,USD,Denver,US,162,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567025,5025,2026-04-23 09:03:01,Daniel Butler,daniel.butler11@email.com,fulfilled,refunded,1686.42,1609.79,124.92,0.00,48.29,USD,Denver,US,163,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567025,5025,2026-04-23 09:03:01,Daniel Butler,daniel.butler11@email.com,fulfilled,refunded,1686.42,1609.79,124.92,0.00,48.29,USD,Denver,US,164,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567025,5025,2026-04-23 09:03:01,Daniel Butler,daniel.butler11@email.com,fulfilled,refunded,1686.42,1609.79,124.92,0.00,48.29,USD,Denver,US,165,Duffel Bag,SKU-BKO-002,4,74.99,299.96
+8301234567025,5025,2026-04-23 09:03:01,Daniel Butler,daniel.butler11@email.com,fulfilled,refunded,1686.42,1609.79,124.92,0.00,48.29,USD,Denver,US,166,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567026,5026,2026-04-23 16:14:39,Noah Rodriguez,noah.rodriguez12@email.com,pending,pending,1132.78,1048.87,83.91,0.00,0.00,USD,Minneapolis,US,167,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567026,5026,2026-04-23 16:14:39,Noah Rodriguez,noah.rodriguez12@email.com,pending,pending,1132.78,1048.87,83.91,0.00,0.00,USD,Minneapolis,US,168,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567026,5026,2026-04-23 16:14:39,Noah Rodriguez,noah.rodriguez12@email.com,pending,pending,1132.78,1048.87,83.91,0.00,0.00,USD,Minneapolis,US,169,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567026,5026,2026-04-23 16:14:39,Noah Rodriguez,noah.rodriguez12@email.com,pending,pending,1132.78,1048.87,83.91,0.00,0.00,USD,Minneapolis,US,170,Duffel Bag,SKU-BKO-002,5,74.99,374.95
+8301234567026,5026,2026-04-23 16:14:39,Noah Rodriguez,noah.rodriguez12@email.com,pending,pending,1132.78,1048.87,83.91,0.00,0.00,USD,Minneapolis,US,171,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567027,5027,2026-04-20 15:16:59,James Ross,james.ross13@email.com,unfulfilled,cancelled,1250.26,1244.79,92.61,0.00,87.14,USD,Portland,US,172,Packing Cubes,SKU-BKO-007,4,24.99,99.96
+8301234567027,5027,2026-04-20 15:16:59,James Ross,james.ross13@email.com,unfulfilled,cancelled,1250.26,1244.79,92.61,0.00,87.14,USD,Portland,US,173,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567027,5027,2026-04-20 15:16:59,James Ross,james.ross13@email.com,unfulfilled,cancelled,1250.26,1244.79,92.61,0.00,87.14,USD,Portland,US,174,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567027,5027,2026-04-20 15:16:59,James Ross,james.ross13@email.com,unfulfilled,cancelled,1250.26,1244.79,92.61,0.00,87.14,USD,Portland,US,175,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567027,5027,2026-04-20 15:16:59,James Ross,james.ross13@email.com,unfulfilled,cancelled,1250.26,1244.79,92.61,0.00,87.14,USD,Portland,US,176,Fleece Vest,SKU-BKO-005,4,64.99,259.96
+8301234567027,5027,2026-04-20 15:16:59,James Ross,james.ross13@email.com,unfulfilled,cancelled,1250.26,1244.79,92.61,0.00,87.14,USD,Portland,US,177,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567027,5027,2026-04-20 15:16:59,James Ross,james.ross13@email.com,unfulfilled,cancelled,1250.26,1244.79,92.61,0.00,87.14,USD,Portland,US,178,Travel Backpack,SKU-BKO-001,4,89.99,359.96
+8301234567027,5027,2026-04-20 15:16:59,James Ross,james.ross13@email.com,unfulfilled,cancelled,1250.26,1244.79,92.61,0.00,87.14,USD,Portland,US,179,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567028,5028,2026-04-25 11:53:50,Aiden Ramirez,aiden.ramirez14@email.com,pending,cancelled,614.82,586.89,45.54,0.00,17.61,USD,Minneapolis,US,180,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567028,5028,2026-04-25 11:53:50,Aiden Ramirez,aiden.ramirez14@email.com,pending,cancelled,614.82,586.89,45.54,0.00,17.61,USD,Minneapolis,US,181,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567028,5028,2026-04-25 11:53:50,Aiden Ramirez,aiden.ramirez14@email.com,pending,cancelled,614.82,586.89,45.54,0.00,17.61,USD,Minneapolis,US,182,Packing Cubes,SKU-BKO-007,3,24.99,74.97
+8301234567028,5028,2026-04-25 11:53:50,Aiden Ramirez,aiden.ramirez14@email.com,pending,cancelled,614.82,586.89,45.54,0.00,17.61,USD,Minneapolis,US,183,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567028,5028,2026-04-25 11:53:50,Aiden Ramirez,aiden.ramirez14@email.com,pending,cancelled,614.82,586.89,45.54,0.00,17.61,USD,Minneapolis,US,184,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567029,5029,2026-05-03 09:13:05,Isaac Martinez,isaac.martinez15@email.com,unfulfilled,cancelled,1056.63,1029.85,78.27,0.00,51.49,USD,Detroit,US,185,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567029,5029,2026-05-03 09:13:05,Isaac Martinez,isaac.martinez15@email.com,unfulfilled,cancelled,1056.63,1029.85,78.27,0.00,51.49,USD,Detroit,US,186,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567029,5029,2026-05-03 09:13:05,Isaac Martinez,isaac.martinez15@email.com,unfulfilled,cancelled,1056.63,1029.85,78.27,0.00,51.49,USD,Detroit,US,187,Insulated Bottle,SKU-BKO-006,3,34.99,104.97
+8301234567029,5029,2026-05-03 09:13:05,Isaac Martinez,isaac.martinez15@email.com,unfulfilled,cancelled,1056.63,1029.85,78.27,0.00,51.49,USD,Detroit,US,188,Travel Backpack,SKU-BKO-001,3,89.99,269.97
+8301234567029,5029,2026-05-03 09:13:05,Isaac Martinez,isaac.martinez15@email.com,unfulfilled,cancelled,1056.63,1029.85,78.27,0.00,51.49,USD,Detroit,US,189,Utility Jacket,SKU-BKO-003,4,109.99,439.96
+8301234567029,5029,2026-05-03 09:13:05,Isaac Martinez,isaac.martinez15@email.com,unfulfilled,cancelled,1056.63,1029.85,78.27,0.00,51.49,USD,Detroit,US,190,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567030,5030,2026-04-28 16:32:28,Ellie Hughes,ellie.hughes16@email.com,pending,pending,944.84,874.85,69.99,0.00,0.00,USD,Detroit,US,191,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567030,5030,2026-04-28 16:32:28,Ellie Hughes,ellie.hughes16@email.com,pending,pending,944.84,874.85,69.99,0.00,0.00,USD,Detroit,US,192,Tech Organizer,SKU-BKO-009,5,29.99,149.95
+8301234567030,5030,2026-04-28 16:32:28,Ellie Hughes,ellie.hughes16@email.com,pending,pending,944.84,874.85,69.99,0.00,0.00,USD,Detroit,US,193,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567030,5030,2026-04-28 16:32:28,Ellie Hughes,ellie.hughes16@email.com,pending,pending,944.84,874.85,69.99,0.00,0.00,USD,Detroit,US,194,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567030,5030,2026-04-28 16:32:28,Ellie Hughes,ellie.hughes16@email.com,pending,pending,944.84,874.85,69.99,0.00,0.00,USD,Detroit,US,195,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567030,5030,2026-04-28 16:32:28,Ellie Hughes,ellie.hughes16@email.com,pending,pending,944.84,874.85,69.99,0.00,0.00,USD,Detroit,US,196,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567031,5031,2026-04-28 11:52:46,Emma Brown,emma.brown17@email.com,unfulfilled,pending,1041.99,964.81,77.18,0.00,0.00,USD,Salt Lake City,US,197,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567031,5031,2026-04-28 11:52:46,Emma Brown,emma.brown17@email.com,unfulfilled,pending,1041.99,964.81,77.18,0.00,0.00,USD,Salt Lake City,US,198,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567031,5031,2026-04-28 11:52:46,Emma Brown,emma.brown17@email.com,unfulfilled,pending,1041.99,964.81,77.18,0.00,0.00,USD,Salt Lake City,US,199,Insulated Bottle,SKU-BKO-006,5,34.99,174.95
+8301234567031,5031,2026-04-28 11:52:46,Emma Brown,emma.brown17@email.com,unfulfilled,pending,1041.99,964.81,77.18,0.00,0.00,USD,Salt Lake City,US,200,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567031,5031,2026-04-28 11:52:46,Emma Brown,emma.brown17@email.com,unfulfilled,pending,1041.99,964.81,77.18,0.00,0.00,USD,Salt Lake City,US,201,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567031,5031,2026-04-28 11:52:46,Emma Brown,emma.brown17@email.com,unfulfilled,pending,1041.99,964.81,77.18,0.00,0.00,USD,Salt Lake City,US,202,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567031,5031,2026-04-28 11:52:46,Emma Brown,emma.brown17@email.com,unfulfilled,pending,1041.99,964.81,77.18,0.00,0.00,USD,Salt Lake City,US,203,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567031,5031,2026-04-28 11:52:46,Emma Brown,emma.brown17@email.com,unfulfilled,pending,1041.99,964.81,77.18,0.00,0.00,USD,Salt Lake City,US,204,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567032,5032,2026-04-29 18:42:29,Owen Davis,owen.davis18@email.com,fulfilled,paid,1158.94,1153.86,85.85,0.00,80.77,USD,Boise,US,205,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567032,5032,2026-04-29 18:42:29,Owen Davis,owen.davis18@email.com,fulfilled,paid,1158.94,1153.86,85.85,0.00,80.77,USD,Boise,US,206,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567032,5032,2026-04-29 18:42:29,Owen Davis,owen.davis18@email.com,fulfilled,paid,1158.94,1153.86,85.85,0.00,80.77,USD,Boise,US,207,Travel Backpack,SKU-BKO-001,3,89.99,269.97
+8301234567032,5032,2026-04-29 18:42:29,Owen Davis,owen.davis18@email.com,fulfilled,paid,1158.94,1153.86,85.85,0.00,80.77,USD,Boise,US,208,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567032,5032,2026-04-29 18:42:29,Owen Davis,owen.davis18@email.com,fulfilled,paid,1158.94,1153.86,85.85,0.00,80.77,USD,Boise,US,209,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567032,5032,2026-04-29 18:42:29,Owen Davis,owen.davis18@email.com,fulfilled,paid,1158.94,1153.86,85.85,0.00,80.77,USD,Boise,US,210,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567033,5033,2026-04-29 11:07:03,Hannah Sanders,hannah.sanders19@email.com,pending,pending,423.13,403.91,31.34,0.00,12.12,USD,Minneapolis,US,211,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567033,5033,2026-04-29 11:07:03,Hannah Sanders,hannah.sanders19@email.com,pending,pending,423.13,403.91,31.34,0.00,12.12,USD,Minneapolis,US,212,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567033,5033,2026-04-29 11:07:03,Hannah Sanders,hannah.sanders19@email.com,pending,pending,423.13,403.91,31.34,0.00,12.12,USD,Minneapolis,US,213,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567033,5033,2026-04-29 11:07:03,Hannah Sanders,hannah.sanders19@email.com,pending,pending,423.13,403.91,31.34,0.00,12.12,USD,Minneapolis,US,214,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567033,5033,2026-04-29 11:07:03,Hannah Sanders,hannah.sanders19@email.com,pending,pending,423.13,403.91,31.34,0.00,12.12,USD,Minneapolis,US,215,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567034,5034,2026-04-28 19:20:22,Mason Nguyen,mason.nguyen20@email.com,pending,pending,1372.15,1309.80,101.64,0.00,39.29,USD,Minneapolis,US,216,Packing Cubes,SKU-BKO-007,5,24.99,124.95
+8301234567034,5034,2026-04-28 19:20:22,Mason Nguyen,mason.nguyen20@email.com,pending,pending,1372.15,1309.80,101.64,0.00,39.29,USD,Minneapolis,US,217,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567034,5034,2026-04-28 19:20:22,Mason Nguyen,mason.nguyen20@email.com,pending,pending,1372.15,1309.80,101.64,0.00,39.29,USD,Minneapolis,US,218,Insulated Bottle,SKU-BKO-006,3,34.99,104.97
+8301234567034,5034,2026-04-28 19:20:22,Mason Nguyen,mason.nguyen20@email.com,pending,pending,1372.15,1309.80,101.64,0.00,39.29,USD,Minneapolis,US,219,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567034,5034,2026-04-28 19:20:22,Mason Nguyen,mason.nguyen20@email.com,pending,pending,1372.15,1309.80,101.64,0.00,39.29,USD,Minneapolis,US,220,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567034,5034,2026-04-28 19:20:22,Mason Nguyen,mason.nguyen20@email.com,pending,pending,1372.15,1309.80,101.64,0.00,39.29,USD,Minneapolis,US,221,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567034,5034,2026-04-28 19:20:22,Mason Nguyen,mason.nguyen20@email.com,pending,pending,1372.15,1309.80,101.64,0.00,39.29,USD,Minneapolis,US,222,Beanie,SKU-BKO-012,4,19.99,79.96
+8301234567035,5035,2026-04-28 12:09:48,Benjamin Cooper,benjamin.cooper21@email.com,pending,pending,1182.45,1094.86,87.59,0.00,0.00,USD,Salt Lake City,US,223,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567035,5035,2026-04-28 12:09:48,Benjamin Cooper,benjamin.cooper21@email.com,pending,pending,1182.45,1094.86,87.59,0.00,0.00,USD,Salt Lake City,US,224,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567035,5035,2026-04-28 12:09:48,Benjamin Cooper,benjamin.cooper21@email.com,pending,pending,1182.45,1094.86,87.59,0.00,0.00,USD,Salt Lake City,US,225,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567035,5035,2026-04-28 12:09:48,Benjamin Cooper,benjamin.cooper21@email.com,pending,pending,1182.45,1094.86,87.59,0.00,0.00,USD,Salt Lake City,US,226,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567035,5035,2026-04-28 12:09:48,Benjamin Cooper,benjamin.cooper21@email.com,pending,pending,1182.45,1094.86,87.59,0.00,0.00,USD,Salt Lake City,US,227,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567035,5035,2026-04-28 12:09:48,Benjamin Cooper,benjamin.cooper21@email.com,pending,pending,1182.45,1094.86,87.59,0.00,0.00,USD,Salt Lake City,US,228,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567035,5035,2026-04-28 12:09:48,Benjamin Cooper,benjamin.cooper21@email.com,pending,pending,1182.45,1094.86,87.59,0.00,0.00,USD,Salt Lake City,US,229,Portable Charger,SKU-BKO-008,1,39.99,39.99
+8301234567035,5035,2026-04-28 12:09:48,Benjamin Cooper,benjamin.cooper21@email.com,pending,pending,1182.45,1094.86,87.59,0.00,0.00,USD,Salt Lake City,US,230,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567036,5036,2026-05-02 09:30:49,Samuel Foster,samuel.foster22@email.com,pending,pending,538.54,524.89,39.89,0.00,26.24,USD,Salt Lake City,US,231,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567036,5036,2026-05-02 09:30:49,Samuel Foster,samuel.foster22@email.com,pending,pending,538.54,524.89,39.89,0.00,26.24,USD,Salt Lake City,US,232,Packing Cubes,SKU-BKO-007,3,24.99,74.97
+8301234567036,5036,2026-05-02 09:30:49,Samuel Foster,samuel.foster22@email.com,pending,pending,538.54,524.89,39.89,0.00,26.24,USD,Salt Lake City,US,233,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567036,5036,2026-05-02 09:30:49,Samuel Foster,samuel.foster22@email.com,pending,pending,538.54,524.89,39.89,0.00,26.24,USD,Salt Lake City,US,234,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567036,5036,2026-05-02 09:30:49,Samuel Foster,samuel.foster22@email.com,pending,pending,538.54,524.89,39.89,0.00,26.24,USD,Salt Lake City,US,235,Rain Shell,SKU-BKO-010,2,129.99,259.98
+8301234567037,5037,2026-04-29 16:39:16,Ethan Ross,ethan.ross0@email.com,pending,pending,792.89,756.87,58.73,0.00,22.71,USD,Denver,US,236,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567037,5037,2026-04-29 16:39:16,Ethan Ross,ethan.ross0@email.com,pending,pending,792.89,756.87,58.73,0.00,22.71,USD,Denver,US,237,Portable Charger,SKU-BKO-008,1,39.99,39.99
+8301234567037,5037,2026-04-29 16:39:16,Ethan Ross,ethan.ross0@email.com,pending,pending,792.89,756.87,58.73,0.00,22.71,USD,Denver,US,238,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567037,5037,2026-04-29 16:39:16,Ethan Ross,ethan.ross0@email.com,pending,pending,792.89,756.87,58.73,0.00,22.71,USD,Denver,US,239,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567037,5037,2026-04-29 16:39:16,Ethan Ross,ethan.ross0@email.com,pending,pending,792.89,756.87,58.73,0.00,22.71,USD,Denver,US,240,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567037,5037,2026-04-29 16:39:16,Ethan Ross,ethan.ross0@email.com,pending,pending,792.89,756.87,58.73,0.00,22.71,USD,Denver,US,241,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567037,5037,2026-04-29 16:39:16,Ethan Ross,ethan.ross0@email.com,pending,pending,792.89,756.87,58.73,0.00,22.71,USD,Denver,US,242,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567038,5038,2026-05-01 19:15:57,Sebastian Jackson,sebastian.jackson1@email.com,unfulfilled,pending,1201.46,1146.87,89.00,0.00,34.41,USD,Denver,US,243,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567038,5038,2026-05-01 19:15:57,Sebastian Jackson,sebastian.jackson1@email.com,unfulfilled,pending,1201.46,1146.87,89.00,0.00,34.41,USD,Denver,US,244,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567038,5038,2026-05-01 19:15:57,Sebastian Jackson,sebastian.jackson1@email.com,unfulfilled,pending,1201.46,1146.87,89.00,0.00,34.41,USD,Denver,US,245,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567038,5038,2026-05-01 19:15:57,Sebastian Jackson,sebastian.jackson1@email.com,unfulfilled,pending,1201.46,1146.87,89.00,0.00,34.41,USD,Denver,US,246,Duffel Bag,SKU-BKO-002,4,74.99,299.96
+8301234567038,5038,2026-05-01 19:15:57,Sebastian Jackson,sebastian.jackson1@email.com,unfulfilled,pending,1201.46,1146.87,89.00,0.00,34.41,USD,Denver,US,247,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567039,5039,2026-04-30 16:37:44,Gabriel Harris,gabriel.harris2@email.com,pending,pending,1118.22,1089.88,82.83,0.00,54.49,USD,Minneapolis,US,248,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567039,5039,2026-04-30 16:37:44,Gabriel Harris,gabriel.harris2@email.com,pending,pending,1118.22,1089.88,82.83,0.00,54.49,USD,Minneapolis,US,249,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567039,5039,2026-04-30 16:37:44,Gabriel Harris,gabriel.harris2@email.com,pending,pending,1118.22,1089.88,82.83,0.00,54.49,USD,Minneapolis,US,250,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567039,5039,2026-04-30 16:37:44,Gabriel Harris,gabriel.harris2@email.com,pending,pending,1118.22,1089.88,82.83,0.00,54.49,USD,Minneapolis,US,251,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567039,5039,2026-04-30 16:37:44,Gabriel Harris,gabriel.harris2@email.com,pending,pending,1118.22,1089.88,82.83,0.00,54.49,USD,Minneapolis,US,252,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567039,5039,2026-04-30 16:37:44,Gabriel Harris,gabriel.harris2@email.com,pending,pending,1118.22,1089.88,82.83,0.00,54.49,USD,Minneapolis,US,253,Rain Shell,SKU-BKO-010,2,129.99,259.98
+8301234567040,5040,2026-05-02 11:02:50,Thomas Turner,thomas.turner3@email.com,pending,pending,1660.20,1584.76,122.98,0.00,47.54,USD,Portland,US,254,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567040,5040,2026-05-02 11:02:50,Thomas Turner,thomas.turner3@email.com,pending,pending,1660.20,1584.76,122.98,0.00,47.54,USD,Portland,US,255,Insulated Bottle,SKU-BKO-006,5,34.99,174.95
+8301234567040,5040,2026-05-02 11:02:50,Thomas Turner,thomas.turner3@email.com,pending,pending,1660.20,1584.76,122.98,0.00,47.54,USD,Portland,US,256,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567040,5040,2026-05-02 11:02:50,Thomas Turner,thomas.turner3@email.com,pending,pending,1660.20,1584.76,122.98,0.00,47.54,USD,Portland,US,257,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567040,5040,2026-05-02 11:02:50,Thomas Turner,thomas.turner3@email.com,pending,pending,1660.20,1584.76,122.98,0.00,47.54,USD,Portland,US,258,Packing Cubes,SKU-BKO-007,5,24.99,124.95
+8301234567040,5040,2026-05-02 11:02:50,Thomas Turner,thomas.turner3@email.com,pending,pending,1660.20,1584.76,122.98,0.00,47.54,USD,Portland,US,259,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567040,5040,2026-05-02 11:02:50,Thomas Turner,thomas.turner3@email.com,pending,pending,1660.20,1584.76,122.98,0.00,47.54,USD,Portland,US,260,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567040,5040,2026-05-02 11:02:50,Thomas Turner,thomas.turner3@email.com,pending,pending,1660.20,1584.76,122.98,0.00,47.54,USD,Portland,US,261,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567041,5041,2026-04-30 16:16:57,Lily Harris,lily.harris4@email.com,fulfilled,pending,1131.26,1079.86,83.80,0.00,32.40,USD,Boise,US,262,Rain Shell,SKU-BKO-010,2,129.99,259.98
+8301234567041,5041,2026-04-30 16:16:57,Lily Harris,lily.harris4@email.com,fulfilled,pending,1131.26,1079.86,83.80,0.00,32.40,USD,Boise,US,263,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567041,5041,2026-04-30 16:16:57,Lily Harris,lily.harris4@email.com,fulfilled,pending,1131.26,1079.86,83.80,0.00,32.40,USD,Boise,US,264,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567041,5041,2026-04-30 16:16:57,Lily Harris,lily.harris4@email.com,fulfilled,pending,1131.26,1079.86,83.80,0.00,32.40,USD,Boise,US,265,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567041,5041,2026-04-30 16:16:57,Lily Harris,lily.harris4@email.com,fulfilled,pending,1131.26,1079.86,83.80,0.00,32.40,USD,Boise,US,266,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567041,5041,2026-04-30 16:16:57,Lily Harris,lily.harris4@email.com,fulfilled,pending,1131.26,1079.86,83.80,0.00,32.40,USD,Boise,US,267,Fleece Vest,SKU-BKO-005,4,64.99,259.96
+8301234567041,5041,2026-04-30 16:16:57,Lily Harris,lily.harris4@email.com,fulfilled,pending,1131.26,1079.86,83.80,0.00,32.40,USD,Boise,US,268,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567041,5041,2026-04-30 16:16:57,Lily Harris,lily.harris4@email.com,fulfilled,pending,1131.26,1079.86,83.80,0.00,32.40,USD,Boise,US,269,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567042,5042,2026-04-28 19:40:32,Nathan Butler,nathan.butler5@email.com,unfulfilled,paid,1808.82,1674.83,133.99,0.00,0.00,USD,Detroit,US,270,Duffel Bag,SKU-BKO-002,4,74.99,299.96
+8301234567042,5042,2026-04-28 19:40:32,Nathan Butler,nathan.butler5@email.com,unfulfilled,paid,1808.82,1674.83,133.99,0.00,0.00,USD,Detroit,US,271,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567042,5042,2026-04-28 19:40:32,Nathan Butler,nathan.butler5@email.com,unfulfilled,paid,1808.82,1674.83,133.99,0.00,0.00,USD,Detroit,US,272,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567042,5042,2026-04-28 19:40:32,Nathan Butler,nathan.butler5@email.com,unfulfilled,paid,1808.82,1674.83,133.99,0.00,0.00,USD,Detroit,US,273,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567042,5042,2026-04-28 19:40:32,Nathan Butler,nathan.butler5@email.com,unfulfilled,paid,1808.82,1674.83,133.99,0.00,0.00,USD,Detroit,US,274,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567042,5042,2026-04-28 19:40:32,Nathan Butler,nathan.butler5@email.com,unfulfilled,paid,1808.82,1674.83,133.99,0.00,0.00,USD,Detroit,US,275,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567042,5042,2026-04-28 19:40:32,Nathan Butler,nathan.butler5@email.com,unfulfilled,paid,1808.82,1674.83,133.99,0.00,0.00,USD,Detroit,US,276,Hiking Boots,SKU-BKO-004,5,149.99,749.95
+8301234567043,5043,2026-04-30 15:32:52,Wyatt Powell,wyatt.powell6@email.com,fulfilled,paid,763.20,759.86,56.53,0.00,53.19,USD,Boise,US,277,Fleece Vest,SKU-BKO-005,4,64.99,259.96
+8301234567043,5043,2026-04-30 15:32:52,Wyatt Powell,wyatt.powell6@email.com,fulfilled,paid,763.20,759.86,56.53,0.00,53.19,USD,Boise,US,278,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567043,5043,2026-04-30 15:32:52,Wyatt Powell,wyatt.powell6@email.com,fulfilled,paid,763.20,759.86,56.53,0.00,53.19,USD,Boise,US,279,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567043,5043,2026-04-30 15:32:52,Wyatt Powell,wyatt.powell6@email.com,fulfilled,paid,763.20,759.86,56.53,0.00,53.19,USD,Boise,US,280,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567043,5043,2026-04-30 15:32:52,Wyatt Powell,wyatt.powell6@email.com,fulfilled,paid,763.20,759.86,56.53,0.00,53.19,USD,Boise,US,281,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567044,5044,2026-05-01 15:09:13,Grace Hughes,grace.hughes7@email.com,pending,pending,849.37,827.84,62.92,0.00,41.39,USD,Denver,US,282,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567044,5044,2026-05-01 15:09:13,Grace Hughes,grace.hughes7@email.com,pending,pending,849.37,827.84,62.92,0.00,41.39,USD,Denver,US,283,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567044,5044,2026-05-01 15:09:13,Grace Hughes,grace.hughes7@email.com,pending,pending,849.37,827.84,62.92,0.00,41.39,USD,Denver,US,284,Trail Socks,SKU-BKO-011,4,16.99,67.96
+8301234567044,5044,2026-05-01 15:09:13,Grace Hughes,grace.hughes7@email.com,pending,pending,849.37,827.84,62.92,0.00,41.39,USD,Denver,US,285,Utility Jacket,SKU-BKO-003,4,109.99,439.96
+8301234567044,5044,2026-05-01 15:09:13,Grace Hughes,grace.hughes7@email.com,pending,pending,849.37,827.84,62.92,0.00,41.39,USD,Denver,US,286,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567045,5045,2026-04-27 09:25:20,Sebastian Ross,sebastian.ross8@email.com,pending,pending,769.89,712.86,57.03,0.00,0.00,USD,Portland,US,287,Insulated Bottle,SKU-BKO-006,4,34.99,139.96
+8301234567045,5045,2026-04-27 09:25:20,Sebastian Ross,sebastian.ross8@email.com,pending,pending,769.89,712.86,57.03,0.00,0.00,USD,Portland,US,288,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567045,5045,2026-04-27 09:25:20,Sebastian Ross,sebastian.ross8@email.com,pending,pending,769.89,712.86,57.03,0.00,0.00,USD,Portland,US,289,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567045,5045,2026-04-27 09:25:20,Sebastian Ross,sebastian.ross8@email.com,pending,pending,769.89,712.86,57.03,0.00,0.00,USD,Portland,US,290,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567045,5045,2026-04-27 09:25:20,Sebastian Ross,sebastian.ross8@email.com,pending,pending,769.89,712.86,57.03,0.00,0.00,USD,Portland,US,291,Trail Socks,SKU-BKO-011,4,16.99,67.96
+8301234567046,5046,2026-04-28 11:00:30,Ethan Brown,ethan.brown9@email.com,pending,pending,664.08,614.89,49.19,0.00,0.00,USD,Minneapolis,US,292,Fleece Vest,SKU-BKO-005,4,64.99,259.96
+8301234567046,5046,2026-04-28 11:00:30,Ethan Brown,ethan.brown9@email.com,pending,pending,664.08,614.89,49.19,0.00,0.00,USD,Minneapolis,US,293,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567046,5046,2026-04-28 11:00:30,Ethan Brown,ethan.brown9@email.com,pending,pending,664.08,614.89,49.19,0.00,0.00,USD,Minneapolis,US,294,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567046,5046,2026-04-28 11:00:30,Ethan Brown,ethan.brown9@email.com,pending,pending,664.08,614.89,49.19,0.00,0.00,USD,Minneapolis,US,295,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567046,5046,2026-04-28 11:00:30,Ethan Brown,ethan.brown9@email.com,pending,pending,664.08,614.89,49.19,0.00,0.00,USD,Minneapolis,US,296,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567047,5047,2026-05-02 13:27:37,Isabella Flores,isabella.flores10@email.com,pending,pending,991.95,946.88,73.48,0.00,28.41,USD,Detroit,US,297,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567047,5047,2026-05-02 13:27:37,Isabella Flores,isabella.flores10@email.com,pending,pending,991.95,946.88,73.48,0.00,28.41,USD,Detroit,US,298,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567047,5047,2026-05-02 13:27:37,Isabella Flores,isabella.flores10@email.com,pending,pending,991.95,946.88,73.48,0.00,28.41,USD,Detroit,US,299,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567047,5047,2026-05-02 13:27:37,Isabella Flores,isabella.flores10@email.com,pending,pending,991.95,946.88,73.48,0.00,28.41,USD,Detroit,US,300,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567047,5047,2026-05-02 13:27:37,Isabella Flores,isabella.flores10@email.com,pending,pending,991.95,946.88,73.48,0.00,28.41,USD,Detroit,US,301,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567047,5047,2026-05-02 13:27:37,Isabella Flores,isabella.flores10@email.com,pending,pending,991.95,946.88,73.48,0.00,28.41,USD,Detroit,US,302,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567048,5048,2026-05-07 10:36:34,Hannah Brown,hannah.brown11@email.com,pending,refunded,1111.75,1106.88,82.35,0.00,77.48,USD,Boise,US,303,Travel Backpack,SKU-BKO-001,3,89.99,269.97
+8301234567048,5048,2026-05-07 10:36:34,Hannah Brown,hannah.brown11@email.com,pending,refunded,1111.75,1106.88,82.35,0.00,77.48,USD,Boise,US,304,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567048,5048,2026-05-07 10:36:34,Hannah Brown,hannah.brown11@email.com,pending,refunded,1111.75,1106.88,82.35,0.00,77.48,USD,Boise,US,305,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567048,5048,2026-05-07 10:36:34,Hannah Brown,hannah.brown11@email.com,pending,refunded,1111.75,1106.88,82.35,0.00,77.48,USD,Boise,US,306,Rain Shell,SKU-BKO-010,4,129.99,519.96
+8301234567048,5048,2026-05-07 10:36:34,Hannah Brown,hannah.brown11@email.com,pending,refunded,1111.75,1106.88,82.35,0.00,77.48,USD,Boise,US,307,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567048,5048,2026-05-07 10:36:34,Hannah Brown,hannah.brown11@email.com,pending,refunded,1111.75,1106.88,82.35,0.00,77.48,USD,Boise,US,308,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567049,5049,2026-05-08 13:37:20,Aurora Walker,aurora.walker12@email.com,pending,pending,922.90,918.86,68.36,0.00,64.32,USD,Detroit,US,309,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567049,5049,2026-05-08 13:37:20,Aurora Walker,aurora.walker12@email.com,pending,pending,922.90,918.86,68.36,0.00,64.32,USD,Detroit,US,310,Packing Cubes,SKU-BKO-007,3,24.99,74.97
+8301234567049,5049,2026-05-08 13:37:20,Aurora Walker,aurora.walker12@email.com,pending,pending,922.90,918.86,68.36,0.00,64.32,USD,Detroit,US,311,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567049,5049,2026-05-08 13:37:20,Aurora Walker,aurora.walker12@email.com,pending,pending,922.90,918.86,68.36,0.00,64.32,USD,Detroit,US,312,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567049,5049,2026-05-08 13:37:20,Aurora Walker,aurora.walker12@email.com,pending,pending,922.90,918.86,68.36,0.00,64.32,USD,Detroit,US,313,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567049,5049,2026-05-08 13:37:20,Aurora Walker,aurora.walker12@email.com,pending,pending,922.90,918.86,68.36,0.00,64.32,USD,Detroit,US,314,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567049,5049,2026-05-08 13:37:20,Aurora Walker,aurora.walker12@email.com,pending,pending,922.90,918.86,68.36,0.00,64.32,USD,Detroit,US,315,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567050,5050,2026-05-06 14:13:11,Leo Harris,leo.harris13@email.com,fulfilled,paid,820.10,782.83,60.75,0.00,23.48,USD,Detroit,US,316,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567050,5050,2026-05-06 14:13:11,Leo Harris,leo.harris13@email.com,fulfilled,paid,820.10,782.83,60.75,0.00,23.48,USD,Detroit,US,317,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567050,5050,2026-05-06 14:13:11,Leo Harris,leo.harris13@email.com,fulfilled,paid,820.10,782.83,60.75,0.00,23.48,USD,Detroit,US,318,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567050,5050,2026-05-06 14:13:11,Leo Harris,leo.harris13@email.com,fulfilled,paid,820.10,782.83,60.75,0.00,23.48,USD,Detroit,US,319,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567050,5050,2026-05-06 14:13:11,Leo Harris,leo.harris13@email.com,fulfilled,paid,820.10,782.83,60.75,0.00,23.48,USD,Detroit,US,320,Trail Socks,SKU-BKO-011,4,16.99,67.96
+8301234567050,5050,2026-05-06 14:13:11,Leo Harris,leo.harris13@email.com,fulfilled,paid,820.10,782.83,60.75,0.00,23.48,USD,Detroit,US,321,Packing Cubes,SKU-BKO-007,3,24.99,74.97
+8301234567050,5050,2026-05-06 14:13:11,Leo Harris,leo.harris13@email.com,fulfilled,paid,820.10,782.83,60.75,0.00,23.48,USD,Detroit,US,322,Insulated Bottle,SKU-BKO-006,3,34.99,104.97
+8301234567051,5051,2026-05-07 21:18:46,Aurora Griffin,aurora.griffin14@email.com,unfulfilled,cancelled,1084.11,1034.86,80.30,0.00,31.05,USD,Denver,US,323,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567051,5051,2026-05-07 21:18:46,Aurora Griffin,aurora.griffin14@email.com,unfulfilled,cancelled,1084.11,1034.86,80.30,0.00,31.05,USD,Denver,US,324,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567051,5051,2026-05-07 21:18:46,Aurora Griffin,aurora.griffin14@email.com,unfulfilled,cancelled,1084.11,1034.86,80.30,0.00,31.05,USD,Denver,US,325,Tech Organizer,SKU-BKO-009,4,29.99,119.96
+8301234567051,5051,2026-05-07 21:18:46,Aurora Griffin,aurora.griffin14@email.com,unfulfilled,cancelled,1084.11,1034.86,80.30,0.00,31.05,USD,Denver,US,326,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567051,5051,2026-05-07 21:18:46,Aurora Griffin,aurora.griffin14@email.com,unfulfilled,cancelled,1084.11,1034.86,80.30,0.00,31.05,USD,Denver,US,327,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567051,5051,2026-05-07 21:18:46,Aurora Griffin,aurora.griffin14@email.com,unfulfilled,cancelled,1084.11,1034.86,80.30,0.00,31.05,USD,Denver,US,328,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567051,5051,2026-05-07 21:18:46,Aurora Griffin,aurora.griffin14@email.com,unfulfilled,cancelled,1084.11,1034.86,80.30,0.00,31.05,USD,Denver,US,329,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567052,5052,2026-05-08 17:12:46,Lincoln Turner,lincoln.turner15@email.com,pending,pending,792.30,788.83,58.69,0.00,55.22,USD,Boise,US,330,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567052,5052,2026-05-08 17:12:46,Lincoln Turner,lincoln.turner15@email.com,pending,pending,792.30,788.83,58.69,0.00,55.22,USD,Boise,US,331,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567052,5052,2026-05-08 17:12:46,Lincoln Turner,lincoln.turner15@email.com,pending,pending,792.30,788.83,58.69,0.00,55.22,USD,Boise,US,332,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567052,5052,2026-05-08 17:12:46,Lincoln Turner,lincoln.turner15@email.com,pending,pending,792.30,788.83,58.69,0.00,55.22,USD,Boise,US,333,Beanie,SKU-BKO-012,4,19.99,79.96
+8301234567052,5052,2026-05-08 17:12:46,Lincoln Turner,lincoln.turner15@email.com,pending,pending,792.30,788.83,58.69,0.00,55.22,USD,Boise,US,334,Travel Backpack,SKU-BKO-001,4,89.99,359.96
+8301234567052,5052,2026-05-08 17:12:46,Lincoln Turner,lincoln.turner15@email.com,pending,pending,792.30,788.83,58.69,0.00,55.22,USD,Boise,US,335,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567053,5053,2026-05-04 10:05:11,Aria Powell,aria.powell16@email.com,unfulfilled,pending,1492.64,1424.81,110.57,0.00,42.74,USD,Boise,US,336,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567053,5053,2026-05-04 10:05:11,Aria Powell,aria.powell16@email.com,unfulfilled,pending,1492.64,1424.81,110.57,0.00,42.74,USD,Boise,US,337,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567053,5053,2026-05-04 10:05:11,Aria Powell,aria.powell16@email.com,unfulfilled,pending,1492.64,1424.81,110.57,0.00,42.74,USD,Boise,US,338,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567053,5053,2026-05-04 10:05:11,Aria Powell,aria.powell16@email.com,unfulfilled,pending,1492.64,1424.81,110.57,0.00,42.74,USD,Boise,US,339,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567053,5053,2026-05-04 10:05:11,Aria Powell,aria.powell16@email.com,unfulfilled,pending,1492.64,1424.81,110.57,0.00,42.74,USD,Boise,US,340,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567053,5053,2026-05-04 10:05:11,Aria Powell,aria.powell16@email.com,unfulfilled,pending,1492.64,1424.81,110.57,0.00,42.74,USD,Boise,US,341,Insulated Bottle,SKU-BKO-006,3,34.99,104.97
+8301234567053,5053,2026-05-04 10:05:11,Aria Powell,aria.powell16@email.com,unfulfilled,pending,1492.64,1424.81,110.57,0.00,42.74,USD,Boise,US,342,Duffel Bag,SKU-BKO-002,4,74.99,299.96
+8301234567054,5054,2026-05-04 18:44:29,Chloe Rodriguez,chloe.rodriguez17@email.com,pending,cancelled,1297.48,1291.80,96.11,0.00,90.43,USD,Portland,US,343,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567054,5054,2026-05-04 18:44:29,Chloe Rodriguez,chloe.rodriguez17@email.com,pending,cancelled,1297.48,1291.80,96.11,0.00,90.43,USD,Portland,US,344,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567054,5054,2026-05-04 18:44:29,Chloe Rodriguez,chloe.rodriguez17@email.com,pending,cancelled,1297.48,1291.80,96.11,0.00,90.43,USD,Portland,US,345,Crossbody Sling,SKU-BKO-013,4,49.99,199.96
+8301234567054,5054,2026-05-04 18:44:29,Chloe Rodriguez,chloe.rodriguez17@email.com,pending,cancelled,1297.48,1291.80,96.11,0.00,90.43,USD,Portland,US,346,Fleece Vest,SKU-BKO-005,5,64.99,324.95
+8301234567054,5054,2026-05-04 18:44:29,Chloe Rodriguez,chloe.rodriguez17@email.com,pending,cancelled,1297.48,1291.80,96.11,0.00,90.43,USD,Portland,US,347,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567054,5054,2026-05-04 18:44:29,Chloe Rodriguez,chloe.rodriguez17@email.com,pending,cancelled,1297.48,1291.80,96.11,0.00,90.43,USD,Portland,US,348,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567055,5055,2026-05-08 17:06:44,Zoe Murphy,zoe.murphy18@email.com,pending,cancelled,993.99,948.82,73.63,0.00,28.46,USD,Salt Lake City,US,349,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567055,5055,2026-05-08 17:06:44,Zoe Murphy,zoe.murphy18@email.com,pending,cancelled,993.99,948.82,73.63,0.00,28.46,USD,Salt Lake City,US,350,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567055,5055,2026-05-08 17:06:44,Zoe Murphy,zoe.murphy18@email.com,pending,cancelled,993.99,948.82,73.63,0.00,28.46,USD,Salt Lake City,US,351,Utility Jacket,SKU-BKO-003,4,109.99,439.96
+8301234567055,5055,2026-05-08 17:06:44,Zoe Murphy,zoe.murphy18@email.com,pending,cancelled,993.99,948.82,73.63,0.00,28.46,USD,Salt Lake City,US,352,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567055,5055,2026-05-08 17:06:44,Zoe Murphy,zoe.murphy18@email.com,pending,cancelled,993.99,948.82,73.63,0.00,28.46,USD,Salt Lake City,US,353,Packing Cubes,SKU-BKO-007,3,24.99,74.97
+8301234567055,5055,2026-05-08 17:06:44,Zoe Murphy,zoe.murphy18@email.com,pending,cancelled,993.99,948.82,73.63,0.00,28.46,USD,Salt Lake City,US,354,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567055,5055,2026-05-08 17:06:44,Zoe Murphy,zoe.murphy18@email.com,pending,cancelled,993.99,948.82,73.63,0.00,28.46,USD,Salt Lake City,US,355,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567056,5056,2026-05-17 16:17:51,Isabella Brown,isabella.brown19@email.com,unfulfilled,refunded,1181.49,1127.80,87.52,0.00,33.83,USD,Portland,US,356,Trail Socks,SKU-BKO-011,4,16.99,67.96
+8301234567056,5056,2026-05-17 16:17:51,Isabella Brown,isabella.brown19@email.com,unfulfilled,refunded,1181.49,1127.80,87.52,0.00,33.83,USD,Portland,US,357,Crossbody Sling,SKU-BKO-013,5,49.99,249.95
+8301234567056,5056,2026-05-17 16:17:51,Isabella Brown,isabella.brown19@email.com,unfulfilled,refunded,1181.49,1127.80,87.52,0.00,33.83,USD,Portland,US,358,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567056,5056,2026-05-17 16:17:51,Isabella Brown,isabella.brown19@email.com,unfulfilled,refunded,1181.49,1127.80,87.52,0.00,33.83,USD,Portland,US,359,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567056,5056,2026-05-17 16:17:51,Isabella Brown,isabella.brown19@email.com,unfulfilled,refunded,1181.49,1127.80,87.52,0.00,33.83,USD,Portland,US,360,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567056,5056,2026-05-17 16:17:51,Isabella Brown,isabella.brown19@email.com,unfulfilled,refunded,1181.49,1127.80,87.52,0.00,33.83,USD,Portland,US,361,Travel Backpack,SKU-BKO-001,5,89.99,449.95
+8301234567057,5057,2026-05-16 15:46:35,Penelope Davis,penelope.davis20@email.com,pending,pending,808.38,804.84,59.88,0.00,56.34,USD,Portland,US,362,Fleece Vest,SKU-BKO-005,4,64.99,259.96
+8301234567057,5057,2026-05-16 15:46:35,Penelope Davis,penelope.davis20@email.com,pending,pending,808.38,804.84,59.88,0.00,56.34,USD,Portland,US,363,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567057,5057,2026-05-16 15:46:35,Penelope Davis,penelope.davis20@email.com,pending,pending,808.38,804.84,59.88,0.00,56.34,USD,Portland,US,364,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567057,5057,2026-05-16 15:46:35,Penelope Davis,penelope.davis20@email.com,pending,pending,808.38,804.84,59.88,0.00,56.34,USD,Portland,US,365,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567057,5057,2026-05-16 15:46:35,Penelope Davis,penelope.davis20@email.com,pending,pending,808.38,804.84,59.88,0.00,56.34,USD,Portland,US,366,Packing Cubes,SKU-BKO-007,3,24.99,74.97
+8301234567057,5057,2026-05-16 15:46:35,Penelope Davis,penelope.davis20@email.com,pending,pending,808.38,804.84,59.88,0.00,56.34,USD,Portland,US,367,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567058,5058,2026-05-16 10:45:52,Leo Reed,leo.reed21@email.com,pending,cancelled,918.90,914.87,68.07,0.00,64.04,USD,Detroit,US,368,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567058,5058,2026-05-16 10:45:52,Leo Reed,leo.reed21@email.com,pending,cancelled,918.90,914.87,68.07,0.00,64.04,USD,Detroit,US,369,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567058,5058,2026-05-16 10:45:52,Leo Reed,leo.reed21@email.com,pending,cancelled,918.90,914.87,68.07,0.00,64.04,USD,Detroit,US,370,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567058,5058,2026-05-16 10:45:52,Leo Reed,leo.reed21@email.com,pending,cancelled,918.90,914.87,68.07,0.00,64.04,USD,Detroit,US,371,Portable Charger,SKU-BKO-008,1,39.99,39.99
+8301234567058,5058,2026-05-16 10:45:52,Leo Reed,leo.reed21@email.com,pending,cancelled,918.90,914.87,68.07,0.00,64.04,USD,Detroit,US,372,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567058,5058,2026-05-16 10:45:52,Leo Reed,leo.reed21@email.com,pending,cancelled,918.90,914.87,68.07,0.00,64.04,USD,Detroit,US,373,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567058,5058,2026-05-16 10:45:52,Leo Reed,leo.reed21@email.com,pending,cancelled,918.90,914.87,68.07,0.00,64.04,USD,Detroit,US,374,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567059,5059,2026-05-14 16:56:29,Penelope Reed,penelope.reed22@email.com,pending,pending,754.17,750.87,55.86,0.00,52.56,USD,Portland,US,375,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567059,5059,2026-05-14 16:56:29,Penelope Reed,penelope.reed22@email.com,pending,pending,754.17,750.87,55.86,0.00,52.56,USD,Portland,US,376,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567059,5059,2026-05-14 16:56:29,Penelope Reed,penelope.reed22@email.com,pending,pending,754.17,750.87,55.86,0.00,52.56,USD,Portland,US,377,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567059,5059,2026-05-14 16:56:29,Penelope Reed,penelope.reed22@email.com,pending,pending,754.17,750.87,55.86,0.00,52.56,USD,Portland,US,378,Tech Organizer,SKU-BKO-009,4,29.99,119.96
+8301234567059,5059,2026-05-14 16:56:29,Penelope Reed,penelope.reed22@email.com,pending,pending,754.17,750.87,55.86,0.00,52.56,USD,Portland,US,379,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567059,5059,2026-05-14 16:56:29,Penelope Reed,penelope.reed22@email.com,pending,pending,754.17,750.87,55.86,0.00,52.56,USD,Portland,US,380,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567060,5060,2026-05-16 16:42:08,Wyatt Perry,wyatt.perry0@email.com,pending,pending,584.71,569.89,43.31,0.00,28.49,USD,Boise,US,381,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567060,5060,2026-05-16 16:42:08,Wyatt Perry,wyatt.perry0@email.com,pending,pending,584.71,569.89,43.31,0.00,28.49,USD,Boise,US,382,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567060,5060,2026-05-16 16:42:08,Wyatt Perry,wyatt.perry0@email.com,pending,pending,584.71,569.89,43.31,0.00,28.49,USD,Boise,US,383,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567060,5060,2026-05-16 16:42:08,Wyatt Perry,wyatt.perry0@email.com,pending,pending,584.71,569.89,43.31,0.00,28.49,USD,Boise,US,384,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567060,5060,2026-05-16 16:42:08,Wyatt Perry,wyatt.perry0@email.com,pending,pending,584.71,569.89,43.31,0.00,28.49,USD,Boise,US,385,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567060,5060,2026-05-16 16:42:08,Wyatt Perry,wyatt.perry0@email.com,pending,pending,584.71,569.89,43.31,0.00,28.49,USD,Boise,US,386,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567060,5060,2026-05-16 16:42:08,Wyatt Perry,wyatt.perry0@email.com,pending,pending,584.71,569.89,43.31,0.00,28.49,USD,Boise,US,387,Packing Cubes,SKU-BKO-007,4,24.99,99.96
+8301234567061,5061,2026-05-13 09:23:19,Mason Foster,mason.foster1@email.com,unfulfilled,cancelled,910.20,868.85,67.42,0.00,26.07,USD,Denver,US,388,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567061,5061,2026-05-13 09:23:19,Mason Foster,mason.foster1@email.com,unfulfilled,cancelled,910.20,868.85,67.42,0.00,26.07,USD,Denver,US,389,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567061,5061,2026-05-13 09:23:19,Mason Foster,mason.foster1@email.com,unfulfilled,cancelled,910.20,868.85,67.42,0.00,26.07,USD,Denver,US,390,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567061,5061,2026-05-13 09:23:19,Mason Foster,mason.foster1@email.com,unfulfilled,cancelled,910.20,868.85,67.42,0.00,26.07,USD,Denver,US,391,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567061,5061,2026-05-13 09:23:19,Mason Foster,mason.foster1@email.com,unfulfilled,cancelled,910.20,868.85,67.42,0.00,26.07,USD,Denver,US,392,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567061,5061,2026-05-13 09:23:19,Mason Foster,mason.foster1@email.com,unfulfilled,cancelled,910.20,868.85,67.42,0.00,26.07,USD,Denver,US,393,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567061,5061,2026-05-13 09:23:19,Mason Foster,mason.foster1@email.com,unfulfilled,cancelled,910.20,868.85,67.42,0.00,26.07,USD,Denver,US,394,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567062,5062,2026-05-14 09:11:20,Ellie Martinez,ellie.martinez2@email.com,pending,pending,1737.40,1729.79,128.70,0.00,121.09,USD,Boise,US,395,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567062,5062,2026-05-14 09:11:20,Ellie Martinez,ellie.martinez2@email.com,pending,pending,1737.40,1729.79,128.70,0.00,121.09,USD,Boise,US,396,Trail Socks,SKU-BKO-011,5,16.99,84.95
+8301234567062,5062,2026-05-14 09:11:20,Ellie Martinez,ellie.martinez2@email.com,pending,pending,1737.40,1729.79,128.70,0.00,121.09,USD,Boise,US,397,Hiking Boots,SKU-BKO-004,5,149.99,749.95
+8301234567062,5062,2026-05-14 09:11:20,Ellie Martinez,ellie.martinez2@email.com,pending,pending,1737.40,1729.79,128.70,0.00,121.09,USD,Boise,US,398,Rain Shell,SKU-BKO-010,2,129.99,259.98
+8301234567062,5062,2026-05-14 09:11:20,Ellie Martinez,ellie.martinez2@email.com,pending,pending,1737.40,1729.79,128.70,0.00,121.09,USD,Boise,US,399,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567062,5062,2026-05-14 09:11:20,Ellie Martinez,ellie.martinez2@email.com,pending,pending,1737.40,1729.79,128.70,0.00,121.09,USD,Boise,US,400,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567062,5062,2026-05-14 09:11:20,Ellie Martinez,ellie.martinez2@email.com,pending,pending,1737.40,1729.79,128.70,0.00,121.09,USD,Boise,US,401,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567063,5063,2026-05-14 18:48:16,Sebastian Turner,sebastian.turner3@email.com,unfulfilled,paid,1511.76,1399.78,111.98,0.00,0.00,USD,Portland,US,402,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567063,5063,2026-05-14 18:48:16,Sebastian Turner,sebastian.turner3@email.com,unfulfilled,paid,1511.76,1399.78,111.98,0.00,0.00,USD,Portland,US,403,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567063,5063,2026-05-14 18:48:16,Sebastian Turner,sebastian.turner3@email.com,unfulfilled,paid,1511.76,1399.78,111.98,0.00,0.00,USD,Portland,US,404,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567063,5063,2026-05-14 18:48:16,Sebastian Turner,sebastian.turner3@email.com,unfulfilled,paid,1511.76,1399.78,111.98,0.00,0.00,USD,Portland,US,405,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567063,5063,2026-05-14 18:48:16,Sebastian Turner,sebastian.turner3@email.com,unfulfilled,paid,1511.76,1399.78,111.98,0.00,0.00,USD,Portland,US,406,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567063,5063,2026-05-14 18:48:16,Sebastian Turner,sebastian.turner3@email.com,unfulfilled,paid,1511.76,1399.78,111.98,0.00,0.00,USD,Portland,US,407,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567063,5063,2026-05-14 18:48:16,Sebastian Turner,sebastian.turner3@email.com,unfulfilled,paid,1511.76,1399.78,111.98,0.00,0.00,USD,Portland,US,408,Utility Jacket,SKU-BKO-003,5,109.99,549.95
+8301234567063,5063,2026-05-14 18:48:16,Sebastian Turner,sebastian.turner3@email.com,unfulfilled,paid,1511.76,1399.78,111.98,0.00,0.00,USD,Portland,US,409,Tech Organizer,SKU-BKO-009,4,29.99,119.96
+8301234567064,5064,2026-05-14 18:22:33,Gabriel Martinez,gabriel.martinez4@email.com,unfulfilled,pending,1491.34,1484.81,110.47,0.00,103.94,USD,Boise,US,410,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567064,5064,2026-05-14 18:22:33,Gabriel Martinez,gabriel.martinez4@email.com,unfulfilled,pending,1491.34,1484.81,110.47,0.00,103.94,USD,Boise,US,411,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567064,5064,2026-05-14 18:22:33,Gabriel Martinez,gabriel.martinez4@email.com,unfulfilled,pending,1491.34,1484.81,110.47,0.00,103.94,USD,Boise,US,412,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567064,5064,2026-05-14 18:22:33,Gabriel Martinez,gabriel.martinez4@email.com,unfulfilled,pending,1491.34,1484.81,110.47,0.00,103.94,USD,Boise,US,413,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567064,5064,2026-05-14 18:22:33,Gabriel Martinez,gabriel.martinez4@email.com,unfulfilled,pending,1491.34,1484.81,110.47,0.00,103.94,USD,Boise,US,414,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567064,5064,2026-05-14 18:22:33,Gabriel Martinez,gabriel.martinez4@email.com,unfulfilled,pending,1491.34,1484.81,110.47,0.00,103.94,USD,Boise,US,415,Packing Cubes,SKU-BKO-007,5,24.99,124.95
+8301234567065,5065,2026-05-14 10:30:55,Lucas Simmons,lucas.simmons5@email.com,fulfilled,pending,1128.46,1099.86,83.59,0.00,54.99,USD,Portland,US,416,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567065,5065,2026-05-14 10:30:55,Lucas Simmons,lucas.simmons5@email.com,fulfilled,pending,1128.46,1099.86,83.59,0.00,54.99,USD,Portland,US,417,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567065,5065,2026-05-14 10:30:55,Lucas Simmons,lucas.simmons5@email.com,fulfilled,pending,1128.46,1099.86,83.59,0.00,54.99,USD,Portland,US,418,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567065,5065,2026-05-14 10:30:55,Lucas Simmons,lucas.simmons5@email.com,fulfilled,pending,1128.46,1099.86,83.59,0.00,54.99,USD,Portland,US,419,Fleece Vest,SKU-BKO-005,4,64.99,259.96
+8301234567065,5065,2026-05-14 10:30:55,Lucas Simmons,lucas.simmons5@email.com,fulfilled,pending,1128.46,1099.86,83.59,0.00,54.99,USD,Portland,US,420,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567065,5065,2026-05-14 10:30:55,Lucas Simmons,lucas.simmons5@email.com,fulfilled,pending,1128.46,1099.86,83.59,0.00,54.99,USD,Portland,US,421,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567066,5066,2026-05-17 14:48:39,Isaac Brooks,isaac.brooks6@email.com,fulfilled,paid,1164.94,1159.84,86.29,0.00,81.19,USD,Detroit,US,422,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567066,5066,2026-05-17 14:48:39,Isaac Brooks,isaac.brooks6@email.com,fulfilled,paid,1164.94,1159.84,86.29,0.00,81.19,USD,Detroit,US,423,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567066,5066,2026-05-17 14:48:39,Isaac Brooks,isaac.brooks6@email.com,fulfilled,paid,1164.94,1159.84,86.29,0.00,81.19,USD,Detroit,US,424,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567066,5066,2026-05-17 14:48:39,Isaac Brooks,isaac.brooks6@email.com,fulfilled,paid,1164.94,1159.84,86.29,0.00,81.19,USD,Detroit,US,425,Beanie,SKU-BKO-012,5,19.99,99.95
+8301234567066,5066,2026-05-17 14:48:39,Isaac Brooks,isaac.brooks6@email.com,fulfilled,paid,1164.94,1159.84,86.29,0.00,81.19,USD,Detroit,US,426,Travel Backpack,SKU-BKO-001,3,89.99,269.97
+8301234567066,5066,2026-05-17 14:48:39,Isaac Brooks,isaac.brooks6@email.com,fulfilled,paid,1164.94,1159.84,86.29,0.00,81.19,USD,Detroit,US,427,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567066,5066,2026-05-17 14:48:39,Isaac Brooks,isaac.brooks6@email.com,fulfilled,paid,1164.94,1159.84,86.29,0.00,81.19,USD,Detroit,US,428,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567067,5067,2026-05-11 11:52:16,Wyatt Martinez,wyatt.martinez7@email.com,pending,paid,1377.39,1314.80,102.03,0.00,39.44,USD,Boise,US,429,Beanie,SKU-BKO-012,4,19.99,79.96
+8301234567067,5067,2026-05-11 11:52:16,Wyatt Martinez,wyatt.martinez7@email.com,pending,paid,1377.39,1314.80,102.03,0.00,39.44,USD,Boise,US,430,Insulated Bottle,SKU-BKO-006,3,34.99,104.97
+8301234567067,5067,2026-05-11 11:52:16,Wyatt Martinez,wyatt.martinez7@email.com,pending,paid,1377.39,1314.80,102.03,0.00,39.44,USD,Boise,US,431,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567067,5067,2026-05-11 11:52:16,Wyatt Martinez,wyatt.martinez7@email.com,pending,paid,1377.39,1314.80,102.03,0.00,39.44,USD,Boise,US,432,Crossbody Sling,SKU-BKO-013,5,49.99,249.95
+8301234567067,5067,2026-05-11 11:52:16,Wyatt Martinez,wyatt.martinez7@email.com,pending,paid,1377.39,1314.80,102.03,0.00,39.44,USD,Boise,US,433,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567067,5067,2026-05-11 11:52:16,Wyatt Martinez,wyatt.martinez7@email.com,pending,paid,1377.39,1314.80,102.03,0.00,39.44,USD,Boise,US,434,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567068,5068,2026-05-16 13:04:22,Sophia Sanders,sophia.sanders8@email.com,fulfilled,paid,998.88,924.89,73.99,0.00,0.00,USD,Boise,US,435,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567068,5068,2026-05-16 13:04:22,Sophia Sanders,sophia.sanders8@email.com,fulfilled,paid,998.88,924.89,73.99,0.00,0.00,USD,Boise,US,436,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567068,5068,2026-05-16 13:04:22,Sophia Sanders,sophia.sanders8@email.com,fulfilled,paid,998.88,924.89,73.99,0.00,0.00,USD,Boise,US,437,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567068,5068,2026-05-16 13:04:22,Sophia Sanders,sophia.sanders8@email.com,fulfilled,paid,998.88,924.89,73.99,0.00,0.00,USD,Boise,US,438,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567068,5068,2026-05-16 13:04:22,Sophia Sanders,sophia.sanders8@email.com,fulfilled,paid,998.88,924.89,73.99,0.00,0.00,USD,Boise,US,439,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567069,5069,2026-05-16 14:46:49,Jackson Jackson,jackson.jackson9@email.com,fulfilled,refunded,1603.67,1530.80,118.79,0.00,45.92,USD,Detroit,US,440,Travel Backpack,SKU-BKO-001,4,89.99,359.96
+8301234567069,5069,2026-05-16 14:46:49,Jackson Jackson,jackson.jackson9@email.com,fulfilled,refunded,1603.67,1530.80,118.79,0.00,45.92,USD,Detroit,US,441,Portable Charger,SKU-BKO-008,1,39.99,39.99
+8301234567069,5069,2026-05-16 14:46:49,Jackson Jackson,jackson.jackson9@email.com,fulfilled,refunded,1603.67,1530.80,118.79,0.00,45.92,USD,Detroit,US,442,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567069,5069,2026-05-16 14:46:49,Jackson Jackson,jackson.jackson9@email.com,fulfilled,refunded,1603.67,1530.80,118.79,0.00,45.92,USD,Detroit,US,443,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567069,5069,2026-05-16 14:46:49,Jackson Jackson,jackson.jackson9@email.com,fulfilled,refunded,1603.67,1530.80,118.79,0.00,45.92,USD,Detroit,US,444,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567069,5069,2026-05-16 14:46:49,Jackson Jackson,jackson.jackson9@email.com,fulfilled,refunded,1603.67,1530.80,118.79,0.00,45.92,USD,Detroit,US,445,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567069,5069,2026-05-16 14:46:49,Jackson Jackson,jackson.jackson9@email.com,fulfilled,refunded,1603.67,1530.80,118.79,0.00,45.92,USD,Detroit,US,446,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567070,5070,2026-05-14 16:42:41,Ella Griffin,ella.griffin10@email.com,pending,cancelled,644.71,641.88,47.76,0.00,44.93,USD,Denver,US,447,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567070,5070,2026-05-14 16:42:41,Ella Griffin,ella.griffin10@email.com,pending,cancelled,644.71,641.88,47.76,0.00,44.93,USD,Denver,US,448,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567070,5070,2026-05-14 16:42:41,Ella Griffin,ella.griffin10@email.com,pending,cancelled,644.71,641.88,47.76,0.00,44.93,USD,Denver,US,449,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567070,5070,2026-05-14 16:42:41,Ella Griffin,ella.griffin10@email.com,pending,cancelled,644.71,641.88,47.76,0.00,44.93,USD,Denver,US,450,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567070,5070,2026-05-14 16:42:41,Ella Griffin,ella.griffin10@email.com,pending,cancelled,644.71,641.88,47.76,0.00,44.93,USD,Denver,US,451,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567070,5070,2026-05-14 16:42:41,Ella Griffin,ella.griffin10@email.com,pending,cancelled,644.71,641.88,47.76,0.00,44.93,USD,Denver,US,452,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567070,5070,2026-05-14 16:42:41,Ella Griffin,ella.griffin10@email.com,pending,cancelled,644.71,641.88,47.76,0.00,44.93,USD,Denver,US,453,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567071,5071,2026-05-12 11:03:08,Olivia Cooper,olivia.cooper11@email.com,pending,pending,1138.68,1109.82,84.35,0.00,55.49,USD,Salt Lake City,US,454,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567071,5071,2026-05-12 11:03:08,Olivia Cooper,olivia.cooper11@email.com,pending,pending,1138.68,1109.82,84.35,0.00,55.49,USD,Salt Lake City,US,455,Portable Charger,SKU-BKO-008,5,39.99,199.95
+8301234567071,5071,2026-05-12 11:03:08,Olivia Cooper,olivia.cooper11@email.com,pending,pending,1138.68,1109.82,84.35,0.00,55.49,USD,Salt Lake City,US,456,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567071,5071,2026-05-12 11:03:08,Olivia Cooper,olivia.cooper11@email.com,pending,pending,1138.68,1109.82,84.35,0.00,55.49,USD,Salt Lake City,US,457,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567071,5071,2026-05-12 11:03:08,Olivia Cooper,olivia.cooper11@email.com,pending,pending,1138.68,1109.82,84.35,0.00,55.49,USD,Salt Lake City,US,458,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567071,5071,2026-05-12 11:03:08,Olivia Cooper,olivia.cooper11@email.com,pending,pending,1138.68,1109.82,84.35,0.00,55.49,USD,Salt Lake City,US,459,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567072,5072,2026-05-11 15:03:28,Owen Cooper,owen.cooper12@email.com,fulfilled,paid,1397.30,1293.80,103.50,0.00,0.00,USD,Detroit,US,460,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567072,5072,2026-05-11 15:03:28,Owen Cooper,owen.cooper12@email.com,fulfilled,paid,1397.30,1293.80,103.50,0.00,0.00,USD,Detroit,US,461,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567072,5072,2026-05-11 15:03:28,Owen Cooper,owen.cooper12@email.com,fulfilled,paid,1397.30,1293.80,103.50,0.00,0.00,USD,Detroit,US,462,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567072,5072,2026-05-11 15:03:28,Owen Cooper,owen.cooper12@email.com,fulfilled,paid,1397.30,1293.80,103.50,0.00,0.00,USD,Detroit,US,463,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567072,5072,2026-05-11 15:03:28,Owen Cooper,owen.cooper12@email.com,fulfilled,paid,1397.30,1293.80,103.50,0.00,0.00,USD,Detroit,US,464,Packing Cubes,SKU-BKO-007,4,24.99,99.96
+8301234567072,5072,2026-05-11 15:03:28,Owen Cooper,owen.cooper12@email.com,fulfilled,paid,1397.30,1293.80,103.50,0.00,0.00,USD,Detroit,US,465,Rain Shell,SKU-BKO-010,2,129.99,259.98
+8301234567072,5072,2026-05-11 15:03:28,Owen Cooper,owen.cooper12@email.com,fulfilled,paid,1397.30,1293.80,103.50,0.00,0.00,USD,Detroit,US,466,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567072,5072,2026-05-11 15:03:28,Owen Cooper,owen.cooper12@email.com,fulfilled,paid,1397.30,1293.80,103.50,0.00,0.00,USD,Detroit,US,467,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567073,5073,2026-05-12 14:58:52,Gabriel Powell,gabriel.powell13@email.com,fulfilled,paid,1556.07,1440.81,115.26,0.00,0.00,USD,Portland,US,468,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567073,5073,2026-05-12 14:58:52,Gabriel Powell,gabriel.powell13@email.com,fulfilled,paid,1556.07,1440.81,115.26,0.00,0.00,USD,Portland,US,469,Crossbody Sling,SKU-BKO-013,5,49.99,249.95
+8301234567073,5073,2026-05-12 14:58:52,Gabriel Powell,gabriel.powell13@email.com,fulfilled,paid,1556.07,1440.81,115.26,0.00,0.00,USD,Portland,US,470,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567073,5073,2026-05-12 14:58:52,Gabriel Powell,gabriel.powell13@email.com,fulfilled,paid,1556.07,1440.81,115.26,0.00,0.00,USD,Portland,US,471,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567073,5073,2026-05-12 14:58:52,Gabriel Powell,gabriel.powell13@email.com,fulfilled,paid,1556.07,1440.81,115.26,0.00,0.00,USD,Portland,US,472,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567073,5073,2026-05-12 14:58:52,Gabriel Powell,gabriel.powell13@email.com,fulfilled,paid,1556.07,1440.81,115.26,0.00,0.00,USD,Portland,US,473,Rain Shell,SKU-BKO-010,4,129.99,519.96
+8301234567073,5073,2026-05-12 14:58:52,Gabriel Powell,gabriel.powell13@email.com,fulfilled,paid,1556.07,1440.81,115.26,0.00,0.00,USD,Portland,US,474,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567074,5074,2026-05-15 13:41:51,Nathan Sanders,nathan.sanders14@email.com,pending,pending,805.37,801.84,59.66,0.00,56.13,USD,Portland,US,475,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567074,5074,2026-05-15 13:41:51,Nathan Sanders,nathan.sanders14@email.com,pending,pending,805.37,801.84,59.66,0.00,56.13,USD,Portland,US,476,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567074,5074,2026-05-15 13:41:51,Nathan Sanders,nathan.sanders14@email.com,pending,pending,805.37,801.84,59.66,0.00,56.13,USD,Portland,US,477,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567074,5074,2026-05-15 13:41:51,Nathan Sanders,nathan.sanders14@email.com,pending,pending,805.37,801.84,59.66,0.00,56.13,USD,Portland,US,478,Beanie,SKU-BKO-012,4,19.99,79.96
+8301234567074,5074,2026-05-15 13:41:51,Nathan Sanders,nathan.sanders14@email.com,pending,pending,805.37,801.84,59.66,0.00,56.13,USD,Portland,US,479,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567074,5074,2026-05-15 13:41:51,Nathan Sanders,nathan.sanders14@email.com,pending,pending,805.37,801.84,59.66,0.00,56.13,USD,Portland,US,480,Portable Charger,SKU-BKO-008,5,39.99,199.95
+8301234567075,5075,2026-05-15 19:22:54,Samuel Davis,samuel.davis15@email.com,fulfilled,pending,1097.70,1069.88,81.31,0.00,53.49,USD,Portland,US,481,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567075,5075,2026-05-15 19:22:54,Samuel Davis,samuel.davis15@email.com,fulfilled,pending,1097.70,1069.88,81.31,0.00,53.49,USD,Portland,US,482,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567075,5075,2026-05-15 19:22:54,Samuel Davis,samuel.davis15@email.com,fulfilled,pending,1097.70,1069.88,81.31,0.00,53.49,USD,Portland,US,483,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567075,5075,2026-05-15 19:22:54,Samuel Davis,samuel.davis15@email.com,fulfilled,pending,1097.70,1069.88,81.31,0.00,53.49,USD,Portland,US,484,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567075,5075,2026-05-15 19:22:54,Samuel Davis,samuel.davis15@email.com,fulfilled,pending,1097.70,1069.88,81.31,0.00,53.49,USD,Portland,US,485,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567075,5075,2026-05-15 19:22:54,Samuel Davis,samuel.davis15@email.com,fulfilled,pending,1097.70,1069.88,81.31,0.00,53.49,USD,Portland,US,486,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567076,5076,2026-05-14 10:02:36,Madison Evans,madison.evans16@email.com,pending,pending,350.90,324.91,25.99,0.00,0.00,USD,Denver,US,487,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567076,5076,2026-05-14 10:02:36,Madison Evans,madison.evans16@email.com,pending,pending,350.90,324.91,25.99,0.00,0.00,USD,Denver,US,488,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567076,5076,2026-05-14 10:02:36,Madison Evans,madison.evans16@email.com,pending,pending,350.90,324.91,25.99,0.00,0.00,USD,Denver,US,489,Portable Charger,SKU-BKO-008,4,39.99,159.96
+8301234567076,5076,2026-05-14 10:02:36,Madison Evans,madison.evans16@email.com,pending,pending,350.90,324.91,25.99,0.00,0.00,USD,Denver,US,490,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567076,5076,2026-05-14 10:02:36,Madison Evans,madison.evans16@email.com,pending,pending,350.90,324.91,25.99,0.00,0.00,USD,Denver,US,491,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567077,5077,2026-05-17 19:01:33,Lincoln Bennett,lincoln.bennett17@email.com,pending,pending,1556.18,1516.75,115.27,0.00,75.84,USD,Portland,US,492,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567077,5077,2026-05-17 19:01:33,Lincoln Bennett,lincoln.bennett17@email.com,pending,pending,1556.18,1516.75,115.27,0.00,75.84,USD,Portland,US,493,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567077,5077,2026-05-17 19:01:33,Lincoln Bennett,lincoln.bennett17@email.com,pending,pending,1556.18,1516.75,115.27,0.00,75.84,USD,Portland,US,494,Tech Organizer,SKU-BKO-009,5,29.99,149.95
+8301234567077,5077,2026-05-17 19:01:33,Lincoln Bennett,lincoln.bennett17@email.com,pending,pending,1556.18,1516.75,115.27,0.00,75.84,USD,Portland,US,495,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567077,5077,2026-05-17 19:01:33,Lincoln Bennett,lincoln.bennett17@email.com,pending,pending,1556.18,1516.75,115.27,0.00,75.84,USD,Portland,US,496,Crossbody Sling,SKU-BKO-013,4,49.99,199.96
+8301234567077,5077,2026-05-17 19:01:33,Lincoln Bennett,lincoln.bennett17@email.com,pending,pending,1556.18,1516.75,115.27,0.00,75.84,USD,Portland,US,497,Packing Cubes,SKU-BKO-007,5,24.99,124.95
+8301234567077,5077,2026-05-17 19:01:33,Lincoln Bennett,lincoln.bennett17@email.com,pending,pending,1556.18,1516.75,115.27,0.00,75.84,USD,Portland,US,498,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567077,5077,2026-05-17 19:01:33,Lincoln Bennett,lincoln.bennett17@email.com,pending,pending,1556.18,1516.75,115.27,0.00,75.84,USD,Portland,US,499,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567078,5078,2026-05-23 12:30:55,Wyatt Collins,wyatt.collins18@email.com,pending,cancelled,776.11,740.85,57.49,0.00,22.23,USD,Boise,US,500,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567078,5078,2026-05-23 12:30:55,Wyatt Collins,wyatt.collins18@email.com,pending,cancelled,776.11,740.85,57.49,0.00,22.23,USD,Boise,US,501,Travel Backpack,SKU-BKO-001,3,89.99,269.97
+8301234567078,5078,2026-05-23 12:30:55,Wyatt Collins,wyatt.collins18@email.com,pending,cancelled,776.11,740.85,57.49,0.00,22.23,USD,Boise,US,502,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567078,5078,2026-05-23 12:30:55,Wyatt Collins,wyatt.collins18@email.com,pending,cancelled,776.11,740.85,57.49,0.00,22.23,USD,Boise,US,503,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567078,5078,2026-05-23 12:30:55,Wyatt Collins,wyatt.collins18@email.com,pending,cancelled,776.11,740.85,57.49,0.00,22.23,USD,Boise,US,504,Portable Charger,SKU-BKO-008,5,39.99,199.95
+8301234567079,5079,2026-05-19 16:55:20,Lincoln Cox,lincoln.cox19@email.com,pending,pending,1446.51,1380.78,107.15,0.00,41.42,USD,Detroit,US,505,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567079,5079,2026-05-19 16:55:20,Lincoln Cox,lincoln.cox19@email.com,pending,pending,1446.51,1380.78,107.15,0.00,41.42,USD,Detroit,US,506,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567079,5079,2026-05-19 16:55:20,Lincoln Cox,lincoln.cox19@email.com,pending,pending,1446.51,1380.78,107.15,0.00,41.42,USD,Detroit,US,507,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567079,5079,2026-05-19 16:55:20,Lincoln Cox,lincoln.cox19@email.com,pending,pending,1446.51,1380.78,107.15,0.00,41.42,USD,Detroit,US,508,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567079,5079,2026-05-19 16:55:20,Lincoln Cox,lincoln.cox19@email.com,pending,pending,1446.51,1380.78,107.15,0.00,41.42,USD,Detroit,US,509,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567079,5079,2026-05-19 16:55:20,Lincoln Cox,lincoln.cox19@email.com,pending,pending,1446.51,1380.78,107.15,0.00,41.42,USD,Detroit,US,510,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567079,5079,2026-05-19 16:55:20,Lincoln Cox,lincoln.cox19@email.com,pending,pending,1446.51,1380.78,107.15,0.00,41.42,USD,Detroit,US,511,Portable Charger,SKU-BKO-008,5,39.99,199.95
+8301234567079,5079,2026-05-19 16:55:20,Lincoln Cox,lincoln.cox19@email.com,pending,pending,1446.51,1380.78,107.15,0.00,41.42,USD,Detroit,US,512,Rain Shell,SKU-BKO-010,4,129.99,519.96
+8301234567079,5079,2026-05-19 16:55:20,Lincoln Cox,lincoln.cox19@email.com,pending,pending,1446.51,1380.78,107.15,0.00,41.42,USD,Detroit,US,513,Packing Cubes,SKU-BKO-007,3,24.99,74.97
+8301234567080,5080,2026-05-21 17:40:16,Sophia Rodriguez,sophia.rodriguez20@email.com,unfulfilled,cancelled,1190.05,1184.84,88.15,0.00,82.94,USD,Denver,US,514,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567080,5080,2026-05-21 17:40:16,Sophia Rodriguez,sophia.rodriguez20@email.com,unfulfilled,cancelled,1190.05,1184.84,88.15,0.00,82.94,USD,Denver,US,515,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567080,5080,2026-05-21 17:40:16,Sophia Rodriguez,sophia.rodriguez20@email.com,unfulfilled,cancelled,1190.05,1184.84,88.15,0.00,82.94,USD,Denver,US,516,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567080,5080,2026-05-21 17:40:16,Sophia Rodriguez,sophia.rodriguez20@email.com,unfulfilled,cancelled,1190.05,1184.84,88.15,0.00,82.94,USD,Denver,US,517,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567080,5080,2026-05-21 17:40:16,Sophia Rodriguez,sophia.rodriguez20@email.com,unfulfilled,cancelled,1190.05,1184.84,88.15,0.00,82.94,USD,Denver,US,518,Tech Organizer,SKU-BKO-009,4,29.99,119.96
+8301234567080,5080,2026-05-21 17:40:16,Sophia Rodriguez,sophia.rodriguez20@email.com,unfulfilled,cancelled,1190.05,1184.84,88.15,0.00,82.94,USD,Denver,US,519,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567080,5080,2026-05-21 17:40:16,Sophia Rodriguez,sophia.rodriguez20@email.com,unfulfilled,cancelled,1190.05,1184.84,88.15,0.00,82.94,USD,Denver,US,520,Utility Jacket,SKU-BKO-003,5,109.99,549.95
+8301234567081,5081,2026-05-19 13:28:32,Aria Kelly,aria.kelly21@email.com,pending,cancelled,832.47,828.83,61.66,0.00,58.02,USD,Portland,US,521,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567081,5081,2026-05-19 13:28:32,Aria Kelly,aria.kelly21@email.com,pending,cancelled,832.47,828.83,61.66,0.00,58.02,USD,Portland,US,522,Tech Organizer,SKU-BKO-009,4,29.99,119.96
+8301234567081,5081,2026-05-19 13:28:32,Aria Kelly,aria.kelly21@email.com,pending,cancelled,832.47,828.83,61.66,0.00,58.02,USD,Portland,US,523,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567081,5081,2026-05-19 13:28:32,Aria Kelly,aria.kelly21@email.com,pending,cancelled,832.47,828.83,61.66,0.00,58.02,USD,Portland,US,524,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567081,5081,2026-05-19 13:28:32,Aria Kelly,aria.kelly21@email.com,pending,cancelled,832.47,828.83,61.66,0.00,58.02,USD,Portland,US,525,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567081,5081,2026-05-19 13:28:32,Aria Kelly,aria.kelly21@email.com,pending,cancelled,832.47,828.83,61.66,0.00,58.02,USD,Portland,US,526,Insulated Bottle,SKU-BKO-006,4,34.99,139.96
+8301234567082,5082,2026-05-21 20:40:14,Daniel Murphy,daniel.murphy22@email.com,fulfilled,paid,1320.57,1314.79,97.82,0.00,92.04,USD,Portland,US,527,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567082,5082,2026-05-21 20:40:14,Daniel Murphy,daniel.murphy22@email.com,fulfilled,paid,1320.57,1314.79,97.82,0.00,92.04,USD,Portland,US,528,Insulated Bottle,SKU-BKO-006,3,34.99,104.97
+8301234567082,5082,2026-05-21 20:40:14,Daniel Murphy,daniel.murphy22@email.com,fulfilled,paid,1320.57,1314.79,97.82,0.00,92.04,USD,Portland,US,529,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567082,5082,2026-05-21 20:40:14,Daniel Murphy,daniel.murphy22@email.com,fulfilled,paid,1320.57,1314.79,97.82,0.00,92.04,USD,Portland,US,530,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567082,5082,2026-05-21 20:40:14,Daniel Murphy,daniel.murphy22@email.com,fulfilled,paid,1320.57,1314.79,97.82,0.00,92.04,USD,Portland,US,531,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567082,5082,2026-05-21 20:40:14,Daniel Murphy,daniel.murphy22@email.com,fulfilled,paid,1320.57,1314.79,97.82,0.00,92.04,USD,Portland,US,532,Packing Cubes,SKU-BKO-007,3,24.99,74.97
+8301234567082,5082,2026-05-21 20:40:14,Daniel Murphy,daniel.murphy22@email.com,fulfilled,paid,1320.57,1314.79,97.82,0.00,92.04,USD,Portland,US,533,Travel Backpack,SKU-BKO-001,5,89.99,449.95
+8301234567082,5082,2026-05-21 20:40:14,Daniel Murphy,daniel.murphy22@email.com,fulfilled,paid,1320.57,1314.79,97.82,0.00,92.04,USD,Portland,US,534,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567083,5083,2026-05-22 10:38:11,Owen Cox,owen.cox0@email.com,fulfilled,refunded,1242.91,1150.84,92.07,0.00,0.00,USD,Salt Lake City,US,535,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567083,5083,2026-05-22 10:38:11,Owen Cox,owen.cox0@email.com,fulfilled,refunded,1242.91,1150.84,92.07,0.00,0.00,USD,Salt Lake City,US,536,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567083,5083,2026-05-22 10:38:11,Owen Cox,owen.cox0@email.com,fulfilled,refunded,1242.91,1150.84,92.07,0.00,0.00,USD,Salt Lake City,US,537,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567083,5083,2026-05-22 10:38:11,Owen Cox,owen.cox0@email.com,fulfilled,refunded,1242.91,1150.84,92.07,0.00,0.00,USD,Salt Lake City,US,538,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567083,5083,2026-05-22 10:38:11,Owen Cox,owen.cox0@email.com,fulfilled,refunded,1242.91,1150.84,92.07,0.00,0.00,USD,Salt Lake City,US,539,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567083,5083,2026-05-22 10:38:11,Owen Cox,owen.cox0@email.com,fulfilled,refunded,1242.91,1150.84,92.07,0.00,0.00,USD,Salt Lake City,US,540,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567084,5084,2026-05-21 16:51:36,Amelia Kim,amelia.kim1@email.com,fulfilled,pending,1206.65,1151.82,89.38,0.00,34.55,USD,Salt Lake City,US,541,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567084,5084,2026-05-21 16:51:36,Amelia Kim,amelia.kim1@email.com,fulfilled,pending,1206.65,1151.82,89.38,0.00,34.55,USD,Salt Lake City,US,542,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567084,5084,2026-05-21 16:51:36,Amelia Kim,amelia.kim1@email.com,fulfilled,pending,1206.65,1151.82,89.38,0.00,34.55,USD,Salt Lake City,US,543,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567084,5084,2026-05-21 16:51:36,Amelia Kim,amelia.kim1@email.com,fulfilled,pending,1206.65,1151.82,89.38,0.00,34.55,USD,Salt Lake City,US,544,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567084,5084,2026-05-21 16:51:36,Amelia Kim,amelia.kim1@email.com,fulfilled,pending,1206.65,1151.82,89.38,0.00,34.55,USD,Salt Lake City,US,545,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567084,5084,2026-05-21 16:51:36,Amelia Kim,amelia.kim1@email.com,fulfilled,pending,1206.65,1151.82,89.38,0.00,34.55,USD,Salt Lake City,US,546,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567084,5084,2026-05-21 16:51:36,Amelia Kim,amelia.kim1@email.com,fulfilled,pending,1206.65,1151.82,89.38,0.00,34.55,USD,Salt Lake City,US,547,Travel Backpack,SKU-BKO-001,4,89.99,359.96
+8301234567085,5085,2026-05-24 15:04:14,Thomas Martin,thomas.martin2@email.com,fulfilled,paid,1028.31,1023.81,76.17,0.00,71.67,USD,Portland,US,548,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567085,5085,2026-05-24 15:04:14,Thomas Martin,thomas.martin2@email.com,fulfilled,paid,1028.31,1023.81,76.17,0.00,71.67,USD,Portland,US,549,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567085,5085,2026-05-24 15:04:14,Thomas Martin,thomas.martin2@email.com,fulfilled,paid,1028.31,1023.81,76.17,0.00,71.67,USD,Portland,US,550,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567085,5085,2026-05-24 15:04:14,Thomas Martin,thomas.martin2@email.com,fulfilled,paid,1028.31,1023.81,76.17,0.00,71.67,USD,Portland,US,551,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567085,5085,2026-05-24 15:04:14,Thomas Martin,thomas.martin2@email.com,fulfilled,paid,1028.31,1023.81,76.17,0.00,71.67,USD,Portland,US,552,Beanie,SKU-BKO-012,5,19.99,99.95
+8301234567085,5085,2026-05-24 15:04:14,Thomas Martin,thomas.martin2@email.com,fulfilled,paid,1028.31,1023.81,76.17,0.00,71.67,USD,Portland,US,553,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567085,5085,2026-05-24 15:04:14,Thomas Martin,thomas.martin2@email.com,fulfilled,paid,1028.31,1023.81,76.17,0.00,71.67,USD,Portland,US,554,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567086,5086,2026-05-21 19:19:19,Evelyn Hughes,evelyn.hughes3@email.com,pending,cancelled,959.06,954.86,71.04,0.00,66.84,USD,Portland,US,555,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567086,5086,2026-05-21 19:19:19,Evelyn Hughes,evelyn.hughes3@email.com,pending,cancelled,959.06,954.86,71.04,0.00,66.84,USD,Portland,US,556,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567086,5086,2026-05-21 19:19:19,Evelyn Hughes,evelyn.hughes3@email.com,pending,cancelled,959.06,954.86,71.04,0.00,66.84,USD,Portland,US,557,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567086,5086,2026-05-21 19:19:19,Evelyn Hughes,evelyn.hughes3@email.com,pending,cancelled,959.06,954.86,71.04,0.00,66.84,USD,Portland,US,558,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567086,5086,2026-05-21 19:19:19,Evelyn Hughes,evelyn.hughes3@email.com,pending,cancelled,959.06,954.86,71.04,0.00,66.84,USD,Portland,US,559,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567086,5086,2026-05-21 19:19:19,Evelyn Hughes,evelyn.hughes3@email.com,pending,cancelled,959.06,954.86,71.04,0.00,66.84,USD,Portland,US,560,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567087,5087,2026-05-27 21:56:02,Scarlett Walker,scarlett.walker4@email.com,pending,pending,815.52,794.85,60.41,0.00,39.74,USD,Portland,US,561,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567087,5087,2026-05-27 21:56:02,Scarlett Walker,scarlett.walker4@email.com,pending,pending,815.52,794.85,60.41,0.00,39.74,USD,Portland,US,562,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567087,5087,2026-05-27 21:56:02,Scarlett Walker,scarlett.walker4@email.com,pending,pending,815.52,794.85,60.41,0.00,39.74,USD,Portland,US,563,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567087,5087,2026-05-27 21:56:02,Scarlett Walker,scarlett.walker4@email.com,pending,pending,815.52,794.85,60.41,0.00,39.74,USD,Portland,US,564,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567087,5087,2026-05-27 21:56:02,Scarlett Walker,scarlett.walker4@email.com,pending,pending,815.52,794.85,60.41,0.00,39.74,USD,Portland,US,565,Insulated Bottle,SKU-BKO-006,3,34.99,104.97
+8301234567087,5087,2026-05-27 21:56:02,Scarlett Walker,scarlett.walker4@email.com,pending,pending,815.52,794.85,60.41,0.00,39.74,USD,Portland,US,566,Packing Cubes,SKU-BKO-007,4,24.99,99.96
+8301234567088,5088,2026-05-26 12:24:22,Lily Powell,lily.powell5@email.com,pending,pending,1328.19,1229.81,98.38,0.00,0.00,USD,Minneapolis,US,567,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567088,5088,2026-05-26 12:24:22,Lily Powell,lily.powell5@email.com,pending,pending,1328.19,1229.81,98.38,0.00,0.00,USD,Minneapolis,US,568,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567088,5088,2026-05-26 12:24:22,Lily Powell,lily.powell5@email.com,pending,pending,1328.19,1229.81,98.38,0.00,0.00,USD,Minneapolis,US,569,Rain Shell,SKU-BKO-010,2,129.99,259.98
+8301234567088,5088,2026-05-26 12:24:22,Lily Powell,lily.powell5@email.com,pending,pending,1328.19,1229.81,98.38,0.00,0.00,USD,Minneapolis,US,570,Travel Backpack,SKU-BKO-001,4,89.99,359.96
+8301234567088,5088,2026-05-26 12:24:22,Lily Powell,lily.powell5@email.com,pending,pending,1328.19,1229.81,98.38,0.00,0.00,USD,Minneapolis,US,571,Fleece Vest,SKU-BKO-005,4,64.99,259.96
+8301234567088,5088,2026-05-26 12:24:22,Lily Powell,lily.powell5@email.com,pending,pending,1328.19,1229.81,98.38,0.00,0.00,USD,Minneapolis,US,572,Portable Charger,SKU-BKO-008,4,39.99,159.96
+8301234567089,5089,2026-05-30 21:41:51,Henry Russell,henry.russell6@email.com,pending,pending,1364.42,1329.84,101.07,0.00,66.49,USD,Salt Lake City,US,573,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567089,5089,2026-05-30 21:41:51,Henry Russell,henry.russell6@email.com,pending,pending,1364.42,1329.84,101.07,0.00,66.49,USD,Salt Lake City,US,574,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567089,5089,2026-05-30 21:41:51,Henry Russell,henry.russell6@email.com,pending,pending,1364.42,1329.84,101.07,0.00,66.49,USD,Salt Lake City,US,575,Travel Backpack,SKU-BKO-001,4,89.99,359.96
+8301234567089,5089,2026-05-30 21:41:51,Henry Russell,henry.russell6@email.com,pending,pending,1364.42,1329.84,101.07,0.00,66.49,USD,Salt Lake City,US,576,Portable Charger,SKU-BKO-008,1,39.99,39.99
+8301234567089,5089,2026-05-30 21:41:51,Henry Russell,henry.russell6@email.com,pending,pending,1364.42,1329.84,101.07,0.00,66.49,USD,Salt Lake City,US,577,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567089,5089,2026-05-30 21:41:51,Henry Russell,henry.russell6@email.com,pending,pending,1364.42,1329.84,101.07,0.00,66.49,USD,Salt Lake City,US,578,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567090,5090,2026-05-29 21:18:21,Lincoln Turner,lincoln.turner7@email.com,pending,pending,752.91,733.83,55.77,0.00,36.69,USD,Salt Lake City,US,579,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567090,5090,2026-05-29 21:18:21,Lincoln Turner,lincoln.turner7@email.com,pending,pending,752.91,733.83,55.77,0.00,36.69,USD,Salt Lake City,US,580,Insulated Bottle,SKU-BKO-006,3,34.99,104.97
+8301234567090,5090,2026-05-29 21:18:21,Lincoln Turner,lincoln.turner7@email.com,pending,pending,752.91,733.83,55.77,0.00,36.69,USD,Salt Lake City,US,581,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567090,5090,2026-05-29 21:18:21,Lincoln Turner,lincoln.turner7@email.com,pending,pending,752.91,733.83,55.77,0.00,36.69,USD,Salt Lake City,US,582,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567090,5090,2026-05-29 21:18:21,Lincoln Turner,lincoln.turner7@email.com,pending,pending,752.91,733.83,55.77,0.00,36.69,USD,Salt Lake City,US,583,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567090,5090,2026-05-29 21:18:21,Lincoln Turner,lincoln.turner7@email.com,pending,pending,752.91,733.83,55.77,0.00,36.69,USD,Salt Lake City,US,584,Packing Cubes,SKU-BKO-007,5,24.99,124.95
+8301234567090,5090,2026-05-29 21:18:21,Lincoln Turner,lincoln.turner7@email.com,pending,pending,752.91,733.83,55.77,0.00,36.69,USD,Salt Lake City,US,585,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567091,5091,2026-05-27 18:10:57,Charlotte Butler,charlotte.butler8@email.com,unfulfilled,pending,1088.32,1060.74,80.62,0.00,53.04,USD,Portland,US,586,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567091,5091,2026-05-27 18:10:57,Charlotte Butler,charlotte.butler8@email.com,unfulfilled,pending,1088.32,1060.74,80.62,0.00,53.04,USD,Portland,US,587,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567091,5091,2026-05-27 18:10:57,Charlotte Butler,charlotte.butler8@email.com,unfulfilled,pending,1088.32,1060.74,80.62,0.00,53.04,USD,Portland,US,588,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567091,5091,2026-05-27 18:10:57,Charlotte Butler,charlotte.butler8@email.com,unfulfilled,pending,1088.32,1060.74,80.62,0.00,53.04,USD,Portland,US,589,Crossbody Sling,SKU-BKO-013,5,49.99,249.95
+8301234567091,5091,2026-05-27 18:10:57,Charlotte Butler,charlotte.butler8@email.com,unfulfilled,pending,1088.32,1060.74,80.62,0.00,53.04,USD,Portland,US,590,Insulated Bottle,SKU-BKO-006,5,34.99,174.95
+8301234567091,5091,2026-05-27 18:10:57,Charlotte Butler,charlotte.butler8@email.com,unfulfilled,pending,1088.32,1060.74,80.62,0.00,53.04,USD,Portland,US,591,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567091,5091,2026-05-27 18:10:57,Charlotte Butler,charlotte.butler8@email.com,unfulfilled,pending,1088.32,1060.74,80.62,0.00,53.04,USD,Portland,US,592,Tech Organizer,SKU-BKO-009,4,29.99,119.96
+8301234567091,5091,2026-05-27 18:10:57,Charlotte Butler,charlotte.butler8@email.com,unfulfilled,pending,1088.32,1060.74,80.62,0.00,53.04,USD,Portland,US,593,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567092,5092,2026-05-28 09:33:04,Harper Evans,harper.evans9@email.com,pending,pending,1021.25,974.85,75.65,0.00,29.25,USD,Salt Lake City,US,594,Tech Organizer,SKU-BKO-009,4,29.99,119.96
+8301234567092,5092,2026-05-28 09:33:04,Harper Evans,harper.evans9@email.com,pending,pending,1021.25,974.85,75.65,0.00,29.25,USD,Salt Lake City,US,595,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567092,5092,2026-05-28 09:33:04,Harper Evans,harper.evans9@email.com,pending,pending,1021.25,974.85,75.65,0.00,29.25,USD,Salt Lake City,US,596,Travel Backpack,SKU-BKO-001,4,89.99,359.96
+8301234567092,5092,2026-05-28 09:33:04,Harper Evans,harper.evans9@email.com,pending,pending,1021.25,974.85,75.65,0.00,29.25,USD,Salt Lake City,US,597,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567092,5092,2026-05-28 09:33:04,Harper Evans,harper.evans9@email.com,pending,pending,1021.25,974.85,75.65,0.00,29.25,USD,Salt Lake City,US,598,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567092,5092,2026-05-28 09:33:04,Harper Evans,harper.evans9@email.com,pending,pending,1021.25,974.85,75.65,0.00,29.25,USD,Salt Lake City,US,599,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567093,5093,2026-05-30 13:47:47,Ava Anderson,ava.anderson10@email.com,pending,pending,601.19,573.88,44.53,0.00,17.22,USD,Boise,US,600,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567093,5093,2026-05-30 13:47:47,Ava Anderson,ava.anderson10@email.com,pending,pending,601.19,573.88,44.53,0.00,17.22,USD,Boise,US,601,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567093,5093,2026-05-30 13:47:47,Ava Anderson,ava.anderson10@email.com,pending,pending,601.19,573.88,44.53,0.00,17.22,USD,Boise,US,602,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567093,5093,2026-05-30 13:47:47,Ava Anderson,ava.anderson10@email.com,pending,pending,601.19,573.88,44.53,0.00,17.22,USD,Boise,US,603,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567093,5093,2026-05-30 13:47:47,Ava Anderson,ava.anderson10@email.com,pending,pending,601.19,573.88,44.53,0.00,17.22,USD,Boise,US,604,Portable Charger,SKU-BKO-008,1,39.99,39.99
+8301234567093,5093,2026-05-30 13:47:47,Ava Anderson,ava.anderson10@email.com,pending,pending,601.19,573.88,44.53,0.00,17.22,USD,Boise,US,605,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567093,5093,2026-05-30 13:47:47,Ava Anderson,ava.anderson10@email.com,pending,pending,601.19,573.88,44.53,0.00,17.22,USD,Boise,US,606,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567094,5094,2026-05-27 09:32:12,Liam Turner,liam.turner11@email.com,unfulfilled,pending,1220.79,1189.85,90.43,0.00,59.49,USD,Salt Lake City,US,607,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567094,5094,2026-05-27 09:32:12,Liam Turner,liam.turner11@email.com,unfulfilled,pending,1220.79,1189.85,90.43,0.00,59.49,USD,Salt Lake City,US,608,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567094,5094,2026-05-27 09:32:12,Liam Turner,liam.turner11@email.com,unfulfilled,pending,1220.79,1189.85,90.43,0.00,59.49,USD,Salt Lake City,US,609,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567094,5094,2026-05-27 09:32:12,Liam Turner,liam.turner11@email.com,unfulfilled,pending,1220.79,1189.85,90.43,0.00,59.49,USD,Salt Lake City,US,610,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567094,5094,2026-05-27 09:32:12,Liam Turner,liam.turner11@email.com,unfulfilled,pending,1220.79,1189.85,90.43,0.00,59.49,USD,Salt Lake City,US,611,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567094,5094,2026-05-27 09:32:12,Liam Turner,liam.turner11@email.com,unfulfilled,pending,1220.79,1189.85,90.43,0.00,59.49,USD,Salt Lake City,US,612,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567095,5095,2026-05-26 11:49:58,Olivia Ross,olivia.ross12@email.com,unfulfilled,cancelled,798.39,794.89,59.14,0.00,55.64,USD,Portland,US,613,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567095,5095,2026-05-26 11:49:58,Olivia Ross,olivia.ross12@email.com,unfulfilled,cancelled,798.39,794.89,59.14,0.00,55.64,USD,Portland,US,614,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567095,5095,2026-05-26 11:49:58,Olivia Ross,olivia.ross12@email.com,unfulfilled,cancelled,798.39,794.89,59.14,0.00,55.64,USD,Portland,US,615,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567095,5095,2026-05-26 11:49:58,Olivia Ross,olivia.ross12@email.com,unfulfilled,cancelled,798.39,794.89,59.14,0.00,55.64,USD,Portland,US,616,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567095,5095,2026-05-26 11:49:58,Olivia Ross,olivia.ross12@email.com,unfulfilled,cancelled,798.39,794.89,59.14,0.00,55.64,USD,Portland,US,617,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567096,5096,2026-05-30 20:54:53,Liam Turner,liam.turner13@email.com,pending,pending,1233.13,1201.88,91.34,0.00,60.09,USD,Detroit,US,618,Rain Shell,SKU-BKO-010,2,129.99,259.98
+8301234567096,5096,2026-05-30 20:54:53,Liam Turner,liam.turner13@email.com,pending,pending,1233.13,1201.88,91.34,0.00,60.09,USD,Detroit,US,619,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567096,5096,2026-05-30 20:54:53,Liam Turner,liam.turner13@email.com,pending,pending,1233.13,1201.88,91.34,0.00,60.09,USD,Detroit,US,620,Utility Jacket,SKU-BKO-003,5,109.99,549.95
+8301234567096,5096,2026-05-30 20:54:53,Liam Turner,liam.turner13@email.com,pending,pending,1233.13,1201.88,91.34,0.00,60.09,USD,Detroit,US,621,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567096,5096,2026-05-30 20:54:53,Liam Turner,liam.turner13@email.com,pending,pending,1233.13,1201.88,91.34,0.00,60.09,USD,Detroit,US,622,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567097,5097,2026-05-28 11:57:43,Lincoln Powell,lincoln.powell14@email.com,unfulfilled,cancelled,767.25,763.89,56.83,0.00,53.47,USD,Denver,US,623,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567097,5097,2026-05-28 11:57:43,Lincoln Powell,lincoln.powell14@email.com,unfulfilled,cancelled,767.25,763.89,56.83,0.00,53.47,USD,Denver,US,624,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567097,5097,2026-05-28 11:57:43,Lincoln Powell,lincoln.powell14@email.com,unfulfilled,cancelled,767.25,763.89,56.83,0.00,53.47,USD,Denver,US,625,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567097,5097,2026-05-28 11:57:43,Lincoln Powell,lincoln.powell14@email.com,unfulfilled,cancelled,767.25,763.89,56.83,0.00,53.47,USD,Denver,US,626,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567097,5097,2026-05-28 11:57:43,Lincoln Powell,lincoln.powell14@email.com,unfulfilled,cancelled,767.25,763.89,56.83,0.00,53.47,USD,Denver,US,627,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567097,5097,2026-05-28 11:57:43,Lincoln Powell,lincoln.powell14@email.com,unfulfilled,cancelled,767.25,763.89,56.83,0.00,53.47,USD,Denver,US,628,Portable Charger,SKU-BKO-008,1,39.99,39.99
+8301234567098,5098,2026-05-25 09:16:34,Lucas Rodriguez,lucas.rodriguez15@email.com,pending,cancelled,1878.95,1870.72,139.18,0.00,130.95,USD,Salt Lake City,US,629,Duffel Bag,SKU-BKO-002,4,74.99,299.96
+8301234567098,5098,2026-05-25 09:16:34,Lucas Rodriguez,lucas.rodriguez15@email.com,pending,cancelled,1878.95,1870.72,139.18,0.00,130.95,USD,Salt Lake City,US,630,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567098,5098,2026-05-25 09:16:34,Lucas Rodriguez,lucas.rodriguez15@email.com,pending,cancelled,1878.95,1870.72,139.18,0.00,130.95,USD,Salt Lake City,US,631,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567098,5098,2026-05-25 09:16:34,Lucas Rodriguez,lucas.rodriguez15@email.com,pending,cancelled,1878.95,1870.72,139.18,0.00,130.95,USD,Salt Lake City,US,632,Travel Backpack,SKU-BKO-001,3,89.99,269.97
+8301234567098,5098,2026-05-25 09:16:34,Lucas Rodriguez,lucas.rodriguez15@email.com,pending,cancelled,1878.95,1870.72,139.18,0.00,130.95,USD,Salt Lake City,US,633,Beanie,SKU-BKO-012,5,19.99,99.95
+8301234567098,5098,2026-05-25 09:16:34,Lucas Rodriguez,lucas.rodriguez15@email.com,pending,cancelled,1878.95,1870.72,139.18,0.00,130.95,USD,Salt Lake City,US,634,Rain Shell,SKU-BKO-010,5,129.99,649.95
+8301234567098,5098,2026-05-25 09:16:34,Lucas Rodriguez,lucas.rodriguez15@email.com,pending,cancelled,1878.95,1870.72,139.18,0.00,130.95,USD,Salt Lake City,US,635,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567098,5098,2026-05-25 09:16:34,Lucas Rodriguez,lucas.rodriguez15@email.com,pending,cancelled,1878.95,1870.72,139.18,0.00,130.95,USD,Salt Lake City,US,636,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567099,5099,2026-05-27 15:53:13,Leo Kelly,leo.kelly16@email.com,unfulfilled,pending,576.07,549.90,42.67,0.00,16.50,USD,Denver,US,637,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567099,5099,2026-05-27 15:53:13,Leo Kelly,leo.kelly16@email.com,unfulfilled,pending,576.07,549.90,42.67,0.00,16.50,USD,Denver,US,638,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567099,5099,2026-05-27 15:53:13,Leo Kelly,leo.kelly16@email.com,unfulfilled,pending,576.07,549.90,42.67,0.00,16.50,USD,Denver,US,639,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567099,5099,2026-05-27 15:53:13,Leo Kelly,leo.kelly16@email.com,unfulfilled,pending,576.07,549.90,42.67,0.00,16.50,USD,Denver,US,640,Fleece Vest,SKU-BKO-005,4,64.99,259.96
+8301234567099,5099,2026-05-27 15:53:13,Leo Kelly,leo.kelly16@email.com,unfulfilled,pending,576.07,549.90,42.67,0.00,16.50,USD,Denver,US,641,Portable Charger,SKU-BKO-008,1,39.99,39.99
+8301234567100,5100,2026-05-27 19:44:38,Harper Walker,harper.walker17@email.com,pending,refunded,1321.64,1315.85,97.90,0.00,92.11,USD,Boise,US,642,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567100,5100,2026-05-27 19:44:38,Harper Walker,harper.walker17@email.com,pending,refunded,1321.64,1315.85,97.90,0.00,92.11,USD,Boise,US,643,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567100,5100,2026-05-27 19:44:38,Harper Walker,harper.walker17@email.com,pending,refunded,1321.64,1315.85,97.90,0.00,92.11,USD,Boise,US,644,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567100,5100,2026-05-27 19:44:38,Harper Walker,harper.walker17@email.com,pending,refunded,1321.64,1315.85,97.90,0.00,92.11,USD,Boise,US,645,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567100,5100,2026-05-27 19:44:38,Harper Walker,harper.walker17@email.com,pending,refunded,1321.64,1315.85,97.90,0.00,92.11,USD,Boise,US,646,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567101,5101,2026-05-27 20:29:29,Grace Martin,grace.martin18@email.com,fulfilled,refunded,1128.34,1044.76,83.58,0.00,0.00,USD,Portland,US,647,Beanie,SKU-BKO-012,4,19.99,79.96
+8301234567101,5101,2026-05-27 20:29:29,Grace Martin,grace.martin18@email.com,fulfilled,refunded,1128.34,1044.76,83.58,0.00,0.00,USD,Portland,US,648,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567101,5101,2026-05-27 20:29:29,Grace Martin,grace.martin18@email.com,fulfilled,refunded,1128.34,1044.76,83.58,0.00,0.00,USD,Portland,US,649,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567101,5101,2026-05-27 20:29:29,Grace Martin,grace.martin18@email.com,fulfilled,refunded,1128.34,1044.76,83.58,0.00,0.00,USD,Portland,US,650,Packing Cubes,SKU-BKO-007,4,24.99,99.96
+8301234567101,5101,2026-05-27 20:29:29,Grace Martin,grace.martin18@email.com,fulfilled,refunded,1128.34,1044.76,83.58,0.00,0.00,USD,Portland,US,651,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567101,5101,2026-05-27 20:29:29,Grace Martin,grace.martin18@email.com,fulfilled,refunded,1128.34,1044.76,83.58,0.00,0.00,USD,Portland,US,652,Crossbody Sling,SKU-BKO-013,4,49.99,199.96
+8301234567101,5101,2026-05-27 20:29:29,Grace Martin,grace.martin18@email.com,fulfilled,refunded,1128.34,1044.76,83.58,0.00,0.00,USD,Portland,US,653,Portable Charger,SKU-BKO-008,5,39.99,199.95
+8301234567102,5102,2026-05-27 14:07:47,Aiden Lee,aiden.lee19@email.com,pending,pending,785.60,749.91,58.19,0.00,22.50,USD,Boise,US,654,Insulated Bottle,SKU-BKO-006,1,34.99,34.99
+8301234567102,5102,2026-05-27 14:07:47,Aiden Lee,aiden.lee19@email.com,pending,pending,785.60,749.91,58.19,0.00,22.50,USD,Boise,US,655,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567102,5102,2026-05-27 14:07:47,Aiden Lee,aiden.lee19@email.com,pending,pending,785.60,749.91,58.19,0.00,22.50,USD,Boise,US,656,Rain Shell,SKU-BKO-010,2,129.99,259.98
+8301234567102,5102,2026-05-27 14:07:47,Aiden Lee,aiden.lee19@email.com,pending,pending,785.60,749.91,58.19,0.00,22.50,USD,Boise,US,657,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567102,5102,2026-05-27 14:07:47,Aiden Lee,aiden.lee19@email.com,pending,pending,785.60,749.91,58.19,0.00,22.50,USD,Boise,US,658,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567103,5103,2026-05-25 12:20:44,Caleb Butler,caleb.butler20@email.com,pending,pending,1183.63,1129.85,87.68,0.00,33.90,USD,Portland,US,659,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567103,5103,2026-05-25 12:20:44,Caleb Butler,caleb.butler20@email.com,pending,pending,1183.63,1129.85,87.68,0.00,33.90,USD,Portland,US,660,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567103,5103,2026-05-25 12:20:44,Caleb Butler,caleb.butler20@email.com,pending,pending,1183.63,1129.85,87.68,0.00,33.90,USD,Portland,US,661,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567103,5103,2026-05-25 12:20:44,Caleb Butler,caleb.butler20@email.com,pending,pending,1183.63,1129.85,87.68,0.00,33.90,USD,Portland,US,662,Utility Jacket,SKU-BKO-003,2,109.99,219.98
+8301234567103,5103,2026-05-25 12:20:44,Caleb Butler,caleb.butler20@email.com,pending,pending,1183.63,1129.85,87.68,0.00,33.90,USD,Portland,US,663,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567103,5103,2026-05-25 12:20:44,Caleb Butler,caleb.butler20@email.com,pending,pending,1183.63,1129.85,87.68,0.00,33.90,USD,Portland,US,664,Rain Shell,SKU-BKO-010,2,129.99,259.98
+8301234567104,5104,2026-06-04 16:08:27,Chloe Cox,chloe.cox21@email.com,pending,pending,1452.82,1386.80,107.62,0.00,41.60,USD,Boise,US,665,Hiking Boots,SKU-BKO-004,5,149.99,749.95
+8301234567104,5104,2026-06-04 16:08:27,Chloe Cox,chloe.cox21@email.com,pending,pending,1452.82,1386.80,107.62,0.00,41.60,USD,Boise,US,666,Fleece Vest,SKU-BKO-005,4,64.99,259.96
+8301234567104,5104,2026-06-04 16:08:27,Chloe Cox,chloe.cox21@email.com,pending,pending,1452.82,1386.80,107.62,0.00,41.60,USD,Boise,US,667,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567104,5104,2026-06-04 16:08:27,Chloe Cox,chloe.cox21@email.com,pending,pending,1452.82,1386.80,107.62,0.00,41.60,USD,Boise,US,668,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567104,5104,2026-06-04 16:08:27,Chloe Cox,chloe.cox21@email.com,pending,pending,1452.82,1386.80,107.62,0.00,41.60,USD,Boise,US,669,Beanie,SKU-BKO-012,5,19.99,99.95
+8301234567104,5104,2026-06-04 16:08:27,Chloe Cox,chloe.cox21@email.com,pending,pending,1452.82,1386.80,107.62,0.00,41.60,USD,Boise,US,670,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567104,5104,2026-06-04 16:08:27,Chloe Cox,chloe.cox21@email.com,pending,pending,1452.82,1386.80,107.62,0.00,41.60,USD,Boise,US,671,Packing Cubes,SKU-BKO-007,3,24.99,74.97
+8301234567105,5105,2026-06-05 15:42:50,Harper Martin,harper.martin22@email.com,pending,pending,1416.96,1410.75,104.96,0.00,98.75,USD,Minneapolis,US,672,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567105,5105,2026-06-05 15:42:50,Harper Martin,harper.martin22@email.com,pending,pending,1416.96,1410.75,104.96,0.00,98.75,USD,Minneapolis,US,673,Insulated Bottle,SKU-BKO-006,4,34.99,139.96
+8301234567105,5105,2026-06-05 15:42:50,Harper Martin,harper.martin22@email.com,pending,pending,1416.96,1410.75,104.96,0.00,98.75,USD,Minneapolis,US,674,Duffel Bag,SKU-BKO-002,4,74.99,299.96
+8301234567105,5105,2026-06-05 15:42:50,Harper Martin,harper.martin22@email.com,pending,pending,1416.96,1410.75,104.96,0.00,98.75,USD,Minneapolis,US,675,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567105,5105,2026-06-05 15:42:50,Harper Martin,harper.martin22@email.com,pending,pending,1416.96,1410.75,104.96,0.00,98.75,USD,Minneapolis,US,676,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567105,5105,2026-06-05 15:42:50,Harper Martin,harper.martin22@email.com,pending,pending,1416.96,1410.75,104.96,0.00,98.75,USD,Minneapolis,US,677,Portable Charger,SKU-BKO-008,2,39.99,79.98
+8301234567105,5105,2026-06-05 15:42:50,Harper Martin,harper.martin22@email.com,pending,pending,1416.96,1410.75,104.96,0.00,98.75,USD,Minneapolis,US,678,Beanie,SKU-BKO-012,4,19.99,79.96
+8301234567105,5105,2026-06-05 15:42:50,Harper Martin,harper.martin22@email.com,pending,pending,1416.96,1410.75,104.96,0.00,98.75,USD,Minneapolis,US,679,Rain Shell,SKU-BKO-010,4,129.99,519.96
+8301234567106,5106,2026-06-06 18:00:50,Nora Turner,nora.turner0@email.com,fulfilled,pending,828.22,766.87,61.35,0.00,0.00,USD,Portland,US,680,Travel Backpack,SKU-BKO-001,4,89.99,359.96
+8301234567106,5106,2026-06-06 18:00:50,Nora Turner,nora.turner0@email.com,fulfilled,pending,828.22,766.87,61.35,0.00,0.00,USD,Portland,US,681,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567106,5106,2026-06-06 18:00:50,Nora Turner,nora.turner0@email.com,fulfilled,pending,828.22,766.87,61.35,0.00,0.00,USD,Portland,US,682,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567106,5106,2026-06-06 18:00:50,Nora Turner,nora.turner0@email.com,fulfilled,pending,828.22,766.87,61.35,0.00,0.00,USD,Portland,US,683,Beanie,SKU-BKO-012,3,19.99,59.97
+8301234567106,5106,2026-06-06 18:00:50,Nora Turner,nora.turner0@email.com,fulfilled,pending,828.22,766.87,61.35,0.00,0.00,USD,Portland,US,684,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567106,5106,2026-06-06 18:00:50,Nora Turner,nora.turner0@email.com,fulfilled,pending,828.22,766.87,61.35,0.00,0.00,USD,Portland,US,685,Portable Charger,SKU-BKO-008,1,39.99,39.99
+8301234567106,5106,2026-06-06 18:00:50,Nora Turner,nora.turner0@email.com,fulfilled,pending,828.22,766.87,61.35,0.00,0.00,USD,Portland,US,686,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567107,5107,2026-06-05 16:54:15,Harper Clark,harper.clark1@email.com,unfulfilled,pending,323.34,321.92,23.95,0.00,22.53,USD,Salt Lake City,US,687,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567107,5107,2026-06-05 16:54:15,Harper Clark,harper.clark1@email.com,unfulfilled,pending,323.34,321.92,23.95,0.00,22.53,USD,Salt Lake City,US,688,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567107,5107,2026-06-05 16:54:15,Harper Clark,harper.clark1@email.com,unfulfilled,pending,323.34,321.92,23.95,0.00,22.53,USD,Salt Lake City,US,689,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567107,5107,2026-06-05 16:54:15,Harper Clark,harper.clark1@email.com,unfulfilled,pending,323.34,321.92,23.95,0.00,22.53,USD,Salt Lake City,US,690,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567107,5107,2026-06-05 16:54:15,Harper Clark,harper.clark1@email.com,unfulfilled,pending,323.34,321.92,23.95,0.00,22.53,USD,Salt Lake City,US,691,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567108,5108,2026-06-05 16:48:55,Evelyn Hughes,evelyn.hughes2@email.com,pending,pending,1117.09,1088.78,82.75,0.00,54.44,USD,Boise,US,692,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567108,5108,2026-06-05 16:48:55,Evelyn Hughes,evelyn.hughes2@email.com,pending,pending,1117.09,1088.78,82.75,0.00,54.44,USD,Boise,US,693,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567108,5108,2026-06-05 16:48:55,Evelyn Hughes,evelyn.hughes2@email.com,pending,pending,1117.09,1088.78,82.75,0.00,54.44,USD,Boise,US,694,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567108,5108,2026-06-05 16:48:55,Evelyn Hughes,evelyn.hughes2@email.com,pending,pending,1117.09,1088.78,82.75,0.00,54.44,USD,Boise,US,695,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567108,5108,2026-06-05 16:48:55,Evelyn Hughes,evelyn.hughes2@email.com,pending,pending,1117.09,1088.78,82.75,0.00,54.44,USD,Boise,US,696,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567108,5108,2026-06-05 16:48:55,Evelyn Hughes,evelyn.hughes2@email.com,pending,pending,1117.09,1088.78,82.75,0.00,54.44,USD,Boise,US,697,Portable Charger,SKU-BKO-008,5,39.99,199.95
+8301234567108,5108,2026-06-05 16:48:55,Evelyn Hughes,evelyn.hughes2@email.com,pending,pending,1117.09,1088.78,82.75,0.00,54.44,USD,Boise,US,698,Duffel Bag,SKU-BKO-002,4,74.99,299.96
+8301234567108,5108,2026-06-05 16:48:55,Evelyn Hughes,evelyn.hughes2@email.com,pending,pending,1117.09,1088.78,82.75,0.00,54.44,USD,Boise,US,699,Insulated Bottle,SKU-BKO-006,4,34.99,139.96
+8301234567109,5109,2026-06-03 11:49:42,Chloe Collins,chloe.collins3@email.com,fulfilled,paid,708.36,655.89,52.47,0.00,0.00,USD,Minneapolis,US,700,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567109,5109,2026-06-03 11:49:42,Chloe Collins,chloe.collins3@email.com,fulfilled,paid,708.36,655.89,52.47,0.00,0.00,USD,Minneapolis,US,701,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567109,5109,2026-06-03 11:49:42,Chloe Collins,chloe.collins3@email.com,fulfilled,paid,708.36,655.89,52.47,0.00,0.00,USD,Minneapolis,US,702,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567109,5109,2026-06-03 11:49:42,Chloe Collins,chloe.collins3@email.com,fulfilled,paid,708.36,655.89,52.47,0.00,0.00,USD,Minneapolis,US,703,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567109,5109,2026-06-03 11:49:42,Chloe Collins,chloe.collins3@email.com,fulfilled,paid,708.36,655.89,52.47,0.00,0.00,USD,Minneapolis,US,704,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567109,5109,2026-06-03 11:49:42,Chloe Collins,chloe.collins3@email.com,fulfilled,paid,708.36,655.89,52.47,0.00,0.00,USD,Minneapolis,US,705,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567110,5110,2026-06-05 11:20:44,Abigail Kim,abigail.kim4@email.com,unfulfilled,pending,1304.09,1244.83,96.60,0.00,37.34,USD,Boise,US,706,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567110,5110,2026-06-05 11:20:44,Abigail Kim,abigail.kim4@email.com,unfulfilled,pending,1304.09,1244.83,96.60,0.00,37.34,USD,Boise,US,707,Portable Charger,SKU-BKO-008,4,39.99,159.96
+8301234567110,5110,2026-06-05 11:20:44,Abigail Kim,abigail.kim4@email.com,unfulfilled,pending,1304.09,1244.83,96.60,0.00,37.34,USD,Boise,US,708,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567110,5110,2026-06-05 11:20:44,Abigail Kim,abigail.kim4@email.com,unfulfilled,pending,1304.09,1244.83,96.60,0.00,37.34,USD,Boise,US,709,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567110,5110,2026-06-05 11:20:44,Abigail Kim,abigail.kim4@email.com,unfulfilled,pending,1304.09,1244.83,96.60,0.00,37.34,USD,Boise,US,710,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567110,5110,2026-06-05 11:20:44,Abigail Kim,abigail.kim4@email.com,unfulfilled,pending,1304.09,1244.83,96.60,0.00,37.34,USD,Boise,US,711,Hiking Boots,SKU-BKO-004,4,149.99,599.96
+8301234567111,5111,2026-06-05 17:33:21,James Martinez,james.martinez5@email.com,pending,pending,632.64,629.87,46.86,0.00,44.09,USD,Boise,US,712,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567111,5111,2026-06-05 17:33:21,James Martinez,james.martinez5@email.com,pending,pending,632.64,629.87,46.86,0.00,44.09,USD,Boise,US,713,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567111,5111,2026-06-05 17:33:21,James Martinez,james.martinez5@email.com,pending,pending,632.64,629.87,46.86,0.00,44.09,USD,Boise,US,714,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567111,5111,2026-06-05 17:33:21,James Martinez,james.martinez5@email.com,pending,pending,632.64,629.87,46.86,0.00,44.09,USD,Boise,US,715,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567111,5111,2026-06-05 17:33:21,James Martinez,james.martinez5@email.com,pending,pending,632.64,629.87,46.86,0.00,44.09,USD,Boise,US,716,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567111,5111,2026-06-05 17:33:21,James Martinez,james.martinez5@email.com,pending,pending,632.64,629.87,46.86,0.00,44.09,USD,Boise,US,717,Travel Backpack,SKU-BKO-001,2,89.99,179.98
+8301234567112,5112,2026-06-01 10:34:30,Madison Flores,madison.flores6@email.com,pending,refunded,428.76,417.89,31.76,0.00,20.89,USD,Denver,US,718,Hiking Boots,SKU-BKO-004,1,149.99,149.99
+8301234567112,5112,2026-06-01 10:34:30,Madison Flores,madison.flores6@email.com,pending,refunded,428.76,417.89,31.76,0.00,20.89,USD,Denver,US,719,Beanie,SKU-BKO-012,4,19.99,79.96
+8301234567112,5112,2026-06-01 10:34:30,Madison Flores,madison.flores6@email.com,pending,refunded,428.76,417.89,31.76,0.00,20.89,USD,Denver,US,720,Trail Socks,SKU-BKO-011,4,16.99,67.96
+8301234567112,5112,2026-06-01 10:34:30,Madison Flores,madison.flores6@email.com,pending,refunded,428.76,417.89,31.76,0.00,20.89,USD,Denver,US,721,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567112,5112,2026-06-01 10:34:30,Madison Flores,madison.flores6@email.com,pending,refunded,428.76,417.89,31.76,0.00,20.89,USD,Denver,US,722,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567113,5113,2026-06-07 10:15:51,Jackson Sanders,jackson.sanders7@email.com,pending,pending,1171.55,1141.86,86.78,0.00,57.09,USD,Salt Lake City,US,723,Hiking Boots,SKU-BKO-004,5,149.99,749.95
+8301234567113,5113,2026-06-07 10:15:51,Jackson Sanders,jackson.sanders7@email.com,pending,pending,1171.55,1141.86,86.78,0.00,57.09,USD,Salt Lake City,US,724,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567113,5113,2026-06-07 10:15:51,Jackson Sanders,jackson.sanders7@email.com,pending,pending,1171.55,1141.86,86.78,0.00,57.09,USD,Salt Lake City,US,725,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567113,5113,2026-06-07 10:15:51,Jackson Sanders,jackson.sanders7@email.com,pending,pending,1171.55,1141.86,86.78,0.00,57.09,USD,Salt Lake City,US,726,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567113,5113,2026-06-07 10:15:51,Jackson Sanders,jackson.sanders7@email.com,pending,pending,1171.55,1141.86,86.78,0.00,57.09,USD,Salt Lake City,US,727,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567113,5113,2026-06-07 10:15:51,Jackson Sanders,jackson.sanders7@email.com,pending,pending,1171.55,1141.86,86.78,0.00,57.09,USD,Salt Lake City,US,728,Insulated Bottle,SKU-BKO-006,4,34.99,139.96
+8301234567114,5114,2026-06-13 15:22:03,Gabriel Butler,gabriel.butler8@email.com,fulfilled,refunded,1157.62,1071.87,85.75,0.00,0.00,USD,Portland,US,729,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567114,5114,2026-06-13 15:22:03,Gabriel Butler,gabriel.butler8@email.com,fulfilled,refunded,1157.62,1071.87,85.75,0.00,0.00,USD,Portland,US,730,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567114,5114,2026-06-13 15:22:03,Gabriel Butler,gabriel.butler8@email.com,fulfilled,refunded,1157.62,1071.87,85.75,0.00,0.00,USD,Portland,US,731,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567114,5114,2026-06-13 15:22:03,Gabriel Butler,gabriel.butler8@email.com,fulfilled,refunded,1157.62,1071.87,85.75,0.00,0.00,USD,Portland,US,732,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567114,5114,2026-06-13 15:22:03,Gabriel Butler,gabriel.butler8@email.com,fulfilled,refunded,1157.62,1071.87,85.75,0.00,0.00,USD,Portland,US,733,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567114,5114,2026-06-13 15:22:03,Gabriel Butler,gabriel.butler8@email.com,fulfilled,refunded,1157.62,1071.87,85.75,0.00,0.00,USD,Portland,US,734,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567114,5114,2026-06-13 15:22:03,Gabriel Butler,gabriel.butler8@email.com,fulfilled,refunded,1157.62,1071.87,85.75,0.00,0.00,USD,Portland,US,735,Rain Shell,SKU-BKO-010,2,129.99,259.98
+8301234567115,5115,2026-06-11 11:48:54,Benjamin Griffin,benjamin.griffin9@email.com,fulfilled,cancelled,582.47,579.91,43.15,0.00,40.59,USD,Denver,US,736,Fleece Vest,SKU-BKO-005,4,64.99,259.96
+8301234567115,5115,2026-06-11 11:48:54,Benjamin Griffin,benjamin.griffin9@email.com,fulfilled,cancelled,582.47,579.91,43.15,0.00,40.59,USD,Denver,US,737,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567115,5115,2026-06-11 11:48:54,Benjamin Griffin,benjamin.griffin9@email.com,fulfilled,cancelled,582.47,579.91,43.15,0.00,40.59,USD,Denver,US,738,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567115,5115,2026-06-11 11:48:54,Benjamin Griffin,benjamin.griffin9@email.com,fulfilled,cancelled,582.47,579.91,43.15,0.00,40.59,USD,Denver,US,739,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567115,5115,2026-06-11 11:48:54,Benjamin Griffin,benjamin.griffin9@email.com,fulfilled,cancelled,582.47,579.91,43.15,0.00,40.59,USD,Denver,US,740,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567116,5116,2026-06-13 11:37:14,Mason Russell,mason.russell10@email.com,unfulfilled,pending,614.58,611.89,45.52,0.00,42.83,USD,Salt Lake City,US,741,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567116,5116,2026-06-13 11:37:14,Mason Russell,mason.russell10@email.com,unfulfilled,pending,614.58,611.89,45.52,0.00,42.83,USD,Salt Lake City,US,742,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567116,5116,2026-06-13 11:37:14,Mason Russell,mason.russell10@email.com,unfulfilled,pending,614.58,611.89,45.52,0.00,42.83,USD,Salt Lake City,US,743,Packing Cubes,SKU-BKO-007,1,24.99,24.99
+8301234567116,5116,2026-06-13 11:37:14,Mason Russell,mason.russell10@email.com,unfulfilled,pending,614.58,611.89,45.52,0.00,42.83,USD,Salt Lake City,US,744,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567116,5116,2026-06-13 11:37:14,Mason Russell,mason.russell10@email.com,unfulfilled,pending,614.58,611.89,45.52,0.00,42.83,USD,Salt Lake City,US,745,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567117,5117,2026-06-10 18:23:11,Stella Griffin,stella.griffin11@email.com,fulfilled,refunded,887.62,821.87,65.75,0.00,0.00,USD,Portland,US,746,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567117,5117,2026-06-10 18:23:11,Stella Griffin,stella.griffin11@email.com,fulfilled,refunded,887.62,821.87,65.75,0.00,0.00,USD,Portland,US,747,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567117,5117,2026-06-10 18:23:11,Stella Griffin,stella.griffin11@email.com,fulfilled,refunded,887.62,821.87,65.75,0.00,0.00,USD,Portland,US,748,Rain Shell,SKU-BKO-010,4,129.99,519.96
+8301234567117,5117,2026-06-10 18:23:11,Stella Griffin,stella.griffin11@email.com,fulfilled,refunded,887.62,821.87,65.75,0.00,0.00,USD,Portland,US,749,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567117,5117,2026-06-10 18:23:11,Stella Griffin,stella.griffin11@email.com,fulfilled,refunded,887.62,821.87,65.75,0.00,0.00,USD,Portland,US,750,Insulated Bottle,SKU-BKO-006,3,34.99,104.97
+8301234567117,5117,2026-06-10 18:23:11,Stella Griffin,stella.griffin11@email.com,fulfilled,refunded,887.62,821.87,65.75,0.00,0.00,USD,Portland,US,751,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567118,5118,2026-06-11 21:58:41,Aiden Murphy,aiden.murphy12@email.com,pending,paid,1225.20,1219.83,90.76,0.00,85.39,USD,Minneapolis,US,752,Travel Backpack,SKU-BKO-001,5,89.99,449.95
+8301234567118,5118,2026-06-11 21:58:41,Aiden Murphy,aiden.murphy12@email.com,pending,paid,1225.20,1219.83,90.76,0.00,85.39,USD,Minneapolis,US,753,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567118,5118,2026-06-11 21:58:41,Aiden Murphy,aiden.murphy12@email.com,pending,paid,1225.20,1219.83,90.76,0.00,85.39,USD,Minneapolis,US,754,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567118,5118,2026-06-11 21:58:41,Aiden Murphy,aiden.murphy12@email.com,pending,paid,1225.20,1219.83,90.76,0.00,85.39,USD,Minneapolis,US,755,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567118,5118,2026-06-11 21:58:41,Aiden Murphy,aiden.murphy12@email.com,pending,paid,1225.20,1219.83,90.76,0.00,85.39,USD,Minneapolis,US,756,Portable Charger,SKU-BKO-008,4,39.99,159.96
+8301234567118,5118,2026-06-11 21:58:41,Aiden Murphy,aiden.murphy12@email.com,pending,paid,1225.20,1219.83,90.76,0.00,85.39,USD,Minneapolis,US,757,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567119,5119,2026-06-14 17:29:16,James Cooper,james.cooper13@email.com,pending,pending,932.22,889.87,69.05,0.00,26.70,USD,Minneapolis,US,758,Fleece Vest,SKU-BKO-005,1,64.99,64.99
+8301234567119,5119,2026-06-14 17:29:16,James Cooper,james.cooper13@email.com,pending,pending,932.22,889.87,69.05,0.00,26.70,USD,Minneapolis,US,759,Duffel Bag,SKU-BKO-002,3,74.99,224.97
+8301234567119,5119,2026-06-14 17:29:16,James Cooper,james.cooper13@email.com,pending,pending,932.22,889.87,69.05,0.00,26.70,USD,Minneapolis,US,760,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567119,5119,2026-06-14 17:29:16,James Cooper,james.cooper13@email.com,pending,pending,932.22,889.87,69.05,0.00,26.70,USD,Minneapolis,US,761,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567119,5119,2026-06-14 17:29:16,James Cooper,james.cooper13@email.com,pending,pending,932.22,889.87,69.05,0.00,26.70,USD,Minneapolis,US,762,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567120,5120,2026-06-09 12:24:20,Amelia Price,amelia.price14@email.com,fulfilled,refunded,664.72,647.87,49.24,0.00,32.39,USD,Minneapolis,US,763,Crossbody Sling,SKU-BKO-013,1,49.99,49.99
+8301234567120,5120,2026-06-09 12:24:20,Amelia Price,amelia.price14@email.com,fulfilled,refunded,664.72,647.87,49.24,0.00,32.39,USD,Minneapolis,US,764,Utility Jacket,SKU-BKO-003,3,109.99,329.97
+8301234567120,5120,2026-06-09 12:24:20,Amelia Price,amelia.price14@email.com,fulfilled,refunded,664.72,647.87,49.24,0.00,32.39,USD,Minneapolis,US,765,Insulated Bottle,SKU-BKO-006,2,34.99,69.98
+8301234567120,5120,2026-06-09 12:24:20,Amelia Price,amelia.price14@email.com,fulfilled,refunded,664.72,647.87,49.24,0.00,32.39,USD,Minneapolis,US,766,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567120,5120,2026-06-09 12:24:20,Amelia Price,amelia.price14@email.com,fulfilled,refunded,664.72,647.87,49.24,0.00,32.39,USD,Minneapolis,US,767,Trail Socks,SKU-BKO-011,4,16.99,67.96
+8301234567120,5120,2026-06-09 12:24:20,Amelia Price,amelia.price14@email.com,fulfilled,refunded,664.72,647.87,49.24,0.00,32.39,USD,Minneapolis,US,768,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567121,5121,2026-06-09 13:03:31,Nathan Nguyen,nathan.nguyen15@email.com,pending,pending,758.03,738.82,56.15,0.00,36.94,USD,Boise,US,769,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567121,5121,2026-06-09 13:03:31,Nathan Nguyen,nathan.nguyen15@email.com,pending,pending,758.03,738.82,56.15,0.00,36.94,USD,Boise,US,770,Tech Organizer,SKU-BKO-009,4,29.99,119.96
+8301234567121,5121,2026-06-09 13:03:31,Nathan Nguyen,nathan.nguyen15@email.com,pending,pending,758.03,738.82,56.15,0.00,36.94,USD,Boise,US,771,Travel Backpack,SKU-BKO-001,3,89.99,269.97
+8301234567121,5121,2026-06-09 13:03:31,Nathan Nguyen,nathan.nguyen15@email.com,pending,pending,758.03,738.82,56.15,0.00,36.94,USD,Boise,US,772,Insulated Bottle,SKU-BKO-006,3,34.99,104.97
+8301234567121,5121,2026-06-09 13:03:31,Nathan Nguyen,nathan.nguyen15@email.com,pending,pending,758.03,738.82,56.15,0.00,36.94,USD,Boise,US,773,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567121,5121,2026-06-09 13:03:31,Nathan Nguyen,nathan.nguyen15@email.com,pending,pending,758.03,738.82,56.15,0.00,36.94,USD,Boise,US,774,Beanie,SKU-BKO-012,4,19.99,79.96
+8301234567122,5122,2026-06-11 18:54:08,Hannah Lee,hannah.lee16@email.com,fulfilled,paid,979.41,906.86,72.55,0.00,0.00,USD,Detroit,US,775,Tech Organizer,SKU-BKO-009,3,29.99,89.97
+8301234567122,5122,2026-06-11 18:54:08,Hannah Lee,hannah.lee16@email.com,fulfilled,paid,979.41,906.86,72.55,0.00,0.00,USD,Detroit,US,776,Portable Charger,SKU-BKO-008,3,39.99,119.97
+8301234567122,5122,2026-06-11 18:54:08,Hannah Lee,hannah.lee16@email.com,fulfilled,paid,979.41,906.86,72.55,0.00,0.00,USD,Detroit,US,777,Travel Backpack,SKU-BKO-001,3,89.99,269.97
+8301234567122,5122,2026-06-11 18:54:08,Hannah Lee,hannah.lee16@email.com,fulfilled,paid,979.41,906.86,72.55,0.00,0.00,USD,Detroit,US,778,Beanie,SKU-BKO-012,1,19.99,19.99
+8301234567122,5122,2026-06-11 18:54:08,Hannah Lee,hannah.lee16@email.com,fulfilled,paid,979.41,906.86,72.55,0.00,0.00,USD,Detroit,US,779,Rain Shell,SKU-BKO-010,3,129.99,389.97
+8301234567122,5122,2026-06-11 18:54:08,Hannah Lee,hannah.lee16@email.com,fulfilled,paid,979.41,906.86,72.55,0.00,0.00,USD,Detroit,US,780,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567123,5123,2026-06-13 13:38:08,Aurora Brooks,aurora.brooks17@email.com,fulfilled,refunded,1386.78,1323.77,102.72,0.00,39.71,USD,Denver,US,781,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567123,5123,2026-06-13 13:38:08,Aurora Brooks,aurora.brooks17@email.com,fulfilled,refunded,1386.78,1323.77,102.72,0.00,39.71,USD,Denver,US,782,Crossbody Sling,SKU-BKO-013,5,49.99,249.95
+8301234567123,5123,2026-06-13 13:38:08,Aurora Brooks,aurora.brooks17@email.com,fulfilled,refunded,1386.78,1323.77,102.72,0.00,39.71,USD,Denver,US,783,Packing Cubes,SKU-BKO-007,2,24.99,49.98
+8301234567123,5123,2026-06-13 13:38:08,Aurora Brooks,aurora.brooks17@email.com,fulfilled,refunded,1386.78,1323.77,102.72,0.00,39.71,USD,Denver,US,784,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567123,5123,2026-06-13 13:38:08,Aurora Brooks,aurora.brooks17@email.com,fulfilled,refunded,1386.78,1323.77,102.72,0.00,39.71,USD,Denver,US,785,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567123,5123,2026-06-13 13:38:08,Aurora Brooks,aurora.brooks17@email.com,fulfilled,refunded,1386.78,1323.77,102.72,0.00,39.71,USD,Denver,US,786,Trail Socks,SKU-BKO-011,2,16.99,33.98
+8301234567123,5123,2026-06-13 13:38:08,Aurora Brooks,aurora.brooks17@email.com,fulfilled,refunded,1386.78,1323.77,102.72,0.00,39.71,USD,Denver,US,787,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567123,5123,2026-06-13 13:38:08,Aurora Brooks,aurora.brooks17@email.com,fulfilled,refunded,1386.78,1323.77,102.72,0.00,39.71,USD,Denver,US,788,Fleece Vest,SKU-BKO-005,5,64.99,324.95
+8301234567123,5123,2026-06-13 13:38:08,Aurora Brooks,aurora.brooks17@email.com,fulfilled,refunded,1386.78,1323.77,102.72,0.00,39.71,USD,Denver,US,789,Portable Charger,SKU-BKO-008,1,39.99,39.99
+8301234567124,5124,2026-06-09 16:09:51,Ella Ross,ella.ross18@email.com,unfulfilled,paid,812.01,751.86,60.15,0.00,0.00,USD,Denver,US,790,Trail Socks,SKU-BKO-011,1,16.99,16.99
+8301234567124,5124,2026-06-09 16:09:51,Ella Ross,ella.ross18@email.com,unfulfilled,paid,812.01,751.86,60.15,0.00,0.00,USD,Denver,US,791,Packing Cubes,SKU-BKO-007,4,24.99,99.96
+8301234567124,5124,2026-06-09 16:09:51,Ella Ross,ella.ross18@email.com,unfulfilled,paid,812.01,751.86,60.15,0.00,0.00,USD,Denver,US,792,Crossbody Sling,SKU-BKO-013,2,49.99,99.98
+8301234567124,5124,2026-06-09 16:09:51,Ella Ross,ella.ross18@email.com,unfulfilled,paid,812.01,751.86,60.15,0.00,0.00,USD,Denver,US,793,Travel Backpack,SKU-BKO-001,1,89.99,89.99
+8301234567124,5124,2026-06-09 16:09:51,Ella Ross,ella.ross18@email.com,unfulfilled,paid,812.01,751.86,60.15,0.00,0.00,USD,Denver,US,794,Beanie,SKU-BKO-012,2,19.99,39.98
+8301234567124,5124,2026-06-09 16:09:51,Ella Ross,ella.ross18@email.com,unfulfilled,paid,812.01,751.86,60.15,0.00,0.00,USD,Denver,US,795,Hiking Boots,SKU-BKO-004,2,149.99,299.98
+8301234567124,5124,2026-06-09 16:09:51,Ella Ross,ella.ross18@email.com,unfulfilled,paid,812.01,751.86,60.15,0.00,0.00,USD,Denver,US,796,Duffel Bag,SKU-BKO-002,1,74.99,74.99
+8301234567124,5124,2026-06-09 16:09:51,Ella Ross,ella.ross18@email.com,unfulfilled,paid,812.01,751.86,60.15,0.00,0.00,USD,Denver,US,797,Tech Organizer,SKU-BKO-009,1,29.99,29.99
+8301234567125,5125,2026-06-13 17:04:21,Stella Davis,stella.davis19@email.com,pending,pending,1696.87,1619.77,125.69,0.00,48.59,USD,Boise,US,798,Rain Shell,SKU-BKO-010,1,129.99,129.99
+8301234567125,5125,2026-06-13 17:04:21,Stella Davis,stella.davis19@email.com,pending,pending,1696.87,1619.77,125.69,0.00,48.59,USD,Boise,US,799,Insulated Bottle,SKU-BKO-006,5,34.99,174.95
+8301234567125,5125,2026-06-13 17:04:21,Stella Davis,stella.davis19@email.com,pending,pending,1696.87,1619.77,125.69,0.00,48.59,USD,Boise,US,800,Travel Backpack,SKU-BKO-001,4,89.99,359.96
+8301234567125,5125,2026-06-13 17:04:21,Stella Davis,stella.davis19@email.com,pending,pending,1696.87,1619.77,125.69,0.00,48.59,USD,Boise,US,801,Portable Charger,SKU-BKO-008,4,39.99,159.96
+8301234567125,5125,2026-06-13 17:04:21,Stella Davis,stella.davis19@email.com,pending,pending,1696.87,1619.77,125.69,0.00,48.59,USD,Boise,US,802,Crossbody Sling,SKU-BKO-013,3,49.99,149.97
+8301234567125,5125,2026-06-13 17:04:21,Stella Davis,stella.davis19@email.com,pending,pending,1696.87,1619.77,125.69,0.00,48.59,USD,Boise,US,803,Fleece Vest,SKU-BKO-005,3,64.99,194.97
+8301234567125,5125,2026-06-13 17:04:21,Stella Davis,stella.davis19@email.com,pending,pending,1696.87,1619.77,125.69,0.00,48.59,USD,Boise,US,804,Hiking Boots,SKU-BKO-004,3,149.99,449.97
+8301234567126,5126,2026-06-13 20:34:35,Mia Ross,mia.ross20@email.com,fulfilled,paid,753.18,749.88,55.79,0.00,52.49,USD,Salt Lake City,US,805,Duffel Bag,SKU-BKO-002,2,74.99,149.98
+8301234567126,5126,2026-06-13 20:34:35,Mia Ross,mia.ross20@email.com,fulfilled,paid,753.18,749.88,55.79,0.00,52.49,USD,Salt Lake City,US,806,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567126,5126,2026-06-13 20:34:35,Mia Ross,mia.ross20@email.com,fulfilled,paid,753.18,749.88,55.79,0.00,52.49,USD,Salt Lake City,US,807,Portable Charger,SKU-BKO-008,4,39.99,159.96
+8301234567126,5126,2026-06-13 20:34:35,Mia Ross,mia.ross20@email.com,fulfilled,paid,753.18,749.88,55.79,0.00,52.49,USD,Salt Lake City,US,808,Utility Jacket,SKU-BKO-003,1,109.99,109.99
+8301234567126,5126,2026-06-13 20:34:35,Mia Ross,mia.ross20@email.com,fulfilled,paid,753.18,749.88,55.79,0.00,52.49,USD,Salt Lake City,US,809,Travel Backpack,SKU-BKO-001,3,89.99,269.97
+8301234567127,5127,2026-06-12 14:03:38,Alexander Jackson,alexander.jackson21@email.com,unfulfilled,pending,943.71,900.83,69.90,0.00,27.02,USD,Salt Lake City,US,810,Fleece Vest,SKU-BKO-005,2,64.99,129.98
+8301234567127,5127,2026-06-12 14:03:38,Alexander Jackson,alexander.jackson21@email.com,unfulfilled,pending,943.71,900.83,69.90,0.00,27.02,USD,Salt Lake City,US,811,Tech Organizer,SKU-BKO-009,2,29.99,59.98
+8301234567127,5127,2026-06-12 14:03:38,Alexander Jackson,alexander.jackson21@email.com,unfulfilled,pending,943.71,900.83,69.90,0.00,27.02,USD,Salt Lake City,US,812,Rain Shell,SKU-BKO-010,2,129.99,259.98
+8301234567127,5127,2026-06-12 14:03:38,Alexander Jackson,alexander.jackson21@email.com,unfulfilled,pending,943.71,900.83,69.90,0.00,27.02,USD,Salt Lake City,US,813,Trail Socks,SKU-BKO-011,3,16.99,50.97
+8301234567127,5127,2026-06-12 14:03:38,Alexander Jackson,alexander.jackson21@email.com,unfulfilled,pending,943.71,900.83,69.90,0.00,27.02,USD,Salt Lake City,US,814,Insulated Bottle,SKU-BKO-006,5,34.99,174.95
+8301234567127,5127,2026-06-12 14:03:38,Alexander Jackson,alexander.jackson21@email.com,unfulfilled,pending,943.71,900.83,69.90,0.00,27.02,USD,Salt Lake City,US,815,Duffel Bag,SKU-BKO-002,3,74.99,224.97

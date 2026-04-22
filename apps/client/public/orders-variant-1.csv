@@ -1,0 +1,773 @@
+order_id,order_number,created_at,customer_name,customer_email,fulfillment_status,financial_status,total_price,subtotal_price,total_tax,shipping_price,discount_amount,currency,city,country,line_item_id,product_title,sku,quantity,unit_price,line_total
+8001234567001,2001,2026-01-10 13:15:35,Madison Martinez,madison.martinez0@email.com,fulfilled,cancelled,2175.85,2189.87,161.17,0.00,175.19,USD,San Francisco,US,1,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567001,2001,2026-01-10 13:15:35,Madison Martinez,madison.martinez0@email.com,fulfilled,cancelled,2175.85,2189.87,161.17,0.00,175.19,USD,San Francisco,US,2,Aviator Sunglasses,SKU-PRM-010,4,149.99,599.96
+8001234567001,2001,2026-01-10 13:15:35,Madison Martinez,madison.martinez0@email.com,fulfilled,cancelled,2175.85,2189.87,161.17,0.00,175.19,USD,San Francisco,US,3,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567001,2001,2026-01-10 13:15:35,Madison Martinez,madison.martinez0@email.com,fulfilled,cancelled,2175.85,2189.87,161.17,0.00,175.19,USD,San Francisco,US,4,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567001,2001,2026-01-10 13:15:35,Madison Martinez,madison.martinez0@email.com,fulfilled,cancelled,2175.85,2189.87,161.17,0.00,175.19,USD,San Francisco,US,5,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567001,2001,2026-01-10 13:15:35,Madison Martinez,madison.martinez0@email.com,fulfilled,cancelled,2175.85,2189.87,161.17,0.00,175.19,USD,San Francisco,US,6,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567001,2001,2026-01-10 13:15:35,Madison Martinez,madison.martinez0@email.com,fulfilled,cancelled,2175.85,2189.87,161.17,0.00,175.19,USD,San Francisco,US,7,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567001,2001,2026-01-10 13:15:35,Madison Martinez,madison.martinez0@email.com,fulfilled,cancelled,2175.85,2189.87,161.17,0.00,175.19,USD,San Francisco,US,8,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567002,2002,2026-01-11 11:22:00,Madison Price,madison.price1@email.com,pending,cancelled,2493.76,2509.83,184.72,0.00,200.79,USD,Chicago,US,9,Luxury Travel Backpack,SKU-PRM-012,3,139.99,419.97
+8001234567002,2002,2026-01-11 11:22:00,Madison Price,madison.price1@email.com,pending,cancelled,2493.76,2509.83,184.72,0.00,200.79,USD,Chicago,US,10,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567002,2002,2026-01-11 11:22:00,Madison Price,madison.price1@email.com,pending,cancelled,2493.76,2509.83,184.72,0.00,200.79,USD,Chicago,US,11,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567002,2002,2026-01-11 11:22:00,Madison Price,madison.price1@email.com,pending,cancelled,2493.76,2509.83,184.72,0.00,200.79,USD,Chicago,US,12,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567002,2002,2026-01-11 11:22:00,Madison Price,madison.price1@email.com,pending,cancelled,2493.76,2509.83,184.72,0.00,200.79,USD,Chicago,US,13,Leather Gloves,SKU-PRM-007,3,79.99,239.97
+8001234567002,2002,2026-01-11 11:22:00,Madison Price,madison.price1@email.com,pending,cancelled,2493.76,2509.83,184.72,0.00,200.79,USD,Chicago,US,14,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567002,2002,2026-01-11 11:22:00,Madison Price,madison.price1@email.com,pending,cancelled,2493.76,2509.83,184.72,0.00,200.79,USD,Chicago,US,15,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567002,2002,2026-01-11 11:22:00,Madison Price,madison.price1@email.com,pending,cancelled,2493.76,2509.83,184.72,0.00,200.79,USD,Chicago,US,16,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567002,2002,2026-01-11 11:22:00,Madison Price,madison.price1@email.com,pending,cancelled,2493.76,2509.83,184.72,0.00,200.79,USD,Chicago,US,17,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567003,2003,2026-01-08 20:17:25,Hannah Cooper,hannah.cooper2@email.com,pending,cancelled,1508.45,1439.91,111.74,0.00,43.20,USD,San Francisco,US,18,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567003,2003,2026-01-08 20:17:25,Hannah Cooper,hannah.cooper2@email.com,pending,cancelled,1508.45,1439.91,111.74,0.00,43.20,USD,San Francisco,US,19,Chelsea Boots,SKU-PRM-004,3,189.99,569.97
+8001234567003,2003,2026-01-08 20:17:25,Hannah Cooper,hannah.cooper2@email.com,pending,cancelled,1508.45,1439.91,111.74,0.00,43.20,USD,San Francisco,US,20,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567003,2003,2026-01-08 20:17:25,Hannah Cooper,hannah.cooper2@email.com,pending,cancelled,1508.45,1439.91,111.74,0.00,43.20,USD,San Francisco,US,21,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567003,2003,2026-01-08 20:17:25,Hannah Cooper,hannah.cooper2@email.com,pending,cancelled,1508.45,1439.91,111.74,0.00,43.20,USD,San Francisco,US,22,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567003,2003,2026-01-08 20:17:25,Hannah Cooper,hannah.cooper2@email.com,pending,cancelled,1508.45,1439.91,111.74,0.00,43.20,USD,San Francisco,US,23,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567004,2004,2026-01-07 20:58:51,Aurora Murphy,aurora.murphy3@email.com,unfulfilled,cancelled,1480.38,1489.91,109.66,0.00,119.19,USD,Boston,US,24,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567004,2004,2026-01-07 20:58:51,Aurora Murphy,aurora.murphy3@email.com,unfulfilled,cancelled,1480.38,1489.91,109.66,0.00,119.19,USD,Boston,US,25,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567004,2004,2026-01-07 20:58:51,Aurora Murphy,aurora.murphy3@email.com,unfulfilled,cancelled,1480.38,1489.91,109.66,0.00,119.19,USD,Boston,US,26,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567004,2004,2026-01-07 20:58:51,Aurora Murphy,aurora.murphy3@email.com,unfulfilled,cancelled,1480.38,1489.91,109.66,0.00,119.19,USD,Boston,US,27,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567004,2004,2026-01-07 20:58:51,Aurora Murphy,aurora.murphy3@email.com,unfulfilled,cancelled,1480.38,1489.91,109.66,0.00,119.19,USD,Boston,US,28,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567004,2004,2026-01-07 20:58:51,Aurora Murphy,aurora.murphy3@email.com,unfulfilled,cancelled,1480.38,1489.91,109.66,0.00,119.19,USD,Boston,US,29,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567004,2004,2026-01-07 20:58:51,Aurora Murphy,aurora.murphy3@email.com,unfulfilled,cancelled,1480.38,1489.91,109.66,0.00,119.19,USD,Boston,US,30,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567005,2005,2026-01-15 15:07:25,Alexander Cooper,alexander.cooper4@email.com,fulfilled,pending,2053.19,1959.90,152.09,0.00,58.80,USD,San Francisco,US,31,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567005,2005,2026-01-15 15:07:25,Alexander Cooper,alexander.cooper4@email.com,fulfilled,pending,2053.19,1959.90,152.09,0.00,58.80,USD,San Francisco,US,32,Cashmere Coat,SKU-PRM-001,3,329.99,989.97
+8001234567005,2005,2026-01-15 15:07:25,Alexander Cooper,alexander.cooper4@email.com,fulfilled,pending,2053.19,1959.90,152.09,0.00,58.80,USD,San Francisco,US,33,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567005,2005,2026-01-15 15:07:25,Alexander Cooper,alexander.cooper4@email.com,fulfilled,pending,2053.19,1959.90,152.09,0.00,58.80,USD,San Francisco,US,34,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567005,2005,2026-01-15 15:07:25,Alexander Cooper,alexander.cooper4@email.com,fulfilled,pending,2053.19,1959.90,152.09,0.00,58.80,USD,San Francisco,US,35,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567005,2005,2026-01-15 15:07:25,Alexander Cooper,alexander.cooper4@email.com,fulfilled,pending,2053.19,1959.90,152.09,0.00,58.80,USD,San Francisco,US,36,Silk Button-Up,SKU-PRM-008,3,99.99,299.97
+8001234567006,2006,2026-01-14 10:12:53,Sophia Patel,sophia.patel5@email.com,unfulfilled,refunded,2732.24,2529.85,202.39,0.00,0.00,USD,Seattle,US,37,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567006,2006,2026-01-14 10:12:53,Sophia Patel,sophia.patel5@email.com,unfulfilled,refunded,2732.24,2529.85,202.39,0.00,0.00,USD,Seattle,US,38,Chelsea Boots,SKU-PRM-004,4,189.99,759.96
+8001234567006,2006,2026-01-14 10:12:53,Sophia Patel,sophia.patel5@email.com,unfulfilled,refunded,2732.24,2529.85,202.39,0.00,0.00,USD,Seattle,US,39,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567006,2006,2026-01-14 10:12:53,Sophia Patel,sophia.patel5@email.com,unfulfilled,refunded,2732.24,2529.85,202.39,0.00,0.00,USD,Seattle,US,40,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567006,2006,2026-01-14 10:12:53,Sophia Patel,sophia.patel5@email.com,unfulfilled,refunded,2732.24,2529.85,202.39,0.00,0.00,USD,Seattle,US,41,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567006,2006,2026-01-14 10:12:53,Sophia Patel,sophia.patel5@email.com,unfulfilled,refunded,2732.24,2529.85,202.39,0.00,0.00,USD,Seattle,US,42,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567006,2006,2026-01-14 10:12:53,Sophia Patel,sophia.patel5@email.com,unfulfilled,refunded,2732.24,2529.85,202.39,0.00,0.00,USD,Seattle,US,43,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567006,2006,2026-01-14 10:12:53,Sophia Patel,sophia.patel5@email.com,unfulfilled,refunded,2732.24,2529.85,202.39,0.00,0.00,USD,Seattle,US,44,Fine Knit Scarf,SKU-PRM-011,3,69.99,209.97
+8001234567007,2007,2026-01-15 14:01:17,Liam Murphy,liam.murphy6@email.com,fulfilled,paid,1795.40,1749.91,132.99,0.00,87.50,USD,New York,US,45,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567007,2007,2026-01-15 14:01:17,Liam Murphy,liam.murphy6@email.com,fulfilled,paid,1795.40,1749.91,132.99,0.00,87.50,USD,New York,US,46,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567007,2007,2026-01-15 14:01:17,Liam Murphy,liam.murphy6@email.com,fulfilled,paid,1795.40,1749.91,132.99,0.00,87.50,USD,New York,US,47,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567007,2007,2026-01-15 14:01:17,Liam Murphy,liam.murphy6@email.com,fulfilled,paid,1795.40,1749.91,132.99,0.00,87.50,USD,New York,US,48,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567007,2007,2026-01-15 14:01:17,Liam Murphy,liam.murphy6@email.com,fulfilled,paid,1795.40,1749.91,132.99,0.00,87.50,USD,New York,US,49,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567007,2007,2026-01-15 14:01:17,Liam Murphy,liam.murphy6@email.com,fulfilled,paid,1795.40,1749.91,132.99,0.00,87.50,USD,New York,US,50,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567008,2008,2026-01-14 11:41:35,Amelia Brooks,amelia.brooks7@email.com,fulfilled,refunded,1295.92,1199.93,95.99,0.00,0.00,USD,Boston,US,51,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567008,2008,2026-01-14 11:41:35,Amelia Brooks,amelia.brooks7@email.com,fulfilled,refunded,1295.92,1199.93,95.99,0.00,0.00,USD,Boston,US,52,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567008,2008,2026-01-14 11:41:35,Amelia Brooks,amelia.brooks7@email.com,fulfilled,refunded,1295.92,1199.93,95.99,0.00,0.00,USD,Boston,US,53,Luxury Travel Backpack,SKU-PRM-012,3,139.99,419.97
+8001234567008,2008,2026-01-14 11:41:35,Amelia Brooks,amelia.brooks7@email.com,fulfilled,refunded,1295.92,1199.93,95.99,0.00,0.00,USD,Boston,US,54,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567008,2008,2026-01-14 11:41:35,Amelia Brooks,amelia.brooks7@email.com,fulfilled,refunded,1295.92,1199.93,95.99,0.00,0.00,USD,Boston,US,55,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567009,2009,2026-01-16 16:51:32,Ava Price,ava.price8@email.com,pending,pending,1672.27,1629.89,123.87,0.00,81.49,USD,Miami,US,56,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567009,2009,2026-01-16 16:51:32,Ava Price,ava.price8@email.com,pending,pending,1672.27,1629.89,123.87,0.00,81.49,USD,Miami,US,57,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567009,2009,2026-01-16 16:51:32,Ava Price,ava.price8@email.com,pending,pending,1672.27,1629.89,123.87,0.00,81.49,USD,Miami,US,58,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567009,2009,2026-01-16 16:51:32,Ava Price,ava.price8@email.com,pending,pending,1672.27,1629.89,123.87,0.00,81.49,USD,Miami,US,59,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567009,2009,2026-01-16 16:51:32,Ava Price,ava.price8@email.com,pending,pending,1672.27,1629.89,123.87,0.00,81.49,USD,Miami,US,60,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567009,2009,2026-01-16 16:51:32,Ava Price,ava.price8@email.com,pending,pending,1672.27,1629.89,123.87,0.00,81.49,USD,Miami,US,61,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567009,2009,2026-01-16 16:51:32,Ava Price,ava.price8@email.com,pending,pending,1672.27,1629.89,123.87,0.00,81.49,USD,Miami,US,62,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567010,2010,2026-01-16 21:44:58,Isabella Powell,isabella.powell9@email.com,pending,cancelled,2593.12,2609.83,192.08,0.00,208.79,USD,San Francisco,US,63,Luxury Travel Backpack,SKU-PRM-012,4,139.99,559.96
+8001234567010,2010,2026-01-16 21:44:58,Isabella Powell,isabella.powell9@email.com,pending,cancelled,2593.12,2609.83,192.08,0.00,208.79,USD,San Francisco,US,64,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567010,2010,2026-01-16 21:44:58,Isabella Powell,isabella.powell9@email.com,pending,cancelled,2593.12,2609.83,192.08,0.00,208.79,USD,San Francisco,US,65,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567010,2010,2026-01-16 21:44:58,Isabella Powell,isabella.powell9@email.com,pending,cancelled,2593.12,2609.83,192.08,0.00,208.79,USD,San Francisco,US,66,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567010,2010,2026-01-16 21:44:58,Isabella Powell,isabella.powell9@email.com,pending,cancelled,2593.12,2609.83,192.08,0.00,208.79,USD,San Francisco,US,67,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567010,2010,2026-01-16 21:44:58,Isabella Powell,isabella.powell9@email.com,pending,cancelled,2593.12,2609.83,192.08,0.00,208.79,USD,San Francisco,US,68,Merino Sweater,SKU-PRM-005,4,119.99,479.96
+8001234567010,2010,2026-01-16 21:44:58,Isabella Powell,isabella.powell9@email.com,pending,cancelled,2593.12,2609.83,192.08,0.00,208.79,USD,San Francisco,US,69,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567011,2011,2026-01-21 09:08:01,Liam Brown,liam.brown10@email.com,unfulfilled,cancelled,2096.36,2109.86,155.29,0.00,168.79,USD,Chicago,US,70,Fine Knit Scarf,SKU-PRM-011,4,69.99,279.96
+8001234567011,2011,2026-01-21 09:08:01,Liam Brown,liam.brown10@email.com,unfulfilled,cancelled,2096.36,2109.86,155.29,0.00,168.79,USD,Chicago,US,71,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567011,2011,2026-01-21 09:08:01,Liam Brown,liam.brown10@email.com,unfulfilled,cancelled,2096.36,2109.86,155.29,0.00,168.79,USD,Chicago,US,72,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567011,2011,2026-01-21 09:08:01,Liam Brown,liam.brown10@email.com,unfulfilled,cancelled,2096.36,2109.86,155.29,0.00,168.79,USD,Chicago,US,73,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567011,2011,2026-01-21 09:08:01,Liam Brown,liam.brown10@email.com,unfulfilled,cancelled,2096.36,2109.86,155.29,0.00,168.79,USD,Chicago,US,74,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567011,2011,2026-01-21 09:08:01,Liam Brown,liam.brown10@email.com,unfulfilled,cancelled,2096.36,2109.86,155.29,0.00,168.79,USD,Chicago,US,75,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567011,2011,2026-01-21 09:08:01,Liam Brown,liam.brown10@email.com,unfulfilled,cancelled,2096.36,2109.86,155.29,0.00,168.79,USD,Chicago,US,76,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567011,2011,2026-01-21 09:08:01,Liam Brown,liam.brown10@email.com,unfulfilled,cancelled,2096.36,2109.86,155.29,0.00,168.79,USD,Chicago,US,77,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567011,2011,2026-01-21 09:08:01,Liam Brown,liam.brown10@email.com,unfulfilled,cancelled,2096.36,2109.86,155.29,0.00,168.79,USD,Chicago,US,78,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567012,2012,2026-01-19 09:31:56,Lucas Russell,lucas.russell11@email.com,unfulfilled,cancelled,1306.74,1209.94,96.80,0.00,0.00,USD,San Francisco,US,79,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567012,2012,2026-01-19 09:31:56,Lucas Russell,lucas.russell11@email.com,unfulfilled,cancelled,1306.74,1209.94,96.80,0.00,0.00,USD,San Francisco,US,80,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567012,2012,2026-01-19 09:31:56,Lucas Russell,lucas.russell11@email.com,unfulfilled,cancelled,1306.74,1209.94,96.80,0.00,0.00,USD,San Francisco,US,81,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567012,2012,2026-01-19 09:31:56,Lucas Russell,lucas.russell11@email.com,unfulfilled,cancelled,1306.74,1209.94,96.80,0.00,0.00,USD,San Francisco,US,82,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567012,2012,2026-01-19 09:31:56,Lucas Russell,lucas.russell11@email.com,unfulfilled,cancelled,1306.74,1209.94,96.80,0.00,0.00,USD,San Francisco,US,83,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567013,2013,2026-01-23 12:52:16,Isaac Parker,isaac.parker12@email.com,unfulfilled,cancelled,1969.80,1919.88,145.91,0.00,95.99,USD,San Francisco,US,84,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567013,2013,2026-01-23 12:52:16,Isaac Parker,isaac.parker12@email.com,unfulfilled,cancelled,1969.80,1919.88,145.91,0.00,95.99,USD,San Francisco,US,85,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567013,2013,2026-01-23 12:52:16,Isaac Parker,isaac.parker12@email.com,unfulfilled,cancelled,1969.80,1919.88,145.91,0.00,95.99,USD,San Francisco,US,86,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567013,2013,2026-01-23 12:52:16,Isaac Parker,isaac.parker12@email.com,unfulfilled,cancelled,1969.80,1919.88,145.91,0.00,95.99,USD,San Francisco,US,87,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567013,2013,2026-01-23 12:52:16,Isaac Parker,isaac.parker12@email.com,unfulfilled,cancelled,1969.80,1919.88,145.91,0.00,95.99,USD,San Francisco,US,88,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567013,2013,2026-01-23 12:52:16,Isaac Parker,isaac.parker12@email.com,unfulfilled,cancelled,1969.80,1919.88,145.91,0.00,95.99,USD,San Francisco,US,89,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567013,2013,2026-01-23 12:52:16,Isaac Parker,isaac.parker12@email.com,unfulfilled,cancelled,1969.80,1919.88,145.91,0.00,95.99,USD,San Francisco,US,90,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567013,2013,2026-01-23 12:52:16,Isaac Parker,isaac.parker12@email.com,unfulfilled,cancelled,1969.80,1919.88,145.91,0.00,95.99,USD,San Francisco,US,91,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567014,2014,2026-01-24 20:53:30,Stella Russell,stella.russell13@email.com,fulfilled,paid,1251.85,1259.91,92.73,0.00,100.79,USD,Miami,US,92,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567014,2014,2026-01-24 20:53:30,Stella Russell,stella.russell13@email.com,fulfilled,paid,1251.85,1259.91,92.73,0.00,100.79,USD,Miami,US,93,Wool Trousers,SKU-PRM-006,3,129.99,389.97
+8001234567014,2014,2026-01-24 20:53:30,Stella Russell,stella.russell13@email.com,fulfilled,paid,1251.85,1259.91,92.73,0.00,100.79,USD,Miami,US,94,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567014,2014,2026-01-24 20:53:30,Stella Russell,stella.russell13@email.com,fulfilled,paid,1251.85,1259.91,92.73,0.00,100.79,USD,Miami,US,95,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567014,2014,2026-01-24 20:53:30,Stella Russell,stella.russell13@email.com,fulfilled,paid,1251.85,1259.91,92.73,0.00,100.79,USD,Miami,US,96,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567014,2014,2026-01-24 20:53:30,Stella Russell,stella.russell13@email.com,fulfilled,paid,1251.85,1259.91,92.73,0.00,100.79,USD,Miami,US,97,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567015,2015,2026-01-25 15:16:52,Ellie Ramirez,ellie.ramirez14@email.com,unfulfilled,cancelled,3034.66,2809.87,224.79,0.00,0.00,USD,San Francisco,US,98,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567015,2015,2026-01-25 15:16:52,Ellie Ramirez,ellie.ramirez14@email.com,unfulfilled,cancelled,3034.66,2809.87,224.79,0.00,0.00,USD,San Francisco,US,99,Leather Weekender,SKU-PRM-002,3,249.99,749.97
+8001234567015,2015,2026-01-25 15:16:52,Ellie Ramirez,ellie.ramirez14@email.com,unfulfilled,cancelled,3034.66,2809.87,224.79,0.00,0.00,USD,San Francisco,US,100,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567015,2015,2026-01-25 15:16:52,Ellie Ramirez,ellie.ramirez14@email.com,unfulfilled,cancelled,3034.66,2809.87,224.79,0.00,0.00,USD,San Francisco,US,101,Cashmere Coat,SKU-PRM-001,4,329.99,1319.96
+8001234567015,2015,2026-01-25 15:16:52,Ellie Ramirez,ellie.ramirez14@email.com,unfulfilled,cancelled,3034.66,2809.87,224.79,0.00,0.00,USD,San Francisco,US,102,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567015,2015,2026-01-25 15:16:52,Ellie Ramirez,ellie.ramirez14@email.com,unfulfilled,cancelled,3034.66,2809.87,224.79,0.00,0.00,USD,San Francisco,US,103,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567015,2015,2026-01-25 15:16:52,Ellie Ramirez,ellie.ramirez14@email.com,unfulfilled,cancelled,3034.66,2809.87,224.79,0.00,0.00,USD,San Francisco,US,104,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567016,2016,2026-01-22 14:14:55,Wyatt Flores,wyatt.flores15@email.com,unfulfilled,cancelled,2175.84,2189.86,161.17,0.00,175.19,USD,Chicago,US,105,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567016,2016,2026-01-22 14:14:55,Wyatt Flores,wyatt.flores15@email.com,unfulfilled,cancelled,2175.84,2189.86,161.17,0.00,175.19,USD,Chicago,US,106,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567016,2016,2026-01-22 14:14:55,Wyatt Flores,wyatt.flores15@email.com,unfulfilled,cancelled,2175.84,2189.86,161.17,0.00,175.19,USD,Chicago,US,107,Leather Weekender,SKU-PRM-002,3,249.99,749.97
+8001234567016,2016,2026-01-22 14:14:55,Wyatt Flores,wyatt.flores15@email.com,unfulfilled,cancelled,2175.84,2189.86,161.17,0.00,175.19,USD,Chicago,US,108,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567016,2016,2026-01-22 14:14:55,Wyatt Flores,wyatt.flores15@email.com,unfulfilled,cancelled,2175.84,2189.86,161.17,0.00,175.19,USD,Chicago,US,109,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567016,2016,2026-01-22 14:14:55,Wyatt Flores,wyatt.flores15@email.com,unfulfilled,cancelled,2175.84,2189.86,161.17,0.00,175.19,USD,Chicago,US,110,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567016,2016,2026-01-22 14:14:55,Wyatt Flores,wyatt.flores15@email.com,unfulfilled,cancelled,2175.84,2189.86,161.17,0.00,175.19,USD,Chicago,US,111,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567016,2016,2026-01-22 14:14:55,Wyatt Flores,wyatt.flores15@email.com,unfulfilled,cancelled,2175.84,2189.86,161.17,0.00,175.19,USD,Chicago,US,112,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567017,2017,2026-01-23 09:54:00,Amelia Reed,amelia.reed16@email.com,fulfilled,refunded,1879.11,1739.92,139.19,0.00,0.00,USD,Chicago,US,113,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567017,2017,2026-01-23 09:54:00,Amelia Reed,amelia.reed16@email.com,fulfilled,refunded,1879.11,1739.92,139.19,0.00,0.00,USD,Chicago,US,114,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567017,2017,2026-01-23 09:54:00,Amelia Reed,amelia.reed16@email.com,fulfilled,refunded,1879.11,1739.92,139.19,0.00,0.00,USD,Chicago,US,115,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567017,2017,2026-01-23 09:54:00,Amelia Reed,amelia.reed16@email.com,fulfilled,refunded,1879.11,1739.92,139.19,0.00,0.00,USD,Chicago,US,116,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567017,2017,2026-01-23 09:54:00,Amelia Reed,amelia.reed16@email.com,fulfilled,refunded,1879.11,1739.92,139.19,0.00,0.00,USD,Chicago,US,117,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567017,2017,2026-01-23 09:54:00,Amelia Reed,amelia.reed16@email.com,fulfilled,refunded,1879.11,1739.92,139.19,0.00,0.00,USD,Chicago,US,118,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567018,2018,2026-01-21 19:34:40,Samuel Russell,samuel.russell17@email.com,unfulfilled,pending,2454.03,2469.84,181.78,0.00,197.59,USD,Chicago,US,119,Structured Tote,SKU-PRM-009,3,159.99,479.97
+8001234567018,2018,2026-01-21 19:34:40,Samuel Russell,samuel.russell17@email.com,unfulfilled,pending,2454.03,2469.84,181.78,0.00,197.59,USD,Chicago,US,120,Luxury Travel Backpack,SKU-PRM-012,4,139.99,559.96
+8001234567018,2018,2026-01-21 19:34:40,Samuel Russell,samuel.russell17@email.com,unfulfilled,pending,2454.03,2469.84,181.78,0.00,197.59,USD,Chicago,US,121,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567018,2018,2026-01-21 19:34:40,Samuel Russell,samuel.russell17@email.com,unfulfilled,pending,2454.03,2469.84,181.78,0.00,197.59,USD,Chicago,US,122,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567018,2018,2026-01-21 19:34:40,Samuel Russell,samuel.russell17@email.com,unfulfilled,pending,2454.03,2469.84,181.78,0.00,197.59,USD,Chicago,US,123,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567018,2018,2026-01-21 19:34:40,Samuel Russell,samuel.russell17@email.com,unfulfilled,pending,2454.03,2469.84,181.78,0.00,197.59,USD,Chicago,US,124,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567018,2018,2026-01-21 19:34:40,Samuel Russell,samuel.russell17@email.com,unfulfilled,pending,2454.03,2469.84,181.78,0.00,197.59,USD,Chicago,US,125,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567018,2018,2026-01-21 19:34:40,Samuel Russell,samuel.russell17@email.com,unfulfilled,pending,2454.03,2469.84,181.78,0.00,197.59,USD,Chicago,US,126,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567018,2018,2026-01-21 19:34:40,Samuel Russell,samuel.russell17@email.com,unfulfilled,pending,2454.03,2469.84,181.78,0.00,197.59,USD,Chicago,US,127,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567019,2019,2026-01-26 12:40:35,Nora Powell,nora.powell18@email.com,unfulfilled,cancelled,2527.08,2339.89,187.19,0.00,0.00,USD,New York,US,128,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567019,2019,2026-01-26 12:40:35,Nora Powell,nora.powell18@email.com,unfulfilled,cancelled,2527.08,2339.89,187.19,0.00,0.00,USD,New York,US,129,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567019,2019,2026-01-26 12:40:35,Nora Powell,nora.powell18@email.com,unfulfilled,cancelled,2527.08,2339.89,187.19,0.00,0.00,USD,New York,US,130,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567019,2019,2026-01-26 12:40:35,Nora Powell,nora.powell18@email.com,unfulfilled,cancelled,2527.08,2339.89,187.19,0.00,0.00,USD,New York,US,131,Cashmere Coat,SKU-PRM-001,3,329.99,989.97
+8001234567019,2019,2026-01-26 12:40:35,Nora Powell,nora.powell18@email.com,unfulfilled,cancelled,2527.08,2339.89,187.19,0.00,0.00,USD,New York,US,132,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567019,2019,2026-01-26 12:40:35,Nora Powell,nora.powell18@email.com,unfulfilled,cancelled,2527.08,2339.89,187.19,0.00,0.00,USD,New York,US,133,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567019,2019,2026-01-26 12:40:35,Nora Powell,nora.powell18@email.com,unfulfilled,cancelled,2527.08,2339.89,187.19,0.00,0.00,USD,New York,US,134,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567020,2020,2026-01-31 10:41:31,Evelyn Russell,evelyn.russell19@email.com,unfulfilled,pending,1703.06,1659.91,126.15,0.00,83.00,USD,New York,US,135,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567020,2020,2026-01-31 10:41:31,Evelyn Russell,evelyn.russell19@email.com,unfulfilled,pending,1703.06,1659.91,126.15,0.00,83.00,USD,New York,US,136,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567020,2020,2026-01-31 10:41:31,Evelyn Russell,evelyn.russell19@email.com,unfulfilled,pending,1703.06,1659.91,126.15,0.00,83.00,USD,New York,US,137,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567020,2020,2026-01-31 10:41:31,Evelyn Russell,evelyn.russell19@email.com,unfulfilled,pending,1703.06,1659.91,126.15,0.00,83.00,USD,New York,US,138,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567020,2020,2026-01-31 10:41:31,Evelyn Russell,evelyn.russell19@email.com,unfulfilled,pending,1703.06,1659.91,126.15,0.00,83.00,USD,New York,US,139,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567020,2020,2026-01-31 10:41:31,Evelyn Russell,evelyn.russell19@email.com,unfulfilled,pending,1703.06,1659.91,126.15,0.00,83.00,USD,New York,US,140,Structured Tote,SKU-PRM-009,3,159.99,479.97
+8001234567021,2021,2026-01-27 13:48:38,Aiden Kim,aiden.kim20@email.com,unfulfilled,cancelled,1815.90,1769.88,134.51,0.00,88.49,USD,Boston,US,141,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567021,2021,2026-01-27 13:48:38,Aiden Kim,aiden.kim20@email.com,unfulfilled,cancelled,1815.90,1769.88,134.51,0.00,88.49,USD,Boston,US,142,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567021,2021,2026-01-27 13:48:38,Aiden Kim,aiden.kim20@email.com,unfulfilled,cancelled,1815.90,1769.88,134.51,0.00,88.49,USD,Boston,US,143,Fine Knit Scarf,SKU-PRM-011,4,69.99,279.96
+8001234567021,2021,2026-01-27 13:48:38,Aiden Kim,aiden.kim20@email.com,unfulfilled,cancelled,1815.90,1769.88,134.51,0.00,88.49,USD,Boston,US,144,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567021,2021,2026-01-27 13:48:38,Aiden Kim,aiden.kim20@email.com,unfulfilled,cancelled,1815.90,1769.88,134.51,0.00,88.49,USD,Boston,US,145,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567021,2021,2026-01-27 13:48:38,Aiden Kim,aiden.kim20@email.com,unfulfilled,cancelled,1815.90,1769.88,134.51,0.00,88.49,USD,Boston,US,146,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567021,2021,2026-01-27 13:48:38,Aiden Kim,aiden.kim20@email.com,unfulfilled,cancelled,1815.90,1769.88,134.51,0.00,88.49,USD,Boston,US,147,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567022,2022,2026-01-27 11:09:41,Lincoln Price,lincoln.price21@email.com,unfulfilled,refunded,1937.94,1849.89,143.55,0.00,55.50,USD,Seattle,US,148,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567022,2022,2026-01-27 11:09:41,Lincoln Price,lincoln.price21@email.com,unfulfilled,refunded,1937.94,1849.89,143.55,0.00,55.50,USD,Seattle,US,149,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567022,2022,2026-01-27 11:09:41,Lincoln Price,lincoln.price21@email.com,unfulfilled,refunded,1937.94,1849.89,143.55,0.00,55.50,USD,Seattle,US,150,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567022,2022,2026-01-27 11:09:41,Lincoln Price,lincoln.price21@email.com,unfulfilled,refunded,1937.94,1849.89,143.55,0.00,55.50,USD,Seattle,US,151,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567022,2022,2026-01-27 11:09:41,Lincoln Price,lincoln.price21@email.com,unfulfilled,refunded,1937.94,1849.89,143.55,0.00,55.50,USD,Seattle,US,152,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567022,2022,2026-01-27 11:09:41,Lincoln Price,lincoln.price21@email.com,unfulfilled,refunded,1937.94,1849.89,143.55,0.00,55.50,USD,Seattle,US,153,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567022,2022,2026-01-27 11:09:41,Lincoln Price,lincoln.price21@email.com,unfulfilled,refunded,1937.94,1849.89,143.55,0.00,55.50,USD,Seattle,US,154,Luxury Travel Backpack,SKU-PRM-012,3,139.99,419.97
+8001234567023,2023,2026-01-27 10:27:33,Sebastian Perry,sebastian.perry22@email.com,unfulfilled,cancelled,1025.91,999.92,75.99,0.00,50.00,USD,Chicago,US,155,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567023,2023,2026-01-27 10:27:33,Sebastian Perry,sebastian.perry22@email.com,unfulfilled,cancelled,1025.91,999.92,75.99,0.00,50.00,USD,Chicago,US,156,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567023,2023,2026-01-27 10:27:33,Sebastian Perry,sebastian.perry22@email.com,unfulfilled,cancelled,1025.91,999.92,75.99,0.00,50.00,USD,Chicago,US,157,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567023,2023,2026-01-27 10:27:33,Sebastian Perry,sebastian.perry22@email.com,unfulfilled,cancelled,1025.91,999.92,75.99,0.00,50.00,USD,Chicago,US,158,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567023,2023,2026-01-27 10:27:33,Sebastian Perry,sebastian.perry22@email.com,unfulfilled,cancelled,1025.91,999.92,75.99,0.00,50.00,USD,Chicago,US,159,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567023,2023,2026-01-27 10:27:33,Sebastian Perry,sebastian.perry22@email.com,unfulfilled,cancelled,1025.91,999.92,75.99,0.00,50.00,USD,Chicago,US,160,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567024,2024,2026-01-29 13:45:45,Scarlett Harris,scarlett.harris0@email.com,fulfilled,cancelled,1445.58,1379.90,107.08,0.00,41.40,USD,Boston,US,161,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567024,2024,2026-01-29 13:45:45,Scarlett Harris,scarlett.harris0@email.com,fulfilled,cancelled,1445.58,1379.90,107.08,0.00,41.40,USD,Boston,US,162,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567024,2024,2026-01-29 13:45:45,Scarlett Harris,scarlett.harris0@email.com,fulfilled,cancelled,1445.58,1379.90,107.08,0.00,41.40,USD,Boston,US,163,Wool Trousers,SKU-PRM-006,4,129.99,519.96
+8001234567024,2024,2026-01-29 13:45:45,Scarlett Harris,scarlett.harris0@email.com,fulfilled,cancelled,1445.58,1379.90,107.08,0.00,41.40,USD,Boston,US,164,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567024,2024,2026-01-29 13:45:45,Scarlett Harris,scarlett.harris0@email.com,fulfilled,cancelled,1445.58,1379.90,107.08,0.00,41.40,USD,Boston,US,165,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567024,2024,2026-01-29 13:45:45,Scarlett Harris,scarlett.harris0@email.com,fulfilled,cancelled,1445.58,1379.90,107.08,0.00,41.40,USD,Boston,US,166,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567025,2025,2026-01-30 16:47:06,Evelyn Simmons,evelyn.simmons1@email.com,unfulfilled,cancelled,2086.42,2099.86,154.55,0.00,167.99,USD,Chicago,US,167,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567025,2025,2026-01-30 16:47:06,Evelyn Simmons,evelyn.simmons1@email.com,unfulfilled,cancelled,2086.42,2099.86,154.55,0.00,167.99,USD,Chicago,US,168,Silk Button-Up,SKU-PRM-008,3,99.99,299.97
+8001234567025,2025,2026-01-30 16:47:06,Evelyn Simmons,evelyn.simmons1@email.com,unfulfilled,cancelled,2086.42,2099.86,154.55,0.00,167.99,USD,Chicago,US,169,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567025,2025,2026-01-30 16:47:06,Evelyn Simmons,evelyn.simmons1@email.com,unfulfilled,cancelled,2086.42,2099.86,154.55,0.00,167.99,USD,Chicago,US,170,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567025,2025,2026-01-30 16:47:06,Evelyn Simmons,evelyn.simmons1@email.com,unfulfilled,cancelled,2086.42,2099.86,154.55,0.00,167.99,USD,Chicago,US,171,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567025,2025,2026-01-30 16:47:06,Evelyn Simmons,evelyn.simmons1@email.com,unfulfilled,cancelled,2086.42,2099.86,154.55,0.00,167.99,USD,Chicago,US,172,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567025,2025,2026-01-30 16:47:06,Evelyn Simmons,evelyn.simmons1@email.com,unfulfilled,cancelled,2086.42,2099.86,154.55,0.00,167.99,USD,Chicago,US,173,Chelsea Boots,SKU-PRM-004,3,189.99,569.97
+8001234567025,2025,2026-01-30 16:47:06,Evelyn Simmons,evelyn.simmons1@email.com,unfulfilled,cancelled,2086.42,2099.86,154.55,0.00,167.99,USD,Chicago,US,174,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567026,2026,2026-02-01 17:17:14,Abigail Brown,abigail.brown2@email.com,unfulfilled,cancelled,1814.27,1679.88,134.39,0.00,0.00,USD,Chicago,US,175,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567026,2026,2026-02-01 17:17:14,Abigail Brown,abigail.brown2@email.com,unfulfilled,cancelled,1814.27,1679.88,134.39,0.00,0.00,USD,Chicago,US,176,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567026,2026,2026-02-01 17:17:14,Abigail Brown,abigail.brown2@email.com,unfulfilled,cancelled,1814.27,1679.88,134.39,0.00,0.00,USD,Chicago,US,177,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567026,2026,2026-02-01 17:17:14,Abigail Brown,abigail.brown2@email.com,unfulfilled,cancelled,1814.27,1679.88,134.39,0.00,0.00,USD,Chicago,US,178,Luxury Travel Backpack,SKU-PRM-012,4,139.99,559.96
+8001234567026,2026,2026-02-01 17:17:14,Abigail Brown,abigail.brown2@email.com,unfulfilled,cancelled,1814.27,1679.88,134.39,0.00,0.00,USD,Chicago,US,179,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567026,2026,2026-02-01 17:17:14,Abigail Brown,abigail.brown2@email.com,unfulfilled,cancelled,1814.27,1679.88,134.39,0.00,0.00,USD,Chicago,US,180,Leather Gloves,SKU-PRM-007,3,79.99,239.97
+8001234567027,2027,2026-01-31 20:41:19,Gabriel Butler,gabriel.butler3@email.com,pending,pending,1856.94,1809.88,137.55,0.00,90.49,USD,Chicago,US,181,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567027,2027,2026-01-31 20:41:19,Gabriel Butler,gabriel.butler3@email.com,pending,pending,1856.94,1809.88,137.55,0.00,90.49,USD,Chicago,US,182,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567027,2027,2026-01-31 20:41:19,Gabriel Butler,gabriel.butler3@email.com,pending,pending,1856.94,1809.88,137.55,0.00,90.49,USD,Chicago,US,183,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567027,2027,2026-01-31 20:41:19,Gabriel Butler,gabriel.butler3@email.com,pending,pending,1856.94,1809.88,137.55,0.00,90.49,USD,Chicago,US,184,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567027,2027,2026-01-31 20:41:19,Gabriel Butler,gabriel.butler3@email.com,pending,pending,1856.94,1809.88,137.55,0.00,90.49,USD,Chicago,US,185,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567027,2027,2026-01-31 20:41:19,Gabriel Butler,gabriel.butler3@email.com,pending,pending,1856.94,1809.88,137.55,0.00,90.49,USD,Chicago,US,186,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567027,2027,2026-01-31 20:41:19,Gabriel Butler,gabriel.butler3@email.com,pending,pending,1856.94,1809.88,137.55,0.00,90.49,USD,Chicago,US,187,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567027,2027,2026-01-31 20:41:19,Gabriel Butler,gabriel.butler3@email.com,pending,pending,1856.94,1809.88,137.55,0.00,90.49,USD,Chicago,US,188,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567028,2028,2026-01-27 14:28:56,Leo Hughes,leo.hughes4@email.com,pending,pending,939.54,869.94,69.60,0.00,0.00,USD,Miami,US,189,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567028,2028,2026-01-27 14:28:56,Leo Hughes,leo.hughes4@email.com,pending,pending,939.54,869.94,69.60,0.00,0.00,USD,Miami,US,190,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567028,2028,2026-01-27 14:28:56,Leo Hughes,leo.hughes4@email.com,pending,pending,939.54,869.94,69.60,0.00,0.00,USD,Miami,US,191,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567028,2028,2026-01-27 14:28:56,Leo Hughes,leo.hughes4@email.com,pending,pending,939.54,869.94,69.60,0.00,0.00,USD,Miami,US,192,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567028,2028,2026-01-27 14:28:56,Leo Hughes,leo.hughes4@email.com,pending,pending,939.54,869.94,69.60,0.00,0.00,USD,Miami,US,193,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567028,2028,2026-01-27 14:28:56,Leo Hughes,leo.hughes4@email.com,pending,pending,939.54,869.94,69.60,0.00,0.00,USD,Miami,US,194,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567029,2029,2026-01-31 12:26:40,Ava Simmons,ava.simmons5@email.com,unfulfilled,cancelled,1764.61,1719.90,130.71,0.00,86.00,USD,San Francisco,US,195,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567029,2029,2026-01-31 12:26:40,Ava Simmons,ava.simmons5@email.com,unfulfilled,cancelled,1764.61,1719.90,130.71,0.00,86.00,USD,San Francisco,US,196,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567029,2029,2026-01-31 12:26:40,Ava Simmons,ava.simmons5@email.com,unfulfilled,cancelled,1764.61,1719.90,130.71,0.00,86.00,USD,San Francisco,US,197,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567029,2029,2026-01-31 12:26:40,Ava Simmons,ava.simmons5@email.com,unfulfilled,cancelled,1764.61,1719.90,130.71,0.00,86.00,USD,San Francisco,US,198,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567029,2029,2026-01-31 12:26:40,Ava Simmons,ava.simmons5@email.com,unfulfilled,cancelled,1764.61,1719.90,130.71,0.00,86.00,USD,San Francisco,US,199,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567029,2029,2026-01-31 12:26:40,Ava Simmons,ava.simmons5@email.com,unfulfilled,cancelled,1764.61,1719.90,130.71,0.00,86.00,USD,San Francisco,US,200,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567029,2029,2026-01-31 12:26:40,Ava Simmons,ava.simmons5@email.com,unfulfilled,cancelled,1764.61,1719.90,130.71,0.00,86.00,USD,San Francisco,US,201,Merino Sweater,SKU-PRM-005,3,119.99,359.97
+8001234567030,2030,2026-01-31 14:26:39,Ethan Nguyen,ethan.nguyen6@email.com,unfulfilled,paid,1277.97,1219.91,94.66,0.00,36.60,USD,San Francisco,US,202,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567030,2030,2026-01-31 14:26:39,Ethan Nguyen,ethan.nguyen6@email.com,unfulfilled,paid,1277.97,1219.91,94.66,0.00,36.60,USD,San Francisco,US,203,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567030,2030,2026-01-31 14:26:39,Ethan Nguyen,ethan.nguyen6@email.com,unfulfilled,paid,1277.97,1219.91,94.66,0.00,36.60,USD,San Francisco,US,204,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567030,2030,2026-01-31 14:26:39,Ethan Nguyen,ethan.nguyen6@email.com,unfulfilled,paid,1277.97,1219.91,94.66,0.00,36.60,USD,San Francisco,US,205,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567030,2030,2026-01-31 14:26:39,Ethan Nguyen,ethan.nguyen6@email.com,unfulfilled,paid,1277.97,1219.91,94.66,0.00,36.60,USD,San Francisco,US,206,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567030,2030,2026-01-31 14:26:39,Ethan Nguyen,ethan.nguyen6@email.com,unfulfilled,paid,1277.97,1219.91,94.66,0.00,36.60,USD,San Francisco,US,207,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567030,2030,2026-01-31 14:26:39,Ethan Nguyen,ethan.nguyen6@email.com,unfulfilled,paid,1277.97,1219.91,94.66,0.00,36.60,USD,San Francisco,US,208,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567031,2031,2026-02-08 13:54:12,James Brooks,james.brooks7@email.com,unfulfilled,paid,984.88,959.93,72.95,0.00,48.00,USD,New York,US,209,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567031,2031,2026-02-08 13:54:12,James Brooks,james.brooks7@email.com,unfulfilled,paid,984.88,959.93,72.95,0.00,48.00,USD,New York,US,210,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567031,2031,2026-02-08 13:54:12,James Brooks,james.brooks7@email.com,unfulfilled,paid,984.88,959.93,72.95,0.00,48.00,USD,New York,US,211,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567031,2031,2026-02-08 13:54:12,James Brooks,james.brooks7@email.com,unfulfilled,paid,984.88,959.93,72.95,0.00,48.00,USD,New York,US,212,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567031,2031,2026-02-08 13:54:12,James Brooks,james.brooks7@email.com,unfulfilled,paid,984.88,959.93,72.95,0.00,48.00,USD,New York,US,213,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567031,2031,2026-02-08 13:54:12,James Brooks,james.brooks7@email.com,unfulfilled,paid,984.88,959.93,72.95,0.00,48.00,USD,New York,US,214,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567032,2032,2026-02-04 10:54:05,Leo Reed,leo.reed8@email.com,pending,pending,1619.47,1629.90,119.96,0.00,130.39,USD,San Francisco,US,215,Tailored Blazer,SKU-PRM-003,3,219.99,659.97
+8001234567032,2032,2026-02-04 10:54:05,Leo Reed,leo.reed8@email.com,pending,pending,1619.47,1629.90,119.96,0.00,130.39,USD,San Francisco,US,216,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567032,2032,2026-02-04 10:54:05,Leo Reed,leo.reed8@email.com,pending,pending,1619.47,1629.90,119.96,0.00,130.39,USD,San Francisco,US,217,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567032,2032,2026-02-04 10:54:05,Leo Reed,leo.reed8@email.com,pending,pending,1619.47,1629.90,119.96,0.00,130.39,USD,San Francisco,US,218,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567032,2032,2026-02-04 10:54:05,Leo Reed,leo.reed8@email.com,pending,pending,1619.47,1629.90,119.96,0.00,130.39,USD,San Francisco,US,219,Luxury Travel Backpack,SKU-PRM-012,4,139.99,559.96
+8001234567033,2033,2026-02-07 21:07:16,Mason Turner,mason.turner9@email.com,fulfilled,refunded,2127.45,1969.86,157.59,0.00,0.00,USD,Miami,US,220,Leather Weekender,SKU-PRM-002,3,249.99,749.97
+8001234567033,2033,2026-02-07 21:07:16,Mason Turner,mason.turner9@email.com,fulfilled,refunded,2127.45,1969.86,157.59,0.00,0.00,USD,Miami,US,221,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567033,2033,2026-02-07 21:07:16,Mason Turner,mason.turner9@email.com,fulfilled,refunded,2127.45,1969.86,157.59,0.00,0.00,USD,Miami,US,222,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567033,2033,2026-02-07 21:07:16,Mason Turner,mason.turner9@email.com,fulfilled,refunded,2127.45,1969.86,157.59,0.00,0.00,USD,Miami,US,223,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567033,2033,2026-02-07 21:07:16,Mason Turner,mason.turner9@email.com,fulfilled,refunded,2127.45,1969.86,157.59,0.00,0.00,USD,Miami,US,224,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567033,2033,2026-02-07 21:07:16,Mason Turner,mason.turner9@email.com,fulfilled,refunded,2127.45,1969.86,157.59,0.00,0.00,USD,Miami,US,225,Leather Gloves,SKU-PRM-007,4,79.99,319.96
+8001234567033,2033,2026-02-07 21:07:16,Mason Turner,mason.turner9@email.com,fulfilled,refunded,2127.45,1969.86,157.59,0.00,0.00,USD,Miami,US,226,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567034,2034,2026-02-04 12:21:00,Thomas Cox,thomas.cox10@email.com,pending,cancelled,2314.97,2329.88,171.48,0.00,186.39,USD,Seattle,US,227,Tailored Blazer,SKU-PRM-003,3,219.99,659.97
+8001234567034,2034,2026-02-04 12:21:00,Thomas Cox,thomas.cox10@email.com,pending,cancelled,2314.97,2329.88,171.48,0.00,186.39,USD,Seattle,US,228,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567034,2034,2026-02-04 12:21:00,Thomas Cox,thomas.cox10@email.com,pending,cancelled,2314.97,2329.88,171.48,0.00,186.39,USD,Seattle,US,229,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567034,2034,2026-02-04 12:21:00,Thomas Cox,thomas.cox10@email.com,pending,cancelled,2314.97,2329.88,171.48,0.00,186.39,USD,Seattle,US,230,Aviator Sunglasses,SKU-PRM-010,3,149.99,449.97
+8001234567034,2034,2026-02-04 12:21:00,Thomas Cox,thomas.cox10@email.com,pending,cancelled,2314.97,2329.88,171.48,0.00,186.39,USD,Seattle,US,231,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567034,2034,2026-02-04 12:21:00,Thomas Cox,thomas.cox10@email.com,pending,cancelled,2314.97,2329.88,171.48,0.00,186.39,USD,Seattle,US,232,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567034,2034,2026-02-04 12:21:00,Thomas Cox,thomas.cox10@email.com,pending,cancelled,2314.97,2329.88,171.48,0.00,186.39,USD,Seattle,US,233,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567035,2035,2026-02-04 16:31:06,Isaac Evans,isaac.evans11@email.com,fulfilled,refunded,1501.11,1389.92,111.19,0.00,0.00,USD,New York,US,234,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567035,2035,2026-02-04 16:31:06,Isaac Evans,isaac.evans11@email.com,fulfilled,refunded,1501.11,1389.92,111.19,0.00,0.00,USD,New York,US,235,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567035,2035,2026-02-04 16:31:06,Isaac Evans,isaac.evans11@email.com,fulfilled,refunded,1501.11,1389.92,111.19,0.00,0.00,USD,New York,US,236,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567035,2035,2026-02-04 16:31:06,Isaac Evans,isaac.evans11@email.com,fulfilled,refunded,1501.11,1389.92,111.19,0.00,0.00,USD,New York,US,237,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567035,2035,2026-02-04 16:31:06,Isaac Evans,isaac.evans11@email.com,fulfilled,refunded,1501.11,1389.92,111.19,0.00,0.00,USD,New York,US,238,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567035,2035,2026-02-04 16:31:06,Isaac Evans,isaac.evans11@email.com,fulfilled,refunded,1501.11,1389.92,111.19,0.00,0.00,USD,New York,US,239,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567036,2036,2026-02-03 19:15:40,Nora Hughes,nora.hughes12@email.com,unfulfilled,cancelled,1351.22,1359.92,100.09,0.00,108.79,USD,Chicago,US,240,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567036,2036,2026-02-03 19:15:40,Nora Hughes,nora.hughes12@email.com,unfulfilled,cancelled,1351.22,1359.92,100.09,0.00,108.79,USD,Chicago,US,241,Wool Trousers,SKU-PRM-006,3,129.99,389.97
+8001234567036,2036,2026-02-03 19:15:40,Nora Hughes,nora.hughes12@email.com,unfulfilled,cancelled,1351.22,1359.92,100.09,0.00,108.79,USD,Chicago,US,242,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567036,2036,2026-02-03 19:15:40,Nora Hughes,nora.hughes12@email.com,unfulfilled,cancelled,1351.22,1359.92,100.09,0.00,108.79,USD,Chicago,US,243,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567036,2036,2026-02-03 19:15:40,Nora Hughes,nora.hughes12@email.com,unfulfilled,cancelled,1351.22,1359.92,100.09,0.00,108.79,USD,Chicago,US,244,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567037,2037,2026-02-05 21:33:47,Aurora Brooks,aurora.brooks13@email.com,fulfilled,paid,2397.44,2219.85,177.59,0.00,0.00,USD,Miami,US,245,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567037,2037,2026-02-05 21:33:47,Aurora Brooks,aurora.brooks13@email.com,fulfilled,paid,2397.44,2219.85,177.59,0.00,0.00,USD,Miami,US,246,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567037,2037,2026-02-05 21:33:47,Aurora Brooks,aurora.brooks13@email.com,fulfilled,paid,2397.44,2219.85,177.59,0.00,0.00,USD,Miami,US,247,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567037,2037,2026-02-05 21:33:47,Aurora Brooks,aurora.brooks13@email.com,fulfilled,paid,2397.44,2219.85,177.59,0.00,0.00,USD,Miami,US,248,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567037,2037,2026-02-05 21:33:47,Aurora Brooks,aurora.brooks13@email.com,fulfilled,paid,2397.44,2219.85,177.59,0.00,0.00,USD,Miami,US,249,Structured Tote,SKU-PRM-009,3,159.99,479.97
+8001234567037,2037,2026-02-05 21:33:47,Aurora Brooks,aurora.brooks13@email.com,fulfilled,paid,2397.44,2219.85,177.59,0.00,0.00,USD,Miami,US,250,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567037,2037,2026-02-05 21:33:47,Aurora Brooks,aurora.brooks13@email.com,fulfilled,paid,2397.44,2219.85,177.59,0.00,0.00,USD,Miami,US,251,Chelsea Boots,SKU-PRM-004,3,189.99,569.97
+8001234567037,2037,2026-02-05 21:33:47,Aurora Brooks,aurora.brooks13@email.com,fulfilled,paid,2397.44,2219.85,177.59,0.00,0.00,USD,Miami,US,252,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567037,2037,2026-02-05 21:33:47,Aurora Brooks,aurora.brooks13@email.com,fulfilled,paid,2397.44,2219.85,177.59,0.00,0.00,USD,Miami,US,253,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567038,2038,2026-02-06 12:21:52,Jackson Clark,jackson.clark14@email.com,pending,paid,1634.14,1559.89,121.05,0.00,46.80,USD,Chicago,US,254,Aviator Sunglasses,SKU-PRM-010,3,149.99,449.97
+8001234567038,2038,2026-02-06 12:21:52,Jackson Clark,jackson.clark14@email.com,pending,paid,1634.14,1559.89,121.05,0.00,46.80,USD,Chicago,US,255,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567038,2038,2026-02-06 12:21:52,Jackson Clark,jackson.clark14@email.com,pending,paid,1634.14,1559.89,121.05,0.00,46.80,USD,Chicago,US,256,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567038,2038,2026-02-06 12:21:52,Jackson Clark,jackson.clark14@email.com,pending,paid,1634.14,1559.89,121.05,0.00,46.80,USD,Chicago,US,257,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567038,2038,2026-02-06 12:21:52,Jackson Clark,jackson.clark14@email.com,pending,paid,1634.14,1559.89,121.05,0.00,46.80,USD,Chicago,US,258,Leather Gloves,SKU-PRM-007,4,79.99,319.96
+8001234567038,2038,2026-02-06 12:21:52,Jackson Clark,jackson.clark14@email.com,pending,paid,1634.14,1559.89,121.05,0.00,46.80,USD,Chicago,US,259,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567039,2039,2026-02-06 09:18:33,Nora Price,nora.price15@email.com,fulfilled,refunded,1822.73,1739.91,135.02,0.00,52.20,USD,New York,US,260,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567039,2039,2026-02-06 09:18:33,Nora Price,nora.price15@email.com,fulfilled,refunded,1822.73,1739.91,135.02,0.00,52.20,USD,New York,US,261,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567039,2039,2026-02-06 09:18:33,Nora Price,nora.price15@email.com,fulfilled,refunded,1822.73,1739.91,135.02,0.00,52.20,USD,New York,US,262,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567039,2039,2026-02-06 09:18:33,Nora Price,nora.price15@email.com,fulfilled,refunded,1822.73,1739.91,135.02,0.00,52.20,USD,New York,US,263,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567039,2039,2026-02-06 09:18:33,Nora Price,nora.price15@email.com,fulfilled,refunded,1822.73,1739.91,135.02,0.00,52.20,USD,New York,US,264,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567039,2039,2026-02-06 09:18:33,Nora Price,nora.price15@email.com,fulfilled,refunded,1822.73,1739.91,135.02,0.00,52.20,USD,New York,US,265,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567039,2039,2026-02-06 09:18:33,Nora Price,nora.price15@email.com,fulfilled,refunded,1822.73,1739.91,135.02,0.00,52.20,USD,New York,US,266,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567040,2040,2026-02-07 16:09:13,Aurora Nguyen,aurora.nguyen16@email.com,pending,paid,1798.34,1809.92,133.21,0.00,144.79,USD,Chicago,US,267,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567040,2040,2026-02-07 16:09:13,Aurora Nguyen,aurora.nguyen16@email.com,pending,paid,1798.34,1809.92,133.21,0.00,144.79,USD,Chicago,US,268,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567040,2040,2026-02-07 16:09:13,Aurora Nguyen,aurora.nguyen16@email.com,pending,paid,1798.34,1809.92,133.21,0.00,144.79,USD,Chicago,US,269,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567040,2040,2026-02-07 16:09:13,Aurora Nguyen,aurora.nguyen16@email.com,pending,paid,1798.34,1809.92,133.21,0.00,144.79,USD,Chicago,US,270,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567040,2040,2026-02-07 16:09:13,Aurora Nguyen,aurora.nguyen16@email.com,pending,paid,1798.34,1809.92,133.21,0.00,144.79,USD,Chicago,US,271,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567041,2041,2026-02-04 09:30:19,Benjamin Martin,benjamin.martin17@email.com,fulfilled,paid,1351.31,1289.91,100.10,0.00,38.70,USD,New York,US,272,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567041,2041,2026-02-04 09:30:19,Benjamin Martin,benjamin.martin17@email.com,fulfilled,paid,1351.31,1289.91,100.10,0.00,38.70,USD,New York,US,273,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567041,2041,2026-02-04 09:30:19,Benjamin Martin,benjamin.martin17@email.com,fulfilled,paid,1351.31,1289.91,100.10,0.00,38.70,USD,New York,US,274,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567041,2041,2026-02-04 09:30:19,Benjamin Martin,benjamin.martin17@email.com,fulfilled,paid,1351.31,1289.91,100.10,0.00,38.70,USD,New York,US,275,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567041,2041,2026-02-04 09:30:19,Benjamin Martin,benjamin.martin17@email.com,fulfilled,paid,1351.31,1289.91,100.10,0.00,38.70,USD,New York,US,276,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567041,2041,2026-02-04 09:30:19,Benjamin Martin,benjamin.martin17@email.com,fulfilled,paid,1351.31,1289.91,100.10,0.00,38.70,USD,New York,US,277,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567041,2041,2026-02-04 09:30:19,Benjamin Martin,benjamin.martin17@email.com,fulfilled,paid,1351.31,1289.91,100.10,0.00,38.70,USD,New York,US,278,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567042,2042,2026-02-06 20:57:54,Caleb Jackson,caleb.jackson18@email.com,fulfilled,pending,2294.14,2189.90,169.94,0.00,65.70,USD,New York,US,279,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567042,2042,2026-02-06 20:57:54,Caleb Jackson,caleb.jackson18@email.com,fulfilled,pending,2294.14,2189.90,169.94,0.00,65.70,USD,New York,US,280,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567042,2042,2026-02-06 20:57:54,Caleb Jackson,caleb.jackson18@email.com,fulfilled,pending,2294.14,2189.90,169.94,0.00,65.70,USD,New York,US,281,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567042,2042,2026-02-06 20:57:54,Caleb Jackson,caleb.jackson18@email.com,fulfilled,pending,2294.14,2189.90,169.94,0.00,65.70,USD,New York,US,282,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567042,2042,2026-02-06 20:57:54,Caleb Jackson,caleb.jackson18@email.com,fulfilled,pending,2294.14,2189.90,169.94,0.00,65.70,USD,New York,US,283,Cashmere Coat,SKU-PRM-001,3,329.99,989.97
+8001234567042,2042,2026-02-06 20:57:54,Caleb Jackson,caleb.jackson18@email.com,fulfilled,pending,2294.14,2189.90,169.94,0.00,65.70,USD,New York,US,284,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567043,2043,2026-02-04 09:15:23,Samuel Ramirez,samuel.ramirez19@email.com,unfulfilled,pending,2123.70,2069.88,157.31,0.00,103.49,USD,Chicago,US,285,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567043,2043,2026-02-04 09:15:23,Samuel Ramirez,samuel.ramirez19@email.com,unfulfilled,pending,2123.70,2069.88,157.31,0.00,103.49,USD,Chicago,US,286,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567043,2043,2026-02-04 09:15:23,Samuel Ramirez,samuel.ramirez19@email.com,unfulfilled,pending,2123.70,2069.88,157.31,0.00,103.49,USD,Chicago,US,287,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567043,2043,2026-02-04 09:15:23,Samuel Ramirez,samuel.ramirez19@email.com,unfulfilled,pending,2123.70,2069.88,157.31,0.00,103.49,USD,Chicago,US,288,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567043,2043,2026-02-04 09:15:23,Samuel Ramirez,samuel.ramirez19@email.com,unfulfilled,pending,2123.70,2069.88,157.31,0.00,103.49,USD,Chicago,US,289,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567043,2043,2026-02-04 09:15:23,Samuel Ramirez,samuel.ramirez19@email.com,unfulfilled,pending,2123.70,2069.88,157.31,0.00,103.49,USD,Chicago,US,290,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567043,2043,2026-02-04 09:15:23,Samuel Ramirez,samuel.ramirez19@email.com,unfulfilled,pending,2123.70,2069.88,157.31,0.00,103.49,USD,Chicago,US,291,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567043,2043,2026-02-04 09:15:23,Samuel Ramirez,samuel.ramirez19@email.com,unfulfilled,pending,2123.70,2069.88,157.31,0.00,103.49,USD,Chicago,US,292,Wool Trousers,SKU-PRM-006,3,129.99,389.97
+8001234567044,2044,2026-02-06 09:32:29,Ethan Harris,ethan.harris20@email.com,pending,pending,1530.05,1539.90,113.34,0.00,123.19,USD,New York,US,293,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567044,2044,2026-02-06 09:32:29,Ethan Harris,ethan.harris20@email.com,pending,pending,1530.05,1539.90,113.34,0.00,123.19,USD,New York,US,294,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567044,2044,2026-02-06 09:32:29,Ethan Harris,ethan.harris20@email.com,pending,pending,1530.05,1539.90,113.34,0.00,123.19,USD,New York,US,295,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567044,2044,2026-02-06 09:32:29,Ethan Harris,ethan.harris20@email.com,pending,pending,1530.05,1539.90,113.34,0.00,123.19,USD,New York,US,296,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567044,2044,2026-02-06 09:32:29,Ethan Harris,ethan.harris20@email.com,pending,pending,1530.05,1539.90,113.34,0.00,123.19,USD,New York,US,297,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567044,2044,2026-02-06 09:32:29,Ethan Harris,ethan.harris20@email.com,pending,pending,1530.05,1539.90,113.34,0.00,123.19,USD,New York,US,298,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567044,2044,2026-02-06 09:32:29,Ethan Harris,ethan.harris20@email.com,pending,pending,1530.05,1539.90,113.34,0.00,123.19,USD,New York,US,299,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567045,2045,2026-02-08 11:23:02,Aiden Cox,aiden.cox21@email.com,unfulfilled,refunded,2019.47,1869.88,149.59,0.00,0.00,USD,New York,US,300,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567045,2045,2026-02-08 11:23:02,Aiden Cox,aiden.cox21@email.com,unfulfilled,refunded,2019.47,1869.88,149.59,0.00,0.00,USD,New York,US,301,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567045,2045,2026-02-08 11:23:02,Aiden Cox,aiden.cox21@email.com,unfulfilled,refunded,2019.47,1869.88,149.59,0.00,0.00,USD,New York,US,302,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567045,2045,2026-02-08 11:23:02,Aiden Cox,aiden.cox21@email.com,unfulfilled,refunded,2019.47,1869.88,149.59,0.00,0.00,USD,New York,US,303,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567045,2045,2026-02-08 11:23:02,Aiden Cox,aiden.cox21@email.com,unfulfilled,refunded,2019.47,1869.88,149.59,0.00,0.00,USD,New York,US,304,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567045,2045,2026-02-08 11:23:02,Aiden Cox,aiden.cox21@email.com,unfulfilled,refunded,2019.47,1869.88,149.59,0.00,0.00,USD,New York,US,305,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567045,2045,2026-02-08 11:23:02,Aiden Cox,aiden.cox21@email.com,unfulfilled,refunded,2019.47,1869.88,149.59,0.00,0.00,USD,New York,US,306,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567045,2045,2026-02-08 11:23:02,Aiden Cox,aiden.cox21@email.com,unfulfilled,refunded,2019.47,1869.88,149.59,0.00,0.00,USD,New York,US,307,Wool Trousers,SKU-PRM-006,3,129.99,389.97
+8001234567046,2046,2026-02-04 15:14:14,Mason Harris,mason.harris22@email.com,unfulfilled,cancelled,3347.84,3099.85,247.99,0.00,0.00,USD,Boston,US,308,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567046,2046,2026-02-04 15:14:14,Mason Harris,mason.harris22@email.com,unfulfilled,cancelled,3347.84,3099.85,247.99,0.00,0.00,USD,Boston,US,309,Aviator Sunglasses,SKU-PRM-010,3,149.99,449.97
+8001234567046,2046,2026-02-04 15:14:14,Mason Harris,mason.harris22@email.com,unfulfilled,cancelled,3347.84,3099.85,247.99,0.00,0.00,USD,Boston,US,310,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567046,2046,2026-02-04 15:14:14,Mason Harris,mason.harris22@email.com,unfulfilled,cancelled,3347.84,3099.85,247.99,0.00,0.00,USD,Boston,US,311,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567046,2046,2026-02-04 15:14:14,Mason Harris,mason.harris22@email.com,unfulfilled,cancelled,3347.84,3099.85,247.99,0.00,0.00,USD,Boston,US,312,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567046,2046,2026-02-04 15:14:14,Mason Harris,mason.harris22@email.com,unfulfilled,cancelled,3347.84,3099.85,247.99,0.00,0.00,USD,Boston,US,313,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567046,2046,2026-02-04 15:14:14,Mason Harris,mason.harris22@email.com,unfulfilled,cancelled,3347.84,3099.85,247.99,0.00,0.00,USD,Boston,US,314,Cashmere Coat,SKU-PRM-001,3,329.99,989.97
+8001234567046,2046,2026-02-04 15:14:14,Mason Harris,mason.harris22@email.com,unfulfilled,cancelled,3347.84,3099.85,247.99,0.00,0.00,USD,Boston,US,315,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567047,2047,2026-02-03 11:48:34,Zoe Davis,zoe.davis0@email.com,fulfilled,refunded,2074.12,1979.88,153.64,0.00,59.40,USD,New York,US,316,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567047,2047,2026-02-03 11:48:34,Zoe Davis,zoe.davis0@email.com,fulfilled,refunded,2074.12,1979.88,153.64,0.00,59.40,USD,New York,US,317,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567047,2047,2026-02-03 11:48:34,Zoe Davis,zoe.davis0@email.com,fulfilled,refunded,2074.12,1979.88,153.64,0.00,59.40,USD,New York,US,318,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567047,2047,2026-02-03 11:48:34,Zoe Davis,zoe.davis0@email.com,fulfilled,refunded,2074.12,1979.88,153.64,0.00,59.40,USD,New York,US,319,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567047,2047,2026-02-03 11:48:34,Zoe Davis,zoe.davis0@email.com,fulfilled,refunded,2074.12,1979.88,153.64,0.00,59.40,USD,New York,US,320,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567047,2047,2026-02-03 11:48:34,Zoe Davis,zoe.davis0@email.com,fulfilled,refunded,2074.12,1979.88,153.64,0.00,59.40,USD,New York,US,321,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567047,2047,2026-02-03 11:48:34,Zoe Davis,zoe.davis0@email.com,fulfilled,refunded,2074.12,1979.88,153.64,0.00,59.40,USD,New York,US,322,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567047,2047,2026-02-03 11:48:34,Zoe Davis,zoe.davis0@email.com,fulfilled,refunded,2074.12,1979.88,153.64,0.00,59.40,USD,New York,US,323,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567047,2047,2026-02-03 11:48:34,Zoe Davis,zoe.davis0@email.com,fulfilled,refunded,2074.12,1979.88,153.64,0.00,59.40,USD,New York,US,324,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567048,2048,2026-02-07 09:16:02,Harper Reed,harper.reed1@email.com,unfulfilled,cancelled,2602.63,2409.84,192.79,0.00,0.00,USD,San Francisco,US,325,Leather Weekender,SKU-PRM-002,4,249.99,999.96
+8001234567048,2048,2026-02-07 09:16:02,Harper Reed,harper.reed1@email.com,unfulfilled,cancelled,2602.63,2409.84,192.79,0.00,0.00,USD,San Francisco,US,326,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567048,2048,2026-02-07 09:16:02,Harper Reed,harper.reed1@email.com,unfulfilled,cancelled,2602.63,2409.84,192.79,0.00,0.00,USD,San Francisco,US,327,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567048,2048,2026-02-07 09:16:02,Harper Reed,harper.reed1@email.com,unfulfilled,cancelled,2602.63,2409.84,192.79,0.00,0.00,USD,San Francisco,US,328,Silk Button-Up,SKU-PRM-008,3,99.99,299.97
+8001234567048,2048,2026-02-07 09:16:02,Harper Reed,harper.reed1@email.com,unfulfilled,cancelled,2602.63,2409.84,192.79,0.00,0.00,USD,San Francisco,US,329,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567048,2048,2026-02-07 09:16:02,Harper Reed,harper.reed1@email.com,unfulfilled,cancelled,2602.63,2409.84,192.79,0.00,0.00,USD,San Francisco,US,330,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567048,2048,2026-02-07 09:16:02,Harper Reed,harper.reed1@email.com,unfulfilled,cancelled,2602.63,2409.84,192.79,0.00,0.00,USD,San Francisco,US,331,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567048,2048,2026-02-07 09:16:02,Harper Reed,harper.reed1@email.com,unfulfilled,cancelled,2602.63,2409.84,192.79,0.00,0.00,USD,San Francisco,US,332,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567049,2049,2026-02-11 13:00:27,Caleb Kelly,caleb.kelly2@email.com,pending,pending,1620.97,1579.90,120.07,0.00,79.00,USD,New York,US,333,Merino Sweater,SKU-PRM-005,4,119.99,479.96
+8001234567049,2049,2026-02-11 13:00:27,Caleb Kelly,caleb.kelly2@email.com,pending,pending,1620.97,1579.90,120.07,0.00,79.00,USD,New York,US,334,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567049,2049,2026-02-11 13:00:27,Caleb Kelly,caleb.kelly2@email.com,pending,pending,1620.97,1579.90,120.07,0.00,79.00,USD,New York,US,335,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567049,2049,2026-02-11 13:00:27,Caleb Kelly,caleb.kelly2@email.com,pending,pending,1620.97,1579.90,120.07,0.00,79.00,USD,New York,US,336,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567049,2049,2026-02-11 13:00:27,Caleb Kelly,caleb.kelly2@email.com,pending,pending,1620.97,1579.90,120.07,0.00,79.00,USD,New York,US,337,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567049,2049,2026-02-11 13:00:27,Caleb Kelly,caleb.kelly2@email.com,pending,pending,1620.97,1579.90,120.07,0.00,79.00,USD,New York,US,338,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567050,2050,2026-02-13 10:26:02,Owen Reed,owen.reed3@email.com,pending,paid,2755.02,2629.83,204.08,0.00,78.89,USD,San Francisco,US,339,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567050,2050,2026-02-13 10:26:02,Owen Reed,owen.reed3@email.com,pending,paid,2755.02,2629.83,204.08,0.00,78.89,USD,San Francisco,US,340,Leather Gloves,SKU-PRM-007,3,79.99,239.97
+8001234567050,2050,2026-02-13 10:26:02,Owen Reed,owen.reed3@email.com,pending,paid,2755.02,2629.83,204.08,0.00,78.89,USD,San Francisco,US,341,Luxury Travel Backpack,SKU-PRM-012,3,139.99,419.97
+8001234567050,2050,2026-02-13 10:26:02,Owen Reed,owen.reed3@email.com,pending,paid,2755.02,2629.83,204.08,0.00,78.89,USD,San Francisco,US,342,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567050,2050,2026-02-13 10:26:02,Owen Reed,owen.reed3@email.com,pending,paid,2755.02,2629.83,204.08,0.00,78.89,USD,San Francisco,US,343,Chelsea Boots,SKU-PRM-004,4,189.99,759.96
+8001234567050,2050,2026-02-13 10:26:02,Owen Reed,owen.reed3@email.com,pending,paid,2755.02,2629.83,204.08,0.00,78.89,USD,San Francisco,US,344,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567050,2050,2026-02-13 10:26:02,Owen Reed,owen.reed3@email.com,pending,paid,2755.02,2629.83,204.08,0.00,78.89,USD,San Francisco,US,345,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567051,2051,2026-02-11 13:33:04,Aiden Patel,aiden.patel4@email.com,pending,pending,1847.97,1859.87,136.89,0.00,148.79,USD,San Francisco,US,346,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567051,2051,2026-02-11 13:33:04,Aiden Patel,aiden.patel4@email.com,pending,pending,1847.97,1859.87,136.89,0.00,148.79,USD,San Francisco,US,347,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567051,2051,2026-02-11 13:33:04,Aiden Patel,aiden.patel4@email.com,pending,pending,1847.97,1859.87,136.89,0.00,148.79,USD,San Francisco,US,348,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567051,2051,2026-02-11 13:33:04,Aiden Patel,aiden.patel4@email.com,pending,pending,1847.97,1859.87,136.89,0.00,148.79,USD,San Francisco,US,349,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567051,2051,2026-02-11 13:33:04,Aiden Patel,aiden.patel4@email.com,pending,pending,1847.97,1859.87,136.89,0.00,148.79,USD,San Francisco,US,350,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567051,2051,2026-02-11 13:33:04,Aiden Patel,aiden.patel4@email.com,pending,pending,1847.97,1859.87,136.89,0.00,148.79,USD,San Francisco,US,351,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567051,2051,2026-02-11 13:33:04,Aiden Patel,aiden.patel4@email.com,pending,pending,1847.97,1859.87,136.89,0.00,148.79,USD,San Francisco,US,352,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567051,2051,2026-02-11 13:33:04,Aiden Patel,aiden.patel4@email.com,pending,pending,1847.97,1859.87,136.89,0.00,148.79,USD,San Francisco,US,353,Silk Button-Up,SKU-PRM-008,3,99.99,299.97
+8001234567052,2052,2026-02-11 19:24:48,Mia Hughes,mia.hughes5@email.com,fulfilled,refunded,1764.61,1719.89,130.71,0.00,85.99,USD,San Francisco,US,354,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567052,2052,2026-02-11 19:24:48,Mia Hughes,mia.hughes5@email.com,fulfilled,refunded,1764.61,1719.89,130.71,0.00,85.99,USD,San Francisco,US,355,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567052,2052,2026-02-11 19:24:48,Mia Hughes,mia.hughes5@email.com,fulfilled,refunded,1764.61,1719.89,130.71,0.00,85.99,USD,San Francisco,US,356,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567052,2052,2026-02-11 19:24:48,Mia Hughes,mia.hughes5@email.com,fulfilled,refunded,1764.61,1719.89,130.71,0.00,85.99,USD,San Francisco,US,357,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567052,2052,2026-02-11 19:24:48,Mia Hughes,mia.hughes5@email.com,fulfilled,refunded,1764.61,1719.89,130.71,0.00,85.99,USD,San Francisco,US,358,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567052,2052,2026-02-11 19:24:48,Mia Hughes,mia.hughes5@email.com,fulfilled,refunded,1764.61,1719.89,130.71,0.00,85.99,USD,San Francisco,US,359,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567052,2052,2026-02-11 19:24:48,Mia Hughes,mia.hughes5@email.com,fulfilled,refunded,1764.61,1719.89,130.71,0.00,85.99,USD,San Francisco,US,360,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567052,2052,2026-02-11 19:24:48,Mia Hughes,mia.hughes5@email.com,fulfilled,refunded,1764.61,1719.89,130.71,0.00,85.99,USD,San Francisco,US,361,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567052,2052,2026-02-11 19:24:48,Mia Hughes,mia.hughes5@email.com,fulfilled,refunded,1764.61,1719.89,130.71,0.00,85.99,USD,San Francisco,US,362,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567053,2053,2026-02-12 13:45:47,Hannah Hughes,hannah.hughes6@email.com,pending,cancelled,1282.40,1249.91,94.99,0.00,62.50,USD,New York,US,363,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567053,2053,2026-02-12 13:45:47,Hannah Hughes,hannah.hughes6@email.com,pending,cancelled,1282.40,1249.91,94.99,0.00,62.50,USD,New York,US,364,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567053,2053,2026-02-12 13:45:47,Hannah Hughes,hannah.hughes6@email.com,pending,cancelled,1282.40,1249.91,94.99,0.00,62.50,USD,New York,US,365,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567053,2053,2026-02-12 13:45:47,Hannah Hughes,hannah.hughes6@email.com,pending,cancelled,1282.40,1249.91,94.99,0.00,62.50,USD,New York,US,366,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567053,2053,2026-02-12 13:45:47,Hannah Hughes,hannah.hughes6@email.com,pending,cancelled,1282.40,1249.91,94.99,0.00,62.50,USD,New York,US,367,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567053,2053,2026-02-12 13:45:47,Hannah Hughes,hannah.hughes6@email.com,pending,cancelled,1282.40,1249.91,94.99,0.00,62.50,USD,New York,US,368,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567053,2053,2026-02-12 13:45:47,Hannah Hughes,hannah.hughes6@email.com,pending,cancelled,1282.40,1249.91,94.99,0.00,62.50,USD,New York,US,369,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567054,2054,2026-02-12 18:53:44,Leo Jackson,leo.jackson7@email.com,unfulfilled,refunded,1598.30,1479.91,118.39,0.00,0.00,USD,Chicago,US,370,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567054,2054,2026-02-12 18:53:44,Leo Jackson,leo.jackson7@email.com,unfulfilled,refunded,1598.30,1479.91,118.39,0.00,0.00,USD,Chicago,US,371,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567054,2054,2026-02-12 18:53:44,Leo Jackson,leo.jackson7@email.com,unfulfilled,refunded,1598.30,1479.91,118.39,0.00,0.00,USD,Chicago,US,372,Chelsea Boots,SKU-PRM-004,3,189.99,569.97
+8001234567054,2054,2026-02-12 18:53:44,Leo Jackson,leo.jackson7@email.com,unfulfilled,refunded,1598.30,1479.91,118.39,0.00,0.00,USD,Chicago,US,373,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567054,2054,2026-02-12 18:53:44,Leo Jackson,leo.jackson7@email.com,unfulfilled,refunded,1598.30,1479.91,118.39,0.00,0.00,USD,Chicago,US,374,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567054,2054,2026-02-12 18:53:44,Leo Jackson,leo.jackson7@email.com,unfulfilled,refunded,1598.30,1479.91,118.39,0.00,0.00,USD,Chicago,US,375,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567055,2055,2026-02-12 15:54:58,Isabella Hughes,isabella.hughes8@email.com,pending,refunded,2084.61,1989.89,154.42,0.00,59.70,USD,Seattle,US,376,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567055,2055,2026-02-12 15:54:58,Isabella Hughes,isabella.hughes8@email.com,pending,refunded,2084.61,1989.89,154.42,0.00,59.70,USD,Seattle,US,377,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567055,2055,2026-02-12 15:54:58,Isabella Hughes,isabella.hughes8@email.com,pending,refunded,2084.61,1989.89,154.42,0.00,59.70,USD,Seattle,US,378,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567055,2055,2026-02-12 15:54:58,Isabella Hughes,isabella.hughes8@email.com,pending,refunded,2084.61,1989.89,154.42,0.00,59.70,USD,Seattle,US,379,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567055,2055,2026-02-12 15:54:58,Isabella Hughes,isabella.hughes8@email.com,pending,refunded,2084.61,1989.89,154.42,0.00,59.70,USD,Seattle,US,380,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567055,2055,2026-02-12 15:54:58,Isabella Hughes,isabella.hughes8@email.com,pending,refunded,2084.61,1989.89,154.42,0.00,59.70,USD,Seattle,US,381,Chelsea Boots,SKU-PRM-004,3,189.99,569.97
+8001234567055,2055,2026-02-12 15:54:58,Isabella Hughes,isabella.hughes8@email.com,pending,refunded,2084.61,1989.89,154.42,0.00,59.70,USD,Seattle,US,382,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567055,2055,2026-02-12 15:54:58,Isabella Hughes,isabella.hughes8@email.com,pending,refunded,2084.61,1989.89,154.42,0.00,59.70,USD,Seattle,US,383,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567056,2056,2026-02-15 13:20:11,Penelope Butler,penelope.butler9@email.com,unfulfilled,pending,1629.39,1639.88,120.70,0.00,131.19,USD,Miami,US,384,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567056,2056,2026-02-15 13:20:11,Penelope Butler,penelope.butler9@email.com,unfulfilled,pending,1629.39,1639.88,120.70,0.00,131.19,USD,Miami,US,385,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567056,2056,2026-02-15 13:20:11,Penelope Butler,penelope.butler9@email.com,unfulfilled,pending,1629.39,1639.88,120.70,0.00,131.19,USD,Miami,US,386,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567056,2056,2026-02-15 13:20:11,Penelope Butler,penelope.butler9@email.com,unfulfilled,pending,1629.39,1639.88,120.70,0.00,131.19,USD,Miami,US,387,Leather Gloves,SKU-PRM-007,3,79.99,239.97
+8001234567056,2056,2026-02-15 13:20:11,Penelope Butler,penelope.butler9@email.com,unfulfilled,pending,1629.39,1639.88,120.70,0.00,131.19,USD,Miami,US,388,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567056,2056,2026-02-15 13:20:11,Penelope Butler,penelope.butler9@email.com,unfulfilled,pending,1629.39,1639.88,120.70,0.00,131.19,USD,Miami,US,389,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567056,2056,2026-02-15 13:20:11,Penelope Butler,penelope.butler9@email.com,unfulfilled,pending,1629.39,1639.88,120.70,0.00,131.19,USD,Miami,US,390,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567057,2057,2026-02-12 21:50:16,Elijah Jackson,elijah.jackson10@email.com,pending,cancelled,1864.62,1779.90,138.12,0.00,53.40,USD,San Francisco,US,391,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567057,2057,2026-02-12 21:50:16,Elijah Jackson,elijah.jackson10@email.com,pending,cancelled,1864.62,1779.90,138.12,0.00,53.40,USD,San Francisco,US,392,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567057,2057,2026-02-12 21:50:16,Elijah Jackson,elijah.jackson10@email.com,pending,cancelled,1864.62,1779.90,138.12,0.00,53.40,USD,San Francisco,US,393,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567057,2057,2026-02-12 21:50:16,Elijah Jackson,elijah.jackson10@email.com,pending,cancelled,1864.62,1779.90,138.12,0.00,53.40,USD,San Francisco,US,394,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567057,2057,2026-02-12 21:50:16,Elijah Jackson,elijah.jackson10@email.com,pending,cancelled,1864.62,1779.90,138.12,0.00,53.40,USD,San Francisco,US,395,Chelsea Boots,SKU-PRM-004,3,189.99,569.97
+8001234567057,2057,2026-02-12 21:50:16,Elijah Jackson,elijah.jackson10@email.com,pending,cancelled,1864.62,1779.90,138.12,0.00,53.40,USD,San Francisco,US,396,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567058,2058,2026-02-09 17:59:21,Zoe Brown,zoe.brown11@email.com,fulfilled,paid,2031.36,1979.88,150.47,0.00,98.99,USD,Boston,US,397,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567058,2058,2026-02-09 17:59:21,Zoe Brown,zoe.brown11@email.com,fulfilled,paid,2031.36,1979.88,150.47,0.00,98.99,USD,Boston,US,398,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567058,2058,2026-02-09 17:59:21,Zoe Brown,zoe.brown11@email.com,fulfilled,paid,2031.36,1979.88,150.47,0.00,98.99,USD,Boston,US,399,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567058,2058,2026-02-09 17:59:21,Zoe Brown,zoe.brown11@email.com,fulfilled,paid,2031.36,1979.88,150.47,0.00,98.99,USD,Boston,US,400,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567058,2058,2026-02-09 17:59:21,Zoe Brown,zoe.brown11@email.com,fulfilled,paid,2031.36,1979.88,150.47,0.00,98.99,USD,Boston,US,401,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567058,2058,2026-02-09 17:59:21,Zoe Brown,zoe.brown11@email.com,fulfilled,paid,2031.36,1979.88,150.47,0.00,98.99,USD,Boston,US,402,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567058,2058,2026-02-09 17:59:21,Zoe Brown,zoe.brown11@email.com,fulfilled,paid,2031.36,1979.88,150.47,0.00,98.99,USD,Boston,US,403,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567058,2058,2026-02-09 17:59:21,Zoe Brown,zoe.brown11@email.com,fulfilled,paid,2031.36,1979.88,150.47,0.00,98.99,USD,Boston,US,404,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567059,2059,2026-02-10 12:14:12,Amelia Reed,amelia.reed12@email.com,pending,pending,993.52,919.93,73.59,0.00,0.00,USD,Seattle,US,405,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567059,2059,2026-02-10 12:14:12,Amelia Reed,amelia.reed12@email.com,pending,pending,993.52,919.93,73.59,0.00,0.00,USD,Seattle,US,406,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567059,2059,2026-02-10 12:14:12,Amelia Reed,amelia.reed12@email.com,pending,pending,993.52,919.93,73.59,0.00,0.00,USD,Seattle,US,407,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567059,2059,2026-02-10 12:14:12,Amelia Reed,amelia.reed12@email.com,pending,pending,993.52,919.93,73.59,0.00,0.00,USD,Seattle,US,408,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567059,2059,2026-02-10 12:14:12,Amelia Reed,amelia.reed12@email.com,pending,pending,993.52,919.93,73.59,0.00,0.00,USD,Seattle,US,409,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567060,2060,2026-02-14 17:19:46,Hannah Butler,hannah.butler13@email.com,fulfilled,refunded,1815.92,1769.91,134.51,0.00,88.50,USD,Miami,US,410,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567060,2060,2026-02-14 17:19:46,Hannah Butler,hannah.butler13@email.com,fulfilled,refunded,1815.92,1769.91,134.51,0.00,88.50,USD,Miami,US,411,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567060,2060,2026-02-14 17:19:46,Hannah Butler,hannah.butler13@email.com,fulfilled,refunded,1815.92,1769.91,134.51,0.00,88.50,USD,Miami,US,412,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567060,2060,2026-02-14 17:19:46,Hannah Butler,hannah.butler13@email.com,fulfilled,refunded,1815.92,1769.91,134.51,0.00,88.50,USD,Miami,US,413,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567060,2060,2026-02-14 17:19:46,Hannah Butler,hannah.butler13@email.com,fulfilled,refunded,1815.92,1769.91,134.51,0.00,88.50,USD,Miami,US,414,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567060,2060,2026-02-14 17:19:46,Hannah Butler,hannah.butler13@email.com,fulfilled,refunded,1815.92,1769.91,134.51,0.00,88.50,USD,Miami,US,415,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567060,2060,2026-02-14 17:19:46,Hannah Butler,hannah.butler13@email.com,fulfilled,refunded,1815.92,1769.91,134.51,0.00,88.50,USD,Miami,US,416,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567061,2061,2026-02-13 18:09:11,Mia Evans,mia.evans14@email.com,pending,pending,1569.80,1579.91,116.28,0.00,126.39,USD,New York,US,417,Luxury Travel Backpack,SKU-PRM-012,3,139.99,419.97
+8001234567061,2061,2026-02-13 18:09:11,Mia Evans,mia.evans14@email.com,pending,pending,1569.80,1579.91,116.28,0.00,126.39,USD,New York,US,418,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567061,2061,2026-02-13 18:09:11,Mia Evans,mia.evans14@email.com,pending,pending,1569.80,1579.91,116.28,0.00,126.39,USD,New York,US,419,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567061,2061,2026-02-13 18:09:11,Mia Evans,mia.evans14@email.com,pending,pending,1569.80,1579.91,116.28,0.00,126.39,USD,New York,US,420,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567061,2061,2026-02-13 18:09:11,Mia Evans,mia.evans14@email.com,pending,pending,1569.80,1579.91,116.28,0.00,126.39,USD,New York,US,421,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567061,2061,2026-02-13 18:09:11,Mia Evans,mia.evans14@email.com,pending,pending,1569.80,1579.91,116.28,0.00,126.39,USD,New York,US,422,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567062,2062,2026-02-12 11:59:35,Stella Griffin,stella.griffin15@email.com,unfulfilled,cancelled,2527.04,2339.85,187.19,0.00,0.00,USD,New York,US,423,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567062,2062,2026-02-12 11:59:35,Stella Griffin,stella.griffin15@email.com,unfulfilled,cancelled,2527.04,2339.85,187.19,0.00,0.00,USD,New York,US,424,Luxury Travel Backpack,SKU-PRM-012,3,139.99,419.97
+8001234567062,2062,2026-02-12 11:59:35,Stella Griffin,stella.griffin15@email.com,unfulfilled,cancelled,2527.04,2339.85,187.19,0.00,0.00,USD,New York,US,425,Tailored Blazer,SKU-PRM-003,3,219.99,659.97
+8001234567062,2062,2026-02-12 11:59:35,Stella Griffin,stella.griffin15@email.com,unfulfilled,cancelled,2527.04,2339.85,187.19,0.00,0.00,USD,New York,US,426,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567062,2062,2026-02-12 11:59:35,Stella Griffin,stella.griffin15@email.com,unfulfilled,cancelled,2527.04,2339.85,187.19,0.00,0.00,USD,New York,US,427,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567062,2062,2026-02-12 11:59:35,Stella Griffin,stella.griffin15@email.com,unfulfilled,cancelled,2527.04,2339.85,187.19,0.00,0.00,USD,New York,US,428,Merino Sweater,SKU-PRM-005,3,119.99,359.97
+8001234567062,2062,2026-02-12 11:59:35,Stella Griffin,stella.griffin15@email.com,unfulfilled,cancelled,2527.04,2339.85,187.19,0.00,0.00,USD,New York,US,429,Structured Tote,SKU-PRM-009,3,159.99,479.97
+8001234567063,2063,2026-02-10 18:01:25,Zoe Evans,zoe.evans16@email.com,pending,pending,1843.67,1759.90,136.57,0.00,52.80,USD,Miami,US,430,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567063,2063,2026-02-10 18:01:25,Zoe Evans,zoe.evans16@email.com,pending,pending,1843.67,1759.90,136.57,0.00,52.80,USD,Miami,US,431,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567063,2063,2026-02-10 18:01:25,Zoe Evans,zoe.evans16@email.com,pending,pending,1843.67,1759.90,136.57,0.00,52.80,USD,Miami,US,432,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567063,2063,2026-02-10 18:01:25,Zoe Evans,zoe.evans16@email.com,pending,pending,1843.67,1759.90,136.57,0.00,52.80,USD,Miami,US,433,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567063,2063,2026-02-10 18:01:25,Zoe Evans,zoe.evans16@email.com,pending,pending,1843.67,1759.90,136.57,0.00,52.80,USD,Miami,US,434,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567063,2063,2026-02-10 18:01:25,Zoe Evans,zoe.evans16@email.com,pending,pending,1843.67,1759.90,136.57,0.00,52.80,USD,Miami,US,435,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567063,2063,2026-02-10 18:01:25,Zoe Evans,zoe.evans16@email.com,pending,pending,1843.67,1759.90,136.57,0.00,52.80,USD,Miami,US,436,Structured Tote,SKU-PRM-009,3,159.99,479.97
+8001234567064,2064,2026-02-14 12:50:49,Daniel Cooper,daniel.cooper17@email.com,unfulfilled,cancelled,953.25,909.94,70.61,0.00,27.30,USD,Chicago,US,437,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567064,2064,2026-02-14 12:50:49,Daniel Cooper,daniel.cooper17@email.com,unfulfilled,cancelled,953.25,909.94,70.61,0.00,27.30,USD,Chicago,US,438,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567064,2064,2026-02-14 12:50:49,Daniel Cooper,daniel.cooper17@email.com,unfulfilled,cancelled,953.25,909.94,70.61,0.00,27.30,USD,Chicago,US,439,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567064,2064,2026-02-14 12:50:49,Daniel Cooper,daniel.cooper17@email.com,unfulfilled,cancelled,953.25,909.94,70.61,0.00,27.30,USD,Chicago,US,440,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567064,2064,2026-02-14 12:50:49,Daniel Cooper,daniel.cooper17@email.com,unfulfilled,cancelled,953.25,909.94,70.61,0.00,27.30,USD,Chicago,US,441,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567065,2065,2026-02-11 15:32:08,Aurora Murphy,aurora.murphy18@email.com,unfulfilled,cancelled,1758.56,1769.89,130.26,0.00,141.59,USD,Seattle,US,442,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567065,2065,2026-02-11 15:32:08,Aurora Murphy,aurora.murphy18@email.com,unfulfilled,cancelled,1758.56,1769.89,130.26,0.00,141.59,USD,Seattle,US,443,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567065,2065,2026-02-11 15:32:08,Aurora Murphy,aurora.murphy18@email.com,unfulfilled,cancelled,1758.56,1769.89,130.26,0.00,141.59,USD,Seattle,US,444,Merino Sweater,SKU-PRM-005,3,119.99,359.97
+8001234567065,2065,2026-02-11 15:32:08,Aurora Murphy,aurora.murphy18@email.com,unfulfilled,cancelled,1758.56,1769.89,130.26,0.00,141.59,USD,Seattle,US,445,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567065,2065,2026-02-11 15:32:08,Aurora Murphy,aurora.murphy18@email.com,unfulfilled,cancelled,1758.56,1769.89,130.26,0.00,141.59,USD,Seattle,US,446,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567065,2065,2026-02-11 15:32:08,Aurora Murphy,aurora.murphy18@email.com,unfulfilled,cancelled,1758.56,1769.89,130.26,0.00,141.59,USD,Seattle,US,447,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567065,2065,2026-02-11 15:32:08,Aurora Murphy,aurora.murphy18@email.com,unfulfilled,cancelled,1758.56,1769.89,130.26,0.00,141.59,USD,Seattle,US,448,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567065,2065,2026-02-11 15:32:08,Aurora Murphy,aurora.murphy18@email.com,unfulfilled,cancelled,1758.56,1769.89,130.26,0.00,141.59,USD,Seattle,US,449,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567066,2066,2026-02-15 10:32:00,Jackson Martinez,jackson.martinez19@email.com,pending,pending,1727.90,1599.91,127.99,0.00,0.00,USD,New York,US,450,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567066,2066,2026-02-15 10:32:00,Jackson Martinez,jackson.martinez19@email.com,pending,pending,1727.90,1599.91,127.99,0.00,0.00,USD,New York,US,451,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567066,2066,2026-02-15 10:32:00,Jackson Martinez,jackson.martinez19@email.com,pending,pending,1727.90,1599.91,127.99,0.00,0.00,USD,New York,US,452,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567066,2066,2026-02-15 10:32:00,Jackson Martinez,jackson.martinez19@email.com,pending,pending,1727.90,1599.91,127.99,0.00,0.00,USD,New York,US,453,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567066,2066,2026-02-15 10:32:00,Jackson Martinez,jackson.martinez19@email.com,pending,pending,1727.90,1599.91,127.99,0.00,0.00,USD,New York,US,454,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567066,2066,2026-02-15 10:32:00,Jackson Martinez,jackson.martinez19@email.com,pending,pending,1727.90,1599.91,127.99,0.00,0.00,USD,New York,US,455,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567066,2066,2026-02-15 10:32:00,Jackson Martinez,jackson.martinez19@email.com,pending,pending,1727.90,1599.91,127.99,0.00,0.00,USD,New York,US,456,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567067,2067,2026-02-11 15:30:51,Scarlett Ward,scarlett.ward20@email.com,unfulfilled,cancelled,1943.87,1799.88,143.99,0.00,0.00,USD,San Francisco,US,457,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567067,2067,2026-02-11 15:30:51,Scarlett Ward,scarlett.ward20@email.com,unfulfilled,cancelled,1943.87,1799.88,143.99,0.00,0.00,USD,San Francisco,US,458,Leather Gloves,SKU-PRM-007,3,79.99,239.97
+8001234567067,2067,2026-02-11 15:30:51,Scarlett Ward,scarlett.ward20@email.com,unfulfilled,cancelled,1943.87,1799.88,143.99,0.00,0.00,USD,San Francisco,US,459,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567067,2067,2026-02-11 15:30:51,Scarlett Ward,scarlett.ward20@email.com,unfulfilled,cancelled,1943.87,1799.88,143.99,0.00,0.00,USD,San Francisco,US,460,Luxury Travel Backpack,SKU-PRM-012,3,139.99,419.97
+8001234567067,2067,2026-02-11 15:30:51,Scarlett Ward,scarlett.ward20@email.com,unfulfilled,cancelled,1943.87,1799.88,143.99,0.00,0.00,USD,San Francisco,US,461,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567067,2067,2026-02-11 15:30:51,Scarlett Ward,scarlett.ward20@email.com,unfulfilled,cancelled,1943.87,1799.88,143.99,0.00,0.00,USD,San Francisco,US,462,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567068,2068,2026-02-15 14:52:17,Madison Lee,madison.lee21@email.com,fulfilled,paid,1144.72,1059.93,84.79,0.00,0.00,USD,Miami,US,463,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567068,2068,2026-02-15 14:52:17,Madison Lee,madison.lee21@email.com,fulfilled,paid,1144.72,1059.93,84.79,0.00,0.00,USD,Miami,US,464,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567068,2068,2026-02-15 14:52:17,Madison Lee,madison.lee21@email.com,fulfilled,paid,1144.72,1059.93,84.79,0.00,0.00,USD,Miami,US,465,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567068,2068,2026-02-15 14:52:17,Madison Lee,madison.lee21@email.com,fulfilled,paid,1144.72,1059.93,84.79,0.00,0.00,USD,Miami,US,466,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567068,2068,2026-02-15 14:52:17,Madison Lee,madison.lee21@email.com,fulfilled,paid,1144.72,1059.93,84.79,0.00,0.00,USD,Miami,US,467,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567069,2069,2026-02-09 14:38:10,Evelyn Butler,evelyn.butler22@email.com,unfulfilled,pending,1097.76,1069.94,81.32,0.00,53.50,USD,Chicago,US,468,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567069,2069,2026-02-09 14:38:10,Evelyn Butler,evelyn.butler22@email.com,unfulfilled,pending,1097.76,1069.94,81.32,0.00,53.50,USD,Chicago,US,469,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567069,2069,2026-02-09 14:38:10,Evelyn Butler,evelyn.butler22@email.com,unfulfilled,pending,1097.76,1069.94,81.32,0.00,53.50,USD,Chicago,US,470,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567069,2069,2026-02-09 14:38:10,Evelyn Butler,evelyn.butler22@email.com,unfulfilled,pending,1097.76,1069.94,81.32,0.00,53.50,USD,Chicago,US,471,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567069,2069,2026-02-09 14:38:10,Evelyn Butler,evelyn.butler22@email.com,unfulfilled,pending,1097.76,1069.94,81.32,0.00,53.50,USD,Chicago,US,472,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567069,2069,2026-02-09 14:38:10,Evelyn Butler,evelyn.butler22@email.com,unfulfilled,pending,1097.76,1069.94,81.32,0.00,53.50,USD,Chicago,US,473,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567070,2070,2026-02-09 17:58:04,Caleb Price,caleb.price0@email.com,unfulfilled,cancelled,2092.92,2039.88,155.03,0.00,101.99,USD,Boston,US,474,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567070,2070,2026-02-09 17:58:04,Caleb Price,caleb.price0@email.com,unfulfilled,cancelled,2092.92,2039.88,155.03,0.00,101.99,USD,Boston,US,475,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567070,2070,2026-02-09 17:58:04,Caleb Price,caleb.price0@email.com,unfulfilled,cancelled,2092.92,2039.88,155.03,0.00,101.99,USD,Boston,US,476,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567070,2070,2026-02-09 17:58:04,Caleb Price,caleb.price0@email.com,unfulfilled,cancelled,2092.92,2039.88,155.03,0.00,101.99,USD,Boston,US,477,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567070,2070,2026-02-09 17:58:04,Caleb Price,caleb.price0@email.com,unfulfilled,cancelled,2092.92,2039.88,155.03,0.00,101.99,USD,Boston,US,478,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567070,2070,2026-02-09 17:58:04,Caleb Price,caleb.price0@email.com,unfulfilled,cancelled,2092.92,2039.88,155.03,0.00,101.99,USD,Boston,US,479,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567070,2070,2026-02-09 17:58:04,Caleb Price,caleb.price0@email.com,unfulfilled,cancelled,2092.92,2039.88,155.03,0.00,101.99,USD,Boston,US,480,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567070,2070,2026-02-09 17:58:04,Caleb Price,caleb.price0@email.com,unfulfilled,cancelled,2092.92,2039.88,155.03,0.00,101.99,USD,Boston,US,481,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567071,2071,2026-02-12 14:44:56,Thomas Hughes,thomas.hughes1@email.com,pending,cancelled,3045.43,2819.84,225.59,0.00,0.00,USD,Seattle,US,482,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567071,2071,2026-02-12 14:44:56,Thomas Hughes,thomas.hughes1@email.com,pending,cancelled,3045.43,2819.84,225.59,0.00,0.00,USD,Seattle,US,483,Wool Trousers,SKU-PRM-006,4,129.99,519.96
+8001234567071,2071,2026-02-12 14:44:56,Thomas Hughes,thomas.hughes1@email.com,pending,cancelled,3045.43,2819.84,225.59,0.00,0.00,USD,Seattle,US,484,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567071,2071,2026-02-12 14:44:56,Thomas Hughes,thomas.hughes1@email.com,pending,cancelled,3045.43,2819.84,225.59,0.00,0.00,USD,Seattle,US,485,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567071,2071,2026-02-12 14:44:56,Thomas Hughes,thomas.hughes1@email.com,pending,cancelled,3045.43,2819.84,225.59,0.00,0.00,USD,Seattle,US,486,Chelsea Boots,SKU-PRM-004,3,189.99,569.97
+8001234567071,2071,2026-02-12 14:44:56,Thomas Hughes,thomas.hughes1@email.com,pending,cancelled,3045.43,2819.84,225.59,0.00,0.00,USD,Seattle,US,487,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567071,2071,2026-02-12 14:44:56,Thomas Hughes,thomas.hughes1@email.com,pending,cancelled,3045.43,2819.84,225.59,0.00,0.00,USD,Seattle,US,488,Leather Weekender,SKU-PRM-002,4,249.99,999.96
+8001234567072,2072,2026-02-12 12:49:46,Lucas Martin,lucas.martin2@email.com,pending,paid,2713.14,2589.87,200.97,0.00,77.70,USD,Boston,US,489,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567072,2072,2026-02-12 12:49:46,Lucas Martin,lucas.martin2@email.com,pending,paid,2713.14,2589.87,200.97,0.00,77.70,USD,Boston,US,490,Leather Weekender,SKU-PRM-002,3,249.99,749.97
+8001234567072,2072,2026-02-12 12:49:46,Lucas Martin,lucas.martin2@email.com,pending,paid,2713.14,2589.87,200.97,0.00,77.70,USD,Boston,US,491,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567072,2072,2026-02-12 12:49:46,Lucas Martin,lucas.martin2@email.com,pending,paid,2713.14,2589.87,200.97,0.00,77.70,USD,Boston,US,492,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567072,2072,2026-02-12 12:49:46,Lucas Martin,lucas.martin2@email.com,pending,paid,2713.14,2589.87,200.97,0.00,77.70,USD,Boston,US,493,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567072,2072,2026-02-12 12:49:46,Lucas Martin,lucas.martin2@email.com,pending,paid,2713.14,2589.87,200.97,0.00,77.70,USD,Boston,US,494,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567072,2072,2026-02-12 12:49:46,Lucas Martin,lucas.martin2@email.com,pending,paid,2713.14,2589.87,200.97,0.00,77.70,USD,Boston,US,495,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567072,2072,2026-02-12 12:49:46,Lucas Martin,lucas.martin2@email.com,pending,paid,2713.14,2589.87,200.97,0.00,77.70,USD,Boston,US,496,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567073,2073,2026-02-20 18:40:39,Henry Cox,henry.cox3@email.com,pending,cancelled,2472.49,2409.83,183.15,0.00,120.49,USD,Chicago,US,497,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567073,2073,2026-02-20 18:40:39,Henry Cox,henry.cox3@email.com,pending,cancelled,2472.49,2409.83,183.15,0.00,120.49,USD,Chicago,US,498,Leather Gloves,SKU-PRM-007,4,79.99,319.96
+8001234567073,2073,2026-02-20 18:40:39,Henry Cox,henry.cox3@email.com,pending,cancelled,2472.49,2409.83,183.15,0.00,120.49,USD,Chicago,US,499,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567073,2073,2026-02-20 18:40:39,Henry Cox,henry.cox3@email.com,pending,cancelled,2472.49,2409.83,183.15,0.00,120.49,USD,Chicago,US,500,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567073,2073,2026-02-20 18:40:39,Henry Cox,henry.cox3@email.com,pending,cancelled,2472.49,2409.83,183.15,0.00,120.49,USD,Chicago,US,501,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567073,2073,2026-02-20 18:40:39,Henry Cox,henry.cox3@email.com,pending,cancelled,2472.49,2409.83,183.15,0.00,120.49,USD,Chicago,US,502,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567073,2073,2026-02-20 18:40:39,Henry Cox,henry.cox3@email.com,pending,cancelled,2472.49,2409.83,183.15,0.00,120.49,USD,Chicago,US,503,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567073,2073,2026-02-20 18:40:39,Henry Cox,henry.cox3@email.com,pending,cancelled,2472.49,2409.83,183.15,0.00,120.49,USD,Chicago,US,504,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567074,2074,2026-02-18 11:57:15,Mia Parker,mia.parker4@email.com,unfulfilled,cancelled,2595.61,2529.83,192.27,0.00,126.49,USD,Chicago,US,505,Wool Trousers,SKU-PRM-006,3,129.99,389.97
+8001234567074,2074,2026-02-18 11:57:15,Mia Parker,mia.parker4@email.com,unfulfilled,cancelled,2595.61,2529.83,192.27,0.00,126.49,USD,Chicago,US,506,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567074,2074,2026-02-18 11:57:15,Mia Parker,mia.parker4@email.com,unfulfilled,cancelled,2595.61,2529.83,192.27,0.00,126.49,USD,Chicago,US,507,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567074,2074,2026-02-18 11:57:15,Mia Parker,mia.parker4@email.com,unfulfilled,cancelled,2595.61,2529.83,192.27,0.00,126.49,USD,Chicago,US,508,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567074,2074,2026-02-18 11:57:15,Mia Parker,mia.parker4@email.com,unfulfilled,cancelled,2595.61,2529.83,192.27,0.00,126.49,USD,Chicago,US,509,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567074,2074,2026-02-18 11:57:15,Mia Parker,mia.parker4@email.com,unfulfilled,cancelled,2595.61,2529.83,192.27,0.00,126.49,USD,Chicago,US,510,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567074,2074,2026-02-18 11:57:15,Mia Parker,mia.parker4@email.com,unfulfilled,cancelled,2595.61,2529.83,192.27,0.00,126.49,USD,Chicago,US,511,Fine Knit Scarf,SKU-PRM-011,3,69.99,209.97
+8001234567074,2074,2026-02-18 11:57:15,Mia Parker,mia.parker4@email.com,unfulfilled,cancelled,2595.61,2529.83,192.27,0.00,126.49,USD,Chicago,US,512,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567074,2074,2026-02-18 11:57:15,Mia Parker,mia.parker4@email.com,unfulfilled,cancelled,2595.61,2529.83,192.27,0.00,126.49,USD,Chicago,US,513,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567075,2075,2026-02-17 17:44:43,Aria Murphy,aria.murphy5@email.com,unfulfilled,cancelled,1610.71,1569.89,119.31,0.00,78.49,USD,Miami,US,514,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567075,2075,2026-02-17 17:44:43,Aria Murphy,aria.murphy5@email.com,unfulfilled,cancelled,1610.71,1569.89,119.31,0.00,78.49,USD,Miami,US,515,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567075,2075,2026-02-17 17:44:43,Aria Murphy,aria.murphy5@email.com,unfulfilled,cancelled,1610.71,1569.89,119.31,0.00,78.49,USD,Miami,US,516,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567075,2075,2026-02-17 17:44:43,Aria Murphy,aria.murphy5@email.com,unfulfilled,cancelled,1610.71,1569.89,119.31,0.00,78.49,USD,Miami,US,517,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567075,2075,2026-02-17 17:44:43,Aria Murphy,aria.murphy5@email.com,unfulfilled,cancelled,1610.71,1569.89,119.31,0.00,78.49,USD,Miami,US,518,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567075,2075,2026-02-17 17:44:43,Aria Murphy,aria.murphy5@email.com,unfulfilled,cancelled,1610.71,1569.89,119.31,0.00,78.49,USD,Miami,US,519,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567075,2075,2026-02-17 17:44:43,Aria Murphy,aria.murphy5@email.com,unfulfilled,cancelled,1610.71,1569.89,119.31,0.00,78.49,USD,Miami,US,520,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567076,2076,2026-02-21 16:46:47,Liam Sanders,liam.sanders6@email.com,unfulfilled,pending,1939.02,1889.88,143.63,0.00,94.49,USD,Chicago,US,521,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567076,2076,2026-02-21 16:46:47,Liam Sanders,liam.sanders6@email.com,unfulfilled,pending,1939.02,1889.88,143.63,0.00,94.49,USD,Chicago,US,522,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567076,2076,2026-02-21 16:46:47,Liam Sanders,liam.sanders6@email.com,unfulfilled,pending,1939.02,1889.88,143.63,0.00,94.49,USD,Chicago,US,523,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567076,2076,2026-02-21 16:46:47,Liam Sanders,liam.sanders6@email.com,unfulfilled,pending,1939.02,1889.88,143.63,0.00,94.49,USD,Chicago,US,524,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567076,2076,2026-02-21 16:46:47,Liam Sanders,liam.sanders6@email.com,unfulfilled,pending,1939.02,1889.88,143.63,0.00,94.49,USD,Chicago,US,525,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567076,2076,2026-02-21 16:46:47,Liam Sanders,liam.sanders6@email.com,unfulfilled,pending,1939.02,1889.88,143.63,0.00,94.49,USD,Chicago,US,526,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567076,2076,2026-02-21 16:46:47,Liam Sanders,liam.sanders6@email.com,unfulfilled,pending,1939.02,1889.88,143.63,0.00,94.49,USD,Chicago,US,527,Tailored Blazer,SKU-PRM-003,3,219.99,659.97
+8001234567077,2077,2026-02-21 16:39:01,Aiden Harris,aiden.harris7@email.com,pending,cancelled,1152.28,1099.93,85.35,0.00,33.00,USD,Boston,US,528,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567077,2077,2026-02-21 16:39:01,Aiden Harris,aiden.harris7@email.com,pending,cancelled,1152.28,1099.93,85.35,0.00,33.00,USD,Boston,US,529,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567077,2077,2026-02-21 16:39:01,Aiden Harris,aiden.harris7@email.com,pending,cancelled,1152.28,1099.93,85.35,0.00,33.00,USD,Boston,US,530,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567077,2077,2026-02-21 16:39:01,Aiden Harris,aiden.harris7@email.com,pending,cancelled,1152.28,1099.93,85.35,0.00,33.00,USD,Boston,US,531,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567077,2077,2026-02-21 16:39:01,Aiden Harris,aiden.harris7@email.com,pending,cancelled,1152.28,1099.93,85.35,0.00,33.00,USD,Boston,US,532,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567077,2077,2026-02-21 16:39:01,Aiden Harris,aiden.harris7@email.com,pending,cancelled,1152.28,1099.93,85.35,0.00,33.00,USD,Boston,US,533,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567078,2078,2026-02-19 10:45:02,Sebastian Hughes,sebastian.hughes8@email.com,pending,pending,1843.65,1759.88,136.57,0.00,52.80,USD,Seattle,US,534,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567078,2078,2026-02-19 10:45:02,Sebastian Hughes,sebastian.hughes8@email.com,pending,pending,1843.65,1759.88,136.57,0.00,52.80,USD,Seattle,US,535,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567078,2078,2026-02-19 10:45:02,Sebastian Hughes,sebastian.hughes8@email.com,pending,pending,1843.65,1759.88,136.57,0.00,52.80,USD,Seattle,US,536,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567078,2078,2026-02-19 10:45:02,Sebastian Hughes,sebastian.hughes8@email.com,pending,pending,1843.65,1759.88,136.57,0.00,52.80,USD,Seattle,US,537,Merino Sweater,SKU-PRM-005,3,119.99,359.97
+8001234567078,2078,2026-02-19 10:45:02,Sebastian Hughes,sebastian.hughes8@email.com,pending,pending,1843.65,1759.88,136.57,0.00,52.80,USD,Seattle,US,538,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567078,2078,2026-02-19 10:45:02,Sebastian Hughes,sebastian.hughes8@email.com,pending,pending,1843.65,1759.88,136.57,0.00,52.80,USD,Seattle,US,539,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567078,2078,2026-02-19 10:45:02,Sebastian Hughes,sebastian.hughes8@email.com,pending,pending,1843.65,1759.88,136.57,0.00,52.80,USD,Seattle,US,540,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567078,2078,2026-02-19 10:45:02,Sebastian Hughes,sebastian.hughes8@email.com,pending,pending,1843.65,1759.88,136.57,0.00,52.80,USD,Seattle,US,541,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567079,2079,2026-02-19 21:51:07,Noah Cooper,noah.cooper9@email.com,unfulfilled,refunded,1436.32,1329.93,106.39,0.00,0.00,USD,Boston,US,542,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567079,2079,2026-02-19 21:51:07,Noah Cooper,noah.cooper9@email.com,unfulfilled,refunded,1436.32,1329.93,106.39,0.00,0.00,USD,Boston,US,543,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567079,2079,2026-02-19 21:51:07,Noah Cooper,noah.cooper9@email.com,unfulfilled,refunded,1436.32,1329.93,106.39,0.00,0.00,USD,Boston,US,544,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567079,2079,2026-02-19 21:51:07,Noah Cooper,noah.cooper9@email.com,unfulfilled,refunded,1436.32,1329.93,106.39,0.00,0.00,USD,Boston,US,545,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567079,2079,2026-02-19 21:51:07,Noah Cooper,noah.cooper9@email.com,unfulfilled,refunded,1436.32,1329.93,106.39,0.00,0.00,USD,Boston,US,546,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567080,2080,2026-02-21 15:23:26,Isabella Jackson,isabella.jackson10@email.com,pending,pending,2354.26,2179.87,174.39,0.00,0.00,USD,New York,US,547,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567080,2080,2026-02-21 15:23:26,Isabella Jackson,isabella.jackson10@email.com,pending,pending,2354.26,2179.87,174.39,0.00,0.00,USD,New York,US,548,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567080,2080,2026-02-21 15:23:26,Isabella Jackson,isabella.jackson10@email.com,pending,pending,2354.26,2179.87,174.39,0.00,0.00,USD,New York,US,549,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567080,2080,2026-02-21 15:23:26,Isabella Jackson,isabella.jackson10@email.com,pending,pending,2354.26,2179.87,174.39,0.00,0.00,USD,New York,US,550,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567080,2080,2026-02-21 15:23:26,Isabella Jackson,isabella.jackson10@email.com,pending,pending,2354.26,2179.87,174.39,0.00,0.00,USD,New York,US,551,Structured Tote,SKU-PRM-009,3,159.99,479.97
+8001234567080,2080,2026-02-21 15:23:26,Isabella Jackson,isabella.jackson10@email.com,pending,pending,2354.26,2179.87,174.39,0.00,0.00,USD,New York,US,552,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567080,2080,2026-02-21 15:23:26,Isabella Jackson,isabella.jackson10@email.com,pending,pending,2354.26,2179.87,174.39,0.00,0.00,USD,New York,US,553,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567080,2080,2026-02-21 15:23:26,Isabella Jackson,isabella.jackson10@email.com,pending,pending,2354.26,2179.87,174.39,0.00,0.00,USD,New York,US,554,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567081,2081,2026-02-16 15:40:30,Harper Kim,harper.kim11@email.com,fulfilled,refunded,3634.99,3469.82,269.26,0.00,104.09,USD,Miami,US,555,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567081,2081,2026-02-16 15:40:30,Harper Kim,harper.kim11@email.com,fulfilled,refunded,3634.99,3469.82,269.26,0.00,104.09,USD,Miami,US,556,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567081,2081,2026-02-16 15:40:30,Harper Kim,harper.kim11@email.com,fulfilled,refunded,3634.99,3469.82,269.26,0.00,104.09,USD,Miami,US,557,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567081,2081,2026-02-16 15:40:30,Harper Kim,harper.kim11@email.com,fulfilled,refunded,3634.99,3469.82,269.26,0.00,104.09,USD,Miami,US,558,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567081,2081,2026-02-16 15:40:30,Harper Kim,harper.kim11@email.com,fulfilled,refunded,3634.99,3469.82,269.26,0.00,104.09,USD,Miami,US,559,Leather Weekender,SKU-PRM-002,3,249.99,749.97
+8001234567081,2081,2026-02-16 15:40:30,Harper Kim,harper.kim11@email.com,fulfilled,refunded,3634.99,3469.82,269.26,0.00,104.09,USD,Miami,US,560,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567081,2081,2026-02-16 15:40:30,Harper Kim,harper.kim11@email.com,fulfilled,refunded,3634.99,3469.82,269.26,0.00,104.09,USD,Miami,US,561,Wool Trousers,SKU-PRM-006,4,129.99,519.96
+8001234567081,2081,2026-02-16 15:40:30,Harper Kim,harper.kim11@email.com,fulfilled,refunded,3634.99,3469.82,269.26,0.00,104.09,USD,Miami,US,562,Cashmere Coat,SKU-PRM-001,3,329.99,989.97
+8001234567082,2082,2026-02-18 17:08:08,Aiden Cooper,aiden.cooper12@email.com,unfulfilled,refunded,2356.97,2249.88,174.59,0.00,67.50,USD,Boston,US,563,Wool Trousers,SKU-PRM-006,3,129.99,389.97
+8001234567082,2082,2026-02-18 17:08:08,Aiden Cooper,aiden.cooper12@email.com,unfulfilled,refunded,2356.97,2249.88,174.59,0.00,67.50,USD,Boston,US,564,Cashmere Coat,SKU-PRM-001,3,329.99,989.97
+8001234567082,2082,2026-02-18 17:08:08,Aiden Cooper,aiden.cooper12@email.com,unfulfilled,refunded,2356.97,2249.88,174.59,0.00,67.50,USD,Boston,US,565,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567082,2082,2026-02-18 17:08:08,Aiden Cooper,aiden.cooper12@email.com,unfulfilled,refunded,2356.97,2249.88,174.59,0.00,67.50,USD,Boston,US,566,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567082,2082,2026-02-18 17:08:08,Aiden Cooper,aiden.cooper12@email.com,unfulfilled,refunded,2356.97,2249.88,174.59,0.00,67.50,USD,Boston,US,567,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567082,2082,2026-02-18 17:08:08,Aiden Cooper,aiden.cooper12@email.com,unfulfilled,refunded,2356.97,2249.88,174.59,0.00,67.50,USD,Boston,US,568,Aviator Sunglasses,SKU-PRM-010,3,149.99,449.97
+8001234567083,2083,2026-02-20 12:51:59,Aurora Patel,aurora.patel13@email.com,pending,cancelled,2656.63,2459.84,196.79,0.00,0.00,USD,San Francisco,US,569,Wool Trousers,SKU-PRM-006,2,129.99,259.98
+8001234567083,2083,2026-02-20 12:51:59,Aurora Patel,aurora.patel13@email.com,pending,cancelled,2656.63,2459.84,196.79,0.00,0.00,USD,San Francisco,US,570,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567083,2083,2026-02-20 12:51:59,Aurora Patel,aurora.patel13@email.com,pending,cancelled,2656.63,2459.84,196.79,0.00,0.00,USD,San Francisco,US,571,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567083,2083,2026-02-20 12:51:59,Aurora Patel,aurora.patel13@email.com,pending,cancelled,2656.63,2459.84,196.79,0.00,0.00,USD,San Francisco,US,572,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567083,2083,2026-02-20 12:51:59,Aurora Patel,aurora.patel13@email.com,pending,cancelled,2656.63,2459.84,196.79,0.00,0.00,USD,San Francisco,US,573,Chelsea Boots,SKU-PRM-004,3,189.99,569.97
+8001234567083,2083,2026-02-20 12:51:59,Aurora Patel,aurora.patel13@email.com,pending,cancelled,2656.63,2459.84,196.79,0.00,0.00,USD,San Francisco,US,574,Silk Button-Up,SKU-PRM-008,3,99.99,299.97
+8001234567083,2083,2026-02-20 12:51:59,Aurora Patel,aurora.patel13@email.com,pending,cancelled,2656.63,2459.84,196.79,0.00,0.00,USD,San Francisco,US,575,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567083,2083,2026-02-20 12:51:59,Aurora Patel,aurora.patel13@email.com,pending,cancelled,2656.63,2459.84,196.79,0.00,0.00,USD,San Francisco,US,576,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567084,2084,2026-02-18 10:14:46,Caleb Price,caleb.price14@email.com,unfulfilled,cancelled,1328.30,1229.91,98.39,0.00,0.00,USD,Miami,US,577,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567084,2084,2026-02-18 10:14:46,Caleb Price,caleb.price14@email.com,unfulfilled,cancelled,1328.30,1229.91,98.39,0.00,0.00,USD,Miami,US,578,Structured Tote,SKU-PRM-009,3,159.99,479.97
+8001234567084,2084,2026-02-18 10:14:46,Caleb Price,caleb.price14@email.com,unfulfilled,cancelled,1328.30,1229.91,98.39,0.00,0.00,USD,Miami,US,579,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567084,2084,2026-02-18 10:14:46,Caleb Price,caleb.price14@email.com,unfulfilled,cancelled,1328.30,1229.91,98.39,0.00,0.00,USD,Miami,US,580,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567084,2084,2026-02-18 10:14:46,Caleb Price,caleb.price14@email.com,unfulfilled,cancelled,1328.30,1229.91,98.39,0.00,0.00,USD,Miami,US,581,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567084,2084,2026-02-18 10:14:46,Caleb Price,caleb.price14@email.com,unfulfilled,cancelled,1328.30,1229.91,98.39,0.00,0.00,USD,Miami,US,582,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567084,2084,2026-02-18 10:14:46,Caleb Price,caleb.price14@email.com,unfulfilled,cancelled,1328.30,1229.91,98.39,0.00,0.00,USD,Miami,US,583,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567085,2085,2026-02-19 17:46:11,Sebastian Price,sebastian.price15@email.com,unfulfilled,cancelled,2030.28,1879.89,150.39,0.00,0.00,USD,Miami,US,584,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567085,2085,2026-02-19 17:46:11,Sebastian Price,sebastian.price15@email.com,unfulfilled,cancelled,2030.28,1879.89,150.39,0.00,0.00,USD,Miami,US,585,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567085,2085,2026-02-19 17:46:11,Sebastian Price,sebastian.price15@email.com,unfulfilled,cancelled,2030.28,1879.89,150.39,0.00,0.00,USD,Miami,US,586,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567085,2085,2026-02-19 17:46:11,Sebastian Price,sebastian.price15@email.com,unfulfilled,cancelled,2030.28,1879.89,150.39,0.00,0.00,USD,Miami,US,587,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567085,2085,2026-02-19 17:46:11,Sebastian Price,sebastian.price15@email.com,unfulfilled,cancelled,2030.28,1879.89,150.39,0.00,0.00,USD,Miami,US,588,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567085,2085,2026-02-19 17:46:11,Sebastian Price,sebastian.price15@email.com,unfulfilled,cancelled,2030.28,1879.89,150.39,0.00,0.00,USD,Miami,US,589,Luxury Travel Backpack,SKU-PRM-012,3,139.99,419.97
+8001234567085,2085,2026-02-19 17:46:11,Sebastian Price,sebastian.price15@email.com,unfulfilled,cancelled,2030.28,1879.89,150.39,0.00,0.00,USD,Miami,US,590,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567085,2085,2026-02-19 17:46:11,Sebastian Price,sebastian.price15@email.com,unfulfilled,cancelled,2030.28,1879.89,150.39,0.00,0.00,USD,Miami,US,591,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567086,2086,2026-02-17 09:17:11,Jackson Brooks,jackson.brooks16@email.com,pending,paid,1867.86,1879.89,138.36,0.00,150.39,USD,Boston,US,592,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567086,2086,2026-02-17 09:17:11,Jackson Brooks,jackson.brooks16@email.com,pending,paid,1867.86,1879.89,138.36,0.00,150.39,USD,Boston,US,593,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567086,2086,2026-02-17 09:17:11,Jackson Brooks,jackson.brooks16@email.com,pending,paid,1867.86,1879.89,138.36,0.00,150.39,USD,Boston,US,594,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567086,2086,2026-02-17 09:17:11,Jackson Brooks,jackson.brooks16@email.com,pending,paid,1867.86,1879.89,138.36,0.00,150.39,USD,Boston,US,595,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567086,2086,2026-02-17 09:17:11,Jackson Brooks,jackson.brooks16@email.com,pending,paid,1867.86,1879.89,138.36,0.00,150.39,USD,Boston,US,596,Structured Tote,SKU-PRM-009,4,159.99,639.96
+8001234567086,2086,2026-02-17 09:17:11,Jackson Brooks,jackson.brooks16@email.com,pending,paid,1867.86,1879.89,138.36,0.00,150.39,USD,Boston,US,597,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567086,2086,2026-02-17 09:17:11,Jackson Brooks,jackson.brooks16@email.com,pending,paid,1867.86,1879.89,138.36,0.00,150.39,USD,Boston,US,598,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567087,2087,2026-02-18 20:28:03,Chloe Ramirez,chloe.ramirez17@email.com,fulfilled,refunded,1843.65,1759.88,136.57,0.00,52.80,USD,Boston,US,599,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567087,2087,2026-02-18 20:28:03,Chloe Ramirez,chloe.ramirez17@email.com,fulfilled,refunded,1843.65,1759.88,136.57,0.00,52.80,USD,Boston,US,600,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567087,2087,2026-02-18 20:28:03,Chloe Ramirez,chloe.ramirez17@email.com,fulfilled,refunded,1843.65,1759.88,136.57,0.00,52.80,USD,Boston,US,601,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567087,2087,2026-02-18 20:28:03,Chloe Ramirez,chloe.ramirez17@email.com,fulfilled,refunded,1843.65,1759.88,136.57,0.00,52.80,USD,Boston,US,602,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567087,2087,2026-02-18 20:28:03,Chloe Ramirez,chloe.ramirez17@email.com,fulfilled,refunded,1843.65,1759.88,136.57,0.00,52.80,USD,Boston,US,603,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567087,2087,2026-02-18 20:28:03,Chloe Ramirez,chloe.ramirez17@email.com,fulfilled,refunded,1843.65,1759.88,136.57,0.00,52.80,USD,Boston,US,604,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567087,2087,2026-02-18 20:28:03,Chloe Ramirez,chloe.ramirez17@email.com,fulfilled,refunded,1843.65,1759.88,136.57,0.00,52.80,USD,Boston,US,605,Wool Trousers,SKU-PRM-006,3,129.99,389.97
+8001234567087,2087,2026-02-18 20:28:03,Chloe Ramirez,chloe.ramirez17@email.com,fulfilled,refunded,1843.65,1759.88,136.57,0.00,52.80,USD,Boston,US,606,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567087,2087,2026-02-18 20:28:03,Chloe Ramirez,chloe.ramirez17@email.com,fulfilled,refunded,1843.65,1759.88,136.57,0.00,52.80,USD,Boston,US,607,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567088,2088,2026-02-20 13:18:34,Amelia Perry,amelia.perry18@email.com,fulfilled,refunded,1251.87,1259.94,92.73,0.00,100.80,USD,San Francisco,US,608,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567088,2088,2026-02-20 13:18:34,Amelia Perry,amelia.perry18@email.com,fulfilled,refunded,1251.87,1259.94,92.73,0.00,100.80,USD,San Francisco,US,609,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567088,2088,2026-02-20 13:18:34,Amelia Perry,amelia.perry18@email.com,fulfilled,refunded,1251.87,1259.94,92.73,0.00,100.80,USD,San Francisco,US,610,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567088,2088,2026-02-20 13:18:34,Amelia Perry,amelia.perry18@email.com,fulfilled,refunded,1251.87,1259.94,92.73,0.00,100.80,USD,San Francisco,US,611,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567088,2088,2026-02-20 13:18:34,Amelia Perry,amelia.perry18@email.com,fulfilled,refunded,1251.87,1259.94,92.73,0.00,100.80,USD,San Francisco,US,612,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567088,2088,2026-02-20 13:18:34,Amelia Perry,amelia.perry18@email.com,fulfilled,refunded,1251.87,1259.94,92.73,0.00,100.80,USD,San Francisco,US,613,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567089,2089,2026-02-18 13:11:07,Lincoln Brooks,lincoln.brooks19@email.com,unfulfilled,cancelled,2127.47,1969.88,157.59,0.00,0.00,USD,Seattle,US,614,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567089,2089,2026-02-18 13:11:07,Lincoln Brooks,lincoln.brooks19@email.com,unfulfilled,cancelled,2127.47,1969.88,157.59,0.00,0.00,USD,Seattle,US,615,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567089,2089,2026-02-18 13:11:07,Lincoln Brooks,lincoln.brooks19@email.com,unfulfilled,cancelled,2127.47,1969.88,157.59,0.00,0.00,USD,Seattle,US,616,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567089,2089,2026-02-18 13:11:07,Lincoln Brooks,lincoln.brooks19@email.com,unfulfilled,cancelled,2127.47,1969.88,157.59,0.00,0.00,USD,Seattle,US,617,Silk Button-Up,SKU-PRM-008,3,99.99,299.97
+8001234567089,2089,2026-02-18 13:11:07,Lincoln Brooks,lincoln.brooks19@email.com,unfulfilled,cancelled,2127.47,1969.88,157.59,0.00,0.00,USD,Seattle,US,618,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567089,2089,2026-02-18 13:11:07,Lincoln Brooks,lincoln.brooks19@email.com,unfulfilled,cancelled,2127.47,1969.88,157.59,0.00,0.00,USD,Seattle,US,619,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567090,2090,2026-02-20 17:02:17,Zoe Davis,zoe.davis20@email.com,pending,pending,1533.49,1419.90,113.59,0.00,0.00,USD,Seattle,US,620,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567090,2090,2026-02-20 17:02:17,Zoe Davis,zoe.davis20@email.com,pending,pending,1533.49,1419.90,113.59,0.00,0.00,USD,Seattle,US,621,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567090,2090,2026-02-20 17:02:17,Zoe Davis,zoe.davis20@email.com,pending,pending,1533.49,1419.90,113.59,0.00,0.00,USD,Seattle,US,622,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567090,2090,2026-02-20 17:02:17,Zoe Davis,zoe.davis20@email.com,pending,pending,1533.49,1419.90,113.59,0.00,0.00,USD,Seattle,US,623,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567090,2090,2026-02-20 17:02:17,Zoe Davis,zoe.davis20@email.com,pending,pending,1533.49,1419.90,113.59,0.00,0.00,USD,Seattle,US,624,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567090,2090,2026-02-20 17:02:17,Zoe Davis,zoe.davis20@email.com,pending,pending,1533.49,1419.90,113.59,0.00,0.00,USD,Seattle,US,625,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567090,2090,2026-02-20 17:02:17,Zoe Davis,zoe.davis20@email.com,pending,pending,1533.49,1419.90,113.59,0.00,0.00,USD,Seattle,US,626,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567090,2090,2026-02-20 17:02:17,Zoe Davis,zoe.davis20@email.com,pending,pending,1533.49,1419.90,113.59,0.00,0.00,USD,Seattle,US,627,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567091,2091,2026-02-28 12:55:57,Madison Brown,madison.brown21@email.com,fulfilled,paid,3159.94,3079.86,234.07,0.00,153.99,USD,Miami,US,628,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567091,2091,2026-02-28 12:55:57,Madison Brown,madison.brown21@email.com,fulfilled,paid,3159.94,3079.86,234.07,0.00,153.99,USD,Miami,US,629,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567091,2091,2026-02-28 12:55:57,Madison Brown,madison.brown21@email.com,fulfilled,paid,3159.94,3079.86,234.07,0.00,153.99,USD,Miami,US,630,Cashmere Coat,SKU-PRM-001,3,329.99,989.97
+8001234567091,2091,2026-02-28 12:55:57,Madison Brown,madison.brown21@email.com,fulfilled,paid,3159.94,3079.86,234.07,0.00,153.99,USD,Miami,US,631,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567091,2091,2026-02-28 12:55:57,Madison Brown,madison.brown21@email.com,fulfilled,paid,3159.94,3079.86,234.07,0.00,153.99,USD,Miami,US,632,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567091,2091,2026-02-28 12:55:57,Madison Brown,madison.brown21@email.com,fulfilled,paid,3159.94,3079.86,234.07,0.00,153.99,USD,Miami,US,633,Tailored Blazer,SKU-PRM-003,3,219.99,659.97
+8001234567091,2091,2026-02-28 12:55:57,Madison Brown,madison.brown21@email.com,fulfilled,paid,3159.94,3079.86,234.07,0.00,153.99,USD,Miami,US,634,Leather Weekender,SKU-PRM-002,3,249.99,749.97
+8001234567091,2091,2026-02-28 12:55:57,Madison Brown,madison.brown21@email.com,fulfilled,paid,3159.94,3079.86,234.07,0.00,153.99,USD,Miami,US,635,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567092,2092,2026-02-26 21:33:56,Jackson Davis,jackson.davis22@email.com,pending,cancelled,1528.63,1489.90,113.23,0.00,74.50,USD,Seattle,US,636,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567092,2092,2026-02-26 21:33:56,Jackson Davis,jackson.davis22@email.com,pending,cancelled,1528.63,1489.90,113.23,0.00,74.50,USD,Seattle,US,637,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567092,2092,2026-02-26 21:33:56,Jackson Davis,jackson.davis22@email.com,pending,cancelled,1528.63,1489.90,113.23,0.00,74.50,USD,Seattle,US,638,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
+8001234567092,2092,2026-02-26 21:33:56,Jackson Davis,jackson.davis22@email.com,pending,cancelled,1528.63,1489.90,113.23,0.00,74.50,USD,Seattle,US,639,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567092,2092,2026-02-26 21:33:56,Jackson Davis,jackson.davis22@email.com,pending,cancelled,1528.63,1489.90,113.23,0.00,74.50,USD,Seattle,US,640,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567092,2092,2026-02-26 21:33:56,Jackson Davis,jackson.davis22@email.com,pending,cancelled,1528.63,1489.90,113.23,0.00,74.50,USD,Seattle,US,641,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567092,2092,2026-02-26 21:33:56,Jackson Davis,jackson.davis22@email.com,pending,cancelled,1528.63,1489.90,113.23,0.00,74.50,USD,Seattle,US,642,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567093,2093,2026-02-25 19:07:46,Liam Perry,liam.perry0@email.com,unfulfilled,cancelled,2116.66,1959.87,156.79,0.00,0.00,USD,New York,US,643,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567093,2093,2026-02-25 19:07:46,Liam Perry,liam.perry0@email.com,unfulfilled,cancelled,2116.66,1959.87,156.79,0.00,0.00,USD,New York,US,644,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567093,2093,2026-02-25 19:07:46,Liam Perry,liam.perry0@email.com,unfulfilled,cancelled,2116.66,1959.87,156.79,0.00,0.00,USD,New York,US,645,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567093,2093,2026-02-25 19:07:46,Liam Perry,liam.perry0@email.com,unfulfilled,cancelled,2116.66,1959.87,156.79,0.00,0.00,USD,New York,US,646,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567093,2093,2026-02-25 19:07:46,Liam Perry,liam.perry0@email.com,unfulfilled,cancelled,2116.66,1959.87,156.79,0.00,0.00,USD,New York,US,647,Luxury Travel Backpack,SKU-PRM-012,3,139.99,419.97
+8001234567093,2093,2026-02-25 19:07:46,Liam Perry,liam.perry0@email.com,unfulfilled,cancelled,2116.66,1959.87,156.79,0.00,0.00,USD,New York,US,648,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567093,2093,2026-02-25 19:07:46,Liam Perry,liam.perry0@email.com,unfulfilled,cancelled,2116.66,1959.87,156.79,0.00,0.00,USD,New York,US,649,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567094,2094,2026-02-24 14:39:08,Zoe Foster,zoe.foster1@email.com,pending,cancelled,1162.74,1109.91,86.13,0.00,33.30,USD,Seattle,US,650,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567094,2094,2026-02-24 14:39:08,Zoe Foster,zoe.foster1@email.com,pending,cancelled,1162.74,1109.91,86.13,0.00,33.30,USD,Seattle,US,651,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567094,2094,2026-02-24 14:39:08,Zoe Foster,zoe.foster1@email.com,pending,cancelled,1162.74,1109.91,86.13,0.00,33.30,USD,Seattle,US,652,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567094,2094,2026-02-24 14:39:08,Zoe Foster,zoe.foster1@email.com,pending,cancelled,1162.74,1109.91,86.13,0.00,33.30,USD,Seattle,US,653,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567094,2094,2026-02-24 14:39:08,Zoe Foster,zoe.foster1@email.com,pending,cancelled,1162.74,1109.91,86.13,0.00,33.30,USD,Seattle,US,654,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567094,2094,2026-02-24 14:39:08,Zoe Foster,zoe.foster1@email.com,pending,cancelled,1162.74,1109.91,86.13,0.00,33.30,USD,Seattle,US,655,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567094,2094,2026-02-24 14:39:08,Zoe Foster,zoe.foster1@email.com,pending,cancelled,1162.74,1109.91,86.13,0.00,33.30,USD,Seattle,US,656,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567095,2095,2026-02-25 19:44:38,Thomas Rodriguez,thomas.rodriguez2@email.com,pending,paid,1385.00,1349.91,102.59,0.00,67.50,USD,New York,US,657,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567095,2095,2026-02-25 19:44:38,Thomas Rodriguez,thomas.rodriguez2@email.com,pending,paid,1385.00,1349.91,102.59,0.00,67.50,USD,New York,US,658,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567095,2095,2026-02-25 19:44:38,Thomas Rodriguez,thomas.rodriguez2@email.com,pending,paid,1385.00,1349.91,102.59,0.00,67.50,USD,New York,US,659,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567095,2095,2026-02-25 19:44:38,Thomas Rodriguez,thomas.rodriguez2@email.com,pending,paid,1385.00,1349.91,102.59,0.00,67.50,USD,New York,US,660,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567095,2095,2026-02-25 19:44:38,Thomas Rodriguez,thomas.rodriguez2@email.com,pending,paid,1385.00,1349.91,102.59,0.00,67.50,USD,New York,US,661,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567095,2095,2026-02-25 19:44:38,Thomas Rodriguez,thomas.rodriguez2@email.com,pending,paid,1385.00,1349.91,102.59,0.00,67.50,USD,New York,US,662,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567095,2095,2026-02-25 19:44:38,Thomas Rodriguez,thomas.rodriguez2@email.com,pending,paid,1385.00,1349.91,102.59,0.00,67.50,USD,New York,US,663,Chelsea Boots,SKU-PRM-004,3,189.99,569.97
+8001234567096,2096,2026-02-28 18:01:53,Jackson Cox,jackson.cox3@email.com,pending,pending,2913.68,2839.84,215.83,0.00,141.99,USD,Seattle,US,664,Tailored Blazer,SKU-PRM-003,3,219.99,659.97
+8001234567096,2096,2026-02-28 18:01:53,Jackson Cox,jackson.cox3@email.com,pending,pending,2913.68,2839.84,215.83,0.00,141.99,USD,Seattle,US,665,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567096,2096,2026-02-28 18:01:53,Jackson Cox,jackson.cox3@email.com,pending,pending,2913.68,2839.84,215.83,0.00,141.99,USD,Seattle,US,666,Merino Sweater,SKU-PRM-005,3,119.99,359.97
+8001234567096,2096,2026-02-28 18:01:53,Jackson Cox,jackson.cox3@email.com,pending,pending,2913.68,2839.84,215.83,0.00,141.99,USD,Seattle,US,667,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567096,2096,2026-02-28 18:01:53,Jackson Cox,jackson.cox3@email.com,pending,pending,2913.68,2839.84,215.83,0.00,141.99,USD,Seattle,US,668,Aviator Sunglasses,SKU-PRM-010,3,149.99,449.97
+8001234567096,2096,2026-02-28 18:01:53,Jackson Cox,jackson.cox3@email.com,pending,pending,2913.68,2839.84,215.83,0.00,141.99,USD,Seattle,US,669,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567096,2096,2026-02-28 18:01:53,Jackson Cox,jackson.cox3@email.com,pending,pending,2913.68,2839.84,215.83,0.00,141.99,USD,Seattle,US,670,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567097,2097,2026-02-25 09:00:04,Lincoln Clark,lincoln.clark4@email.com,pending,refunded,1798.31,1809.89,133.21,0.00,144.79,USD,Boston,US,671,Silk Button-Up,SKU-PRM-008,3,99.99,299.97
+8001234567097,2097,2026-02-25 09:00:04,Lincoln Clark,lincoln.clark4@email.com,pending,refunded,1798.31,1809.89,133.21,0.00,144.79,USD,Boston,US,672,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567097,2097,2026-02-25 09:00:04,Lincoln Clark,lincoln.clark4@email.com,pending,refunded,1798.31,1809.89,133.21,0.00,144.79,USD,Boston,US,673,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567097,2097,2026-02-25 09:00:04,Lincoln Clark,lincoln.clark4@email.com,pending,refunded,1798.31,1809.89,133.21,0.00,144.79,USD,Boston,US,674,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567097,2097,2026-02-25 09:00:04,Lincoln Clark,lincoln.clark4@email.com,pending,refunded,1798.31,1809.89,133.21,0.00,144.79,USD,Boston,US,675,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567097,2097,2026-02-25 09:00:04,Lincoln Clark,lincoln.clark4@email.com,pending,refunded,1798.31,1809.89,133.21,0.00,144.79,USD,Boston,US,676,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567097,2097,2026-02-25 09:00:04,Lincoln Clark,lincoln.clark4@email.com,pending,refunded,1798.31,1809.89,133.21,0.00,144.79,USD,Boston,US,677,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567097,2097,2026-02-25 09:00:04,Lincoln Clark,lincoln.clark4@email.com,pending,refunded,1798.31,1809.89,133.21,0.00,144.79,USD,Boston,US,678,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567098,2098,2026-02-25 10:39:52,Alexander Wilson,alexander.wilson5@email.com,unfulfilled,refunded,1717.09,1589.90,127.19,0.00,0.00,USD,New York,US,679,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567098,2098,2026-02-25 10:39:52,Alexander Wilson,alexander.wilson5@email.com,unfulfilled,refunded,1717.09,1589.90,127.19,0.00,0.00,USD,New York,US,680,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567098,2098,2026-02-25 10:39:52,Alexander Wilson,alexander.wilson5@email.com,unfulfilled,refunded,1717.09,1589.90,127.19,0.00,0.00,USD,New York,US,681,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567098,2098,2026-02-25 10:39:52,Alexander Wilson,alexander.wilson5@email.com,unfulfilled,refunded,1717.09,1589.90,127.19,0.00,0.00,USD,New York,US,682,Wool Trousers,SKU-PRM-006,4,129.99,519.96
+8001234567098,2098,2026-02-25 10:39:52,Alexander Wilson,alexander.wilson5@email.com,unfulfilled,refunded,1717.09,1589.90,127.19,0.00,0.00,USD,New York,US,683,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567098,2098,2026-02-25 10:39:52,Alexander Wilson,alexander.wilson5@email.com,unfulfilled,refunded,1717.09,1589.90,127.19,0.00,0.00,USD,New York,US,684,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567099,2099,2026-02-24 17:52:20,Lily Martin,lily.martin6@email.com,fulfilled,paid,2056.63,2069.88,152.34,0.00,165.59,USD,Seattle,US,685,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567099,2099,2026-02-24 17:52:20,Lily Martin,lily.martin6@email.com,fulfilled,paid,2056.63,2069.88,152.34,0.00,165.59,USD,Seattle,US,686,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567099,2099,2026-02-24 17:52:20,Lily Martin,lily.martin6@email.com,fulfilled,paid,2056.63,2069.88,152.34,0.00,165.59,USD,Seattle,US,687,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567099,2099,2026-02-24 17:52:20,Lily Martin,lily.martin6@email.com,fulfilled,paid,2056.63,2069.88,152.34,0.00,165.59,USD,Seattle,US,688,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567099,2099,2026-02-24 17:52:20,Lily Martin,lily.martin6@email.com,fulfilled,paid,2056.63,2069.88,152.34,0.00,165.59,USD,Seattle,US,689,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567099,2099,2026-02-24 17:52:20,Lily Martin,lily.martin6@email.com,fulfilled,paid,2056.63,2069.88,152.34,0.00,165.59,USD,Seattle,US,690,Wool Trousers,SKU-PRM-006,4,129.99,519.96
+8001234567099,2099,2026-02-24 17:52:20,Lily Martin,lily.martin6@email.com,fulfilled,paid,2056.63,2069.88,152.34,0.00,165.59,USD,Seattle,US,691,Leather Weekender,SKU-PRM-002,3,249.99,749.97
+8001234567100,2100,2026-02-26 17:14:00,Thomas Martin,thomas.martin7@email.com,unfulfilled,cancelled,1771.09,1639.90,131.19,0.00,0.00,USD,Seattle,US,692,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567100,2100,2026-02-26 17:14:00,Thomas Martin,thomas.martin7@email.com,unfulfilled,cancelled,1771.09,1639.90,131.19,0.00,0.00,USD,Seattle,US,693,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567100,2100,2026-02-26 17:14:00,Thomas Martin,thomas.martin7@email.com,unfulfilled,cancelled,1771.09,1639.90,131.19,0.00,0.00,USD,Seattle,US,694,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567100,2100,2026-02-26 17:14:00,Thomas Martin,thomas.martin7@email.com,unfulfilled,cancelled,1771.09,1639.90,131.19,0.00,0.00,USD,Seattle,US,695,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567100,2100,2026-02-26 17:14:00,Thomas Martin,thomas.martin7@email.com,unfulfilled,cancelled,1771.09,1639.90,131.19,0.00,0.00,USD,Seattle,US,696,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567100,2100,2026-02-26 17:14:00,Thomas Martin,thomas.martin7@email.com,unfulfilled,cancelled,1771.09,1639.90,131.19,0.00,0.00,USD,Seattle,US,697,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567100,2100,2026-02-26 17:14:00,Thomas Martin,thomas.martin7@email.com,unfulfilled,cancelled,1771.09,1639.90,131.19,0.00,0.00,USD,Seattle,US,698,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567101,2101,2026-02-27 15:58:52,Sebastian Nguyen,sebastian.nguyen8@email.com,unfulfilled,refunded,904.10,909.92,66.97,0.00,72.79,USD,Chicago,US,699,Leather Gloves,SKU-PRM-007,3,79.99,239.97
+8001234567101,2101,2026-02-27 15:58:52,Sebastian Nguyen,sebastian.nguyen8@email.com,unfulfilled,refunded,904.10,909.92,66.97,0.00,72.79,USD,Chicago,US,700,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567101,2101,2026-02-27 15:58:52,Sebastian Nguyen,sebastian.nguyen8@email.com,unfulfilled,refunded,904.10,909.92,66.97,0.00,72.79,USD,Chicago,US,701,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567101,2101,2026-02-27 15:58:52,Sebastian Nguyen,sebastian.nguyen8@email.com,unfulfilled,refunded,904.10,909.92,66.97,0.00,72.79,USD,Chicago,US,702,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567101,2101,2026-02-27 15:58:52,Sebastian Nguyen,sebastian.nguyen8@email.com,unfulfilled,refunded,904.10,909.92,66.97,0.00,72.79,USD,Chicago,US,703,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567102,2102,2026-02-26 11:11:12,Alexander Harris,alexander.harris9@email.com,fulfilled,refunded,2095.08,1999.89,155.19,0.00,60.00,USD,Chicago,US,704,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567102,2102,2026-02-26 11:11:12,Alexander Harris,alexander.harris9@email.com,fulfilled,refunded,2095.08,1999.89,155.19,0.00,60.00,USD,Chicago,US,705,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567102,2102,2026-02-26 11:11:12,Alexander Harris,alexander.harris9@email.com,fulfilled,refunded,2095.08,1999.89,155.19,0.00,60.00,USD,Chicago,US,706,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567102,2102,2026-02-26 11:11:12,Alexander Harris,alexander.harris9@email.com,fulfilled,refunded,2095.08,1999.89,155.19,0.00,60.00,USD,Chicago,US,707,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567102,2102,2026-02-26 11:11:12,Alexander Harris,alexander.harris9@email.com,fulfilled,refunded,2095.08,1999.89,155.19,0.00,60.00,USD,Chicago,US,708,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567102,2102,2026-02-26 11:11:12,Alexander Harris,alexander.harris9@email.com,fulfilled,refunded,2095.08,1999.89,155.19,0.00,60.00,USD,Chicago,US,709,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567102,2102,2026-02-26 11:11:12,Alexander Harris,alexander.harris9@email.com,fulfilled,refunded,2095.08,1999.89,155.19,0.00,60.00,USD,Chicago,US,710,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567102,2102,2026-02-26 11:11:12,Alexander Harris,alexander.harris9@email.com,fulfilled,refunded,2095.08,1999.89,155.19,0.00,60.00,USD,Chicago,US,711,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567102,2102,2026-02-26 11:11:12,Alexander Harris,alexander.harris9@email.com,fulfilled,refunded,2095.08,1999.89,155.19,0.00,60.00,USD,Chicago,US,712,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567103,2103,2026-03-07 14:26:40,Aurora Patel,aurora.patel10@email.com,pending,cancelled,1781.90,1649.91,131.99,0.00,0.00,USD,Boston,US,713,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567103,2103,2026-03-07 14:26:40,Aurora Patel,aurora.patel10@email.com,pending,cancelled,1781.90,1649.91,131.99,0.00,0.00,USD,Boston,US,714,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567103,2103,2026-03-07 14:26:40,Aurora Patel,aurora.patel10@email.com,pending,cancelled,1781.90,1649.91,131.99,0.00,0.00,USD,Boston,US,715,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567103,2103,2026-03-07 14:26:40,Aurora Patel,aurora.patel10@email.com,pending,cancelled,1781.90,1649.91,131.99,0.00,0.00,USD,Boston,US,716,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567103,2103,2026-03-07 14:26:40,Aurora Patel,aurora.patel10@email.com,pending,cancelled,1781.90,1649.91,131.99,0.00,0.00,USD,Boston,US,717,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567103,2103,2026-03-07 14:26:40,Aurora Patel,aurora.patel10@email.com,pending,cancelled,1781.90,1649.91,131.99,0.00,0.00,USD,Boston,US,718,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567103,2103,2026-03-07 14:26:40,Aurora Patel,aurora.patel10@email.com,pending,cancelled,1781.90,1649.91,131.99,0.00,0.00,USD,Boston,US,719,Merino Sweater,SKU-PRM-005,2,119.99,239.98
+8001234567104,2104,2026-03-03 17:48:11,Stella Sanders,stella.sanders11@email.com,pending,cancelled,2527.07,2339.88,187.19,0.00,0.00,USD,Boston,US,720,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567104,2104,2026-03-03 17:48:11,Stella Sanders,stella.sanders11@email.com,pending,cancelled,2527.07,2339.88,187.19,0.00,0.00,USD,Boston,US,721,Chelsea Boots,SKU-PRM-004,3,189.99,569.97
+8001234567104,2104,2026-03-03 17:48:11,Stella Sanders,stella.sanders11@email.com,pending,cancelled,2527.07,2339.88,187.19,0.00,0.00,USD,Boston,US,722,Luxury Travel Backpack,SKU-PRM-012,1,139.99,139.99
+8001234567104,2104,2026-03-03 17:48:11,Stella Sanders,stella.sanders11@email.com,pending,cancelled,2527.07,2339.88,187.19,0.00,0.00,USD,Boston,US,723,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567104,2104,2026-03-03 17:48:11,Stella Sanders,stella.sanders11@email.com,pending,cancelled,2527.07,2339.88,187.19,0.00,0.00,USD,Boston,US,724,Cashmere Coat,SKU-PRM-001,3,329.99,989.97
+8001234567104,2104,2026-03-03 17:48:11,Stella Sanders,stella.sanders11@email.com,pending,cancelled,2527.07,2339.88,187.19,0.00,0.00,USD,Boston,US,725,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567104,2104,2026-03-03 17:48:11,Stella Sanders,stella.sanders11@email.com,pending,cancelled,2527.07,2339.88,187.19,0.00,0.00,USD,Boston,US,726,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567105,2105,2026-03-04 20:51:01,Aiden Davis,aiden.davis12@email.com,pending,cancelled,2985.49,2849.83,221.15,0.00,85.49,USD,San Francisco,US,727,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567105,2105,2026-03-04 20:51:01,Aiden Davis,aiden.davis12@email.com,pending,cancelled,2985.49,2849.83,221.15,0.00,85.49,USD,San Francisco,US,728,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567105,2105,2026-03-04 20:51:01,Aiden Davis,aiden.davis12@email.com,pending,cancelled,2985.49,2849.83,221.15,0.00,85.49,USD,San Francisco,US,729,Chelsea Boots,SKU-PRM-004,3,189.99,569.97
+8001234567105,2105,2026-03-04 20:51:01,Aiden Davis,aiden.davis12@email.com,pending,cancelled,2985.49,2849.83,221.15,0.00,85.49,USD,San Francisco,US,730,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567105,2105,2026-03-04 20:51:01,Aiden Davis,aiden.davis12@email.com,pending,cancelled,2985.49,2849.83,221.15,0.00,85.49,USD,San Francisco,US,731,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567105,2105,2026-03-04 20:51:01,Aiden Davis,aiden.davis12@email.com,pending,cancelled,2985.49,2849.83,221.15,0.00,85.49,USD,San Francisco,US,732,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567105,2105,2026-03-04 20:51:01,Aiden Davis,aiden.davis12@email.com,pending,cancelled,2985.49,2849.83,221.15,0.00,85.49,USD,San Francisco,US,733,Leather Gloves,SKU-PRM-007,4,79.99,319.96
+8001234567105,2105,2026-03-04 20:51:01,Aiden Davis,aiden.davis12@email.com,pending,cancelled,2985.49,2849.83,221.15,0.00,85.49,USD,San Francisco,US,734,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567105,2105,2026-03-04 20:51:01,Aiden Davis,aiden.davis12@email.com,pending,cancelled,2985.49,2849.83,221.15,0.00,85.49,USD,San Francisco,US,735,Fine Knit Scarf,SKU-PRM-011,1,69.99,69.99
+8001234567106,2106,2026-03-04 13:55:41,Abigail Simmons,abigail.simmons13@email.com,pending,cancelled,2944.48,2869.86,218.11,0.00,143.49,USD,Miami,US,736,Leather Gloves,SKU-PRM-007,1,79.99,79.99
+8001234567106,2106,2026-03-04 13:55:41,Abigail Simmons,abigail.simmons13@email.com,pending,cancelled,2944.48,2869.86,218.11,0.00,143.49,USD,Miami,US,737,Tailored Blazer,SKU-PRM-003,3,219.99,659.97
+8001234567106,2106,2026-03-04 13:55:41,Abigail Simmons,abigail.simmons13@email.com,pending,cancelled,2944.48,2869.86,218.11,0.00,143.49,USD,Miami,US,738,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567106,2106,2026-03-04 13:55:41,Abigail Simmons,abigail.simmons13@email.com,pending,cancelled,2944.48,2869.86,218.11,0.00,143.49,USD,Miami,US,739,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567106,2106,2026-03-04 13:55:41,Abigail Simmons,abigail.simmons13@email.com,pending,cancelled,2944.48,2869.86,218.11,0.00,143.49,USD,Miami,US,740,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567106,2106,2026-03-04 13:55:41,Abigail Simmons,abigail.simmons13@email.com,pending,cancelled,2944.48,2869.86,218.11,0.00,143.49,USD,Miami,US,741,Leather Weekender,SKU-PRM-002,2,249.99,499.98
+8001234567106,2106,2026-03-04 13:55:41,Abigail Simmons,abigail.simmons13@email.com,pending,cancelled,2944.48,2869.86,218.11,0.00,143.49,USD,Miami,US,742,Aviator Sunglasses,SKU-PRM-010,1,149.99,149.99
+8001234567106,2106,2026-03-04 13:55:41,Abigail Simmons,abigail.simmons13@email.com,pending,cancelled,2944.48,2869.86,218.11,0.00,143.49,USD,Miami,US,743,Chelsea Boots,SKU-PRM-004,2,189.99,379.98
+8001234567107,2107,2026-03-07 18:51:00,Mia Ross,mia.ross14@email.com,pending,pending,2092.91,2039.87,155.03,0.00,101.99,USD,Boston,US,744,Wool Trousers,SKU-PRM-006,4,129.99,519.96
+8001234567107,2107,2026-03-07 18:51:00,Mia Ross,mia.ross14@email.com,pending,pending,2092.91,2039.87,155.03,0.00,101.99,USD,Boston,US,745,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567107,2107,2026-03-07 18:51:00,Mia Ross,mia.ross14@email.com,pending,pending,2092.91,2039.87,155.03,0.00,101.99,USD,Boston,US,746,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567107,2107,2026-03-07 18:51:00,Mia Ross,mia.ross14@email.com,pending,pending,2092.91,2039.87,155.03,0.00,101.99,USD,Boston,US,747,Structured Tote,SKU-PRM-009,1,159.99,159.99
+8001234567107,2107,2026-03-07 18:51:00,Mia Ross,mia.ross14@email.com,pending,pending,2092.91,2039.87,155.03,0.00,101.99,USD,Boston,US,748,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567107,2107,2026-03-07 18:51:00,Mia Ross,mia.ross14@email.com,pending,pending,2092.91,2039.87,155.03,0.00,101.99,USD,Boston,US,749,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567107,2107,2026-03-07 18:51:00,Mia Ross,mia.ross14@email.com,pending,pending,2092.91,2039.87,155.03,0.00,101.99,USD,Boston,US,750,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567107,2107,2026-03-07 18:51:00,Mia Ross,mia.ross14@email.com,pending,pending,2092.91,2039.87,155.03,0.00,101.99,USD,Boston,US,751,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567108,2108,2026-03-07 20:34:34,Penelope Brown,penelope.brown15@email.com,pending,pending,2555.99,2439.86,189.33,0.00,73.20,USD,Miami,US,752,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567108,2108,2026-03-07 20:34:34,Penelope Brown,penelope.brown15@email.com,pending,pending,2555.99,2439.86,189.33,0.00,73.20,USD,Miami,US,753,Silk Button-Up,SKU-PRM-008,2,99.99,199.98
+8001234567108,2108,2026-03-07 20:34:34,Penelope Brown,penelope.brown15@email.com,pending,pending,2555.99,2439.86,189.33,0.00,73.20,USD,Miami,US,754,Merino Sweater,SKU-PRM-005,3,119.99,359.97
+8001234567108,2108,2026-03-07 20:34:34,Penelope Brown,penelope.brown15@email.com,pending,pending,2555.99,2439.86,189.33,0.00,73.20,USD,Miami,US,755,Cashmere Coat,SKU-PRM-001,2,329.99,659.98
+8001234567108,2108,2026-03-07 20:34:34,Penelope Brown,penelope.brown15@email.com,pending,pending,2555.99,2439.86,189.33,0.00,73.20,USD,Miami,US,756,Luxury Travel Backpack,SKU-PRM-012,4,139.99,559.96
+8001234567108,2108,2026-03-07 20:34:34,Penelope Brown,penelope.brown15@email.com,pending,pending,2555.99,2439.86,189.33,0.00,73.20,USD,Miami,US,757,Tailored Blazer,SKU-PRM-003,1,219.99,219.99
+8001234567108,2108,2026-03-07 20:34:34,Penelope Brown,penelope.brown15@email.com,pending,pending,2555.99,2439.86,189.33,0.00,73.20,USD,Miami,US,758,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567109,2109,2026-03-04 13:55:43,Penelope Kim,penelope.kim16@email.com,fulfilled,paid,1889.88,1749.89,139.99,0.00,0.00,USD,Boston,US,759,Cashmere Coat,SKU-PRM-001,1,329.99,329.99
+8001234567109,2109,2026-03-04 13:55:43,Penelope Kim,penelope.kim16@email.com,fulfilled,paid,1889.88,1749.89,139.99,0.00,0.00,USD,Boston,US,760,Structured Tote,SKU-PRM-009,2,159.99,319.98
+8001234567109,2109,2026-03-04 13:55:43,Penelope Kim,penelope.kim16@email.com,fulfilled,paid,1889.88,1749.89,139.99,0.00,0.00,USD,Boston,US,761,Silk Button-Up,SKU-PRM-008,1,99.99,99.99
+8001234567109,2109,2026-03-04 13:55:43,Penelope Kim,penelope.kim16@email.com,fulfilled,paid,1889.88,1749.89,139.99,0.00,0.00,USD,Boston,US,762,Merino Sweater,SKU-PRM-005,1,119.99,119.99
+8001234567109,2109,2026-03-04 13:55:43,Penelope Kim,penelope.kim16@email.com,fulfilled,paid,1889.88,1749.89,139.99,0.00,0.00,USD,Boston,US,763,Leather Weekender,SKU-PRM-002,1,249.99,249.99
+8001234567109,2109,2026-03-04 13:55:43,Penelope Kim,penelope.kim16@email.com,fulfilled,paid,1889.88,1749.89,139.99,0.00,0.00,USD,Boston,US,764,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567109,2109,2026-03-04 13:55:43,Penelope Kim,penelope.kim16@email.com,fulfilled,paid,1889.88,1749.89,139.99,0.00,0.00,USD,Boston,US,765,Chelsea Boots,SKU-PRM-004,1,189.99,189.99
+8001234567109,2109,2026-03-04 13:55:43,Penelope Kim,penelope.kim16@email.com,fulfilled,paid,1889.88,1749.89,139.99,0.00,0.00,USD,Boston,US,766,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567110,2110,2026-03-03 15:37:14,Elijah Davis,elijah.davis17@email.com,unfulfilled,cancelled,1518.90,1449.89,112.51,0.00,43.50,USD,New York,US,767,Wool Trousers,SKU-PRM-006,1,129.99,129.99
+8001234567110,2110,2026-03-03 15:37:14,Elijah Davis,elijah.davis17@email.com,unfulfilled,cancelled,1518.90,1449.89,112.51,0.00,43.50,USD,New York,US,768,Luxury Travel Backpack,SKU-PRM-012,2,139.99,279.98
+8001234567110,2110,2026-03-03 15:37:14,Elijah Davis,elijah.davis17@email.com,unfulfilled,cancelled,1518.90,1449.89,112.51,0.00,43.50,USD,New York,US,769,Fine Knit Scarf,SKU-PRM-011,2,69.99,139.98
+8001234567110,2110,2026-03-03 15:37:14,Elijah Davis,elijah.davis17@email.com,unfulfilled,cancelled,1518.90,1449.89,112.51,0.00,43.50,USD,New York,US,770,Leather Gloves,SKU-PRM-007,2,79.99,159.98
+8001234567110,2110,2026-03-03 15:37:14,Elijah Davis,elijah.davis17@email.com,unfulfilled,cancelled,1518.90,1449.89,112.51,0.00,43.50,USD,New York,US,771,Tailored Blazer,SKU-PRM-003,2,219.99,439.98
+8001234567110,2110,2026-03-03 15:37:14,Elijah Davis,elijah.davis17@email.com,unfulfilled,cancelled,1518.90,1449.89,112.51,0.00,43.50,USD,New York,US,772,Aviator Sunglasses,SKU-PRM-010,2,149.99,299.98
