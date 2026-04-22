@@ -10,6 +10,7 @@
   --color-primary: #004596;
   --color-primary-accent: #005cc3;
   --color-primary-disabled: #7aa8d8;
+  --color-primary-muted: #adc7ff;
 
   /* Colors — Surfaces */
   --color-surface: #f9f9ff;
@@ -20,6 +21,7 @@
   /* Colors — Typography */
   --color-on-surface: #161c27;
   --color-on-surface-variant: #424752;
+  --color-on-surface-muted: #545f72;
 
   /* Colors — Outline */
   --color-outline-variant: #c2c6d4;
@@ -27,6 +29,7 @@
   /* Colors — Semantic */
   --color-error: #ba1a1a;
   --color-error-surface: #fff5f5;
+  --color-positive: #005152;
 
   /* Shadows */
   --shadow-ghost: 0 12px 40px rgba(22, 28, 39, 0.06);

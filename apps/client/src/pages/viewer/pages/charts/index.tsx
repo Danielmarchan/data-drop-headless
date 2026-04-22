@@ -1,12 +1,22 @@
 import { useNavigate, useParams } from 'react-router';
 import Breadcrumbs from '@/components/breadcrumbs';
 import Spinner from '@/components/spinner';
+import EcommerceStorePerformance from '@/chart-views/ecommerce-store-performance';
 import { useViewerDataset } from '@/pages/viewer/api/use-viewer-dataset';
 import {
   useViewerUpload,
   useViewerUploads,
 } from '@/pages/viewer/api/use-viewer-uploads';
 import UploadSelect from './components/upload-select';
+import { type ViewerUploadDetailDto } from '@data-drop/api-schema';
+
+function getDatasetChart(slug: string, data: ViewerUploadDetailDto) {
+  switch(slug) {
+    case 'ecommerce-store-performance':
+      return <EcommerceStorePerformance data={data} />
+  }
+  return <EcommerceStorePerformance data={data} />
+}
 
 export default function ViewerChartsPage() {
   const { datasetId, chartId } = useParams<{ datasetId: string; chartId?: string }>();
@@ -61,18 +71,13 @@ export default function ViewerChartsPage() {
       ) : null}
 
       {chartId ? (
-        <div className="rounded-lg bg-surface-lowest p-8 shadow-ghost">
-          {uploadLoading ? (
+        uploadLoading ? (
+          <div className="flex items-center justify-center py-20">
             <Spinner />
-          ) : upload ? (
-            <p className="font-inter text-sm text-on-surface-variant">
-              <span className="font-semibold text-on-surface">
-                {upload.rows.length.toLocaleString()}
-              </span>{' '}
-              rows loaded — charts coming soon.
-            </p>
-          ) : null}
-        </div>
+          </div>
+        ) : upload ? (
+          getDatasetChart(dataset!.slug, upload)
+        ) : null
       ) : null}
     </div>
   );
