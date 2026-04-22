@@ -361,7 +361,7 @@ function FinancialStatusDonut({ rows }: { rows: UploadRowDto[] }) {
         <EmptyState />
       ) : (
         <>
-          <div className="h-56">
+          <div className="h-44 flex">
             <AgCharts options={options} />
           </div>
           <ul className="mt-6 flex flex-col gap-3">
