@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { type ViewerUploadListItem } from '@data-drop/api-schema';
 import { ChevronDownIcon } from '@/components/icons';
+import TruncatedTooltip from '@/components/truncated-tooltip';
 
 type UploadSelectProps = {
   uploads: ViewerUploadListItem[];
@@ -23,7 +24,7 @@ export default function UploadSelect({
 
   return (
     <div
-      className="relative w-80"
+      className="relative w-96"
       onKeyDown={(e) => {
         if (e.key === 'Escape' && open) setOpen(false);
       }}
@@ -36,7 +37,11 @@ export default function UploadSelect({
         aria-expanded={open}
         className="flex w-full items-center justify-between gap-3 rounded-lg bg-surface-lowest px-4 py-3 text-left font-inter text-sm font-medium text-on-surface shadow-ghost transition-colors hover:bg-surface disabled:cursor-not-allowed disabled:opacity-60"
       >
-        <span className="truncate">{label}</span>
+        {selected ? (
+          <TruncatedTooltip text={label} className="truncate" />
+        ) : (
+          <span className="truncate">{label}</span>
+        )}
         <ChevronDownIcon
           className={`h-2 shrink-0 text-on-surface-variant transition-transform ${open ? 'rotate-180' : ''}`}
         />
@@ -71,7 +76,7 @@ export default function UploadSelect({
                         : 'font-medium text-on-surface-variant'
                     }`}
                   >
-                    <span className="truncate">{u.title}</span>
+                    <TruncatedTooltip text={u.title} className="truncate" />
                   </button>
                 </li>
               );
