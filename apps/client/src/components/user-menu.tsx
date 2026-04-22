@@ -6,9 +6,10 @@ import { PencilIcon, ChevronUpIcon, ArrowRightIcon, SignOutIcon } from '@/compon
 type UserMenuProps = {
   email: string;
   userId: string;
-}
+  secondaryLink?: { label: string; href: string } | null;
+};
 
-export default function UserMenu({ email, userId }: UserMenuProps) {
+export default function UserMenu({ email, userId, secondaryLink }: UserMenuProps) {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -50,21 +51,24 @@ export default function UserMenu({ email, userId }: UserMenuProps) {
             Edit Profile
           </Link>
 
-          <Link
-            to="/"
-            onClick={() => setOpen(false)}
-            className="flex items-center gap-3 px-4 h-11 font-inter font-medium text-sm text-primary hover:bg-surface"
-          >
-            <ArrowRightIcon />
-            Go to Charts Viewer
-          </Link>
-
-          <div className="h-px bg-outline-variant/10 mx-px" />
+          {secondaryLink && (
+            <>
+              <Link
+                to={secondaryLink.href}
+                onClick={() => setOpen(false)}
+                className="flex items-center gap-3 px-4 h-11 font-inter font-medium text-sm text-primary hover:bg-surface"
+              >
+                <ArrowRightIcon />
+                {secondaryLink.label}
+              </Link>
+              <div className="h-px bg-outline-variant/10 mx-px" />
+            </>
+          )}
 
           <button
             type="button"
             onClick={handleSignOut}
-            className="flex w-full items-center gap-3 px-4 h-11 font-inter font-normal text-sm text-error hover:bg-error-surface rounded-b-lg cursor-pointer border-0 bg-transparent cursor-pointer"
+            className="flex w-full items-center gap-3 px-4 h-11 font-inter font-normal text-sm text-error hover:bg-error-surface rounded-b-lg cursor-pointer border-0 bg-transparent"
           >
             <SignOutIcon />
             Sign Out

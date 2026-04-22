@@ -2,7 +2,7 @@ import { createBrowserRouter, Navigate } from 'react-router';
 
 import LoginPage from '@/pages/login';
 import AuthRedirect from '@/pages/redirect';
-import HomePage from '@/pages/viewer/pages/home';
+import ViewerDatasetsPage from '@/pages/viewer/pages/datasets';
 import ViewerLayout from '@/pages/viewer/viewer-layout';
 import AdminLayout from '@/pages/admin/admin-layout';
 import AdminUsersPage from '@/pages/admin/pages/users/users-list';
@@ -11,6 +11,7 @@ import AdminUserEditPage from '@/pages/admin/pages/users/user-edit';
 import AdminDatasetsPage from '@/pages/admin/pages/datasets/datasets-list';
 import AdminDatasetUploadsPage from '@/pages/admin/pages/datasets/datasets-upload';
 import NotFoundPage from '@/pages/not-found';
+import ViewerChartsPage from './pages/viewer/pages/charts';
 
 export const router = createBrowserRouter([
   {
@@ -26,11 +27,24 @@ export const router = createBrowserRouter([
     element: <NotFoundPage />,
   },
   {
+    path: '/',
+    element: <Navigate to="/datasets" replace />,
+  },
+  {
+    path: '/datasets',
     element: <ViewerLayout />,
     children: [
       {
-        path: '/',
-        element: <HomePage />,
+        index: true,
+        element: <ViewerDatasetsPage />,
+      },
+      {
+        path: ':datasetId/charts',
+        element: <ViewerChartsPage />,
+      },
+      {
+        path: ':datasetId/charts/:chartId',
+        element: <ViewerChartsPage />,
       },
     ],
   },
