@@ -3,6 +3,7 @@ export { default as PencilIcon } from './pencil-icon';
 export { default as TrashIcon } from './trash-icon';
 export { default as ChevronRightIcon } from './chevron-right-icon';
 export { default as ChevronUpIcon } from './chevron-up-icon';
+export { default as ChevronDownIcon } from './chevron-down-icon';
 export { default as EyeIcon } from './eye-icon';
 export { default as SignOutIcon } from './sign-out-icon';
 export { default as ArrowRightIcon } from './arrow-right-icon';
