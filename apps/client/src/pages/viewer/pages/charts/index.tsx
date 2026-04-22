@@ -14,8 +14,9 @@ function getDatasetChart(slug: string, data: ViewerUploadDetailDto) {
   switch(slug) {
     case 'ecommerce-store-performance':
       return <EcommerceStorePerformance data={data} />
+    default:
+      return <p>This chart design will be ready soon!</p>
   }
-  return <EcommerceStorePerformance data={data} />
 }
 
 export default function ViewerChartsPage() {
@@ -78,7 +79,7 @@ export default function ViewerChartsPage() {
         ) : upload ? (
           getDatasetChart(dataset!.slug, upload)
         ) : null
-      ) : null}
+      ) : <p>No upload has been selected yet</p>}
     </div>
   );
 }

@@ -66,7 +66,6 @@ export default function AdminDatasetsPage() {
         <DatasetRow
           key={d.id}
           d={d}
-          onArrowClick={() => void navigate(`/admin/datasets/${d.id}/uploads`)}
         />
       ))}
     </AdminListLayout>

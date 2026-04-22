@@ -133,15 +133,42 @@ function statusBreakdown(
     }));
 }
 
-function priceVolumePoints(rows: UploadRowDto[]): { quantity: number; lineTotal: number }[] {
-  const out: { quantity: number; lineTotal: number }[] = [];
+type LineTotalMetric = 'average' | 'median';
+
+function median(values: number[]): number {
+  const sorted = [...values].sort((a, b) => a - b);
+  const middle = Math.floor(sorted.length / 2);
+  if (sorted.length % 2 === 1) return sorted[middle];
+  return (sorted[middle - 1] + sorted[middle]) / 2;
+}
+
+function lineTotalByQuantity(
+  rows: UploadRowDto[],
+  metric: LineTotalMetric,
+): { quantity: number; quantityLabel: string; value: number }[] {
+  const grouped = new Map<number, number[]>();
   for (const row of rows) {
-    const q = readNumber(row, 'quantity');
-    const lt = readNumber(row, 'line_total');
-    if (q === undefined || lt === undefined) continue;
-    out.push({ quantity: q, lineTotal: lt });
+    const quantity = readNumber(row, 'quantity');
+    const lineTotal = readNumber(row, 'line_total');
+    if (quantity === undefined || lineTotal === undefined) continue;
+    const bucket = grouped.get(quantity);
+    if (bucket) {
+      bucket.push(lineTotal);
+    } else {
+      grouped.set(quantity, [lineTotal]);
+    }
   }
-  return out;
+
+  return [...grouped.entries()]
+    .sort(([a], [b]) => a - b)
+    .map(([quantity, values]) => ({
+      quantity,
+      quantityLabel: String(quantity),
+      value:
+        metric === 'median'
+          ? median(values)
+          : values.reduce((sum, current) => sum + current, 0) / values.length,
+    }));
 }
 
 function summaryStats(rows: UploadRowDto[]) {
@@ -453,29 +480,35 @@ function FulfillmentStatusPie({ rows }: { rows: UploadRowDto[] }) {
   );
 }
 
-function PriceVsVolumeScatter({ rows }: { rows: UploadRowDto[] }) {
-  const data = useMemo(() => priceVolumePoints(rows), [rows]);
+function LineTotalByQuantityChart({ rows }: { rows: UploadRowDto[] }) {
+  const [metric, setMetric] = useState<LineTotalMetric>('average');
+  const data = useMemo(() => lineTotalByQuantity(rows, metric), [rows, metric]);
+  const metricLabel = metric === 'average' ? 'Average' : 'Median';
 
   const options = useMemo<AgCartesianChartOptions>(
     () => ({
       data,
       series: [
         {
-          type: 'scatter',
-          xKey: 'quantity',
+          type: 'line',
+          xKey: 'quantityLabel',
           xName: 'Quantity',
-          yKey: 'lineTotal',
-          yName: 'Line Total',
-          fill: TOKENS.primary,
-          fillOpacity: 0.5,
+          yKey: 'value',
+          yName: `${metricLabel} Line Total`,
           stroke: TOKENS.primary,
-          strokeWidth: 1,
-          size: 10,
+          strokeWidth: 3,
+          marker: {
+            enabled: true,
+            fill: TOKENS.primary,
+            stroke: TOKENS.surfaceLowest,
+            strokeWidth: 2,
+            size: 10,
+          },
         },
       ],
       axes: {
         x: {
-          type: 'number',
+          type: 'category',
           position: 'bottom',
           title: {
             enabled: true,
@@ -497,7 +530,7 @@ function PriceVsVolumeScatter({ rows }: { rows: UploadRowDto[] }) {
           position: 'left',
           title: {
             enabled: true,
-            text: 'Line Total ($)',
+            text: `${metricLabel} Line Total ($)`,
             fontFamily: 'Inter, sans-serif',
             fontSize: 10,
             color: TOKENS.onSurfaceVariant,
@@ -519,14 +552,32 @@ function PriceVsVolumeScatter({ rows }: { rows: UploadRowDto[] }) {
       legend: { enabled: false },
       padding: { top: 8, right: 16, bottom: 8, left: 8 },
     }),
-    [data],
+    [data, metricLabel],
   );
 
   return (
     <ChartCard>
       <ChartHeader
-        title="Price vs. Volume"
-        subtitle="Correlation between quantity and total value"
+        title="Line Total by Quantity"
+        subtitle={`${metricLabel} line total for each quantity bucket`}
+        action={
+          <div className="flex rounded-md bg-surface-low p-1">
+            {(['average', 'median'] as const).map((key) => (
+              <button
+                key={key}
+                type="button"
+                onClick={() => setMetric(key)}
+                className={`rounded-sm px-3 py-1 font-inter text-xs font-semibold transition ${
+                  metric === key
+                    ? 'bg-surface-lowest text-primary shadow-sm'
+                    : 'text-on-surface-variant hover:text-on-surface'
+                }`}
+              >
+                {key === 'average' ? 'Average' : 'Median'}
+              </button>
+            ))}
+          </div>
+        }
       />
       {data.length === 0 ? (
         <EmptyState />
@@ -599,7 +650,7 @@ export default function EcommerceStorePerformance({
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <FulfillmentStatusPie rows={rows} />
         <div className="lg:col-span-2">
-          <PriceVsVolumeScatter rows={rows} />
+          <LineTotalByQuantityChart rows={rows} />
         </div>
       </div>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
