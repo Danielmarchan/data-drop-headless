@@ -6,7 +6,7 @@ import DatasetRow from './components/dataset-row';
 
 const COLUMN_HEADERS = [
   { label: 'Title', className: 'flex-1' },
-  { label: 'Created At', className: 'w-44 shrink-0' },
+  { label: 'Created At', className: 'hidden sm:block sm:w-44 sm:shrink-0' },
   { label: '', className: 'w-6 shrink-0' },
 ];
 

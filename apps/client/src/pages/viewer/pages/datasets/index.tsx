@@ -45,16 +45,16 @@ export default function ViewerDatasetsPage() {
   const datasets = data?.pages.flatMap((p) => p.nodes) ?? [];
 
   return (
-    <div className="container px-6 py-12 mx-auto">
-      <div className="flex items-center justify-between gap-4 mb-8">
-        <h1 className="font-manrope font-extrabold text-3xl text-on-surface tracking-tight">
+    <div className="container px-4 sm:px-6 py-8 sm:py-12 mx-auto">
+      <div className="flex flex-col gap-4 mb-6 sm:mb-8 sm:flex-row sm:items-center sm:justify-between">
+        <h1 className="font-manrope font-extrabold text-2xl sm:text-3xl text-on-surface tracking-tight">
           Select a Dataset to View Charts
         </h1>
         <SearchInput
           value={searchValue}
           onChange={handleSearchChange}
           placeholder="Search datasets..."
-          className="w-72 bg-surface-lowest border-surface-high"
+          className="w-full sm:w-72 bg-surface-lowest border-surface-high"
         />
       </div>
 

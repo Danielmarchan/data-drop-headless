@@ -24,7 +24,7 @@ export default function UploadSelect({
 
   return (
     <div
-      className="relative w-96"
+      className="relative w-full sm:w-96"
       onKeyDown={(e) => {
         if (e.key === 'Escape' && open) setOpen(false);
       }}

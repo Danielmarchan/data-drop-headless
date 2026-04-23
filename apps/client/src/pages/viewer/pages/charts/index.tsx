@@ -43,7 +43,7 @@ export default function ViewerChartsPage() {
   }
 
   return (
-    <div className="container mx-auto px-8 py-10">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
       <Breadcrumbs
         items={[
           { label: 'Datasets', to: '/datasets' },
@@ -52,7 +52,7 @@ export default function ViewerChartsPage() {
         className="mb-6"
       />
 
-      <h1 className="mb-6 font-manrope text-5xl font-extrabold tracking-tight text-on-surface">
+      <h1 className="mb-6 font-manrope text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-on-surface">
         {datasetTitle}
       </h1>
 

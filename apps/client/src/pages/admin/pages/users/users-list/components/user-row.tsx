@@ -18,7 +18,7 @@ export default function UserRow({ u, onEdit, onDelete }: UserRowProps) {
         <span className="font-inter text-sm text-on-surface-variant mt-0.5">{u.email}</span>
       </div>
 
-      <div className="w-44 shrink-0">
+      <div className="w-20 sm:w-44 shrink-0">
         <RoleBadge role={u.role} />
       </div>
 

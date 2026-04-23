@@ -119,7 +119,7 @@ export default function UserForm({
       onChange={() => setIsDirty(true)}
       className="flex min-h-screen flex-col bg-surface pb-28"
     >
-      <div className="container mx-auto px-6 pt-6">
+      <div className="container mx-auto px-4 sm:px-6 pt-4 sm:pt-6">
         <Breadcrumbs
           items={[
             { label: 'Users', to: '/admin/users' },
@@ -128,8 +128,8 @@ export default function UserForm({
         />
       </div>
 
-      <main className="container mx-auto flex-1 px-6 py-8">
-        <h1 className="font-manrope text-3xl font-extrabold tracking-tight text-on-surface">
+      <main className="container mx-auto flex-1 px-4 sm:px-6 py-6 sm:py-8">
+        <h1 className="font-manrope text-2xl sm:text-3xl font-extrabold tracking-tight text-on-surface">
           {mode === 'create' ? 'New User' : 'Edit User'}
         </h1>
 
@@ -267,7 +267,7 @@ export default function UserForm({
       </main>
 
       <div className="fixed inset-x-0 bottom-0 border-t border-surface-high bg-surface-lowest shadow-sm z-1 backdrop-blur">
-        <div className="container mx-auto flex flex-col gap-4 px-6 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="container mx-auto flex flex-col gap-4 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-4">
           <div>
             {isDirty ? (
               <div className="flex items-center gap-2 font-inter text-sm text-on-surface-variant">

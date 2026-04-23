@@ -35,9 +35,9 @@ export default function UserMenu({ email, userId, secondaryLink, canEditProfile 
     <div ref={menuRef} className="relative">
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className="flex items-center gap-2 h-8 px-3 rounded bg-surface-low cursor-pointer border-0 border-surface-high"
+        className="flex items-center gap-2 h-8 px-3 rounded bg-surface-low cursor-pointer border-0 border-surface-high min-w-0 max-w-45 sm:max-w-none"
       >
-        <span className="font-inter font-medium text-sm leading-5 text-on-surface-variant">{email}</span>
+        <span className="font-inter font-medium text-sm leading-5 text-on-surface-variant truncate">{email}</span>
         <ChevronUpIcon className={`shrink-0 transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
 

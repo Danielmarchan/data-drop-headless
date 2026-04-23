@@ -9,7 +9,7 @@ export default function AdminNavLinks() {
   const { pathname } = useLocation();
 
   return (
-    <nav className="flex items-stretch gap-4">
+    <nav className="flex items-stretch gap-3 sm:gap-4">
       {links.map(({ label, href }) => {
         const isActive = pathname.startsWith(href);
         return (

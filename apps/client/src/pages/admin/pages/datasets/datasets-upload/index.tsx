@@ -16,8 +16,8 @@ import FormSection from '@/components/form-section';
 
 const COLUMN_HEADERS = [
   { label: 'Title', className: 'flex-1' },
-  { label: 'Created At', className: 'w-44 shrink-0' },
-  { label: '', className: 'w-24 shrink-0' },
+  { label: 'Created At', className: 'hidden sm:block sm:w-44 sm:shrink-0' },
+  { label: '', className: 'sm:w-24 sm:shrink-0' },
 ];
 
 function getErrorMessage(error: unknown) {
@@ -101,7 +101,7 @@ export default function AdminDatasetUploadsPage() {
   const isUploading = createUpload.isPending;
 
   return (
-    <div className="container px-6 py-8 mx-auto">
+    <div className="container px-4 sm:px-6 py-6 sm:py-8 mx-auto">
       <Breadcrumbs
         className="mb-10"
         items={[
@@ -110,14 +110,14 @@ export default function AdminDatasetUploadsPage() {
         ]}
       />
 
-      <h1 className="font-manrope font-bold text-[30px] leading-9 tracking-[-0.75px] text-on-surface mb-8">
+      <h1 className="font-manrope font-bold text-2xl sm:text-[30px] leading-8 sm:leading-9 tracking-[-0.75px] text-on-surface mb-8">
         Dataset Upload
       </h1>
 
       <div className="mb-10">
         <FormSection>
           <div
-            className={`relative rounded-lg border-2 border-dashed transition-colors flex flex-col items-center justify-center py-16 px-8 ${
+            className={`relative rounded-lg border-2 border-dashed transition-colors flex flex-col items-center justify-center py-10 sm:py-16 px-4 sm:px-8 ${
               isUploading ? 'cursor-wait opacity-60' : 'cursor-pointer'
             } ${
               dragging
@@ -186,7 +186,7 @@ export default function AdminDatasetUploadsPage() {
       <div>
         <h2 className="font-manrope font-bold text-2xl text-on-surface mb-6">Uploads</h2>
 
-        <div className="flex items-center gap-8 px-6 pb-3">
+        <div className="hidden sm:flex items-center gap-8 px-6 pb-3">
           {COLUMN_HEADERS.map((col) => (
             <div
               key={col.label}

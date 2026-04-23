@@ -83,7 +83,7 @@ export default function UploadRow({ upload, onDelete, onToggleVisibility, onRena
         <p className="font-inter text-xs text-on-surface-variant mt-0.5">{upload.fileName}</p>
       </div>
 
-      <div className="w-44 shrink-0">
+      <div className="hidden sm:block sm:w-44 sm:shrink-0">
         <span className="font-inter text-sm text-on-surface-variant">{formatDate(upload.createdAt)}</span>
       </div>
 

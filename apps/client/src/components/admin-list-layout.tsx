@@ -35,24 +35,24 @@ export default function AdminListLayout({
   modal,
 }: AdminListLayoutProps) {
   return (
-    <div className="container px-6 py-8 mx-auto">
-      <div className="flex items-center justify-between mb-8">
-        <h1 className="font-manrope font-extrabold text-3xl text-on-surface tracking-tight">
+    <div className="container px-4 sm:px-6 py-6 sm:py-8 mx-auto">
+      <div className="flex flex-col gap-4 mb-6 sm:mb-8 sm:flex-row sm:items-center sm:justify-between">
+        <h1 className="font-manrope font-extrabold text-2xl sm:text-3xl text-on-surface tracking-tight">
           {title}
         </h1>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 w-full sm:w-auto">
           <SearchInput
             value={searchValue}
             onChange={onSearchChange}
             placeholder={searchPlaceholder}
-            className="w-72 bg-surface-lowest border-surface-high"
+            className="flex-1 sm:w-72 sm:flex-none bg-surface-lowest border-surface-high"
           />
           {action}
         </div>
       </div>
 
       <div>
-        <div className="flex items-center gap-8 px-6 pb-3">
+        <div className="hidden sm:flex items-center gap-8 px-6 pb-3">
           {columnHeaders.map((col) => (
             <div
               key={col.label}

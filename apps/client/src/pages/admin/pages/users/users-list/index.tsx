@@ -10,7 +10,7 @@ import UserRow from './components/user-row';
 
 const COLUMN_HEADERS = [
   { label: 'User', className: 'flex-1' },
-  { label: 'Role', className: 'w-44 shrink-0' },
+  { label: 'Role', className: 'w-20 sm:w-44 shrink-0' },
   { label: '', className: 'w-15 shrink-0' },
 ];
 

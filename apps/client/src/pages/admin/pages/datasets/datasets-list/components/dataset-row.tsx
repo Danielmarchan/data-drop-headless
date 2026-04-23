@@ -21,10 +21,10 @@ export default function DatasetRow({ d }: DatasetRowProps) {
     <Link to={`/admin/datasets/${d.id}/uploads`} className="block">
       <ListRow>
         <div className="flex-1 min-w-0">
-          <span className="font-inter font-semibold text-sm text-on-surface">{d.title}</span>
+          <span className="font-inter font-semibold text-base text-on-surface">{d.title}</span>
         </div>
 
-        <div className="w-44 shrink-0">
+        <div className="hidden sm:block sm:w-44 sm:shrink-0">
           <span className="font-inter text-sm text-on-surface-variant">{formatDate(d.createdAt)}</span>
         </div>
 

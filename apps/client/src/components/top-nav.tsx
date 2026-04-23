@@ -12,8 +12,8 @@ type TopNavProps = {
 
 export default function TopNav({ logoHref, email, userId, navLinks, secondaryLink, canEditProfile }: TopNavProps) {
   return (
-    <header className="w-full bg-surface-lowest z-1 flex items-center px-6 py-4">
-      <div className="flex items-center gap-8 flex-1">
+    <header className="w-full bg-surface-lowest z-1 flex items-center px-4 py-3 sm:px-6 sm:py-4">
+      <div className="flex items-center gap-4 sm:gap-8 flex-1 min-w-0">
         <Link
           to={logoHref}
           className="font-manrope font-bold text-xl leading-7 tracking-[-0.5px] text-primary shrink-0"
