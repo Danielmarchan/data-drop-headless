@@ -106,6 +106,11 @@ const PaginatedViewerUploads = registry.register(
   paginatedListSchema(ViewerUploadListItemSchema).openapi({ description: 'Paginated list of uploads visible to the viewer' }),
 );
 
+const PaginatedViewerDatasets = registry.register(
+  'PaginatedViewerDatasets',
+  paginatedListSchema(ViewerDatasetWithUploadCountSchema).openapi({ description: 'Paginated list of datasets assigned to the viewer, with visible upload counts' }),
+);
+
 const ErrorSchema = registry.register(
   'ErrorResponse',
   z.object({ error: z.string() }).openapi({ description: 'Error response' }),
@@ -491,12 +496,13 @@ registry.registerPath({
 registry.registerPath({
   method: 'get',
   path: '/api/viewer/datasets',
-  summary: 'List datasets assigned to the current user',
+  summary: 'List datasets assigned to the current user (paginated)',
   tags: ['Viewer: Datasets'],
+  parameters: paginationParams,
   responses: {
     200: {
-      description: 'Datasets assigned to the current user, with visible upload counts',
-      content: { 'application/json': { schema: z.array(ViewerDatasetWithUploadCountSchema) } },
+      description: 'Paginated list of datasets assigned to the current user, with visible upload counts',
+      content: { 'application/json': { schema: PaginatedViewerDatasets } },
     },
     ...viewerUnauthorizedResponse,
   },

@@ -1,8 +1,14 @@
-import { and, count, desc, eq } from 'drizzle-orm';
+import { and, count, countDistinct, desc, eq, ilike } from 'drizzle-orm';
 
 import { dataset, datasetAssignedUser, upload } from '@/db/schema/index';
 import { type Database } from '@/db/index';
-import { viewerDatasetSchema, type ViewerDataset, viewerDatasetWithUploadCountSchema, type ViewerDatasetWithUploadCount } from '@data-drop/api-schema';
+import {
+  viewerDatasetSchema,
+  type ViewerDataset,
+  viewerDatasetWithUploadCountSchema,
+  type ViewerDatasetWithUploadCount,
+  type PaginatedList,
+} from '@data-drop/api-schema';
 import { type ServiceResponse } from '@/types';
 import { statusCodes } from '@/constants/statusCodes';
 import logger from '@/services/logging.service';
@@ -12,10 +18,26 @@ class ViewerDatasetsService {
     private db: Database,
   ) {}
 
-  async getDatasetsAssignedToCurrentUser(
+  async getPaginatedAssignedDatasets(
     userId: string,
-  ): Promise<ServiceResponse<ViewerDatasetWithUploadCount[]>> {
+    search: string | undefined,
+    page: number,
+    limit: number,
+  ): Promise<ServiceResponse<PaginatedList<ViewerDatasetWithUploadCount>>> {
     try {
+      const searchCondition = search ? ilike(dataset.title, `%${search}%`) : undefined;
+      const whereClause = and(eq(datasetAssignedUser.assignedUserId, userId), searchCondition);
+
+      const countResult = await this.db
+        .select({ total: countDistinct(dataset.id) })
+        .from(dataset)
+        .innerJoin(datasetAssignedUser, eq(datasetAssignedUser.datasetId, dataset.id))
+        .where(whereClause);
+
+      const total = countResult[0]?.total ?? 0;
+      const totalPages = Math.max(1, Math.ceil(total / limit));
+      const safePage = Math.min(page, totalPages);
+
       const rows = await this.db
         .select({
           id: dataset.id,
@@ -26,18 +48,27 @@ class ViewerDatasetsService {
         .from(dataset)
         .innerJoin(datasetAssignedUser, eq(datasetAssignedUser.datasetId, dataset.id))
         .leftJoin(upload, and(eq(upload.datasetId, dataset.id), eq(upload.visible, true)))
-        .where(eq(datasetAssignedUser.assignedUserId, userId))
+        .where(whereClause)
         .groupBy(dataset.id)
-        .orderBy(desc(dataset.createdAt));
+        .orderBy(desc(dataset.createdAt))
+        .limit(limit)
+        .offset((safePage - 1) * limit);
 
       return {
         success: true,
-        data: rows.map((row) =>
-          viewerDatasetWithUploadCountSchema.parse({
-            ...row,
-            uploadCount: Number(row.uploadCount),
-          }),
-        ),
+        data: {
+          nodes: rows.map((row) =>
+            viewerDatasetWithUploadCountSchema.parse({
+              ...row,
+              uploadCount: Number(row.uploadCount),
+            }),
+          ),
+          total,
+          pageInfo: {
+            page: safePage,
+            totalPages,
+          },
+        },
       };
     } catch (error) {
       logger.error('Error fetching assigned datasets:', error);
