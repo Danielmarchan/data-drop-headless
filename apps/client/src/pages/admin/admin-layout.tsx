@@ -25,6 +25,11 @@ export default function AdminLayout() {
     return null;
   }
 
+  if (!isAdmin) {
+    void navigate('/not-found', { replace: true });
+    return null;
+  }
+
   return (
     <div className="h-screen flex flex-col bg-surface">
       <TopNav
