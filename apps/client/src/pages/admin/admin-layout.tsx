@@ -2,7 +2,11 @@ import { Outlet, useNavigate } from 'react-router';
 import { authClient } from '@/lib/auth';
 import { useUserProfile } from '@/api/use-user-profile';
 import TopNav from '@/components/top-nav';
-import AdminNavLinks from './components/admin-nav-links';
+
+const adminNavLinks = [
+  { label: 'Users', href: '/admin/users' },
+  { label: 'Datasets', href: '/admin/datasets' },
+];
 
 export default function AdminLayout() {
   const navigate = useNavigate();
@@ -31,12 +35,12 @@ export default function AdminLayout() {
   }
 
   return (
-    <div className="h-screen flex flex-col bg-surface">
+    <div className="bg-surface flex h-screen flex-col">
       <TopNav
         logoHref="/admin"
         email={session.user.email}
         userId={data?.user.id ?? session.user.id}
-        navLinks={<AdminNavLinks />}
+        navLinks={adminNavLinks}
         secondaryLink={{ label: 'Go to Charts Viewer', href: '/datasets' }}
         canEditProfile={isAdmin}
       />

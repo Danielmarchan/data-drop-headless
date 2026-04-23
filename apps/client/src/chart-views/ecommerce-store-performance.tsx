@@ -137,9 +137,11 @@ type LineTotalMetric = 'average' | 'median';
 
 function median(values: number[]): number {
   const sorted = [...values].sort((a, b) => a - b);
+  if (sorted.length === 0) return 0;
   const middle = Math.floor(sorted.length / 2);
-  if (sorted.length % 2 === 1) return sorted[middle];
-  return (sorted[middle - 1] + sorted[middle]) / 2;
+  const upper = sorted[middle] ?? 0;
+  if (sorted.length % 2 === 1) return upper;
+  return ((sorted[middle - 1] ?? upper) + upper) / 2;
 }
 
 function lineTotalByQuantity(

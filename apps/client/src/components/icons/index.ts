@@ -8,3 +8,5 @@ export { default as EyeIcon } from './eye-icon';
 export { default as SignOutIcon } from './sign-out-icon';
 export { default as ArrowRightIcon } from './arrow-right-icon';
 export { default as EyeCrossedIcon } from './eye-crossed-icon';
+export { default as MenuIcon } from './menu-icon';
+export { default as CloseIcon } from './close-icon';
