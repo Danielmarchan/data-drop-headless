@@ -1,0 +1,35 @@
+app = "data-drop-headless-api"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile.server"
+
+[env]
+  NODE_ENV = "production"
+  PORT = "8080"
+  BETTER_AUTH_URL = "https://api.example.com"
+  CORS_ORIGIN = "https://app.example.com"
+  COOKIE_DOMAIN = "example.com"
+
+[deploy]
+  release_command = "pnpm --filter server db:migrate"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "suspend"
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+[[http_service.checks]]
+  grace_period = "10s"
+  interval = "30s"
+  method = "GET"
+  path = "/health"
+  timeout = "5s"
+
+[[vm]]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1

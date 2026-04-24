@@ -7,8 +7,6 @@ const EnvSchema = z.object({
       ? z.string()
       : z.string().optional(),
   BETTER_AUTH_URL: z.string().url(),
-  BETTER_AUTH_GITHUB_CLIENT_ID: z.string(),
-  BETTER_AUTH_GITHUB_CLIENT_SECRET: z.string(),
   DATABASE_URL: z.string().url(),
   SEED_DATABASE_URL: z.string().url().optional(),
   NODE_ENV: z
@@ -16,6 +14,7 @@ const EnvSchema = z.object({
     .default('development'),
   PORT: z.coerce.number().default(3000),
   CORS_ORIGIN: z.string().url().default('http://localhost:8080'),
+  COOKIE_DOMAIN: z.string().optional(),
 });
 
 export type EnvSchema = z.infer<typeof EnvSchema>;

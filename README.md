@@ -7,7 +7,7 @@ A data management platform that allows admins to upload CSV datasets and share t
 - **Client** — React 19, React Router 7, TanStack Query, Tailwind CSS v4, Vite
 - **Server** — Express 5, Drizzle ORM, Better Auth, Zod
 - **Database** — PostgreSQL 16
-- **Auth** — Better Auth (credentials + GitHub OAuth)
+- **Auth** — Better Auth (credentials)
 - **Monorepo** — pnpm workspaces + Turborepo
 
 ## Project Structure
@@ -59,13 +59,12 @@ cp apps/client/.env.example apps/client/.env
 ```env
 BETTER_AUTH_SECRET=your_random_secret
 BETTER_AUTH_URL=http://localhost:3000
-BETTER_AUTH_GITHUB_CLIENT_ID=your_github_client_id
-BETTER_AUTH_GITHUB_CLIENT_SECRET=your_github_client_secret
 DATABASE_URL=postgresql://postgres:password@localhost:5432/data-drop-headless
 SEED_DATABASE_URL=postgresql://postgres:password@localhost:5432/data-drop-headless
 PORT=3000
 NODE_ENV=development
 CORS_ORIGIN=http://localhost:8080
+COOKIE_DOMAIN=
 ```
 
 **Client** — `apps/client/.env`:
@@ -73,8 +72,6 @@ CORS_ORIGIN=http://localhost:8080
 ```env
 API_URL=http://localhost:3000
 ```
-
-> To get GitHub OAuth credentials, create an OAuth App at [github.com/settings/developers](https://github.com/settings/developers). Set the callback URL to `http://localhost:3000/api/auth/callback/github`.
 
 ### 3. Install dependencies
 
@@ -134,6 +131,48 @@ pnpm dev:server       # server only — http://localhost:3000
 ```
 
 The app will be available at [http://localhost:8080](http://localhost:8080).
+
+## Deploy to Fly.io
+
+This repo is set up for the two-app deployment shape:
+
+- `fly.api.toml` deploys the Express API from `Dockerfile.server`.
+- `fly.web.toml` deploys the Vite build from `Dockerfile.client` behind nginx.
+- The API release command runs Drizzle migrations before each API deploy.
+
+Use a real shared parent domain for auth cookies, for example:
+
+- Web: `https://app.example.com`
+- API: `https://api.example.com`
+- Cookie domain: `example.com`
+
+The generated `*.fly.dev` hostnames are fine for smoke testing, but do not use `fly.dev` as `COOKIE_DOMAIN`.
+
+Update these placeholders before deploying:
+
+- `fly.api.toml`: `BETTER_AUTH_URL`, `CORS_ORIGIN`, `COOKIE_DOMAIN`
+- `fly.web.toml`: `[build.args] API_URL`
+
+Then deploy:
+
+```bash
+brew install flyctl
+fly auth login
+
+fly apps create data-drop-headless-api
+fly apps create data-drop-headless-web
+fly postgres create --name data-drop-headless-db --region iad
+fly postgres attach data-drop-headless-db --app data-drop-headless-api
+
+fly secrets set --app data-drop-headless-api \
+  BETTER_AUTH_SECRET="$(openssl rand -hex 32)"
+
+fly certs add api.example.com --app data-drop-headless-api
+fly certs add app.example.com --app data-drop-headless-web
+
+fly deploy --config fly.api.toml
+fly deploy --config fly.web.toml
+```
 
 ## Other Useful Commands
 

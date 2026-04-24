@@ -14,19 +14,23 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
   },
-  socialProviders: {
-    github: {
-      clientId: env.BETTER_AUTH_GITHUB_CLIENT_ID,
-      clientSecret: env.BETTER_AUTH_GITHUB_CLIENT_SECRET,
-      redirectURI: `${env.BETTER_AUTH_URL}/api/auth/callback/github`,
-    },
+  advanced: {
+    useSecureCookies: env.NODE_ENV === 'production',
+    ...(env.COOKIE_DOMAIN
+      ? {
+          crossSubDomainCookies: {
+            enabled: true,
+            domain: env.COOKIE_DOMAIN,
+          },
+        }
+      : {}),
   },
   trustedOrigins: [env.CORS_ORIGIN],
 });
 
 export const hashPassword = (password: string): Promise<string> => {
   return (_hashPassword as (pw: string) => Promise<string>)(password);
-}
+};
 
 export type AuthAPI = typeof auth.api;
 export type AuthSession = Awaited<ReturnType<AuthAPI['getSession']>>;

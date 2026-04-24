@@ -5,10 +5,11 @@ import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  envPrefix: ['VITE_', 'API_'],
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
-      '@data-drop/api-schema': resolve(__dirname, '../packages/api-schema/src/index.ts'),
+      '@data-drop/api-schema': resolve(__dirname, '../../packages/api-schema/src/index.ts'),
     },
   },
   server: {
