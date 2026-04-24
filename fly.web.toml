@@ -5,7 +5,7 @@ primary_region = "iad"
   dockerfile = "Dockerfile.client"
 
 [build.args]
-  API_URL = "https://api.example.com"
+  API_URL = "https://api.datadrop-app.com"
 
 [http_service]
   internal_port = 8080

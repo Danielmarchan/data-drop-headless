@@ -7,9 +7,9 @@ primary_region = "iad"
 [env]
   NODE_ENV = "production"
   PORT = "8080"
-  BETTER_AUTH_URL = "https://api.example.com"
-  CORS_ORIGIN = "https://app.example.com"
-  COOKIE_DOMAIN = "example.com"
+  BETTER_AUTH_URL = "https://api.datadrop-app.com"
+  CORS_ORIGIN = "https://www.datadrop-app.com"
+  COOKIE_DOMAIN = "datadrop-app.com"
 
 [deploy]
   release_command = "pnpm --filter server db:migrate"
