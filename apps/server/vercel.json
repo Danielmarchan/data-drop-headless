@@ -1,5 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "git": {
+    "deploymentEnabled": false
+  },
   "buildCommand": "pnpm --filter @data-drop/api-schema build && pnpm --filter @data-drop/shared build && pnpm --filter server build",
   "functions": {
     "api/index.js": {
