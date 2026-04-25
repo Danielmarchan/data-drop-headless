@@ -14,7 +14,7 @@
     "db:studio": "drizzle-kit studio",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --build --pretty false"
   },
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "^7.3.1",
