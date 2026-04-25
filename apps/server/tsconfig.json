@@ -8,8 +8,7 @@
     "rootDir": "src",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@data-drop/api-schema": ["../../packages/api-schema/dist/index.d.ts"]
+      "@/*": ["src/*"]
     },
     "strict": true,
     "esModuleInterop": true,
@@ -19,6 +18,10 @@
     "noEmitOnError": true,
     "noUncheckedIndexedAccess": true
   },
+  "references": [
+    { "path": "../../packages/api-schema" },
+    { "path": "../../packages/shared" }
+  ],
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
 }

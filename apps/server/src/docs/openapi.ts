@@ -3,6 +3,7 @@ import {
   OpenApiGeneratorV3,
   extendZodWithOpenApi,
 } from '@asteasolutions/zod-to-openapi';
+import type { oas30 } from 'openapi3-ts';
 import z from 'zod';
 import {
   datasetDtoSchema,
@@ -573,7 +574,7 @@ registry.registerComponent('securitySchemes', 'cookieAuth', {
 
 // Generator
 
-export function generateOpenApiDocument() {
+export function generateOpenApiDocument(): oas30.OpenAPIObject {
   const generator = new OpenApiGeneratorV3(registry.definitions);
   return generator.generateDocument({
     openapi: '3.0.0',
