@@ -4,7 +4,10 @@ import postgres from 'postgres';
 import env from '@/env';
 import * as schema from '@/db/schema/index';
 
-const conn = postgres(env.DATABASE_URL);
+const conn = postgres(env.DATABASE_URL, {
+  max: 1,
+  prepare: false,
+});
 
 export const db = drizzle(conn, { schema });
 

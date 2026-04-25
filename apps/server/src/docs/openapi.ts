@@ -316,7 +316,7 @@ registry.registerPath({
             file: z.any().openapi({
               type: 'string',
               format: 'binary',
-              description: 'CSV file to upload. Headers must match the dataset column names.',
+              description: 'CSV file to upload (maximum 4 MB). Headers must match the dataset column names.',
             }),
           }).openapi('UploadCsvInput'),
         },

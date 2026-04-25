@@ -132,47 +132,99 @@ pnpm dev:server       # server only — http://localhost:3000
 
 The app will be available at [http://localhost:8080](http://localhost:8080).
 
-## Deploy to Fly.io
+## Deploy to Vercel
 
-This repo is set up for the two-app deployment shape:
+Production uses two Vercel projects:
 
-- `fly.api.toml` deploys the Express API from `Dockerfile.server`.
-- `fly.web.toml` deploys the Vite build from `Dockerfile.client` behind nginx.
-- The API release command runs Drizzle migrations before each API deploy.
+- `apps/client` -> `https://datadrop-app.com`
+- `apps/server` -> `https://api.datadrop-app.com`
 
-Use a real shared parent domain for auth cookies, for example:
+Auth remains cross-subdomain with:
 
-- Web: `https://app.example.com`
-- API: `https://api.example.com`
-- Cookie domain: `example.com`
+- `BETTER_AUTH_URL=https://api.datadrop-app.com`
+- `CORS_ORIGIN=https://datadrop-app.com`
+- `COOKIE_DOMAIN=datadrop-app.com`
 
-The generated `*.fly.dev` hostnames are fine for smoke testing, but do not use `fly.dev` as `COOKIE_DOMAIN`.
+### Runtime limits
 
-Update these placeholders before deploying:
+- CSV uploads are limited to **4 MB** in production to stay within Vercel function request limits.
 
-- `fly.api.toml`: `BETTER_AUTH_URL`, `CORS_ORIGIN`, `COOKIE_DOMAIN`
-- `fly.web.toml`: `[build.args] API_URL`
+### Vercel project setup
 
-Then deploy:
+Create two Vercel projects and point each one at its app directory:
 
-```bash
-brew install flyctl
-fly auth login
+- Web project root: `apps/client`
+- API project root: `apps/server`
 
-fly apps create data-drop-headless-api
-fly apps create data-drop-headless-web
-fly postgres create --name data-drop-headless-db --region iad
-fly postgres attach data-drop-headless-db --app data-drop-headless-api
+Disable Vercel Git auto-deploys for production on both projects. Production deploys are driven by GitHub Actions in `.github/workflows/deploy-production.yml`.
 
-fly secrets set --app data-drop-headless-api \
-  BETTER_AUTH_SECRET="$(openssl rand -hex 32)"
+Set these project environment variables in Vercel.
 
-fly certs add api.example.com --app data-drop-headless-api
-fly certs add app.example.com --app data-drop-headless-web
+**API project**
 
-fly deploy --config fly.api.toml
-fly deploy --config fly.web.toml
+```env
+BETTER_AUTH_SECRET=<strong-random-secret>
+BETTER_AUTH_URL=https://api.datadrop-app.com
+DATABASE_URL=<neon-pooled-connection-string>
+NODE_ENV=production
+CORS_ORIGIN=https://datadrop-app.com
+COOKIE_DOMAIN=datadrop-app.com
 ```
+
+**Web project**
+
+```env
+API_URL=https://api.datadrop-app.com
+```
+
+### GitHub Actions setup
+
+PRs run checks only from `.github/workflows/ci.yml`.
+
+Pushes to `main` run the production pipeline from `.github/workflows/deploy-production.yml` in this order:
+
+1. `validate`
+2. `migrate`
+3. `deploy_api`
+4. `deploy_web`
+
+Add these repository secrets before enabling the workflow:
+
+```env
+VERCEL_TOKEN=
+VERCEL_ORG_ID=
+VERCEL_PROJECT_ID_API=
+VERCEL_PROJECT_ID_WEB=
+PRODUCTION_DATABASE_URL=
+PRODUCTION_BETTER_AUTH_SECRET=
+```
+
+`PRODUCTION_DATABASE_URL` is used by GitHub Actions for the migration step. Long-lived runtime variables should stay in Vercel project settings.
+
+### Migration safety
+
+Database migrations run automatically before deploy on every push to `main`.
+
+- Keep production migrations backward compatible with the currently running API.
+- If the migration job fails, neither Vercel deploy job runs.
+- If the API deploy fails, the web deploy does not run.
+
+### Domains and DNS
+
+Attach these domains in Vercel:
+
+- Web project: `datadrop-app.com`
+- Web project redirect: `www.datadrop-app.com` -> `https://datadrop-app.com`
+- API project: `api.datadrop-app.com`
+
+In Namecheap `Advanced DNS`, add the records Vercel shows for each domain:
+
+- `@` -> Vercel A record for the web project
+- `www` -> Vercel CNAME for the web project
+- `api` -> Vercel CNAME for the API project
+- any TXT verification records requested by Vercel
+
+Only remove old Fly DNS records after Vercel verifies the domains successfully.
 
 ## Other Useful Commands
 

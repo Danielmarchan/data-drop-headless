@@ -4,5 +4,6 @@ dist/
 *.local
 .vscode
 .turbo
+.vercel
 *.tsbuildinfo
 .DS_Store

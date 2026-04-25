@@ -12,7 +12,10 @@ const EnvSchema = z.object({
   NODE_ENV: z
     .enum(['development', 'test', 'production'])
     .default('development'),
-  PORT: z.coerce.number().default(3000),
+  PORT:
+    process.env.NODE_ENV === 'production'
+      ? z.coerce.number().optional()
+      : z.coerce.number().default(3000),
   CORS_ORIGIN: z.string().url().default('http://localhost:8080'),
   COOKIE_DOMAIN: z.string().optional(),
 });
