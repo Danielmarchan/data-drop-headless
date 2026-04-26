@@ -108,7 +108,9 @@ jobs:
           cache: pnpm
 
       - name: Activate pnpm via Corepack
-        run: corepack prepare pnpm@10.0.0 --activate
+        run: |
+          corepack enable
+          corepack prepare pnpm@10.0.0 --activate
 
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
@@ -161,7 +163,9 @@ jobs:
           cache: pnpm
 
       - name: Activate pnpm via Corepack
-        run: corepack prepare pnpm@10.0.0 --activate
+        run: |
+          corepack enable
+          corepack prepare pnpm@10.0.0 --activate
 
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
