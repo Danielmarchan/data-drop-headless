@@ -87,6 +87,7 @@ jobs:
       run:
         working-directory: apps/server
     env:
+      ENABLE_EXPERIMENTAL_COREPACK: '1'
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_API }}
@@ -109,6 +110,9 @@ jobs:
       - name: Activate pnpm via Corepack
         run: corepack prepare pnpm@10.0.0 --activate
 
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -120,13 +124,13 @@ jobs:
           EOF
 
       - name: Pull Vercel environment
-        run: pnpm dlx vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
+        run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
 
       - name: Build API deployment
-        run: pnpm dlx vercel build --prod --token="$VERCEL_TOKEN"
+        run: vercel build --prod --token="$VERCEL_TOKEN"
 
       - name: Deploy API
-        run: pnpm dlx vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
+        run: vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
 
   deploy_web:
     runs-on: ubuntu-latest
@@ -136,6 +140,7 @@ jobs:
       run:
         working-directory: apps/client
     env:
+      ENABLE_EXPERIMENTAL_COREPACK: '1'
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_WEB }}
@@ -158,6 +163,9 @@ jobs:
       - name: Activate pnpm via Corepack
         run: corepack prepare pnpm@10.0.0 --activate
 
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -169,10 +177,10 @@ jobs:
           EOF
 
       - name: Pull Vercel environment
-        run: pnpm dlx vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
+        run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
 
       - name: Build web deployment
-        run: pnpm dlx vercel build --prod --token="$VERCEL_TOKEN"
+        run: vercel build --prod --token="$VERCEL_TOKEN"
 
       - name: Deploy web
-        run: pnpm dlx vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
+        run: vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
