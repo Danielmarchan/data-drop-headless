@@ -63,10 +63,8 @@ export default tseslint.config(
     plugins: { drizzle },
     languageOptions: {
       parserOptions: {
-        projectService: {
-          allowDefaultProject: ['*.config.ts'],
-        },
-        tsconfigRootDir: resolve(__dirname, 'apps/server'),
+        project: [resolve(__dirname, 'apps/server/tsconfig.eslint.json')],
+        tsconfigRootDir: __dirname,
       },
     },
     rules: {

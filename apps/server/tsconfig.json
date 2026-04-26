@@ -18,9 +18,10 @@
     "noEmitOnError": true,
     "noUncheckedIndexedAccess": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"],
   "references": [
-    { "path": "../../packages/api-schema" }
-  ]
+    { "path": "../../packages/api-schema" },
+    { "path": "../../packages/shared" }
+  ],
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

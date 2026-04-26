@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@data-drop/api-schema": ["../../packages/api-schema/src/index.ts"]
+    }
+  },
+  "include": [
+    "drizzle.config.ts",
+    "src/**/*.ts",
+    "../../packages/api-schema/src/**/*.ts"
+  ],
+  "exclude": ["dist", "node_modules"]
+}

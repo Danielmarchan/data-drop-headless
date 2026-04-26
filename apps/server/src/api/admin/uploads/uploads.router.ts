@@ -1,7 +1,7 @@
 import { Router } from 'express';
 
 import AdminUploadsController from './uploads.controller';
-import AdminUploadsService from './uploads.service';
+import type AdminUploadsService from './uploads.service';
 
 export function createAdminUploadsRouter(uploadsService: AdminUploadsService) {
   const controller = new AdminUploadsController(uploadsService);
