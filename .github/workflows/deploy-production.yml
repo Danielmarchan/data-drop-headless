@@ -87,7 +87,6 @@ jobs:
       run:
         working-directory: apps/server
     env:
-      ENABLE_EXPERIMENTAL_COREPACK: '1'
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_API }}
@@ -142,7 +141,6 @@ jobs:
       run:
         working-directory: apps/client
     env:
-      ENABLE_EXPERIMENTAL_COREPACK: '1'
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_WEB }}
