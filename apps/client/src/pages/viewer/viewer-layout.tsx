@@ -2,6 +2,7 @@ import { Outlet, useNavigate } from 'react-router';
 import { authClient } from '@/lib/auth';
 import { useUserProfile } from '@/api/use-user-profile';
 import TopNav from '@/components/top-nav';
+import Footer from '@/components/footer';
 
 export default function ViewerLayout() {
   const navigate = useNavigate();
@@ -32,6 +33,7 @@ export default function ViewerLayout() {
       <main className="flex-1 overflow-y-auto">
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 }

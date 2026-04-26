@@ -1,4 +1,5 @@
 import LoginForm from './components/login-form';
+import Footer from '@/components/footer';
 
 export default function LoginPage() {
   return (
@@ -21,11 +22,7 @@ export default function LoginPage() {
         </div>
       </div>
 
-      <footer className="mt-12 h-25 shrink-0 bg-surface">
-        <p className="h-full flex items-center justify-center font-inter text-sm text-on-surface-variant m-0">
-          &copy; {new Date().getFullYear()} DataDrop. All rights reserved.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
