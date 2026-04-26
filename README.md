@@ -195,11 +195,11 @@ VERCEL_TOKEN=
 VERCEL_ORG_ID=
 VERCEL_PROJECT_ID_API=
 VERCEL_PROJECT_ID_WEB=
-PRODUCTION_DATABASE_URL=
+DATABASE_URL=
 PRODUCTION_BETTER_AUTH_SECRET=
 ```
 
-`PRODUCTION_DATABASE_URL` is used by GitHub Actions for the migration step. Long-lived runtime variables should stay in Vercel project settings.
+`DATABASE_URL` is used by the GitHub Actions `migrate` job through the `production` environment. Long-lived runtime variables should stay in Vercel project settings.
 
 ### Migration safety
 

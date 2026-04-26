@@ -43,8 +43,9 @@ jobs:
   migrate:
     runs-on: ubuntu-latest
     needs: validate
+    environment: production
     env:
-      DATABASE_URL: ${{ secrets.PRODUCTION_DATABASE_URL }}
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
       BETTER_AUTH_SECRET: ${{ secrets.PRODUCTION_BETTER_AUTH_SECRET }}
       BETTER_AUTH_URL: https://api.datadrop-app.com
       CORS_ORIGIN: https://datadrop-app.com
