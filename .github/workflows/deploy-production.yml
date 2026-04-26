@@ -112,7 +112,7 @@ jobs:
           corepack prepare pnpm@10.0.0 --activate
 
       - name: Install Vercel CLI
-        run: npm install --global vercel@latest
+        run: pnpm add --global vercel@latest
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -166,7 +166,7 @@ jobs:
           corepack prepare pnpm@10.0.0 --activate
 
       - name: Install Vercel CLI
-        run: npm install --global vercel@latest
+        run: pnpm add --global vercel@latest
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
