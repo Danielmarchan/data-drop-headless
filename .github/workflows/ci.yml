@@ -2,6 +2,13 @@ name: CI
 
 on:
   pull_request:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   checks:
@@ -33,3 +40,41 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+  deploy_api:
+    name: Deploy API
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Render API deploy
+        env:
+          RENDER_API_DEPLOY_HOOK_URL: ${{ secrets.RENDER_API_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$RENDER_API_DEPLOY_HOOK_URL" ]; then
+            echo "RENDER_API_DEPLOY_HOOK_URL is not set" >&2
+            exit 1
+          fi
+
+          curl --fail --show-error --silent --request POST \
+            "${RENDER_API_DEPLOY_HOOK_URL}?ref=${GITHUB_SHA}"
+
+  deploy_web:
+    name: Deploy Web
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: deploy_api
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Render web deploy
+        env:
+          RENDER_WEB_DEPLOY_HOOK_URL: ${{ secrets.RENDER_WEB_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$RENDER_WEB_DEPLOY_HOOK_URL" ]; then
+            echo "RENDER_WEB_DEPLOY_HOOK_URL is not set" >&2
+            exit 1
+          fi
+
+          curl --fail --show-error --silent --request POST \
+            "${RENDER_WEB_DEPLOY_HOOK_URL}?ref=${GITHUB_SHA}"
