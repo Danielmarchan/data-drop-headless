@@ -28,9 +28,10 @@ jobs:
       - run: pnpm build
 
   deploy:
-    name: Deploy to Fly.io
+    name: Deploy
     needs: checks
     runs-on: ubuntu-latest
+    environment: production
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
