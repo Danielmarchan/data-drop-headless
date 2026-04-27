@@ -83,7 +83,7 @@ export default function Alert({
               type="button"
               onClick={onDismiss}
               className={[
-                'inline-flex rounded-md p-1.5 transition-colors focus-visible:outline',
+                'inline-flex rounded-md p-1.5 transition-colors focus-visible:outline cursor-pointer',
                 styles.button,
               ].join(' ')}
               aria-label="Dismiss alert"
