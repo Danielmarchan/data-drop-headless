@@ -1,4 +1,4 @@
-# DataDrop Headless
+# DataDrop
 
 A data management platform that allows admins to upload CSV datasets and share them with viewer users. Built with a React + Vite frontend and an Express + Drizzle ORM backend backed by PostgreSQL, organized as a pnpm + Turborepo monorepo.
 
