@@ -150,13 +150,33 @@ export default function AdminDatasetUploadsPage() {
 
   const handleConfirmDelete = () => {
     if (!deleteTarget) return;
+    const title = deleteTarget.title;
     deleteUpload.mutate(deleteTarget.id, {
-      onSuccess: () => setDeleteTarget(null),
+      onSuccess: () => {
+        setDeleteTarget(null);
+        showAlert({ variant: 'success', title: `"${title}" deleted successfully` });
+      },
+      onError: (error) => {
+        setDeleteTarget(null);
+        showAlert({ variant: 'error', title: 'Failed to delete upload', message: getErrorMessage(error) });
+      },
     });
   };
 
   const handleToggleVisibility = (upload: UploadDto) => {
-    updateUpload.mutate({ id: upload.id, data: { visible: !upload.visible } });
+    const becomingVisible = !upload.visible;
+    updateUpload.mutate(
+      { id: upload.id, data: { visible: becomingVisible } },
+      {
+        onSuccess: () =>
+          showAlert({
+            variant: 'success',
+            title: becomingVisible ? `"${upload.title}" is now visible` : `"${upload.title}" is now hidden`,
+          }),
+        onError: (error) =>
+          showAlert({ variant: 'error', title: 'Failed to update visibility', message: getErrorMessage(error) }),
+      },
+    );
   };
 
   const handleRename = (upload: UploadDto, title: string) => {

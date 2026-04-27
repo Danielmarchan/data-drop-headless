@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router';
+import { AxiosError } from 'axios';
 import { type UserDto } from '@data-drop/api-schema';
 import { useDeleteUser } from './api/use-delete-user';
 import { useUsers } from './api/use-users';
@@ -7,6 +8,15 @@ import Button from '@/components/button';
 import ConfirmModal from '@/components/confirm-modal';
 import AdminListLayout from '@/components/admin-list-layout';
 import UserRow from './components/user-row';
+import { useAlertStore } from '@/components/alert/stores/ui-alert-store';
+
+function getErrorMessage(error: unknown) {
+  if (error instanceof AxiosError) {
+    return (error.response?.data as { error?: string })?.error ?? error.message;
+  }
+  if (error instanceof Error) return error.message;
+  return 'Something went wrong.';
+}
 
 const COLUMN_HEADERS = [
   { label: 'User', className: 'flex-1' },
@@ -21,6 +31,7 @@ export default function AdminUsersPage() {
 
   const { data, isLoading, hasNextPage, fetchNextPage, isFetchingNextPage } = useUsers();
   const deleteUser = useDeleteUser();
+  const showAlert = useAlertStore((state) => state.showAlert);
 
   const [userToDelete, setUserToDelete] = useState<UserDto | null>(null);
   const [searchValue, setSearchValue] = useState(search);
@@ -87,8 +98,16 @@ export default function AdminUsersPage() {
           isPending={deleteUser.isPending}
           onConfirm={() => {
             if (userToDelete) {
+              const name = userToDelete.name;
               deleteUser.mutate(userToDelete.id, {
-                onSuccess: () => setUserToDelete(null),
+                onSuccess: () => {
+                  setUserToDelete(null);
+                  showAlert({ variant: 'success', title: `"${name}" deleted successfully` });
+                },
+                onError: (error) => {
+                  setUserToDelete(null);
+                  showAlert({ variant: 'error', title: 'Failed to delete user', message: getErrorMessage(error) });
+                },
               });
             }
           }}
