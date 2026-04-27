@@ -11,7 +11,6 @@ COPY package.json pnpm-lock.yaml pnpm-workspace.yaml turbo.json ./
 COPY apps/server/package.json ./apps/server/package.json
 COPY apps/client/package.json ./apps/client/package.json
 COPY packages/api-schema/package.json ./packages/api-schema/package.json
-COPY packages/shared/package.json ./packages/shared/package.json
 RUN pnpm install --frozen-lockfile
 
 FROM deps AS build

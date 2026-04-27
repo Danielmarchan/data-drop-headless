@@ -18,8 +18,7 @@ data-drop-headless/
 │   ├── client/              # React frontend (Vite)
 │   └── server/              # Express API
 ├── packages/
-│   ├── api-schema/          # Shared Zod request/response schemas
-│   └── shared/              # Shared utilities and types
+│   └── api-schema/          # Shared Zod request/response schemas
 ├── docker-compose.yml
 ├── pnpm-workspace.yaml
 └── turbo.json

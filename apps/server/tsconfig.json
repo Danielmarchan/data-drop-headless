@@ -19,8 +19,7 @@
     "noUncheckedIndexedAccess": true
   },
   "references": [
-    { "path": "../../packages/api-schema" },
-    { "path": "../../packages/shared" }
+    { "path": "../../packages/api-schema" }
   ],
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
