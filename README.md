@@ -2,6 +2,10 @@
 
 A data management platform that allows admins to upload CSV datasets and share them with viewer users. Built with a React + Vite frontend and an Express + Drizzle ORM backend backed by PostgreSQL, organized as a pnpm + Turborepo monorepo.
 
+## Demo Screen Recording
+
+<video src="assets/demo.mp4" controls width="100%"></video>
+
 ## Tech Stack
 
 - **Client** — React 19, React Router 7, TanStack Query, Tailwind CSS v4, Vite
