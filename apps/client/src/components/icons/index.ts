@@ -10,3 +10,5 @@ export { default as ArrowRightIcon } from './arrow-right-icon';
 export { default as EyeCrossedIcon } from './eye-crossed-icon';
 export { default as MenuIcon } from './menu-icon';
 export { default as CloseIcon } from './close-icon';
+export { default as SuccessIcon } from './success-icon';
+export { default as ErrorIcon } from './error-icon';

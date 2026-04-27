@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { authClient } from '@/lib/auth';
 import {
@@ -8,6 +8,7 @@ import {
   PencilIcon,
   SignOutIcon,
 } from '@/components/icons';
+import { useAlertStore } from '@/components/alert/stores/ui-alert-store';
 import UserMenu from './user-menu';
 
 export type TopNavLink = {
@@ -34,9 +35,30 @@ export default function TopNav({
 }: TopNavProps) {
   const navigate = useNavigate();
   const { pathname } = useLocation();
+  const headerRef = useRef<HTMLElement | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const setTopOffset = useAlertStore((state) => state.setTopOffset);
   const drawerId = 'mobile-navigation-drawer';
   const links = navLinks ?? [];
+
+  useEffect(() => {
+    const element = headerRef.current;
+    if (!element) return;
+
+    const updateHeight = () => {
+      setTopOffset(Math.ceil(element.getBoundingClientRect().height));
+    };
+
+    updateHeight();
+
+    const observer = new ResizeObserver(updateHeight);
+    observer.observe(element);
+
+    return () => {
+      observer.disconnect();
+      setTopOffset(0);
+    };
+  }, [setTopOffset]);
 
   useEffect(() => {
     if (!mobileOpen) return;
@@ -62,7 +84,10 @@ export default function TopNav({
   }
 
   return (
-    <header className="bg-surface-lowest z-1 flex w-full items-center px-4 py-3 sm:px-6 sm:py-4">
+    <header
+      ref={headerRef}
+      className="bg-surface-lowest z-1 flex w-full items-center px-4 py-3 sm:px-6 sm:py-4"
+    >
       <div className="flex min-w-0 flex-1 items-center gap-4 sm:gap-8">
         <Link
           to={logoHref}
