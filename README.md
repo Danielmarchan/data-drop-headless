@@ -115,6 +115,18 @@ This seeds the database with demo users and a sample eCommerce dataset. All demo
 
 > **Warning:** The seed script deletes all existing data before inserting. Never run it against a production database.
 
+## Demo CSV Files
+
+These production-hosted CSVs are useful for recording demos or quickly testing uploads:
+
+- [orders.csv](https://www.datadrop-app.com/orders.csv)
+- [orders-invalid.csv](https://www.datadrop-app.com/orders-invalid.csv)
+- [orders-variant-1.csv](https://www.datadrop-app.com/orders-variant-1.csv)
+- [orders-variant-2.csv](https://www.datadrop-app.com/orders-variant-2.csv)
+- [orders-variant-3.csv](https://www.datadrop-app.com/orders-variant-3.csv)
+- [orders-variant-4.csv](https://www.datadrop-app.com/orders-variant-4.csv)
+- [orders-variant-5.csv](https://www.datadrop-app.com/orders-variant-5.csv)
+
 ### 6. Start the development servers
 
 Run both apps together via Turbo:
