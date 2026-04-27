@@ -4,7 +4,7 @@ A data management platform that allows admins to upload CSV datasets and share t
 
 ## Demo Screen Recording
 
-<video src="assets/demo.mp4" controls width="100%"></video>
+- [See Screen Recording Here](https://www.loom.com/share/3f688a2464954e4ea538f5ecafc0f173)
 
 ## Tech Stack
 
