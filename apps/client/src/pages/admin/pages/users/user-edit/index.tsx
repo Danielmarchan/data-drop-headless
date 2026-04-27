@@ -53,7 +53,7 @@ export default function AdminUserEditPage() {
         firstName: user.firstName ?? '',
         lastName: user.lastName ?? '',
         email: user.email,
-        role: user.role?.name ?? 'viewer',
+        role: (user.role?.name ?? 'viewer') as 'viewer' | 'admin',
         assignedDatasetIds: user.assignedDatasets.map((dataset) => dataset.id),
       }}
       isPending={updateUser.isPending}

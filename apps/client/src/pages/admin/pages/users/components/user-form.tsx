@@ -42,7 +42,7 @@ type UserFormValues = {
   firstName: string;
   lastName: string;
   email: string;
-  password: string;
+  password?: string;
   role: 'viewer' | 'admin';
   assignedDatasetIds: string[];
 };
@@ -211,7 +211,7 @@ export default function UserForm({
       if (mode === 'create') {
         await onSubmit({
           ...payload,
-          password: data.password,
+          password: data.password!,
         });
       } else {
         await onSubmit(payload);
